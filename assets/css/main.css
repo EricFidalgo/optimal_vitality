@@ -972,9 +972,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991.98px) {
-  body {
-      padding-bottom: 90px !important; 
-  }
 
   .offcanvas {
     background-color: var(--secondary-color) !important;
@@ -1344,4 +1341,179 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
     margin: 0;
   }
+}
+
+
+
+
+/* ==========================================================================
+   EXCLUSIVE MOBILE EXPERIENCE (< 768px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+    /* 1. Horizontal Scroll Containers */
+    .mobile-carousel-row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        scroll-snap-type: x mandatory !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        scrollbar-width: none; 
+    }
+    
+    .mobile-carousel-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 2. Card Sizing Inside Scroll Container */
+    .mobile-carousel-row > [class*="col-"] {
+        flex: 0 0 85% !important; /* 85% width lets the next card peek in */
+        max-width: 85% !important;
+        scroll-snap-align: center !important;
+        margin-right: 15px; 
+        height: auto !important;
+    }
+    
+    .mobile-carousel-row > *:last-child {
+        margin-right: 15px !important; 
+    }
+
+    /* 3. Animated Swipe Hint UI */
+    .mobile-swipe-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-top: -10px;
+        margin-bottom: 25px;
+    }
+
+    .swipe-line {
+        height: 2px;
+        width: 40px;
+        background: linear-gradient(90deg, transparent, var(--primary-color));
+        border-radius: 2px;
+    }
+
+    .swipe-line.reverse {
+        background: linear-gradient(270deg, transparent, var(--primary-color));
+    }
+
+    .mobile-swipe-hint span {
+        color: var(--primary-color);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+    }
+
+    .mobile-swipe-hint i {
+        color: var(--primary-color);
+        font-size: 1rem;
+        animation: swipeHand 2s infinite ease-in-out;
+    }
+
+    @keyframes swipeHand {
+        0%, 100% { transform: translateX(0) rotate(0deg); opacity: 0.5; }
+        50% { transform: translateX(10px) rotate(-10deg); opacity: 1; }
+    }
+
+    /* 4. Interactive Progress Bar */
+    .scroll-progress-container {
+        width: 60px;
+        height: 4px;
+        background: rgba(32, 77, 87, 0.1);
+        border-radius: 4px;
+        margin: 0 auto 30px auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .scroll-progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 30%;
+        background: var(--primary-color);
+        border-radius: 4px;
+        transition: left 0.1s ease-out;
+    }
+
+    /* 5. Compress Before/After Images */
+    .ba-card img {
+        min-height: 180px !important;
+    }
+    
+    /* 6. Compress Science Stats */
+    #science .p-4 { padding: 1.25rem !important; }
+    #science .display-5 { font-size: 2.2rem !important; }
+}
+
+/* Hide mobile UI elements completely on desktop */
+@media (min-width: 768px) {
+    .mobile-only-ui { display: none !important; }
+}
+
+
+@media (max-width: 767.98px) {
+    /* Override the original grid layout for the peptide portfolio */
+    section.premium-services .row.mobile-carousel-row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+    }
+    
+    section.premium-services .row.mobile-carousel-row > [class*="col-"] {
+        flex: 0 0 85% !important;
+        max-width: 85% !important;
+    }
+}
+
+
+
+/* ==========================================================================
+   MOBILE FLOATING ACTION BUTTON (FAB) OVERRIDE
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    /* 1. Un-anchor from the left side and pin to the bottom right */
+    #mobile-sticky-cta.d-lg-none.position-fixed {
+        width: auto !important;
+        padding: 0 !important;
+        left: auto !important;
+        start: auto !important;
+        right: 20px !important;
+    }
+
+    /* 2. Reshape into a 65x65 circle and hide the text */
+    #mobile-sticky-cta .btn.cta-btn {
+        width: 65px !important;
+        height: 65px !important;
+        border-radius: 50% !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 0 !important; /* This hides "Book Consultation" */
+        
+        /* Uses 10px on bezel devices (where env is 0), and defaults strictly to the safe area line on bezel-less devices */
+        margin-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+        
+        /* Fixes for iOS Native Rendering and Shadow Stripping */
+        -webkit-appearance: none !important; 
+        box-shadow: none !important;          
+        filter: drop-shadow(0 0 0 transparent) !important; 
+    }
+
+    /* 3. Re-center and enlarge the calendar icon */
+    #mobile-sticky-cta .btn.cta-btn i {
+        font-size: 1.6rem !important;
+        margin: 0 !important; /* Removes the existing 'me-2' right margin */
+    }
 }

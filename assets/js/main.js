@@ -550,4 +550,13 @@ document.addEventListener("DOMContentLoaded", function() {
         resizeTimer = setTimeout(setMaxTestimonialHeight, 150);
     });
 
+    // Mobile Scroll Progress Indicator Logic
+window.updateScrollProgress = function(container, barId) {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+    const scrollRatio = container.scrollLeft / (container.scrollWidth - container.clientWidth);
+    // Move the 30% width bar left from 0% to 70%
+    bar.style.left = `${scrollRatio * 70}%`; 
+};
+
 });

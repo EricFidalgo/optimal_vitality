@@ -74,7 +74,11 @@
                 <p class="lead text-muted max-w-700 mx-auto">Visual evidence of optimized body composition, accelerated tissue repair, and complete metabolic restructuring.</p>
             </div>
             
-            <div class="row g-4 justify-content-center">
+            <div class="mobile-only-ui mobile-swipe-hint">
+                <div class="swipe-line"></div><i class="fas fa-hand-point-up fa-rotate-90"></i><span>Swipe</span><div class="swipe-line reverse"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center mobile-carousel-row" onscroll="updateScrollProgress(this, 'progress1')">
                 <div class="col-lg-6">
                     <div class="ba-card position-relative rounded-4 overflow-hidden shadow-sm border h-100">
                         <div class="row g-0">
@@ -115,6 +119,10 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mobile-only-ui scroll-progress-container">
+                <div class="scroll-progress-bar" id="progress1"></div>
+            </div>
         </div>
     </section>
 
@@ -124,7 +132,12 @@
                 <h2 class="section-title text-white mb-4">Our Elite Peptide Portfolio</h2>
                 <p class="text-white-50 lead max-w-700 mx-auto">Custom-tailored treatments built entirely around your biomarkers and recovery metrics.</p>
             </div>
-            <div class="row g-4 justify-content-center gs-reveal">
+
+            <div class="mobile-only-ui mobile-swipe-hint gs-reveal">
+                <div class="swipe-line"></div><i class="fas fa-hand-point-up fa-rotate-90"></i><span>Explore</span><div class="swipe-line reverse"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center gs-reveal mobile-carousel-row" onscroll="updateScrollProgress(this, 'progress2')">
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-running"></i></div>
@@ -179,6 +192,10 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mobile-only-ui scroll-progress-container gs-reveal">
+                <div class="scroll-progress-bar" id="progress2"></div>
+            </div>
         </div>
     </section>
 
@@ -192,33 +209,47 @@
                 </div>
                 
                 <div class="col-lg-7">
-                    <div class="d-flex flex-column gap-4">
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Growth & Cellular Output Stack</h4>
-                                <i class="fas fa-dumbbell text-primary fs-4"></i>
+                    <div class="mobile-only-ui mobile-swipe-hint">
+                        <div class="swipe-line"></div><i class="fas fa-hand-point-up fa-rotate-90"></i><span>Protocols</span><div class="swipe-line reverse"></div>
+                    </div>
+
+                    <div class="row g-4 mobile-carousel-row m-0" onscroll="updateScrollProgress(this, 'progress3')">
+                        <div class="col-12 px-lg-0">
+                            <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="fw-bold mb-0" style="color: #204d57;">The Growth & Cellular Output Stack</h4>
+                                    <i class="fas fa-dumbbell text-primary fs-4"></i>
+                                </div>
+                                <h6 class="text-muted small fw-bold mb-3">Tesamorelin + Ipamorelin</h6>
+                                <p class="text-secondary small mb-0">Optimizes natural hormone output. Designed to support lean muscle accretion, lower stubborn visceral adipose tissue, and accelerate overall cellular adaptation.</p>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">Tesamorelin + Ipamorelin</h6>
-                            <p class="text-secondary small mb-0">Optimizes natural hormone output. Designed to support lean muscle accretion, lower stubborn visceral adipose tissue, and accelerate overall cellular adaptation.</p>
                         </div>
                         
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Wolverine Healing Matrix</h4>
-                                <i class="fas fa-shield-alt text-primary fs-4"></i>
+                        <div class="col-12 px-lg-0">
+                            <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="fw-bold mb-0" style="color: #204d57;">The Wolverine Healing Matrix</h4>
+                                    <i class="fas fa-shield-alt text-primary fs-4"></i>
+                                </div>
+                                <h6 class="text-muted small fw-bold mb-3">BPC-157 + TB500</h6>
+                                <p class="text-secondary small mb-0">Advanced systemic repair blend. Directs rapid soft tissue recovery to manage torn ligaments, joint conditions, and acute structural layout modifications.</p>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">BPC-157 + TB500</h6>
-                            <p class="text-secondary small mb-0">Advanced systemic repair blend. Directs rapid soft tissue recovery to manage torn ligaments, joint conditions, and acute structural layout modifications.</p>
                         </div>
 
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Bioenergetic Co-Factor Protocol</h4>
-                                <i class="fas fa-stopwatch text-primary fs-4"></i>
+                        <div class="col-12 px-lg-0">
+                            <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="fw-bold mb-0" style="color: #204d57;">The Bioenergetic Co-Factor Protocol</h4>
+                                    <i class="fas fa-stopwatch text-primary fs-4"></i>
+                                </div>
+                                <h6 class="text-muted small fw-bold mb-3">NAD+ + Specialized Recovery Protocols</h6>
+                                <p class="text-secondary small mb-0">Upregulates critical cellular energy output. Restores key metabolic processing to clear mental fog, reverse fatigue, and boost overall physical performance.</p>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">NAD+ + Specialized Recovery Protocols</h6>
-                            <p class="text-secondary small mb-0">Upregulates critical cellular energy output. Restores key metabolic processing to clear mental fog, reverse fatigue, and boost overall physical performance.</p>
                         </div>
+                    </div>
+
+                    <div class="mobile-only-ui scroll-progress-container mt-4">
+                        <div class="scroll-progress-bar" id="progress3"></div>
                     </div>
                 </div>
             </div>
@@ -362,30 +393,26 @@
                     <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4 mt-2">Start Your Journey</a>
                 </div>
 
-        <div class="col-lg-8 position-relative">
-            
-            <div id="testimonialMobile" class="d-lg-none mt-4 mt-lg-0">
-                <div class="native-scroll-wrapper" id="mobile-testimonial-inner">
+                <div class="col-lg-8 position-relative">
+                    <div id="testimonialMobile" class="d-lg-none mt-4 mt-lg-0">
+                        <div class="native-scroll-wrapper" id="mobile-testimonial-inner"></div>
+                        <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                            <div class="carousel-indicators position-relative m-0" id="mobile-testimonial-indicators"></div>
+                        </div>
                     </div>
-                
-                <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
-                    <div class="carousel-indicators position-relative m-0" id="mobile-testimonial-indicators"></div>
-                </div>
-            </div>
 
-            <div id="testimonialDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel" data-bs-interval="8000" data-bs-touch="true">
-                <div class="carousel-inner pb-3" id="desktop-testimonial-inner"></div>
-                
-                <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3 gap-4">
-                    <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="prev" aria-label="Previous">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    
-                    <div class="carousel-indicators position-relative m-0" id="desktop-testimonial-indicators"></div>
-                    
-                    <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="next" aria-label="Next">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                    <div id="testimonialDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel" data-bs-interval="8000" data-bs-touch="true">
+                        <div class="carousel-inner pb-3" id="desktop-testimonial-inner"></div>
+                        <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3 gap-4">
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="prev" aria-label="Previous">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="carousel-indicators position-relative m-0" id="desktop-testimonial-indicators"></div>
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="next" aria-label="Next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -470,7 +497,7 @@
 
     <div id="mobile-sticky-cta" class="d-lg-none position-fixed bottom-0 start-0 w-100 p-3" style="z-index: 1040; pointer-events: none;">
         <a href="#consultation" class="btn cta-btn w-100 py-3 shadow-lg fs-6 fw-bold text-uppercase d-flex align-items-center justify-content-center" style="border-radius: 50px; pointer-events: auto; letter-spacing: 1px;">
-            <i class="fas fa-calendar-check me-2"></i> Book Consultation
+            <i class="fas fa-calendar-check me-2"></i>
         </a>
     </div>
 
