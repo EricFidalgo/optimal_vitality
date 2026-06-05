@@ -56,7 +56,7 @@ const clinicData = {
     {
       id: "glp-1therapies",
       type: "core",
-      tabLabel: "GlP-1 Therapies",
+      tabLabel: "GLP-1 Therapies",
       href: "glp-1therapies.html",
       title: "Metabolic Optimization & Weight Loss",
       lead: "Advanced, medically supervised protocols utilizing next-generation metabolic therapies.",
