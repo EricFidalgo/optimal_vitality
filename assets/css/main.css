@@ -1869,3 +1869,78 @@ h6 {
   box-shadow: 0 10px 25px rgba(32, 77, 87, 0.08) !important;
   border-color: rgba(230, 195, 129, 0.4) !important;
 }
+
+
+
+/* ==========================================================================
+   Protocol Finder Interactive Quiz (With Smooth Transitions)
+   ========================================================================== */
+
+.btn-symptom {
+  background-color: var(--bg-white);
+  border-color: rgba(32, 77, 87, 0.1) !important;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+.btn-symptom .symptom-icon-wrap {
+  background-color: var(--bg-light);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+/* Hover State */
+.btn-symptom:hover {
+  transform: translateX(5px);
+  border-color: rgba(230, 195, 129, 0.4) !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Active Selected State */
+.btn-symptom.active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color) !important;
+  transform: translateX(10px);
+  box-shadow: 0 10px 25px rgba(32, 77, 87, 0.2);
+}
+.btn-symptom.active .text-dark {
+  color: var(--bg-white) !important;
+}
+.btn-symptom.active .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.btn-symptom.active .symptom-icon-wrap {
+  background-color: var(--primary-color);
+}
+
+/* Base Result Card State & Transition Speed */
+.result-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.3s ease;
+}
+
+/* Outgoing/Incoming Transition State managed by JavaScript */
+.result-card.fade-update {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Base Result Card State & Transition Speed */
+.result-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Outgoing/Incoming Transition State managed by JavaScript */
+.result-card.fade-update {
+  opacity: 0;
+  transform: translateY(10px);
+}

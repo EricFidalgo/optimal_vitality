@@ -229,7 +229,84 @@
         </div>
     </section>
 
-    <section class="py-5" style="background-color: #f8fafc;" id="athletic-stacks">
+    <section class="py-5 bg-light border-top" id="protocol-finder">
+    <div class="container py-5 gs-reveal">
+        <div class="text-center mb-5">
+            <h2 class="section-title text-uppercase" style="color: #204d57;">Find Your Protocol</h2>
+            <p class="lead text-muted max-w-700 mx-auto">Select your primary biological roadblock to reveal the targeted clinical sequence our medical team uses to solve it.</p>
+        </div>
+        
+        <div class="row align-items-center g-4 g-lg-5">
+            <!-- Left Column: The Interactive Quiz Buttons -->
+            <div class="col-lg-6">
+                <div class="d-flex flex-column gap-3" id="symptom-selectors">
+                    
+                    <button class="btn-symptom active d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="joint">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                            <i class="fas fa-crutch fs-5"></i>
+                        </div>
+                        <div>
+                            <span class="d-block fw-bold fs-5 text-dark mb-1">Nagging Joint & Tissue Pain</span>
+                            <small class="text-muted">Prolonged soreness, tendon inflammation, or injury recovery.</small>
+                        </div>
+                    </button>
+
+                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="plateau">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                            <i class="fas fa-stopwatch fs-5"></i>
+                        </div>
+                        <div>
+                            <span class="d-block fw-bold fs-5 text-dark mb-1">Athletic & Training Plateaus</span>
+                            <small class="text-muted">Stuck on your heavy lifts, 5K pacing, or court stamina.</small>
+                        </div>
+                    </button>
+
+                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="fatigue">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                            <i class="fas fa-battery-quarter fs-5"></i>
+                        </div>
+                        <div>
+                            <span class="d-block fw-bold fs-5 text-dark mb-1">Chronic Fatigue & Brain Fog</span>
+                            <small class="text-muted">Afternoon crashes, slow mornings, and poor sleep architecture.</small>
+                        </div>
+                    </button>
+
+                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="body">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                            <i class="fas fa-weight fs-5"></i>
+                        </div>
+                        <div>
+                            <span class="d-block fw-bold fs-5 text-dark mb-1">Stubborn Body Composition</span>
+                            <small class="text-muted">Holding onto visceral adipose tissue despite diet adherence.</small>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            
+            <!-- Right Column: Dynamic Result Display -->
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="result-card p-4 p-md-5 rounded-4 shadow-lg border-top border-4 bg-white position-relative h-100 transition-all d-flex flex-column justify-content-center" style="border-color: var(--primary-color) !important; min-height: 380px;" id="protocol-result">
+                    <!-- Default loaded state (matches the first button) -->
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-shield-alt text-primary display-5 me-3"></i>
+                        <div>
+                            <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">The Healing Matrix</small>
+                            <h3 class="fw-bold mb-0" style="color: #204d57;">BPC-157 + TB500</h3>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.</p>
+                    <div class="mt-auto">
+                        <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section class="py-5" style="background-color: white;" id="athletic-stacks">
         <div class="container py-5 gs-reveal">
             <div class="row align-items-center gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0">
@@ -559,6 +636,22 @@
         </div>
     </section>
 
+    <section class="faqs py-5 bg-white" id="faqs">
+    <div class="container py-4 gs-reveal">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title mb-4" style="color: #204d57;">Common Questions</h2>
+                <p class="lead text-muted">Everything you need to know about our clinical peptide protocols.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Your main.js will automatically populate this div -->
+                <div class="accordion shadow-sm" id="faqAccordion"></div>
+            </div>
+        </div>
+    </div>
+</section>
     <footer class="footer py-5 text-center text-md-start">
         <div class="container py-4">
             <div class="row align-items-stretch g-4">

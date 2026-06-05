@@ -740,6 +740,75 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Protocol Finder Quiz Logic
+    const protocolData = {
+        joint: {
+            tag: "The Healing Matrix",
+            title: "BPC-157 + TB500",
+            desc: "Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.",
+            icon: "fa-shield-alt"
+        },
+        plateau: {
+            tag: "Strength & Output",
+            title: "Ipamorelin Protocol",
+            desc: "Designed to push past training plateaus. Promotes natural growth factor waves to upgrade physical strength production, accelerate lean tissue adaptation, and improve your overall athletic pacing.",
+            icon: "fa-dumbbell"
+        },
+        fatigue: {
+            tag: "Cellular Energy",
+            title: "NAD+ Therapy",
+            desc: "NAD+ is the engine of your cells. This protocol directly targets mitochondrial function to restore vital energy cycles, clear mental fog, and combat programmatic fatigue.",
+            icon: "fa-bolt"
+        },
+        body: {
+            tag: "Lipolytic Optimization",
+            title: "Tesamorelin Stack",
+            desc: "A potent option targeting visceral fat distribution. Promotes significant changes in metabolic body architecture while keeping your base energy levels highly optimized.",
+            icon: "fa-fire"
+        }
+    };
+
+    const symptomButtons = document.querySelectorAll('.btn-symptom');
+    const resultCard = document.getElementById('protocol-result');
+
+    if (symptomButtons.length > 0 && resultCard) {
+        symptomButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                
+                // 1. THE FIX: If the button is already active, do absolutely nothing
+                if (this.classList.contains('active')) return;
+                
+                // 2. Change active button styling
+                symptomButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const key = this.getAttribute('data-protocol');
+                const data = protocolData[key];
+                
+                // 3. Trigger CSS fade-out transition
+                resultCard.classList.add('fade-update');
+                
+                // 4. Wait for the CSS transition, then swap content and fade back in
+                setTimeout(() => {
+                    resultCard.innerHTML = `
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas ${data.icon} text-primary display-5 me-3"></i>
+                            <div>
+                                <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">${data.tag}</small>
+                                <h3 class="fw-bold mb-0" style="color: #204d57;">${data.title}</h3>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">${data.desc}</p>
+                        <div class="mt-auto">
+                            <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
+                        </div>
+                    `;
+                    resultCard.classList.remove('fade-update');
+                }, 200);
+            });
+        });
+    }
+
     // Process infinite track mapping for layout instances
     initInfiniteTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators');
     initInfiniteTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators');
