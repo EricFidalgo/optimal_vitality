@@ -938,7 +938,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initMobileTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators', false);
     initMobileTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators', true);
     initMobileTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators', false);
-    initMobileTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators', true);
+    initMobileTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators', false);
 
     // Initialize existing grid tracks
     initExistingTrack('myth-mobile-track', 'myth-mobile-indicators');

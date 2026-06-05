@@ -313,6 +313,13 @@ h6 {
   cursor: pointer;
 }
 
+.cta-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  text-decoration: none;
+}
+
 .cta-btn:focus,
 .cta-btn:active,
 .cta-btn:focus-visible {
@@ -324,6 +331,13 @@ h6 {
 
 .navbar .cta-btn {
   color: var(--secondary-color);
+}
+
+.navbar .cta-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  text-decoration: none;
 }
 
 .navbar .cta-btn:focus,
@@ -2333,64 +2347,73 @@ h6 {
 }
 
 /* ==========================================================================
-   28. ELIGIBILITY CHECKLIST
+   28. ELIGIBILITY CHECKLIST (OPTION 2)
    ========================================================================== */
-.eligibility-section {
-  background: var(--bg-light);
-  border-radius: 20px;
-  padding: 40px;
-  border: 1px solid rgba(32, 77, 87, 0.06);
-}
-
-.eligibility-col-head {
+.eligibility-badge {
+  display: inline-block;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 8px 18px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  background: rgba(230, 195, 129, 0.1);
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
-.eligibility-col-head.good {
-  background: rgba(32, 77, 87, 0.08);
+.eligibility-grid-card {
+  background: var(--bg-light);
+  border-radius: 18px;
+  padding: 32px 24px;
+  border: 1px solid rgba(32, 77, 87, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eligibility-grid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(32, 77, 87, 0.08);
+  border-color: rgba(230, 195, 129, 0.3);
+}
+
+.eligibility-icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(230, 195, 129, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.eligibility-grid-card:hover .eligibility-icon-circle {
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-.eligibility-col-head.muted {
-  background: rgba(0, 0, 0, 0.04);
-  color: #bbb;
+.eligibility-grid-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.eligibility-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 14px;
+.eligibility-grid-card p {
+  margin: 0;
   font-size: 0.9rem;
-  color: #444;
+  color: #555;
   line-height: 1.5;
-}
-
-.eligibility-item i.fa-check-circle {
-  color: var(--primary-color);
-  margin-top: 2px;
-  flex-shrink: 0;
-  font-size: 1rem;
-}
-
-.eligibility-item i.fa-times-circle {
-  color: #ddd;
-  margin-top: 2px;
-  flex-shrink: 0;
-  font-size: 1rem;
-}
-
-@media (max-width: 767.98px) {
-  .eligibility-section {
-    padding: 28px 22px;
-  }
 }
 
 /* ==========================================================================
@@ -2452,3 +2475,77 @@ h6 {
   #science .display-5 {
     font-size: 2.2rem !important;
   }
+
+/* ==========================================================================
+   30. SYMPTOM IDENTIFIER SECTION
+   ========================================================================== */
+.symptom-section {
+  background: var(--bg-white);
+  position: relative;
+}
+
+.symptom-eyebrow {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.2rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background: rgba(230, 195, 129, 0.1);
+  border: 1px solid rgba(230, 195, 129, 0.3);
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+}
+
+.symptom-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(32, 77, 87, 0.08);
+  border-radius: 12px;
+  padding: 18px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(32, 77, 87, 0.03);
+  text-align: center;
+  width: 100%;
+}
+
+.symptom-chip i {
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  transition: all 0.25s ease;
+}
+
+.symptom-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(32, 77, 87, 0.08);
+}
+
+@media (max-width: 992px) {
+  .symptom-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 600px;
+  }
+  
+  .symptom-chip {
+    padding: 14px 12px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+}
