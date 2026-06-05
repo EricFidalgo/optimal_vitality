@@ -1790,3 +1790,72 @@ h6 {
 .premium-services .carousel-indicators [data-bs-target] {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+
+
+/* ==========================================================================
+   Clinical Process Timeline & Visuals
+   ========================================================================== */
+
+.process-visual-container {
+  height: 520px;
+}
+
+/* Timeline Base */
+.process-timeline .step-indicator {
+  width: 45px;
+  flex-shrink: 0;
+}
+.process-timeline .step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  z-index: 2;
+  border: 3px solid var(--bg-white);
+  box-shadow: 0 0 0 2px rgba(230, 195, 129, 0.4) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.process-timeline .step-line {
+  width: 2px;
+  background-color: rgba(32, 77, 87, 0.1);
+  margin-top: 5px;
+  margin-bottom: -5px; 
+  min-height: 20px;
+}
+.process-timeline .step-card {
+  border-color: rgba(32,77,87,0.06) !important;
+  transition: all 0.4s ease;
+}
+
+/* Override Bootstrap Carousel Indicators logic */
+.custom-timeline-indicators [data-bs-target] {
+  width: 100% !important;
+  height: auto !important;
+  text-indent: 0 !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* Active "Glow" State on Desktop */
+.process-step.active .step-number {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0 18px 6px rgba(230, 195, 129, 0.7) !important;
+  border-color: var(--primary-color) !important;
+  transform: scale(1.15);
+}
+.process-step.active .step-card {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991.98px) {
+  .process-visual-container {
+    height: 300px; 
+  }
+}

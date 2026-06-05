@@ -721,6 +721,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 100);
     }
 
+    // Sync external timeline indicators with the Process Slideshow
+    const processSlideshow = document.getElementById('processSlideshow');
+    if (processSlideshow) {
+        processSlideshow.addEventListener('slide.bs.carousel', function (event) {
+            const activeIndex = event.to;
+            const timelineSteps = document.querySelectorAll('.custom-timeline-indicators .process-step');
+            
+            timelineSteps.forEach((step, index) => {
+                if (index === activeIndex) {
+                    step.classList.add('active');
+                    step.setAttribute('aria-current', 'true');
+                } else {
+                    step.classList.remove('active');
+                    step.removeAttribute('aria-current');
+                }
+            });
+        });
+    }
+
     // Process infinite track mapping for layout instances
     initInfiniteTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators');
     initInfiniteTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators');
