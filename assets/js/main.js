@@ -750,10 +750,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         function goToStep(target) {
-            document.querySelectorAll('.quiz-step-panel').forEach(p => p.classList.remove('active'));
-            const panel = document.getElementById(`quiz-step-${target}`);
-            if (panel) panel.classList.add('active');
+            const currentActive = quizContainer.querySelector('.quiz-step-panel.active');
             updateProgress(target);
+
+            // Global Back Button Visibility and State Management
+            const globalBackBtn = document.getElementById('global-quiz-back-btn');
+            if (globalBackBtn) {
+                if (target === 1 || target === 'result') {
+                    globalBackBtn.style.visibility = 'hidden';
+                } else {
+                    globalBackBtn.style.visibility = 'visible';
+                    globalBackBtn.setAttribute('data-quiz-back', target - 1);
+                }
+            }
+
+            if (currentActive) {
+                currentActive.classList.add('fade-out');
+                // Wait for the fade-out animation duration (200ms)
+                setTimeout(() => {
+                    currentActive.classList.remove('active', 'fade-out');
+                    const panel = document.getElementById(`quiz-step-${target}`);
+                    if (panel) {
+                        panel.classList.add('active');
+                    }
+                }, 200);
+            } else {
+                const panel = document.getElementById(`quiz-step-${target}`);
+                if (panel) {
+                    panel.classList.add('active');
+                }
+            }
         }
 
         function selectOption(btn, stepKey) {
@@ -819,6 +845,17 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!btn) return;
             selectOption(btn, btn.getAttribute('data-quiz-step'));
         });
+
+        // Wire global back button click
+        const globalBackBtn = document.getElementById('global-quiz-back-btn');
+        if (globalBackBtn) {
+            globalBackBtn.addEventListener('click', () => {
+                const targetStep = parseInt(globalBackBtn.getAttribute('data-quiz-back'));
+                if (targetStep) {
+                    goToStep(targetStep);
+                }
+            });
+        }
 
         // Initialize
         goToStep(1);

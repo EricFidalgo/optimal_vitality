@@ -1762,11 +1762,29 @@ h6 {
   margin-bottom: 1rem;
 }
 
-.quiz-progress {
+.quiz-progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.quiz-progress-side {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-progress-center {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  flex-grow: 1;
 }
 
 .quiz-step-dot {
@@ -1833,16 +1851,26 @@ h6 {
 
 .quiz-step-panel {
   display: none;
-  animation: quizSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .quiz-step-panel.active {
   display: block;
+  animation: quizFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@keyframes quizSlideIn {
-  from { opacity: 0; transform: translateX(24px); }
-  to   { opacity: 1; transform: translateX(0); }
+.quiz-step-panel.fade-out {
+  display: block;
+  animation: quizFadeOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes quizFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes quizFadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-12px); }
 }
 
 .quiz-question {
@@ -1859,6 +1887,26 @@ h6 {
   text-align: center;
   font-size: 0.9rem;
   margin-bottom: 2.5rem;
+}
+.quiz-back-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.quiz-back-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(230, 195, 129, 0.4);
+  color: var(--primary-color);
+  transform: translateX(-3px);
 }
 
 .quiz-options {
@@ -2035,9 +2083,35 @@ h6 {
 }
 
 @media (max-width: 576px) {
+  .quiz-back-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
   .quiz-options,
   .quiz-options.cols-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .quiz-options.cols-3 .quiz-option:last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
+  .quiz-option {
+    padding: 16px 12px;
+    gap: 6px;
+    border-radius: 12px;
+  }
+  .quiz-option-icon {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .quiz-option-title {
+    font-size: 0.82rem;
+    line-height: 1.2;
+  }
+  .quiz-option-desc {
+    font-size: 0.7rem;
+    line-height: 1.35;
   }
   .quiz-step-line {
     width: 40px;
