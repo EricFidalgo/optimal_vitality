@@ -473,6 +473,13 @@ h6 {
   text-decoration: none;
   animation: morphBlob 8s infinite alternate ease-in-out;
   cursor: pointer;
+  /* Smooth out the initialization and fallback animations */
+  transition: 
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+    background-color 0.4s ease, 
+    border-color 0.4s ease, 
+    box-shadow 0.5s ease, 
+    color 0.3s ease;
 }
 
 .service-blob:hover {
@@ -493,7 +500,8 @@ h6 {
   font-size: 2.2rem;
   color: var(--primary-color);
   margin-bottom: 12px;
-  transition: all 0.3s ease;
+  /* Ensure the icon scales beautifully on hover */
+  transition: color 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .service-blob:hover .icon {

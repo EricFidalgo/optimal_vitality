@@ -508,6 +508,50 @@ document.addEventListener("DOMContentLoaded", function () {
             );
         });
 
+        // ---------------------------------------------------------------------
+        // HERO ENTRANCE SEQUENCE (index.html)
+        // ---------------------------------------------------------------------
+        const heroContent = document.querySelector('.hero-content');
+        const heroActions = document.querySelector('.hero-actions');
+        const blobs = document.querySelectorAll('.service-blob');
+
+        // Only trigger on the homepage where these elements exist simultaneously
+        if (heroContent && heroActions && blobs.length > 0) {
+            // Step 1: Temporarily hide actions and set content down to make it appear visually centered
+            gsap.set(heroActions, { opacity: 0 });
+            gsap.set(heroContent, { y: 120, opacity: 0 });
+            gsap.set(blobs, { scale: 0, opacity: 0 });
+
+            const tl = gsap.timeline({ delay: 0.15 });
+
+            // 1. Reveal main heading text directly in its lowered, "centered" position
+            tl.to(heroContent, {
+                opacity: 1,
+                duration: .2,
+                ease: 'power2.out'
+            })
+            // 2. Smoothly slide the text up to its natural location, fading in the button right behind it
+            .to(heroContent, {
+                y: 0,
+                duration: 0.9,
+                ease: 'power3.inOut'
+            }, '+=0.3') // Brief pause in the center before swiping up
+            .to(heroActions, {
+                opacity: 1,
+                duration: 0.6,
+                ease: 'power2.out'
+            }, '-=0.5')
+            // 3. Pop up the service menu bubbles sequentially one-by-one
+            .to(blobs, {
+                scale: 1,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.08,
+                ease: 'back.out(1.4)',
+                clearProps: 'transform,opacity' // Clears GSAP inline styles so CSS morphing and hovers work perfectly
+            }, '-=0.3');
+        }
+
         // Mobile Sticky CTA — show after the hero scrolls out of view
         const mobileCta = document.getElementById('mobile-sticky-cta');
         const heroHeader = document.querySelector('.hero');
