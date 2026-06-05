@@ -1517,3 +1517,10 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 !important; /* Removes the existing 'me-2' right margin */
     }
 }
+
+/* Hide Desktop Portfolio Grid on Mobile */
+@media (max-width: 991.98px) {
+    #portfolio-desktop {
+        display: none !important;
+    }
+}

@@ -1,11 +1,9 @@
-// scripts/main.js
-
+// scripts/main.js 
 document.addEventListener("DOMContentLoaded", function() {
-
     // Dynamic Blob Container Menu Builder
     const blobContainer = document.querySelector('.blob-menu-container');
     if (blobContainer && clinicData.services) {
-        blobContainer.innerHTML = ''; 
+        blobContainer.innerHTML = '';          
         clinicData.services.forEach(service => {
             blobContainer.innerHTML += `
                 <a href="${service.href}" class="service-blob" style="animation-delay: ${service.delay};">
@@ -15,12 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
             `;
         });
     }
-    
+         
     // --- 1. RENDER DYNAMIC DATA ---
     function renderDynamicContent() {
         const desktopNav = document.getElementById('main-navbar-links');
         const mobileNav = document.getElementById('mobile-navbar-links');
-
         if (clinicData.navigation) {
             if (desktopNav) {
                 desktopNav.innerHTML = clinicData.navigation.map(link => 
@@ -33,16 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 ).join('');
             }
         }
-        
+                 
         if (typeof clinicData === 'undefined') {
             console.error("clinicData not found. Ensure data.js is loaded before main.js.");
             return;
         }
-
         // Core Therapies Tabs & Content
         const tabsContainer = document.getElementById('therapy-tabs');
         const contentContainer = document.getElementById('therapy-tabs-content');
-        
+                 
         if (tabsContainer && contentContainer && clinicData.services) {
             const coreServices = clinicData.services.filter(s => s.type === 'core');
             coreServices.forEach((therapy, index) => {
@@ -50,13 +46,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 const isShow = index === 0 ? 'show active' : '';
                 const rowReverse = index % 2 !== 0 ? 'flex-lg-row-reverse' : '';
                 const focusClass = index % 2 !== 0 ? 'top-focus' : 'center-focus';
-                
+                                 
                 tabsContainer.innerHTML += `
                     <li class="nav-item" role="presentation">
                         <button class="nav-link ${isActive} premium-tab" id="${therapy.id}-tab" data-bs-toggle="pill" data-bs-target="#${therapy.id}" type="button" role="tab">${therapy.tabLabel}</button>
                     </li>
                 `;
-
                 const featuresHtml = therapy.features.map(f => `<li><i class="fas fa-check-circle me-3"></i> ${f}</li>`).join('');
                 contentContainer.innerHTML += `
                     <div class="tab-pane fade ${isShow}" id="${therapy.id}" role="tabpanel" tabindex="0">
@@ -80,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
             });
         }
-
         // Additional Services
         const servicesGrid = document.getElementById('services-grid');
         if (servicesGrid && clinicData.services) {
@@ -100,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
             });
         }
-
         // Team 
         const teamList = document.getElementById('team-list');
         if (teamList && clinicData.team) {
@@ -114,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
             });
         }
-
         // FAQs
         const faqAccordion = document.getElementById('faqAccordion');
         if (faqAccordion && clinicData.faqs) {
@@ -137,22 +129,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 `;
             });
         }
-
         // Testimonials (Mobile & Desktop)
         const mobileInner = document.getElementById('mobile-testimonial-inner');
         const mobileIndicators = document.getElementById('mobile-testimonial-indicators');
         const desktopInner = document.getElementById('desktop-testimonial-inner');
         const desktopIndicators = document.getElementById('desktop-testimonial-indicators');
-
         if (mobileInner && desktopInner && clinicData.testimonials) {
-            
+                         
             // 1. Mobile: Native Momentum Scroll Cards & Indicators (Mega-Track Infinite Loop)
             mobileInner.innerHTML = '';
             if (mobileIndicators) mobileIndicators.innerHTML = '';
-
             const originals = clinicData.testimonials;
             const numOriginals = originals.length;
-
             // Generate Dots for the original testimonials only
             originals.forEach((testimony, index) => {
                 if (mobileIndicators) {
@@ -160,7 +148,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     mobileIndicators.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${isActive}"></button>`;
                 }
             });
-
             // Helper to generate consistent card HTML structures
             function createCardHtml(testimony, originalIndex) {
                 return `
@@ -186,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 `;
             }
-
             // Render 20 repeating sets to create an unbreakable infinite track
             const SETS = 20;
             for (let i = 0; i < SETS; i++) {
@@ -194,18 +180,16 @@ document.addEventListener("DOMContentLoaded", function() {
                     mobileInner.innerHTML += createCardHtml(testimony, index);
                 });
             }
-
             // Initialize Mobile Scroll Sync & Seamless Teleportation
             setTimeout(() => {
                 const items = mobileInner.querySelectorAll('.native-scroll-item');
                 const dots = mobileIndicators ? mobileIndicators.querySelectorAll('button') : [];
-                
+                                 
                 // Start exactly in the middle set
                 const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
                 if (items[middleStartIndex]) {
                     mobileInner.scrollLeft = items[middleStartIndex].offsetLeft - (mobileInner.clientWidth - items[middleStartIndex].clientWidth) / 2;
                 }
-
                 // Sync indicators via Intersection Observer
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
@@ -216,9 +200,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     });
                 }, { root: mobileInner, threshold: 0.6 });
-                
+                                 
                 items.forEach(item => observer.observe(item));
-
                 // Silently teleport back to the middle when scrolling completely stops
                 let scrollTimeout;
                 mobileInner.addEventListener('scroll', () => {
@@ -226,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     scrollTimeout = setTimeout(() => {
                         const currentScroll = mobileInner.scrollLeft;
                         const maxScroll = mobileInner.scrollWidth - mobileInner.clientWidth;
-                        
+                                                 
                         // If scrolled into the outer 15% boundaries of the mega-track
                         if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
                             const activeDot = mobileIndicators.querySelector('.active');
@@ -234,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 const activeIdx = parseInt(activeDot.getAttribute('data-index'));
                                 const centerTargetIndex = middleStartIndex + activeIdx;
                                 const targetItem = items[centerTargetIndex];
-                                
+                                                                 
                                 mobileInner.style.scrollBehavior = 'auto'; // Temporarily disable smooth scroll
                                 mobileInner.scrollLeft = targetItem.offsetLeft - (mobileInner.clientWidth - targetItem.clientWidth) / 2;
                                 setTimeout(() => { mobileInner.style.scrollBehavior = 'smooth'; }, 50);
@@ -242,16 +225,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         }
                     }, 150);
                 });
-
                 // Indicator pill clicks navigate to the closest identical clone
                 dots.forEach((dot, idx) => {
                     dot.addEventListener('click', () => {
                         const currentScroll = mobileInner.scrollLeft;
                         const matchingItems = Array.from(items).filter(item => parseInt(item.getAttribute('data-original-index')) === idx);
-                        
+                                                 
                         let closestItem = matchingItems[0];
                         let minDiff = Infinity;
-                        
+                                                 
                         matchingItems.forEach(item => {
                             const diff = Math.abs(item.offsetLeft - currentScroll);
                             if (diff < minDiff) {
@@ -259,25 +241,21 @@ document.addEventListener("DOMContentLoaded", function() {
                                 closestItem = item;
                             }
                         });
-
                         if (closestItem) {
                             closestItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                         }
                     });
                 });
             }, 100);
-
             // 2. Desktop Carousel (2 per slide)
-
-            // Desktop Carousel (2 per slide)
             let desktopIndex = 0;
             for (let i = 0; i < clinicData.testimonials.length; i += 2) {
                 const isActive = desktopIndex === 0 ? 'active' : '';
                 const t1 = clinicData.testimonials[i];
                 const t2 = clinicData.testimonials[i + 1];
-                
+                                 
                 desktopIndicators.innerHTML += `<button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="${desktopIndex}" class="${isActive}"></button>`;
-                
+                                 
                 let t2Html = t2 ? `
                     <div class="col-6">
                         <div class="testimonial-box bg-white p-4 rounded-4 shadow-sm position-relative overflow-hidden h-100">
@@ -298,7 +276,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                     </div>
                 ` : `<div class="col-6"></div>`;
-
                 desktopInner.innerHTML += `
                     <div class="carousel-item ${isActive}">
                         <div class="row g-4 h-100">
@@ -327,14 +304,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 desktopIndex++;
             }
         }
-
         // Footer Services Navigation List Builder (Includes All 6 Services)
         const footerServicesList = document.getElementById('footer-services-list');
         if (footerServicesList && clinicData.services) {
             footerServicesList.innerHTML = ''; 
             clinicData.services.forEach((service, index) => {
                 const isLast = index === clinicData.services.length - 1;
-                
+                                 
                 footerServicesList.innerHTML += `
                     <li class="${isLast ? 'mb-0' : 'mb-3'}">
                         <a href="${service.href}" class="text-white-50 text-decoration-none footer-service-link">
@@ -345,21 +321,17 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     }
-
     // Call render first
     renderDynamicContent();
 
     // --- 2. UI LOGIC ---
-
     // Mobile Menu Auto-Close
     const navLinks = document.querySelectorAll('a.nav-link, a.cta-btn, .hormone-cta a, .navbar-brand');
     const offcanvasElement = document.getElementById('mobileMenu');
     let offcanvasInstance = null;
-
     if (offcanvasElement) {
         offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
     }
-
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             if (this.getAttribute('href') === '#') {
@@ -371,7 +343,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
     function handleNavbarScroll() {
@@ -386,12 +357,9 @@ document.addEventListener("DOMContentLoaded", function() {
     handleNavbarScroll();
 
     // GSAP Animations
-    // ==========================================================================
-    // Shared Scroll Trigger & Sub-Page Interaction Logic
-    // ==========================================================================
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
-        
+                 
         // Universal Scroll Reveal Animation - Smoothed & Shortened
         const revealElements = document.querySelectorAll('.gs-reveal');
         if (revealElements.length > 0) {
@@ -412,12 +380,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 );
             });
         }
-
         // Mobile Sticky CTA Tracker
         const mobileCta = document.getElementById('mobile-sticky-cta');
         const heroHeader = document.querySelector('.hero');
         const mobileMenuEl = document.getElementById('mobileMenu');
-        
+                 
         if (mobileCta && heroHeader) {
             ScrollTrigger.create({
                 trigger: heroHeader,
@@ -425,7 +392,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 onEnter: () => mobileCta.classList.add('visible'),
                 onLeaveBack: () => mobileCta.classList.remove('visible')
             });
-
             // Hide sticky button when mobile offcanvas nav opens, restore when it closes
             if (mobileMenuEl) {
                 mobileMenuEl.addEventListener('show.bs.offcanvas', () => {
@@ -437,11 +403,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-
     // Blob Performance Optimizer
     const heroSection = document.querySelector('.hero');
     const blobs = document.querySelectorAll('.service-blob');
-
     if (heroSection && blobs.length > 0) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -454,46 +418,37 @@ document.addEventListener("DOMContentLoaded", function() {
         }, { threshold: 0 });
         observer.observe(heroSection);
     }
-
     // Auto-Cycling Tabs
     const tabs = document.querySelectorAll('#therapy-tabs .premium-tab');
     const tabContainer = document.getElementById('core-therapies');
-
     if (tabs.length > 0 && tabContainer) {
         let currentTabIndex = 0;
         let tabInterval;
         const intervalTime = 15000;
-
         function cycleTabs() {
             currentTabIndex = (currentTabIndex + 1) % tabs.length;
             const nextTab = new bootstrap.Tab(tabs[currentTabIndex]);
             nextTab.show();
         }
-
         function startInterval() {
             if (!tabInterval) {
                 tabInterval = setInterval(cycleTabs, intervalTime);
             }
         }
-
         function stopInterval() {
             clearInterval(tabInterval);
             tabInterval = null;
         }
-
         startInterval();
-
         tabContainer.addEventListener('mouseenter', stopInterval);
         tabContainer.addEventListener('mouseleave', startInterval);
         tabContainer.addEventListener('touchstart', stopInterval);
-
         tabs.forEach((tab, index) => {
             tab.addEventListener('shown.bs.tab', () => {
                 currentTabIndex = index;
             });
         });
     }
-
     // Testimonial Height Matcher
     function setMaxTestimonialHeight() {
         document.querySelectorAll('.testimonial-box').forEach(box => {
@@ -501,34 +456,29 @@ document.addEventListener("DOMContentLoaded", function() {
             box.style.removeProperty('height');
             box.style.removeProperty('min-height');
         });
-
         ['#testimonialMobile', '#testimonialDesktop'].forEach(id => {
             const carousel = document.querySelector(id);
             if (carousel && window.getComputedStyle(carousel).display !== 'none') {
                 const items = carousel.querySelectorAll('.carousel-item');
                 const boxes = carousel.querySelectorAll('.testimonial-box');
                 let maxHeight = 0;
-
                 items.forEach(item => {
                     if (!item.classList.contains('active')) {
                         item.style.setProperty('display', 'block', 'important');
                         item.style.setProperty('visibility', 'hidden', 'important');
                     }
                 });
-
                 boxes.forEach(box => {
                     if (box.offsetHeight > maxHeight) {
                         maxHeight = box.offsetHeight;
                     }
                 });
-
                 items.forEach(item => {
                     if (!item.classList.contains('active')) {
                         item.style.removeProperty('display');
                         item.style.removeProperty('visibility');
                     }
                 });
-
                 if (maxHeight > 0) {
                     boxes.forEach(box => {
                         box.style.setProperty('min-height', `${maxHeight}px`, 'important');
@@ -537,26 +487,124 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-
     if (document.fonts && document.fonts.ready) {
         document.fonts.ready.then(setMaxTestimonialHeight);
     } else {
         window.addEventListener('load', setMaxTestimonialHeight);
     }
-
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(setMaxTestimonialHeight, 150);
     });
 
-    // Mobile Scroll Progress Indicator Logic
-window.updateScrollProgress = function(container, barId) {
-    const bar = document.getElementById(barId);
-    if (!bar) return;
-    const scrollRatio = container.scrollLeft / (container.scrollWidth - container.clientWidth);
-    // Move the 30% width bar left from 0% to 70%
-    bar.style.left = `${scrollRatio * 70}%`; 
-};
+    // ==========================================================================
+    // MULTI-SECTION DYNAMIC MOBILE INFINITE SWIPE TRACKS Engine
+    // ==========================================================================
+    function initInfiniteTrack(desktopId, trackId, dotsId) {
+        const desktopContainer = document.getElementById(desktopId);
+        const mobileTrack = document.getElementById(trackId);
+        const mobileDots = document.getElementById(dotsId);
 
+        if (!desktopContainer || !mobileTrack || !mobileDots) return;
+
+        const originals = Array.from(desktopContainer.children);
+        const numOriginals = originals.length;
+        if (numOriginals === 0) return;
+
+        // 1. Generate active dot metrics
+        originals.forEach((_, index) => {
+            const isActive = index === 0 ? 'active' : '';
+            mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${isActive}"></button>`;
+        });
+
+        // 2. Map structure clones 20 times for infinite track scaling
+        const SETS = 20;
+        for (let i = 0; i < SETS; i++) {
+            originals.forEach((item, index) => {
+                const clone = document.createElement('div');
+                clone.className = 'native-scroll-item';
+                clone.setAttribute('data-original-index', index);
+                
+                if (item.className.match(/\bcol-/)) {
+                    clone.innerHTML = item.innerHTML;
+                } else {
+                    clone.appendChild(item.cloneNode(true));
+                }
+                mobileTrack.appendChild(clone);
+            });
+        }
+
+        // 3. Coordinate telemetry teleportation & position indexes
+        setTimeout(() => {
+            const items = mobileTrack.querySelectorAll('.native-scroll-item');
+            const dots = mobileDots.querySelectorAll('button');
+            
+            const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
+            if (items[middleStartIndex]) {
+                mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const originalIdx = entry.target.getAttribute('data-original-index');
+                        dots.forEach(dot => dot.classList.remove('active'));
+                        if (dots[originalIdx]) dots[originalIdx].classList.add('active');
+                    }
+                });
+            }, { root: mobileTrack, threshold: 0.6 });
+
+            items.forEach(item => observer.observe(item));
+
+            let scrollTimeout;
+            mobileTrack.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const currentScroll = mobileTrack.scrollLeft;
+                    const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
+                    
+                    if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
+                        const activeDot = mobileDots.querySelector('.active');
+                        if (activeDot) {
+                            const activeIdx = parseInt(activeDot.getAttribute('data-index'));
+                            const centerTargetIndex = middleStartIndex + activeIdx;
+                            const targetItem = items[centerTargetIndex];
+                            
+                            mobileTrack.style.scrollBehavior = 'auto';
+                            mobileTrack.scrollLeft = targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2;
+                            setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
+                        }
+                    }
+                }, 150);
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => {
+                    const currentScroll = mobileTrack.scrollLeft;
+                    const matchingItems = Array.from(items).filter(item => parseInt(item.getAttribute('data-original-index')) === idx);
+                    
+                    let closestItem = matchingItems[0];
+                    let minDiff = Infinity;
+                    
+                    matchingItems.forEach(item => {
+                        const diff = Math.abs(item.offsetLeft - currentScroll);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestItem = item;
+                        }
+                    });
+                    
+                    if (closestItem) {
+                        closestItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                });
+            });
+        }, 100);
+    }
+
+    // Process infinite track mapping for layout instances
+    initInfiniteTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators');
+    initInfiniteTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators');
+    initInfiniteTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators');
 });
