@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         `;
                         const dropdownItems = link.dropdown.map(subLink =>
                             `<li class="w-100 mb-3">
-                                <a class="d-block p-2 text-decoration-none text-white text-center" href="${subLink.href}" style="font-size: 1.1rem; letter-spacing: 1px;">${subLink.label}</a>
+                                <a class="d-block p-2 text-decoration-none text-white text-center" href="${subLink.href}" style="font-size: 1.1rem; letter-spacing: 1px; font-weight:900; text-transform: uppercase;">${subLink.label}</a>
                             </li>`
                         ).join('');
                         
@@ -174,13 +174,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
         // Additional Services
-        const servicesGrid = document.getElementById('services-grid');
-        if (servicesGrid && clinicData.services) {
+        const servicesDesktop = document.getElementById('services-desktop');
+        if (servicesDesktop && clinicData.services) {
             const additionalServices = clinicData.services.filter(s => s.type === 'additional');
             additionalServices.forEach(service => {
-                servicesGrid.innerHTML += `
-                    <div class="col-lg-5 col-md-6">
-                        <div class="service-grid-card">
+                servicesDesktop.innerHTML += `
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-grid-card h-100">
                             <div class="card-icon">
                                 <i class="fas ${service.icon}"></i>
                             </div>
@@ -725,4 +725,5 @@ document.addEventListener("DOMContentLoaded", function() {
     initInfiniteTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators');
     initInfiniteTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators');
     initInfiniteTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators');
+    initInfiniteTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators');
 });
