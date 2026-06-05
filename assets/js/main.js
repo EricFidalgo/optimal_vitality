@@ -15,19 +15,118 @@ document.addEventListener("DOMContentLoaded", function() {
     }
          
     // --- 1. RENDER DYNAMIC DATA ---
+    // --- 1. RENDER DYNAMIC DATA ---
     function renderDynamicContent() {
         const desktopNav = document.getElementById('main-navbar-links');
         const mobileNav = document.getElementById('mobile-navbar-links');
+
         if (clinicData.navigation) {
+            
+            // 1. DESKTOP NAV (Standard Bootstrap Dropdown + Smooth CSS)
             if (desktopNav) {
-                desktopNav.innerHTML = clinicData.navigation.map(link => 
-                    `<li class="nav-item"><a class="nav-link" href="${link.href}">${link.label}</a></li>`
-                ).join('');
+                desktopNav.innerHTML = clinicData.navigation.map(link => {
+                    if (link.dropdown) {
+                        const dropdownItems = link.dropdown.map(subLink => 
+                            `<li><a class="dropdown-item fw-bold text-uppercase" style="font-size: 0.85rem;" href="${subLink.href}">${subLink.label}</a></li>`
+                        ).join('');
+                        
+                        return `
+                            <li class="nav-item dropdown custom-desktop-dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ${link.label} <i class="fas fa-chevron-down dropdown-icon" style="font-size: 0.75rem;"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark custom-desktop-menu shadow-lg">
+                                    ${dropdownItems}
+                                </ul>
+                            </li>
+                        `;
+                    } else {
+                        return `<li class="nav-item"><a class="nav-link" href="${link.href}">${link.label}</a></li>`;
+                    }
+                }).join('');
             }
+
+            // 2. MOBILE NAV (App-Style Sliding Folder Drill-Down)
             if (mobileNav) {
-                mobileNav.innerHTML = clinicData.navigation.map(link => 
-                    `<li class="nav-item"><a class="nav-link" href="${link.href}">${link.label}</a></li>`
-                ).join('');
+                mobileNav.className = 'w-100 mt-4 position-relative flex-grow-1';
+                mobileNav.style.listStyle = 'none';
+                mobileNav.style.padding = '0';
+                mobileNav.style.overflow = 'hidden';
+
+                let mainLinks = '';
+                let subPanels = '';
+
+                clinicData.navigation.forEach((link, index) => {
+                    if (link.dropdown) {
+                        // Fixed: Centered flexbox to match the other links
+                        mainLinks += `
+                            <li class="w-100 mb-3">
+                                <a class="mobile-drill-open d-flex justify-content-center align-items-center gap-2 p-2 text-decoration-none text-white fw-bold" href="#" data-target="panel-${index}" style="font-size: 1.3rem; letter-spacing: 1px;">
+                                    ${link.label} <i class="fas fa-chevron-right text-primary" style="font-size: 1rem;"></i>
+                                </a>
+                            </li>
+                        `;
+                        const dropdownItems = link.dropdown.map(subLink =>
+                            `<li class="w-100 mb-3">
+                                <a class="d-block p-2 text-decoration-none text-white text-center" href="${subLink.href}" style="font-size: 1.1rem; letter-spacing: 1px;">${subLink.label}</a>
+                            </li>`
+                        ).join('');
+                        
+                        subPanels += `
+                            <div id="panel-${index}" class="mobile-sub-panel">
+                                <button class="btn mobile-drill-back text-primary fw-bold text-uppercase mb-4 mt-2 w-100 d-flex align-items-center justify-content-center gap-2" style="font-size: 1.1rem; letter-spacing: 1px; border: none; background: transparent;">
+                                    <i class="fas fa-chevron-left"></i> Back to Menu
+                                </button>
+                                <ul class="p-0 m-0 w-100" style="list-style: none;">
+                                    ${dropdownItems}
+                                </ul>
+                            </div>
+                        `;
+                    } else {
+                        mainLinks += `
+                            <li class="w-100 mb-3">
+                                <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${link.href}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
+                            </li>
+                        `;
+                    }
+                });
+
+                mobileNav.innerHTML = `
+                    <div class="mobile-nav-main w-100" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);">
+                        <ul class="p-0 m-0 w-100" style="list-style: none;">
+                            ${mainLinks}
+                        </ul>
+                    </div>
+                    ${subPanels}
+                `;
+
+                // Attach Slide-In / Slide-Out Events
+                setTimeout(() => {
+                    const mainView = mobileNav.querySelector('.mobile-nav-main');
+                    
+                    mobileNav.querySelectorAll('.mobile-drill-open').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const targetId = btn.getAttribute('data-target');
+                            const panel = document.getElementById(targetId);
+                            if(panel) {
+                                panel.classList.add('active');
+                                mainView.style.transform = 'translateX(-100%)';
+                            }
+                        });
+                    });
+
+                    mobileNav.querySelectorAll('.mobile-drill-back').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const panel = btn.closest('.mobile-sub-panel');
+                            if(panel) {
+                                panel.classList.remove('active');
+                                mainView.style.transform = 'translateX(0)';
+                            }
+                        });
+                    });
+                }, 50);
             }
         }
                  
