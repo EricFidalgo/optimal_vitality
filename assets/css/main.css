@@ -1,3 +1,10 @@
+/* ==========================================================================
+   OPTIMAL VITALITY — MAIN STYLESHEET
+   ========================================================================== */
+
+/* ==========================================================================
+   1. DESIGN TOKENS & BASE
+   ========================================================================== */
 :root {
   --primary-color: #e6c381;
   --secondary-color: #204d57;
@@ -21,6 +28,9 @@ body {
   position: relative;
 }
 
+/* ==========================================================================
+   2. TYPOGRAPHY
+   ========================================================================== */
 b,
 strong,
 .fw-bold {
@@ -58,6 +68,137 @@ h6 {
   border-radius: 2px;
 }
 
+/* Utility class used by footer headings */
+.font-family-bebas {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   3. BOOTSTRAP OVERRIDES & UTILITIES
+   ========================================================================== */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.bg-light {
+  background-color: var(--bg-light) !important;
+}
+.bg-primary {
+  background-color: var(--secondary-color) !important;
+}
+.max-w-700 {
+  max-width: 700px;
+}
+/* Used in peptides.html hero container */
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Inline icon width used by footer contact rows */
+.w-15px {
+  width: 15px;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(32, 77, 87, 0.08) !important;
+  border-color: rgba(230, 195, 129, 0.4) !important;
+}
+
+/* ==========================================================================
+   4. CAROUSEL / INDICATOR SHARED STYLES
+   ========================================================================== */
+.carousel-indicators {
+  gap: 4px;
+}
+
+.carousel-indicators button,
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(32, 77, 87, 0.25);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  transition:
+    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary-color) !important;
+  width: 28px !important;
+  border-radius: 20px !important;
+}
+
+/* Override Bootstrap carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 40%;
+}
+
+/* Custom carousel nav button */
+.custom-carousel-controls {
+  width: 100%;
+}
+
+.custom-carousel-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--secondary-color), #143239);
+  border: 1px solid rgba(230, 195, 129, 0.3);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(32, 77, 87, 0.2);
+  z-index: 5;
+  padding: 0;
+}
+
+.custom-carousel-btn i {
+  margin-top: 1px;
+}
+
+.custom-carousel-btn:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(230, 195, 129, 0.4);
+  border-color: var(--primary-color);
+}
+
+.custom-carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.custom-carousel-controls .carousel-indicators {
+  bottom: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Light indicator variant inside dark sections */
+.premium-services .carousel-indicators button,
+.premium-services .carousel-indicators [data-bs-target] {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   5. NAVBAR
+   ========================================================================== */
 .navbar {
   background-color: transparent;
   padding: 1.5rem 0;
@@ -81,6 +222,10 @@ h6 {
   transition: transform 0.3s ease;
 }
 
+.navbar-brand:hover {
+  transform: scale(1.02);
+}
+
 .logo-img {
   height: 50px;
   width: 50px;
@@ -97,7 +242,6 @@ h6 {
 }
 
 .brand-title {
-  font-family: "Poppins", sans-serif;
   color: var(--bg-white);
   font-size: 1.5rem;
   font-weight: 800;
@@ -108,7 +252,6 @@ h6 {
 }
 
 .brand-subtitle {
-  font-family: "Poppins", sans-serif;
   color: var(--primary-color);
   font-size: 0.85rem;
   font-weight: 800;
@@ -118,12 +261,7 @@ h6 {
   margin-bottom: 0;
 }
 
-.navbar-brand:hover {
-  transform: scale(1.02);
-}
-
 .navbar .nav-link {
-  font-family: "Poppins", sans-serif;
   color: var(--bg-white) !important;
   font-weight: 600;
   text-transform: uppercase;
@@ -152,6 +290,84 @@ h6 {
   color: var(--primary-color) !important;
 }
 
+.nav-link:focus,
+.dropdown-toggle:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   6. CTA BUTTON
+   ========================================================================== */
+.cta-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.2s ease;
+  border: 2px solid var(--primary-color);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.cta-btn:focus,
+.cta-btn:active,
+.cta-btn:focus-visible {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .cta-btn {
+  color: var(--secondary-color);
+}
+
+.navbar .cta-btn:focus,
+.navbar .cta-btn:active {
+  background-color: #cda863;
+  color: var(--secondary-color);
+  border-color: #cda863;
+}
+
+.hero .cta-btn {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero .cta-btn:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero .cta-btn:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer .cta-btn {
+  font-size: 1.3rem;
+  padding: 1.2rem 3.5rem;
+  box-shadow: 0 10px 30px rgba(230, 195, 129, 0.2);
+  border-width: 3px;
+  margin-top: 1rem;
+}
+
+.footer .cta-btn:hover {
+  box-shadow: 0 15px 40px rgba(230, 195, 129, 0.3);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Peptide page hero CTA — transparent outline variant */
+#empty-bg-button {
+  background-color: transparent !important;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   7. HERO SECTION
+   ========================================================================== */
 .hero {
   background: radial-gradient(
     circle at center,
@@ -207,14 +423,12 @@ h6 {
 }
 
 .hero p {
-  font-family: "Poppins", sans-serif;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: var(--bg-white);
   font-weight: 500;
   max-width: 480px;
   margin: 0 auto;
   line-height: 1.6;
-  opacity: 1;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -227,6 +441,9 @@ h6 {
   z-index: 3;
 }
 
+/* ==========================================================================
+   8. BLOB SERVICE MENU (Hero)
+   ========================================================================== */
 .blob-menu-container {
   position: relative;
   margin-top: 4rem;
@@ -265,7 +482,6 @@ h6 {
   border-color: var(--primary-color);
   box-shadow: 0 15px 35px rgba(230, 195, 129, 0.4);
   animation-play-state: paused;
-  opacity: 1;
   font-weight: 800;
 }
 
@@ -286,7 +502,6 @@ h6 {
 }
 
 .blob-title {
-  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
@@ -296,77 +511,15 @@ h6 {
 }
 
 @keyframes morphBlob {
-  0% {
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  }
-  34% {
-    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-  }
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-  }
-  100% {
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  }
+  0%   { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  34%  { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
+  67%  { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+  100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
 }
 
-.cta-btn {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 4px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0.75rem 1.75rem;
-  transition: all 0.2s ease;
-  border: 2px solid var(--primary-color);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.cta-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.cta-btn:focus,
-.cta-btn:active,
-.cta-btn:focus-visible {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-color: var(--primary-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.navbar .cta-btn {
-  color: var(--secondary-color);
-}
-
-.navbar .cta-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.navbar .cta-btn:focus,
-.navbar .cta-btn:active {
-  background-color: #cda863;
-  color: var(--secondary-color);
-  border-color: #cda863;
-}
-
-.hero .cta-btn {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.hero .cta-btn:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.hero .cta-btn:active {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
+/* ==========================================================================
+   9. HORMONE BANNER
+   ========================================================================== */
 .hormone-banner {
   background: linear-gradient(
     135deg,
@@ -399,16 +552,18 @@ h6 {
 }
 
 @keyframes shine {
-  100% {
-    left: 200%;
-  }
+  100% { left: 200%; }
 }
 
+/* ==========================================================================
+   10. CORE THERAPIES SECTION
+   ========================================================================== */
 .section-light {
   background: linear-gradient(180deg, var(--bg-white) 0%, #f4f6f8 100%);
   position: relative;
 }
 
+/* Premium image box */
 .premium-box {
   border: 4px solid var(--primary-color);
   border-radius: 24px;
@@ -449,313 +604,7 @@ h6 {
   object-position: center;
 }
 
-.premium-services {
-  background: radial-gradient(
-    circle at top right,
-    #112a2f 0%,
-    var(--secondary-color) 100%
-  );
-  position: relative;
-  overflow: hidden;
-  border-bottom: 2px solid rgba(230, 195, 129, 0.2);
-}
-
-.premium-services::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--primary-color),
-    transparent
-  );
-}
-
-.premium-services .section-title::after {
-  background-color: var(--primary-color);
-}
-
-.service-grid-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(230, 195, 129, 0.15);
-  border-radius: 20px;
-  padding: 40px 30px;
-  height: 100%;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  padding-bottom: 80px;
-}
-
-.service-grid-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at top left,
-    rgba(230, 195, 129, 0.1),
-    transparent 70%
-  );
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.4s ease;
-}
-
-@media (hover: hover) {
-  .service-grid-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary-color);
-    box-shadow:
-      0 15px 35px rgba(0, 0, 0, 0.4),
-      0 0 20px rgba(230, 195, 129, 0.1);
-  }
-
-  .service-grid-card:hover::before {
-    opacity: 1;
-  }
-
-  /* Keep this inside hover query for desktop mouse setups only */
-  .service-grid-card:hover .card-icon {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4);
-  }
-}
-
-/* Static base styling */
-.service-grid-card .card-icon {
-  width: 70px;
-  height: 70px;
-  background: rgba(230, 195, 129, 0.1);
-  border: 2px solid var(--primary-color);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 25px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* New Mobile Scroll-Focus Activation Rule */
-.native-scroll-item.active-slide .service-grid-card .card-icon {
-  background: var(--primary-color) !important;
-  color: var(--secondary-color) !important;
-  transform: scale(1.1) rotate(5deg) !important;
-  box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4) !important;
-}
-
-.service-grid-card .card-title {
-  font-size: 1.8rem;
-  color: var(--bg-white);
-  margin-bottom: 15px;
-  letter-spacing: 1.5px;
-}
-
-.service-grid-card .card-text {
-  color: white;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
-}
-
-.service-link {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--primary-color);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  position: absolute;
-  bottom: 35px;
-}
-
-.service-link i {
-  transition: transform 0.3s ease;
-}
-
-.service-link:hover {
-  color: var(--bg-white);
-}
-
-.service-link:hover i {
-  transform: translateX(8px);
-  color: var(--primary-color);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: var(--secondary-color);
-  border-radius: 50%;
-  padding: 20px;
-  background-size: 40%;
-}
-
-.carousel-indicators {
-  gap: 4px;
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: rgba(32, 77, 87, 0.25);
-  width: 10px;
-  height: 100px; /* Reset fallback */
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  margin: 0;
-  transition:
-    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.3s ease,
-    border-radius 0.3s ease;
-}
-
-.carousel-indicators .active {
-  background-color: var(--primary-color);
-  width: 28px; /* Wide active pill */
-  border-radius: 20px;
-}
-
-.trust-section {
-  background: linear-gradient(135deg, #112a2f 0%, var(--secondary-color) 100%);
-  position: relative;
-}
-
-.trust-section h2 {
-  font-size: 2.5rem;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  letter-spacing: 2px;
-}
-
-.faqs {
-  background-color: var(--bg-light);
-}
-
-.accordion .accordion-item {
-  background: var(--bg-white);
-  border-radius: 12px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(32, 77, 87, 0.08);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
-  overflow: hidden;
-  transition:
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.accordion .accordion-item:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  border-color: rgba(230, 195, 129, 0.4);
-}
-
-.accordion-button {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 20px 25px;
-  background: var(--bg-white);
-  color: var(--secondary-color);
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: var(--bg-white);
-  color: #cda863;
-  font-weight: 700;
-  box-shadow: none;
-}
-
-.accordion-button::after {
-  transition: transform 0.3s ease-in-out;
-}
-
-.accordion-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  color: #555;
-  padding: 0 25px 25px 25px;
-  line-height: 1.7;
-  border-top: none;
-}
-
-.footer {
-  background: #0d2226;
-  border-top: 6px solid var(--primary-color);
-  position: relative;
-  overflow: hidden;
-  color: var(--bg-white);
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  top: -75px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(
-    circle,
-    rgba(230, 195, 129, 0.1) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.footer h2 {
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.footer .border-secondary {
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.footer .cta-btn {
-  font-size: 1.3rem;
-  padding: 1.2rem 3.5rem;
-  box-shadow: 0 10px 30px rgba(230, 195, 129, 0.2);
-  border-width: 3px;
-  margin-top: 1rem;
-}
-
-.footer .cta-btn:hover {
-  box-shadow: 0 15px 40px rgba(230, 195, 129, 0.3);
-  transform: translateY(-3px) scale(1.02);
-}
-
-.text-primary {
-  color: var(--primary-color) !important;
-}
-.bg-light {
-  background-color: var(--bg-light) !important;
-}
-.bg-primary {
-  background-color: var(--secondary-color) !important;
-}
-.max-w-700 {
-  max-width: 700px;
-}
-
-/* --- PREMIUM TAB NAVIGATION --- */
+/* Tab navigation pill wrapper */
 .therapy-tabs-wrapper {
   display: inline-flex;
   background: var(--bg-white);
@@ -771,7 +620,6 @@ h6 {
 }
 
 .nav-pills .premium-tab {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -795,43 +643,7 @@ h6 {
   box-shadow: 0 6px 20px rgba(230, 195, 129, 0.4);
 }
 
-/* --- ENHANCED FEATURE LISTS --- */
-.feature-list {
-  margin-bottom: 2rem;
-}
-
-.feature-list li {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  padding: 14px 20px;
-  margin-bottom: 14px;
-  background: var(--bg-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(32, 77, 87, 0.04);
-  border-left: 4px solid var(--primary-color);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.feature-list li:hover {
-  transform: translateX(8px);
-  box-shadow: 0 8px 20px rgba(32, 77, 87, 0.08);
-}
-
-.feature-list i {
-  font-size: 1.3rem;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
-}
-
-/* --- ELEGANT TRANSITIONS & NO JUMPING --- */
+/* Tab panel — stacked grid layout prevents height jumping */
 .tab-content {
   display: grid !important;
   grid-template-columns: 1fr;
@@ -866,7 +678,177 @@ h6 {
   height: 100%;
 }
 
-/* --- SINGLE TEAM IMAGE LAYOUT --- */
+/* Feature list items inside therapy tabs */
+.feature-list {
+  margin-bottom: 2rem;
+}
+
+.feature-list li {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  margin-bottom: 14px;
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(32, 77, 87, 0.04);
+  border-left: 4px solid var(--primary-color);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.feature-list li:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 20px rgba(32, 77, 87, 0.08);
+}
+
+.feature-list i {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+/* ==========================================================================
+   11. ADDITIONAL SERVICES / PEPTIDE PORTFOLIO (Dark Section)
+   ========================================================================== */
+.premium-services {
+  background: radial-gradient(
+    circle at top right,
+    #112a2f 0%,
+    var(--secondary-color) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid rgba(230, 195, 129, 0.2);
+}
+
+.premium-services::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.premium-services .section-title::after {
+  background-color: var(--primary-color);
+}
+
+.service-grid-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 195, 129, 0.15);
+  border-radius: 20px;
+  padding: 40px 30px 80px;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-grid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(230, 195, 129, 0.1), transparent 70%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+
+@media (hover: hover) {
+  .service-grid-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow:
+      0 15px 35px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(230, 195, 129, 0.1);
+  }
+
+  .service-grid-card:hover::before {
+    opacity: 1;
+  }
+
+  .service-grid-card:hover .card-icon {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4);
+  }
+}
+
+.service-grid-card .card-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(230, 195, 129, 0.1);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-grid-card .card-title {
+  font-size: 1.8rem;
+  color: var(--bg-white);
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+
+.service-grid-card .card-text {
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.service-link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 35px;
+}
+
+.service-link i {
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+  color: var(--bg-white);
+}
+
+.service-link:hover i {
+  transform: translateX(8px);
+  color: var(--primary-color);
+}
+
+/* ==========================================================================
+   12. TEAM SECTION
+   ========================================================================== */
 .team-group-img-wrapper {
   height: 500px;
 }
@@ -923,7 +905,6 @@ h6 {
 }
 
 .team-name {
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -932,7 +913,6 @@ h6 {
 }
 
 .team-role {
-  font-family: "Poppins", sans-serif;
   color: var(--primary-color);
   font-size: 0.85rem;
   font-weight: 700;
@@ -942,15 +922,15 @@ h6 {
 }
 
 .team-bio {
-  font-family: "Poppins", sans-serif;
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0;
 }
 
-/* --- TESTIMONIAL CAROUSEL GAP FIX --- */
-
+/* ==========================================================================
+   13. TESTIMONIALS
+   ========================================================================== */
 #testimonialDesktop .carousel-inner {
   margin-left: -15px;
   margin-right: -15px;
@@ -972,61 +952,112 @@ h6 {
 }
 
 /* ==========================================================================
-   Clinical Transformations (Before & After) - Static & Mobile Optimized
+   14. TRUST SECTION
    ========================================================================== */
-.ba-card {
-  border-color: rgba(32, 77, 87, 0.15) !important;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+.trust-section {
+  background: linear-gradient(135deg, #112a2f 0%, var(--secondary-color) 100%);
+  position: relative;
 }
 
-.ba-card img {
-  min-height: 200px;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.ba-card .row.g-0 > div {
-  overflow: hidden;
-}
-
-.ba-card .badge {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  font-size: 0.65rem;
+.trust-section h2 {
+  font-size: 2.5rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
 }
 
 /* ==========================================================================
-   Athletic Optimization Protocols - Static & Mobile Optimized
+   15. FAQs
    ========================================================================== */
-#athletic-stacks .bg-white {
-  border-left-color: var(--secondary-color) !important;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.04) !important;
+.faqs {
+  background-color: var(--bg-light);
 }
 
-#athletic-stacks .bg-white h4 {
-  font-size: 1.15rem;
+.accordion .accordion-item {
+  background: var(--bg-white);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(32, 77, 87, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
-#athletic-stacks .bg-white i {
-  color: var(--primary-color) !important;
+.accordion .accordion-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-color: rgba(230, 195, 129, 0.4);
 }
 
-#athletic-stacks .btn-outline-primary {
-  border-color: var(--secondary-color);
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 25px;
+  background: var(--bg-white);
   color: var(--secondary-color);
+  box-shadow: none;
 }
 
-#athletic-stacks .btn-outline-primary:hover {
-  background-color: var(--secondary-color);
+.accordion-button:not(.collapsed) {
+  background-color: var(--bg-white);
+  color: #cda863;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 25px 25px 25px;
+  line-height: 1.7;
+  border-top: none;
+}
+
+/* ==========================================================================
+   16. FOOTER
+   ========================================================================== */
+.footer {
+  background: #0d2226;
+  border-top: 6px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
   color: var(--bg-white);
 }
 
-/* Mobile Sticky CTA - Premium Exponential Glide */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(230, 195, 129, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.footer h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer .border-secondary {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ==========================================================================
+   17. MOBILE STICKY CTA (FAB)
+   ========================================================================== */
 #mobile-sticky-cta {
   position: fixed;
   bottom: 0;
-  start: 0;
+  left: 0;
   width: 100%;
   z-index: 1040;
   pointer-events: none;
@@ -1055,15 +1086,334 @@ h6 {
   transform: translateY(40px) !important;
 }
 
-#empty-bg-button {
-  background-color: transparent !important;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+/* ==========================================================================
+   18. NATIVE MOBILE SWIPE TRACK (Infinite Scroll)
+   ========================================================================== */
+.native-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  align-items: stretch;
+}
+
+.native-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.native-scroll-item {
+  scroll-snap-align: center;
+  flex: 0 0 85%;
+  min-width: 0;
 }
 
 /* ==========================================================================
-   Consolidated Media Queries - Tablet & Mobile
+   19. NAVBAR DROPDOWN — DESKTOP SMOOTH DROPDOWN & MOBILE SLIDE FOLDER
    ========================================================================== */
+@media (min-width: 992px) {
+  .custom-desktop-dropdown .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  .custom-desktop-dropdown .dropdown-icon {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+  }
+
+  .custom-desktop-dropdown .nav-link.show .dropdown-icon {
+    transform: rotate(180deg);
+  }
+
+  .custom-desktop-menu {
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    background-color: var(--secondary-color) !important;
+    border: 1px solid rgba(230, 195, 129, 0.2);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 250px;
+    margin-top: 5px !important;
+  }
+
+  .custom-desktop-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .custom-desktop-menu .dropdown-item {
+    color: var(--bg-white) !important;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+  }
+
+  .custom-desktop-menu .dropdown-item:hover {
+    background-color: rgba(230, 195, 129, 0.15) !important;
+    color: var(--primary-color) !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mobile-sub-panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
+  }
+
+  .mobile-sub-panel.active {
+    transform: translateX(-100%);
+  }
+
+  .mobile-drill-open:hover,
+  .mobile-drill-open:active,
+  .mobile-sub-panel a:hover,
+  .mobile-sub-panel a:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--primary-color) !important;
+  }
+}
+
+/* ==========================================================================
+   20. BEFORE / AFTER SLIDER (Peptides page)
+   ========================================================================== */
+.ba-card {
+  border-color: rgba(32, 77, 87, 0.15) !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.ba-card img {
+  min-height: 200px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.ba-card .badge {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  font-size: 0.65rem;
+}
+
+.ba-slider {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  z-index: 5;
+  cursor: ew-resize;
+  opacity: 0;
+}
+
+.ba-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 45px;
+  height: 100vh;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.ba-slider::-moz-range-thumb {
+  width: 45px;
+  height: 100vh;
+  background: transparent;
+  cursor: ew-resize;
+  border: none;
+}
+
+/* ==========================================================================
+   21. ATHLETIC STACKS (Peptides page)
+   ========================================================================== */
+#athletic-stacks .bg-white {
+  border-left-color: var(--secondary-color) !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.04) !important;
+}
+
+#athletic-stacks .bg-white h4 {
+  font-size: 1.15rem;
+}
+
+#athletic-stacks .bg-white i {
+  color: var(--primary-color) !important;
+}
+
+#athletic-stacks .btn-outline-primary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+#athletic-stacks .btn-outline-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--bg-white);
+}
+
+@media (min-width: 992px) {
+  #athletic-stacks .bg-white {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  }
+  #athletic-stacks .bg-white:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
+    z-index: 2;
+  }
+
+  #athletic-stacks .bg-white h4 {
+    font-size: 1.35rem;
+  }
+}
+
+/* ==========================================================================
+   22. CLINICAL PROCESS TIMELINE (Peptides page)
+   ========================================================================== */
+.process-visual-container {
+  height: 520px;
+}
+
+.process-timeline .step-indicator {
+  width: 45px;
+  flex-shrink: 0;
+}
+
+.process-timeline .step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  z-index: 2;
+  border: 3px solid var(--bg-white);
+  box-shadow: 0 0 0 2px rgba(230, 195, 129, 0.4) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.process-timeline .step-line {
+  width: 2px;
+  background-color: rgba(32, 77, 87, 0.1);
+  margin-top: 5px;
+  margin-bottom: -5px;
+  min-height: 20px;
+}
+
+.process-timeline .step-card {
+  border-color: rgba(32, 77, 87, 0.06) !important;
+  transition: all 0.4s ease;
+}
+
+/* Override Bootstrap carousel indicators for timeline use */
+.custom-timeline-indicators [data-bs-target] {
+  width: 100% !important;
+  height: auto !important;
+  text-indent: 0 !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.process-step.active .step-number {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0 18px 6px rgba(230, 195, 129, 0.7) !important;
+  border-color: var(--primary-color) !important;
+  transform: scale(1.15);
+}
+
+.process-step.active .step-card {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+@media (min-width: 992px) {
+  .process-timeline .process-step:hover .step-card {
+    transform: scale(1.05) !important;
+    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
+  }
+
+  .process-timeline .process-step.active .step-card {
+    transform: scale(1.02);
+  }
+}
+
+/* ==========================================================================
+   23. PROTOCOL FINDER QUIZ (Peptides page)
+   ========================================================================== */
+.btn-symptom {
+  background-color: var(--bg-white);
+  border-color: rgba(32, 77, 87, 0.1) !important;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-symptom .symptom-icon-wrap {
+  background-color: var(--bg-light);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-symptom:hover {
+  transform: translateX(5px);
+  border-color: rgba(230, 195, 129, 0.4) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.btn-symptom.active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color) !important;
+  transform: translateX(10px);
+  box-shadow: 0 10px 25px rgba(32, 77, 87, 0.2);
+}
+
+.btn-symptom.active .text-dark {
+  color: var(--bg-white) !important;
+}
+
+.btn-symptom.active .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.btn-symptom.active .symptom-icon-wrap {
+  background-color: var(--primary-color);
+}
+
+/* Result card — animated on protocol switch via JS .fade-update class */
+.result-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out,
+    border-color 0.3s ease;
+}
+
+.result-card.fade-update {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* ==========================================================================
+   24. CONSOLIDATED MEDIA QUERIES
+   ========================================================================== */
+
+/* --- Tablet & up --- */
 @media (min-width: 768px) {
   .ba-card .badge {
     font-size: 0.85rem;
@@ -1071,12 +1421,7 @@ h6 {
   }
 }
 
-@media (min-width: 992px) {
-  #athletic-stacks .bg-white h4 {
-    font-size: 1.35rem;
-  }
-}
-
+/* --- < 992px (mobile + tablet) --- */
 @media (max-width: 991.98px) {
   .offcanvas {
     background-color: var(--secondary-color) !important;
@@ -1120,14 +1465,53 @@ h6 {
   .team-group-img-wrapper {
     height: 350px;
   }
+
   .team-list-item::before {
     left: -15px;
   }
+
   .team-list-item:hover {
     transform: translateX(5px);
   }
+
+  .process-visual-container {
+    height: 300px;
+  }
+
+  /* Mobile FAB — pin to bottom-right as a circular floating button */
+  #mobile-sticky-cta {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: 20px;
+    left: auto;
+    width: auto;
+    padding: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transform: translateY(0);
+  }
+
+  #mobile-sticky-cta .btn.cta-btn {
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0 !important;
+    margin-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    filter: drop-shadow(0 0 0 transparent) !important;
+  }
+
+  #mobile-sticky-cta .btn.cta-btn i {
+    font-size: 1.6rem !important;
+    margin: 0 !important;
+  }
 }
 
+/* --- < 768px (mobile only) --- */
 @media (max-width: 768px) {
   .hero {
     min-height: 100vh !important;
@@ -1176,6 +1560,7 @@ h6 {
   .premium-image-box {
     height: 280px;
   }
+
   .section-title {
     font-size: 1.8rem;
   }
@@ -1183,13 +1568,14 @@ h6 {
   .hormone-banner h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    margin-right: 0rem;
+    margin-right: 0;
   }
 
   .footer h2 {
     font-size: 2rem;
   }
 
+  /* Mobile service card layout */
   .service-grid-card {
     padding: 24px !important;
     padding-bottom: 64px !important;
@@ -1231,6 +1617,7 @@ h6 {
     left: 24px;
   }
 
+  /* Mobile tab grid layout */
   .therapy-tabs-wrapper {
     display: flex !important;
     background: transparent;
@@ -1283,15 +1670,9 @@ h6 {
     color: var(--primary-color);
   }
 
-  #hormone-optimization-tab::before {
-    content: "\f48e";
-  }
-  #glp-1therapies-tab::before {
-    content: "\f496";
-  }
-  #peptides-tab::before {
-    content: "\f492";
-  }
+  #hormone-optimization-tab::before { content: "\f48e"; }
+  #glp-1therapies-tab::before       { content: "\f496"; }
+  #peptides-tab::before              { content: "\f492"; }
 
   .nav-pills .premium-tab.active,
   .nav-pills .premium-tab.active:hover {
@@ -1306,7 +1687,7 @@ h6 {
     color: var(--secondary-color) !important;
   }
 
-  /* --- FORCE NATIVE MOBILE SWIPING --- */
+  /* Mobile testimonial swipe */
   #testimonialMobile {
     touch-action: pan-y pinch-zoom;
   }
@@ -1329,12 +1710,8 @@ h6 {
     transform: translateY(-50%) !important;
   }
 
-  .carousel-control-prev {
-    left: 1px !important;
-  }
-  .carousel-control-next {
-    right: 1px !important;
-  }
+  .carousel-control-prev { left: 1px !important; }
+  .carousel-control-next { right: 1px !important; }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -1352,623 +1729,12 @@ h6 {
     line-height: 1.5;
     padding: 0 10px;
   }
-}
 
-/* --- NATIVE MOBILE MOMENTUM SCROLLING --- */
-.native-scroll-wrapper {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 15px;
-  padding-bottom: 20px;
-  -webkit-overflow-scrolling: touch; /* Enables iOS momentum scrolling */
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
-  align-items: stretch; /* Forces equal heights */
-}
-
-.native-scroll-wrapper::-webkit-scrollbar {
-  display: none; /* Hides scrollbar in Chrome/Safari */
-}
-
-.native-scroll-item {
-  scroll-snap-align: center;
-  flex: 0 0 85%; /* Shows 85% of the card, letting the next one peek in */
-  min-width: 0;
-}
-
-/* --- UPGRADED PREMIUM DESKTOP BUTTONS --- */
-.custom-carousel-controls {
-  width: 100%;
-}
-
-.custom-carousel-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--secondary-color), #143239);
-  border: 1px solid rgba(230, 195, 129, 0.3);
-  color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 15px rgba(32, 77, 87, 0.2);
-  z-index: 5;
-  padding: 0;
-}
-
-.custom-carousel-btn i {
-  margin-top: 1px;
-}
-
-.custom-carousel-btn:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  transform: scale(1.05) translateY(-2px);
-  box-shadow: 0 8px 25px rgba(230, 195, 129, 0.4);
-  border-color: var(--primary-color);
-}
-
-.custom-carousel-btn:active {
-  transform: scale(0.95);
-}
-
-.custom-carousel-controls .carousel-indicators {
-  bottom: auto;
-  display: flex;
-  align-items: center;
-}
-
-/* Replace the previous .carousel-indicators [data-bs-target] block with this: */
-.carousel-indicators {
-  gap: 4px;
-}
-
-.carousel-indicators button,
-.carousel-indicators [data-bs-target] {
-  background-color: rgba(32, 77, 87, 0.25);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  margin: 0;
-  transition:
-    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.3s ease,
-    border-radius 0.3s ease;
-}
-
-.carousel-indicators .active {
-  background-color: var(--primary-color) !important;
-  width: 28px !important;
-  border-radius: 20px !important;
-}
-
-@media (max-width: 991.98px) {
-  #mobile-sticky-cta {
-    position: fixed;
-    bottom: calc(
-      20px + env(safe-area-inset-bottom)
-    ); /* Sits safely above the iOS bar */
-    right: 20px;
-    left: auto;
-    width: auto;
-    padding: 0;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    transform: translateY(0);
-  }
-
-  #mobile-sticky-cta .btn {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    background-color: var(--primary-color);
-  }
-
-  /* Hide the text on mobile, display only a clean calendar icon */
-  #mobile-sticky-cta .btn {
-    font-size: 0;
-  }
-
-  #mobile-sticky-cta .btn i {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin: 0;
-  }
-}
-
-/* ==========================================================================
-   EXCLUSIVE MOBILE EXPERIENCE (< 768px)
-   ========================================================================== */
-@media (max-width: 767.98px) {
-  /* 1. Horizontal Scroll Containers */
-  .mobile-carousel-row {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    scroll-snap-type: x mandatory !important;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px !important;
-    margin-left: -15px !important;
-    margin-right: -15px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    scrollbar-width: none;
-  }
-
-  .mobile-carousel-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* 2. Card Sizing Inside Scroll Container */
-  .mobile-carousel-row > [class*="col-"] {
-    flex: 0 0 85% !important; /* 85% width lets the next card peek in */
-    max-width: 85% !important;
-    scroll-snap-align: center !important;
-    margin-right: 15px;
-    height: auto !important;
-  }
-
-  .mobile-carousel-row > *:last-child {
-    margin-right: 15px !important;
-  }
-
-  /* 3. Animated Swipe Hint UI */
-  .mobile-swipe-hint {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: -10px;
-    margin-bottom: 25px;
-  }
-
-  .swipe-line {
-    height: 2px;
-    width: 40px;
-    background: linear-gradient(90deg, transparent, var(--primary-color));
-    border-radius: 2px;
-  }
-
-  .swipe-line.reverse {
-    background: linear-gradient(270deg, transparent, var(--primary-color));
-  }
-
-  .mobile-swipe-hint span {
-    color: var(--primary-color);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-  }
-
-  .mobile-swipe-hint i {
-    color: var(--primary-color);
-    font-size: 1rem;
-    animation: swipeHand 2s infinite ease-in-out;
-  }
-
-  @keyframes swipeHand {
-    0%,
-    100% {
-      transform: translateX(0) rotate(0deg);
-      opacity: 0.5;
-    }
-    50% {
-      transform: translateX(10px) rotate(-10deg);
-      opacity: 1;
-    }
-  }
-
-  /* 4. Interactive Progress Bar */
-  .scroll-progress-container {
-    width: 60px;
-    height: 4px;
-    background: rgba(32, 77, 87, 0.1);
-    border-radius: 4px;
-    margin: 0 auto 30px auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .scroll-progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 30%;
-    background: var(--primary-color);
-    border-radius: 4px;
-    transition: left 0.1s ease-out;
-  }
-
-  /* 6. Compress Science Stats */
+  /* Compress science stat cards on mobile */
   #science .p-4 {
     padding: 1.25rem !important;
   }
   #science .display-5 {
     font-size: 2.2rem !important;
-  }
-}
-
-/* Hide mobile UI elements completely on desktop */
-@media (min-width: 768px) {
-  .mobile-only-ui {
-    display: none !important;
-  }
-}
-
-@media (max-width: 767.98px) {
-  /* Override the original grid layout for the peptide portfolio */
-  section.premium-services .row.mobile-carousel-row {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-  }
-
-  section.premium-services .row.mobile-carousel-row > [class*="col-"] {
-    flex: 0 0 85% !important;
-    max-width: 85% !important;
-  }
-}
-
-/* ==========================================================================
-   MOBILE FLOATING ACTION BUTTON (FAB) OVERRIDE
-   ========================================================================== */
-@media (max-width: 991.98px) {
-  /* 1. Un-anchor from the left side and pin to the bottom right */
-  #mobile-sticky-cta.d-lg-none.position-fixed {
-    width: auto !important;
-    padding: 0 !important;
-    left: auto !important;
-    start: auto !important;
-    right: 20px !important;
-  }
-
-  /* 2. Reshape into a 65x65 circle and hide the text */
-  #mobile-sticky-cta .btn.cta-btn {
-    width: 65px !important;
-    height: 65px !important;
-    border-radius: 50% !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 0 !important; /* This hides "Book Consultation" */
-
-    /* Uses 10px on bezel devices (where env is 0), and defaults strictly to the safe area line on bezel-less devices */
-    margin-bottom: max(10px, env(safe-area-inset-bottom)) !important;
-
-    /* Fixes for iOS Native Rendering and Shadow Stripping */
-    -webkit-appearance: none !important;
-    box-shadow: none !important;
-    filter: drop-shadow(0 0 0 transparent) !important;
-  }
-
-  /* 3. Re-center and enlarge the calendar icon */
-  #mobile-sticky-cta .btn.cta-btn i {
-    font-size: 1.6rem !important;
-    margin: 0 !important; /* Removes the existing 'me-2' right margin */
-  }
-}
-
-/* Hide Desktop Portfolio Grid on Mobile */
-@media (max-width: 991.98px) {
-  #portfolio-desktop {
-    display: none !important;
-  }
-}
-
-/* ==========================================================================
-   SMOOTH DESKTOP DROPDOWN & MOBILE SLIDE FOLDER
-   ========================================================================== */
-
-.nav-link:focus,
-.dropdown-toggle:focus {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
-/* 1. DESKTOP SMOOTH DROPDOWN */
-@media (min-width: 992px) {
-  .custom-desktop-dropdown .dropdown-toggle::after {
-    display: none !important;
-  }
-
-  .custom-desktop-dropdown .dropdown-icon {
-    transition: transform 0.3s ease;
-    color: var(--primary-color);
-  }
-
-  /* Target the nav-link directly for the icon rotation */
-  .custom-desktop-dropdown .nav-link.show .dropdown-icon {
-    transform: rotate(180deg);
-  }
-
-  .custom-desktop-menu {
-    display: block !important;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(15px);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    pointer-events: none;
-    background-color: var(--secondary-color) !important;
-    border: 1px solid rgba(230, 195, 129, 0.2);
-    border-radius: 8px;
-    padding: 10px 0;
-    min-width: 250px;
-    margin-top: 5px !important;
-  }
-
-  /* Target the custom menu directly for visibility */
-  .custom-desktop-menu.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .custom-desktop-menu .dropdown-item {
-    color: var(--bg-white) !important;
-    padding: 12px 20px;
-    transition: all 0.2s ease;
-    letter-spacing: 1px;
-  }
-
-  .custom-desktop-menu .dropdown-item:hover {
-    background-color: rgba(230, 195, 129, 0.15) !important;
-    color: var(--primary-color) !important;
-  }
-}
-
-/* 2. MOBILE APP-STYLE SLIDING FOLDER */
-@media (max-width: 991.98px) {
-  .mobile-sub-panel {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--secondary-color);
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 10;
-  }
-
-  .mobile-sub-panel.active {
-    transform: translateX(-100%);
-  }
-
-  .mobile-drill-open:hover,
-  .mobile-drill-open:active,
-  .mobile-sub-panel a:hover,
-  .mobile-sub-panel a:active {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    color: var(--primary-color) !important;
-  }
-}
-
-/* ==========================================================================
-   Interactive Before/After Slider
-   ========================================================================== */
-.ba-slider {
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  z-index: 5;
-  cursor: ew-resize;
-  opacity: 0;
-}
-
-.ba-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 45px;
-  height: 100vh;
-  background: transparent;
-  cursor: ew-resize;
-}
-
-.ba-slider::-moz-range-thumb {
-  width: 45px;
-  height: 100vh;
-  background: transparent;
-  cursor: ew-resize;
-  border: none;
-}
-
-.premium-services .carousel-indicators button,
-.premium-services .carousel-indicators [data-bs-target] {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-
-/* ==========================================================================
-   Clinical Process Timeline & Visuals
-   ========================================================================== */
-
-.process-visual-container {
-  height: 520px;
-}
-
-/* Timeline Base */
-.process-timeline .step-indicator {
-  width: 45px;
-  flex-shrink: 0;
-}
-.process-timeline .step-number {
-  width: 40px;
-  height: 40px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-size: 1.1rem;
-  z-index: 2;
-  border: 3px solid var(--bg-white);
-  box-shadow: 0 0 0 2px rgba(230, 195, 129, 0.4) !important;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.process-timeline .step-line {
-  width: 2px;
-  background-color: rgba(32, 77, 87, 0.1);
-  margin-top: 5px;
-  margin-bottom: -5px; 
-  min-height: 20px;
-}
-.process-timeline .step-card {
-  border-color: rgba(32,77,87,0.06) !important;
-  transition: all 0.4s ease;
-}
-
-/* Override Bootstrap Carousel Indicators logic */
-.custom-timeline-indicators [data-bs-target] {
-  width: 100% !important;
-  height: auto !important;
-  text-indent: 0 !important;
-  background-color: transparent !important;
-  opacity: 1 !important;
-  margin: 0 !important;
-  border: none !important;
-}
-
-/* Active "Glow" State on Desktop */
-.process-step.active .step-number {
-  background-color: var(--secondary-color) !important;
-  color: var(--primary-color) !important;
-  box-shadow: 0 0 18px 6px rgba(230, 195, 129, 0.7) !important;
-  border-color: var(--primary-color) !important;
-  transform: scale(1.15);
-}
-.process-step.active .step-card {
-  border-color: var(--primary-color) !important;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08) !important;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 991.98px) {
-  .process-visual-container {
-    height: 300px; 
-  }
-}
-
-/* Bento Box Hover Utility */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(32, 77, 87, 0.08) !important;
-  border-color: rgba(230, 195, 129, 0.4) !important;
-}
-
-
-
-/* ==========================================================================
-   Protocol Finder Interactive Quiz (With Smooth Transitions)
-   ========================================================================== */
-
-.btn-symptom {
-  background-color: var(--bg-white);
-  border-color: rgba(32, 77, 87, 0.1) !important;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              background-color 0.3s ease, 
-              border-color 0.3s ease, 
-              box-shadow 0.3s ease;
-}
-
-.btn-symptom .symptom-icon-wrap {
-  background-color: var(--bg-light);
-  color: var(--secondary-color);
-  transition: all 0.3s ease;
-}
-
-/* Hover State */
-.btn-symptom:hover {
-  transform: translateX(5px);
-  border-color: rgba(230, 195, 129, 0.4) !important;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* Active Selected State */
-.btn-symptom.active {
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color) !important;
-  transform: translateX(10px);
-  box-shadow: 0 10px 25px rgba(32, 77, 87, 0.2);
-}
-.btn-symptom.active .text-dark {
-  color: var(--bg-white) !important;
-}
-.btn-symptom.active .text-muted {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-.btn-symptom.active .symptom-icon-wrap {
-  background-color: var(--primary-color);
-}
-
-/* Base Result Card State & Transition Speed */
-.result-card {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.2s cubic-bezier(0.25, 1, 0.5, 1), 
-              transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), 
-              border-color 0.3s ease;
-}
-
-/* Outgoing/Incoming Transition State managed by JavaScript */
-.result-card.fade-update {
-  opacity: 0;
-  transform: translateY(12px);
-}
-
-/* Base Result Card State & Transition Speed */
-.result-card {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-/* Outgoing/Incoming Transition State managed by JavaScript */
-.result-card.fade-update {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-
-/* ==========================================================================
-   Desktop-Only Hover Scaling (Peak Performance & Clinical Process)
-   ========================================================================== */
-@media (min-width: 992px) {
-  
-  /* 1. Engineered For Peak Performance Cards */
-  #stacks-desktop .bg-white {
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-  }
-  #stacks-desktop .bg-white:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
-    z-index: 2; /* Keeps the scaled card layered above the others */
-  }
-
-  /* 2. Our Clinical Process Cards */
-  .process-timeline .process-step:hover .step-card {
-    transform: scale(1.05) !important; /* Overrides the previous translateY hover */
-    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
-  }
-  
-  /* Give the currently selected/active Process card a permanent slight bump so it stands out */
-  .process-timeline .process-step.active .step-card {
-    transform: scale(1.02);
   }
 }

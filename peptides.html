@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Peptide Therapy - Optimal Vitality</title>
+    <meta name="description" content="Targeted cellular signaling through clinical-grade peptide therapy. BPC-157, TB500, Ipamorelin, Tesamorelin, and NAD+ protocols — doctor-supervised in Tallahassee, FL.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,45 +14,8 @@
     <link rel="apple-touch-icon" href="assets/images/icons/icon.png">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main Navigation">
-        <div class="container">
-             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Logo" class="logo-img">
-                <div class="brand-text d-flex flex-column justify-content-center">
-                    <span class="brand-title">Optimal</span>
-                    <span class="brand-subtitle">Vitality</span>
-                </div>
-            </a>
-            
-            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="main-navbar-links"></ul>
-                <a href="#consultation" class="btn cta-btn ms-lg-3">Book Your Consultation</a>
-            </div>
-
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-                <div class="offcanvas-header border-bottom border-secondary">
-                    <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
-                        <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Logo" class="logo-img">
-                        <div class="brand-text d-flex flex-column justify-content-center">
-                            <span class="brand-title">Optimal</span>
-                            <span class="brand-subtitle">Vitality</span>
-                        </div>
-                    </a>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column text-center">
-                    <ul class="navbar-nav mb-auto mt-4" id="mobile-navbar-links"></ul>
-                    <div class="mt-auto pb-4">
-                        <a href="#consultation" class="btn cta-btn w-100">Book Your Consultation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Shared navbar injected by components.js -->
+    <div id="navbar-root"></div>
 
     <header class="hero text-center d-flex align-items-center justify-content-center" style="min-height: 40vh !important; padding-top: 100px !important;">
         <div id="particle-canvas"></div>
@@ -73,79 +37,59 @@
                 <h2 class="section-title text-uppercase" style="color: #204d57;">Clinical Transformations</h2>
                 <p class="lead text-muted max-w-700 mx-auto">Visual evidence of optimized body composition, accelerated tissue repair, and complete metabolic restructuring.</p>
             </div>
-            
+
             <!-- SOURCE DATA (Visible on Desktop) -->
             <div class="row g-4 justify-content-center d-none d-lg-flex" id="transformations-desktop">
                 <div class="col-lg-6">
-    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
-        
-        <!-- Interactive Slider Container -->
-        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
-            <!-- AFTER Layer (Bottom) -->
-            <img src="assets/images/photos/TRT.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
-            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 16</span>
+                    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
+                        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
+                            <img src="assets/images/photos/TRT.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 16</span>
+                            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
+                                <img src="assets/images/photos/IV.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Baseline</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
+                            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
+                                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
+                                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-light flex-grow-1">
+                            <h5 class="fw-bold mb-2" style="color: #204d57;">Body Recomposition &amp; Core Vitality</h5>
+                            <p class="small text-muted mb-3"><strong>Protocol:</strong> Tesamorelin / Ipamorelin Stack</p>
+                            <p class="small text-secondary mb-0">Patient achieved a 12% reduction in visceral body fat while accelerating lean tissue recovery and deep sleep architecture.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- BEFORE Layer (Top, Wrapped & Clipped) -->
-            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
-                <img src="assets/images/photos/IV.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
-                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Baseline</span>
-            </div>
-
-            <!-- Invisible Drag Input -->
-            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
-
-            <!-- Visual Handle UI -->
-            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
-                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
-                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
+                <div class="col-lg-6">
+                    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
+                        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
+                            <img src="assets/images/photos/process-results.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 8</span>
+                            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
+                                <img src="assets/images/photos/peptide.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Post-Injury</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
+                            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
+                                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
+                                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-light flex-grow-1">
+                            <h5 class="fw-bold mb-2" style="color: #204d57;">Accelerated Tendon &amp; Joint Repair</h5>
+                            <p class="small text-muted mb-3"><strong>Protocol:</strong> BPC-157 / TB500 Blend</p>
+                            <p class="small text-secondary mb-0">Patient presented with severe joint inflammation. Achieved full return to athletic pacing and weightlifting within 8 weeks through specialized recovery mechanisms.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="p-4 bg-light flex-grow-1">
-            <h5 class="fw-bold mb-2" style="color: #204d57;">Body Recomposition & Core Vitality</h5>
-            <p class="small text-muted mb-3"><strong>Protocol:</strong> Tesamorelin / Ipamorelin Stack</p>
-            <p class="small text-secondary mb-0">Patient achieved a 12% reduction in visceral body fat while accelerating lean tissue recovery and deep sleep architecture.</p>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-6">
-    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
-        
-        <!-- Interactive Slider Container -->
-        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
-            <!-- AFTER Layer (Bottom) -->
-            <img src="assets/images/photos/process-results.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
-            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 8</span>
-
-            <!-- BEFORE Layer (Top, Wrapped & Clipped) -->
-            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
-                <img src="assets/images/photos/peptide.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
-                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Post-Injury</span>
-            </div>
-
-            <!-- Invisible Drag Input -->
-            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
-
-            <!-- Visual Handle UI -->
-            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
-                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
-                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-4 bg-light flex-grow-1">
-            <h5 class="fw-bold mb-2" style="color: #204d57;">Accelerated Tendon & Joint Repair</h5>
-            <p class="small text-muted mb-3"><strong>Protocol:</strong> BPC-157 / TB500 Blend</p>
-            <p class="small text-secondary mb-0">Patient presented with severe joint inflammation. Achieved full return to athletic pacing and weightlifting within 8 weeks through specialized recovery mechanisms.</p>
-        </div>
-    </div>
-</div>
-            </div>
-
-            <!-- MOBILE INFINITE TRACK PLACEHOLDER -->
+            <!-- Mobile Track -->
             <div class="d-lg-none position-relative mt-4">
                 <div class="native-scroll-wrapper" id="transformations-mobile-track"></div>
                 <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
@@ -172,16 +116,14 @@
                         <p class="card-text">A targeted signaling molecule recognized for its capacity to accelerate the healing of tendons, internal epithelial layers, and dense muscle structures.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-kit-medical"></i></div>
                         <h4 class="card-title">TB500</h4>
-                        <h6 class="text-primary fw-bold text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">Cellular Migration & Repair</h6>
+                        <h6 class="text-primary fw-bold text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">Cellular Migration &amp; Repair</h6>
                         <p class="card-text">Works alongside healing pathways to upgrade joint flexibility, downregulate chronic structural inflammation, and build functional blood vessels in damaged areas.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
@@ -190,7 +132,6 @@
                         <p class="card-text">Promotes natural, cyclical pulsatile waves of growth factors. Aids recovery metrics, bone structure integrity, and physical strength production.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-bolt-lightning"></i></div>
@@ -199,7 +140,6 @@
                         <p class="card-text">Potent option targeting visceral fat distribution. Promotes significant changes in metabolic body architecture while keeping base energy levels optimized.</p>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-battery-full"></i></div>
@@ -208,7 +148,6 @@
                         <p class="card-text">Essential cellular engine component. Directs high-level DNA maintenance, fights chronic programmatic fatigue, and restores vital energy cycles.</p>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4">
                     <div class="service-grid-card h-100">
                         <div class="card-icon"><i class="fas fa-notes-medical"></i></div>
@@ -219,7 +158,7 @@
                 </div>
             </div>
 
-            <!-- MOBILE INFINITE TRACK PLACEHOLDER -->
+            <!-- Mobile Track -->
             <div class="d-lg-none position-relative mt-4 gs-reveal">
                 <div class="native-scroll-wrapper" id="portfolio-mobile-track"></div>
                 <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
@@ -230,81 +169,77 @@
     </section>
 
     <section class="py-5 bg-light border-top" id="protocol-finder">
-    <div class="container py-5 gs-reveal">
-        <div class="text-center mb-5">
-            <h2 class="section-title text-uppercase" style="color: #204d57;">Find Your Protocol</h2>
-            <p class="lead text-muted max-w-700 mx-auto">Select your primary biological roadblock to reveal the targeted clinical sequence our medical team uses to solve it.</p>
-        </div>
-        
-        <div class="row align-items-center g-4 g-lg-5">
-            <!-- Left Column: The Interactive Quiz Buttons -->
-            <div class="col-lg-6">
-                <div class="d-flex flex-column gap-3" id="symptom-selectors">
-                    
-                    <button class="btn-symptom active d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="joint">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                            <i class="fas fa-crutch fs-5"></i>
-                        </div>
-                        <div>
-                            <span class="d-block fw-bold fs-5 text-dark mb-1">Nagging Joint & Tissue Pain</span>
-                            <small class="text-muted">Prolonged soreness, tendon inflammation, or injury recovery.</small>
-                        </div>
-                    </button>
-
-                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="plateau">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                            <i class="fas fa-stopwatch fs-5"></i>
-                        </div>
-                        <div>
-                            <span class="d-block fw-bold fs-5 text-dark mb-1">Athletic & Training Plateaus</span>
-                            <small class="text-muted">Stuck on your heavy lifts, 5K pacing, or court stamina.</small>
-                        </div>
-                    </button>
-
-                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="fatigue">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                            <i class="fas fa-battery-quarter fs-5"></i>
-                        </div>
-                        <div>
-                            <span class="d-block fw-bold fs-5 text-dark mb-1">Chronic Fatigue & Brain Fog</span>
-                            <small class="text-muted">Afternoon crashes, slow mornings, and poor sleep architecture.</small>
-                        </div>
-                    </button>
-
-                    <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="body">
-                        <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                            <i class="fas fa-weight fs-5"></i>
-                        </div>
-                        <div>
-                            <span class="d-block fw-bold fs-5 text-dark mb-1">Stubborn Body Composition</span>
-                            <small class="text-muted">Holding onto visceral adipose tissue despite diet adherence.</small>
-                        </div>
-                    </button>
-
-                </div>
+        <div class="container py-5 gs-reveal">
+            <div class="text-center mb-5">
+                <h2 class="section-title text-uppercase" style="color: #204d57;">Find Your Protocol</h2>
+                <p class="lead text-muted max-w-700 mx-auto">Select your primary biological roadblock to reveal the targeted clinical sequence our medical team uses to solve it.</p>
             </div>
-            
-            <!-- Right Column: Dynamic Result Display -->
-            <div class="col-lg-6 mt-5 mt-lg-0">
-                <div class="result-card p-4 p-md-5 rounded-4 shadow-lg border-top border-4 bg-white position-relative h-100 transition-all d-flex flex-column justify-content-center" style="border-color: var(--primary-color) !important; min-height: 380px;" id="protocol-result">
-                    <!-- Default loaded state (matches the first button) -->
-                    <div class="d-flex align-items-center mb-4">
-                        <i class="fas fa-shield-alt text-primary display-5 me-3"></i>
-                        <div>
-                            <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">The Healing Matrix</small>
-                            <h3 class="fw-bold mb-0" style="color: #204d57;">BPC-157 + TB500</h3>
-                        </div>
+
+            <div class="row align-items-center g-4 g-lg-5">
+                <!-- Left Column: Interactive Quiz Buttons -->
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-3" id="symptom-selectors">
+                        <button class="btn-symptom active d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="joint">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                                <i class="fas fa-crutch fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block fw-bold fs-5 text-dark mb-1">Nagging Joint &amp; Tissue Pain</span>
+                                <small class="text-muted">Prolonged soreness, tendon inflammation, or injury recovery.</small>
+                            </div>
+                        </button>
+
+                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="plateau">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                                <i class="fas fa-stopwatch fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block fw-bold fs-5 text-dark mb-1">Athletic &amp; Training Plateaus</span>
+                                <small class="text-muted">Stuck on your heavy lifts, 5K pacing, or court stamina.</small>
+                            </div>
+                        </button>
+
+                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="fatigue">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                                <i class="fas fa-battery-quarter fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block fw-bold fs-5 text-dark mb-1">Chronic Fatigue &amp; Brain Fog</span>
+                                <small class="text-muted">Afternoon crashes, slow mornings, and poor sleep architecture.</small>
+                            </div>
+                        </button>
+
+                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="body">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
+                                <i class="fas fa-weight fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block fw-bold fs-5 text-dark mb-1">Stubborn Body Composition</span>
+                                <small class="text-muted">Holding onto visceral adipose tissue despite diet adherence.</small>
+                            </div>
+                        </button>
                     </div>
-                    <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.</p>
-                    <div class="mt-auto">
-                        <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
+                </div>
+
+                <!-- Right Column: Dynamic Result Display -->
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="result-card p-4 p-md-5 rounded-4 shadow-lg border-top border-4 bg-white position-relative h-100 transition-all d-flex flex-column justify-content-center" style="border-color: var(--primary-color) !important; min-height: 380px;" id="protocol-result">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-shield-alt text-primary display-5 me-3"></i>
+                            <div>
+                                <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">The Healing Matrix</small>
+                                <h3 class="fw-bold mb-0" style="color: #204d57;">BPC-157 + TB500</h3>
+                            </div>
+                        </div>
+                        <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.</p>
+                        <div class="mt-auto">
+                            <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="py-5" style="background-color: white;" id="athletic-stacks">
         <div class="container py-5 gs-reveal">
@@ -314,19 +249,19 @@
                     <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Our medical team designs synergistic formulations. We blend advanced cellular triggers to complement rigorous physical output, heavy lifting routines, and dedicated rehabilitation pacing.</p>
                     <a href="#consultation" class="btn btn-outline-primary fw-bold px-4 py-2 border-2">Discuss Your Training Goals</a>
                 </div>
-                
+
                 <div class="col-lg-7">
                     <!-- SOURCE DATA (Visible on Desktop) -->
                     <div class="d-none d-lg-flex flex-column gap-4" id="stacks-desktop">
                         <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Growth & Cellular Output Stack</h4>
+                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Growth &amp; Cellular Output Stack</h4>
                                 <i class="fas fa-dumbbell text-primary fs-4"></i>
                             </div>
                             <h6 class="text-muted small fw-bold mb-3">Tesamorelin + Ipamorelin</h6>
                             <p class="text-secondary small mb-0">Optimizes natural hormone output. Designed to support lean muscle accretion, lower stubborn visceral adipose tissue, and accelerate overall cellular adaptation.</p>
                         </div>
-                        
+
                         <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h4 class="fw-bold mb-0" style="color: #204d57;">The Wolverine Healing Matrix</h4>
@@ -346,7 +281,7 @@
                         </div>
                     </div>
 
-                    <!-- MOBILE INFINITE TRACK PLACEHOLDER -->
+                    <!-- Mobile Track -->
                     <div class="d-lg-none position-relative mt-4">
                         <div class="native-scroll-wrapper" id="stacks-mobile-track"></div>
                         <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
@@ -359,196 +294,175 @@
     </section>
 
     <section class="py-4 py-lg-5 bg-light" style="padding-top: 3rem !important;">
-    <div class="container py-2 py-lg-5 gs-reveal">
-        <h2 class="section-title text-center mb-4 mb-lg-5" style="color: #204d57;">Our Clinical Process</h2>
-        
-        <div class="row gx-lg-5 pt-2 align-items-center">
-            <!-- Visual Column (Carousel) -->
-            <div class="col-lg-6 mb-0 mb-lg-0 order-1 order-lg-2">
-                <div id="processSlideshow" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
-                    <div class="carousel-inner h-100 pb-2 pb-lg-0">
-                        
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active h-100">
-                            <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
-                                <img src="assets/images/photos/process-lab.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Lab Diagnostics">
+        <div class="container py-2 py-lg-5 gs-reveal">
+            <h2 class="section-title text-center mb-4 mb-lg-5" style="color: #204d57;">Our Clinical Process</h2>
+
+            <div class="row gx-lg-5 pt-2 align-items-center">
+                <!-- Visual Column (Carousel) -->
+                <div class="col-lg-6 mb-0 mb-lg-0 order-1 order-lg-2">
+                    <div id="processSlideshow" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner h-100 pb-2 pb-lg-0">
+                            <div class="carousel-item active h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-lab.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Lab Diagnostics">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">1</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
+                                    <p class="text-muted small mb-0">We analyze an extensive panel of your specific biomarkers and hormones to identify exact optimization targets.</p>
+                                </div>
                             </div>
-                            <!-- Mobile Text Block -->
-                            <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
-                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">1</div>
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
-                                <p class="text-muted small mb-0">We analyze an extensive panel of your specific biomarkers and hormones to identify exact optimization targets.</p>
+
+                            <div class="carousel-item h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-review.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Doctor Protocol">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">2</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
+                                    <p class="text-muted small mb-0">Review data with clinical staff. We engineer a targeted peptide stack tailored entirely to your physiology.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-injection.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Execution">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">3</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution &amp; Tracking</h5>
+                                    <p class="text-muted small mb-0">Pharmacy-grade peptides are delivered. Inject effortlessly at home while we monitor your progress and results.</p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Slide 2 -->
-                        <div class="carousel-item h-100">
-                            <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
-                                <img src="assets/images/photos/process-review.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Doctor Protocol">
-                            </div>
-                            <!-- Mobile Text Block -->
-                            <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
-                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">2</div>
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
-                                <p class="text-muted small mb-0">Review data with clinical staff. We engineer a targeted peptide stack tailored entirely to your physiology.</p>
-                            </div>
+                        <div class="d-lg-none d-flex justify-content-center gap-3 mt-3">
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="prev" style="width: 40px; height: 40px; font-size: 0.9rem;">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="next" style="width: 40px; height: 40px; font-size: 0.9rem;">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-
-                        <!-- Slide 3 -->
-                        <div class="carousel-item h-100">
-                            <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
-                                <img src="assets/images/photos/process-injection.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Execution">
-                            </div>
-                            <!-- Mobile Text Block -->
-                            <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
-                                <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">3</div>
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution & Tracking</h5>
-                                <p class="text-muted small mb-0">Pharmacy-grade peptides are delivered. Inject effortlessly at home while we monitor your progress and results.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Mobile Navigation Chevrons -->
-                    <div class="d-lg-none d-flex justify-content-center gap-3 mt-3">
-                        <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="prev" style="width: 40px; height: 40px; font-size: 0.9rem;">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="next" style="width: 40px; height: 40px; font-size: 0.9rem;">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Desktop Timeline (Acts as synced carousel indicators) -->
-            <div class="col-lg-6 order-2 order-lg-1 d-none d-lg-flex flex-column justify-content-center">
-                <div class="process-timeline carousel-indicators custom-timeline-indicators position-relative m-0 d-flex flex-column align-items-start h-auto px-2 px-md-0">
-                    
-                    <!-- Step 1 Button -->
-                    <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="0" class="active process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4" aria-current="true">
-                        <div class="step-indicator d-flex flex-column align-items-center">
-                            <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">1</div>
-                            <div class="step-line flex-grow-1"></div>
-                        </div>
-                        <div class="step-content pb-4 w-100">
-                            <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
-                                <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">We analyze an extensive panel of your specific biomarkers and hormones to identify exact optimization targets.</p>
+                <!-- Desktop Timeline -->
+                <div class="col-lg-6 order-2 order-lg-1 d-none d-lg-flex flex-column justify-content-center">
+                    <div class="process-timeline carousel-indicators custom-timeline-indicators position-relative m-0 d-flex flex-column align-items-start h-auto px-2 px-md-0">
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="0" class="active process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4" aria-current="true">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">1</div>
+                                <div class="step-line flex-grow-1"></div>
                             </div>
-                        </div>
-                    </button>
-
-                    <!-- Step 2 Button -->
-                    <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="1" class="process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4">
-                        <div class="step-indicator d-flex flex-column align-items-center">
-                            <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">2</div>
-                            <div class="step-line flex-grow-1"></div>
-                        </div>
-                        <div class="step-content pb-4 w-100">
-                            <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
-                                <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Review data with clinical staff. We engineer a targeted peptide stack tailored entirely to your physiology.</p>
+                            <div class="step-content pb-4 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">We analyze an extensive panel of your specific biomarkers and hormones to identify exact optimization targets.</p>
+                                </div>
                             </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <!-- Step 3 Button -->
-                    <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="2" class="process-step w-100 text-start bg-transparent border-0 p-0 position-relative d-flex gap-3 gap-md-4">
-                        <div class="step-indicator d-flex flex-column align-items-center">
-                            <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">3</div>
-                        </div>
-                        <div class="step-content pb-2 w-100">
-                            <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
-                                <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution & Tracking</h5>
-                                <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Pharmacy-grade peptides are delivered. Inject effortlessly at home while we monitor your progress and results.</p>
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="1" class="process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">2</div>
+                                <div class="step-line flex-grow-1"></div>
                             </div>
-                        </div>
-                    </button>
+                            <div class="step-content pb-4 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Review data with clinical staff. We engineer a targeted peptide stack tailored entirely to your physiology.</p>
+                                </div>
+                            </div>
+                        </button>
 
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="2" class="process-step w-100 text-start bg-transparent border-0 p-0 position-relative d-flex gap-3 gap-md-4">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">3</div>
+                            </div>
+                            <div class="step-content pb-2 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution &amp; Tracking</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Pharmacy-grade peptides are delivered. Inject effortlessly at home while we monitor your progress and results.</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="science" class="py-5 bg-white">
-    <div class="container py-4 py-lg-5 gs-reveal">
-        <div class="row gx-lg-5 align-items-center">
-            
-            <!-- Left Column: Context & List -->
-            <div class="col-lg-5 mb-5 mb-lg-0">
-                <h2 class="display-6 fw-bold mb-4" style="color: #204d57;">The Science of <br><span class="text-primary">Peptides</span></h2>
-                <p class="text-muted mb-4" style="line-height: 1.7; font-size: 0.95rem;">Peptides are precise sequences of amino acids—your body's native chemical language. Instead of introducing foreign synthetic chemicals, peptide therapy supplies the exact biological triggers your cells already recognize, instructing them to release natural growth hormone, reduce inflammation, or accelerate healing.</p>
-                
-                <ul class="list-unstyled feature-list mb-0">
-                    <li><i class="fas fa-check-circle text-primary me-3"></i> 100% Bio-Identical Compounds</li>
-                    <li><i class="fas fa-check-circle text-primary me-3"></i> Maximum Bioavailability</li>
-                    <li><i class="fas fa-check-circle text-primary me-3"></i> Exceptionally Rare Side Effects</li>
-                </ul>
-            </div>
-            
-            <!-- Right Column: Bento Box Grid -->
-            <div class="col-lg-7">
-                <div class="row g-3 g-md-4">
-                    
-                    <!-- 4 Compact Stat Cards -->
-                    <div class="col-6 col-md-3">
-                        <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
-                            <div class="fs-3 fw-bold mb-1 text-primary">50+</div>
-                            <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Protocols</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
-                            <div class="fs-3 fw-bold mb-1 text-primary">98%</div>
-                            <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Uptake</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
-                            <div class="fs-3 fw-bold mb-1 text-primary">0%</div>
-                            <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Synthetics</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
-                            <div class="fs-3 fw-bold mb-1 text-primary"><i class="fas fa-shield-alt"></i></div>
-                            <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">FDA Rx</div>
-                        </div>
-                    </div>
+        <div class="container py-4 py-lg-5 gs-reveal">
+            <div class="row gx-lg-5 align-items-center">
+                <!-- Left Column -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-6 fw-bold mb-4" style="color: #204d57;">The Science of <br><span class="text-primary">Peptides</span></h2>
+                    <p class="text-muted mb-4" style="line-height: 1.7; font-size: 0.95rem;">Peptides are precise sequences of amino acids—your body's native chemical language. Instead of introducing foreign synthetic chemicals, peptide therapy supplies the exact biological triggers your cells already recognize, instructing them to release natural growth hormone, reduce inflammation, or accelerate healing.</p>
+                    <ul class="list-unstyled feature-list mb-0">
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> 100% Bio-Identical Compounds</li>
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> Maximum Bioavailability</li>
+                        <li><i class="fas fa-check-circle text-primary me-3"></i> Exceptionally Rare Side Effects</li>
+                    </ul>
+                </div>
 
-                    <!-- Horizontal Feature Card 1 -->
-                    <div class="col-md-6">
-                        <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: #204d57;">
-                                    <i class="fas fa-microscope fs-5"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">Compounded & Verified</h5>
+                <!-- Right Column: Bento Box Grid -->
+                <div class="col-lg-7">
+                    <div class="row g-3 g-md-4">
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
+                                <div class="fs-3 fw-bold mb-1 text-primary">50+</div>
+                                <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Protocols</div>
                             </div>
-                            <p class="text-muted small mb-0" style="line-height: 1.6;">Every compound is rigorously tested for purity, sterility, and exact dosing before reaching your protocol.</p>
                         </div>
-                    </div>
-
-                    <!-- Horizontal Feature Card 2 -->
-                    <div class="col-md-6">
-                        <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: #204d57;">
-                                    <i class="fas fa-bullseye fs-5"></i>
-                                </div>
-                                <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">Targeted Receptor Action</h5>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
+                                <div class="fs-3 fw-bold mb-1 text-primary">98%</div>
+                                <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Uptake</div>
                             </div>
-                            <p class="text-muted small mb-0" style="line-height: 1.6;">Unlike broad medications, peptides lock onto specific cellular receptors—no collateral systemic disruption.</p>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
+                                <div class="fs-3 fw-bold mb-1 text-primary">0%</div>
+                                <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">Synthetics</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
+                                <div class="fs-3 fw-bold mb-1 text-primary"><i class="fas fa-shield-alt"></i></div>
+                                <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">FDA Rx</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: #204d57;">
+                                        <i class="fas fa-microscope fs-5"></i>
+                                    </div>
+                                    <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">Compounded &amp; Verified</h5>
+                                </div>
+                                <p class="text-muted small mb-0" style="line-height: 1.6;">Every compound is rigorously tested for purity, sterility, and exact dosing before reaching your protocol.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: #204d57;">
+                                        <i class="fas fa-bullseye fs-5"></i>
+                                    </div>
+                                    <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">Targeted Receptor Action</h5>
+                                </div>
+                                <p class="text-muted small mb-0" style="line-height: 1.6;">Unlike broad medications, peptides lock onto specific cellular receptors—no collateral systemic disruption.</p>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="testimonials py-5 bg-light" id="testimonials">
         <div class="container py-5">
@@ -556,7 +470,6 @@
                 <div class="col-lg-4 text-center text-lg-start">
                     <h2 class="section-title mb-4">Patient Success Stories</h2>
                     <p class="lead text-secondary mb-4">Real results from individuals who chose to stop settling for "average" and optimize their health.</p>
-                    
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-2">
                         <div class="text-primary fs-4 me-3">
                             <i class="fas fa-star"></i>
@@ -600,7 +513,7 @@
         <div class="container py-3">
             <h2 class="display-5 text-white fw-bold mb-4">Ready to Optimize?</h2>
             <p class="lead max-w-700 mx-auto mb-5" style="color: #e2e8f0;">Stop guessing with supplements that don't work. Utilize clinical-grade peptide science directed by medical professionals to achieve your peak state.</p>
-            
+
             <div class="bg-dark bg-opacity-25 p-5 rounded-4 border border-secondary shadow-lg mx-auto mb-5" style="max-width: 600px; backdrop-filter: blur(10px);">
                 <a href="#consultation" class="btn cta-btn ms-lg-3">Book Your Consultation</a>
                 <p class="text-white-50 text-decoration-none d-block mt-3 hover-text-primary transition-all"><i class="fas fa-phone-alt me-2"></i> (850) 555-0199</p>
@@ -611,25 +524,25 @@
                 <div class="col-6 col-md-3">
                     <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
                         <i class="fas fa-id-card text-primary mb-2 fs-3"></i>
-                        <small class="text-uppercase fw-bold tracking-wider" style="font-size: 0.7rem; letter-spacing: 1px;">Licensed Clinic</small>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Licensed Clinic</small>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
                         <i class="fas fa-map-marker-alt text-primary mb-2 fs-3"></i>
-                        <small class="text-uppercase fw-bold tracking-wider" style="font-size: 0.7rem; letter-spacing: 1px;">Florida-Based</small>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Florida-Based</small>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
                         <i class="fas fa-user-md text-primary mb-2 fs-3"></i>
-                        <small class="text-uppercase fw-bold tracking-wider" style="font-size: 0.7rem; letter-spacing: 1px;">Verified Credentials</small>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Verified Credentials</small>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
                         <i class="fas fa-credit-card text-primary mb-2 fs-3"></i>
-                        <small class="text-uppercase fw-bold tracking-wider" style="font-size: 0.7rem; letter-spacing: 1px;">Financing Available</small>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Financing Available</small>
                     </div>
                 </div>
             </div>
@@ -637,63 +550,23 @@
     </section>
 
     <section class="faqs py-5 bg-white" id="faqs">
-    <div class="container py-4 gs-reveal">
-        <div class="row text-center mb-5">
-            <div class="col-lg-8 mx-auto">
-                <h2 class="section-title mb-4" style="color: #204d57;">Common Questions</h2>
-                <p class="lead text-muted">Everything you need to know about our clinical peptide protocols.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <!-- Your main.js will automatically populate this div -->
-                <div class="accordion shadow-sm" id="faqAccordion"></div>
-            </div>
-        </div>
-    </div>
-</section>
-    <footer class="footer py-5 text-center text-md-start">
-        <div class="container py-4">
-            <div class="row align-items-stretch g-4">
-                <div class="col-lg-4 align-self-center mb-5 mb-lg-0 text-center text-lg-start">
-                    <h2 class="mb-4 text-white">Ready to Transform Your Health?</h2>
-                    <p class="mb-4 text-white-50 mx-auto mx-lg-0" style="max-width: 500px;">Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.</p>
-                    <a href="#consultation" class="btn cta-btn btn-lg mt-2">Secure Your Consultation</a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
-                        <h4 class="text-primary mb-4 font-family-bebas">Our Services</h4>
-                        <ul class="list-unstyled mb-0" id="footer-services-list"></ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
-                        <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
-                        <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 Wellness Way, Suite 400<br><span class="ms-4 ps-2">Tallahassee, FL 32308</span></p>
-                        <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> (850) 555-0199</p>
-                        <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> info@optimalvitality.com</p>
-                        <p class="mb-0"><a href="https://instagram.com/oviwellness_" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> @oviwellness_</a></p>
-                        <hr class="border-secondary my-4">
-                        <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>Mon - Fri:</strong> 8:00 AM - 6:00 PM</p>
-                        <p class="text-white-50 mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>Sat - Sun:</strong> Closed</p>
-                    </div>
+        <div class="container py-4 gs-reveal">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title mb-4" style="color: #204d57;">Common Questions</h2>
+                    <p class="lead text-muted">Everything you need to know about our clinical peptide protocols.</p>
                 </div>
             </div>
-            
-            <div class="mt-5 pt-4 border-top border-secondary text-center">
-                <p class="text-white-50 max-w-700 mx-auto mb-3" style="font-size: 0.8rem; line-height: 1.6;">
-                    <strong>Medical Disclaimer:</strong> Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment.
-                </p>
-                <p class="mb-0 text-white-50"><small>&copy; 2026 Optimal Vitality Clinic. All rights reserved.</small></p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="faqAccordion"></div>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <div id="mobile-sticky-cta" class="d-lg-none position-fixed bottom-0 start-0 w-100 p-3" style="z-index: 1040; pointer-events: none;">
-        <a href="#consultation" class="btn cta-btn w-100 py-3 shadow-lg fs-6 fw-bold text-uppercase d-flex align-items-center justify-content-center" style="border-radius: 50px; pointer-events: auto; letter-spacing: 1px;">
-            <i class="fas fa-calendar-check me-2"></i>
-        </a>
-    </div>
+    <!-- Shared footer + mobile sticky CTA injected by components.js -->
+    <div id="footer-root"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -701,6 +574,7 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/header.js"></script>
 </body>
