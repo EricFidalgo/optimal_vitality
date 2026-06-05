@@ -300,14 +300,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 // Sync indicators via Intersection Observer
                 const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const originalIdx = entry.target.getAttribute('data-original-index');
-                            dots.forEach(dot => dot.classList.remove('active'));
-                            if (dots[originalIdx]) dots[originalIdx].classList.add('active');
-                        }
-                    });
-                }, { root: mobileInner, threshold: 0.6 });
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const originalIdx = entry.target.getAttribute('data-original-index');
+                        dots.forEach(dot => dot.classList.remove('active'));
+                        if (dots[originalIdx]) dots[originalIdx].classList.add('active');
+                    }
+                });
+            }, { root: mobileTrack, threshold: 0.6 });
                                  
                 items.forEach(item => observer.observe(item));
                 // Silently teleport back to the middle when scrolling completely stops

@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #e6c381; 
-  --secondary-color: #204d57; 
+  --primary-color: #e6c381;
+  --secondary-color: #204d57;
   --bg-white: #ffffff;
   --bg-light: #f8f9fa;
   --text-dark: #1b1b1b;
@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 80px;
   overflow-x: hidden;
 }
 
@@ -21,11 +21,18 @@ body {
   position: relative;
 }
 
-b, strong, .fw-bold {
+b,
+strong,
+.fw-bold {
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -54,7 +61,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   background-color: transparent;
   padding: 1.5rem 0;
-  transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    padding 0.3s ease,
+    box-shadow 0.3s ease,
+    border-bottom 0.3s ease;
 }
 
 .navbar.scrolled-nav {
@@ -142,13 +153,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  background: radial-gradient(circle at center, #2a616d 0%, var(--secondary-color) 100%);
+  background: radial-gradient(
+    circle at center,
+    #2a616d 0%,
+    var(--secondary-color) 100%
+  );
   position: relative;
   min-height: 125vh;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
   padding-top: 180px;
   padding-bottom: 120px;
@@ -233,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 190px;
   height: 190px;
-  background: rgba(230, 195, 129, 0.15); 
+  background: rgba(230, 195, 129, 0.15);
   border: 2px solid rgba(230, 195, 129, 0.6);
   box-shadow: 0 0 25px rgba(230, 195, 129, 0.2);
   backdrop-filter: blur(6px);
@@ -281,10 +296,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes morphBlob {
-  0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
-  34% { border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%; }
-  67% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
-  100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  0% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  }
 }
 
 .cta-btn {
@@ -307,13 +330,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-color);
 }
 
-.cta-btn:focus, 
-.cta-btn:active, 
+.cta-btn:focus,
+.cta-btn:active,
 .cta-btn:focus-visible {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-color: var(--primary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .navbar .cta-btn {
@@ -327,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .cta-btn:focus,
 .navbar .cta-btn:active {
-  background-color: #cda863; 
+  background-color: #cda863;
   color: var(--secondary-color);
   border-color: #cda863;
 }
@@ -345,25 +368,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hormone-banner {
-  background: linear-gradient(135deg, #16363d 0%, var(--secondary-color) 50%, #16363d 100%);
+  background: linear-gradient(
+    135deg,
+    #16363d 0%,
+    var(--secondary-color) 50%,
+    #16363d 100%
+  );
   border-bottom: 4px solid var(--primary-color);
   border-top: 4px solid var(--primary-color);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 2rem 0;
 }
 
 .hormone-banner::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: -100%; width: 50%; height: 100%;
-  background: linear-gradient(to right, transparent, rgba(230, 195, 129, 0.15), transparent);
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(230, 195, 129, 0.15),
+    transparent
+  );
   animation: shine 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes shine { 
-  100% { left: 200%; } 
+@keyframes shine {
+  100% {
+    left: 200%;
+  }
 }
 
 .section-light {
@@ -375,16 +413,18 @@ h1, h2, h3, h4, h5, h6 {
   border: 4px solid var(--primary-color);
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   position: relative;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+  transition:
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s ease;
 }
 
 .premium-box::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  border: 2px solid rgba(255,255,255,0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   pointer-events: none;
 }
@@ -395,10 +435,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .premium-image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;    
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .premium-image-box img.top-focus {
@@ -410,17 +450,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .premium-services {
-  background: radial-gradient(circle at top right, #112a2f 0%, var(--secondary-color) 100%);
+  background: radial-gradient(
+    circle at top right,
+    #112a2f 0%,
+    var(--secondary-color) 100%
+  );
   position: relative;
   overflow: hidden;
   border-bottom: 2px solid rgba(230, 195, 129, 0.2);
 }
 
 .premium-services::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 0; left: 0; width: 100%; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
 }
 
 .premium-services .section-title::after {
@@ -442,25 +494,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-grid-card::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle at top left, rgba(230, 195, 129, 0.1), transparent 70%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(230, 195, 129, 0.1),
+    transparent 70%
+  );
   opacity: 0;
   z-index: -1;
   transition: opacity 0.4s ease;
 }
 
-.service-grid-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--primary-color);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(230, 195, 129, 0.1);
+@media (hover: hover) {
+  .service-grid-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow:
+      0 15px 35px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(230, 195, 129, 0.1);
+  }
+
+  .service-grid-card:hover::before {
+    opacity: 1;
+  }
+
+  /* Keep this inside hover query for desktop mouse setups only */
+  .service-grid-card:hover .card-icon {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4);
+  }
 }
 
-.service-grid-card:hover::before {
-  opacity: 1;
-}
-
+/* Static base styling */
 .service-grid-card .card-icon {
   width: 70px;
   height: 70px;
@@ -477,11 +549,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.service-grid-card:hover .card-icon {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4);
+/* New Mobile Scroll-Focus Activation Rule */
+.native-scroll-item.active-slide .service-grid-card .card-icon {
+  background: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  transform: scale(1.1) rotate(5deg) !important;
+  box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4) !important;
 }
 
 .service-grid-card .card-title {
@@ -492,7 +565,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-grid-card .card-text {
-  color: #a0aec0;
+  color: white;
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 25px;
@@ -547,7 +620,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   border: none;
   margin: 0;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-radius 0.3s ease;
+  transition:
+    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
 }
 
 .carousel-indicators .active {
@@ -563,7 +639,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .trust-section h2 {
   font-size: 2.5rem;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
 }
 
@@ -578,7 +654,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(32, 77, 87, 0.08);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
   overflow: hidden;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .accordion .accordion-item:hover {
@@ -626,18 +704,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -75px; left: 50%; transform: translateX(-50%);
-  width: 250px; height: 250px;
-  background: radial-gradient(circle, rgba(230,195,129,0.1) 0%, transparent 70%);
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(230, 195, 129, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
 
 .footer h2 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer .border-secondary {
@@ -657,10 +742,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-3px) scale(1.02);
 }
 
-.text-primary { color: var(--primary-color) !important; }
-.bg-light { background-color: var(--bg-light) !important; }
-.bg-primary { background-color: var(--secondary-color) !important; }
-.max-w-700 { max-width: 700px; }
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.bg-light {
+  background-color: var(--bg-light) !important;
+}
+.bg-primary {
+  background-color: var(--secondary-color) !important;
+}
+.max-w-700 {
+  max-width: 700px;
+}
 
 /* --- PREMIUM TAB NAVIGATION --- */
 .therapy-tabs-wrapper {
@@ -721,7 +814,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(32, 77, 87, 0.04);
   border-left: 4px solid var(--primary-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .feature-list li:hover {
@@ -737,20 +833,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- ELEGANT TRANSITIONS & NO JUMPING --- */
 .tab-content {
-  display: grid !important; 
+  display: grid !important;
   grid-template-columns: 1fr;
   align-items: stretch;
 }
 
 .tab-pane {
-  display: block !important; 
+  display: block !important;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(0.98); 
-  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s;
+  transform: scale(0.98);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s;
   pointer-events: none;
 }
 
@@ -773,7 +872,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-group-img-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border: 2px solid rgba(230, 195, 129, 0.3);
@@ -804,7 +903,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-list-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -25px;
   top: 5px;
@@ -859,68 +958,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #testimonialDesktop .carousel-item {
-  padding: 0 15px; 
+  padding: 0 15px;
 }
 
 .testimonial-verified-badge {
-    color: #4CAF50;
-    font-size: 0.75rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 2px;
+  color: #4caf50;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
 }
 
 /* ==========================================================================
    Clinical Transformations (Before & After) - Static & Mobile Optimized
    ========================================================================== */
 .ba-card {
-    border-color: rgba(32, 77, 87, 0.15) !important;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  border-color: rgba(32, 77, 87, 0.15) !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 .ba-card img {
-    min-height: 200px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+  min-height: 200px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .ba-card .row.g-0 > div {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .ba-card .badge {
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    font-size: 0.65rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  font-size: 0.65rem;
 }
 
 /* ==========================================================================
    Athletic Optimization Protocols - Static & Mobile Optimized
    ========================================================================== */
 #athletic-stacks .bg-white {
-    border-left-color: var(--secondary-color) !important; 
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.04) !important;
+  border-left-color: var(--secondary-color) !important;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.04) !important;
 }
 
 #athletic-stacks .bg-white h4 {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }
 
 #athletic-stacks .bg-white i {
-    color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 #athletic-stacks .btn-outline-primary {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 #athletic-stacks .btn-outline-primary:hover {
-    background-color: var(--secondary-color);
-    color: var(--bg-white);
+  background-color: var(--secondary-color);
+  color: var(--bg-white);
 }
 
 /* Mobile Sticky CTA - Premium Exponential Glide */
@@ -934,7 +1033,10 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   transform: translateY(40px);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, visibility 0.4s;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.4s ease,
+    visibility 0.4s;
 }
 
 #mobile-sticky-cta .btn {
@@ -954,8 +1056,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #empty-bg-button {
-  background-color: transparent !important; 
-  color: var(--primary-color); 
+  background-color: transparent !important;
+  color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
@@ -963,37 +1065,47 @@ h1, h2, h3, h4, h5, h6 {
    Consolidated Media Queries - Tablet & Mobile
    ========================================================================== */
 @media (min-width: 768px) {
-    .ba-card .badge { font-size: 0.85rem; padding: 0.5em 0.8em; }
+  .ba-card .badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.8em;
+  }
 }
 
 @media (min-width: 992px) {
-    #athletic-stacks .bg-white h4 { font-size: 1.35rem; }
+  #athletic-stacks .bg-white h4 {
+    font-size: 1.35rem;
+  }
 }
 
 @media (max-width: 991.98px) {
-
   .offcanvas {
     background-color: var(--secondary-color) !important;
     width: 100% !important;
     max-width: 100% !important;
     border: none !important;
   }
-  
-  .navbar-nav { gap: 1.5rem; }
-  .navbar-nav .nav-link { font-size: 1.4rem; }
+
+  .navbar-nav {
+    gap: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.4rem;
+  }
 
   .navbar-toggler {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
   }
 
-  .navbar-toggler:focus { box-shadow: none; }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
 
   #therapy-tabs-content .row {
     min-height: 320px;
     height: 100%;
   }
-  
+
   #therapy-tabs-content .premium-image-box {
     height: 320px !important;
     min-height: 320px;
@@ -1005,64 +1117,95 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2.5rem;
   }
 
-  .team-group-img-wrapper { height: 350px; }
-  .team-list-item::before { left: -15px; }
-  .team-list-item:hover { transform: translateX(5px); }
+  .team-group-img-wrapper {
+    height: 350px;
+  }
+  .team-list-item::before {
+    left: -15px;
+  }
+  .team-list-item:hover {
+    transform: translateX(5px);
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh !important; 
+    min-height: 100vh !important;
     padding-top: 130px;
     padding-bottom: 60px;
   }
-  .hero h1 { font-size: clamp(2.7rem, 10.5vw, 3.2rem); }
+  .hero h1 {
+    font-size: clamp(2.7rem, 10.5vw, 3.2rem);
+  }
   .hero p {
     font-size: 1.1rem;
     line-height: 1.5;
     padding: 0 15px;
   }
 
-  .logo-img { height: 40px; width: 40px; }
-  .brand-title { font-size: 1.2rem; }
-  .brand-subtitle { font-size: 0.7rem; letter-spacing: 2px; }
+  .logo-img {
+    height: 40px;
+    width: 40px;
+  }
+  .brand-title {
+    font-size: 1.2rem;
+  }
+  .brand-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
 
-  .cta-btn, .navbar .cta-btn {
+  .cta-btn,
+  .navbar .cta-btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
   }
-  
-  .service-blob { width: 145px; height: 145px; }
-  .service-blob .icon { font-size: 2rem; }
-  .blob-title { font-size: .9rem; padding: 0 8px; }
-  
-  .premium-image-box { height: 280px; }
-  .section-title { font-size: 1.8rem; }
-  
+
+  .service-blob {
+    width: 145px;
+    height: 145px;
+  }
+  .service-blob .icon {
+    font-size: 2rem;
+  }
+  .blob-title {
+    font-size: 0.9rem;
+    padding: 0 8px;
+  }
+
+  .premium-image-box {
+    height: 280px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+
   .hormone-banner h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     margin-right: 0rem;
   }
-  
-  .footer h2 { font-size: 2rem; }
+
+  .footer h2 {
+    font-size: 2rem;
+  }
 
   .premium-services .row.justify-content-center {
     display: grid !important;
-    grid-template-columns: 1fr; 
-    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
     gap: 15px;
     margin-left: 0;
     margin-right: 0;
   }
   .premium-services .col-lg-5.col-md-6 {
-    width: 100% !important; 
+    width: 100% !important;
     padding: 0 !important;
   }
 
   .service-grid-card {
     padding: 24px !important;
-    padding-bottom: 64px !important; 
+    padding-bottom: 64px !important;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(230, 195, 129, 0.15);
@@ -1071,34 +1214,34 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     text-align: left;
   }
-  
+
   .service-grid-card .card-icon {
     width: 48px;
     height: 48px;
     font-size: 1.15rem;
     margin-bottom: 16px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: 1.5px solid var(--primary-color);
     background: transparent;
   }
-  
+
   .service-grid-card .card-title {
     font-size: 1.1rem;
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-weight: 700;
   }
-  
+
   .service-grid-card .card-text {
     font-size: 0.85rem;
     line-height: 1.5;
     margin-bottom: 0;
   }
-  
+
   .service-link {
     font-size: 0.75rem;
     bottom: 24px;
-    left: 24px; 
+    left: 24px;
   }
 
   .therapy-tabs-wrapper {
@@ -1106,7 +1249,7 @@ h1, h2, h3, h4, h5, h6 {
     background: transparent;
     border: none;
     box-shadow: none;
-    padding: 15px 5px; 
+    padding: 15px 5px;
     width: 100%;
     overflow: visible !important;
   }
@@ -1119,7 +1262,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: nowrap !important;
   }
 
-  .nav-pills .nav-item { width: 100%; }
+  .nav-pills .nav-item {
+    width: 100%;
+  }
 
   .nav-pills .premium-tab {
     display: flex;
@@ -1139,8 +1284,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
     border: 1px solid rgba(32, 77, 87, 0.1);
     box-shadow: 0 4px 10px rgba(32, 77, 87, 0.05);
-    box-sizing: border-box; 
-    position: relative; 
+    box-sizing: border-box;
+    position: relative;
   }
 
   .nav-pills .premium-tab::before {
@@ -1151,17 +1296,23 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
   }
 
-  #hormone-optimization-tab::before { content: "\f48e"; } 
-  #glp-1therapies-tab::before { content: "\f496"; } 
-  #peptides-tab::before { content: "\f492"; } 
+  #hormone-optimization-tab::before {
+    content: "\f48e";
+  }
+  #glp-1therapies-tab::before {
+    content: "\f496";
+  }
+  #peptides-tab::before {
+    content: "\f492";
+  }
 
   .nav-pills .premium-tab.active,
   .nav-pills .premium-tab.active:hover {
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
     border-color: var(--primary-color) !important;
-    box-shadow: 0 0 20px rgba(230, 195, 129, 0.55) !important; 
-    z-index: 2; 
+    box-shadow: 0 0 20px rgba(230, 195, 129, 0.55) !important;
+    z-index: 2;
   }
 
   .nav-pills .premium-tab.active::before {
@@ -1170,7 +1321,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* --- FORCE NATIVE MOBILE SWIPING --- */
   #testimonialMobile {
-    touch-action: pan-y pinch-zoom; 
+    touch-action: pan-y pinch-zoom;
   }
 
   #testimonialMobile .carousel-inner {
@@ -1181,22 +1332,26 @@ h1, h2, h3, h4, h5, h6 {
     cursor: grabbing;
   }
 
-  .carousel-control-prev, 
+  .carousel-control-prev,
   .carousel-control-next {
-      width: 45px !important; 
-      height: 45px !important;
-      background-color: rgba(32, 77, 87, 0.2); 
-      border-radius: 50%;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
+    width: 45px !important;
+    height: 45px !important;
+    background-color: rgba(32, 77, 87, 0.2);
+    border-radius: 50%;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
   }
 
-  .carousel-control-prev { left: 1px !important; }
-  .carousel-control-next { right: 1px !important; }
-  
+  .carousel-control-prev {
+    left: 1px !important;
+  }
+  .carousel-control-next {
+    right: 1px !important;
+  }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-      transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
   }
 
   .trust-section h2 {
@@ -1204,15 +1359,13 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     line-height: 1.3;
   }
-  
+
   .trust-section .lead {
     font-size: 0.95rem;
     line-height: 1.5;
     padding: 0 10px;
   }
 }
-
-
 
 /* --- NATIVE MOBILE MOMENTUM SCROLLING --- */
 .native-scroll-wrapper {
@@ -1282,8 +1435,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-
-
 /* Replace the previous .carousel-indicators [data-bs-target] block with this: */
 .carousel-indicators {
   gap: 4px;
@@ -1297,7 +1448,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   border: none;
   margin: 0;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-radius 0.3s ease;
+  transition:
+    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease,
+    border-radius 0.3s ease;
 }
 
 .carousel-indicators .active {
@@ -1309,7 +1463,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
   #mobile-sticky-cta {
     position: fixed;
-    bottom: calc(20px + env(safe-area-inset-bottom)); /* Sits safely above the iOS bar */
+    bottom: calc(
+      20px + env(safe-area-inset-bottom)
+    ); /* Sits safely above the iOS bar */
     right: 20px;
     left: auto;
     width: auto;
@@ -1332,7 +1488,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Hide the text on mobile, display only a clean calendar icon */
   #mobile-sticky-cta .btn {
-    font-size: 0; 
+    font-size: 0;
   }
 
   #mobile-sticky-cta .btn i {
@@ -1342,299 +1498,308 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-
-
 /* ==========================================================================
    EXCLUSIVE MOBILE EXPERIENCE (< 768px)
    ========================================================================== */
 @media (max-width: 767.98px) {
-    /* 1. Horizontal Scroll Containers */
-    .mobile-carousel-row {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-        scroll-snap-type: x mandatory !important;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 20px !important;
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        scrollbar-width: none; 
-    }
-    
-    .mobile-carousel-row::-webkit-scrollbar {
-        display: none;
-    }
+  /* 1. Horizontal Scroll Containers */
+  .mobile-carousel-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    scrollbar-width: none;
+  }
 
-    /* 2. Card Sizing Inside Scroll Container */
-    .mobile-carousel-row > [class*="col-"] {
-        flex: 0 0 85% !important; /* 85% width lets the next card peek in */
-        max-width: 85% !important;
-        scroll-snap-align: center !important;
-        margin-right: 15px; 
-        height: auto !important;
-    }
-    
-    .mobile-carousel-row > *:last-child {
-        margin-right: 15px !important; 
-    }
+  .mobile-carousel-row::-webkit-scrollbar {
+    display: none;
+  }
 
-    /* 3. Animated Swipe Hint UI */
-    .mobile-swipe-hint {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        margin-top: -10px;
-        margin-bottom: 25px;
-    }
+  /* 2. Card Sizing Inside Scroll Container */
+  .mobile-carousel-row > [class*="col-"] {
+    flex: 0 0 85% !important; /* 85% width lets the next card peek in */
+    max-width: 85% !important;
+    scroll-snap-align: center !important;
+    margin-right: 15px;
+    height: auto !important;
+  }
 
-    .swipe-line {
-        height: 2px;
-        width: 40px;
-        background: linear-gradient(90deg, transparent, var(--primary-color));
-        border-radius: 2px;
-    }
+  .mobile-carousel-row > *:last-child {
+    margin-right: 15px !important;
+  }
 
-    .swipe-line.reverse {
-        background: linear-gradient(270deg, transparent, var(--primary-color));
-    }
+  /* 3. Animated Swipe Hint UI */
+  .mobile-swipe-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
 
-    .mobile-swipe-hint span {
-        color: var(--primary-color);
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 2.5px;
-        text-transform: uppercase;
-    }
+  .swipe-line {
+    height: 2px;
+    width: 40px;
+    background: linear-gradient(90deg, transparent, var(--primary-color));
+    border-radius: 2px;
+  }
 
-    .mobile-swipe-hint i {
-        color: var(--primary-color);
-        font-size: 1rem;
-        animation: swipeHand 2s infinite ease-in-out;
-    }
+  .swipe-line.reverse {
+    background: linear-gradient(270deg, transparent, var(--primary-color));
+  }
 
-    @keyframes swipeHand {
-        0%, 100% { transform: translateX(0) rotate(0deg); opacity: 0.5; }
-        50% { transform: translateX(10px) rotate(-10deg); opacity: 1; }
-    }
+  .mobile-swipe-hint span {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
 
-    /* 4. Interactive Progress Bar */
-    .scroll-progress-container {
-        width: 60px;
-        height: 4px;
-        background: rgba(32, 77, 87, 0.1);
-        border-radius: 4px;
-        margin: 0 auto 30px auto;
-        position: relative;
-        overflow: hidden;
-    }
+  .mobile-swipe-hint i {
+    color: var(--primary-color);
+    font-size: 1rem;
+    animation: swipeHand 2s infinite ease-in-out;
+  }
 
-    .scroll-progress-bar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 30%;
-        background: var(--primary-color);
-        border-radius: 4px;
-        transition: left 0.1s ease-out;
+  @keyframes swipeHand {
+    0%,
+    100% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 0.5;
     }
-    
-    /* 6. Compress Science Stats */
-    #science .p-4 { padding: 1.25rem !important; }
-    #science .display-5 { font-size: 2.2rem !important; }
+    50% {
+      transform: translateX(10px) rotate(-10deg);
+      opacity: 1;
+    }
+  }
+
+  /* 4. Interactive Progress Bar */
+  .scroll-progress-container {
+    width: 60px;
+    height: 4px;
+    background: rgba(32, 77, 87, 0.1);
+    border-radius: 4px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scroll-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: left 0.1s ease-out;
+  }
+
+  /* 6. Compress Science Stats */
+  #science .p-4 {
+    padding: 1.25rem !important;
+  }
+  #science .display-5 {
+    font-size: 2.2rem !important;
+  }
 }
 
 /* Hide mobile UI elements completely on desktop */
 @media (min-width: 768px) {
-    .mobile-only-ui { display: none !important; }
+  .mobile-only-ui {
+    display: none !important;
+  }
 }
-
 
 @media (max-width: 767.98px) {
-    /* Override the original grid layout for the peptide portfolio */
-    section.premium-services .row.mobile-carousel-row {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-    }
-    
-    section.premium-services .row.mobile-carousel-row > [class*="col-"] {
-        flex: 0 0 85% !important;
-        max-width: 85% !important;
-    }
+  /* Override the original grid layout for the peptide portfolio */
+  section.premium-services .row.mobile-carousel-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+  }
+
+  section.premium-services .row.mobile-carousel-row > [class*="col-"] {
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
+  }
 }
-
-
 
 /* ==========================================================================
    MOBILE FLOATING ACTION BUTTON (FAB) OVERRIDE
    ========================================================================== */
 @media (max-width: 991.98px) {
-    /* 1. Un-anchor from the left side and pin to the bottom right */
-    #mobile-sticky-cta.d-lg-none.position-fixed {
-        width: auto !important;
-        padding: 0 !important;
-        left: auto !important;
-        start: auto !important;
-        right: 20px !important;
-    }
+  /* 1. Un-anchor from the left side and pin to the bottom right */
+  #mobile-sticky-cta.d-lg-none.position-fixed {
+    width: auto !important;
+    padding: 0 !important;
+    left: auto !important;
+    start: auto !important;
+    right: 20px !important;
+  }
 
-    /* 2. Reshape into a 65x65 circle and hide the text */
-    #mobile-sticky-cta .btn.cta-btn {
-        width: 65px !important;
-        height: 65px !important;
-        border-radius: 50% !important;
-        padding: 0 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        font-size: 0 !important; /* This hides "Book Consultation" */
-        
-        /* Uses 10px on bezel devices (where env is 0), and defaults strictly to the safe area line on bezel-less devices */
-        margin-bottom: max(10px, env(safe-area-inset-bottom)) !important;
-        
-        /* Fixes for iOS Native Rendering and Shadow Stripping */
-        -webkit-appearance: none !important; 
-        box-shadow: none !important;          
-        filter: drop-shadow(0 0 0 transparent) !important; 
-    }
+  /* 2. Reshape into a 65x65 circle and hide the text */
+  #mobile-sticky-cta .btn.cta-btn {
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0 !important; /* This hides "Book Consultation" */
 
-    /* 3. Re-center and enlarge the calendar icon */
-    #mobile-sticky-cta .btn.cta-btn i {
-        font-size: 1.6rem !important;
-        margin: 0 !important; /* Removes the existing 'me-2' right margin */
-    }
+    /* Uses 10px on bezel devices (where env is 0), and defaults strictly to the safe area line on bezel-less devices */
+    margin-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+
+    /* Fixes for iOS Native Rendering and Shadow Stripping */
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    filter: drop-shadow(0 0 0 transparent) !important;
+  }
+
+  /* 3. Re-center and enlarge the calendar icon */
+  #mobile-sticky-cta .btn.cta-btn i {
+    font-size: 1.6rem !important;
+    margin: 0 !important; /* Removes the existing 'me-2' right margin */
+  }
 }
 
 /* Hide Desktop Portfolio Grid on Mobile */
 @media (max-width: 991.98px) {
-    #portfolio-desktop {
-        display: none !important;
-    }
+  #portfolio-desktop {
+    display: none !important;
+  }
 }
-
-
-
 
 /* ==========================================================================
    SMOOTH DESKTOP DROPDOWN & MOBILE SLIDE FOLDER
    ========================================================================== */
 
-.nav-link:focus, .dropdown-toggle:focus {
-    box-shadow: none !important;
-    outline: none !important;
+.nav-link:focus,
+.dropdown-toggle:focus {
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 /* 1. DESKTOP SMOOTH DROPDOWN */
 @media (min-width: 992px) {
-    .custom-desktop-dropdown .dropdown-toggle::after {
-        display: none !important; 
-    }
-    
-    .custom-desktop-dropdown .dropdown-icon {
-        transition: transform 0.3s ease;
-        color: var(--primary-color);
-    }
-    
-    /* Target the nav-link directly for the icon rotation */
-    .custom-desktop-dropdown .nav-link.show .dropdown-icon {
-        transform: rotate(180deg);
-    }
+  .custom-desktop-dropdown .dropdown-toggle::after {
+    display: none !important;
+  }
 
-    .custom-desktop-menu {
-        display: block !important;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(15px);
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        pointer-events: none;
-        background-color: var(--secondary-color) !important;
-        border: 1px solid rgba(230, 195, 129, 0.2);
-        border-radius: 8px;
-        padding: 10px 0;
-        min-width: 250px;
-        margin-top: 5px !important;
-    }
+  .custom-desktop-dropdown .dropdown-icon {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+  }
 
-    /* Target the custom menu directly for visibility */
-    .custom-desktop-menu.show {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
+  /* Target the nav-link directly for the icon rotation */
+  .custom-desktop-dropdown .nav-link.show .dropdown-icon {
+    transform: rotate(180deg);
+  }
 
-    .custom-desktop-menu .dropdown-item {
-        color: var(--bg-white) !important;
-        padding: 12px 20px;
-        transition: all 0.2s ease;
-        letter-spacing: 1px;
-    }
+  .custom-desktop-menu {
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    background-color: var(--secondary-color) !important;
+    border: 1px solid rgba(230, 195, 129, 0.2);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 250px;
+    margin-top: 5px !important;
+  }
 
-    .custom-desktop-menu .dropdown-item:hover {
-        background-color: rgba(230, 195, 129, 0.15) !important;
-        color: var(--primary-color) !important;
-    }
+  /* Target the custom menu directly for visibility */
+  .custom-desktop-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .custom-desktop-menu .dropdown-item {
+    color: var(--bg-white) !important;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+  }
+
+  .custom-desktop-menu .dropdown-item:hover {
+    background-color: rgba(230, 195, 129, 0.15) !important;
+    color: var(--primary-color) !important;
+  }
 }
 
 /* 2. MOBILE APP-STYLE SLIDING FOLDER */
 @media (max-width: 991.98px) {
-    .mobile-sub-panel {
-        position: absolute;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 100%;
-        background-color: var(--secondary-color);
-        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-        z-index: 10;
-    }
-    
-    .mobile-sub-panel.active {
-        transform: translateX(-100%);
-    }
+  .mobile-sub-panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
+  }
 
-    .mobile-drill-open:hover, .mobile-drill-open:active,
-    .mobile-sub-panel a:hover, .mobile-sub-panel a:active {
-        background-color: rgba(255,255,255,0.05);
-        border-radius: 8px;
-        color: var(--primary-color) !important;
-    }
+  .mobile-sub-panel.active {
+    transform: translateX(-100%);
+  }
+
+  .mobile-drill-open:hover,
+  .mobile-drill-open:active,
+  .mobile-sub-panel a:hover,
+  .mobile-sub-panel a:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--primary-color) !important;
+  }
 }
-
-
-
 
 /* ==========================================================================
    Interactive Before/After Slider
    ========================================================================== */
 .ba-slider {
-    appearance: none;
-    -webkit-appearance: none;
-    background: transparent;
-    z-index: 5;
-    cursor: ew-resize;
-    opacity: 0; 
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  z-index: 5;
+  cursor: ew-resize;
+  opacity: 0;
 }
 
 .ba-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 45px; 
-    height: 100vh; 
-    background: transparent;
-    cursor: ew-resize;
+  -webkit-appearance: none;
+  width: 45px;
+  height: 100vh;
+  background: transparent;
+  cursor: ew-resize;
 }
 
 .ba-slider::-moz-range-thumb {
-    width: 45px;
-    height: 100vh;
-    background: transparent;
-    cursor: ew-resize;
-    border: none;
+  width: 45px;
+  height: 100vh;
+  background: transparent;
+  cursor: ew-resize;
+  border: none;
+}
+
+.premium-services .carousel-indicators button,
+.premium-services .carousel-indicators [data-bs-target] {
+  background-color: rgba(255, 255, 255, 0.3);
 }
