@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
          
     // --- 1. RENDER DYNAMIC DATA ---
-    // --- 1. RENDER DYNAMIC DATA ---
     function renderDynamicContent() {
         const desktopNav = document.getElementById('main-navbar-links');
         const mobileNav = document.getElementById('mobile-navbar-links');

@@ -1152,7 +1152,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #hormone-optimization-tab::before { content: "\f48e"; } 
-  #weight-loss-tab::before { content: "\f496"; } 
+  #glp-1therapies-tab::before { content: "\f496"; } 
   #peptides-tab::before { content: "\f492"; } 
 
   .nav-pills .premium-tab.active,
