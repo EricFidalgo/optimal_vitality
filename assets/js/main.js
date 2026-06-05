@@ -40,7 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // then silently teleports the scroll position back to the center when the
     // user reaches either edge — creating an effectively infinite loop.
     // =========================================================================
-    function initInfiniteTrack(desktopId, trackId, dotsId) {
+    /**
+     * Initializes a mobile swipe track by cloning desktop source elements.
+     * Supports either infinite scroll snapping loop (cloning 20x + silent teleportation)
+     * or standard scroll behavior (cloning 1x).
+     */
+    function initMobileTrack(desktopId, trackId, dotsId, isInfinite = true) {
         const desktopContainer = document.getElementById(desktopId);
         const mobileTrack = document.getElementById(trackId);
         const mobileDots = document.getElementById(dotsId);
@@ -56,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
             mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
         });
 
-        // 2. Clone all items 20x into the track (JITTER FIX: hide while building)
-        const SETS = 20;
+        // 2. Clone items into the track (hide while building to avoid jitter)
+        const SETS = isInfinite ? 20 : 1;
         mobileTrack.style.opacity = '0';
         mobileTrack.style.transition = 'opacity 0.2s ease-in';
 
@@ -66,30 +71,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 const clone = document.createElement('div');
                 clone.className = 'native-scroll-item';
                 clone.setAttribute('data-original-index', index);
-                // Unwrap Bootstrap col-* wrappers so only inner card content is cloned
+                // Unwrap Bootstrap col-* wrappers
                 clone.innerHTML = item.className.match(/\bcol-/) ? item.innerHTML : '';
                 if (!clone.innerHTML) clone.appendChild(item.cloneNode(true));
                 mobileTrack.appendChild(clone);
             });
         }
 
-        // 3. Position, observe, and wire up scroll teleportation + dot clicks
+        // 3. Position, observe, and wire up events
         setTimeout(() => {
             const items = mobileTrack.querySelectorAll('.native-scroll-item');
             const dots = mobileDots.querySelectorAll('button');
-            const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
+            const middleStartIndex = isInfinite ? Math.floor(SETS / 2) * numOriginals : 0;
 
-            // Snap to the middle set without animation, then reveal
+            // Snap to starting position
             if (items[middleStartIndex]) {
                 mobileTrack.style.scrollBehavior = 'auto';
-                mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
+                if (isInfinite) {
+                    mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
+                } else {
+                    mobileTrack.scrollLeft = 0;
+                }
                 setTimeout(() => {
                     mobileTrack.style.scrollBehavior = 'smooth';
                     mobileTrack.style.opacity = '1';
                 }, 50);
             }
 
-            // Sync indicator dots via Intersection Observer
+            // Sync dots via Intersection Observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -101,41 +110,101 @@ document.addEventListener("DOMContentLoaded", function () {
             }, { root: mobileTrack, threshold: 0.6 });
             items.forEach(item => observer.observe(item));
 
-            // Silently teleport to center when user reaches either edge (15% boundary)
-            let scrollTimeout;
-            mobileTrack.addEventListener('scroll', () => {
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
-                    const currentScroll = mobileTrack.scrollLeft;
-                    const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
-                    if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
-                        const activeDot = mobileDots.querySelector('.active');
-                        if (activeDot) {
-                            const activeIdx = parseInt(activeDot.getAttribute('data-index'));
-                            const targetItem = items[middleStartIndex + activeIdx];
-                            mobileTrack.style.scrollBehavior = 'auto';
-                            mobileTrack.scrollLeft = targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2;
-                            setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
+            if (isInfinite) {
+                // Teleportation logic when reaching boundary
+                let scrollTimeout;
+                mobileTrack.addEventListener('scroll', () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        const currentScroll = mobileTrack.scrollLeft;
+                        const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
+                        if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
+                            const activeDot = mobileDots.querySelector('.active');
+                            if (activeDot) {
+                                const activeIdx = parseInt(activeDot.getAttribute('data-index'));
+                                const targetItem = items[middleStartIndex + activeIdx];
+                                mobileTrack.style.scrollBehavior = 'auto';
+                                mobileTrack.scrollLeft = targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2;
+                                setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
+                            }
                         }
-                    }
-                }, 150);
-            });
-
-            // Dot clicks scroll to the nearest clone of that index
-            dots.forEach((dot, idx) => {
-                dot.addEventListener('click', () => {
-                    const currentScroll = mobileTrack.scrollLeft;
-                    const matchingItems = Array.from(items).filter(item => parseInt(item.getAttribute('data-original-index')) === idx);
-                    let closestItem = matchingItems[0];
-                    let minDiff = Infinity;
-                    matchingItems.forEach(item => {
-                        const diff = Math.abs(item.offsetLeft - currentScroll);
-                        if (diff < minDiff) { minDiff = diff; closestItem = item; }
-                    });
-                    if (closestItem) closestItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }, 150);
                 });
-            });
+
+                // Dot clicks scroll to closest clone
+                dots.forEach((dot, idx) => {
+                    dot.addEventListener('click', () => {
+                        const currentScroll = mobileTrack.scrollLeft;
+                        const matchingItems = Array.from(items).filter(item => parseInt(item.getAttribute('data-original-index')) === idx);
+                        let closestItem = matchingItems[0];
+                        let minDiff = Infinity;
+                        matchingItems.forEach(item => {
+                            const diff = Math.abs(item.offsetLeft - currentScroll);
+                            if (diff < minDiff) { minDiff = diff; closestItem = item; }
+                        });
+                        if (closestItem) closestItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    });
+                });
+            } else {
+                // Standard dot clicks (simple 1-to-1 matching)
+                dots.forEach((dot, idx) => {
+                    dot.addEventListener('click', () => {
+                        const targetItem = items[idx];
+                        if (targetItem) {
+                            mobileTrack.scrollTo({
+                                left: targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
         }, 100);
+    }
+
+    /**
+     * Initializes indicator dots for swipe tracks whose cards are already in the HTML.
+     */
+    function initExistingTrack(trackId, dotsId) {
+        const track = document.getElementById(trackId);
+        const dotsContainer = document.getElementById(dotsId);
+        if (!track || !dotsContainer) return;
+
+        const items = Array.from(track.children);
+        if (items.length === 0) return;
+
+        // 1. Generate dots
+        items.forEach((_, index) => {
+            dotsContainer.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
+        });
+
+        const dots = dotsContainer.querySelectorAll('button');
+
+        // 2. Intersection observer to update dots on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const idx = items.indexOf(entry.target);
+                    dots.forEach(dot => dot.classList.remove('active'));
+                    if (dots[idx]) dots[idx].classList.add('active');
+                }
+            });
+        }, { root: track, threshold: 0.6 });
+
+        items.forEach(item => observer.observe(item));
+
+        // 3. Dot clicks scroll to targets
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                const targetItem = items[idx];
+                if (targetItem) {
+                    track.scrollTo({
+                        left: targetItem.offsetLeft - (track.clientWidth - targetItem.clientWidth) / 2,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     }
 
     // =========================================================================
@@ -864,10 +933,13 @@ document.addEventListener("DOMContentLoaded", function () {
     initProtocolQuiz();
 
     // =========================================================================
-    // 3. INITIALIZE ALL INFINITE TRACKS
+    // 3. INITIALIZE ALL MOBILE TRACKS
     // =========================================================================
-    initInfiniteTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators');
-    initInfiniteTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators');
-    initInfiniteTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators');
-    initInfiniteTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators');
+    initMobileTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators', false);
+    initMobileTrack('portfolio-desktop', 'portfolio-mobile-track', 'portfolio-mobile-indicators', true);
+    initMobileTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators', false);
+    initMobileTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators', true);
+
+    // Initialize existing grid tracks
+    initExistingTrack('myth-mobile-track', 'myth-mobile-indicators');
 });
