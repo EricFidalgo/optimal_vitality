@@ -596,7 +596,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // 1. Reveal main heading text directly in its lowered, "centered" position
             tl.to(heroContent, {
                 opacity: 1,
-                duration: .2,
+                duration: 0,
                 ease: 'power2.out'
             })
             // 2. Smoothly slide the text up to its natural location, fading in the button right behind it
