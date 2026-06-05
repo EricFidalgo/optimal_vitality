@@ -652,63 +652,179 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Protocol Finder Quiz Logic (peptides.html)
-    const protocolData = {
-        joint: {
-            tag: 'The Healing Matrix',
-            title: 'BPC-157 + TB500',
-            desc: 'Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.',
-            icon: 'fa-shield-alt'
-        },
-        plateau: {
-            tag: 'Strength & Output',
-            title: 'Ipamorelin Protocol',
-            desc: 'Designed to push past training plateaus. Promotes natural growth factor waves to upgrade physical strength production, accelerate lean tissue adaptation, and improve your overall athletic pacing.',
-            icon: 'fa-dumbbell'
-        },
-        fatigue: {
-            tag: 'Cellular Energy',
-            title: 'NAD+ Therapy',
-            desc: 'NAD+ is the engine of your cells. This protocol directly targets mitochondrial function to restore vital energy cycles, clear mental fog, and combat programmatic fatigue.',
-            icon: 'fa-bolt'
-        },
-        body: {
-            tag: 'Lipolytic Optimization',
-            title: 'Tesamorelin Stack',
-            desc: 'A potent option targeting visceral fat distribution. Promotes significant changes in metabolic body architecture while keeping your base energy levels highly optimized.',
-            icon: 'fa-fire'
-        }
-    };
+    // =========================================================================
+    // PROTOCOL QUIZ — 3-Step Guided Assessment (peptides.html)
+    // =========================================================================
+    function initProtocolQuiz() {
+        const quizContainer = document.querySelector('.quiz-container');
+        if (!quizContainer) return;
 
-    const symptomButtons = document.querySelectorAll('.btn-symptom');
-    const resultCard = document.getElementById('protocol-result');
-    if (symptomButtons.length > 0 && resultCard) {
-        symptomButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                if (this.classList.contains('active')) return;
-                symptomButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                const data = protocolData[this.getAttribute('data-protocol')];
-                resultCard.classList.add('fade-update');
-                setTimeout(() => {
-                    resultCard.innerHTML = `
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fas ${data.icon} text-primary display-5 me-3"></i>
-                            <div>
-                                <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">${data.tag}</small>
-                                <h3 class="fw-bold mb-0" style="color: #204d57;">${data.title}</h3>
-                            </div>
-                        </div>
-                        <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">${data.desc}</p>
-                        <div class="mt-auto">
-                            <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
-                        </div>
-                    `;
-                    resultCard.classList.remove('fade-update');
-                }, 200);
+        const answers = { step1: null, step2: null, step3: null };
+
+        const protocols = {
+            pain: {
+                tag: 'Injury & Tissue Recovery',
+                name: 'The Wolverine Matrix',
+                peptides: 'BPC-157 + TB500',
+                icon: 'fa-shield-alt',
+                desc: 'A systemic repair blend engineered to accelerate soft tissue healing at the cellular level. Manages tendon inflammation, joint degradation, and post-surgical recovery faster than any conventional approach.',
+                goalModifiers: {
+                    train: 'Designed to get you back under the bar. Most patients in this profile return to full training capacity within the protocol window.',
+                    muscle: 'Combines repair acceleration with a pro-anabolic environment — letting you rebuild stronger than your pre-injury baseline.',
+                    feel: 'Addresses the root inflammatory cascade that drives fatigue and brain fog during injury. You will feel the shift within weeks.',
+                    fat: 'As tissue heals, metabolic output normalizes. Many patients see measurable body composition improvements as a secondary outcome.'
+                },
+                social: '61 patients with your profile completed this protocol in the last 90 days.'
+            },
+            performance: {
+                tag: 'Athletic Output & Growth',
+                name: 'The Growth & Output Stack',
+                peptides: 'Ipamorelin + Tesamorelin',
+                icon: 'fa-dumbbell',
+                desc: 'Designed to push past hard-coded performance ceilings by optimizing your natural growth factor output. Supports lean tissue accretion, faster recovery between sessions, and measurable strength gains.',
+                goalModifiers: {
+                    train: 'Eliminates the ceiling effect. Patients routinely report PR lifts and faster cardio pacing within the first 8 weeks.',
+                    muscle: 'Directly supports lean muscle accretion by establishing the hormonal environment for peak protein synthesis.',
+                    feel: 'Growth hormone optimization produces deeper sleep architecture and substantially improved daytime cognitive output.',
+                    fat: 'Tesamorelin specifically targets visceral adipose tissue — body recomposition is a primary, documented outcome of this protocol.'
+                },
+                social: '88 patients with your profile are currently running this protocol.'
+            },
+            energy: {
+                tag: 'Cellular Energy & Cognition',
+                name: 'The Bioenergetic Protocol',
+                peptides: 'NAD+ Infusion Therapy',
+                icon: 'fa-bolt',
+                desc: 'Addresses mitochondrial dysfunction at its source. NAD+ is the rate-limiting cofactor in cellular energy production — restoring it directly reverses the fatigue-fog cycle at the biochemical level.',
+                goalModifiers: {
+                    train: 'Cellular energy output determines athletic endurance. Most patients notice a tangible difference in their second week of the protocol.',
+                    muscle: 'Optimized mitochondrial function means faster recovery, better protein utilization, and more energy available for training output.',
+                    feel: 'This protocol was built specifically for what you are describing. Clinical-level fatigue and cognitive decline resolve as the primary outcome.',
+                    fat: 'Improved metabolic efficiency accelerates fat oxidation — particularly the stubborn visceral deposits that resist diet alone.'
+                },
+                social: '44 patients with your profile started this protocol in the last 60 days.'
+            },
+            body: {
+                tag: 'Lipolytic Optimization',
+                name: 'The Recomposition Stack',
+                peptides: 'Tesamorelin + Ipamorelin',
+                icon: 'fa-fire',
+                desc: 'Targets the hormonal root cause of stubborn body fat — specifically visceral adipose tissue that diet-resistant patients cannot move through training alone. Promotes active lipolysis while protecting lean mass.',
+                goalModifiers: {
+                    train: 'Leaner body composition directly improves VO2 max, power-to-weight ratio, and sustained endurance output.',
+                    muscle: 'Simultaneously drives visceral fat loss while supporting lean muscle accretion — a true clinical recomposition protocol.',
+                    feel: 'Hormonal optimization from this stack produces a notable, documented improvement in energy, mood, and cognitive clarity.',
+                    fat: 'This protocol was precisely engineered for diet-resistant fat loss. It is the most direct clinical path to your stated goal.'
+                },
+                social: '73 patients with your profile have completed this protocol.'
+            }
+        };
+
+        const timelineMap = {
+            short: '6–8 weeks',
+            medium: '8–12 weeks',
+            long: '12–16 weeks'
+        };
+
+        function updateProgress(activeStep) {
+            const dots = [
+                document.getElementById('dot-1'),
+                document.getElementById('dot-2'),
+                document.getElementById('dot-3')
+            ];
+            const lines = [
+                document.getElementById('line-1'),
+                document.getElementById('line-2')
+            ];
+            const stepNum = activeStep === 'result' ? 4 : parseInt(activeStep);
+
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active', 'completed');
+                if (stepNum > i + 1) dot.classList.add('completed');
+                else if (stepNum === i + 1) dot.classList.add('active');
             });
+
+            lines.forEach((line, i) => {
+                line.classList.toggle('active', stepNum > i + 1);
+            });
+        }
+
+        function goToStep(target) {
+            document.querySelectorAll('.quiz-step-panel').forEach(p => p.classList.remove('active'));
+            const panel = document.getElementById(`quiz-step-${target}`);
+            if (panel) panel.classList.add('active');
+            updateProgress(target);
+        }
+
+        function selectOption(btn, stepKey) {
+            btn.closest('.quiz-step-panel').querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            answers[stepKey] = btn.getAttribute('data-value');
+
+            setTimeout(() => {
+                if (stepKey === 'step1') goToStep(2);
+                else if (stepKey === 'step2') goToStep(3);
+                else if (stepKey === 'step3') showResult();
+            }, 350);
+        }
+
+        function showResult() {
+            const protocol = protocols[answers.step1];
+            if (!protocol) return;
+            const timeline = timelineMap[answers.step2] || '8–12 weeks';
+            const goalDesc = protocol.goalModifiers[answers.step3] || '';
+
+            const resultEl = document.getElementById('quiz-step-result');
+            resultEl.innerHTML = `
+                <div class="quiz-result-inner">
+                    <div class="d-flex align-items-start gap-3 mb-1 flex-wrap">
+                        <div class="flex-grow-1">
+                            <div class="quiz-protocol-tag">${protocol.tag}</div>
+                            <div class="quiz-protocol-name">${protocol.name}</div>
+                            <div class="quiz-protocol-peptides">${protocol.peptides}</div>
+                        </div>
+                        <div class="d-none d-sm-flex align-items-center justify-content-center flex-shrink-0"
+                             style="width:64px;height:64px;background:rgba(32,77,87,0.06);border-radius:50%;">
+                            <i class="fas ${protocol.icon} fs-3 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="quiz-timeline-badge mb-4">
+                        <i class="fas fa-clock text-primary"></i>
+                        Initial results in ${timeline}
+                    </div>
+                    <p class="quiz-result-desc">${protocol.desc}</p>
+                    <p class="quiz-result-desc"><strong style="color:var(--secondary-color);">For your goal:</strong> ${goalDesc}</p>
+                    <div class="quiz-social-proof mb-4">
+                        <i class="fas fa-users text-primary me-2"></i>${protocol.social}
+                    </div>
+                    <div class="quiz-result-actions">
+                        <a href="#consultation" class="btn cta-btn">Get My Custom Protocol</a>
+                        <button class="quiz-restart" id="quiz-restart-btn">Start Over</button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('quiz-restart-btn').addEventListener('click', () => {
+                answers.step1 = answers.step2 = answers.step3 = null;
+                document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+                goToStep(1);
+            });
+
+            goToStep('result');
+        }
+
+        // Wire option clicks via delegation
+        quizContainer.addEventListener('click', function (e) {
+            const btn = e.target.closest('[data-quiz-step]');
+            if (!btn) return;
+            selectOption(btn, btn.getAttribute('data-quiz-step'));
         });
+
+        // Initialize
+        goToStep(1);
     }
+
+    initProtocolQuiz();
 
     // =========================================================================
     // 3. INITIALIZE ALL INFINITE TRACKS

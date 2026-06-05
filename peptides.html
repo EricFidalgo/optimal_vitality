@@ -31,6 +31,7 @@
         </div>
     </header>
 
+    <!-- ===== CLINICAL TRANSFORMATIONS ===== -->
     <section class="before-after-section py-5 bg-white" id="results">
         <div class="container py-5 gs-reveal">
             <div class="text-center mb-5">
@@ -99,6 +100,71 @@
         </div>
     </section>
 
+    <!-- ===== WHO IS THIS RIGHT FOR? (NEW) ===== -->
+    <section class="py-5 bg-white" id="eligibility">
+        <div class="container py-4 gs-reveal">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="color: #204d57;">Who Is This Right For?</h2>
+                <p class="lead text-muted max-w-700 mx-auto">Peptide therapy is a precision tool — not a mass-market supplement. Assess your candidacy below.</p>
+            </div>
+            <div class="eligibility-section">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <div class="eligibility-col-head good">You may be a strong candidate if you:</div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Are between 25–65 years old and physically active (or want to be)</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Have lab work showing suboptimal hormone, metabolic, or inflammatory markers</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Have dealt with persistent joint pain, fatigue, or stalled body composition for 3+ months</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Have tried diet, training adjustments, or supplements without lasting results</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Are willing to complete baseline bloodwork before starting a protocol</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="eligibility-col-head muted">This may not be right if you:</div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Are currently pregnant or nursing</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Have an active, untreated malignancy</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Are unwilling to follow a medically supervised protocol</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Are looking for a one-time injection with no monitoring</span>
+                        </div>
+                        <div class="eligibility-item">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Have a known hypersensitivity to peptide compounds</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5 pt-2">
+                    <p class="text-muted small mb-3">Not sure? Our clinical team reviews every case individually. There's no commitment to your first consultation.</p>
+                    <a href="#consultation" class="btn cta-btn">Am I a Candidate? Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ELITE PEPTIDE PORTFOLIO ===== -->
     <section class="premium-services py-5">
         <div class="container py-5">
             <div class="text-center mb-5 gs-reveal">
@@ -168,115 +234,204 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light border-top" id="protocol-finder">
-        <div class="container py-5 gs-reveal">
-            <div class="text-center mb-5">
-                <h2 class="section-title text-uppercase" style="color: #204d57;">Find Your Protocol</h2>
-                <p class="lead text-muted max-w-700 mx-auto">Select your primary biological roadblock to reveal the targeted clinical sequence our medical team uses to solve it.</p>
+    <!-- ===== FIND YOUR PROTOCOL — 3-STEP QUIZ (REDESIGNED) ===== -->
+    <section class="quiz-section py-5" id="protocol-finder">
+        <div class="container py-5">
+            <div class="text-center mb-4 gs-reveal">
+                <div class="quiz-badge">Clinical Self-Assessment</div>
+                <h2 class="text-white mb-3">Find Your Protocol</h2>
+                <p class="text-white-50 max-w-700 mx-auto" style="font-size: 0.95rem; line-height: 1.7;">Answer 3 quick questions. Our clinical team uses this exact framework to determine which peptide sequence best matches your biology.</p>
             </div>
 
-            <div class="row align-items-center g-4 g-lg-5">
-                <!-- Left Column: Interactive Quiz Buttons -->
-                <div class="col-lg-6">
-                    <div class="d-flex flex-column gap-3" id="symptom-selectors">
-                        <button class="btn-symptom active d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="joint">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                                <i class="fas fa-crutch fs-5"></i>
-                            </div>
-                            <div>
-                                <span class="d-block fw-bold fs-5 text-dark mb-1">Nagging Joint &amp; Tissue Pain</span>
-                                <small class="text-muted">Prolonged soreness, tendon inflammation, or injury recovery.</small>
-                            </div>
-                        </button>
+            <!-- Step Progress Indicator -->
+            <div class="quiz-progress gs-reveal">
+                <div class="quiz-step-dot active" id="dot-1"><span>1</span></div>
+                <div class="quiz-step-line" id="line-1"></div>
+                <div class="quiz-step-dot" id="dot-2"><span>2</span></div>
+                <div class="quiz-step-line" id="line-2"></div>
+                <div class="quiz-step-dot" id="dot-3"><span>3</span></div>
+            </div>
 
-                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="plateau">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                                <i class="fas fa-stopwatch fs-5"></i>
-                            </div>
-                            <div>
-                                <span class="d-block fw-bold fs-5 text-dark mb-1">Athletic &amp; Training Plateaus</span>
-                                <small class="text-muted">Stuck on your heavy lifts, 5K pacing, or court stamina.</small>
-                            </div>
-                        </button>
+            <!-- Quiz Panels -->
+            <div class="quiz-container gs-reveal">
 
-                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="fatigue">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                                <i class="fas fa-battery-quarter fs-5"></i>
-                            </div>
-                            <div>
-                                <span class="d-block fw-bold fs-5 text-dark mb-1">Chronic Fatigue &amp; Brain Fog</span>
-                                <small class="text-muted">Afternoon crashes, slow mornings, and poor sleep architecture.</small>
-                            </div>
+                <!-- STEP 1: Primary Problem -->
+                <div class="quiz-step-panel active" id="quiz-step-1">
+                    <p class="quiz-question">What's your #1 problem right now?</p>
+                    <p class="quiz-sub">Be honest — this single answer shapes your entire protocol recommendation.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-quiz-step="step1" data-value="pain">
+                            <i class="fas fa-crutch quiz-option-icon"></i>
+                            <span class="quiz-option-title">Joint &amp; Tissue Pain</span>
+                            <span class="quiz-option-desc">Chronic soreness, tendon inflammation, slow injury recovery, or post-surgical healing.</span>
                         </button>
-
-                        <button class="btn-symptom d-flex align-items-center p-3 p-md-4 rounded-4 text-start border transition-all w-100" data-protocol="body">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 me-3 shadow-sm symptom-icon-wrap" style="width: 50px; height: 50px;">
-                                <i class="fas fa-weight fs-5"></i>
-                            </div>
-                            <div>
-                                <span class="d-block fw-bold fs-5 text-dark mb-1">Stubborn Body Composition</span>
-                                <small class="text-muted">Holding onto visceral adipose tissue despite diet adherence.</small>
-                            </div>
+                        <button class="quiz-option" data-quiz-step="step1" data-value="performance">
+                            <i class="fas fa-stopwatch quiz-option-icon"></i>
+                            <span class="quiz-option-title">Athletic Plateau</span>
+                            <span class="quiz-option-desc">Stuck on lifts, 5K times, court stamina — performance gains have stalled.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step1" data-value="energy">
+                            <i class="fas fa-battery-quarter quiz-option-icon"></i>
+                            <span class="quiz-option-title">Fatigue &amp; Brain Fog</span>
+                            <span class="quiz-option-desc">Afternoon crashes, slow mornings, poor sleep, declining mental sharpness.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step1" data-value="body">
+                            <i class="fas fa-fire quiz-option-icon"></i>
+                            <span class="quiz-option-title">Stubborn Body Composition</span>
+                            <span class="quiz-option-desc">Holding visceral fat despite clean diet and training. Plateau at the same weight.</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Right Column: Dynamic Result Display -->
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="result-card p-4 p-md-5 rounded-4 shadow-lg border-top border-4 bg-white position-relative h-100 transition-all d-flex flex-column justify-content-center" style="border-color: var(--primary-color) !important; min-height: 380px;" id="protocol-result">
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-shield-alt text-primary display-5 me-3"></i>
-                            <div>
-                                <small class="text-uppercase fw-bold text-primary" style="letter-spacing: 2px;">The Healing Matrix</small>
-                                <h3 class="fw-bold mb-0" style="color: #204d57;">BPC-157 + TB500</h3>
-                            </div>
-                        </div>
-                        <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Ideal for managing acute structural inflammation or torn ligaments. This systemic repair blend directs rapid soft tissue recovery so you can return to heavy training without hesitation.</p>
-                        <div class="mt-auto">
-                            <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4">Discuss This Protocol</a>
-                        </div>
+                <!-- STEP 2: Duration -->
+                <div class="quiz-step-panel" id="quiz-step-2">
+                    <p class="quiz-question">How long has this been going on?</p>
+                    <p class="quiz-sub">Duration affects how aggressively we need to intervene — and what timeline you can realistically expect.</p>
+                    <div class="quiz-options cols-3">
+                        <button class="quiz-option" data-quiz-step="step2" data-value="short">
+                            <i class="fas fa-calendar quiz-option-icon"></i>
+                            <span class="quiz-option-title">Under 3 Months</span>
+                            <span class="quiz-option-desc">Recent onset — acute intervention, faster response window.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step2" data-value="medium">
+                            <i class="fas fa-calendar-alt quiz-option-icon"></i>
+                            <span class="quiz-option-title">3–12 Months</span>
+                            <span class="quiz-option-desc">Established pattern — standard protocol duration applies.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step2" data-value="long">
+                            <i class="fas fa-calendar-check quiz-option-icon"></i>
+                            <span class="quiz-option-title">1+ Years</span>
+                            <span class="quiz-option-desc">Chronic — extended protocol with phased approach recommended.</span>
+                        </button>
                     </div>
                 </div>
+
+                <!-- STEP 3: Primary Goal -->
+                <div class="quiz-step-panel" id="quiz-step-3">
+                    <p class="quiz-question">What does success look like for you?</p>
+                    <p class="quiz-sub">This personalizes the outcome description and the specific biomarkers we'll track during your protocol.</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-quiz-step="step3" data-value="train">
+                            <i class="fas fa-dumbbell quiz-option-icon"></i>
+                            <span class="quiz-option-title">Return to Full Training</span>
+                            <span class="quiz-option-desc">I want to get back to heavy lifting, running, or competing at full capacity.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step3" data-value="muscle">
+                            <i class="fas fa-chart-line quiz-option-icon"></i>
+                            <span class="quiz-option-title">Build Lean Muscle</span>
+                            <span class="quiz-option-desc">I want to gain functional mass and improve my strength-to-weight ratio.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step3" data-value="feel">
+                            <i class="fas fa-brain quiz-option-icon"></i>
+                            <span class="quiz-option-title">Feel Human Again</span>
+                            <span class="quiz-option-desc">I want sustained energy, mental clarity, and to wake up actually rested.</span>
+                        </button>
+                        <button class="quiz-option" data-quiz-step="step3" data-value="fat">
+                            <i class="fas fa-weight quiz-option-icon"></i>
+                            <span class="quiz-option-title">Lose Stubborn Fat</span>
+                            <span class="quiz-option-desc">I want to shed the visceral fat that diet and training alone haven't moved.</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RESULT (populated by JS) -->
+                <div class="quiz-step-panel" id="quiz-step-result"></div>
+
             </div>
         </div>
     </section>
 
-    <section class="py-5" style="background-color: white;" id="athletic-stacks">
+    <!-- ===== ENGINEERED FOR PEAK PERFORMANCE (REDESIGNED) ===== -->
+    <section class="py-5 bg-white" id="athletic-stacks">
         <div class="container py-5 gs-reveal">
-            <div class="row align-items-center gx-5">
+            <div class="row align-items-start gx-lg-5">
+                <!-- Left: Title + Description + CTA -->
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <h2 class="display-6 fw-bold mb-4" style="color: #204d57;">Engineered For <br><span class="text-primary">Peak Performance</span></h2>
                     <p class="text-muted mb-4 fs-6" style="line-height: 1.8;">Our medical team designs synergistic formulations. We blend advanced cellular triggers to complement rigorous physical output, heavy lifting routines, and dedicated rehabilitation pacing.</p>
+
+                    <!-- Mobile quick-stat pills -->
+                    <div class="d-lg-none perf-mobile-stats mb-4">
+                        <div class="perf-stat-pill"><i class="fas fa-bolt"></i> Recovery: 2–3 Days</div>
+                        <div class="perf-stat-pill"><i class="fas fa-fire"></i> Active Fat Loss</div>
+                        <div class="perf-stat-pill"><i class="fas fa-brain"></i> All-Day Energy</div>
+                        <div class="perf-stat-pill"><i class="fas fa-shield-alt"></i> Managed Injury Risk</div>
+                    </div>
+
                     <a href="#consultation" class="btn btn-outline-primary fw-bold px-4 py-2 border-2">Discuss Your Training Goals</a>
                 </div>
 
+                <!-- Right: Comparison Table + Stacks -->
                 <div class="col-lg-7">
-                    <!-- SOURCE DATA (Visible on Desktop) -->
-                    <div class="d-none d-lg-flex flex-column gap-4" id="stacks-desktop">
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                    <!-- Desktop comparison table -->
+                    <div class="d-none d-lg-block mb-4">
+                        <div class="perf-table-wrapper">
+                            <table class="perf-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="col-without">Without Protocol</th>
+                                        <th class="col-with">With Protocol</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Recovery Time</td>
+                                        <td class="cell-without">5–7 days</td>
+                                        <td class="cell-with"><i class="fas fa-arrow-down text-primary"></i>2–3 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visceral Fat</td>
+                                        <td class="cell-without">Plateauing</td>
+                                        <td class="cell-with"><i class="fas fa-fire text-primary"></i>Actively reducing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Daily Energy</td>
+                                        <td class="cell-without">Afternoon crashes</td>
+                                        <td class="cell-with"><i class="fas fa-sun text-primary"></i>Sustained output</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Injury Risk</td>
+                                        <td class="cell-without">Accumulating</td>
+                                        <td class="cell-with"><i class="fas fa-shield-alt text-primary"></i>Actively managed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strength Gains</td>
+                                        <td class="cell-without">Stalled</td>
+                                        <td class="cell-with"><i class="fas fa-chart-line text-primary"></i>Progressive</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- SOURCE DATA (cloned to mobile track) -->
+                    <div class="d-none d-lg-flex flex-column gap-3" id="stacks-desktop">
+                        <div class="stack-card">
+                            <div class="stack-popular-badge">Most Popular</div>
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Growth &amp; Cellular Output Stack</h4>
-                                <i class="fas fa-dumbbell text-primary fs-4"></i>
+                                <h4 class="fw-bold mb-0 fs-6" style="color: #204d57;">The Growth &amp; Cellular Output Stack</h4>
+                                <i class="fas fa-dumbbell text-primary"></i>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">Tesamorelin + Ipamorelin</h6>
+                            <p class="text-muted small fw-bold mb-2">Tesamorelin + Ipamorelin</p>
                             <p class="text-secondary small mb-0">Optimizes natural hormone output. Designed to support lean muscle accretion, lower stubborn visceral adipose tissue, and accelerate overall cellular adaptation.</p>
                         </div>
 
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                        <div class="stack-card">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Wolverine Healing Matrix</h4>
-                                <i class="fas fa-shield-alt text-primary fs-4"></i>
+                                <h4 class="fw-bold mb-0 fs-6" style="color: #204d57;">The Wolverine Healing Matrix</h4>
+                                <i class="fas fa-shield-alt text-primary"></i>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">BPC-157 + TB500</h6>
+                            <p class="text-muted small fw-bold mb-2">BPC-157 + TB500</p>
                             <p class="text-secondary small mb-0">Advanced systemic repair blend. Directs rapid soft tissue recovery to manage torn ligaments, joint conditions, and acute structural layout modifications.</p>
                         </div>
 
-                        <div class="bg-white p-4 rounded-4 shadow-sm border-start border-primary border-4 h-100">
+                        <div class="stack-card">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h4 class="fw-bold mb-0" style="color: #204d57;">The Bioenergetic Co-Factor Protocol</h4>
-                                <i class="fas fa-stopwatch text-primary fs-4"></i>
+                                <h4 class="fw-bold mb-0 fs-6" style="color: #204d57;">The Bioenergetic Co-Factor Protocol</h4>
+                                <i class="fas fa-stopwatch text-primary"></i>
                             </div>
-                            <h6 class="text-muted small fw-bold mb-3">NAD+ + Specialized Recovery Protocols</h6>
+                            <p class="text-muted small fw-bold mb-2">NAD+ + Specialized Recovery Protocols</p>
                             <p class="text-secondary small mb-0">Upregulates critical cellular energy output. Restores key metabolic processing to clear mental fog, reverse fatigue, and boost overall physical performance.</p>
                         </div>
                     </div>
@@ -293,6 +448,7 @@
         </div>
     </section>
 
+    <!-- ===== OUR CLINICAL PROCESS ===== -->
     <section class="py-4 py-lg-5 bg-light" style="padding-top: 3rem !important;">
         <div class="container py-2 py-lg-5 gs-reveal">
             <h2 class="section-title text-center mb-4 mb-lg-5" style="color: #204d57;">Our Clinical Process</h2>
@@ -393,13 +549,14 @@
         </div>
     </section>
 
+    <!-- ===== THE SCIENCE OF PEPTIDES (UPDATED) ===== -->
     <section id="science" class="py-5 bg-white">
         <div class="container py-4 py-lg-5 gs-reveal">
             <div class="row gx-lg-5 align-items-center">
-                <!-- Left Column -->
+                <!-- Left Column — Updated Copy -->
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <h2 class="display-6 fw-bold mb-4" style="color: #204d57;">The Science of <br><span class="text-primary">Peptides</span></h2>
-                    <p class="text-muted mb-4" style="line-height: 1.7; font-size: 0.95rem;">Peptides are precise sequences of amino acids—your body's native chemical language. Instead of introducing foreign synthetic chemicals, peptide therapy supplies the exact biological triggers your cells already recognize, instructing them to release natural growth hormone, reduce inflammation, or accelerate healing.</p>
+                    <p class="text-muted mb-4" style="line-height: 1.75; font-size: 0.95rem;">Think of your cells as high-performance engines. Peptides are the specific fuel injectors they already know how to use. Unlike synthetic drugs that override your biology, peptide therapy speaks your body's native chemical language — delivering precision molecular signals that your cells recognize, respond to, and use to heal, rebuild, and energize themselves.</p>
                     <ul class="list-unstyled feature-list mb-0">
                         <li><i class="fas fa-check-circle text-primary me-3"></i> 100% Bio-Identical Compounds</li>
                         <li><i class="fas fa-check-circle text-primary me-3"></i> Maximum Bioavailability</li>
@@ -407,7 +564,7 @@
                     </ul>
                 </div>
 
-                <!-- Right Column: Bento Box Grid -->
+                <!-- Right Column: Bento Box Grid (unchanged) -->
                 <div class="col-lg-7">
                     <div class="row g-3 g-md-4">
                         <div class="col-6 col-md-3">
@@ -455,15 +612,38 @@
                                     </div>
                                     <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">Targeted Receptor Action</h5>
                                 </div>
-                                <p class="text-muted small mb-0" style="line-height: 1.6;">Unlike broad medications, peptides lock onto specific cellular receptors—no collateral systemic disruption.</p>
+                                <p class="text-muted small mb-0" style="line-height: 1.6;">Unlike broad medications, peptides lock onto specific cellular receptors — no collateral systemic disruption.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Myth-Busting Row (full width) -->
+            <div class="myth-grid">
+                <div class="myth-card">
+                    <div class="myth-label">Common Myth</div>
+                    <p class="myth-text">"Aren't these just steroids?"</p>
+                    <div class="reality-label">Clinical Reality</div>
+                    <p class="reality-text">Peptides are short-chain amino acids — the same molecular signals your body already produces. They carry no anabolic steroid classification, no liver toxicity, and no hormonal suppression.</p>
+                </div>
+                <div class="myth-card">
+                    <div class="myth-label">Common Myth</div>
+                    <p class="myth-text">"Will I need to inject forever?"</p>
+                    <div class="reality-label">Clinical Reality</div>
+                    <p class="reality-text">Most protocols run 8–16 weeks, then cycle. Your biology resets, results persist, and many patients need fewer sessions over time as their baseline improves.</p>
+                </div>
+                <div class="myth-card">
+                    <div class="myth-label">Common Myth</div>
+                    <p class="myth-text">"Is this even legal?"</p>
+                    <div class="reality-label">Clinical Reality</div>
+                    <p class="reality-text">All compounds we prescribe are FDA-regulated, pharmacy-compounded, and dispensed under a licensed physician's supervision. This is legal, clinical-grade medicine.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- ===== TESTIMONIALS ===== -->
     <section class="testimonials py-5 bg-light" id="testimonials">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
@@ -509,6 +689,7 @@
         </div>
     </section>
 
+    <!-- ===== CONSULTATION CTA ===== -->
     <section class="trust-section py-5 text-white text-center" style="background-color: var(--secondary-color);" id="consultation">
         <div class="container py-3">
             <h2 class="display-5 text-white fw-bold mb-4">Ready to Optimize?</h2>
@@ -516,8 +697,8 @@
 
             <div class="bg-dark bg-opacity-25 p-5 rounded-4 border border-secondary shadow-lg mx-auto mb-5" style="max-width: 600px; backdrop-filter: blur(10px);">
                 <a href="#consultation" class="btn cta-btn ms-lg-3">Book Your Consultation</a>
-                <p class="text-white-50 text-decoration-none d-block mt-3 hover-text-primary transition-all"><i class="fas fa-phone-alt me-2"></i> (850) 555-0199</p>
-                <a href="mailto:info@optimalvitality.com" class="text-white-50 text-decoration-none d-block mt-3 hover-text-primary transition-all"><i class="fas fa-envelope me-2"></i> Email Clinical Team</a>
+                <p class="text-white-50 text-decoration-none d-block mt-3"><i class="fas fa-phone-alt me-2"></i> (850) 555-0199</p>
+                <a href="mailto:info@optimalvitality.com" class="text-white-50 text-decoration-none d-block mt-3"><i class="fas fa-envelope me-2"></i> Email Clinical Team</a>
             </div>
 
             <div class="row g-4 justify-content-center mt-2 max-w-700 mx-auto">
@@ -549,6 +730,7 @@
         </div>
     </section>
 
+    <!-- ===== FAQs ===== -->
     <section class="faqs py-5 bg-white" id="faqs">
         <div class="container py-4 gs-reveal">
             <div class="row text-center mb-5">
