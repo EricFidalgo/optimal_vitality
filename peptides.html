@@ -77,44 +77,72 @@
             <!-- SOURCE DATA (Visible on Desktop) -->
             <div class="row g-4 justify-content-center d-none d-lg-flex" id="transformations-desktop">
                 <div class="col-lg-6">
-                    <div class="ba-card position-relative rounded-4 overflow-hidden shadow-sm border h-100">
-                        <div class="row g-0">
-                            <div class="col-6 position-relative">
-                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 z-index-1 text-uppercase tracking-wider">Baseline</span>
-                                <img src="assets/images/photos/IV.jpg" alt="Patient Before" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px; filter: grayscale(20%);">
-                            </div>
-                            <div class="col-6 position-relative border-start border-white border-3">
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-1 text-uppercase tracking-wider">Week 16</span>
-                                <img src="assets/images/photos/TRT.jpg" alt="Patient After" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px;">
-                            </div>
-                        </div>
-                        <div class="p-4 bg-light h-100">
-                            <h5 class="fw-bold mb-2" style="color: #204d57;">Body Recomposition & Core Vitality</h5>
-                            <p class="small text-muted mb-3"><strong>Protocol:</strong> Tesamorelin / Ipamorelin Stack</p>
-                            <p class="small text-secondary mb-0">Patient achieved a 12% reduction in visceral body fat while accelerating lean tissue recovery and deep sleep architecture.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
+        
+        <!-- Interactive Slider Container -->
+        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
+            <!-- AFTER Layer (Bottom) -->
+            <img src="assets/images/photos/TRT.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 16</span>
 
-                <div class="col-lg-6">
-                    <div class="ba-card position-relative rounded-4 overflow-hidden shadow-sm border h-100">
-                        <div class="row g-0">
-                            <div class="col-6 position-relative">
-                                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 z-index-1 text-uppercase tracking-wider">Post-Injury</span>
-                                <img src="assets/images/photos/peptide.jpg" alt="Patient Before" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px; filter: grayscale(20%);">
-                            </div>
-                            <div class="col-6 position-relative border-start border-white border-3">
-                                <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-index-1 text-uppercase tracking-wider">Week 8</span>
-                                <img src="assets/images/photos/process-results.jpg" alt="Patient After" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px;">
-                            </div>
-                        </div>
-                        <div class="p-4 bg-light h-100">
-                            <h5 class="fw-bold mb-2" style="color: #204d57;">Accelerated Tendon & Joint Repair</h5>
-                            <p class="small text-muted mb-3"><strong>Protocol:</strong> BPC-157 / TB500 Blend</p>
-                            <p class="small text-secondary mb-0">Patient presented with severe joint inflammation. Achieved full return to athletic pacing and weightlifting within 8 weeks through specialized recovery mechanisms.</p>
-                        </div>
-                    </div>
+            <!-- BEFORE Layer (Top, Wrapped & Clipped) -->
+            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
+                <img src="assets/images/photos/IV.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Baseline</span>
+            </div>
+
+            <!-- Invisible Drag Input -->
+            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
+
+            <!-- Visual Handle UI -->
+            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
+                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
+                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
                 </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-light flex-grow-1">
+            <h5 class="fw-bold mb-2" style="color: #204d57;">Body Recomposition & Core Vitality</h5>
+            <p class="small text-muted mb-3"><strong>Protocol:</strong> Tesamorelin / Ipamorelin Stack</p>
+            <p class="small text-secondary mb-0">Patient achieved a 12% reduction in visceral body fat while accelerating lean tissue recovery and deep sleep architecture.</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-6">
+    <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
+        
+        <!-- Interactive Slider Container -->
+        <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
+            <!-- AFTER Layer (Bottom) -->
+            <img src="assets/images/photos/process-results.jpg" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">Week 8</span>
+
+            <!-- BEFORE Layer (Top, Wrapped & Clipped) -->
+            <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
+                <img src="assets/images/photos/peptide.jpg" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">Post-Injury</span>
+            </div>
+
+            <!-- Invisible Drag Input -->
+            <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
+
+            <!-- Visual Handle UI -->
+            <div class="ba-slider-line position-absolute top-0 h-100" style="left: 50%; width: 3px; background: rgba(255,255,255,0.9); pointer-events: none; transform: translateX(-50%); z-index: 3; box-shadow: 0 0 6px rgba(0,0,0,0.4);">
+                <div class="position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 36px; height: 36px; border: 2px solid var(--primary-color); color: var(--secondary-color);">
+                    <i class="fas fa-arrows-alt-h" style="font-size: 0.9rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-light flex-grow-1">
+            <h5 class="fw-bold mb-2" style="color: #204d57;">Accelerated Tendon & Joint Repair</h5>
+            <p class="small text-muted mb-3"><strong>Protocol:</strong> BPC-157 / TB500 Blend</p>
+            <p class="small text-secondary mb-0">Patient presented with severe joint inflammation. Achieved full return to athletic pacing and weightlifting within 8 weeks through specialized recovery mechanisms.</p>
+        </div>
+    </div>
+</div>
             </div>
 
             <!-- MOBILE INFINITE TRACK PLACEHOLDER -->

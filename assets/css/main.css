@@ -963,8 +963,7 @@ h1, h2, h3, h4, h5, h6 {
    Consolidated Media Queries - Tablet & Mobile
    ========================================================================== */
 @media (min-width: 768px) {
-    .ba-card img { min-height: 320px; }
-    .ba-card .badge { font-size: 0.75rem; }
+    .ba-card .badge { font-size: 0.85rem; padding: 0.5em 0.8em; }
 }
 
 @media (min-width: 992px) {
@@ -1445,11 +1444,6 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 4px;
         transition: left 0.1s ease-out;
     }
-
-    /* 5. Compress Before/After Images */
-    .ba-card img {
-        min-height: 180px !important;
-    }
     
     /* 6. Compress Science Stats */
     #science .p-4 { padding: 1.25rem !important; }
@@ -1612,4 +1606,35 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 8px;
         color: var(--primary-color) !important;
     }
+}
+
+
+
+
+/* ==========================================================================
+   Interactive Before/After Slider
+   ========================================================================== */
+.ba-slider {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    z-index: 5;
+    cursor: ew-resize;
+    opacity: 0; 
+}
+
+.ba-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 45px; 
+    height: 100vh; 
+    background: transparent;
+    cursor: ew-resize;
+}
+
+.ba-slider::-moz-range-thumb {
+    width: 45px;
+    height: 100vh;
+    background: transparent;
+    cursor: ew-resize;
+    border: none;
 }
