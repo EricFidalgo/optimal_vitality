@@ -274,6 +274,11 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             // Render 20 repeating sets to create an unbreakable infinite track
             const SETS = 20;
+            
+            // JITTER FIX: Hide track while it builds and positions
+            mobileInner.style.opacity = '0';
+            mobileInner.style.transition = 'opacity 0.2s ease-in';
+            
             for (let i = 0; i < SETS; i++) {
                 originals.forEach((testimony, index) => {
                     mobileInner.innerHTML += createCardHtml(testimony, index);
@@ -287,7 +292,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Start exactly in the middle set
                 const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
                 if (items[middleStartIndex]) {
+                    mobileInner.style.scrollBehavior = 'auto'; 
                     mobileInner.scrollLeft = items[middleStartIndex].offsetLeft - (mobileInner.clientWidth - items[middleStartIndex].clientWidth) / 2;
+                    setTimeout(() => { 
+                        mobileInner.style.scrollBehavior = 'smooth'; 
+                        mobileInner.style.opacity = '1'; // Reveal track smoothly
+                    }, 50); 
                 }
                 // Sync indicators via Intersection Observer
                 const observer = new IntersectionObserver((entries) => {
@@ -619,6 +629,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // 2. Map structure clones 20 times for infinite track scaling
         const SETS = 20;
+        
+        // JITTER FIX: Hide track while it builds and positions
+        mobileTrack.style.opacity = '0';
+        mobileTrack.style.transition = 'opacity 0.2s ease-in';
+        
         for (let i = 0; i < SETS; i++) {
             originals.forEach((item, index) => {
                 const clone = document.createElement('div');
@@ -641,7 +656,12 @@ document.addEventListener("DOMContentLoaded", function() {
             
             const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
             if (items[middleStartIndex]) {
+                mobileTrack.style.scrollBehavior = 'auto';
                 mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
+                setTimeout(() => { 
+                    mobileTrack.style.scrollBehavior = 'smooth'; 
+                    mobileTrack.style.opacity = '1'; // Reveal track smoothly
+                }, 50);
             }
 
             const observer = new IntersectionObserver((entries) => {
