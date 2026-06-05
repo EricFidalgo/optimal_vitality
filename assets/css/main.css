@@ -1944,3 +1944,31 @@ h6 {
   opacity: 0;
   transform: translateY(10px);
 }
+
+
+/* ==========================================================================
+   Desktop-Only Hover Scaling (Peak Performance & Clinical Process)
+   ========================================================================== */
+@media (min-width: 992px) {
+  
+  /* 1. Engineered For Peak Performance Cards */
+  #stacks-desktop .bg-white {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  }
+  #stacks-desktop .bg-white:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
+    z-index: 2; /* Keeps the scaled card layered above the others */
+  }
+
+  /* 2. Our Clinical Process Cards */
+  .process-timeline .process-step:hover .step-card {
+    transform: scale(1.05) !important; /* Overrides the previous translateY hover */
+    box-shadow: 0 15px 35px rgba(32, 77, 87, 0.1) !important;
+  }
+  
+  /* Give the currently selected/active Process card a permanent slight bump so it stands out */
+  .process-timeline .process-step.active .step-card {
+    transform: scale(1.02);
+  }
+}
