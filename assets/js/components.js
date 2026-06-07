@@ -16,7 +16,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main Navigation">
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Logo" class="logo-img">
+                        <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                         <div class="brand-text d-flex flex-column justify-content-center">
                             <span class="brand-title">Optimal</span>
                             <span class="brand-subtitle">Vitality</span>
@@ -35,7 +35,7 @@
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                         <div class="offcanvas-header border-bottom border-secondary">
                             <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
-                                <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Logo" class="logo-img">
+                                <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                                 <div class="brand-text d-flex flex-column justify-content-center">
                                     <span class="brand-title">Optimal</span>
                                     <span class="brand-subtitle">Vitality</span>
@@ -82,7 +82,7 @@
                                 <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
                                 <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 Wellness Way, Suite 400<br><span class="ms-4 ps-2">Tallahassee, FL 32308</span></p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> (850) 555-0199</p>
-                                <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> info@optimalvitality.com</p>
+                                <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> info@oviwellness.com</p>
                                 <p class="mb-0"><a href="https://instagram.com/oviwellness_" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> @oviwellness_</a></p>
                                 <hr class="border-secondary my-4">
                                 <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>Mon - Fri:</strong> 8:00 AM - 6:00 PM</p>
@@ -95,7 +95,7 @@
                         <p class="text-white-50 max-w-700 mx-auto mb-3" style="font-size: 0.8rem; line-height: 1.6;">
                             <strong>Medical Disclaimer:</strong> Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment.
                         </p>
-                        <p class="mb-0 text-white-50"><small>&copy; 2026 Optimal Vitality Clinic. All rights reserved.</small></p>
+                        <p class="mb-0 text-white-50"><small>&copy; 2026 Optimal Vitality Institute. All rights reserved.</small></p>
                     </div>
                 </div>
             </footer>

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   OPTIMAL VITALITY — MAIN STYLESHEET
+   OPTIMAL VITALITY INSTITUTE — MAIN STYLESHEET
    ========================================================================== */
 
 /* ==========================================================================
@@ -1642,6 +1642,7 @@ h6 {
   /* Mobile tab grid layout */
   .therapy-tabs-wrapper {
     display: flex !important;
+    justify-content: center;
     background: transparent;
     border: none;
     box-shadow: none;
@@ -1652,14 +1653,17 @@ h6 {
 
   #therapy-tabs.nav-pills {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     width: 100%;
+    padding: 0;
+    margin: 0;
     flex-wrap: nowrap !important;
   }
 
   .nav-pills .nav-item {
     width: 100%;
+    min-width: 0;
   }
 
   .nav-pills .premium-tab {
@@ -1670,6 +1674,7 @@ h6 {
     width: 100%;
     height: 100%;
     padding: 16px 8px;
+    margin: 0;
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.3;
@@ -2347,7 +2352,7 @@ h6 {
 }
 
 /* ==========================================================================
-   28. ELIGIBILITY CHECKLIST (OPTION 2)
+   28. ELIGIBILITY CHECKLIST
    ========================================================================== */
 .eligibility-badge {
   display: inline-block;
@@ -2362,58 +2367,81 @@ h6 {
   margin-bottom: 1rem;
 }
 
-.eligibility-grid-card {
+.eligibility-checklist-card {
   background: var(--bg-light);
-  border-radius: 18px;
-  padding: 32px 24px;
-  border: 1px solid rgba(32, 77, 87, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  height: 100%;
-  text-align: center;
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(32, 77, 87, 0.06);
+}
+
+.eligibility-card-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(32, 77, 87, 0.06);
 }
 
-.eligibility-grid-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(32, 77, 87, 0.08);
-  border-color: rgba(230, 195, 129, 0.3);
+.eligibility-card-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-.eligibility-icon-circle {
-  width: 50px;
-  height: 50px;
+.eligibility-icon-wrapper {
+  width: 36px;
+  height: 36px;
   background-color: rgba(230, 195, 129, 0.15);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 1.25rem;
-  margin-bottom: 1.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 900;
+  flex-shrink: 0;
 }
 
-.eligibility-grid-card:hover .eligibility-icon-circle {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.eligibility-grid-card h3 {
+.eligibility-row-content strong {
+  display: block;
   font-size: 1rem;
   font-weight: 700;
   color: var(--secondary-color);
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-.eligibility-grid-card p {
+.eligibility-row-content p {
   margin: 0;
   font-size: 0.9rem;
   color: #555;
   line-height: 1.5;
+}
+
+@media (max-width: 991.98px) {
+  .eligibility-summary-panel {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .eligibility-checklist-card {
+    padding: 24px 18px;
+  }
+  
+  .eligibility-card-row {
+    gap: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .eligibility-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
 }
 
 /* ==========================================================================
