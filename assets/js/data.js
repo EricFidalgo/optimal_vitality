@@ -32,6 +32,13 @@ const clinicData = {
     { label: "Team", href: "index.html#team" },
     { label: "FAQs", href: "index.html#faqs" },
   ],
+  marquee: [
+    { label: "Doctor-Led Protocols", icon: "fa-user-md" },
+    { label: "St. Petersburg, FL", icon: "fa-map-marker-alt" },
+    { label: "Licensed Medical Clinic", icon: "fa-shield-alt" },
+    { label: "5-Star Rated Clinic", icon: "fa-star" }, 
+    { label: "HIPAA Compliant", icon: "fas fa-user-shield"}
+  ],
   services: [
     {
       id: "hormone-optimization",

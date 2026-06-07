@@ -12,9 +12,32 @@
         const root = document.getElementById("navbar-root");
         if (!root) return;
 
+        let marqueeHTML = '';
+        if (typeof clinicData !== 'undefined' && clinicData.marquee) {
+            const singlePass = clinicData.marquee.map(item => 
+                `<span><i class="fas ${item.icon}"></i> ${item.label}</span><span>•</span>`
+            ).join('');
+            const repeatedContent = singlePass + singlePass + singlePass;
+            
+            marqueeHTML = `
+                <!-- Top Announcement Marquee Bar -->
+                <div class="top-marquee-bar">
+                    <div class="marquee-track">
+                        <div class="marquee-content">
+                            ${repeatedContent}
+                        </div>
+                        <div class="marquee-content" aria-hidden="true">
+                            ${repeatedContent}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         root.innerHTML = `
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main Navigation">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex flex-column p-0" aria-label="Main Navigation">
+                ${marqueeHTML}
+                <div class="container navbar-container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                         <div class="brand-text d-flex flex-column justify-content-center">
