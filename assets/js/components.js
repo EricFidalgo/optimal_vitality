@@ -134,11 +134,39 @@
         `;
     }
 
+    function initNavbarBehavior() {
+        // Mobile Menu Auto-Close on nav link click
+        const offcanvasElement = document.getElementById('mobileMenu');
+        let offcanvasInstance = null;
+        if (offcanvasElement && typeof bootstrap !== 'undefined') {
+            offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+        }
+        document.querySelectorAll('a.nav-link, a.cta-btn, .hormone-cta a, .navbar-brand').forEach(link => {
+            link.addEventListener('click', function (event) {
+                if (this.getAttribute('href') === '#') { event.preventDefault(); return; }
+                if (this.hash !== '' && offcanvasElement && offcanvasElement.classList.contains('show') && offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.querySelector('.navbar');
+        if (navbar) {
+            function handleNavbarScroll() {
+                navbar.classList.toggle('scrolled-nav', (window.scrollY || document.documentElement.scrollTop) > 50);
+            }
+            window.addEventListener('scroll', handleNavbarScroll);
+            handleNavbarScroll();
+        }
+    }
+
     // -------------------------------------------------------------------------
     // INIT — render both components before anything else fires
     // -------------------------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function () {
         renderNavbar();
         renderFooter();
+        initNavbarBehavior();
     });
 })();

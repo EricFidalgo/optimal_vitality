@@ -53,7 +53,7 @@ const template = (serviceId) => `<!DOCTYPE html>
     <script src="../assets/js/components.js"></script>
     <script src="../assets/js/service-renderer.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/particles.js"></script>
 </body>
 </html>`;
 

@@ -561,11 +561,12 @@ function initMain() {
 
         // --- Footer Services List ---
         const footerServicesList = document.getElementById('footer-services-list');
-        if (footerServicesList && clinicData.services) {
-            footerServicesList.innerHTML = clinicData.services.map((service, index) => `
-                <li class="${index === clinicData.services.length - 1 ? 'mb-0' : 'mb-3'}">
+        if (footerServicesList && clinicData.navigation && clinicData.navigation[0] && clinicData.navigation[0].dropdown) {
+            const footerServices = clinicData.navigation[0].dropdown;
+            footerServicesList.innerHTML = footerServices.map((service, index) => `
+                <li class="${index === footerServices.length - 1 ? 'mb-0' : 'mb-3'}">
                     <a href="${resolveUrl(service.href)}" class="text-white-50 text-decoration-none footer-service-link">
-                        <i class="fas ${service.icon} text-primary me-3 w-15px text-center"></i> ${service.tabLabel}
+                        <i class="fas ${service.icon} text-primary me-3 w-15px text-center"></i> ${service.label}
                     </a>
                 </li>
             `).join('');
@@ -578,29 +579,6 @@ function initMain() {
     // =========================================================================
     // 2. UI LOGIC
     // =========================================================================
-
-    // Mobile Menu Auto-Close on nav link click
-    const offcanvasElement = document.getElementById('mobileMenu');
-    let offcanvasInstance = null;
-    if (offcanvasElement) {
-        offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
-    }
-    document.querySelectorAll('a.nav-link, a.cta-btn, .hormone-cta a, .navbar-brand').forEach(link => {
-        link.addEventListener('click', function (event) {
-            if (this.getAttribute('href') === '#') { event.preventDefault(); return; }
-            if (this.hash !== '' && offcanvasElement && offcanvasElement.classList.contains('show')) {
-                offcanvasInstance.hide();
-            }
-        });
-    });
-
-    // Navbar Scroll Effect
-    const navbar = document.querySelector('.navbar');
-    function handleNavbarScroll() {
-        navbar.classList.toggle('scrolled-nav', (window.scrollY || document.documentElement.scrollTop) > 50);
-    }
-    window.addEventListener('scroll', handleNavbarScroll);
-    handleNavbarScroll();
 
     // GSAP Scroll Animations
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
