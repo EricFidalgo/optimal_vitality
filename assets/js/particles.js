@@ -1,3 +1,4 @@
+// loads in particles into the header 
 function initParticles() {
     const canvasEl = document.getElementById("particle-canvas");
     if (!canvasEl) return;

@@ -1,4 +1,6 @@
 // assets/js/main.js
+// global js for backend style code 
+
 function initMain() {
 
     // =========================================================================
@@ -442,12 +444,17 @@ function initMain() {
         const desktopInner = document.getElementById('desktop-testimonial-inner');
         const desktopIndicators = document.getElementById('desktop-testimonial-indicators');
 
-        if (clinicData.testimonials) {
+        const service = typeof OVI_SERVICE_ID !== 'undefined' ? clinicData.services.find(s => s.id === OVI_SERVICE_ID) : null;
+        const testimonialsList = (service && service.testimonials && service.testimonials.length > 0) 
+            ? service.testimonials 
+            : clinicData.testimonials;
+
+        if (testimonialsList) {
             // Mobile: Build a hidden source container, then hand off to initInfiniteTrack
             if (mobileInner && mobileIndicators) {
                 // Populate the mobile track directly using the card builder
                 const SETS = 20;
-                const originals = clinicData.testimonials;
+                const originals = testimonialsList;
 
                 mobileIndicators.innerHTML = originals.map((_, i) =>
                     `<button type="button" aria-label="Slide ${i + 1}" data-index="${i}" class="${i === 0 ? 'active' : ''}"></button>`
@@ -522,10 +529,10 @@ function initMain() {
             // Desktop: 2 testimonials per carousel slide
             if (desktopInner && desktopIndicators) {
                 let slideIndex = 0;
-                for (let i = 0; i < clinicData.testimonials.length; i += 2) {
+                for (let i = 0; i < testimonialsList.length; i += 2) {
                     const isActive = slideIndex === 0 ? 'active' : '';
-                    const t1 = clinicData.testimonials[i];
-                    const t2 = clinicData.testimonials[i + 1];
+                    const t1 = testimonialsList[i];
+                    const t2 = testimonialsList[i + 1];
 
                     desktopIndicators.innerHTML += `<button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="${slideIndex}" class="${isActive}"></button>`;
 

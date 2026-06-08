@@ -2,6 +2,17 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
+    /* 
+    FUTURE: ADD SPECIFIC TESTIMONIALS
+    testimonials: [
+      {
+        initials: "JD",
+        name: "John D.",
+        tag: "JOINT REPAIR",
+        quote: "BPC-157 completely healed my shoulder tear in 6 weeks."
+      }
+    ], 
+    */
       "id": "peptides",
       "type": "core",
       "tabLabel": "Peptide Therapy",

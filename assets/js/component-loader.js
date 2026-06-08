@@ -1,4 +1,9 @@
 // assets/js/component-loader.js
+
+/*
+    Loads in the specific component files from assets/components/*.html and loads them into the services/*.html files
+*/
+
 (function () {
     "use strict";
 
