@@ -46,6 +46,22 @@
         // Dispatch a custom event to notify other scripts (like service-renderer)
         // that the DOM structure has been fully constructed.
         document.dispatchEvent(new Event('componentsLoaded'));
+
+        // Smoothly fade in the lower content and footer after components are loaded and rendered
+        if (isSubpage) {
+            const lowerContent = document.getElementById('lower-content');
+            const footerRoot = document.getElementById('footer-root');
+            setTimeout(() => {
+                if (lowerContent) {
+                    lowerContent.style.transition = 'opacity 0.25s ease-in-out';
+                    lowerContent.style.opacity = '1';
+                }
+                if (footerRoot) {
+                    footerRoot.style.transition = 'opacity 0.25s ease-in-out';
+                    footerRoot.style.opacity = '1';
+                }
+            }, 60);
+        }
     };
 
     document.addEventListener("DOMContentLoaded", function () {
