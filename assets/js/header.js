@@ -1,5 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const particleCount = window.innerWidth < 768 ? 35 : 80;
+function initParticles() {
+    const canvasEl = document.getElementById("particle-canvas");
+    if (!canvasEl) return;
+    if (canvasEl.hasAttribute('data-particles-loaded')) return;
+    canvasEl.setAttribute('data-particles-loaded', 'true');
+
+    const particleCount = window.innerWidth < 768 ? 20 : 50; // Reduced for performance
 
     if (typeof tsParticles !== "undefined") {
         tsParticles.load("particle-canvas", {
@@ -30,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 move: {
                     enable: true,
-                    speed: 1.2, 
+                    speed: 0.8, 
                     direction: "none",
                     random: false,
                     straight: false,
@@ -38,11 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             },
             interactivity: {
-                detectsOn: "window", 
+                detectsOn: "canvas", 
                 events: {
-                    onHover: {
-                        enable: false
-                    },
+                    onHover: { enable: false },
                     onClick: { enable: false }, 
                     resize: true
                 }
@@ -50,4 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             retina_detect: true
         });
     }
-});
+}
+
+document.addEventListener("DOMContentLoaded", initParticles);
+document.addEventListener("componentsLoaded", initParticles);

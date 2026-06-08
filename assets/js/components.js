@@ -100,7 +100,7 @@
                                 <ul class="list-unstyled mb-0" id="footer-services-list"></ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
                                 <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 Wellness Way, Suite 400<br><span class="ms-4 ps-2">Tallahassee, FL 32308</span></p>

@@ -877,6 +877,12 @@ h6 {
     transform: scale(1.1) rotate(5deg);
     box-shadow: 0 10px 25px rgba(230, 195, 129, 0.4);
   }
+
+  /* Disable translateY translation inside scroll tracks to prevent vertical clipping */
+  .native-scroll-item .service-grid-card:hover,
+  .native-scroll-item .stack-card:hover {
+    transform: none !important;
+  }
 }
 
 .service-grid-card .card-icon {
@@ -1198,8 +1204,16 @@ h6 {
 
 .native-scroll-item {
   scroll-snap-align: center;
-  flex: 0 0 85%;
+  flex: 0 0 82%;
   min-width: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.native-scroll-item.active {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* ==========================================================================
@@ -2267,7 +2281,7 @@ h6 {
 
 .perf-table .cell-without {
   text-align: center;
-  color: #ccc;
+  color: #bbb;
   font-size: 0.88rem;
   font-style: italic;
 }
@@ -2417,6 +2431,13 @@ h6 {
     scroll-snap-align: center;
     background: var(--bg-white);
     box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  .myth-card.active {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

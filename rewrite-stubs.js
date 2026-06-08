@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+const fs = require('fs');
+
+const services = [
+  "hormone-optimization",
+  "glp-1therapies",
+  "regenerative-medicine",
+  "skin-aesthetics",
+  "iv-wellness",
+  "peptides"
+];
+
+const template = (serviceId) => `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
-    <script>const OVI_SERVICE_ID = "peptides";</script>
+    <script>const OVI_SERVICE_ID = "${serviceId}";</script>
     <script src="assets/js/data.js"></script>
     <script src="assets/js/data/hormone-optimization.js"></script>
     <script src="assets/js/data/glp-1therapies.js"></script>
@@ -49,4 +60,9 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/header.js"></script>
 </body>
-</html>
+</html>`;
+
+services.forEach(id => {
+  fs.writeFileSync(`${id}.html`, template(id));
+  console.log(`Updated ${id}.html`);
+});

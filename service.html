@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-slot="pageTitle">OVI Wellness — Service</title>
+    <meta name="description" data-slot="pageDescription" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/icons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/icons/icon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/images/icons/icon.png">
+</head>
+<body>
+    <!-- Shared navbar injected by components.js -->
+    <div id="navbar-root"></div>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero text-center d-flex align-items-center justify-content-center" style="min-height: 40vh !important; padding-top: 100px !important;">
+        <div id="particle-canvas"></div>
+        <div class="container position-relative z-index-1 gs-reveal">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mt-4">
+                    <h1 class="display-4 fw-bold text-uppercase text-white mb-4" style="line-height: 1.2;" data-slot="heroHeadline"></h1>
+                    <a href="#consultation" class="btn cta-btn btn-lg" id="empty-bg-button" data-slot="heroCTABtn">Start Your Protocol</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== WHO IS THIS RIGHT FOR? ===== -->
+    <section class="py-5 bg-white" id="eligibility" data-section="eligibility">
+        <div class="container py-5 gs-reveal">
+            <div class="row align-items-center g-5">
+                <!-- Left Column -->
+                <div class="col-lg-5">
+                    <div class="eligibility-summary-panel">
+                        <div class="eligibility-badge" data-slot="eligibilityBadge">Clinical Candidacy</div>
+                        <h2 class="mb-4" style="color: #204d57; font-weight: 700;" data-slot="eligibilityHeadline">Who Is This Right For?</h2>
+                        <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.6;" data-slot="eligibilityIntro"></p>
+                        <p class="text-muted small mb-4" data-slot="eligibilityNote"></p>
+                        <div class="d-none d-lg-block">
+                            <a href="#consultation" class="btn cta-btn" data-slot="eligibilityCTA">Am I a Candidate? Let's Talk</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-lg-7">
+                    <div class="eligibility-checklist-card" id="eligibility-items"></div>
+                    <div class="d-block d-lg-none text-center mt-4">
+                        <a href="#consultation" class="btn cta-btn w-100" data-slot="eligibilityCTAMobile">Am I a Candidate? Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMPARISON / PERFORMANCE TABLE ===== -->
+    <section class="py-5 bg-white" id="athletic-stacks" data-section="comparison">
+        <div class="container py-5 gs-reveal">
+            <div class="row align-items-start gx-lg-5">
+                <!-- Left -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-6 fw-bold mb-4" style="color: #204d57;" data-slot="comparisonHeadline"></h2>
+                    <p class="text-muted mb-4 fs-6" style="line-height: 1.8;" data-slot="comparisonSubheadline"></p>
+                    <!-- Mobile stat pills -->
+                    <div class="d-lg-none perf-mobile-stats mb-4" id="comparison-mobile-stats"></div>
+                    <a href="#consultation" class="btn btn-outline-primary fw-bold px-4 py-2 border-2" data-slot="comparisonCTA">Discuss Your Goals</a>
+                </div>
+                <!-- Right -->
+                <div class="col-lg-7">
+                    <!-- Desktop comparison table -->
+                    <div class="d-none d-lg-block mb-4">
+                        <div class="perf-table-wrapper">
+                            <table class="perf-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="col-without">Unoptimized</th>
+                                        <th class="col-with">Optimized</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="comparison-table-rows"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Stacks (desktop) -->
+                    <div class="d-none d-lg-flex flex-column gap-3" id="stacks-desktop"></div>
+                    <!-- Stacks (mobile) -->
+                    <div class="d-lg-none position-relative mt-4">
+                        <div class="native-scroll-wrapper" id="stacks-mobile-track"></div>
+                        <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                            <div class="carousel-indicators position-relative m-0" id="stacks-mobile-indicators"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE PROTOCOLS / OPTIONS ===== -->
+    <section class="premium-services py-5" id="protocols" data-section="protocols">
+        <div class="container py-5">
+            <div class="text-center mb-5 gs-reveal">
+                <h2 class="section-title text-white mb-4" data-slot="protocolsHeadline">Our Protocols</h2>
+                <p class="text-white-50 lead max-w-700 mx-auto" data-slot="protocolsSubheadline"></p>
+            </div>
+            <!-- Desktop grid -->
+            <div class="row g-4 justify-content-center gs-reveal d-none d-lg-flex" id="protocols-desktop"></div>
+            <!-- Mobile track -->
+            <div class="d-lg-none position-relative mt-4 gs-reveal">
+                <div class="native-scroll-wrapper" id="protocols-mobile-track"></div>
+                <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                    <div class="carousel-indicators position-relative m-0" id="protocols-mobile-indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR CLINICAL PROCESS ===== -->
+    <section class="py-4 py-lg-5 bg-light" style="padding-top: 3rem !important;">
+        <div class="container py-2 py-lg-5 gs-reveal">
+            <h2 class="section-title text-center mb-4 mb-lg-5" style="color: #204d57;">Our Clinical Process</h2>
+            <div class="row gx-lg-5 pt-2 align-items-center">
+                <!-- Visual Column -->
+                <div class="col-lg-6 mb-0 mb-lg-0 order-1 order-lg-2">
+                    <div id="processSlideshow" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner h-100 pb-2 pb-lg-0">
+                            <div class="carousel-item active h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-lab.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Lab Diagnostics">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">1</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
+                                    <p class="text-muted small mb-0">We analyze an extensive panel of your specific biomarkers to identify exact optimization targets.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-review.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Doctor Protocol">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">2</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
+                                    <p class="text-muted small mb-0">Review data with clinical staff. We engineer a treatment plan tailored entirely to your physiology.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="rounded-4 overflow-hidden shadow-sm border bg-white process-visual-container" style="border-color: rgba(32,77,87,0.1) !important;">
+                                    <img src="assets/images/photos/process-injection.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Execution">
+                                </div>
+                                <div class="d-lg-none mt-3 bg-white border p-4 rounded-4 shadow-sm text-center position-relative">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center fw-bold shadow-sm mb-2 text-white" style="width: 35px; height: 35px; background: var(--primary-color);">3</div>
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution & Tracking</h5>
+                                    <p class="text-muted small mb-0">Your treatment begins. We monitor progress and adjust protocols to ensure optimal results.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-lg-none d-flex justify-content-center gap-3 mt-3">
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="prev" style="width: 40px; height: 40px; font-size: 0.9rem;"><i class="fas fa-chevron-left"></i></button>
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#processSlideshow" data-bs-slide="next" style="width: 40px; height: 40px; font-size: 0.9rem;"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop Timeline -->
+                <div class="col-lg-6 order-2 order-lg-1 d-none d-lg-flex flex-column justify-content-center">
+                    <div class="process-timeline carousel-indicators custom-timeline-indicators position-relative m-0 d-flex flex-column align-items-start h-auto px-2 px-md-0">
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="0" class="active process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4" aria-current="true">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">1</div>
+                                <div class="step-line flex-grow-1"></div>
+                            </div>
+                            <div class="step-content pb-4 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Lab Diagnostics</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">We analyze an extensive panel of your specific biomarkers to identify exact optimization targets.</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="1" class="process-step w-100 text-start bg-transparent border-0 p-0 mb-0 position-relative d-flex gap-3 gap-md-4">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">2</div>
+                                <div class="step-line flex-grow-1"></div>
+                            </div>
+                            <div class="step-content pb-4 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Doctor Protocol</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Review data with clinical staff. We engineer a treatment plan tailored entirely to your physiology.</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button type="button" data-bs-target="#processSlideshow" data-bs-slide-to="2" class="process-step w-100 text-start bg-transparent border-0 p-0 position-relative d-flex gap-3 gap-md-4">
+                            <div class="step-indicator d-flex flex-column align-items-center">
+                                <div class="step-number rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm transition-all">3</div>
+                            </div>
+                            <div class="step-content pb-2 w-100">
+                                <div class="bg-white border p-4 rounded-4 shadow-sm w-100 transition-all step-card">
+                                    <h5 class="fw-bold text-uppercase mb-2 fs-6" style="color: #204d57;">Execution & Tracking</h5>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6; white-space: normal;">Your treatment begins. We monitor progress and adjust protocols to ensure optimal results.</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== THE SCIENCE SECTION ===== -->
+    <section id="science" class="py-5 bg-white" data-section="science">
+        <div class="container py-4 py-lg-5 gs-reveal">
+            <div class="row gx-lg-5 align-items-center">
+                <!-- Left -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="display-6 fw-bold mb-4" style="color: #204d57;" data-slot="scienceHeadline"></h2>
+                    <p class="text-muted mb-4" style="line-height: 1.75; font-size: 0.95rem;" data-slot="scienceBody"></p>
+                    <ul class="list-unstyled feature-list mb-0" id="science-bullets"></ul>
+                </div>
+                <!-- Right: Bento Grid -->
+                <div class="col-lg-7">
+                    <!-- We output the generated columns directly into this row so the grid works -->
+                    <div class="row g-3 g-md-4" id="science-bento-row"></div>
+                </div>
+            </div>
+
+            <!-- Myths Grid -->
+            <div id="myths-container" style="display: none;">
+                <div class="myth-grid mt-5" id="myth-mobile-track"></div>
+                <div class="d-md-none custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                    <div class="carousel-indicators position-relative m-0" id="myth-mobile-indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials py-5 bg-light" id="testimonials">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <h2 class="section-title mb-4">Patient Success Stories</h2>
+                    <p class="lead text-secondary mb-4">Real results from individuals who chose to stop settling for "average" and optimize their health.</p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start mb-2">
+                        <div class="text-primary fs-4 me-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="fs-4 fw-bold text-dark">4.9/5</span>
+                    </div>
+                    <p class="text-muted small mb-4">Based on 150+ verified patient reviews across our clinical modalities.</p>
+                    <a href="#consultation" class="btn btn-outline-secondary fw-bold px-4 mt-2">Start Your Journey</a>
+                </div>
+                <div class="col-lg-8 position-relative">
+                    <div id="testimonialMobile" class="d-lg-none mt-4 mt-lg-0">
+                        <div class="native-scroll-wrapper" id="mobile-testimonial-inner"></div>
+                        <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                            <div class="carousel-indicators position-relative m-0" id="mobile-testimonial-indicators"></div>
+                        </div>
+                    </div>
+                    <div id="testimonialDesktop" class="carousel slide d-none d-lg-block" data-bs-ride="carousel" data-bs-interval="8000" data-bs-touch="true">
+                        <div class="carousel-inner pb-3" id="desktop-testimonial-inner"></div>
+                        <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3 gap-4">
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                            <div class="carousel-indicators position-relative m-0" id="desktop-testimonial-indicators"></div>
+                            <button class="custom-carousel-btn" type="button" data-bs-target="#testimonialDesktop" data-bs-slide="next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONSULTATION CTA ===== -->
+    <section class="trust-section py-5 text-white text-center" style="background-color: var(--secondary-color);" id="consultation">
+        <div class="container py-3">
+            <h2 class="display-5 text-white fw-bold mb-4">Ready to Optimize?</h2>
+            <p class="lead max-w-700 mx-auto mb-5" style="color: #e2e8f0;" data-slot="ctaSubheadline">Stop settling for average. Utilize clinical-grade science directed by medical professionals to achieve your peak state.</p>
+            <div class="bg-dark bg-opacity-25 p-5 rounded-4 border border-secondary shadow-lg mx-auto mb-5" style="max-width: 600px; backdrop-filter: blur(10px);">
+                <a href="#consultation" class="btn cta-btn ms-lg-3">Book Your Consultation</a>
+                <p class="text-white-50 text-decoration-none d-block mt-3"><i class="fas fa-phone-alt me-2"></i> (850) 555-0199</p>
+                <a href="mailto:info@oviwellness.com" class="text-white-50 text-decoration-none d-block mt-3"><i class="fas fa-envelope me-2"></i> Email Clinical Team</a>
+            </div>
+            <div class="row g-4 justify-content-center mt-2 max-w-700 mx-auto">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-id-card text-primary mb-2 fs-3"></i>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Licensed Clinic</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-map-marker-alt text-primary mb-2 fs-3"></i>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Florida-Based</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-user-md text-primary mb-2 fs-3"></i>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Verified Credentials</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 rounded border border-secondary bg-dark bg-opacity-25 h-100 d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-credit-card text-primary mb-2 fs-3"></i>
+                        <small class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;">Financing Available</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQs ===== -->
+    <section class="faqs py-5 bg-white" id="faqs">
+        <div class="container py-4 gs-reveal">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title mb-4" style="color: #204d57;">Common Questions</h2>
+                    <p class="lead text-muted" data-slot="faqSubheadline">Everything you need to know about this treatment.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Unique ID to prevent main.js from overwriting it automatically -->
+                    <div class="accordion shadow-sm" id="serviceFaqAccordion"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared footer + mobile sticky CTA injected by components.js -->
+    <div id="footer-root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/data/hormone-optimization.js"></script>
+    <script src="assets/js/data/glp-1therapies.js"></script>
+    <script src="assets/js/data/peptides.js"></script>
+    <script src="assets/js/data/regenerative-medicine.js"></script>
+    <script src="assets/js/data/skin-aesthetics.js"></script>
+    <script src="assets/js/data/iv-wellness.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/service-renderer.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header.js"></script>
+</body>
+</html>

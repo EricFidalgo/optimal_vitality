@@ -1,5 +1,5 @@
-// scripts/data.js
-const clinicData = {
+// assets/js/data.js
+window.clinicData = {
   navigation: [
     {
       label: "Treatments",
@@ -32,137 +32,18 @@ const clinicData = {
     { label: "Team", href: "index.html#team" },
     { label: "FAQs", href: "index.html#faqs" },
   ],
+
   marquee: [
     { label: "Doctor-Led Protocols", icon: "fa-user-md" },
     { label: "St. Petersburg, FL", icon: "fa-map-marker-alt" },
     { label: "Licensed Medical Clinic", icon: "fa-shield-alt" },
-    { label: "5-Star Rated Clinic", icon: "fa-star" }, 
-    { label: "HIPAA Compliant", icon: "fas fa-user-shield"}
-  ],
-  services: [
-    {
-      id: "hormone-optimization",
-      type: "core",
-      tabLabel: "Hormone Optimization",
-      href: "hormone-optimization.html",
-      title: "Precision Hormone Optimization",
-      lead: "Reclaim your edge, build lean muscle, and target cognitive vitality.",
-      description:
-        "Bespoke bio-identical protocols tailored directly to your biomarker data to optimize physical and systemic performance.",
-      icon: "fa-syringe",
-      delay: "0s",
-      features: [
-        "TRT (Testosterone Replacement)",
-        "Women’s Hormone Therapy",
-        "Peptide-Assisted Optimization",
-        "Sexual Wellness Protocols",
-      ],
-      image: "assets/images/photos/TRT.jpg",
-      ctaText: "Optimize Hormones",
-    },
-    {
-      id: "glp-1therapies",
-      type: "core",
-      tabLabel: "GLP-1 Therapies",
-      href: "glp-1therapies.html",
-      title: "Metabolic Optimization & Weight Loss",
-      lead: "Advanced, medically supervised protocols utilizing next-generation metabolic therapies.",
-      description:
-        "We look beyond the scale at your direct metabolic markers to shed adipose tissue while preserving vital lean muscle mass.",
-      icon: "fa-weight-scale",
-      delay: "-1s",
-      features: [
-        "Retatrutide Protocols",
-        "Tirzepatide & Semaglutide",
-        "Metabolic Optimization Panels",
-        "Nutritional Architecture",
-      ],
-      image: "assets/images/photos/PA.png",
-      ctaText: "Optimize Metabolism",
-    },
-    {
-      id: "peptides",
-      type: "core",
-      tabLabel: "Peptide Therapy",
-      href: "peptides.html",
-      title: "Peptide Therapy & Cellular Signaling",
-      lead: "Targeted amino acid sequences engineered to direct specific cellular functions.",
-      description:
-        "Pure, pharmacy-grade peptide stacks designed for tissue repair, accelerated healing, and acute cellular optimization.",
-      icon: "fa-vial",
-      delay: "-2s",
-      features: [
-        "Tissue Repair & Regeneration (BPC-157 / TB500)",
-        "Growth Hormone Secretagogues (Tesamorelin / Ipamorelin)",
-        "Cellular Energy & Longevity (NAD+)",
-        "Specialized Recovery Protocols",
-      ],
-      image: "assets/images/photos/peptide.jpg",
-      ctaText: "Explore Peptides",
-    },
-    {
-      id: "regenerative-medicine",
-      type: "additional",
-      tabLabel: "Regenerative Medicine",
-      href: "regenerative-medicine.html",
-      title: "Advanced Regenerative Modalities",
-      lead: "Harness your body's native biological markers for deep cellular repair.",
-      description:
-        "Cutting-edge anti-aging and autologous tissue therapies engineered to reverse systemic degradation and restore structural health.",
-      icon: "fa-heartbeat",
-      delay: "-3s",
-      features: [
-        "Exosome Cellular Therapies",
-        "Platelet-Rich Plasma (PRP)",
-        "P-Shot & O-Shot Performance",
-        "Advanced Hair Restoration",
-      ],
-      image: "assets/images/photos/IV.jpg",
-      ctaText: "Explore Regeneration",
-    },
-    {
-      id: "skin-aesthetics",
-      type: "additional",
-      tabLabel: "Skin & Aesthetics",
-      href: "skin-aesthetics.html",
-      title: "Medical Luxury Aesthetics",
-      lead: "Look as young, vital, and high-performing as you feel internally.",
-      description:
-        "Clinical-grade face and skin interventions designed to optimize structural symmetry, volume, and dermis vitality.",
-      icon: "fa-magic",
-      delay: "-4s",
-      features: [
-        "Advanced Neurotoxins & Fillers",
-        "Biostimulators (Sculptra / Radiesse)",
-        "RF Microneedling Interventions",
-        "Medical-Grade Skincare Regimens",
-      ],
-      image: "assets/images/photos/team-group.avif",
-      ctaText: "Refine Your Look",
-    },
-    {
-      id: "iv-wellness",
-      type: "additional",
-      tabLabel: "IV & Wellness",
-      href: "iv-wellness.html",
-      title: "Drip Culture: Total Hydration & Nutrients",
-      lead: "Bypass your digestive ecosystem for immediate 100% nutrient bioavailability.",
-      description:
-        "Intravenous delivery systems that supply vital antioxidants, clean hydration, and micronutrients straight to the cell matrix.",
-      icon: "fa-tint",
-      delay: "-5s",
-      features: [
-        "Custom IV Micronutrient Therapy",
-        "High-Dose NAD+ Infusions",
-        "Vitamin Co-Factor Injections",
-        "Athletic & Performance Recovery",
-      ],
-      image: "assets/images/photos/IV.jpg",
-      ctaText: "Join The Membership",
-    },
+    { label: "5-Star Rated Clinic", icon: "fa-star" },
+    { label: "HIPAA Compliant", icon: "fas fa-user-shield" },
   ],
 
-  team: [
+  services: [
+  ],
+team: [
     {
       name: "Dr. Marcus Vance",
       role: "Chief Medical Officer",
