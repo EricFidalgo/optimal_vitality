@@ -4,12 +4,33 @@
 
     window.loadComponents = async function() {
         const elements = document.querySelectorAll('[data-include-component]');
+        const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
+        const prefix = isSubpage ? '../' : '';
+
         const promises = Array.from(elements).map(async (el) => {
             const componentName = el.getAttribute('data-include-component');
             try {
-                const response = await fetch(`assets/components/${componentName}.html`);
+                const response = await fetch(`${prefix}assets/components/${componentName}.html`);
                 if (response.ok) {
-                    const html = await response.text();
+                    let html = await response.text();
+                    
+                    if (isSubpage) {
+                        // Parse, adjust local asset/page paths, and serialize back
+                        const temp = document.createElement('div');
+                        temp.innerHTML = html;
+                        temp.querySelectorAll('[src], [href]').forEach(item => {
+                            const src = item.getAttribute('src');
+                            if (src && (src.startsWith('assets/') || src.startsWith('images/'))) {
+                                item.setAttribute('src', '../' + src);
+                            }
+                            const href = item.getAttribute('href');
+                            if (href && href.startsWith('index.html')) {
+                                item.setAttribute('href', '../' + href);
+                            }
+                        });
+                        html = temp.innerHTML;
+                    }
+
                     // Replace the placeholder element with the actual HTML content
                     el.outerHTML = html; 
                 } else {

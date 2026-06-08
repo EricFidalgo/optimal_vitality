@@ -5,6 +5,9 @@
 (function () {
     "use strict";
 
+    const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
+    const prefix = isSubpage ? '../' : '';
+
     // -------------------------------------------------------------------------
     // NAVBAR
     // -------------------------------------------------------------------------
@@ -38,8 +41,8 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex flex-column p-0" aria-label="Main Navigation">
                 ${marqueeHTML}
                 <div class="container navbar-container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                    <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
+                        <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                         <div class="brand-text d-flex flex-column justify-content-center">
                             <span class="brand-title">Optimal</span>
                             <span class="brand-subtitle">Vitality</span>
@@ -57,8 +60,8 @@
 
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                         <div class="offcanvas-header border-bottom border-secondary">
-                            <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
-                                <img src="assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                            <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
+                                <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                                 <div class="brand-text d-flex flex-column justify-content-center">
                                     <span class="brand-title">Optimal</span>
                                     <span class="brand-subtitle">Vitality</span>

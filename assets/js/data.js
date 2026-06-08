@@ -41,8 +41,6 @@ window.clinicData = {
     { label: "HIPAA Compliant", icon: "fas fa-user-shield" },
   ],
 
-  services: [
-  ],
 team: [
     {
       name: "Dr. Marcus Vance",

@@ -6,6 +6,34 @@ function initMain() {
     // =========================================================================
 
     /**
+     * Helper to resolve relative page URLs depending on current page level
+     */
+    function resolveUrl(url) {
+        if (!url || url === '#' || url.startsWith('http://') || url.startsWith('https://')) {
+            return url;
+        }
+        const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
+        if (isSubpage) {
+            // We are inside services/
+            if (url.startsWith('index.html')) {
+                return '../' + url;
+            }
+            return url; // service stubs are in the same folder
+        } else {
+            // We are at root (index.html)
+            if (url.startsWith('index.html')) {
+                return url;
+            }
+            const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "skin-aesthetics", "iv-wellness", "peptides"];
+            const baseName = url.replace('.html', '').split('#')[0]; // handle possible anchors like peptides.html#quiz
+            if (serviceIds.includes(baseName)) {
+                return 'services/' + url;
+            }
+            return url;
+        }
+    }
+
+    /**
      * Builds the HTML for a single testimonial card (used by both the mobile
      * infinite-track engine and the desktop carousel).
      */
@@ -234,7 +262,7 @@ function initMain() {
                 desktopNav.innerHTML = clinicData.navigation.map(link => {
                     if (link.dropdown) {
                         const items = link.dropdown.map(sub =>
-                            `<li><a class="dropdown-item fw-bold text-uppercase" style="font-size: 0.85rem;" href="${sub.href}">${sub.label}</a></li>`
+                            `<li><a class="dropdown-item fw-bold text-uppercase" style="font-size: 0.85rem;" href="${resolveUrl(sub.href)}">${sub.label}</a></li>`
                         ).join('');
                         return `
                             <li class="nav-item dropdown custom-desktop-dropdown">
@@ -245,7 +273,7 @@ function initMain() {
                             </li>
                         `;
                     }
-                    return `<li class="nav-item"><a class="nav-link" href="${link.href}">${link.label}</a></li>`;
+                    return `<li class="nav-item"><a class="nav-link" href="${resolveUrl(link.href)}">${link.label}</a></li>`;
                 }).join('');
             }
 
@@ -267,7 +295,7 @@ function initMain() {
                             </li>
                         `;
                         const dropItems = link.dropdown.map(sub =>
-                            `<li class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white text-center" href="${sub.href}" style="font-size: 1.1rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase;">${sub.label}</a></li>`
+                            `<li class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white text-center" href="${resolveUrl(sub.href)}" style="font-size: 1.1rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase;">${sub.label}</a></li>`
                         ).join('');
                         subPanels += `
                             <div id="panel-${index}" class="mobile-sub-panel">
@@ -280,7 +308,7 @@ function initMain() {
                     } else {
                         mainLinks += `
                             <li class="w-100 mb-3">
-                                <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${link.href}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
+                                <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${resolveUrl(link.href)}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
                             </li>
                         `;
                     }
@@ -318,7 +346,7 @@ function initMain() {
         const blobContainer = document.querySelector('.blob-menu-container');
         if (blobContainer && clinicData.services) {
             blobContainer.innerHTML = clinicData.services.map(service => `
-                <a href="${service.href}" class="service-blob" style="animation-delay: ${service.delay};">
+                <a href="${resolveUrl(service.href)}" class="service-blob" style="animation-delay: ${service.delay};">
                     <i class="fas ${service.icon} icon"></i>
                     <span class="blob-title">${service.tabLabel}</span>
                 </a>
@@ -350,7 +378,7 @@ function initMain() {
                                 <p class="lead mb-4" style="font-size: 1.15rem; color: #4a5568;">${therapy.lead}</p>
                                 <p class="text-muted mb-4">${therapy.description}</p>
                                 <ul class="list-unstyled mb-4 feature-list">${featuresHtml}</ul>
-                                <a href="${therapy.href}" class="btn cta-btn">${therapy.ctaText}</a>
+                                <a href="${resolveUrl(therapy.href)}" class="btn cta-btn">${therapy.ctaText}</a>
                             </div>
                             <div class="col-lg-6">
                                 <div class="premium-box premium-image-box rounded shadow-lg bg-white border position-relative overflow-hidden">
@@ -373,7 +401,7 @@ function initMain() {
                         <div class="card-icon"><i class="fas ${service.icon}"></i></div>
                         <h4 class="card-title">${service.tabLabel}</h4>
                         <p class="card-text">${service.description}</p>
-                        <a href="${service.href}" class="service-link">${service.ctaText} <i class="fas fa-arrow-right"></i></a>
+                        <a href="${resolveUrl(service.href)}" class="service-link">${service.ctaText} <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             `).join('');
@@ -536,7 +564,7 @@ function initMain() {
         if (footerServicesList && clinicData.services) {
             footerServicesList.innerHTML = clinicData.services.map((service, index) => `
                 <li class="${index === clinicData.services.length - 1 ? 'mb-0' : 'mb-3'}">
-                    <a href="${service.href}" class="text-white-50 text-decoration-none footer-service-link">
+                    <a href="${resolveUrl(service.href)}" class="text-white-50 text-decoration-none footer-service-link">
                         <i class="fas ${service.icon} text-primary me-3 w-15px text-center"></i> ${service.tabLabel}
                     </a>
                 </li>

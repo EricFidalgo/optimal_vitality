@@ -1,19 +1,19 @@
 /**
  * service-renderer.js
  *
- * Fetches service.html, injects it into #service-root, then
- * populates all data-slot elements from clinicData.
+ * Populates all data-slot elements and builds dynamic content sections
+ * for service pages after components have been loaded by component-loader.js.
  *
- * Each service stub page just needs:
- *   1. <div id="service-root"></div> in body
- *   2. const OVI_SERVICE_ID = "hormone-optimization";
- *   3. <script src="assets/js/data.js"></script>
- *   4. <script src="assets/js/service-renderer.js"></script>
+ * Each service page needs:
+ *   1. const OVI_SERVICE_ID = "service-id"; (inline script)
+ *   2. <script src="assets/js/data.js"></script>
+ *   3. <script src="assets/js/data/SERVICE-ID.js"></script>
+ *   4. <script src="assets/js/component-loader.js"></script>
+ *   5. <script src="assets/js/service-renderer.js"></script>
  *
- * To change content: edit clinicData.services in data.js
- * To change layout:  edit service.html
+ * To change content: edit assets/js/data/SERVICE-ID.js
+ * To change layout:  edit assets/components/*.html
  */
-
 (function () {
   // ─── 1. Find the service data ─────────────────────────────────────────────
   const service = clinicData.services.find((s) => s.id === OVI_SERVICE_ID);
@@ -365,10 +365,10 @@
     const buildCard = (item) => `
       <div class="ba-card d-flex flex-column position-relative rounded-4 overflow-hidden shadow-sm border h-100">
           <div class="ba-slider-container position-relative w-100 overflow-hidden" style="aspect-ratio: 16/10;">
-              <img src="${item.imageAfter}" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+              <img src="../${item.imageAfter}" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
               <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">${item.badgeAfter}</span>
               <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
-                  <img src="${item.imageBefore}" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                  <img src="../${item.imageBefore}" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
                   <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">${item.badgeBefore}</span>
               </div>
               <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
@@ -563,41 +563,4 @@
     goToStep(1);
   }
 
-  // ─── 14. Scroll indicators ────────────────────────────────────────────────
-  function buildScrollIndicators(container, count, trackEl) {
-    if (!container || count <= 1) return;
-    container.innerHTML = Array.from({ length: count })
-      .map(
-        (_, i) =>
-          `<button type="button" class="${i === 0 ? "active" : ""}" aria-label="Item ${i + 1}"></button>`
-      )
-      .join("");
-
-    if (!trackEl) return;
-
-    const dots = container.querySelectorAll("button");
-    trackEl.addEventListener("scroll", function () {
-      const cardWidth = trackEl.firstElementChild
-        ? trackEl.firstElementChild.offsetWidth + 16
-        : 300;
-      const index = Math.round(trackEl.scrollLeft / cardWidth);
-      dots.forEach((d, i) => d.classList.toggle("active", i === index));
-    });
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener("click", () => {
-        const cardWidth = trackEl.firstElementChild
-          ? trackEl.firstElementChild.offsetWidth + 16
-          : 300;
-        trackEl.scrollTo({ left: i * cardWidth, behavior: "smooth" });
-      });
-    });
-  }
-
-  // ─── 15. Utility ──────────────────────────────────────────────────────────
-  function chunkArray(arr, size) {
-    const result = [];
-    for (let i = 0; i < arr.length; i += size) result.push(arr.slice(i, i + size));
-    return result;
-  }
 })();
