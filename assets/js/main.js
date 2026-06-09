@@ -87,13 +87,31 @@ function initMain() {
         const numOriginals = originals.length;
         if (numOriginals === 0) return;
 
+        // Force non-infinite and center layout if there is only 1 item
+        const actualInfinite = numOriginals === 1 ? false : isInfinite;
+
+        if (numOriginals === 1) {
+            const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
+            if (controls) controls.style.display = 'none';
+            mobileTrack.style.justifyContent = 'center';
+        } else {
+            // Restore default styles for tracks with multiple items
+            const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
+            if (controls) controls.style.display = '';
+            mobileTrack.style.justifyContent = '';
+        }
+
         // 1. Generate indicator dots
-        originals.forEach((_, index) => {
-            mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
-        });
+        mobileDots.innerHTML = '';
+        if (numOriginals > 1) {
+            originals.forEach((_, index) => {
+                mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
+            });
+        }
 
         // 2. Clone items into the track (hide while building to avoid jitter)
-        const SETS = isInfinite ? 20 : 1;
+        const SETS = actualInfinite ? 20 : 1;
+        mobileTrack.innerHTML = '';
         mobileTrack.style.opacity = '0';
         mobileTrack.style.transition = 'opacity 0.2s ease-in';
 
@@ -113,13 +131,13 @@ function initMain() {
         setTimeout(() => {
             const items = mobileTrack.querySelectorAll('.native-scroll-item');
             const dots = mobileDots.querySelectorAll('button');
-            const middleStartIndex = isInfinite ? Math.floor(SETS / 2) * numOriginals : 0;
+            const middleStartIndex = actualInfinite ? Math.floor(SETS / 2) * numOriginals : 0;
 
             // Snap to starting position
             if (items[middleStartIndex]) {
                 items[middleStartIndex].classList.add('active');
                 mobileTrack.style.scrollBehavior = 'auto';
-                if (isInfinite) {
+                if (actualInfinite) {
                     mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
                 } else {
                     mobileTrack.scrollLeft = 0;
@@ -143,7 +161,7 @@ function initMain() {
             }, { root: mobileTrack, threshold: 0.6 });
             items.forEach(item => observer.observe(item));
 
-            if (isInfinite) {
+            if (actualInfinite) {
                 // Teleportation logic when reaching boundary
                 let scrollTimeout;
                 mobileTrack.addEventListener('scroll', () => {
