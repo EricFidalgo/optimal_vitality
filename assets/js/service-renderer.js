@@ -417,10 +417,15 @@
       </div>
     `;
 
+    const getColsClass = (stepObj) => {
+      if (!stepObj || !stepObj.options) return '';
+      return `opts-${stepObj.options.length}`;
+    };
+
     container.innerHTML = `
-      ${buildStep(quizData.step1, 1, '')}
-      ${buildStep(quizData.step2, 2, 'cols-3')}
-      ${buildStep(quizData.step3, 3, '')}
+      ${buildStep(quizData.step1, 1, getColsClass(quizData.step1))}
+      ${buildStep(quizData.step2, 2, getColsClass(quizData.step2))}
+      ${buildStep(quizData.step3, 3, getColsClass(quizData.step3))}
       <div class="quiz-step-panel" id="quiz-step-result"></div>
     `;
 

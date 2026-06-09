@@ -30,6 +30,82 @@ window.clinicData.services.push({
       heroHeadline: "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
       heroCTA: "Start Your Protocol",
 
+      transformations: {
+        headline: "Clinical Transformations",
+        subheadline: "Visual evidence of optimized body composition and metabolic health.",
+        items: [
+          {
+            imageAfter: "assets/images/photos/glp-after.jpg",
+            imageBefore: "assets/images/photos/glp-before.jpg",
+            badgeAfter: "Week 16",
+            badgeBefore: "Baseline",
+            title: "Sustainable Weight Loss",
+            protocol: "Tirzepatide Optimization",
+            description: "Patient achieved a 15% reduction in total body weight while preserving lean muscle mass and improving metabolic markers."
+          }
+        ]
+      },
+      
+      quiz: {
+        badge: "Clinical Self-Assessment",
+        headline: "Find Your Protocol",
+        subheadline: "Answer 3 quick questions to help us identify the best GLP-1 strategy for you.",
+        step1: {
+          question: "What's your primary goal?",
+          sub: "Your goal dictates the compound and dosing strategy.",
+          options: [
+            { value: "weight", icon: "fa-weight", title: "Weight Loss", desc: "Significant reduction in body fat." },
+            { value: "metabolic", icon: "fa-heartbeat", title: "Metabolic Health", desc: "Improve A1C, insulin sensitivity, and overall markers." }
+          ]
+        },
+        step2: {
+          question: "Have you tried GLP-1s before?",
+          sub: "Past experience helps us adjust your starting dose.",
+          options: [
+            { value: "no", icon: "fa-times-circle", title: "Never", desc: "First time using these therapies." },
+            { value: "yes", icon: "fa-check-circle", title: "Yes", desc: "Have used Semaglutide or Tirzepatide in the past." }
+          ]
+        },
+        step3: {
+          question: "How much weight do you want to lose?",
+          sub: "Sets realistic timelines for your protocol.",
+          options: [
+            { value: "moderate", icon: "fa-arrow-down", title: "10-20 lbs", desc: "Targeted fat loss." },
+            { value: "significant", icon: "fa-arrow-circle-down", title: "20+ lbs", desc: "Major body recomposition." }
+          ]
+        },
+        protocols: {
+          weight: {
+            tag: "Active Weight Management",
+            name: "The Metabolic Recomposition Protocol",
+            peptides: "Semaglutide or Tirzepatide",
+            icon: "fa-weight-scale",
+            desc: "A precision dosing schedule paired with lipotropic agents to target stubborn fat stores while actively preserving lean muscle tissue.",
+            goalModifiers: {
+              moderate: "Targeted for 10-20 lbs of fat loss, focusing on metabolic efficiency and sustainable lifestyle integration.",
+              significant: "Indicates a 20+ lbs weight loss goal, using progressive titration for long-term body recomposition."
+            },
+            social: "112 patients with your profile are currently running this protocol."
+          },
+          metabolic: {
+            tag: "Metabolic Optimization",
+            name: "The Systemic Balance Protocol",
+            peptides: "Tirzepatide + Bio-Identical Support",
+            icon: "fa-heartbeat",
+            desc: "Designed specifically to address cellular insulin sensitivity, stabilize blood glucose markers, and optimize lipid profiles.",
+            goalModifiers: {
+              moderate: "Focused on correcting moderate metabolic stall and improving baseline daily energy.",
+              significant: "Designed for significant metabolic restoration, aiming to reset systemic inflammatory markers and pancreatic efficiency."
+            },
+            social: "84 patients with your profile completed this protocol in the last 90 days."
+          }
+        },
+        timelineMap: {
+          no: "12–16 weeks (Standard Titration)",
+          yes: "8–12 weeks (Accelerated Titration)"
+        }
+      },
+
       eligibility: {
         badge: "Clinical Candidacy",
         headline: "Who Is This Right For?",

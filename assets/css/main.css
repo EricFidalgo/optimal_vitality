@@ -2017,6 +2017,22 @@ h6 {
   gap: 14px;
 }
 
+.quiz-options.opts-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.quiz-options.opts-3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.quiz-options.opts-3 .quiz-option:nth-child(3) {
+  grid-column: span 2;
+}
+
+.quiz-options.opts-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .quiz-options.cols-3 {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -2191,11 +2207,15 @@ h6 {
     font-size: 0.8rem;
   }
   .quiz-options,
-  .quiz-options.cols-3 {
+  .quiz-options.cols-3,
+  .quiz-options.opts-2,
+  .quiz-options.opts-3,
+  .quiz-options.opts-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  .quiz-options.cols-3 .quiz-option:last-child:nth-child(odd) {
+  .quiz-options.cols-3 .quiz-option:last-child:nth-child(odd),
+  .quiz-options.opts-3 .quiz-option:nth-child(3) {
     grid-column: span 2;
   }
   .quiz-option {

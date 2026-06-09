@@ -389,5 +389,23 @@ window.clinicData.services.push({
           myth: "Is this even legal?",
           reality: "All compounds we prescribe are FDA-regulated, pharmacy-compounded, and dispensed under a licensed physician's supervision. This is legal, clinical-grade medicine."
         }
+      ],
+      faqs: [
+        {
+          question: "How are peptides administered?",
+          answer: "Most peptide protocols use small, painless subcutaneous injections (similar to an insulin needle). Some specific peptides are available in oral or nasal spray forms, depending on the desired systemic or local effect."
+        },
+        {
+          question: "When will I see results?",
+          answer: "Acute injury peptides like BPC-157 can show pain reduction and tissue repair acceleration in 2-4 weeks. For anti-aging or body composition peptides (like Tesamorelin), visible changes typically emerge around weeks 6-12."
+        },
+        {
+          question: "Do I need bloodwork for peptide therapy?",
+          answer: "Yes. While peptides are highly safe, we require baseline labs to ensure optimal selection, rule out contraindications, and track progress over the course of your protocol."
+        },
+        {
+          question: "Can I combine peptides with TRT or HRT?",
+          answer: "Absolutely. In fact, peptides are often used synergistically with hormone optimization protocols to enhance the cellular response, improve recovery, and maximize overall results."
+        }
       ]
     });

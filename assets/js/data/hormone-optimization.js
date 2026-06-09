@@ -31,6 +31,95 @@ window.clinicData.services.push({
       heroHeadline: "Reclaim Your<br><span class=\"text-primary\">Hormonal</span> Edge",
       heroCTA: "Start Your Protocol",
 
+      transformations: {
+        headline: "Clinical Transformations",
+        subheadline: "Visual evidence of optimized hormone levels and body composition.",
+        items: [
+          {
+            imageAfter: "assets/images/photos/TRT.jpg",
+            imageBefore: "assets/images/photos/TRT.jpg",
+            badgeAfter: "Optimized",
+            badgeBefore: "Baseline",
+            title: "Hormonal Rebalance",
+            protocol: "TRT Protocol",
+            description: "Patient experienced significant improvements in lean mass, energy levels, and cognitive function after 12 weeks of therapy."
+          }
+        ]
+      },
+      
+      quiz: {
+        badge: "Clinical Self-Assessment",
+        headline: "Find Your Protocol",
+        subheadline: "Answer 3 quick questions to help us identify the best hormone strategy for you.",
+        step1: {
+          question: "What is your main symptom?",
+          sub: "Your primary symptom guides our initial evaluation.",
+          options: [
+            { value: "energy", icon: "fa-battery-quarter", title: "Low Energy", desc: "Chronic fatigue and midday crashes." },
+            { value: "libido", icon: "fa-fire", title: "Decreased Libido", desc: "Loss of intimacy and sexual drive." },
+            { value: "muscle", icon: "fa-dumbbell", title: "Muscle Loss", desc: "Decreased strength and increased body fat." }
+          ]
+        },
+        step2: {
+          question: "How long have you felt this way?",
+          sub: "Understanding the timeline is critical.",
+          options: [
+            { value: "months", icon: "fa-calendar", title: "A few months", desc: "Recent decline in vitality." },
+            { value: "years", icon: "fa-calendar-alt", title: "Years", desc: "Long-term sub-optimal performance." }
+          ]
+        },
+        step3: {
+          question: "Have you had your hormones tested recently?",
+          sub: "Recent labs give us a starting point.",
+          options: [
+            { value: "yes", icon: "fa-vial", title: "Yes", desc: "Within the last 6 months." },
+            { value: "no", icon: "fa-times", title: "No", desc: "Need full baseline panel." }
+          ]
+        },
+        protocols: {
+          energy: {
+            tag: "Vitality & Focus",
+            name: "The Endocrine Rejuvenation Stack",
+            peptides: "Bio-Identical Testosterone / Hormone Therapy",
+            icon: "fa-battery-quarter",
+            desc: "Built to resolve systemic fatigue by restoring bio-identical hormone levels to their physiologic peak. Promotes mental sharpness, all-day stamina, and better sleep.",
+            goalModifiers: {
+              yes: "Since you have recent labs, we will review them immediately to establish a personalized starting dose.",
+              no: "We will arrange a comprehensive baseline biomarker panel to identify exact deficiencies before beginning treatment."
+            },
+            social: "94 patients with your profile started this protocol in the last 60 days."
+          },
+          libido: {
+            tag: "Sexual Wellness & Intimacy",
+            name: "The Peak Intimacy Protocol",
+            peptides: "Hormone Therapy + Growth Factor Support",
+            icon: "fa-fire",
+            desc: "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+            goalModifiers: {
+              yes: "We can expedite your optimization plan by review of your existing lab panel.",
+              no: "We will prescribe a customized diagnostic lab order to pinpoint underlying hormone imbalances."
+            },
+            social: "73 patients with your profile completed this protocol recently."
+          },
+          muscle: {
+            tag: "Anabolic Optimization",
+            name: "The Recomposition & Strength Stack",
+            peptides: "TRT / Bio-Identical HRT + Growth Hormone Peptides",
+            icon: "fa-dumbbell",
+            desc: "Formulated to reverse age-related muscle loss, accelerate exercise recovery times, and decrease abdominal fat deposition.",
+            goalModifiers: {
+              yes: "Your recent labs will guide initial dosing to safely trigger optimal protein synthesis and fat metabolism.",
+              no: "A baseline hormone panel will be ordered to map your total and free hormone levels before designing the stack."
+            },
+            social: "104 patients with your profile are currently running this protocol."
+          }
+        },
+        timelineMap: {
+          months: "8–12 weeks",
+          years: "12–16 weeks"
+        }
+      },
+
       // ─── Eligibility (Who Is This Right For) ─────────────────────────────
       eligibility: {
         badge: "Clinical Candidacy",

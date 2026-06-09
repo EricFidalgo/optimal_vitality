@@ -30,6 +30,95 @@ window.clinicData.services.push({
       heroHeadline: "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
       heroCTA: "Start Your Protocol",
 
+      transformations: {
+        headline: "Clinical Transformations",
+        subheadline: "Real outcomes from regenerative treatments.",
+        items: [
+          {
+            imageAfter: "assets/images/photos/regen-after.jpg",
+            imageBefore: "assets/images/photos/regen-before.jpg",
+            badgeAfter: "Post-Treatment",
+            badgeBefore: "Baseline",
+            title: "Joint & Tissue Repair",
+            protocol: "PRP & Exosome Therapy",
+            description: "Accelerated healing and restored function after targeted regenerative injections."
+          }
+        ]
+      },
+      
+      quiz: {
+        badge: "Clinical Self-Assessment",
+        headline: "Find Your Protocol",
+        subheadline: "Answer 3 quick questions to help us identify the best regenerative strategy for you.",
+        step1: {
+          question: "What is your main concern?",
+          sub: "Your primary symptom guides our approach.",
+          options: [
+            { value: "joint", icon: "fa-bone", title: "Joint Pain", desc: "Chronic pain or acute injury." },
+            { value: "hair", icon: "fa-cut", title: "Hair Thinning", desc: "Looking to restore hair density." },
+            { value: "intimacy", icon: "fa-heart", title: "Sexual Wellness", desc: "Seeking P-Shot or O-Shot treatments." }
+          ]
+        },
+        step2: {
+          question: "How severe is your condition?",
+          sub: "Severity dictates the compound used.",
+          options: [
+            { value: "mild", icon: "fa-thermometer-empty", title: "Mild", desc: "Preventative or early stage." },
+            { value: "severe", icon: "fa-thermometer-full", title: "Severe", desc: "Significant pain or noticeable loss." }
+          ]
+        },
+        step3: {
+          question: "Have you tried regenerative therapies before?",
+          sub: "Helps us plan the protocol.",
+          options: [
+            { value: "no", icon: "fa-times", title: "Never", desc: "First time." },
+            { value: "yes", icon: "fa-check", title: "Yes", desc: "Have had PRP or similar." }
+          ]
+        },
+        protocols: {
+          joint: {
+            tag: "Structural Rehabilitation",
+            name: "The Cellular Joint Repair Protocol",
+            peptides: "Platelet-Rich Plasma (PRP) + Exosomes",
+            icon: "fa-bone",
+            desc: "Targets chronic pain and tissue degradation by injecting high-concentration cellular growth factors directly into affected areas to promote active healing.",
+            goalModifiers: {
+              no: "As a first-time candidate, we recommend starting with a baseline orthopedic evaluation.",
+              yes: "Prior regenerative treatment indicates we can tailor cellular density for an enhanced repair response."
+            },
+            social: "55 patients with your profile are currently running this protocol."
+          },
+          hair: {
+            tag: "Follicle Stimulation",
+            name: "The Scalp Regeneration Matrix",
+            peptides: "PRP / Exosomes + Scalp Micro-Channeling",
+            icon: "fa-cut",
+            desc: "Reverses androgenic alopecia and thinning by delivering biological growth signals directly to dormant hair follicles, stimulating density and strength.",
+            goalModifiers: {
+              no: "First-time therapy. A multi-session baseline approach is recommended for optimal follicle awakening.",
+              yes: "Prior therapy suggests a maintenance or high-intensity booster protocol to sustain follicle activity."
+            },
+            social: "82 patients with your profile achieved visible density improvements."
+          },
+          intimacy: {
+            tag: "Sexual Wellness Restoration",
+            name: "The Cellular Intimacy Protocol (P-Shot / O-Shot)",
+            peptides: "Autologous PRP + Cellular Growth Factors",
+            icon: "fa-heart",
+            desc: "Utilizes highly concentrated platelets to restore blood flow, tissue responsiveness, and localized nerve sensitivity for enhanced sexual wellness.",
+            goalModifiers: {
+              no: "A baseline mapping session will help us determine target areas for optimal response.",
+              yes: "Prior treatments allow us to adjust density for enhanced longevity of results."
+            },
+            social: "69 patients with your profile completed this treatment recently."
+          }
+        },
+        timelineMap: {
+          mild: "4–6 weeks",
+          severe: "8–12 weeks"
+        }
+      },
+
       eligibility: {
         badge: "Clinical Candidacy",
         headline: "Who Is This Right For?",

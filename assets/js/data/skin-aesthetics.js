@@ -30,6 +30,95 @@ window.clinicData.services.push({
       heroHeadline: "Look As Good As<br><span class=\"text-primary\">You Perform</span>",
       heroCTA: "Book a Consultation",
 
+      transformations: {
+        headline: "Clinical Transformations",
+        subheadline: "Real outcomes from advanced aesthetic treatments.",
+        items: [
+          {
+            imageAfter: "assets/images/photos/skin-after.jpg",
+            imageBefore: "assets/images/photos/skin-before.jpg",
+            badgeAfter: "Post-Treatment",
+            badgeBefore: "Baseline",
+            title: "Skin Rejuvenation",
+            protocol: "Microneedling & Exosomes",
+            description: "Significant improvement in skin texture, tone, and collagen production."
+          }
+        ]
+      },
+      
+      quiz: {
+        badge: "Clinical Self-Assessment",
+        headline: "Find Your Treatment",
+        subheadline: "Answer 3 quick questions to help us identify the best aesthetic strategy for you.",
+        step1: {
+          question: "What is your main skin concern?",
+          sub: "Your primary concern guides our recommendation.",
+          options: [
+            { value: "wrinkles", icon: "fa-smile-beam", title: "Fine Lines", desc: "Looking for neurotoxins or fillers." },
+            { value: "texture", icon: "fa-spa", title: "Skin Texture", desc: "Acne scars, large pores, or uneven tone." },
+            { value: "laxity", icon: "fa-hand-sparkles", title: "Skin Laxity", desc: "Loss of firmness or sagging." }
+          ]
+        },
+        step2: {
+          question: "Are you looking for immediate results?",
+          sub: "Helps us choose between immediate and progressive treatments.",
+          options: [
+            { value: "immediate", icon: "fa-bolt", title: "Immediate", desc: "Fillers, Botox." },
+            { value: "progressive", icon: "fa-calendar-alt", title: "Progressive", desc: "Microneedling, Biostimulators." }
+          ]
+        },
+        step3: {
+          question: "What is your tolerance for downtime?",
+          sub: "Downtime affects treatment choice.",
+          options: [
+            { value: "none", icon: "fa-running", title: "Zero Downtime", desc: "Can return to work immediately." },
+            { value: "some", icon: "fa-couch", title: "A few days", desc: "Comfortable with redness or peeling." }
+          ]
+        },
+        protocols: {
+          wrinkles: {
+            tag: "Facial Rejuvenation",
+            name: "The Expression Smooth Protocol",
+            peptides: "Neurotoxins (Botox/Xeomin) + Dermal Fillers",
+            icon: "fa-smile-beam",
+            desc: "Precision-dosed treatment focusing on smoothing fine lines, relaxing overactive facial muscles, and restoring volume loss in key areas.",
+            goalModifiers: {
+              none: "Optimized using micro-dosing to ensure zero social downtime while providing a refreshed appearance.",
+              some: "Enables full-range restoration, where minor swelling or redness yields highly calibrated, youthful symmetry."
+            },
+            social: "91 patients with your profile completed this protocol in the last 90 days."
+          },
+          texture: {
+            tag: "Dermal Refinement",
+            name: "The Texture & Tone Rejuvenation Stack",
+            peptides: "Microneedling + PRP / Exosomes",
+            icon: "fa-spa",
+            desc: "Deeply targets acne scarring, large pores, and uneven skin tone by stimulating new collagen and elastin production through cellular repair.",
+            goalModifiers: {
+              none: "Tailored with light micro-infusion and growth factor serums to maximize recovery speed.",
+              some: "Utilizes deep-channel remodeling for dramatic collagen synthesis, requiring 2-3 days of mild redness."
+            },
+            social: "64 patients with your profile completed this stack successfully."
+          },
+          laxity: {
+            tag: "Structural Firming",
+            name: "The Lift & Contour Matrix",
+            peptides: "Biostimulators (Sculptra) + RF Treatments",
+            icon: "fa-hand-sparkles",
+            desc: "Rebuilds the underlying skin scaffolding to address sagging and loss of elasticity, producing a natural, long-lasting firming effect.",
+            goalModifiers: {
+              none: "Structured with progressive RF sessions to bypass any social downtime completely.",
+              some: "Uses deep biostimulation for max firming, allowing a few days for subtle swelling to resolve."
+            },
+            social: "77 patients with your profile are currently on this protocol."
+          }
+        },
+        timelineMap: {
+          immediate: "3–5 days",
+          progressive: "4–8 weeks"
+        }
+      },
+
       eligibility: {
         badge: "Clinical Candidacy",
         headline: "Who Is This Right For?",
