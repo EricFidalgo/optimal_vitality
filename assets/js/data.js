@@ -53,7 +53,7 @@ team: [
       expertise: ["Bio-identical Hormone Therapy", "Advanced Endocrinology", "Peptide Synthesis Protocols", "Longevity Medicine"],
       associations: ["Fellow of the American Academy of Anti-Aging Medicine (A4M)", "American Medical Association"],
       personalDetail: "Dr. Vance is an avid triathlete and utilizes the very protocols he prescribes to maintain elite cardiovascular performance.",
-      image: "assets/images/photos/team-group.avif",
+      image: "assets/images/team/vance.png",
     },
     {
       name: "Sarah Jenkins, FNP-C",
@@ -64,7 +64,7 @@ team: [
       expertise: ["GLP-1/GIP Agonists", "Metabolic Optimization", "Body Recomposition", "Clinical Nutrition"],
       associations: ["American Association of Nurse Practitioners (AANP)", "Obesity Medicine Association"],
       personalDetail: "Sarah bridges the gap between clinical science and sustainable lifestyle integration, empowering patients to own their health journey.",
-      image: "assets/images/photos/PA.png",
+      image: "assets/images/team/jenkins.png",
     },
     {
       name: "David Chen, RN",
@@ -75,7 +75,7 @@ team: [
       expertise: ["NAD+ Protocols", "High-Dose Vitamin C", "Cellular Hydration", "Post-Surgical Recovery IVs"],
       associations: ["Infusion Nurses Society (INS)"],
       personalDetail: "David has safely administered over 10,000 IV protocols and is known for his perfectly painless insertion techniques.",
-      image: "assets/images/photos/team-group.avif",
+      image: "assets/images/team/chen.png",
     },
   ],
 

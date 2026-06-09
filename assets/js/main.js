@@ -15,19 +15,20 @@ function initMain() {
             return url;
         }
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
+        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "skin-aesthetics", "iv-wellness", "peptides"];
+        const baseName = url.replace('.html', '').split('#')[0];
+
         if (isSubpage) {
             // We are inside services/
-            if (url.startsWith('index.html')) {
-                return '../' + url;
+            if (serviceIds.includes(baseName)) {
+                return url; // service stubs are in the same folder
             }
-            return url; // service stubs are in the same folder
+            return '../' + url; // root pages like index.html or team.html
         } else {
             // We are at root (index.html)
             if (url.startsWith('index.html')) {
                 return url;
             }
-            const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "skin-aesthetics", "iv-wellness", "peptides"];
-            const baseName = url.replace('.html', '').split('#')[0]; // handle possible anchors like peptides.html#quiz
             if (serviceIds.includes(baseName)) {
                 return 'services/' + url;
             }
