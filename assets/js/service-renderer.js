@@ -368,7 +368,7 @@
               <img src="../${item.imageAfter}" alt="Patient After" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
               <span class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm" style="z-index: 1;">${item.badgeAfter}</span>
               <div class="ba-before-wrapper position-absolute top-0 start-0 w-100 h-100 overflow-hidden" style="clip-path: inset(0 50% 0 0); z-index: 2;">
-                  <img src="../${item.imageBefore}" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(20%);">
+                  <img src="../${item.imageBefore}" alt="Patient Before" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="filter: grayscale(30%);">
                   <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 shadow-sm">${item.badgeBefore}</span>
               </div>
               <input type="range" min="0" max="100" value="50" class="ba-slider position-absolute top-0 start-0 w-100 h-100 m-0" oninput="this.closest('.ba-slider-container').querySelector('.ba-before-wrapper').style.clipPath = 'inset(0 ' + (100 - this.value) + '% 0 0)'; this.closest('.ba-slider-container').querySelector('.ba-slider-line').style.left = this.value + '%';">
