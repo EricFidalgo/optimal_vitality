@@ -152,21 +152,47 @@
     <!-- ===== MEET OUR MEDICAL EXPERTS (moved up — establish trust before showing more services) ===== -->
     <section class="team-section py-5" id="team">
         <div class="container py-5">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="section-title mb-4">Meet Our Medical Experts</h2>
-                    <p class="lead team-lead-text">A dedicated team of licensed professionals committed to engineering your optimal physical and cognitive performance.</p>
-                </div>
-            </div>
-
-            <div class="row align-items-center" id="team-container">
+            <div class="row align-items-center">
+                <!-- Left Side: Group Photo -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="team-group-img-wrapper shadow-lg rounded-4 overflow-hidden border border-secondary position-relative">
                         <img src="assets/images/photos/team-group.avif" alt="Optimal Vitality Institute Medical Team" class="w-100 h-100" style="object-fit: cover;">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="team-list-container" id="team-list"></div>
+                
+                <!-- Right Side: Clean intro text and direct CTA -->
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="badge rounded-pill px-3 py-2 fw-semibold mb-3" style="background-color: rgba(230, 195, 129, 0.12); color: var(--primary-color); font-size: 0.75rem; letter-spacing: 1.5px;">DOCTOR-LED MEDICINE</span>
+                    <h2 class="section-title text-start mb-4">Meet Our Medical Experts</h2>
+                    <p class="lead team-lead-text mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+                        At Optimal Vitality Institute, we believe true longevity requires precision oversight. Our protocols are prescribed and monitored by fully licensed medical professionals following comprehensive biomarker diagnostic evaluation.
+                    </p>
+                    
+                    <!-- Core highlights list -->
+                    <div class="d-flex flex-column gap-3 mb-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: rgba(230, 195, 129, 0.1); color: var(--primary-color);">
+                                <i class="fas fa-user-md fa-sm"></i>
+                            </div>
+                            <span class="fw-medium text-dark" style="font-size: 0.95rem;">Board-Certified Medical Directors &amp; Specialists</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: rgba(230, 195, 129, 0.1); color: var(--primary-color);">
+                                <i class="fas fa-shield-alt fa-sm"></i>
+                            </div>
+                            <span class="fw-medium text-dark" style="font-size: 0.95rem;">Florida State Licensed Concierge Medical Clinic</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 32px; height: 32px; background-color: rgba(230, 195, 129, 0.1); color: var(--primary-color);">
+                                <i class="fas fa-vial fa-sm"></i>
+                            </div>
+                            <span class="fw-medium text-dark" style="font-size: 0.95rem;">Evidence-Based, Custom-Dosed Longevity Protocols</span>
+                        </div>
+                    </div>
+                    
+                    <a href="team.html" class="btn btn-team-profile fw-bold px-4 py-3 rounded-pill" style="font-size: 0.9rem; letter-spacing: 0.5px;">
+                        Meet the Team &amp; View Credentials <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -174,7 +200,7 @@
 
     <!-- ===== ADDITIONAL OPTIMIZATION SERVICES (moved after trust is built) ===== -->
     <section class="premium-services pt-2 pb-5" id="services">
-        <div class="container py-5">
+        <div class="container py-5 gs-reveal">
             <div class="row text-center mb-5">
                 <div class="col-lg-8 mx-auto text-white">
                     <h2 class="section-title mb-4 text-white">Additional Optimization Services</h2>
