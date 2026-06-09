@@ -2129,9 +2129,9 @@ h6 {
 }
 
 .quiz-protocol-peptides {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  color: #aaa;
+  color: #3b6b75;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 1.25rem;
@@ -2187,12 +2187,13 @@ h6 {
 .quiz-restart {
   background: transparent;
   border: none;
-  color: #bbb;
-  font-size: 0.82rem;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
   padding: 0;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   transition: color 0.2s ease;
 }
 
