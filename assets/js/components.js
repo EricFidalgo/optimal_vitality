@@ -133,6 +133,86 @@
             </div>
         `;
     }
+ 
+    // -------------------------------------------------------------------------
+    // CLINICAL DISCLOSURES
+    // -------------------------------------------------------------------------
+    function renderDisclosures() {
+        const root = document.getElementById("disclosures-root");
+        if (!root) return;
+
+        fetch(`${prefix}assets/components/disclosures.html`)
+            .then(res => {
+                if (!res.ok) throw new Error("Failed to load disclosures component");
+                return res.text();
+            })
+            .then(html => {
+                root.innerHTML = html;
+            })
+            .catch(err => console.error(err));
+    }
+
+    // -------------------------------------------------------------------------
+    // LOCAL SCHEMA INJECTION (DRY)
+    // -------------------------------------------------------------------------
+    function injectLocalSchema() {
+        const path = window.location.pathname.toLowerCase();
+        let schemaKey = null;
+        if (path.endsWith("/st-pete.html") || path.endsWith("/st-pete")) {
+            schemaKey = "stPete";
+        } else if (path.endsWith("/tampa.html") || path.endsWith("/tampa")) {
+            schemaKey = "tampa";
+        }
+
+        if (schemaKey && typeof clinicData !== 'undefined' && clinicData.locations && clinicData.locations[schemaKey]) {
+            const loc = clinicData.locations[schemaKey];
+            
+            // Build the full schema by merging base clinic properties with page-specific ones
+            const fullSchema = {
+                "@context": "https://schema.org",
+                "@type": "MedicalClinic",
+                "name": loc.name,
+                "alternateName": "OVI Wellness",
+                "description": loc.description,
+                "url": loc.url,
+                "telephone": "(850) 555-0199",
+                "image": "https://oviwellness.com/assets/images/photos/team-group.avif",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "100 2nd Ave N, Suite 300",
+                    "addressLocality": "St. Petersburg",
+                    "addressRegion": "FL",
+                    "postalCode": "33701",
+                    "addressCountry": "US"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 27.7725,
+                    "longitude": -82.6347
+                },
+                "areaServed": loc.areaServed,
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "18:00"
+                },
+                "priceRange": "$$",
+                "medicalSpecialty": "Endocrinology"
+            };
+
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.text = JSON.stringify(fullSchema);
+            document.head.appendChild(script);
+        }
+    }
 
     function initNavbarBehavior() {
         // Mobile Menu Auto-Close on nav link click
@@ -162,11 +242,13 @@
     }
 
     // -------------------------------------------------------------------------
-    // INIT — render both components before anything else fires
+    // INIT — render components before anything else fires
     // -------------------------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function () {
         renderNavbar();
         renderFooter();
+        renderDisclosures();
+        injectLocalSchema();
         initNavbarBehavior();
     });
 })();

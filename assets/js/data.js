@@ -53,7 +53,7 @@ team: [
       expertise: ["Bio-identical Hormone Therapy", "Advanced Endocrinology", "Peptide Synthesis Protocols", "Longevity Medicine"],
       associations: ["Fellow of the American Academy of Anti-Aging Medicine (A4M)", "American Medical Association"],
       personalDetail: "Dr. Vance is an avid triathlete and utilizes the very protocols he prescribes to maintain elite cardiovascular performance.",
-      image: "assets/images/team/vance.png",
+      image: "assets/images/photos/team/vance.png",
     },
     {
       name: "Sarah Jenkins, FNP-C",
@@ -64,7 +64,7 @@ team: [
       expertise: ["GLP-1/GIP Agonists", "Metabolic Optimization", "Body Recomposition", "Clinical Nutrition"],
       associations: ["American Association of Nurse Practitioners (AANP)", "Obesity Medicine Association"],
       personalDetail: "Sarah bridges the gap between clinical science and sustainable lifestyle integration, empowering patients to own their health journey.",
-      image: "assets/images/team/jenkins.png",
+      image: "assets/images/photos/team/jenkins.png",
     },
     {
       name: "David Chen, RN",
@@ -75,7 +75,7 @@ team: [
       expertise: ["NAD+ Protocols", "High-Dose Vitamin C", "Cellular Hydration", "Post-Surgical Recovery IVs"],
       associations: ["Infusion Nurses Society (INS)"],
       personalDetail: "David has safely administered over 10,000 IV protocols and is known for his perfectly painless insertion techniques.",
-      image: "assets/images/team/chen.png",
+      image: "assets/images/photos/team/chen.png",
     },
   ],
 
@@ -146,4 +146,30 @@ team: [
         "Yes, peptides are extremely well-tolerated because they are naturally occurring compounds within your body. We exclusively prescribe rigorously tested, pharmacy-grade peptides. Most are administered via a virtually painless subcutaneous injection using a micro-needle, though some protocols use topical or oral alternatives.",
     },
   ],
+  locations: {
+    stPete: {
+      name: "Optimal Vitality Institute — St. Petersburg",
+      description: "Doctor-led TRT clinic, medical weight loss (Semaglutide/Tirzepatide), advanced aesthetics, and peptide therapy in St. Petersburg, Florida.",
+      url: "https://oviwellness.com/st-pete.html",
+      areaServed: [
+        "St. Petersburg",
+        "Tampa",
+        "Clearwater",
+        "Pinellas County",
+        "Hillsborough County"
+      ]
+    },
+    tampa: {
+      name: "Optimal Vitality Institute — Tampa Concierge & Telehealth",
+      description: "Concierge medical weight loss, hormone replacement therapy (TRT), and peptide protocols serving Tampa, Florida.",
+      url: "https://oviwellness.com/tampa.html",
+      areaServed: [
+        "Tampa",
+        "St. Petersburg",
+        "Clearwater",
+        "Hillsborough County",
+        "Pinellas County"
+      ]
+    }
+  }
 };
