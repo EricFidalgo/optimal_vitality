@@ -157,6 +157,59 @@ team: [
         "Clearwater",
         "Pinellas County",
         "Hillsborough County"
+      ],
+      heroBadge: "ST. PETERSBURG, FL",
+      heroHeadline: "OVI Wellness <span class='text-primary'>St. Petersburg</span>",
+      heroSubheadline: "Our premier physical medical office providing doctor-led hormone optimization (TRT), metabolic weight loss, advanced peptide protocols, and aesthetics under strict medical board safety guidelines.",
+      heroCTA: "Book St. Pete Consultation",
+      advantageBadge: "PHYSICAL CLINIC LOCATION",
+      advantageHeadline: "Doctor-Led Longevity Medicine in St. Pete",
+      advantageText: "Located in the heart of St. Petersburg, our medical team—led by Chief Medical Officer Dr. Marcus Vance, MD—delivers personalized protocols designed to optimize your biomarkers. We combine advanced diagnostic lab work with sterile compounding pharmacy standards, ensuring your safety and clinical outcome.",
+      advantageImage: "assets/images/photos/process-review.jpg",
+      advantageBullets: [
+        "Active Florida Medical Licensure",
+        "CMO Physician Collaboration",
+        "Visits & Lab Work Reviews",
+        "FDA-Approved Compounds"
+      ],
+      treatmentsHeadline: "Our St. Petersburg Clinical Programs",
+      treatmentsSubheadline: "Explore our bio-calibrated treatments designed to restore energy, metabolism, healing, and skin vitality.",
+      treatmentsGrid: [
+        {
+          title: "Hormone Optimization (TRT)",
+          icon: "fa-syringe",
+          desc: "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+          link: "services/hormone-optimization.html",
+          linkText: "Explore TRT Program"
+        },
+        {
+          title: "Medical Weight Loss",
+          icon: "fa-weight-scale",
+          desc: "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+          link: "services/glp-1therapies.html",
+          linkText: "Explore Weight Loss"
+        },
+        {
+          title: "Peptide Therapy",
+          icon: "fa-vial",
+          desc: "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
+          link: "services/peptides.html",
+          linkText: "Explore Peptides"
+        },
+        {
+          title: "Skin & Aesthetics (Botox)",
+          icon: "fa-magic",
+          desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
+          link: "services/skin-aesthetics.html",
+          linkText: "Explore Aesthetics"
+        },
+        {
+          title: "IV Nutrient Hydration",
+          icon: "fa-tint",
+          desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+          link: "services/iv-wellness.html",
+          linkText: "Explore IV Drips"
+        }
       ]
     },
     tampa: {
@@ -169,6 +222,45 @@ team: [
         "Clearwater",
         "Hillsborough County",
         "Pinellas County"
+      ],
+      heroBadge: "TAMPA BAY REGION",
+      heroHeadline: "OVI Wellness <span class='text-primary'>Tampa</span>",
+      heroSubheadline: "Serving Tampa Bay patients via advanced telehealth consultations, direct-to-home protocol delivery, and local lab draws—with our main physical clinic located just across the bridge in St. Petersburg.",
+      heroCTA: "Schedule Tampa Consultation",
+      advantageBadge: "CONCIERGE & TELEHEALTH SERVICES",
+      advantageHeadline: "Serving Tampa Residents from our St. Pete Office & Telehealth",
+      advantageText: "Optimize your health from anywhere in Tampa. While our primary physical office is located just across the bridge in St. Petersburg, we specialize in seamless care for Tampa residents. We coordinate local diagnostic blood draws in Tampa, conduct fully secure telehealth consultation calls, and ship custom-dosed peptides, TRT protocols, and metabolic weight loss compounds directly to your home.",
+      advantageImage: "assets/images/photos/peptide.jpg",
+      advantageBullets: [
+        "Florida Board Certified Physicians",
+        "Concierge Lab Work Coordination",
+        "Direct Telehealth Consultations",
+        "Pharmacy-Direct Prescription Delivery"
+      ],
+      treatmentsHeadline: "Our Tampa Clinical Offerings",
+      treatmentsSubheadline: "Access our bio-calibrated wellness programs via telehealth or concierge care.",
+      treatmentsGrid: [
+        {
+          title: "Hormone Optimization (TRT)",
+          icon: "fa-syringe",
+          desc: "Elevate your performance and vitality. Fully monitored testosterone replacement therapy (TRT) delivered straight to your door with regular lab tracking.",
+          link: "services/hormone-optimization.html",
+          linkText: "Explore TRT Program"
+        },
+        {
+          title: "Medical Weight Loss",
+          icon: "fa-weight-scale",
+          desc: "Access premium, doctor-supervised Semaglutide and Tirzepatide protocols. Direct shipping and body-composition monitoring to optimize your results.",
+          link: "services/glp-1therapies.html",
+          linkText: "Explore Weight Loss"
+        },
+        {
+          title: "Peptide Therapy",
+          icon: "fa-vial",
+          desc: "Accelerate recovery, joint health, and muscle synthesis with pharmacy-grade peptides (BPC-157, TB-500, Sermorelin) delivered direct to your home.",
+          link: "services/peptides.html",
+          linkText: "Explore Peptides"
+        }
       ]
     }
   }
