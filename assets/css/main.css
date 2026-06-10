@@ -200,7 +200,7 @@ h6 {
    5. NAVBAR
    ========================================================================== */
 .navbar.fixed-top {
-  background-color: transparent;
+  background-color: var(--bg-white);
   padding: 0 !important;
   transition:
     background-color 0.3s ease,
@@ -209,18 +209,16 @@ h6 {
 }
 
 .navbar.fixed-top .navbar-container {
-  padding: 1.5rem 12px;
   transition: padding 0.3s ease;
 }
 
 .navbar.fixed-top.scrolled-nav {
-  background-color: var(--secondary-color);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-  border-bottom: 3px solid var(--primary-color);
+  background-color: var(--bg-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .navbar.fixed-top.scrolled-nav .navbar-container {
-  padding: 0.8rem 12px;
 }
 
 .navbar.fixed-top .top-marquee-bar {
@@ -243,13 +241,8 @@ h6 {
 }
 
 .logo-img {
-  height: 50px;
-  width: 50px;
+  height: 65px;
   object-fit: contain;
-  padding: 1px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color);
-  background-color: var(--secondary-color);
   transition: transform 0.3s ease;
 }
 
@@ -278,7 +271,7 @@ h6 {
 }
 
 .navbar .nav-link {
-  color: var(--bg-white) !important;
+  color: var(--secondary-color) !important;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 1rem;
@@ -1643,8 +1636,7 @@ h6 {
   }
 
   .logo-img {
-    height: 40px;
-    width: 40px;
+    height: 55px;
   }
   .brand-title {
     font-size: 1.2rem;

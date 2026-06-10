@@ -43,10 +43,6 @@
                 <div class="container navbar-container">
                     <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
                         <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
-                        <div class="brand-text d-flex flex-column justify-content-center">
-                            <span class="brand-title">Optimal</span>
-                            <span class="brand-subtitle">Vitality</span>
-                        </div>
                     </a>
 
                     <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
