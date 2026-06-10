@@ -2822,5 +2822,174 @@ body.modal-open,
   opacity: 0;
 }
 
+/* ==========================================================================
+   CLINICAL ADVANTAGE SECTION PREMIUM STYLING
+   ========================================================================== */
+.section-title.text-start::after {
+  left: 0;
+  transform: none;
+}
 
+.advantage-img {
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+@media (max-width: 991.98px) {
+  .advantage-img {
+    height: 340px;
+  }
+}
+
+.image-hover-scale {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.image-hover-scale:hover {
+  transform: scale(1.035);
+}
+
+.advantage-bullet-card {
+  border-color: rgba(31, 64, 109, 0.07) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(31, 64, 109, 0.01);
+}
+
+.advantage-bullet-card:hover {
+  border-color: rgba(230, 195, 129, 0.45) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.05);
+}
+
+.advantage-bullet-card:hover .bullet-icon-wrapper {
+  background-color: rgba(230, 195, 129, 0.15) !important;
+  border-color: rgba(230, 195, 129, 0.3) !important;
+  transform: scale(1.05);
+}
+
+.bullet-icon-wrapper {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   TREATMENTS/CLINICAL PROGRAMS PREMIUM CARD STYLING
+   ========================================================================== */
+.treatment-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 36px 30px;
+  border: 1px solid rgba(31, 64, 109, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(31, 64, 109, 0.02) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gold top border highlight on hover */
+.treatment-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color) 0%, rgba(230, 195, 129, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.treatment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(31, 64, 109, 0.08) !important;
+  border-color: rgba(230, 195, 129, 0.3) !important;
+}
+
+.treatment-card:hover::before {
+  opacity: 1;
+}
+
+.treatment-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(230, 195, 129, 0.08);
+  border: 1px solid rgba(230, 195, 129, 0.2);
+  color: var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.treatment-card:hover .treatment-icon-wrapper {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #ffffff;
+  transform: scale(1.06) rotate(3deg);
+}
+
+.treatment-title {
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.treatment-desc {
+  font-size: 0.92rem;
+  color: #555555 !important;
+  line-height: 1.6;
+}
+
+/* Custom premium button for treatment cards */
+.btn-treatment-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  width: 100%;
+  border: 1.5px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-treatment-card:hover {
+  background-color: var(--secondary-color);
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(31, 64, 109, 0.15);
+}
+
+.transition-arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-treatment-card:hover .transition-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   31. DESKTOP SCREEN OPTIMIZATIONS (1440px CONTAINER OVERRIDE)
+   ========================================================================== */
+@media (min-width: 1500px) {
+  .container, 
+  .container-sm, 
+  .container-md, 
+  .container-lg, 
+  .container-xl, 
+  .container-xxl {
+    max-width: 1440px !important;
+  }
+}

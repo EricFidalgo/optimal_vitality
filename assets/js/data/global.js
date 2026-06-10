@@ -196,6 +196,13 @@ team: [
           linkText: "Explore Peptides"
         },
         {
+          title: "Regenerative Medicine",
+          icon: "fa-heartbeat",
+          desc: "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+          link: "services/regenerative-medicine.html",
+          linkText: "Explore Regeneration"
+        },
+        {
           title: "Skin & Aesthetics (Botox)",
           icon: "fa-magic",
           desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
@@ -241,23 +248,44 @@ team: [
         {
           title: "Hormone Optimization (TRT)",
           icon: "fa-syringe",
-          desc: "Elevate your performance and vitality. Fully monitored testosterone replacement therapy (TRT) delivered straight to your door with regular lab tracking.",
+          desc: "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
           link: "services/hormone-optimization.html",
           linkText: "Explore TRT Program"
         },
         {
           title: "Medical Weight Loss",
           icon: "fa-weight-scale",
-          desc: "Access premium, doctor-supervised Semaglutide and Tirzepatide protocols. Direct shipping and body-composition monitoring to optimize your results.",
+          desc: "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
           link: "services/glp-1therapies.html",
           linkText: "Explore Weight Loss"
         },
         {
           title: "Peptide Therapy",
           icon: "fa-vial",
-          desc: "Accelerate recovery, joint health, and muscle synthesis with pharmacy-grade peptides (BPC-157, TB-500, Sermorelin) delivered direct to your home.",
+          desc: "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
           link: "services/peptides.html",
           linkText: "Explore Peptides"
+        },
+        {
+          title: "Regenerative Medicine",
+          icon: "fa-heartbeat",
+          desc: "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+          link: "services/regenerative-medicine.html",
+          linkText: "Explore Regeneration"
+        },
+        {
+          title: "Skin & Aesthetics (Botox)",
+          icon: "fa-magic",
+          desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
+          link: "services/skin-aesthetics.html",
+          linkText: "Explore Aesthetics"
+        },
+        {
+          title: "IV Nutrient Hydration",
+          icon: "fa-tint",
+          desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+          link: "services/iv-wellness.html",
+          linkText: "Explore IV Drips"
         }
       ]
     }

@@ -51,9 +51,13 @@
     if (bulletsContainer && l.advantageBullets) {
       bulletsContainer.innerHTML = l.advantageBullets.map(b => `
         <div class="col-sm-6">
-            <div class="d-flex align-items-center gap-2">
-                <i class="fas fa-check-circle text-primary"></i>
-                <span class="fw-semibold text-dark">${b}</span>
+            <div class="advantage-bullet-card d-flex align-items-start gap-3 p-3 rounded-4 border h-100 bg-white">
+                <div class="bullet-icon-wrapper rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px; background-color: rgba(230, 195, 129, 0.08); color: var(--primary-color); border: 1px solid rgba(230, 195, 129, 0.15);">
+                    <i class="fas fa-check" style="font-size: 0.78rem;"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <span class="fw-semibold text-dark" style="font-size: 0.95rem; line-height: 1.4; display: block; padding-top: 2px;">${b}</span>
+                </div>
             </div>
         </div>
       `).join('');
@@ -67,13 +71,15 @@
     if (treatmentsGrid && l.treatmentsGrid) {
       treatmentsGrid.innerHTML = l.treatmentsGrid.map(t => `
         <div class="col-md-6 col-lg-4">
-            <div class="differentiator-card bg-white p-4 rounded-4 border shadow-sm h-100 d-flex flex-column justify-content-between">
+            <div class="treatment-card">
                 <div>
-                    <div class="differentiator-icon mb-3"><i class="fas ${t.icon}"></i></div>
-                    <h4 class="fw-bold mb-2 h5" style="color: var(--secondary-color);">${t.title}</h4>
-                    <p class="small text-muted mb-4">${t.desc}</p>
+                    <div class="treatment-icon-wrapper mb-3">
+                        <i class="fas ${t.icon}"></i>
+                    </div>
+                    <h4 class="treatment-title fw-bold mb-2">${t.title}</h4>
+                    <p class="treatment-desc text-muted mb-4">${t.desc}</p>
                 </div>
-                <a href="${t.link}" class="btn btn-outline-primary rounded-pill w-100 fw-bold">${t.linkText}</a>
+                <a href="${t.link}" class="btn-treatment-card">${t.linkText} <i class="fas fa-arrow-right ms-2 transition-arrow"></i></a>
             </div>
         </div>
       `).join('');
