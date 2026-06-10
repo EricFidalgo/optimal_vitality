@@ -158,8 +158,7 @@ team: [
         "Pinellas County",
         "Hillsborough County"
       ],
-      heroBadge: "ST. PETERSBURG, FL",
-      heroHeadline: "OVI Wellness <span class='text-primary'>St. Petersburg</span>",
+      heroHeadline: "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
       heroSubheadline: "Our premier physical medical office providing doctor-led hormone optimization (TRT), metabolic weight loss, advanced peptide protocols, and aesthetics under strict medical board safety guidelines.",
       heroCTA: "Book St. Pete Consultation",
       advantageBadge: "PHYSICAL CLINIC LOCATION",
@@ -223,8 +222,7 @@ team: [
         "Hillsborough County",
         "Pinellas County"
       ],
-      heroBadge: "TAMPA BAY REGION",
-      heroHeadline: "OVI Wellness <span class='text-primary'>Tampa</span>",
+      heroHeadline: "OVI Wellness <br><span class='text-primary'>Tampa</span>",
       heroSubheadline: "Serving Tampa Bay patients via advanced telehealth consultations, direct-to-home protocol delivery, and local lab draws—with our main physical clinic located just across the bridge in St. Petersburg.",
       heroCTA: "Schedule Tampa Consultation",
       advantageBadge: "CONCIERGE & TELEHEALTH SERVICES",

@@ -22,13 +22,6 @@
     setSlot("heroHeadline", l.heroHeadline);
     setSlot("heroCTA", l.heroCTA || "Schedule Consultation <i class='fas fa-calendar-alt ms-2'></i>");
     
-    if (l.heroBadge) {
-      const badge = document.querySelector('[data-slot="heroBadge"]');
-      if (badge) {
-        badge.innerHTML = l.heroBadge;
-        badge.style.display = 'inline-block';
-      }
-    }
     if (l.heroSubheadline) {
       const sub = document.querySelector('[data-slot="heroSubheadline"]');
       if (sub) {
@@ -77,7 +70,7 @@
             <div class="differentiator-card bg-white p-4 rounded-4 border shadow-sm h-100 d-flex flex-column justify-content-between">
                 <div>
                     <div class="differentiator-icon mb-3"><i class="fas ${t.icon}"></i></div>
-                    <h4 class="fw-bold mb-2 h5" style="color: #204d57;">${t.title}</h4>
+                    <h4 class="fw-bold mb-2 h5" style="color: var(--secondary-color);">${t.title}</h4>
                     <p class="small text-muted mb-4">${t.desc}</p>
                 </div>
                 <a href="${t.link}" class="btn btn-outline-primary rounded-pill w-100 fw-bold">${t.linkText}</a>

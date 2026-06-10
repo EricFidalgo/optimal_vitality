@@ -55,15 +55,11 @@
                     </button>
 
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-                        <div class="offcanvas-header border-bottom border-secondary">
+                        <div class="offcanvas-header border-bottom border-secondary bg-white">
                             <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
                                 <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
-                                <div class="brand-text d-flex flex-column justify-content-center">
-                                    <span class="brand-title">Optimal</span>
-                                    <span class="brand-subtitle">Vitality</span>
-                                </div>
                             </a>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body d-flex flex-column text-center">
                             <ul class="navbar-nav mb-auto mt-4" id="mobile-navbar-links"></ul>

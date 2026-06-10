@@ -210,7 +210,7 @@
       return `
         ${badge}
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <h4 class="fw-bold mb-0 fs-6" style="color: #204d57;">${stack.name}</h4>
+          <h4 class="fw-bold mb-0 fs-6" style="color: var(--secondary-color);">${stack.name}</h4>
         </div>
         <p class="text-muted small fw-bold mb-2">${stack.compounds}</p>
         <p class="text-secondary small mb-0">${stack.description}</p>`;
@@ -296,10 +296,10 @@
         <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
           <div class="d-flex align-items-center mb-3">
             <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0"
-              style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: #204d57;">
+              style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: var(--secondary-color);">
               <i class="fas ${c.icon} fs-5"></i>
             </div>
-            <h5 class="fw-bold mb-0 fs-6" style="color: #204d57;">${c.title}</h5>
+            <h5 class="fw-bold mb-0 fs-6" style="color: var(--secondary-color);">${c.title}</h5>
           </div>
           <p class="text-muted small mb-0" style="line-height: 1.6;">${c.detail}</p>
         </div>
@@ -337,7 +337,7 @@
         return `
       <div class="accordion-item mb-3 border-0 rounded-4 shadow-sm overflow-hidden">
         <h2 class="accordion-header" id="heading${i}">
-          <button class="accordion-button collapsed fw-bold px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}" style="color: #204d57; font-size: 1.05rem;">
+          <button class="accordion-button collapsed fw-bold px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}" style="color: var(--secondary-color); font-size: 1.05rem;">
             ${faq.question}
           </button>
         </h2>
@@ -379,7 +379,7 @@
               </div>
           </div>
           <div class="p-4 bg-light flex-grow-1">
-              <h5 class="fw-bold mb-2" style="color: #204d57;">${item.title}</h5>
+              <h5 class="fw-bold mb-2" style="color: var(--secondary-color);">${item.title}</h5>
               <p class="small text-muted mb-3"><strong>Protocol:</strong> ${item.protocol}</p>
               <p class="small text-secondary mb-0">${item.description}</p>
           </div>
@@ -520,7 +520,7 @@
                         <div class="quiz-protocol-peptides">${protocol.peptides}</div>
                     </div>
                     <div class="d-none d-sm-flex align-items-center justify-content-center flex-shrink-0"
-                         style="width:64px;height:64px;background:rgba(32,77,87,0.06);border-radius:50%;">
+                         style="width:64px;height:64px;background:rgba(31, 64, 109, 0.06);border-radius:50%;">
                         <i class="fas ${protocol.icon} fs-3 text-primary"></i>
                     </div>
                 </div>
