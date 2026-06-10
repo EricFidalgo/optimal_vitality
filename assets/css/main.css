@@ -154,7 +154,7 @@ h6 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--secondary-color), #143239);
+  background: linear-gradient(135deg, var(--secondary-color), #0f2036);
   border: 1px solid rgba(230, 195, 129, 0.3);
   color: var(--primary-color);
   display: flex;
@@ -468,8 +468,8 @@ h6 {
 
 /* Top Scrolling Announcement/Marquee Bar */
 .top-marquee-bar {
-  background: linear-gradient(90deg, #dce1e3 0%, #edf0f2 50%, #dce1e3 100%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ececec;
+  border-bottom: 1px solid rgba(31, 64, 109, 0.08);
   height: 36px;
   display: flex;
   align-items: center;
@@ -500,13 +500,13 @@ h6 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: var(--secondary-color); /* dark steel/teal for premium contrast */
+  color: var(--secondary-color) !important;
   display: inline-flex;
   align-items: center;
 }
 
 .marquee-content span i {
-  color: #a37c3f; /* rich gold/bronze for visibility on silver */
+  color: var(--primary-color) !important;
   margin-right: 8px;
 }
 
@@ -609,9 +609,9 @@ h6 {
 .hormone-banner {
   background: linear-gradient(
     135deg,
-    #16363d 0%,
+    #0f2036 0%,
     var(--secondary-color) 50%,
-    #16363d 100%
+    #0f2036 100%
   );
   border-bottom: 4px solid var(--primary-color);
   border-top: 4px solid var(--primary-color);
@@ -805,7 +805,7 @@ h6 {
 .premium-services {
   background: radial-gradient(
     circle at top right,
-    #112a2f 0%,
+    #0f2036 0%,
     var(--secondary-color) 100%
   );
   position: relative;
@@ -1052,7 +1052,7 @@ h6 {
    14. TRUST SECTION
    ========================================================================== */
 .trust-section {
-  background: linear-gradient(135deg, #112a2f 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, #0f2036 0%, var(--secondary-color) 100%);
   position: relative;
 }
 
@@ -1866,7 +1866,7 @@ h6 {
    25. 3-STEP PROTOCOL QUIZ
    ========================================================================== */
 .quiz-section {
-  background: linear-gradient(135deg, #0d2226 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, #0f2036 0%, var(--secondary-color) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -2778,7 +2778,6 @@ body.modal-open,
 .modal-open .sticky-top {
   padding-right: 0px !important;
 }
-
 
 @media (max-width: 768px) {
 #mobile-team-view {
