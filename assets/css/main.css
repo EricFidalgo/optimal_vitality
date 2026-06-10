@@ -743,18 +743,18 @@ h6 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: scale(0.98);
+  transform: translateX(30px);
   transition:
-    opacity 0.5s ease,
-    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 0.5s;
+    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.45s;
   pointer-events: none;
 }
 
 .tab-pane.active.show {
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
+  transform: translateX(0);
   pointer-events: auto;
   z-index: 2;
 }
@@ -1607,14 +1607,13 @@ h6 {
 
   /* Mobile FAB — pin to bottom-right as a circular floating button */
   #mobile-sticky-cta {
-    bottom: calc(20px + env(safe-area-inset-bottom));
-    right: 20px;
-    left: auto;
-    width: auto;
-    padding: 0;
+    bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+    right: 20px !important;
+    left: auto !important;
+    width: auto !important;
+    padding: 0 !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    transform: translateY(0);
   }
 
   #mobile-sticky-cta .btn.cta-btn {
@@ -2679,21 +2678,42 @@ h6 {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--secondary-color);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 4px 12px rgba(31, 64, 109, 0.03);
   text-align: center;
   width: 100%;
+  user-select: none;
+}
+
+.symptom-chip span {
+  transition: color 0.3s ease;
 }
 
 .symptom-chip i {
   font-size: 1.15rem;
   color: var(--primary-color);
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .symptom-chip:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(31, 64, 109, 0.08);
+  transform: translateY(-3px) scale(1.025);
+  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.08);
+  border-color: rgba(230, 195, 129, 0.45) !important;
+}
+
+.symptom-chip.active {
+  background: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.18) !important;
+}
+
+.symptom-chip.active span {
+  color: #ffffff !important;
+}
+
+.symptom-chip.active i {
+  color: var(--primary-color) !important;
+  transform: scale(1.1);
 }
 
 @media (max-width: 992px) {
@@ -2980,9 +3000,6 @@ body.modal-open,
   transform: translateX(4px);
 }
 
-/* ==========================================================================
-   31. DESKTOP SCREEN OPTIMIZATIONS (1440px CONTAINER OVERRIDE)
-   ========================================================================== */
 @media (min-width: 1500px) {
   .container, 
   .container-sm, 
@@ -2992,4 +3009,26 @@ body.modal-open,
   .container-xxl {
     max-width: 1440px !important;
   }
+}
+
+/* ==========================================================================
+   32. INTERACTIVE SYMPTOM SUMMARY COLLAPSIBLE DRAWER
+   ========================================================================== */
+#symptom-summary-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(20px);
+  margin-top: 0;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.4s ease,
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              margin-top 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#symptom-summary-container.visible {
+  max-height: 550px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 3.5rem;
 }

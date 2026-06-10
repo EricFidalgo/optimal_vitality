@@ -92,6 +92,23 @@
                     <span>Low Libido</span>
                 </div>
             </div>
+            
+            <!-- Interactive Symptom summary card (initially hidden) -->
+            <div id="symptom-summary-container" class="text-center" style="z-index: 10;">
+                <div class="symptom-summary-card p-4 rounded-4 mx-auto border shadow bg-white" style="max-width: 680px; border-color: rgba(230, 195, 129, 0.22) !important; box-shadow: 0 15px 40px rgba(31, 64, 109, 0.06) !important;">
+                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="width: 48px; height: 48px; background-color: rgba(230, 195, 129, 0.08); border: 1px solid rgba(230, 195, 129, 0.2); color: var(--primary-color);">
+                        <i class="fas fa-notes-medical" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2 text-dark h5" style="color: var(--secondary-color) !important;">You've identified <span id="symptom-count" class="text-primary fw-extrabold px-1" style="font-size: 1.35rem; color: var(--primary-color) !important;">0</span> symptoms of physiological decline</h4>
+                    <p class="text-muted mb-4 mx-auto" style="max-width: 580px; font-size: 0.95rem; line-height: 1.6;">
+                        These symptoms are direct clinical indicators of hormonal decline or metabolic slowdown. You don't have to live with them — let our medical team design a personalized, bio-calibrated protocol.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="selected-symptoms-list">
+                        <!-- Dynamically filled with selected symptoms -->
+                    </div>
+                    <a href="#consultation" class="btn cta-btn btn-lg rounded-pill px-4 py-3 fw-bold" style="font-size: 0.92rem; letter-spacing: 0.5px;">Discuss Your Symptoms With A Doctor</a>
+                </div>
+            </div>
         </div>
     </section>
 

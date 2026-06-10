@@ -392,7 +392,7 @@ function initMain() {
                     </li>
                 `;
                 contentContainer.innerHTML += `
-                    <div class="tab-pane fade ${isShow}" id="${therapy.id}" role="tabpanel" tabindex="0">
+                    <div class="tab-pane ${isShow}" id="${therapy.id}" role="tabpanel" tabindex="0">
                         <div class="row align-items-center ${rowReverse} gx-lg-5">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <h2 class="mb-3 text-secondary text-uppercase fw-bold">${therapy.title}</h2>
@@ -773,6 +773,44 @@ function initMain() {
 
     // Initialize existing grid tracks
     initExistingTrack('myth-mobile-track', 'myth-mobile-indicators');
+
+    // =========================================================================
+    // INTERACTIVE SYMPTOM IDENTIFIER (index.html)
+    // =========================================================================
+    const symptomChips = document.querySelectorAll('.symptom-chip');
+    const summaryContainer = document.getElementById('symptom-summary-container');
+    const symptomCount = document.getElementById('symptom-count');
+    const selectedList = document.getElementById('selected-symptoms-list');
+
+    if (symptomChips.length > 0 && summaryContainer && symptomCount && selectedList) {
+        symptomChips.forEach(chip => {
+            chip.style.cursor = 'pointer';
+            chip.addEventListener('click', function () {
+                this.classList.toggle('active');
+                
+                const activeChips = document.querySelectorAll('.symptom-chip.active');
+                const count = activeChips.length;
+                
+                if (count > 0) {
+                    symptomCount.textContent = count;
+                    selectedList.innerHTML = Array.from(activeChips).map(c => {
+                        const name = c.querySelector('span').textContent;
+                        const icon = c.querySelector('i').className;
+                        return `
+                            <span class="badge rounded-pill px-3 py-2 fw-semibold d-flex align-items-center gap-2" style="background-color: rgba(31, 64, 109, 0.05); color: var(--secondary-color); border: 1px solid rgba(31, 64, 109, 0.12); font-size: 0.8rem; text-transform: none;">
+                                <i class="${icon}" style="font-size: 0.85rem; color: var(--primary-color);"></i>
+                                ${name}
+                            </span>
+                        `;
+                    }).join('');
+                    
+                    summaryContainer.classList.add('visible');
+                } else {
+                    summaryContainer.classList.remove('visible');
+                }
+            });
+        });
+    }
 }
 
 if (document.querySelector('[data-include-component]')) {
