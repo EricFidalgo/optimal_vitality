@@ -51,13 +51,13 @@ const template = (serviceId) => `<!DOCTYPE html>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
     <script>const OVI_SERVICE_ID = "${serviceId}";</script>
-    <script src="../assets/js/data.js"></script>
-    <script src="../assets/js/data/${serviceId}.js"></script>
-    <script src="../assets/js/component-loader.js"></script>
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/service-renderer.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/particles.js"></script>
+    <script src="../assets/js/data/global.js"></script>
+    <script src="../assets/js/data/services/${serviceId}.js"></script>
+    <script src="../assets/js/core/component-loader.js"></script>
+    <script src="../assets/js/core/components.js"></script>
+    <script src="../assets/js/renderers/service-renderer.js"></script>
+    <script src="../assets/js/core/main.js"></script>
+    <script src="../assets/js/core/particles.js"></script>
 </body>
 </html>`;
 
