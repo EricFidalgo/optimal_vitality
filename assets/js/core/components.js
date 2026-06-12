@@ -109,8 +109,8 @@
                                 <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span></p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}</p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}</p>
-                                <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
-                                ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ''}
+                                <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
+                                ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ''}
                                 <hr class="border-secondary my-4">
                                 <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>${c.hours[0].days}:</strong> ${c.hours[0].time}</p>
                                 <p class="text-white-50 mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>${c.hours[1].days}:</strong> ${c.hours[1].time}</p>
@@ -180,10 +180,6 @@
         const c = window.clinicData?.contact;
 
         if (schemaKey && loc && c) {
-            if (!c) {
-                console.error("Clinic contact data is missing for schema injection!");
-                return;
-            }
             
             // Build the full schema by merging base clinic properties with page-specific ones
             const fullSchema = {
@@ -389,7 +385,7 @@
                     <div class="form-check mb-3 text-start">
                       <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes" checked required>
                       <label class="form-check-label text-white-50" for="smsOptIn" style="font-size: 0.72rem; line-height: 1.4;">
-                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="legal.html#sms" target="_blank" class="text-primary text-decoration-none">SMS Consent Policy</a> and <a href="legal.html#privacy" target="_blank" class="text-primary text-decoration-none">Privacy Policy</a>.
+                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal.html#sms" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">SMS Consent Policy</a> and <a href="${prefix}legal.html#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
                       </label>
                       <div class="text-danger small d-none mt-1" id="step3-error">You must accept the SMS consent disclosure to continue.</div>
                     </div>
@@ -553,29 +549,39 @@
             document.getElementById('success-chosen-service').innerText = inputInterest.value;
 
             try {
-                // If the key is not configured yet, skip sending to avoid Web3Forms error responses,
-                // but gracefully proceed to show successful user experience.
+                // If the key is not configured yet, skip sending to avoid Web3Forms error responses.
                 if (accessKey && accessKey !== "YOUR_ACCESS_KEY_HERE") {
-                    await fetch('https://api.web3forms.com/submit', {
+                    const response = await fetch('https://api.web3forms.com/submit', {
                         method: 'POST',
                         body: formData
                     });
+                    if (!response.ok) {
+                        throw new Error(`Submission failed: ${response.status}`);
+                    }
                 } else {
                     console.log("Web3Forms Key is placeholder. Data stored locally:", Object.fromEntries(formData.entries()));
                 }
-                
+
                 steps.forEach(step => step.classList.remove('active'));
                 const successStep = form.querySelector('.modal-step[data-step="success"]');
                 successStep.classList.add('active');
                 dots.forEach(dot => dot.classList.add('completed'));
             } catch (err) {
                 console.error("Submission error:", err);
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Secure Offer & Book';
+                const errorMsg = form.querySelector('#step3-error') || document.createElement('div');
                 
-                // Graceful fallback
-                steps.forEach(step => step.classList.remove('active'));
-                const successStep = form.querySelector('.modal-step[data-step="success"]');
-                successStep.classList.add('active');
-                dots.forEach(dot => dot.classList.add('completed'));
+                const leadName = document.getElementById('leadName')?.value || 'Patient';
+                const leadPhone = document.getElementById('leadPhone')?.value || '';
+                const service = inputInterest.value || 'General Consultation';
+                const subject = encodeURIComponent(`Inquiry from ${leadName}`);
+                const body = encodeURIComponent(`Name: ${leadName}\nPhone: ${leadPhone}\nService: ${service}\n\nI am interested in booking a consultation.`);
+                
+                errorMsg.innerHTML = `Something went wrong. Please try again or <a href="mailto:info@oviwellness.com?subject=${subject}&body=${body}" class="text-primary fw-bold text-decoration-underline" style="color:var(--primary-color) !important;">email us directly</a>.`;
+                errorMsg.className = 'text-danger small mt-2 text-center';
+                errorMsg.id = 'submit-error-msg';
+                if (!form.querySelector('#submit-error-msg')) submitBtn.after(errorMsg);
             }
         });
     }
@@ -589,11 +595,16 @@
         renderDisclosures();
         injectLocalSchema();
         initNavbarBehavior();
-        injectContactInfo();
         initConsultationModal();
+        // injectContactInfo runs after componentsLoaded so dynamically
+        // loaded component HTML is already in the DOM before we query it.
+        // On pages with no data-include-component, componentsLoaded still
+        // fires from component-loader.js, so this single listener covers both.
+        injectContactInfo();
     });
 
     document.addEventListener("componentsLoaded", function() {
+        // Re-run after components inject new DOM nodes that may contain contact slots.
         injectContactInfo();
     });
 })();

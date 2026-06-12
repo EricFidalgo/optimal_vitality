@@ -2,9 +2,55 @@
 
 // Global data for navbar, marquee, index.html testimonials (but if testimonials are empty in specific js service file then these get sent to that page), faq's 
 window.clinicData = window.clinicData || {};
+
+const sharedTreatmentsGrid = [
+  {
+    title: "Hormone Optimization (TRT)",
+    icon: "fa-syringe",
+    desc: "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+    link: "services/hormone-optimization.html",
+    linkText: "Explore TRT Program"
+  },
+  {
+    title: "Medical Weight Loss",
+    icon: "fa-weight-scale",
+    desc: "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+    link: "services/glp-1therapies.html",
+    linkText: "Explore Weight Loss"
+  },
+  {
+    title: "Peptide Therapy",
+    icon: "fa-vial",
+    desc: "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
+    link: "services/peptides.html",
+    linkText: "Explore Peptides"
+  },
+  {
+    title: "Regenerative Medicine",
+    icon: "fa-heartbeat",
+    desc: "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+    link: "services/regenerative-medicine.html",
+    linkText: "Explore Regeneration"
+  },
+  {
+    title: "Skin & Aesthetics (Botox)",
+    icon: "fa-magic",
+    desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
+    link: "services/skin-aesthetics.html",
+    linkText: "Explore Aesthetics"
+  },
+  {
+    title: "IV Nutrient Hydration",
+    icon: "fa-tint",
+    desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+    link: "services/iv-wellness.html",
+    linkText: "Explore IV Drips"
+  }
+];
+
 Object.assign(window.clinicData, {
   contact: {
-    phone: "(850) 555-0199",
+    phone: "(727) 555-0199", // TODO: Replace with your real clinic phone number
     email: "info@oviwellness.com",
     web3formsKey: "YOUR_ACCESS_KEY_HERE", // Enter your Web3Forms access key here to route form submissions to your email
     socials: {
@@ -67,7 +113,7 @@ Object.assign(window.clinicData, {
     { label: "St. Petersburg, FL", icon: "fa-map-marker-alt" },
     { label: "Licensed Medical Clinic", icon: "fa-shield-alt" },
     { label: "5-Star Rated Clinic", icon: "fa-star" },
-    { label: "HIPAA Compliant", icon: "fas fa-user-shield" },
+    { label: "HIPAA Compliant", icon: "fa-user-shield" },
   ],
 
 team: [
@@ -200,50 +246,7 @@ team: [
       ],
       treatmentsHeadline: "Our St. Petersburg Clinical Programs",
       treatmentsSubheadline: "Explore our bio-calibrated treatments designed to restore energy, metabolism, healing, and skin vitality.",
-      treatmentsGrid: [
-        {
-          title: "Hormone Optimization (TRT)",
-          icon: "fa-syringe",
-          desc: "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
-          link: "services/hormone-optimization.html",
-          linkText: "Explore TRT Program"
-        },
-        {
-          title: "Medical Weight Loss",
-          icon: "fa-weight-scale",
-          desc: "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
-          link: "services/glp-1therapies.html",
-          linkText: "Explore Weight Loss"
-        },
-        {
-          title: "Peptide Therapy",
-          icon: "fa-vial",
-          desc: "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
-          link: "services/peptides.html",
-          linkText: "Explore Peptides"
-        },
-        {
-          title: "Regenerative Medicine",
-          icon: "fa-heartbeat",
-          desc: "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
-          link: "services/regenerative-medicine.html",
-          linkText: "Explore Regeneration"
-        },
-        {
-          title: "Skin & Aesthetics (Botox)",
-          icon: "fa-magic",
-          desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
-          link: "services/skin-aesthetics.html",
-          linkText: "Explore Aesthetics"
-        },
-        {
-          title: "IV Nutrient Hydration",
-          icon: "fa-tint",
-          desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
-          link: "services/iv-wellness.html",
-          linkText: "Explore IV Drips"
-        }
-      ]
+      treatmentsGrid: sharedTreatmentsGrid
     },
     tampa: {
       name: "Optimal Vitality Institute — Tampa Clinic",
@@ -271,83 +274,7 @@ team: [
       ],
       treatmentsHeadline: "Our Tampa Clinic Programs",
       treatmentsSubheadline: "Explore our bio-calibrated wellness programs, available to Tampa patients at our nearby St. Petersburg facility.",
-      treatmentsGrid: [
-        {
-          title: "Hormone Optimization (TRT)",
-          icon: "fa-syringe",
-          desc: "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
-          link: "services/hormone-optimization.html",
-          linkText: "Explore TRT Program"
-        },
-        {
-          title: "Medical Weight Loss",
-          icon: "fa-weight-scale",
-          desc: "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
-          link: "services/glp-1therapies.html",
-          linkText: "Explore Weight Loss"
-        },
-        {
-          title: "Peptide Therapy",
-          icon: "fa-vial",
-          desc: "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
-          link: "services/peptides.html",
-          linkText: "Explore Peptides"
-        },
-        {
-          title: "Regenerative Medicine",
-          icon: "fa-heartbeat",
-          desc: "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
-          link: "services/regenerative-medicine.html",
-          linkText: "Explore Regeneration"
-        },
-        {
-          title: "Skin & Aesthetics (Botox)",
-          icon: "fa-magic",
-          desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
-          link: "services/skin-aesthetics.html",
-          linkText: "Explore Aesthetics"
-        },
-        {
-          title: "IV Nutrient Hydration",
-          icon: "fa-tint",
-          desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
-          link: "services/iv-wellness.html",
-          linkText: "Explore IV Drips"
-        }
-      ]
+      treatmentsGrid: sharedTreatmentsGrid
     }
-  },
-  socialVideos: [
-    {
-      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      title: "Science of Longevity: Peptide Protocols",
-      category: "Clinic Education",
-      description: "Dr. Marcus Vance discusses targeted cellular signaling with BPC-157 & TB-500."
-    },
-    {
-      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      title: "Preserving Muscle Mass on GLP-1",
-      category: "Weight Loss Q&A",
-      description: "Sarah Jenkins, FNP-C on why body recomposition requires metabolic supervision."
-    },
-    {
-      url: "https://www.instagram.com/p/DYdP6SdxAtN/",
-      title: "Clinic Walkthrough & NAD+ Infusion Suite Tour",
-      category: "Clinic Experience",
-      description: "A look inside our state-of-the-art St. Petersburg therapy lounge."
-    },
-    {
-      url: "https://www.facebook.com/profile.php?id=61590423610288",
-      title: "Community Highlights & Patient Reviews",
-      category: "Patient Success",
-      description: "See what our patients say about their bio-calibrated optimization journeys.",
-      customThumbnail:"https://www.mamp.one/wp-content/uploads/2024/09/image-resources2.jpg"
-    },
-    {
-      url: "https://tiktok.com/@oviwellness_",
-      title: "Provider FAQ: Semaglutide vs Tirzepatide",
-      category: "Clinical FAQ",
-      description: "Sarah Jenkins breaks down metabolic rates, dosage titrations, and outcomes."
-    }
-  ]
+  }
 });

@@ -4,14 +4,16 @@
  * Populates all data-slot elements and builds dynamic content sections
  * for service pages after components have been loaded by component-loader.js.
  *
- * Each service page needs:
+ * Each service page needs (paths are relative to the services/ subdirectory):
  *   1. const OVI_SERVICE_ID = "service-id"; (inline script)
- *   2. <script src="assets/js/data.js"></script>
- *   3. <script src="assets/js/data/SERVICE-ID.js"></script>
- *   4. <script src="assets/js/component-loader.js"></script>
- *   5. <script src="assets/js/service-renderer.js"></script>
+ *   2. <script src="../assets/js/data/global.js"></script>
+ *   3. <script src="../assets/js/data/services/SERVICE-ID.js"></script>
+ *   4. <script src="../assets/js/core/component-loader.js"></script>
+ *   5. <script src="../assets/js/core/components.js"></script>
+ *   6. <script src="../assets/js/renderers/service-renderer.js"></script>
+ *   7. <script src="../assets/js/core/main.js"></script>
  *
- * To change content: edit assets/js/data/SERVICE-ID.js
+ * To change content: edit assets/js/data/services/SERVICE-ID.js
  * To change layout:  edit assets/components/*.html
  */
 (function () {

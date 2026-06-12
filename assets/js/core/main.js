@@ -461,12 +461,28 @@ function initMain() {
         // --- Social Media Integration / Living Proof Video Showcase ---
         const videoProofTrack = document.getElementById('video-proof-track');
         if (videoProofTrack) {
-            const service = typeof OVI_SERVICE_ID !== 'undefined' ? data.services.find(s => s.id === OVI_SERVICE_ID) : null;
-            const videosList = (service && service.socialVideos && service.socialVideos.length > 0)
-                ? service.socialVideos
-                : data.socialVideos;
+            async function loadAndRenderVideos() {
+                let videosList = [];
+                const isSubpage = typeof OVI_SERVICE_ID !== 'undefined';
+                
+                try {
+                    let fetchUrl = isSubpage ? `../assets/videos/${OVI_SERVICE_ID}.json` : `assets/videos/global.json`;
+                    let response = await fetch(fetchUrl);
+                    
+                    if (!response.ok && isSubpage) {
+                        // Fallback to global if service doesn't have custom videos
+                        fetchUrl = '../assets/videos/global.json';
+                        response = await fetch(fetchUrl);
+                    }
+                    
+                    if (response.ok) {
+                        videosList = await response.json();
+                    }
+                } catch (e) {
+                    console.error("Failed to load videos JSON", e);
+                }
 
-            if (videosList && videosList.length > 0) {
+                if (videosList && videosList.length > 0) {
                 // Helper function to extract YouTube Video ID
                 function getYouTubeId(url) {
                     if (!url) return null;
@@ -531,7 +547,7 @@ function initMain() {
                     const imgTag = thumbnail ? `<img src="${thumbnail}" alt="${video.title} Thumbnail" class="video-thumbnail-img" loading="lazy">` : '';
 
                     return `
-                        <a href="${video.url}" target="_blank" class="video-proof-card">
+                        <a href="${video.url}" target="_blank" rel="noopener noreferrer" class="video-proof-card">
                             <div class="video-thumbnail-container" style="${cardStyle}">
                                 ${imgTag}
                                 ${placeholderHTML}
@@ -555,6 +571,9 @@ function initMain() {
                 initExistingTrack('video-proof-track', 'video-proof-indicators');
             }
         }
+        
+        loadAndRenderVideos();
+    }
 
         // --- Testimonials ---
         const mobileInner = document.getElementById('mobile-testimonial-inner');
