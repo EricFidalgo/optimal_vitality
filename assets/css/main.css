@@ -3160,7 +3160,19 @@ body.modal-open,
 
 @media (max-width: 576px) {
   .interest-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .interest-card {
+    padding: 10px 6px;
+  }
+  .interest-card i {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+  .interest-card span {
+    font-size: 0.68rem;
+    line-height: 1.25;
   }
 }
 
