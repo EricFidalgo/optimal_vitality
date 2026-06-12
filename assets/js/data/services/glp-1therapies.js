@@ -267,6 +267,20 @@ window.clinicData.services.push({
         ],
       },
 
+      socialVideos: [
+        {
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          title: "Preserving Muscle Mass on GLP-1",
+          category: "Weight Loss Q&A",
+          description: "Sarah Jenkins, FNP-C on why body recomposition requires metabolic supervision."
+        },
+        {
+          url: "https://tiktok.com/@oviwellness_",
+          title: "Provider FAQ: Semaglutide vs Tirzepatide",
+          category: "Clinical FAQ",
+          description: "Sarah Jenkins breaks down metabolic rates, dosage titrations, and outcomes."
+        }
+      ],
       faqs: [
         {
           question: "How does the Metabolic Weight Loss program work?",

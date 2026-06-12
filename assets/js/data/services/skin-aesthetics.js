@@ -279,6 +279,20 @@ window.clinicData.services.push({
         ],
       },
 
+      socialVideos: [
+        {
+          url: "https://www.instagram.com/p/DYdP6SdxAtN/",
+          title: "Aesthetic Treatment Tour & Live Patient Demo",
+          category: "Patient Experience",
+          description: "A close-up look at our precision skin treatments and state-of-the-art aesthetics suite."
+        },
+        {
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          title: "Clinical Skin Rejuvenation: Biostimulator Science",
+          category: "Clinic Education",
+          description: "Dr. Marcus Vance explains how biostimulators build natural collagen structure."
+        }
+      ],
       faqs: [
         {
           question: "How long do neurotoxin results last?",

@@ -458,6 +458,104 @@ function initMain() {
             `).join('');
         }
 
+        // --- Social Media Integration / Living Proof Video Showcase ---
+        const videoProofTrack = document.getElementById('video-proof-track');
+        if (videoProofTrack) {
+            const service = typeof OVI_SERVICE_ID !== 'undefined' ? data.services.find(s => s.id === OVI_SERVICE_ID) : null;
+            const videosList = (service && service.socialVideos && service.socialVideos.length > 0)
+                ? service.socialVideos
+                : data.socialVideos;
+
+            if (videosList && videosList.length > 0) {
+                // Helper function to extract YouTube Video ID
+                function getYouTubeId(url) {
+                    if (!url) return null;
+                    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+                    const match = url.match(regExp);
+                    return (match && match[2].length === 11) ? match[2] : null;
+                }
+
+                videoProofTrack.innerHTML = videosList.map(video => {
+                    const ytId = getYouTubeId(video.url);
+                    let thumbnail = '';
+                    let iconHTML = '<i class="fas fa-play"></i>';
+                    let badgeIconHTML = '<i class="fas fa-video"></i>';
+                    let cardStyle = '';
+                    let placeholderHTML = '';
+
+                    // Determine icons, placeholders, and badging based on destination URL
+                    if (video.url.includes('instagram.com')) {
+                        iconHTML = '<i class="fab fa-instagram"></i>';
+                        badgeIconHTML = '<i class="fab fa-instagram"></i>';
+                        if (!video.customThumbnail) {
+                            cardStyle = 'background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);';
+                            placeholderHTML = `
+                                <div class="video-placeholder-overlay d-flex flex-column align-items-center justify-content-center w-100 h-100 position-absolute top-0 start-0 text-white" style="background: rgba(0,0,0,0.15);">
+                                    <i class="fab fa-instagram" style="font-size: 2.8rem; filter: drop-shadow(0 2px 10px rgba(0,0,0,0.4));"></i>
+                                </div>
+                            `;
+                        }
+                    } else if (video.url.includes('tiktok.com')) {
+                        iconHTML = '<i class="fab fa-tiktok"></i>';
+                        badgeIconHTML = '<i class="fab fa-tiktok"></i>';
+                        if (!video.customThumbnail) {
+                            cardStyle = 'background: #010101;';
+                            placeholderHTML = `
+                                <div class="video-placeholder-overlay d-flex flex-column align-items-center justify-content-center w-100 h-100 position-absolute top-0 start-0 text-white" style="box-shadow: inset 0 0 40px rgba(0,242,254,0.2), inset 0 0 20px rgba(254,44,85,0.2);">
+                                    <i class="fab fa-tiktok" style="font-size: 2.8rem; color: #fff; filter: drop-shadow(-2px -2px 0 #00f2fe) drop-shadow(2px 2px 0 #fe2c55) drop-shadow(0 2px 10px rgba(0,0,0,0.4));"></i>
+                                </div>
+                            `;
+                        }
+                    } else if (video.url.includes('facebook.com')) {
+                        iconHTML = '<i class="fab fa-facebook-f"></i>';
+                        badgeIconHTML = '<i class="fab fa-facebook-f"></i>';
+                        if (!video.customThumbnail) {
+                            cardStyle = 'background: linear-gradient(135deg, #1877F2 0%, #0d52b1 100%);';
+                            placeholderHTML = `
+                                <div class="video-placeholder-overlay d-flex flex-column align-items-center justify-content-center w-100 h-100 position-absolute top-0 start-0 text-white">
+                                    <i class="fab fa-facebook-f" style="font-size: 2.8rem; filter: drop-shadow(0 2px 10px rgba(0,0,0,0.4));"></i>
+                                </div>
+                            `;
+                        }
+                    } else if (ytId) {
+                        iconHTML = '<i class="fas fa-play"></i>';
+                        badgeIconHTML = '<i class="fab fa-youtube"></i>';
+                    }
+
+                    if (video.customThumbnail) {
+                        thumbnail = video.customThumbnail;
+                    } else if (ytId) {
+                        thumbnail = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+                    }
+
+                    const imgTag = thumbnail ? `<img src="${thumbnail}" alt="${video.title} Thumbnail" class="video-thumbnail-img" loading="lazy">` : '';
+
+                    return `
+                        <a href="${video.url}" target="_blank" class="video-proof-card">
+                            <div class="video-thumbnail-container" style="${cardStyle}">
+                                ${imgTag}
+                                ${placeholderHTML}
+                                <div class="video-play-btn">
+                                    ${iconHTML}
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <span class="video-category-badge">
+                                    ${badgeIconHTML}
+                                    ${video.category || 'Clinical Showcase'}
+                                </span>
+                                <h4 class="video-card-title">${video.title}</h4>
+                                <p class="video-card-desc">${video.description || ''}</p>
+                            </div>
+                        </a>
+                    `;
+                }).join('');
+
+                // Initialize the indicator bubbles/dots for the video track
+                initExistingTrack('video-proof-track', 'video-proof-indicators');
+            }
+        }
+
         // --- Testimonials ---
         const mobileInner = document.getElementById('mobile-testimonial-inner');
         const mobileIndicators = document.getElementById('mobile-testimonial-indicators');
