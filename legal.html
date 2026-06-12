@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Compliance - OVI Wellness</title>
+    <!-- Core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+
+        .nav-pills .nav-link {
+            color: rgba(255, 255, 255, 0.75);
+            border-radius: 0;
+            border-left: 3px solid transparent;
+            padding: 10px 20px;
+            text-align: left;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #d4af37; /* Primary gold color */
+            background-color: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid #d4af37;
+        }
+        .nav-pills .nav-link:hover:not(.active) {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <script>
+        // Synchronously inject temporary stylesheet to prevent Flash of Wrong Tab (FOWT) on load
+        (function() {
+            const hash = window.location.hash;
+            if (hash && hash !== '#privacy' && hash !== '#v-pills-privacy') {
+                const cleanHash = hash.startsWith('#v-pills-') ? hash : hash.replace('#', '#v-pills-');
+                const targetBtnId = cleanHash + '-tab';
+                
+                const style = document.createElement('style');
+                style.id = 'fowt-style';
+                style.innerHTML = `
+                    /* Hide default privacy pane & show target pane */
+                    #v-pills-privacy { display: none !important; }
+                    ${cleanHash} { display: block !important; opacity: 1 !important; }
+
+                    /* Reset default privacy tab button highlight */
+                    #v-pills-privacy-tab {
+                        color: rgba(255, 255, 255, 0.75) !important;
+                        background-color: transparent !important;
+                        border-left: 3px solid transparent !important;
+                    }
+
+                    /* Apply gold active highlight to target tab button */
+                    ${targetBtnId} {
+                        color: #d4af37 !important;
+                        background-color: rgba(212, 175, 55, 0.1) !important;
+                        border-left: 3px solid #d4af37 !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        })();
+    </script>
+</head>
+<body class="bg-dark text-white">
+    <!-- Navbar injected by components.js -->
+    <div id="navbar-root"></div>
+
+    <main class="container py-5" style="margin-top: 100px; min-height: 70vh;">
+        <h1 class="font-family-bebas text-primary mb-5 text-center">Legal & Compliance Disclosures</h1>
+        
+        <div class="row g-5">
+            <div class="col-md-4 col-lg-3">
+                <div class="nav flex-column nav-pills sticky-top" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="top: 120px;">
+                    <button class="nav-link active" id="v-pills-privacy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-privacy" type="button" role="tab" aria-controls="v-pills-privacy" aria-selected="true">Privacy Policy</button>
+                    <button class="nav-link" id="v-pills-terms-tab" data-bs-toggle="pill" data-bs-target="#v-pills-terms" type="button" role="tab" aria-controls="v-pills-terms" aria-selected="false">Terms & Conditions</button>
+                    <button class="nav-link" id="v-pills-hipaa-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hipaa" type="button" role="tab" aria-controls="v-pills-hipaa" aria-selected="false">HIPAA Notice</button>
+                    <button class="nav-link" id="v-pills-medical-tab" data-bs-toggle="pill" data-bs-target="#v-pills-medical" type="button" role="tab" aria-controls="v-pills-medical" aria-selected="false">Medical Disclaimer</button>
+                    <button class="nav-link" id="v-pills-sms-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sms" type="button" role="tab" aria-controls="v-pills-sms" aria-selected="false">SMS Consent</button>
+                    <button class="nav-link" id="v-pills-telehealth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-telehealth" type="button" role="tab" aria-controls="v-pills-telehealth" aria-selected="false">Telehealth</button>
+                    <button class="nav-link" id="v-pills-financing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-financing" type="button" role="tab" aria-controls="v-pills-financing" aria-selected="false">Financing</button>
+                    <button class="nav-link" id="v-pills-form-tab" data-bs-toggle="pill" data-bs-target="#v-pills-form" type="button" role="tab" aria-controls="v-pills-form" aria-selected="false">Form Consent</button>
+                    <button class="nav-link" id="v-pills-results-tab" data-bs-toggle="pill" data-bs-target="#v-pills-results" type="button" role="tab" aria-controls="v-pills-results" aria-selected="false">Results</button>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <div class="bg-dark bg-opacity-50 p-4 p-md-5 rounded border border-secondary h-100">
+                    <p class="text-primary border-bottom border-secondary pb-3 mb-4">Effective Date: June 2026</p>
+
+
+                    <div class="tab-content text-white-75 lh-lg" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-privacy" role="tabpanel" aria-labelledby="v-pills-privacy-tab">
+                            <h3 class="text-white mb-3">Privacy Policy</h3>
+                            <p>We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-terms" role="tabpanel" aria-labelledby="v-pills-terms-tab">
+                            <h3 class="text-white mb-3">Terms & Conditions</h3>
+                            <p>These terms and conditions outline the rules and regulations for the use of OVI Wellness's Website and clinic services.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-hipaa" role="tabpanel" aria-labelledby="v-pills-hipaa-tab">
+                            <h3 class="text-white mb-3">HIPAA Notice of Privacy Practices</h3>
+                            <p>This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-medical" role="tabpanel" aria-labelledby="v-pills-medical-tab">
+                            <h3 class="text-white mb-3">Medical Disclaimer</h3>
+                            <p>Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-sms" role="tabpanel" aria-labelledby="v-pills-sms-tab">
+                            <h3 class="text-white mb-3">SMS Consent Disclosure</h3>
+                            <p>By providing your phone number, you agree to receive text messages from OVI Wellness. Message and data rates may apply. Message frequency varies.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-telehealth" role="tabpanel" aria-labelledby="v-pills-telehealth-tab">
+                            <h3 class="text-white mb-3">Telehealth Disclosure</h3>
+                            <p>Telehealth involves the use of electronic communications to enable healthcare providers at different locations to share individual patient medical information for the purpose of improving patient care.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-financing" role="tabpanel" aria-labelledby="v-pills-financing-tab">
+                            <h3 class="text-white mb-3">Financing Disclosure</h3>
+                            <p>Financing options are subject to credit approval. Terms and conditions apply.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-form" role="tabpanel" aria-labelledby="v-pills-form-tab">
+                            <h3 class="text-white mb-3">Form Consent Disclaimer</h3>
+                            <p>By submitting any forms on this website, you consent to have OVI Wellness collect your information to contact you regarding your inquiry.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-results" role="tabpanel" aria-labelledby="v-pills-results-tab">
+                            <h3 class="text-white mb-3">Results Disclaimer</h3>
+                            <p>Individual results may vary. Testimonials are not claimed to represent typical results. All testimonials are from real patients, and may not reflect the typical patient's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shared footer injected by components.js -->
+    <div id="footer-root"></div>
+
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data/global.js"></script>
+    <script src="assets/js/core/components.js"></script>
+    <script src="assets/js/core/component-loader.js"></script>
+    <script src="assets/js/core/main.js"></script>
+    <script>
+        // Handle URL hash to open correct tab on load or hash change
+        document.addEventListener('DOMContentLoaded', () => {
+            function handleHash(isInitialLoad = false) {
+                const hash = window.location.hash;
+                if (hash) {
+                    // Map clean hashes (e.g., #privacy) to v-pills ID selectors (e.g., #v-pills-privacy)
+                    const cleanHash = hash.startsWith('#v-pills-') ? hash : hash.replace('#', '#v-pills-');
+                    const tabBtn = document.querySelector(`button[data-bs-target="${cleanHash}"]`);
+                    
+                    if (tabBtn) {
+                        if (isInitialLoad) {
+                            // Temporarily remove fade class to disable transition animations on load
+                            const panes = document.querySelectorAll('.tab-pane');
+                            panes.forEach(pane => pane.classList.remove('fade'));
+
+                            // Swap active classes synchronously to avoid transition fade-in flash on load
+                            const defaultTabBtn = document.getElementById('v-pills-privacy-tab');
+                            const defaultTabPane = document.getElementById('v-pills-privacy');
+                            if (defaultTabBtn && defaultTabPane && defaultTabBtn !== tabBtn) {
+                                defaultTabBtn.classList.remove('active');
+                                defaultTabBtn.setAttribute('aria-selected', 'false');
+                                defaultTabPane.classList.remove('show', 'active');
+                            }
+                            
+                            const targetTabPane = document.querySelector(cleanHash);
+                            if (targetTabPane) {
+                                tabBtn.classList.add('active');
+                                tabBtn.setAttribute('aria-selected', 'true');
+                                targetTabPane.classList.add('show', 'active');
+                            }
+
+                            // Force reflow to commit layout changes instantly without transitions
+                            void document.body.offsetHeight;
+
+                            // Restore fade class for smooth transitions on subsequent clicks
+                            panes.forEach(pane => pane.classList.add('fade'));
+                        } else {
+                            // On subsequent changes, use standard Bootstrap transition
+                            const tabInstance = new bootstrap.Tab(tabBtn);
+                            tabInstance.show();
+                        }
+                    }
+                }
+            }
+
+            // Run on initial load
+            handleHash(true);
+
+            // Remove the temporary FOWT style to let Bootstrap take over normal operations
+            const fowtStyle = document.getElementById('fowt-style');
+            if (fowtStyle) {
+                fowtStyle.remove();
+            }
+
+            // Run when hash changes (e.g. user clicks footer link while on legal.html)
+            window.addEventListener('hashchange', () => handleHash(false));
+
+            // Update hash when tab changes, but keep it clean (e.g. #privacy instead of #v-pills-privacy)
+            const tabs = document.querySelectorAll('button[data-bs-toggle="pill"]');
+            tabs.forEach(tab => {
+                tab.addEventListener('shown.bs.tab', (event) => {
+                    const target = event.target.getAttribute('data-bs-target');
+                    const cleanHash = target.replace('#v-pills-', '#');
+                    if (window.location.hash !== cleanHash) {
+                        history.pushState(null, null, cleanHash);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

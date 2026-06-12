@@ -9,7 +9,7 @@ window.clinicData.services.push({
         initials: "JD",
         name: "John D.",
         tag: "JOINT REPAIR",
-        quote: "BPC-157 completely healed my shoulder tear in 6 weeks."
+        quote: "BPC-157 significantly supported my shoulder recovery in 6 weeks."
       }
     ], 
     */
@@ -181,7 +181,7 @@ window.clinicData.services.push({
             "name": "The Wolverine Matrix",
             "peptides": "BPC-157 + TB500",
             "icon": "fa-shield-alt",
-            "desc": "A systemic repair blend engineered to accelerate soft tissue healing at the cellular level. Manages tendon inflammation, joint degradation, and post-surgical recovery faster than any conventional approach.",
+            "desc": "A systemic repair blend engineered to support soft tissue recovery at the cellular level. Designed to assist with tendon inflammation, joint health, and post-surgical recovery timelines.",
             "goalModifiers": {
               "train": "Designed to get you back under the bar. Most patients in this profile return to full training capacity within the protocol window.",
               "muscle": "Combines repair acceleration with a pro-anabolic environment — letting you rebuild stronger than your pre-injury baseline.",
@@ -351,7 +351,7 @@ window.clinicData.services.push({
       },
       science: {
         headline: "The Science of <br><span class=\"text-primary\">Peptides</span>",
-        body: "Think of your cells as high-performance engines. Peptides are the specific fuel injectors they already know how to use. Unlike synthetic drugs that override your biology, peptide therapy speaks your body's native chemical language — delivering precision molecular signals that your cells recognize, respond to, and use to heal, rebuild, and energize themselves.",
+        body: "Think of your cells as high-performance engines. Peptides are the specific fuel injectors they already know how to use. Unlike synthetic drugs that override your biology, peptide therapy speaks your body's native chemical language — delivering precision molecular signals designed to support your cells as they rebuild and energize themselves.",
         bullets: [
           "100% Bio-Identical Compounds",
           "Maximum Bioavailability",

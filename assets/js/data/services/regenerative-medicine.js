@@ -10,7 +10,7 @@ window.clinicData.services.push({
       title: "Advanced Regenerative Modalities",
       lead: "Harness your body's native biological markers for deep cellular repair.",
       description:
-        "Cutting-edge anti-aging and autologous tissue therapies engineered to reverse systemic degradation and restore structural health.",
+        "Cutting-edge anti-aging and autologous tissue therapies engineered to assist with systemic vitality and support structural health.",
       icon: "fa-heartbeat",
       delay: "-3s",
       features: [
@@ -194,7 +194,7 @@ window.clinicData.services.push({
             name: "Advanced Hair Restoration",
             tag: "",
             description:
-              "PRP and exosome-assisted hair restoration protocols targeting follicle stimulation, scalp health, and androgenic hair loss reversal.",
+              "PRP and exosome-assisted hair restoration protocols targeting follicle stimulation, scalp health, and supporting hair density.",
           },
           {
             icon: "fa-heartbeat",

@@ -93,7 +93,7 @@ team: [
       credentials: "RN, BSN",
       role: "Infusion Director",
       bio: "Overseeing our Drip Culture division, ensuring perfect bioavailability and safety for all NAD+ and Glutathione longevity infusions.",
-      philosophy: "Intravenous therapy bypasses the unpredictability of the gut. By delivering clinical-grade nutrients directly to the bloodstream, we ensure 100% absorption and immediate cellular impact.",
+      philosophy: "Intravenous therapy bypasses the unpredictability of the gut. By delivering clinical-grade nutrients directly to the bloodstream, we maximize absorption and promote immediate cellular impact.",
       expertise: ["NAD+ Protocols", "High-Dose Vitamin C", "Cellular Hydration", "Post-Surgical Recovery IVs"],
       associations: ["Infusion Nurses Society (INS)"],
       personalDetail: "David has safely administered over 10,000 IV protocols and is known for his perfectly painless insertion techniques.",

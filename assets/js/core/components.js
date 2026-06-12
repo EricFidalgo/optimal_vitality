@@ -119,7 +119,18 @@
                         <p class="text-white-50 max-w-700 mx-auto mb-3" style="font-size: 0.8rem; line-height: 1.6;">
                             <strong>Medical Disclaimer:</strong> Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment.
                         </p>
-                        <p class="mb-0 text-white-50"><small>&copy; 2026 Optimal Vitality Institute. All rights reserved.</small></p>
+                        <p class="mb-3 text-white-50"><small>&copy; 2026 Optimal Vitality Institute. All rights reserved.</small></p>
+                        <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
+                            <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">Privacy Policy</a> &bull;
+                            <a href="${prefix}legal.html#terms" class="text-white-50 text-decoration-none hover-white">Terms & Conditions</a> &bull;
+                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">HIPAA Notice</a> &bull;
+                            <a href="${prefix}legal.html#medical" class="text-white-50 text-decoration-none hover-white">Medical Disclaimer</a> &bull;
+                            <a href="${prefix}legal.html#sms" class="text-white-50 text-decoration-none hover-white">SMS Consent Disclosure</a> &bull;
+                            <a href="${prefix}legal.html#telehealth" class="text-white-50 text-decoration-none hover-white">Telehealth Disclosure</a> &bull;
+                            <a href="${prefix}legal.html#financing" class="text-white-50 text-decoration-none hover-white">Financing Disclosure</a> &bull;
+                            <a href="${prefix}legal.html#form" class="text-white-50 text-decoration-none hover-white">Form Consent Disclaimer</a> &bull;
+                            <a href="${prefix}legal.html#results" class="text-white-50 text-decoration-none hover-white">Results Disclaimer</a>
+                        </div>
                     </div>
                 </div>
             </footer>

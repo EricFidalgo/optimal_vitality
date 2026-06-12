@@ -8,7 +8,7 @@ window.clinicData.services.push({
       tabLabel: "IV & Wellness",
       href: "iv-wellness.html",
       title: "Drip Culture: Total Hydration & Nutrients",
-      lead: "Bypass your digestive ecosystem for immediate 100% nutrient bioavailability.",
+      lead: "Bypass your digestive ecosystem for immediate maximum nutrient bioavailability.",
       description:
         "Intravenous delivery systems that supply vital antioxidants, clean hydration, and micronutrients straight to the cell matrix.",
       icon: "fa-tint",
@@ -25,9 +25,9 @@ window.clinicData.services.push({
       // ─── Page meta ────────────────────────────────────────────────────────
       pageTitle: "IV Therapy & Wellness Infusions — OVI Wellness",
       pageDescription:
-        "Custom IV micronutrient therapy, NAD+ infusions, and vitamin injections in St. Petersburg, FL. 100% bioavailability — direct cellular delivery at OVI Wellness.",
+        "Custom IV micronutrient therapy, NAD+ infusions, and vitamin injections in St. Petersburg, FL. Maximum bioavailability — direct cellular delivery at OVI Wellness.",
 
-      heroHeadline: "100% Bioavailability.<br><span class=\"text-primary\">Zero Compromise.</span>",
+      heroHeadline: "Maximum Bioavailability.<br><span class=\"text-primary\">Zero Compromise.</span>",
       heroCTA: "Book Your Infusion",
 
       transformations: {
@@ -209,14 +209,14 @@ window.clinicData.services.push({
       science: {
         badge: "The Clinical Method",
         headline: "The Science of<br><span class=\"text-primary\">IV Nutrient Therapy</span>",
-        body: "When you consume vitamins orally, your digestive system filters, degrades, and limits how much reaches your cells — often absorbing less than 20% of the dose. Intravenous delivery bypasses this entirely. Nutrients arrive at 100% bioavailability, saturating your bloodstream and reaching cells immediately — making IV therapy the most efficient nutrient delivery system available.",
+        body: "When you consume vitamins orally, your digestive system filters, degrades, and limits how much reaches your cells — often absorbing less than 20% of the dose. Intravenous delivery bypasses this entirely. Nutrients arrive at maximum bioavailability, saturating your bloodstream and reaching cells efficiently — making IV therapy a highly effective delivery system.",
         bullets: [
-          "100% Bioavailability vs. ~20% Oral Absorption",
+          "Maximum Bioavailability vs. ~20% Oral Absorption",
           "Compounded Fresh Per Protocol",
           "Immediate Cellular Delivery",
         ],
         stats: [
-          { value: "100%", label: "Bioavailability vs. ~20% oral average" },
+          { value: "Max", label: "Bioavailability vs. ~20% oral average" },
           { value: "45m", label: "Average infusion session time" },
           { value: "0%", label: "Digestive degradation" },
           { icon: "fa-shield-alt", label: "RN-Administered" },
@@ -244,11 +244,11 @@ window.clinicData.services.push({
         mobileStats: [
           { icon: "fa-bolt", label: "Instant Effect" },
           { icon: "fa-tint", label: "Full Hydration" },
-          { icon: "fa-star", label: "100% Absorbed" },
+          { icon: "fa-star", label: "Maximum Absorption" },
           { icon: "fa-heartbeat", label: "Cellular Delivery" },
         ],
         rows: [
-          { metric: "Absorption Rate", without: "10–30% oral average", with: "100% IV delivery" },
+          { metric: "Absorption Rate", without: "10–30% oral average", with: "Maximized IV delivery" },
           { metric: "Onset of Effect", without: "Hours to days", with: "During infusion" },
           { metric: "NAD+ Delivery", without: "Ineffective orally at dose", with: "Only viable at therapeutic IV dose" },
           { metric: "Hydration", without: "Digestive bottleneck", with: "Direct vascular repletion" },

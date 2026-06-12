@@ -1149,9 +1149,7 @@ h6 {
 .footer .border-secondary {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
-.border-bottom{
-  background-color: white;
-}
+
 /* ==========================================================================
    17. MOBILE STICKY CTA (FAB)
    ========================================================================== */

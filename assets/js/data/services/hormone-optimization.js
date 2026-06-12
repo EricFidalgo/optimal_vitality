@@ -245,7 +245,7 @@ window.clinicData.services.push({
       myths: [
         {
           myth: "Aren't these just steroids?",
-          reality: "Hormone optimization uses bio-identical hormones—exact molecular matches to what your body naturally produces. We restore healthy clinical levels, not supra-physiological 'steroid' levels, ensuring safety and natural function."
+          reality: "Hormone optimization uses bio-identical hormones—exact molecular matches to what your body naturally produces. We target healthy clinical levels, not supra-physiological 'steroid' levels, designed to promote safety and natural function."
         },
         {
           myth: "Will I need to do this forever?",
@@ -253,7 +253,7 @@ window.clinicData.services.push({
         },
         {
           myth: "Is this safe for long-term health?",
-          reality: "Clinical data shows that maintaining optimized hormone levels actually provides protective benefits for cardiovascular health, bone density, and cognitive function as we age, provided it is managed through rigorous physician oversight."
+          reality: "Clinical data indicates that maintaining optimized hormone levels may provide supportive benefits for cardiovascular health, bone density, and cognitive function as we age, provided it is managed through rigorous physician oversight."
         }
       ],
 
