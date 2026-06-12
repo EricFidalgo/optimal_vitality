@@ -53,6 +53,7 @@ Object.assign(window.clinicData, {
       ],
     },
     { label: "Team", href: "team.html" },
+    { label: "Blog", href: "blog.html" },
     { label: "FAQs", href: "index.html#faqs" },
   ],
 
