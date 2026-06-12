@@ -495,6 +495,7 @@ function initMain() {
                     const middleStartIndex = Math.floor(SETS / 2) * originals.length;
 
                     if (items[middleStartIndex]) {
+                        items[middleStartIndex].classList.add('active');
                         mobileInner.style.scrollBehavior = 'auto';
                         mobileInner.scrollLeft = items[middleStartIndex].offsetLeft - (mobileInner.clientWidth - items[middleStartIndex].clientWidth) / 2;
                         setTimeout(() => { mobileInner.style.scrollBehavior = 'smooth'; mobileInner.style.opacity = '1'; }, 50);
@@ -502,6 +503,7 @@ function initMain() {
 
                     const observer = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
+                            entry.target.classList.toggle('active', entry.isIntersecting);
                             if (entry.isIntersecting) {
                                 const originalIdx = entry.target.getAttribute('data-original-index');
                                 dots.forEach(dot => dot.classList.remove('active'));

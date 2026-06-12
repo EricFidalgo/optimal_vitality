@@ -788,9 +788,11 @@ h6 {
     border-color 0.3s ease;
 }
 
-.feature-list li:hover {
-  transform: translateX(8px);
-  box-shadow: 0 8px 20px rgba(31, 64, 109, 0.08);
+@media (hover: hover) {
+  .feature-list li:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 20px rgba(31, 64, 109, 0.08);
+  }
 }
 
 .feature-list i {
@@ -3027,7 +3029,7 @@ body.modal-open,
 }
 
 #symptom-summary-container.visible {
-  max-height: 550px;
+  max-height: 1000px;
   opacity: 1;
   transform: translateY(0);
   margin-top: 3.5rem;
