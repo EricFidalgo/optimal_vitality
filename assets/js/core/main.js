@@ -600,6 +600,49 @@ function initMain() {
                 </li>
             `).join('');
         }
+
+        // --- Clinic Location (Homepage only) ---
+        const locationAddress = document.getElementById('location-address');
+        const locationHours = document.getElementById('location-hours');
+        const locationContact = document.getElementById('location-contact');
+        const getDirectionsBtn = document.getElementById('get-directions-btn');
+        const googleMapIframe = document.getElementById('google-map-iframe');
+
+        const contactData = data.contact || {};
+        const addressData = contactData.address || data.address;
+        const hoursData = contactData.hours || data.hours;
+
+        if (addressData) {
+            const addr = `${addressData.street}, ${addressData.city}, ${addressData.state} ${addressData.zip}`;
+            
+            if (locationAddress) {
+                locationAddress.innerHTML = `${addressData.street}<br>${addressData.city}, ${addressData.state} ${addressData.zip}`;
+            }
+
+            if (locationHours && hoursData) {
+                locationHours.innerHTML = hoursData.map(h => 
+                    `<div class="d-flex justify-content-between gap-4" style="max-width: 280px; font-size: 0.95rem;">
+                        <span class="text-white-50">${h.days}:</span>
+                        <span class="text-white fw-semibold">${h.time}</span>
+                    </div>`
+                ).join('');
+            }
+
+            if (locationContact) {
+                const phone = contactData.phone || '';
+                const email = contactData.email || '';
+                locationContact.innerHTML = `Phone: <a href="tel:${phone.replace(/\D/g, '')}" class="text-white text-decoration-none hover-gold fw-semibold">${phone}</a><br>Email: <a href="mailto:${email}" class="text-white text-decoration-none hover-gold fw-semibold">${email}</a>`;
+            }
+
+            const query = encodeURIComponent(addr);
+            if (getDirectionsBtn) {
+                getDirectionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${query}`;
+            }
+
+            if (googleMapIframe) {
+                googleMapIframe.src = `https://maps.google.com/maps?q=${query}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+            }
+        }
     }
 
     // Run all renders

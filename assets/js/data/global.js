@@ -13,7 +13,7 @@ Object.assign(window.clinicData, {
       }
     },
     address: {
-      street: "100 2nd Ave N, Suite 300",
+      street: "600 2nd Ave NE",
       city: "St. Petersburg",
       state: "FL",
       zip: "33701"
