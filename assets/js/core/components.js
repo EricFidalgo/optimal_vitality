@@ -98,7 +98,7 @@
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
-                                <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 Wellness Way, Suite 400<br><span class="ms-4 ps-2">Tallahassee, FL 32308</span></p>
+                                <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 2nd Ave N, Suite 300<br><span class="ms-4 ps-2">St. Petersburg, FL 33701</span></p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> (850) 555-0199</p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> info@oviwellness.com</p>
                                 <p class="mb-0"><a href="https://instagram.com/oviwellness_" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> @oviwellness_</a></p>

@@ -219,8 +219,8 @@ team: [
       ]
     },
     tampa: {
-      name: "Optimal Vitality Institute — Tampa Concierge & Telehealth",
-      description: "Concierge medical weight loss, hormone replacement therapy (TRT), and peptide protocols serving Tampa, Florida.",
+      name: "Optimal Vitality Institute — Tampa Clinic",
+      description: "Doctor-led TRT clinic, medical weight loss, peptides, and aesthetics serving Tampa Bay, with physical office located in St. Petersburg.",
       url: "https://oviwellness.com/tampa.html",
       areaServed: [
         "Tampa",
@@ -229,21 +229,21 @@ team: [
         "Hillsborough County",
         "Pinellas County"
       ],
-      heroHeadline: "OVI Wellness <br><span class='text-primary'>Tampa</span>",
-      heroSubheadline: "Serving Tampa Bay patients via advanced telehealth consultations, direct-to-home protocol delivery, and local lab draws—with our main physical clinic located just across the bridge in St. Petersburg.",
-      heroCTA: "Schedule Tampa Consultation",
-      advantageBadge: "CONCIERGE & TELEHEALTH SERVICES",
-      advantageHeadline: "Serving Tampa Residents from our St. Pete Office & Telehealth",
-      advantageText: "Optimize your health from anywhere in Tampa. While our primary physical office is located just across the bridge in St. Petersburg, we specialize in seamless care for Tampa residents. We coordinate local diagnostic blood draws in Tampa, conduct fully secure telehealth consultation calls, and ship custom-dosed peptides, TRT protocols, and metabolic weight loss compounds directly to your home.",
+      heroHeadline: "OVI Wellness <br><span class='text-primary'>Tampa Clinic</span>",
+      heroSubheadline: "Serving our Tampa patients from our premier physical medical clinic located just across the bridge in St. Petersburg — providing doctor-led hormone optimization (TRT), metabolic weight loss, advanced peptides, and aesthetics.",
+      heroCTA: "Book Tampa Clinic Consultation",
+      advantageBadge: "TAMPA CLINIC SERVICES",
+      advantageHeadline: "Your Tampa Clinic — Located Just Across the Bay",
+      advantageText: "Optimal Vitality Institute serves Tampa patients from our state-of-the-art physical clinic in nearby St. Petersburg. Because Tampa and St. Pete are close, our Tampa patients easily travel across the bridge for our full range of in-person clinical treatments, including IV infusions, blood draws, and Botox. For your convenience, we also coordinate diagnostic lab work in Tampa and offer telehealth consultations for follow-up care.",
       advantageImage: "assets/images/photos/peptide.jpg",
       advantageBullets: [
         "Florida Board Certified Physicians",
-        "Concierge Lab Work Coordination",
-        "Direct Telehealth Consultations",
-        "Pharmacy-Direct Prescription Delivery"
+        "In-Person Clinic Visits & Diagnostics",
+        "Convenient St. Pete Physical Office",
+        "Telehealth Follow-up Consultations"
       ],
-      treatmentsHeadline: "Our Tampa Clinical Offerings",
-      treatmentsSubheadline: "Access our bio-calibrated wellness programs via telehealth or concierge care.",
+      treatmentsHeadline: "Our Tampa Clinic Programs",
+      treatmentsSubheadline: "Explore our bio-calibrated wellness programs, available to Tampa patients at our nearby St. Petersburg facility.",
       treatmentsGrid: [
         {
           title: "Hormone Optimization (TRT)",
