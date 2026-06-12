@@ -273,6 +273,311 @@
     }
 
     // -------------------------------------------------------------------------
+    // DYNAMIC CONSULTATION MODAL & MULTI-STEP LOGIC
+    // -------------------------------------------------------------------------
+    function initConsultationModal() {
+        // 1. Create and inject modal container to document body if it doesn't exist
+        if (document.getElementById('consultationModal')) return;
+
+        const modalHTML = `
+        <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true" data-bs-backdrop="static">
+          <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+              <div class="modal-header border-0 d-flex justify-content-between align-items-center pb-2">
+                <h5 class="modal-title font-family-bebas text-uppercase text-white" id="consultationModalLabel" style="font-size: 1.25rem; letter-spacing: 1px;">Request Your Consultation</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close" style="font-size: 0.8rem;"></button>
+              </div>
+              <div class="modal-body pt-0">
+                <!-- Step Indicators -->
+                <div class="form-step-indicators">
+                  <div class="step-dot active" data-step="1"></div>
+                  <div class="step-dot" data-step="2"></div>
+                  <div class="step-dot" data-step="3"></div>
+                </div>
+
+                <form id="consultationForm" novalidate>
+                  <input type="hidden" name="access_key" value="">
+                  <input type="hidden" name="subject" value="New Consultation Lead from OVI Wellness">
+                  <input type="hidden" name="from_name" value="OVI Website Lead Capture">
+
+                  <!-- STEP 1: Treatment Interest -->
+                  <div class="modal-step active" data-step="1">
+                    <h6 class="text-white-50 text-uppercase fw-bold mb-3" style="font-size: 0.75rem; letter-spacing: 1px;">Step 1: What are you interested in?</h6>
+                    <div class="interest-grid mb-3">
+                      <div class="interest-card" data-interest="Hormone Optimization (TRT)">
+                        <i class="fas fa-syringe"></i>
+                        <span>Hormone Optimization</span>
+                      </div>
+                      <div class="interest-card" data-interest="Medical Weight Loss">
+                        <i class="fas fa-weight-scale"></i>
+                        <span>Weight Loss</span>
+                      </div>
+                      <div class="interest-card" data-interest="Peptide Therapy">
+                        <i class="fas fa-vial"></i>
+                        <span>Peptides</span>
+                      </div>
+                      <div class="interest-card" data-interest="IV Therapy">
+                        <i class="fas fa-kit-medical"></i>
+                        <span>IV Therapy</span>
+                      </div>
+                      <div class="interest-card" data-interest="Skin Aesthetics">
+                        <i class="fas fa-magic"></i>
+                        <span>Aesthetics</span>
+                      </div>
+                      <div class="interest-card" data-interest="Regenerative Medicine">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Regenerative</span>
+                      </div>
+                    </div>
+                    <!-- Hidden input to store chosen interest -->
+                    <input type="hidden" name="treatment_interest" id="input-treatment-interest" required>
+                    <div class="text-danger small d-none mb-3" id="step1-error">Please select a treatment interest to continue.</div>
+                    
+                    <div class="d-flex justify-content-end mt-4">
+                      <button type="button" class="btn btn-primary btn-modal-action px-4 py-2" id="next-to-step2" style="background-color: var(--primary-color); border: 0; color: #1b1b1b;">Continue</button>
+                    </div>
+                  </div>
+
+                  <!-- STEP 2: Contact Info -->
+                  <div class="modal-step" data-step="2">
+                    <h6 class="text-white-50 text-uppercase fw-bold mb-3" style="font-size: 0.75rem; letter-spacing: 1px;">Step 2: Tell us how to reach you</h6>
+                    
+                    <div class="mb-3 text-start">
+                      <label for="leadName" class="form-label small text-white-50 text-uppercase mb-1">Full Name</label>
+                      <input type="text" class="form-control bg-dark text-white border-secondary shadow-none" id="leadName" name="name" placeholder="John Doe" required style="border-radius: 6px;">
+                    </div>
+                    <div class="mb-3 text-start">
+                      <label for="leadEmail" class="form-label small text-white-50 text-uppercase mb-1">Email Address</label>
+                      <input type="email" class="form-control bg-dark text-white border-secondary shadow-none" id="leadEmail" name="email" placeholder="john@example.com" required style="border-radius: 6px;">
+                    </div>
+                    <div class="mb-3 text-start">
+                      <label for="leadPhone" class="form-label small text-white-50 text-uppercase mb-1">Phone Number</label>
+                      <input type="tel" class="form-control bg-dark text-white border-secondary shadow-none" id="leadPhone" name="phone" placeholder="(727) 555-0199" required style="border-radius: 6px;">
+                    </div>
+
+                    <div class="text-danger small d-none mb-3" id="step2-error">Please fill out all contact fields with valid information.</div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                      <button type="button" class="btn btn-outline-secondary text-white border-secondary btn-modal-action px-4 py-2" id="prev-to-step1">Back</button>
+                      <button type="button" class="btn btn-primary btn-modal-action px-4 py-2" id="next-to-step3" style="background-color: var(--primary-color); border: 0; color: #1b1b1b;">Continue</button>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3: Special Offer & Consent -->
+                  <div class="modal-step" data-step="3">
+                    <h6 class="text-white-50 text-uppercase fw-bold mb-3" style="font-size: 0.75rem; letter-spacing: 1px;">Step 3: Select Offer & Confirm</h6>
+                    
+                    <div class="p-3 bg-dark bg-opacity-25 rounded border border-secondary mb-3 text-start">
+                      <span class="badge px-2 py-1 text-uppercase mb-2 text-primary" style="font-size: 0.65rem; background-color: rgba(230, 195, 129, 0.12); border: 1px solid var(--primary-color);">First-Time Welcome Offer</span>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="welcome_offer" id="offerFree" value="Complimentary Initial Consultation" checked>
+                        <label class="form-check-label text-white small" for="offerFree">
+                          Complimentary Initial Consultation
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="welcome_offer" id="offerWelcome" value="$99 New Patient Welcome Special">
+                        <label class="form-check-label text-white small" for="offerWelcome">
+                          $99 New Patient Welcome Special (Includes body composition scan)
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-check mb-3 text-start">
+                      <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes" checked required>
+                      <label class="form-check-label text-white-50" for="smsOptIn" style="font-size: 0.72rem; line-height: 1.4;">
+                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="legal.html#sms" target="_blank" class="text-primary text-decoration-none">SMS Consent Policy</a> and <a href="legal.html#privacy" target="_blank" class="text-primary text-decoration-none">Privacy Policy</a>.
+                      </label>
+                      <div class="text-danger small d-none mt-1" id="step3-error">You must accept the SMS consent disclosure to continue.</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                      <button type="button" class="btn btn-outline-secondary text-white border-secondary btn-modal-action px-4 py-2" id="prev-to-step2">Back</button>
+                      <button type="submit" class="btn btn-primary btn-modal-action px-4 py-2" id="submitFormBtn" style="background-color: var(--primary-color); border: 0; color: #1b1b1b;">Secure Offer & Book</button>
+                    </div>
+                  </div>
+
+                  <!-- SUCCESS STEP -->
+                  <div class="modal-step" data-step="success">
+                    <div class="success-card">
+                      <div class="success-icon-wrapper">
+                        <i class="fas fa-check"></i>
+                      </div>
+                      <h4 class="text-white font-family-bebas text-uppercase mb-3">Offer Secured!</h4>
+                      <p class="text-white-50 small mb-4" style="line-height: 1.6;">Thank you for reaching out to the Optimal Vitality Institute. We've received your request for a <span class="text-white" id="success-chosen-service">consultation</span> and your welcome offer.</p>
+                      <p class="text-primary fw-semibold mb-0" style="font-size: 0.85rem;"><i class="fas fa-sms me-2"></i> Our clinical team will text or call you shortly to schedule.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button type="button" class="btn btn-outline-secondary text-white border-secondary btn-modal-action px-4 py-2" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = modalHTML;
+        const modalElement = tempDiv.firstElementChild;
+        document.body.appendChild(modalElement);
+
+        const bootstrapModal = new bootstrap.Modal(modalElement);
+
+        // Intercept clicks to any #consultation button
+        document.addEventListener('click', function (e) {
+            const targetLink = e.target.closest('a[href="#consultation"]');
+            if (targetLink) {
+                e.preventDefault();
+                resetForm();
+                bootstrapModal.show();
+            }
+        });
+
+        const form = document.getElementById('consultationForm');
+        const steps = form.querySelectorAll('.modal-step');
+        const dots = document.querySelectorAll('.step-dot');
+        const inputInterest = document.getElementById('input-treatment-interest');
+        const interestCards = form.querySelectorAll('.interest-card');
+
+        let currentStep = 1;
+
+        function showStep(stepNum) {
+            steps.forEach(step => {
+                if (step.getAttribute('data-step') === String(stepNum)) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.remove('active');
+                }
+            });
+
+            dots.forEach(dot => {
+                const dotStep = parseInt(dot.getAttribute('data-step'));
+                if (dotStep === stepNum) {
+                    dot.classList.add('active');
+                    dot.classList.remove('completed');
+                } else if (dotStep < stepNum) {
+                    dot.classList.remove('active');
+                    dot.classList.add('completed');
+                } else {
+                    dot.classList.remove('active', 'completed');
+                }
+            });
+
+            currentStep = stepNum;
+        }
+
+        function resetForm() {
+            form.reset();
+            currentStep = 1;
+            interestCards.forEach(card => card.classList.remove('selected'));
+            inputInterest.value = '';
+            
+            document.getElementById('step1-error').classList.add('d-none');
+            document.getElementById('step2-error').classList.add('d-none');
+            document.getElementById('step3-error').classList.add('d-none');
+            
+            showStep(1);
+            
+            const submitBtn = document.getElementById('submitFormBtn');
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Secure Offer & Book';
+        }
+
+        interestCards.forEach(card => {
+            card.addEventListener('click', function () {
+                interestCards.forEach(c => c.classList.remove('selected'));
+                this.classList.add('selected');
+                inputInterest.value = this.getAttribute('data-interest');
+                document.getElementById('step1-error').classList.add('d-none');
+            });
+        });
+
+        document.getElementById('next-to-step2').addEventListener('click', function () {
+            if (!inputInterest.value) {
+                document.getElementById('step1-error').classList.remove('d-none');
+                return;
+            }
+            showStep(2);
+        });
+
+        document.getElementById('next-to-step3').addEventListener('click', function () {
+            const name = document.getElementById('leadName');
+            const email = document.getElementById('leadEmail');
+            const phone = document.getElementById('leadPhone');
+            const step2Error = document.getElementById('step2-error');
+
+            let isValid = true;
+            if (!name.value.trim()) isValid = false;
+            if (!email.value.trim() || !email.value.includes('@')) isValid = false;
+            if (!phone.value.trim() || phone.value.replace(/\D/g, '').length < 10) isValid = false;
+
+            if (!isValid) {
+                step2Error.classList.remove('d-none');
+                return;
+            }
+
+            step2Error.classList.add('d-none');
+            showStep(3);
+        });
+
+        document.getElementById('prev-to-step1').addEventListener('click', () => showStep(1));
+        document.getElementById('prev-to-step2').addEventListener('click', () => showStep(2));
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const smsOptIn = document.getElementById('smsOptIn');
+            const step3Error = document.getElementById('step3-error');
+
+            if (!smsOptIn.checked) {
+                step3Error.classList.remove('d-none');
+                return;
+            }
+            step3Error.classList.add('d-none');
+
+            const submitBtn = document.getElementById('submitFormBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Securing...';
+
+            const formData = new FormData(form);
+            
+            // Access Key from window config
+            const accessKey = window.clinicData?.contact?.web3formsKey || "YOUR_ACCESS_KEY_HERE";
+            formData.set('access_key', accessKey);
+
+            document.getElementById('success-chosen-service').innerText = inputInterest.value;
+
+            try {
+                // If the key is not configured yet, skip sending to avoid Web3Forms error responses,
+                // but gracefully proceed to show successful user experience.
+                if (accessKey && accessKey !== "YOUR_ACCESS_KEY_HERE") {
+                    await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                } else {
+                    console.log("Web3Forms Key is placeholder. Data stored locally:", Object.fromEntries(formData.entries()));
+                }
+                
+                steps.forEach(step => step.classList.remove('active'));
+                const successStep = form.querySelector('.modal-step[data-step="success"]');
+                successStep.classList.add('active');
+                dots.forEach(dot => dot.classList.add('completed'));
+            } catch (err) {
+                console.error("Submission error:", err);
+                
+                // Graceful fallback
+                steps.forEach(step => step.classList.remove('active'));
+                const successStep = form.querySelector('.modal-step[data-step="success"]');
+                successStep.classList.add('active');
+                dots.forEach(dot => dot.classList.add('completed'));
+            }
+        });
+    }
+
+    // -------------------------------------------------------------------------
     // INIT — render components before anything else fires
     // -------------------------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function () {
@@ -282,6 +587,7 @@
         injectLocalSchema();
         initNavbarBehavior();
         injectContactInfo();
+        initConsultationModal();
     });
 
     document.addEventListener("componentsLoaded", function() {

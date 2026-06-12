@@ -6,6 +6,7 @@ Object.assign(window.clinicData, {
   contact: {
     phone: "(850) 555-0199",
     email: "info@oviwellness.com",
+    web3formsKey: "YOUR_ACCESS_KEY_HERE", // Enter your Web3Forms access key here to route form submissions to your email
     socials: {
       instagram: {
         handle: "@oviwellness_",

@@ -3057,3 +3057,250 @@ body.modal-open,
   background-color: rgba(255, 255, 255, 0.05);
   border-left: 3px solid rgba(255, 255, 255, 0.2);
 }
+
+/* ==========================================================================
+   33. INTRODUCTORY OFFER CALLOUT BAR
+   ========================================================================== */
+.intro-offer-bar {
+  background: linear-gradient(90deg, #0b1523 0%, #12223a 100%);
+  border-bottom: 1px solid rgba(230, 195, 129, 0.25);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  z-index: 100;
+  position: relative;
+}
+
+.intro-offer-bar .badge {
+  letter-spacing: 1px;
+  background-color: rgba(230, 195, 129, 0.1) !important;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.intro-offer-bar .btn-claim {
+  background-color: var(--primary-color);
+  color: #0b1523;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.intro-offer-bar .btn-claim:hover {
+  background-color: #f3dca3;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   34. MULTI-STEP CONSULTATION MODAL
+   ========================================================================== */
+#consultationModal .modal-content {
+  background: #0f1c2e;
+  border: 1px solid rgba(230, 195, 129, 0.2);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#consultationModal .modal-header {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+#consultationModal .modal-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Progress Step Dots */
+.form-step-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.step-dot.active {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+.step-dot.completed {
+  background-color: #28a745;
+}
+
+/* Modal step content blocks */
+.modal-step {
+  display: none;
+}
+
+.modal-step.active {
+  display: block;
+  animation: fadeInStep 0.4s ease forwards;
+}
+
+@keyframes fadeInStep {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Interest Selection Grid */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 576px) {
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.interest-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest-card i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.interest-card span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.interest-card:hover {
+  background: rgba(230, 195, 129, 0.05);
+  border-color: rgba(230, 195, 129, 0.4);
+}
+
+.interest-card:hover i {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.interest-card.selected {
+  background: rgba(230, 195, 129, 0.12);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(230, 195, 129, 0.2);
+}
+
+/* Success Card */
+.success-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.success-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(40, 167, 69, 0.1);
+  border: 2px solid #28a745;
+  color: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  font-size: 2rem;
+  animation: scaleInSuccess 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes scaleInSuccess {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.btn-modal-action {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   35. INTEGRATED HERO PROMOTIONAL BADGE
+   ========================================================================== */
+.hero-promo-badge {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 16px 6px 6px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-promo-badge:hover {
+  background: rgba(230, 195, 129, 0.06);
+  border-color: rgba(230, 195, 129, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 195, 129, 0.15);
+}
+
+.hero-promo-badge .promo-tag {
+  background: var(--primary-color);
+  color: #0b1523;
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-right: 12px;
+  box-shadow: 0 2px 6px rgba(230, 195, 129, 0.2);
+  display: inline-block;
+}
+
+.hero-promo-badge .promo-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+}
+
+.hero-promo-badge:hover .promo-text {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .hero-promo-badge {
+    padding: 5px 12px 5px 5px;
+    max-width: 92%;
+    border-radius: 30px;
+  }
+  .hero-promo-badge .promo-tag {
+    margin-right: 8px;
+    padding: 3px 8px;
+    font-size: 0.6rem;
+  }
+  .hero-promo-badge .promo-text {
+    font-size: 0.72rem;
+    line-height: 1.35;
+    text-align: left;
+  }
+}
