@@ -669,6 +669,7 @@ function initMain() {
         const heroContent = document.querySelector('.hero-content');
         const heroActions = document.querySelector('.hero-actions');
         const blobs = document.querySelectorAll('.service-blob');
+        const promoBadge = document.querySelector('.hero-promo-badge');
 
         // Only trigger on the homepage where these elements exist simultaneously
         if (heroContent && heroActions && blobs.length > 0) {
@@ -676,6 +677,9 @@ function initMain() {
             gsap.set(heroActions, { opacity: 0 });
             gsap.set(heroContent, { y: 120, opacity: 0 });
             gsap.set(blobs, { scale: 0, opacity: 0 });
+            if (promoBadge) {
+                gsap.set(promoBadge, { scale: 0, opacity: 0 });
+            }
 
             const tl = gsap.timeline({ delay: 0.15 });
 
@@ -704,7 +708,18 @@ function initMain() {
                 stagger: 0.08,
                 ease: 'back.out(1.4)',
                 clearProps: 'transform,opacity' // Clears GSAP inline styles so CSS morphing and hovers work perfectly
-            }, '-=0.3');
+            }, '-=0.15');
+
+            // 4. Pop up the promotional badge right after the bubbles finish
+            if (promoBadge) {
+                tl.to(promoBadge, {
+                    scale: 1,
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: 'back.out(1.4)',
+                    clearProps: 'transform,opacity'
+                }, '+=0');
+            }
         }
 
         // Mobile Sticky CTA — show after the hero scrolls out of view
