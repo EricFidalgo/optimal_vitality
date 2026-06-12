@@ -268,8 +268,9 @@ function initMain() {
     // 1. RENDER DYNAMIC CONTENT
     // =========================================================================
     function renderDynamicContent() {
-        if (typeof clinicData === 'undefined') {
-            console.error('clinicData not found. Ensure data.js is loaded before main.js.');
+        const data = window.clinicData;
+        if (!data) {
+            console.error('clinicData not found. Ensure global.js is loaded before main.js.');
             return;
         }
 
@@ -277,10 +278,10 @@ function initMain() {
         const desktopNav = document.getElementById('main-navbar-links');
         const mobileNav = document.getElementById('mobile-navbar-links');
 
-        if (clinicData.navigation) {
+        if (data.navigation) {
             // Desktop nav: Bootstrap dropdown
             if (desktopNav) {
-                desktopNav.innerHTML = clinicData.navigation.map(link => {
+                desktopNav.innerHTML = data.navigation.map(link => {
                     if (link.dropdown) {
                         const items = link.dropdown.map(sub =>
                             `<li><a class="dropdown-item fw-bold text-uppercase" style="font-size: 0.85rem;" href="${resolveUrl(sub.href)}">${sub.label}</a></li>`
@@ -306,7 +307,7 @@ function initMain() {
                 let mainLinks = '';
                 let subPanels = '';
 
-                clinicData.navigation.forEach((link, index) => {
+                data.navigation.forEach((link, index) => {
                     if (link.dropdown) {
                         mainLinks += `
                             <li class="w-100 mb-3">
@@ -365,8 +366,8 @@ function initMain() {
 
         // --- Hero Blob Menu ---
         const blobContainer = document.querySelector('.blob-menu-container');
-        if (blobContainer && clinicData.services) {
-            blobContainer.innerHTML = clinicData.services.map(service => `
+        if (blobContainer && data.services) {
+            blobContainer.innerHTML = data.services.map(service => `
                 <a href="${resolveUrl(service.href)}" class="service-blob" style="animation-delay: ${service.delay};">
                     <i class="fas ${service.icon} icon"></i>
                     <span class="blob-title">${service.tabLabel}</span>
@@ -377,8 +378,8 @@ function initMain() {
         // --- Core Therapies Tabs ---
         const tabsContainer = document.getElementById('therapy-tabs');
         const contentContainer = document.getElementById('therapy-tabs-content');
-        if (tabsContainer && contentContainer && clinicData.services) {
-            const coreServices = clinicData.services.filter(s => s.type === 'core');
+        if (tabsContainer && contentContainer && data.services) {
+            const coreServices = data.services.filter(s => s.type === 'core');
             coreServices.forEach((therapy, index) => {
                 const isActive = index === 0 ? 'active' : '';
                 const isShow = index === 0 ? 'show active' : '';
@@ -414,8 +415,8 @@ function initMain() {
 
         // --- Additional Services (Desktop Grid) ---
         const servicesDesktop = document.getElementById('services-desktop');
-        if (servicesDesktop && clinicData.services) {
-            const additionalServices = clinicData.services.filter(s => s.type === 'additional');
+        if (servicesDesktop && data.services) {
+            const additionalServices = data.services.filter(s => s.type === 'additional');
             servicesDesktop.innerHTML = additionalServices.map(service => `
                 <div class="col-lg-4 col-md-6">
                     <div class="service-grid-card h-100">
@@ -430,8 +431,8 @@ function initMain() {
 
         // --- Team ---
         const teamList = document.getElementById('team-list');
-        if (teamList && clinicData.team) {
-            teamList.innerHTML = clinicData.team.map(member => `
+        if (teamList && data.team) {
+            teamList.innerHTML = data.team.map(member => `
                 <div class="team-list-item">
                     <h4 class="team-name">${member.name}</h4>
                     <p class="team-role">${member.role}</p>
@@ -442,8 +443,8 @@ function initMain() {
 
         // --- FAQs ---
         const faqAccordion = document.getElementById('faqAccordion');
-        if (faqAccordion && clinicData.faqs) {
-            faqAccordion.innerHTML = clinicData.faqs.map((faq, index) => `
+        if (faqAccordion && data.faqs) {
+            faqAccordion.innerHTML = data.faqs.map((faq, index) => `
                 <div class="accordion-item border-0 mb-3">
                     <h2 class="accordion-header" id="heading${index}">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}">
@@ -463,10 +464,10 @@ function initMain() {
         const desktopInner = document.getElementById('desktop-testimonial-inner');
         const desktopIndicators = document.getElementById('desktop-testimonial-indicators');
 
-        const service = typeof OVI_SERVICE_ID !== 'undefined' ? clinicData.services.find(s => s.id === OVI_SERVICE_ID) : null;
+        const service = typeof OVI_SERVICE_ID !== 'undefined' ? data.services.find(s => s.id === OVI_SERVICE_ID) : null;
         const testimonialsList = (service && service.testimonials && service.testimonials.length > 0) 
             ? service.testimonials 
-            : clinicData.testimonials;
+            : data.testimonials;
 
         if (testimonialsList) {
             // Mobile: Build a hidden source container, then hand off to initInfiniteTrack
@@ -587,8 +588,8 @@ function initMain() {
 
         // --- Footer Services List ---
         const footerServicesList = document.getElementById('footer-services-list');
-        if (footerServicesList && clinicData.navigation && clinicData.navigation[0] && clinicData.navigation[0].dropdown) {
-            const footerServices = clinicData.navigation[0].dropdown;
+        if (footerServicesList && data.navigation && data.navigation[0] && data.navigation[0].dropdown) {
+            const footerServices = data.navigation[0].dropdown;
             footerServicesList.innerHTML = footerServices.map((service, index) => `
                 <li class="${index === footerServices.length - 1 ? 'mb-0' : 'mb-3'}">
                     <a href="${resolveUrl(service.href)}" class="text-white-50 text-decoration-none footer-service-link">

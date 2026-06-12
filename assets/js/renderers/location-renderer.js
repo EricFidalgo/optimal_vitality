@@ -6,7 +6,7 @@
 (function () {
   if (typeof OVI_LOCATION_ID === "undefined") return;
 
-  const loc = window.clinicData.locations[OVI_LOCATION_ID];
+  const loc = window.clinicData?.locations?.[OVI_LOCATION_ID];
 
   if (!loc) {
     console.error("[location-renderer] No location found for ID:", OVI_LOCATION_ID);

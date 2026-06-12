@@ -16,7 +16,7 @@
  */
 (function () {
   // ─── 1. Find the service data ─────────────────────────────────────────────
-  const service = clinicData.services.find((s) => s.id === OVI_SERVICE_ID);
+  const service = window.clinicData?.services?.find((s) => s.id === OVI_SERVICE_ID);
 
   if (!service) {
     console.error("[service-renderer] No service found for ID:", OVI_SERVICE_ID);
@@ -121,7 +121,7 @@
     setSlot("ctaSubheadline", ctaSub);
 
     // --- FAQs ---
-    buildFAQs(s.faqs || clinicData.faqs);
+    buildFAQs(s.faqs || window.clinicData?.faqs || []);
     const faqSub = `Everything you need to know about our ${s.tabLabel || ""} protocols.`;
     setSlot("faqSubheadline", faqSub);
 

@@ -1,7 +1,8 @@
 // assets/js/data.js
 
 // Global data for navbar, marquee, index.html testimonials (but if testimonials are empty in specific js service file then these get sent to that page), faq's 
-window.clinicData = {
+window.clinicData = window.clinicData || {};
+Object.assign(window.clinicData, {
   contact: {
     phone: "(850) 555-0199",
     email: "info@oviwellness.com",
@@ -310,4 +311,4 @@ team: [
       ]
     }
   }
-};
+});

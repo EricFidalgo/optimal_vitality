@@ -2,9 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const teamContainer = document.getElementById('team-list-full');
-    
-    if (teamContainer && window.clinicData && window.clinicData.team) {
-        teamContainer.innerHTML = window.clinicData.team.map((member, index) => {
+    const team = window.clinicData?.team;
+    if (teamContainer && team) {
+        teamContainer.innerHTML = team.map((member, index) => {
             // Badges and associations for the modal
             const modalExpertiseHtml = member.expertise 
                 ? member.expertise.map(exp => `<span class="badge bg-light text-dark border fw-medium px-3 py-2 me-2 mb-2">${exp}</span>`).join('') 

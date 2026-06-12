@@ -16,7 +16,7 @@
         if (!root) return;
 
         let marqueeHTML = '';
-        if (typeof clinicData !== 'undefined' && clinicData.marquee) {
+        if (window.clinicData?.marquee) {
             const singlePass = clinicData.marquee.map(item => 
                 `<span><i class="fas ${item.icon}"></i> ${item.label}</span><span>•</span>`
             ).join('');
@@ -80,7 +80,7 @@
         const root = document.getElementById("footer-root");
         if (!root) return;
 
-        const c = (typeof clinicData !== 'undefined') ? clinicData.contact : null;
+        const c = window.clinicData?.contact;
         if (!c) {
             console.error("Clinic contact data is missing!");
             return;
@@ -162,9 +162,10 @@
             schemaKey = "tampa";
         }
 
-        if (schemaKey && typeof clinicData !== 'undefined' && clinicData.locations && clinicData.locations[schemaKey]) {
-            const loc = clinicData.locations[schemaKey];
-            const c = clinicData.contact;
+        const loc = window.clinicData?.locations?.[schemaKey];
+        const c = window.clinicData?.contact;
+
+        if (schemaKey && loc && c) {
             if (!c) {
                 console.error("Clinic contact data is missing for schema injection!");
                 return;
@@ -248,7 +249,7 @@
     // DYNAMIC CONTACT INJECTION
     // -------------------------------------------------------------------------
     function injectContactInfo() {
-        const c = (typeof clinicData !== 'undefined' && clinicData.contact) ? clinicData.contact : null;
+        const c = window.clinicData?.contact;
         if (!c) return;
 
         document.querySelectorAll('[data-global-contact="phone"]').forEach(el => {
