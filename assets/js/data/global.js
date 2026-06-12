@@ -2,6 +2,26 @@
 
 // Global data for navbar, marquee, index.html testimonials (but if testimonials are empty in specific js service file then these get sent to that page), faq's 
 window.clinicData = {
+  contact: {
+    phone: "(850) 555-0199",
+    email: "info@oviwellness.com",
+    socials: {
+      instagram: {
+        handle: "@oviwellness_",
+        url: "https://instagram.com/oviwellness_"
+      }
+    },
+    address: {
+      street: "100 2nd Ave N, Suite 300",
+      city: "St. Petersburg",
+      state: "FL",
+      zip: "33701"
+    },
+    hours: [
+      { days: "Mon - Fri", time: "8:00 AM - 6:00 PM" },
+      { days: "Sat - Sun", time: "Closed" }
+    ]
+  },
   navigation: [
     {
       label: "Treatments",

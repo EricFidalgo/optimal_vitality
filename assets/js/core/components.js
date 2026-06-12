@@ -80,6 +80,12 @@
         const root = document.getElementById("footer-root");
         if (!root) return;
 
+        const c = (typeof clinicData !== 'undefined') ? clinicData.contact : null;
+        if (!c) {
+            console.error("Clinic contact data is missing!");
+            return;
+        }
+
         root.innerHTML = `
             <footer class="footer py-5 text-center text-md-start" id="consultation">
                 <div class="container py-4">
@@ -98,13 +104,13 @@
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
-                                <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> 100 2nd Ave N, Suite 300<br><span class="ms-4 ps-2">St. Petersburg, FL 33701</span></p>
-                                <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> (850) 555-0199</p>
-                                <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> info@oviwellness.com</p>
-                                <p class="mb-0"><a href="https://instagram.com/oviwellness_" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> @oviwellness_</a></p>
+                                <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span></p>
+                                <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}</p>
+                                <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}</p>
+                                <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
                                 <hr class="border-secondary my-4">
-                                <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>Mon - Fri:</strong> 8:00 AM - 6:00 PM</p>
-                                <p class="text-white-50 mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>Sat - Sun:</strong> Closed</p>
+                                <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>${c.hours[0].days}:</strong> ${c.hours[0].time}</p>
+                                <p class="text-white-50 mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>${c.hours[1].days}:</strong> ${c.hours[1].time}</p>
                             </div>
                         </div>
                     </div>
@@ -158,6 +164,11 @@
 
         if (schemaKey && typeof clinicData !== 'undefined' && clinicData.locations && clinicData.locations[schemaKey]) {
             const loc = clinicData.locations[schemaKey];
+            const c = clinicData.contact;
+            if (!c) {
+                console.error("Clinic contact data is missing for schema injection!");
+                return;
+            }
             
             // Build the full schema by merging base clinic properties with page-specific ones
             const fullSchema = {
@@ -167,14 +178,14 @@
                 "alternateName": "OVI Wellness",
                 "description": loc.description,
                 "url": loc.url,
-                "telephone": "(850) 555-0199",
+                "telephone": c.phone,
                 "image": "https://oviwellness.com/assets/images/photos/team-group.avif",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "100 2nd Ave N, Suite 300",
-                    "addressLocality": "St. Petersburg",
-                    "addressRegion": "FL",
-                    "postalCode": "33701",
+                    "streetAddress": c.address.street,
+                    "addressLocality": c.address.city,
+                    "addressRegion": c.address.state,
+                    "postalCode": c.address.zip,
                     "addressCountry": "US"
                 },
                 "geo": {
@@ -234,6 +245,22 @@
     }
 
     // -------------------------------------------------------------------------
+    // DYNAMIC CONTACT INJECTION
+    // -------------------------------------------------------------------------
+    function injectContactInfo() {
+        const c = (typeof clinicData !== 'undefined' && clinicData.contact) ? clinicData.contact : null;
+        if (!c) return;
+
+        document.querySelectorAll('[data-global-contact="phone"]').forEach(el => {
+            el.innerHTML = `<i class="fas fa-phone-alt me-2"></i> ${c.phone}`;
+        });
+        document.querySelectorAll('[data-global-contact="email"]').forEach(el => {
+            el.innerHTML = `<i class="fas fa-envelope me-2"></i> Email Clinical Team`;
+            if (el.tagName === 'A') el.href = "mailto:" + c.email;
+        });
+    }
+
+    // -------------------------------------------------------------------------
     // INIT — render components before anything else fires
     // -------------------------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function () {
@@ -242,5 +269,10 @@
         renderDisclosures();
         injectLocalSchema();
         initNavbarBehavior();
+        injectContactInfo();
+    });
+
+    document.addEventListener("componentsLoaded", function() {
+        injectContactInfo();
     });
 })();
