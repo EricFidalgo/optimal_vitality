@@ -11,6 +11,10 @@ Object.assign(window.clinicData, {
       instagram: {
         handle: "@oviwellness_",
         url: "https://instagram.com/oviwellness_"
+      },
+      facebook: {
+        handle: "@oviwellness_",
+        url: "https://www.facebook.com/profile.php?id=61590423610288"
       }
     },
     address: {

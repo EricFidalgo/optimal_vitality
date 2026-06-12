@@ -15,6 +15,8 @@
         const root = document.getElementById("navbar-root");
         if (!root) return;
 
+        const c = window.clinicData?.contact;
+
         let marqueeHTML = '';
         if (window.clinicData?.marquee) {
             const singlePass = clinicData.marquee.map(item => 
@@ -108,6 +110,7 @@
                                 <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}</p>
                                 <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}</p>
                                 <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
+                                ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" class="text-white-50 text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ''}
                                 <hr class="border-secondary my-4">
                                 <p class="text-white-50 mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>${c.hours[0].days}:</strong> ${c.hours[0].time}</p>
                                 <p class="text-white-50 mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>${c.hours[1].days}:</strong> ${c.hours[1].time}</p>
