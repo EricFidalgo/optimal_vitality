@@ -289,6 +289,7 @@
 
         document.querySelectorAll('[data-global-contact="phone"]').forEach(el => {
             el.innerHTML = `<i class="fas fa-phone-alt me-2"></i> ${c.phone}`;
+            if (el.tagName === 'A') el.href = "tel:" + c.phone.replace(/\D/g, '');
         });
         document.querySelectorAll('[data-global-contact="email"]').forEach(el => {
             el.innerHTML = `<i class="fas fa-envelope me-2"></i> Email Clinical Team`;
