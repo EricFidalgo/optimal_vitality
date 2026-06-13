@@ -989,6 +989,33 @@ function initMain() {
             });
         });
     }
+
+    // FAQs Link Scroll Interceptor
+    document.querySelectorAll('a[href$="#faqs"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            const faqSection = document.getElementById('faqs');
+            if (faqSection) {
+                e.preventDefault();
+                faqSection.scrollIntoView({ behavior: 'smooth' });
+                history.pushState(null, null, '#faqs');
+            }
+        });
+    });
+
+    // Handle initial hash scroll after components are loaded and rendered
+    if (window.location.hash) {
+        try {
+            const targetElement = document.querySelector(window.location.hash);
+            if (targetElement) {
+                // Delay slightly to allow layout shifts from dynamic components to settle
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }, 150);
+            }
+        } catch (err) {
+            console.error("Failed to scroll to hash target:", err);
+        }
+    }
 }
 
 if (document.querySelector('[data-include-component]')) {
