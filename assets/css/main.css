@@ -430,10 +430,23 @@ h6 {
 }
 
 /* Peptide page hero CTA — transparent outline variant */
-#empty-bg-button {
+#empty-bg-button,
+#empty-bg-button:visited {
   background-color: transparent !important;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+#empty-bg-button:hover,
+#empty-bg-button:focus,
+#empty-bg-button:active,
+#empty-bg-button:focus-visible,
+#empty-bg-button:visited:hover,
+#empty-bg-button:visited:focus,
+#empty-bg-button:visited:active {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
 }
 
 /* ==========================================================================
