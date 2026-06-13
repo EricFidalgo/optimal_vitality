@@ -337,7 +337,7 @@
                       </div>
                       <div class="interest-card" data-interest="Regenerative Medicine">
                         <i class="fas fa-heartbeat"></i>
-                        <span>Regenerative</span>
+                        <span>Regenerative Medicine</span>
                       </div>
                     </div>
                     <!-- Hidden input to store chosen interest -->
@@ -498,10 +498,17 @@
 
         interestCards.forEach(card => {
             card.addEventListener('click', function () {
-                interestCards.forEach(c => c.classList.remove('selected'));
-                this.classList.add('selected');
-                inputInterest.value = this.getAttribute('data-interest');
-                document.getElementById('step1-error').classList.add('d-none');
+                this.classList.toggle('selected');
+                
+                const selectedCards = Array.from(interestCards).filter(c => c.classList.contains('selected'));
+                const selectedValues = selectedCards.map(c => c.getAttribute('data-interest'));
+                inputInterest.value = selectedValues.join(', ');
+                
+                if (selectedValues.length > 0) {
+                    document.getElementById('step1-error').classList.add('d-none');
+                } else {
+                    inputInterest.value = '';
+                }
             });
         });
 
@@ -558,7 +565,11 @@
             const accessKey = window.clinicData?.contact?.web3formsKey || "YOUR_ACCESS_KEY_HERE";
             formData.set('access_key', accessKey);
 
-            document.getElementById('success-chosen-service').innerText = inputInterest.value;
+            const selectedVal = inputInterest.value;
+            const successText = selectedVal.includes(',') 
+                ? `consultation for: ${selectedVal}`
+                : `${selectedVal} consultation`;
+            document.getElementById('success-chosen-service').innerText = successText;
 
             try {
                 // If the key is not configured yet, skip sending to avoid Web3Forms error responses.
