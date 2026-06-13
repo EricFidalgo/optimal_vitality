@@ -3500,3 +3500,30 @@ body.modal-open,
 .video-proof-section .carousel-indicators .active {
   background-color: var(--primary-color) !important;
 }
+
+/* Hover Utilities */
+.hover-white {
+  transition: color 0.2s ease;
+}
+.hover-white:hover {
+  color: #ffffff !important;
+}
+
+.hover-gold,
+.hover-primary {
+  transition: color 0.2s ease;
+}
+.hover-gold:hover,
+.hover-primary:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Footer Link Hovers */
+.footer a:not(.cta-btn) {
+  transition: color 0.2s ease;
+}
+.footer a:not(.cta-btn):hover {
+  color: #ffffff !important;
+}
+
+

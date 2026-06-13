@@ -106,9 +106,21 @@
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
-                                <p class="text-white-50 mb-3"><i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span></p>
-                                <p class="text-white-50 mb-3"><i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}</p>
-                                <p class="text-white-50 mb-3"><i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}</p>
+                                <p class="mb-3">
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.address.street}, ${c.address.city}, ${c.address.state} ${c.address.zip}`)}" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none hover-white">
+                                        <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span>
+                                    </a>
+                                </p>
+                                <p class="mb-3">
+                                    <a href="tel:${c.phone.replace(/\D/g, '')}" class="text-white-50 text-decoration-none hover-white">
+                                        <i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}
+                                    </a>
+                                </p>
+                                <p class="mb-3">
+                                    <a href="mailto:${c.email}" class="text-white-50 text-decoration-none hover-white">
+                                        <i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}
+                                    </a>
+                                </p>
                                 <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
                                 ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ''}
                                 <hr class="border-secondary my-4">
