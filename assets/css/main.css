@@ -310,52 +310,62 @@ h6 {
 /* ==========================================================================
    6. CTA BUTTON
    ========================================================================== */
-.cta-btn {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.cta-btn,
+.cta-btn:visited {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
   border-radius: 4px;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 0.75rem 1.75rem;
   transition: all 0.2s ease;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color) !important;
   letter-spacing: 1px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.cta-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-color: var(--primary-color);
+.cta-btn:hover,
+.cta-btn:visited:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
   text-decoration: none;
 }
 
 .cta-btn:focus,
 .cta-btn:active,
-.cta-btn:focus-visible {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-color: var(--primary-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+.cta-btn:focus-visible,
+.cta-btn:visited:focus,
+.cta-btn:visited:active {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
 }
 
-.navbar .cta-btn {
-  color: var(--secondary-color);
+.navbar .cta-btn,
+.navbar .cta-btn:visited {
+  color: var(--secondary-color) !important;
 }
 
-.navbar .cta-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-color: var(--primary-color);
+.navbar .cta-btn:hover,
+.navbar .cta-btn:visited:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
   text-decoration: none;
 }
 
 .navbar .cta-btn:focus,
-.navbar .cta-btn:active {
-  background-color: #cda863;
-  color: var(--secondary-color);
-  border-color: #cda863;
+.navbar .cta-btn:active,
+.navbar .cta-btn:focus-visible,
+.navbar .cta-btn:visited:focus,
+.navbar .cta-btn:visited:active {
+  background-color: #cda863 !important;
+  color: var(--secondary-color) !important;
+  border-color: #cda863 !important;
 }
 
 .hero .cta-btn {
@@ -370,17 +380,53 @@ h6 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.footer .cta-btn {
+/* Footer CTA button state locks */
+.footer .cta-btn,
+.footer .cta-btn:visited {
   font-size: 1.3rem;
   padding: 1.2rem 3.5rem;
   box-shadow: 0 10px 30px rgba(230, 195, 129, 0.2);
   border-width: 3px;
   margin-top: 1rem;
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
 }
 
-.footer .cta-btn:hover {
-  box-shadow: 0 15px 40px rgba(230, 195, 129, 0.3);
+.footer .cta-btn:hover,
+.footer .cta-btn:focus,
+.footer .cta-btn:active,
+.footer .cta-btn:focus-visible,
+.footer .cta-btn:visited:hover,
+.footer .cta-btn:visited:focus,
+.footer .cta-btn:visited:active {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 15px 40px rgba(230, 195, 129, 0.3) !important;
   transform: translateY(-3px) scale(1.02);
+  text-decoration: none !important;
+}
+
+/* Get Directions button state locks */
+#get-directions-btn,
+#get-directions-btn:visited {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+#get-directions-btn:hover,
+#get-directions-btn:focus,
+#get-directions-btn:active,
+#get-directions-btn:focus-visible,
+#get-directions-btn:visited:hover,
+#get-directions-btn:visited:focus,
+#get-directions-btn:visited:active {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Peptide page hero CTA — transparent outline variant */
