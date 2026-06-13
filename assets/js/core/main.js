@@ -1014,7 +1014,7 @@ function initMain() {
             if (faqSection) {
                 e.preventDefault();
                 faqSection.scrollIntoView({ behavior: 'smooth' });
-                history.pushState(null, null, '#faqs');
+                history.replaceState(null, document.title, window.location.pathname + window.location.search);
 
                 // Auto-close mobile menu if open
                 const offcanvasElement = document.getElementById('mobileMenu');
@@ -1036,9 +1036,12 @@ function initMain() {
                 // Delay slightly to allow layout shifts from dynamic components to settle
                 setTimeout(() => {
                     targetElement.scrollIntoView({ behavior: 'smooth' });
+                    // Clean URL hash so refreshing starts at the top
+                    history.replaceState(null, document.title, window.location.pathname + window.location.search);
                 }, 150);
             }
         } catch (err) {
+            const target = window.location.hash;
             console.error("Failed to scroll to hash target:", err);
         }
     }
