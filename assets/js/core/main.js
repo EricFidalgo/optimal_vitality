@@ -731,9 +731,10 @@ function initMain() {
 
         if (addressData) {
             const addr = `${addressData.street}, ${addressData.city}, ${addressData.state} ${addressData.zip}`;
+            const query = encodeURIComponent(addr);
             
             if (locationAddress) {
-                locationAddress.innerHTML = `${addressData.street}<br>${addressData.city}, ${addressData.state} ${addressData.zip}`;
+                locationAddress.innerHTML = `<a href="https://www.google.com/maps/dir/?api=1&destination=${query}" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none hover-gold">${addressData.street}<br>${addressData.city}, ${addressData.state} ${addressData.zip}</a>`;
             }
 
             if (locationHours && hoursData) {
@@ -751,7 +752,6 @@ function initMain() {
                 locationContact.innerHTML = `Phone: <a href="tel:${phone.replace(/\D/g, '')}" class="text-white text-decoration-none hover-gold fw-semibold">${phone}</a><br>Email: <a href="mailto:${email}" class="text-white text-decoration-none hover-gold fw-semibold">${email}</a>`;
             }
 
-            const query = encodeURIComponent(addr);
             if (getDirectionsBtn) {
                 getDirectionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${query}`;
             }
