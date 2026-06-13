@@ -256,6 +256,19 @@
             });
         });
 
+        // Auto-close mobile menu when clicking any link inside it (using event delegation to survive dynamic innerHTML updates)
+        if (offcanvasElement && offcanvasInstance) {
+            offcanvasElement.addEventListener('click', function (e) {
+                const link = e.target.closest('a');
+                if (!link) return;
+                if (link.classList.contains('mobile-drill-open') || link.classList.contains('mobile-drill-back')) {
+                    return; // Don't close when navigating drill-down menus
+                }
+                if (link.getAttribute('href') === '#') { return; }
+                offcanvasInstance.hide();
+            });
+        }
+
         // Navbar Scroll Effect
         const navbar = document.querySelector('.navbar');
         if (navbar) {
