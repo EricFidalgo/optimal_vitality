@@ -2,6 +2,17 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
+      /* 
+    FUTURE: ADD SPECIFIC TESTIMONIALS
+    testimonials: [
+      {
+        initials: "JD",
+        name: "John D.",
+        tag: "JOINT REPAIR",
+        quote: "BPC-157 significantly supported my shoulder recovery in 6 weeks."
+      }
+    ], 
+    */
       // ─── Card data ────────────────────────────────────────────────────────
       id: "regenerative-medicine",
       type: "additional",
