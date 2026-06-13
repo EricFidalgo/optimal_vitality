@@ -2858,13 +2858,20 @@ body.modal-open,
   padding-right: 0px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991.98px) {
 #mobile-team-view {
   padding-bottom: 10px !important; 
 }
 #mobile-team-intro-text {
-  font-size:3.5rem !important;
+  font-size: 3rem !important;
 }
+}
+
+/* Ensure provider detail modals are wider on tablet viewports (iPad mini/air) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .modal-dialog.modal-lg {
+    max-width: 90% !important;
+  }
 }
 
 .modal-close-btn {
