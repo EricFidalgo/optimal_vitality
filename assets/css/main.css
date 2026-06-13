@@ -3421,31 +3421,30 @@ body.modal-open,
 /* Play button overlay */
 .video-play-btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 60px;
-  height: 60px;
+  bottom: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
   background-color: rgba(230, 195, 129, 0.9); /* var(--primary-color) */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #1b1b1b;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 2;
 }
 
-.video-play-btn i {
-  margin-left: 4px; /* visually center the play icon */
+.video-play-btn i.fa-play {
+  margin-left: 2px; /* visually center only the play icon */
 }
 
 .video-proof-card:hover .video-play-btn {
   background-color: #ffffff;
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 6px 20px rgba(230, 195, 129, 0.4);
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(230, 195, 129, 0.4);
 }
 
 /* Info section */

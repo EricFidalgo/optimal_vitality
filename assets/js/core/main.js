@@ -517,7 +517,7 @@ function initMain() {
                         if (!video.customThumbnail) {
                             cardStyle = 'background: #010101;';
                             placeholderHTML = `
-                                <div class="video-placeholder-overlay d-flex flex-column align-items-center justify-content-center w-100 h-100 position-absolute top-0 start-0 text-white" style="box-shadow: inset 0 0 40px rgba(0,242,254,0.2), inset 0 0 20px rgba(254,44,85,0.2);">
+                                <div class="video-placeholder-overlay d-flex flex-column align-items-center justify-content-center w-100 h-100 position-absolute top-0 start-0 text-white" style=" inset 0 0 20px rgba(254,44,85,0.2);">
                                     <i class="fab fa-tiktok" style="font-size: 2.8rem; color: #fff; filter: drop-shadow(-2px -2px 0 #00f2fe) drop-shadow(2px 2px 0 #fe2c55) drop-shadow(0 2px 10px rgba(0,0,0,0.4));"></i>
                                 </div>
                             `;
