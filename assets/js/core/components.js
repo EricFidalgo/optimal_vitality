@@ -450,13 +450,13 @@
 
         const bootstrapModal = new bootstrap.Modal(modalElement);
 
-        // Intercept clicks to any #consultation button
+        // Intercept clicks to any #consultation button and open external booking link
+        const BOOKING_URL = 'https://www.optimantra.com/optimus/patient/patientaccess/prospects?pid=a2poUjdvMUpIY0I1S3ZSY2ZUaFRjZz09';
         document.addEventListener('click', function (e) {
             const targetLink = e.target.closest('a[href="#consultation"]');
             if (targetLink) {
                 e.preventDefault();
-                resetForm();
-                bootstrapModal.show();
+                window.open(BOOKING_URL, '_blank', 'noopener,noreferrer');
             }
         });
 
