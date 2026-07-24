@@ -575,9 +575,6 @@
 
             const formData = new FormData(form);
             
-            // Access Key from window config
-            const accessKey = window.clinicData?.contact?.web3formsKey || "YOUR_ACCESS_KEY_HERE";
-            formData.set('access_key', accessKey);
 
             const selectedVal = inputInterest.value;
             const successText = selectedVal.includes(',') 

@@ -7,7 +7,7 @@
    ========================================================================== */
 :root {
   --primary-color: #e6c381;
-  --secondary-color: #1f406d;
+  --secondary-color: #051411;
   --bg-white: #ffffff;
   --bg-light: #f8f9fa;
   --text-dark: #1b1b1b;
@@ -200,7 +200,7 @@ h6 {
    5. NAVBAR
    ========================================================================== */
 .navbar.fixed-top {
-  background-color: var(--bg-white);
+  background-color: var(--secondary-color);
   padding: 0 !important;
   transition:
     background-color 0.3s ease,
@@ -218,7 +218,6 @@ h6 {
 }
 
 .navbar.fixed-top.scrolled-nav {
-  background-color: var(--bg-white);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -273,7 +272,7 @@ h6 {
 }
 
 .navbar .nav-link {
-  color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 1rem;
@@ -455,7 +454,7 @@ h6 {
 .hero {
   background: radial-gradient(
     circle at center,
-    #2c527a 0%,
+    #1c3838 0%,
     var(--secondary-color) 100%
   );
   position: relative;

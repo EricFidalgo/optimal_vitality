@@ -52,7 +52,6 @@ Object.assign(window.clinicData, {
   contact: {
     phone: "(727) 555-0199", // TODO: Replace with your real clinic phone number
     email: "info@oviwellness.com",
-    web3formsKey: "YOUR_ACCESS_KEY_HERE", // Enter your Web3Forms access key here to route form submissions to your email
     socials: {
       instagram: {
         handle: "@oviwellness_",
@@ -64,13 +63,13 @@ Object.assign(window.clinicData, {
       }
     },
     address: {
-      street: "600 2nd Ave NE",
+      street: "5029 Central Ave,",
       city: "St. Petersburg",
       state: "FL",
-      zip: "33701"
+      zip: "33710"
     },
     hours: [
-      { days: "Mon - Fri", time: "8:00 AM - 6:00 PM" },
+      { days: "Mon - Fri", time: "9:00 AM - 5:00 PM" },
       { days: "Sat - Sun", time: "Closed" }
     ]
   },
@@ -112,8 +111,9 @@ Object.assign(window.clinicData, {
     { label: "Doctor-Led Protocols", icon: "fa-user-md" },
     { label: "St. Petersburg, FL", icon: "fa-map-marker-alt" },
     { label: "Licensed Medical Clinic", icon: "fa-shield-alt" },
-    { label: "5-Star Rated Clinic", icon: "fa-star" },
+    /*{ label: "5-Star Rated Clinic", icon: "fa-star" },*/
     { label: "HIPAA Compliant", icon: "fa-user-shield" },
+    {label: "Tailored Protocols", icon: "fa-clipboard-user"}
   ],
 
 team: [
