@@ -8,9 +8,17 @@
 :root {
   --primary-color: #e6c381;
   --secondary-color: #051411;
-  --bg-white: #FAF9F6;
-  --bg-light: #f8f9fa;
+  --bg-white: #f4f0ea;
+  --bg-light: #e8e3d9;
   --text-dark: #1b1b1b;
+}
+
+.bg-white {
+  background-color: var(--bg-white) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-light) !important;
 }
 
 html {
@@ -105,7 +113,7 @@ h6 {
 }
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.08) !important;
+  box-shadow: 0 10px 25px rgba(30, 45, 23, 0.08) !important;
   border-color: rgba(230, 195, 129, 0.4) !important;
 }
 
@@ -118,7 +126,7 @@ h6 {
 
 .carousel-indicators button,
 .carousel-indicators [data-bs-target] {
-  background-color: rgba(31, 64, 109, 0.25);
+  background-color: rgba(30, 45, 23, 0.25);
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -154,7 +162,7 @@ h6 {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--secondary-color), #0f2036);
+  background: linear-gradient(135deg, var(--secondary-color), #0e180b);
   border: 1px solid rgba(230, 195, 129, 0.3);
   color: var(--primary-color);
   display: flex;
@@ -163,7 +171,7 @@ h6 {
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 15px rgba(31, 64, 109, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 5;
   padding: 0;
 }
@@ -501,7 +509,7 @@ h6 {
   padding-top: 180px;
   padding-bottom: 120px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(31, 64, 109, 0.08);
+  box-shadow: 0 4px 20px rgba(30, 45, 23, 0.08);
 }
 
 .hero-content {
@@ -561,7 +569,7 @@ h6 {
 /* Top Scrolling Announcement/Marquee Bar */
 .top-marquee-bar {
   background: #343939;
-  border-bottom: 1px solid rgba(31, 64, 109, 0.08);
+  border-bottom: 1px solid rgba(30, 45, 23, 0.08);
   height: 36px;
   display: flex;
   align-items: center;
@@ -701,9 +709,9 @@ h6 {
 .hormone-banner {
   background: linear-gradient(
     135deg,
-    #0f2036 0%,
+    #0e180b 0%,
     var(--secondary-color) 50%,
-    #0f2036 100%
+    #0e180b 100%
   );
   border-bottom: 4px solid var(--primary-color);
   border-top: 4px solid var(--primary-color);
@@ -786,8 +794,8 @@ h6 {
 .therapy-tabs-wrapper {
   display: inline-flex;
   background: var(--bg-white);
-  border: 1px solid rgba(31, 64, 109, 0.08);
-  box-shadow: 0 8px 25px rgba(31, 64, 109, 0.06);
+  border: 1px solid rgba(30, 45, 23, 0.08);
+  box-shadow: 0 8px 25px rgba(30, 45, 23, 0.06);
   border-radius: 50px;
   padding: 8px;
   max-width: 100%;
@@ -872,7 +880,7 @@ h6 {
   background: var(--bg-white);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(31, 64, 109, 0.04);
+  border: 1px solid rgba(30, 45, 23, 0.04);
   border-left: 4px solid var(--primary-color);
   transition:
     transform 0.3s ease,
@@ -883,7 +891,7 @@ h6 {
 @media (hover: hover) {
   .feature-list li:hover {
     transform: translateX(8px);
-    box-shadow: 0 8px 20px rgba(31, 64, 109, 0.08);
+    box-shadow: 0 8px 20px rgba(30, 45, 23, 0.08);
   }
 }
 
@@ -899,7 +907,7 @@ h6 {
 .premium-services {
   background: radial-gradient(
     circle at top right,
-    #0f2036 0%,
+    #0e180b 0%,
     var(--secondary-color) 100%
   );
   position: relative;
@@ -1064,7 +1072,7 @@ h6 {
 .team-list-item {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(31, 64, 109, 0.1);
+  border-bottom: 1px solid rgba(30, 45, 23, 0.1);
   position: relative;
   transition: transform 0.3s ease;
 }
@@ -1146,7 +1154,7 @@ h6 {
    14. TRUST SECTION
    ========================================================================== */
 .trust-section {
-  background: linear-gradient(135deg, #0f2036 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, #0e180b 0%, var(--secondary-color) 100%);
   position: relative;
 }
 
@@ -1167,7 +1175,7 @@ h6 {
   background: var(--bg-white);
   border-radius: 12px;
   margin-bottom: 16px;
-  border: 1px solid rgba(31, 64, 109, 0.08);
+  border: 1px solid rgba(30, 45, 23, 0.08);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
   overflow: hidden;
   transition:
@@ -1213,7 +1221,7 @@ h6 {
    16. FOOTER
    ========================================================================== */
 .footer {
-  background: #0f2036;
+  background: linear-gradient(180deg, var(--secondary-color) 0%, #0e180b 100%);
   border-top: 6px solid var(--primary-color);
   position: relative;
   overflow: hidden;
@@ -1337,7 +1345,7 @@ h6 {
     background-color: rgba(255, 255, 255, 0.82) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(31, 64, 109, 0.12) !important;
+    border: 1px solid rgba(30, 45, 23, 0.12) !important;
     border-radius: 12px;
     padding: 10px 0;
     min-width: 250px;
@@ -1396,7 +1404,7 @@ h6 {
    20. BEFORE / AFTER SLIDER (Peptides page)
    ========================================================================== */
 .ba-card {
-  border-color: rgba(31, 64, 109, 0.15) !important;
+  border-color: rgba(30, 45, 23, 0.15) !important;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
@@ -1470,7 +1478,7 @@ h6 {
   }
   #athletic-stacks .bg-white:hover {
     transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(31, 64, 109, 0.1) !important;
+    box-shadow: 0 15px 35px rgba(30, 45, 23, 0.1) !important;
     z-index: 2;
   }
 
@@ -1505,14 +1513,14 @@ h6 {
 
 .process-timeline .step-line {
   width: 2px;
-  background-color: rgba(31, 64, 109, 0.1);
+  background-color: rgba(30, 45, 23, 0.1);
   margin-top: 5px;
   margin-bottom: -5px;
   min-height: 20px;
 }
 
 .process-timeline .step-card {
-  border-color: rgba(31, 64, 109, 0.06) !important;
+  border-color: rgba(30, 45, 23, 0.06) !important;
   transition: all 0.4s ease;
 }
 
@@ -1543,7 +1551,7 @@ h6 {
 @media (min-width: 992px) {
   .process-timeline .process-step:hover .step-card {
     transform: scale(1.05) !important;
-    box-shadow: 0 15px 35px rgba(31, 64, 109, 0.1) !important;
+    box-shadow: 0 15px 35px rgba(30, 45, 23, 0.1) !important;
   }
 
   .process-timeline .process-step.active .step-card {
@@ -1556,7 +1564,7 @@ h6 {
    ========================================================================== */
 .btn-symptom {
   background-color: var(--bg-white);
-  border-color: rgba(31, 64, 109, 0.1) !important;
+  border-color: rgba(30, 45, 23, 0.1) !important;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
   transition:
@@ -1582,7 +1590,7 @@ h6 {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color) !important;
   transform: translateX(10px);
-  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.2);
+  box-shadow: 0 10px 25px rgba(30, 45, 23, 0.2);
 }
 
 .btn-symptom.active .text-dark {
@@ -1634,7 +1642,7 @@ h6 {
   }
 
   .offcanvas-header .btn-close {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231f406d'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e6c381'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") !important;
     opacity: 1;
   }
 
@@ -1653,7 +1661,7 @@ h6 {
   }
 
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2831, 64, 109, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28230, 195, 129, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
   }
 
   .navbar-toggler:focus {
@@ -1883,8 +1891,8 @@ h6 {
     border-radius: 16px;
     background-color: var(--bg-white);
     color: var(--secondary-color);
-    border: 1px solid rgba(31, 64, 109, 0.1);
-    box-shadow: 0 4px 10px rgba(31, 64, 109, 0.05);
+    border: 1px solid rgba(30, 45, 23, 0.1);
+    box-shadow: 0 4px 10px rgba(30, 45, 23, 0.05);
     box-sizing: border-box;
     position: relative;
   }
@@ -1931,7 +1939,7 @@ h6 {
   .carousel-control-next {
     width: 45px !important;
     height: 45px !important;
-    background-color: rgba(31, 64, 109, 0.2);
+    background-color: rgba(30, 45, 23, 0.2);
     border-radius: 50%;
     top: 50% !important;
     transform: translateY(-50%) !important;
@@ -1962,7 +1970,7 @@ h6 {
    25. 3-STEP PROTOCOL QUIZ
    ========================================================================== */
 .quiz-section {
-  background: linear-gradient(135deg, #0f2036 0%, var(--secondary-color) 100%);
+  background: linear-gradient(135deg, #0e180b 0%, var(--secondary-color) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -2258,9 +2266,9 @@ h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(31, 64, 109, 0.07);
+  background: rgba(30, 45, 23, 0.07);
   color: var(--secondary-color);
-  border: 1px solid rgba(31, 64, 109, 0.12);
+  border: 1px solid rgba(30, 45, 23, 0.12);
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.78rem;
@@ -2285,7 +2293,7 @@ h6 {
 }
 
 .quiz-social-proof {
-  background: rgba(31, 64, 109, 0.04);
+  background: rgba(30, 45, 23, 0.04);
   border-left: 3px solid var(--primary-color);
   padding: 12px 16px;
   border-radius: 0 8px 8px 0;
@@ -2368,8 +2376,8 @@ h6 {
   background: var(--bg-white);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(31, 64, 109, 0.07);
-  border: 1px solid rgba(31, 64, 109, 0.08);
+  box-shadow: 0 4px 20px rgba(30, 45, 23, 0.07);
+  border: 1px solid rgba(30, 45, 23, 0.08);
 }
 
 .perf-table {
@@ -2406,7 +2414,7 @@ h6 {
 
 .perf-table td {
   padding: 13px 20px;
-  border-top: 1px solid rgba(31, 64, 109, 0.05);
+  border-top: 1px solid rgba(30, 45, 23, 0.05);
 }
 
 .perf-table td:first-child {
@@ -2443,8 +2451,8 @@ h6 {
 }
 
 .perf-stat-pill {
-  background: rgba(31, 64, 109, 0.07);
-  border: 1px solid rgba(31, 64, 109, 0.1);
+  background: rgba(30, 45, 23, 0.07);
+  border: 1px solid rgba(30, 45, 23, 0.1);
   border-radius: 50px;
   padding: 8px 16px;
   font-size: 0.75rem;
@@ -2467,14 +2475,14 @@ h6 {
   background: var(--bg-white);
   border-radius: 14px;
   padding: 20px 24px;
-  border: 1px solid rgba(31, 64, 109, 0.08);
+  border: 1px solid rgba(30, 45, 23, 0.08);
   border-left: 4px solid var(--primary-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stack-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(31, 64, 109, 0.1);
+  box-shadow: 0 12px 30px rgba(30, 45, 23, 0.1);
 }
 
 .stack-popular-badge {
@@ -2512,7 +2520,7 @@ h6 {
   background: var(--bg-light);
   border-radius: 14px;
   padding: 24px;
-  border: 1px solid rgba(31, 64, 109, 0.06);
+  border: 1px solid rgba(30, 45, 23, 0.06);
 }
 
 .myth-label {
@@ -2530,7 +2538,7 @@ h6 {
   font-style: italic;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(31, 64, 109, 0.07);
+  border-bottom: 1px solid rgba(30, 45, 23, 0.07);
 }
 
 .reality-label {
@@ -2599,7 +2607,7 @@ h6 {
   background: var(--bg-light);
   border-radius: 20px;
   padding: 40px;
-  border: 1px solid rgba(31, 64, 109, 0.06);
+  border: 1px solid rgba(30, 45, 23, 0.06);
 }
 
 .eligibility-card-row {
@@ -2608,7 +2616,7 @@ h6 {
   gap: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(31, 64, 109, 0.06);
+  border-bottom: 1px solid rgba(30, 45, 23, 0.06);
 }
 
 .eligibility-card-row:last-child {
@@ -2679,7 +2687,7 @@ h6 {
   background: var(--bg-white);
   border-radius: 18px;
   padding: 32px 28px;
-  border: 1px solid rgba(31, 64, 109, 0.07);
+  border: 1px solid rgba(30, 45, 23, 0.07);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   height: 100%;
@@ -2687,7 +2695,7 @@ h6 {
 
 .differentiator-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(31, 64, 109, 0.09);
+  box-shadow: 0 16px 40px rgba(30, 45, 23, 0.09);
   border-color: rgba(230, 195, 129, 0.35);
 }
 
@@ -2769,14 +2777,14 @@ h6 {
   justify-content: center;
   gap: 10px;
   background: #ffffff;
-  border: 1px solid rgba(31, 64, 109, 0.08);
+  border: 1px solid rgba(30, 45, 23, 0.08);
   border-radius: 12px;
   padding: 18px 15px;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--secondary-color);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 12px rgba(31, 64, 109, 0.03);
+  box-shadow: 0 4px 12px rgba(30, 45, 23, 0.03);
   text-align: center;
   width: 100%;
   user-select: none;
@@ -2794,14 +2802,14 @@ h6 {
 
 .symptom-chip:hover {
   transform: translateY(-3px) scale(1.025);
-  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.08);
+  box-shadow: 0 10px 25px rgba(30, 45, 23, 0.08);
   border-color: rgba(230, 195, 129, 0.45) !important;
 }
 
 .symptom-chip.active {
   background: var(--secondary-color) !important;
   border-color: var(--primary-color) !important;
-  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.18) !important;
+  box-shadow: 0 10px 25px rgba(30, 45, 23, 0.18) !important;
 }
 
 .symptom-chip.active span {
@@ -2831,7 +2839,7 @@ h6 {
    29. TEAM / PROVIDER PAGE
    ========================================================================== */
 .provider-card {
-  box-shadow: 0 4px 20px rgba(31, 64, 109, 0.04) !important;
+  box-shadow: 0 4px 20px rgba(30, 45, 23, 0.04) !important;
   border: 1px solid rgba(0, 0, 0, 0.03) !important;
 }
 
@@ -2939,7 +2947,7 @@ body.modal-open,
 
 .compliance-panel:hover {
   border-color: var(--primary-color) !important;
-  box-shadow: 0 8px 25px rgba(31, 64, 109, 0.05) !important;
+  box-shadow: 0 8px 25px rgba(30, 45, 23, 0.05) !important;
 }
 
 .gs-reveal {
@@ -2976,15 +2984,15 @@ body.modal-open,
 }
 
 .advantage-bullet-card {
-  border-color: rgba(31, 64, 109, 0.07) !important;
+  border-color: rgba(30, 45, 23, 0.07) !important;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 8px rgba(31, 64, 109, 0.01);
+  box-shadow: 0 2px 8px rgba(30, 45, 23, 0.01);
 }
 
 .advantage-bullet-card:hover {
   border-color: rgba(230, 195, 129, 0.45) !important;
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(31, 64, 109, 0.05);
+  box-shadow: 0 10px 25px rgba(30, 45, 23, 0.05);
 }
 
 .advantage-bullet-card:hover .bullet-icon-wrapper {
@@ -3004,8 +3012,8 @@ body.modal-open,
   background: var(--bg-white);
   border-radius: 20px;
   padding: 36px 30px;
-  border: 1px solid rgba(31, 64, 109, 0.08) !important;
-  box-shadow: 0 4px 20px rgba(31, 64, 109, 0.02) !important;
+  border: 1px solid rgba(30, 45, 23, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(30, 45, 23, 0.02) !important;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
   height: 100%;
   display: flex;
@@ -3023,15 +3031,15 @@ body.modal-open,
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--secondary-color) 0%, rgba(31, 64, 109, 0.3) 100%);
+  background: linear-gradient(90deg, var(--secondary-color) 0%, rgba(30, 45, 23, 0.3) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .treatment-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(31, 64, 109, 0.08) !important;
-  border-color: rgba(31, 64, 109, 0.2) !important;
+  box-shadow: 0 20px 40px rgba(30, 45, 23, 0.08) !important;
+  border-color: rgba(30, 45, 23, 0.2) !important;
 }
 
 .treatment-card:hover::before {
@@ -3042,7 +3050,7 @@ body.modal-open,
 .treatment-card:hover .btn-treatment-card {
   background-color: var(--secondary-color);
   color: #ffffff !important;
-  box-shadow: 0 4px 15px rgba(31, 64, 109, 0.15);
+  box-shadow: 0 4px 15px rgba(30, 45, 23, 0.15);
 }
 
 .treatment-card:hover .btn-treatment-card .transition-arrow {
@@ -3104,7 +3112,7 @@ body.modal-open,
 .btn-treatment-card:hover {
   background-color: var(--secondary-color);
   color: #ffffff !important;
-  box-shadow: 0 4px 15px rgba(31, 64, 109, 0.15);
+  box-shadow: 0 4px 15px rgba(30, 45, 23, 0.15);
 }
 
 .transition-arrow {
@@ -3177,7 +3185,7 @@ body.modal-open,
    33. INTRODUCTORY OFFER CALLOUT BAR
    ========================================================================== */
 .intro-offer-bar {
-  background: linear-gradient(90deg, #0b1523 0%, #12223a 100%);
+  background: linear-gradient(90deg, #0e180b 0%, var(--secondary-color) 100%);
   border-bottom: 1px solid rgba(230, 195, 129, 0.25);
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -3194,7 +3202,7 @@ body.modal-open,
 
 .intro-offer-bar .btn-claim {
   background-color: var(--primary-color);
-  color: #0b1523;
+  color: var(--secondary-color);
   font-weight: 700;
   transition: all 0.3s ease;
 }
@@ -3208,7 +3216,7 @@ body.modal-open,
    34. MULTI-STEP CONSULTATION MODAL
    ========================================================================== */
 #consultationModal .modal-content {
-  background: #0f1c2e;
+  background: linear-gradient(180deg, var(--secondary-color) 0%, #0e180b 100%);
   border: 1px solid rgba(230, 195, 129, 0.2);
   color: #fff;
   border-radius: 12px;
@@ -3392,7 +3400,7 @@ body.modal-open,
 
 .hero-promo-badge .promo-tag {
   background: var(--primary-color);
-  color: #0b1523;
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 0.65rem;
   letter-spacing: 1px;
