@@ -45,6 +45,10 @@
                 <div class="container navbar-container">
                     <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
                         <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                        <div class="brand-text d-flex flex-column justify-content-center ms-2">
+                            <span class="brand-title">OVI</span>
+                            <span class="brand-subtitle">WELLNESS</span>
+                        </div>
                     </a>
 
                     <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
@@ -60,6 +64,10 @@
                         <div class="offcanvas-header border-bottom border-secondary bg-white">
                             <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
                                 <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                                <div class="brand-text d-flex flex-column justify-content-center ms-2">
+                                    <span class="brand-title text-dark">OVI</span>
+                                    <span class="brand-subtitle">WELLNESS</span>
+                                </div>
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
@@ -132,7 +140,9 @@
 
                     <div class="mt-5 pt-4 border-top border-secondary text-center">
                         <p class="text-white-50 max-w-700 mx-auto mb-3" style="font-size: 0.8rem; line-height: 1.6;">
-                            <strong>Medical Disclaimer:</strong> Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment.
+                            <strong>Medical Disclaimer:</strong> All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.
+
+                            Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.
                         </p>
                         <p class="mb-3 text-white-50"><small>&copy; 2026 Optimal Vitality Institute. All rights reserved.</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">

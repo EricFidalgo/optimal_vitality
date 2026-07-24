@@ -54,9 +54,19 @@ window.clinicData.services.push({
             title: "Sustainable Weight Loss",
             protocol: "Tirzepatide Optimization",
             description: "Patient achieved a 15% reduction in total body weight while preserving lean muscle mass and improving metabolic markers."
+          }, 
+          {
+            imageAfter: "assets/images/photos/glp-after.jpg",
+            imageBefore: "assets/images/photos/glp-before.jpg",
+            badgeAfter: "Week 16",
+            badgeBefore: "Baseline",
+            title: "Sustainable Weight Loss",
+            protocol: "Tirzepatide Optimization",
+            description: "Patient achieved a 15% reduction in total body weight while preserving lean muscle mass and improving metabolic markers."
           }
         ]
       },
+      
       
       quiz: {
         badge: "Clinical Self-Assessment",
