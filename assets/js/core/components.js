@@ -61,18 +61,23 @@
                     </button>
 
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-                        <div class="offcanvas-header border-bottom border-secondary bg-white">
+                        <div class="offcanvas-header border-bottom border-secondary bg-transparent">
                             <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
                                 <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                                 <div class="brand-text d-flex flex-column justify-content-center ms-2">
-                                    <span class="brand-title text-dark">OVI</span>
+                                    <span class="brand-title text-white">OVI</span>
                                     <span class="brand-subtitle">WELLNESS</span>
                                 </div>
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body d-flex flex-column text-center">
-                            <ul class="navbar-nav mb-auto mt-4" id="mobile-navbar-links"></ul>
+                            <div class="navbar-nav mb-auto mt-4 w-100" id="mobile-navbar-links">
+                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#treatments">Treatments</a></div>
+                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team.html">Team</a></div>
+                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#faqs">FAQs</a></div>
+                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
+                            </div>
                             <div class="mt-auto pb-4">
                                 <a href="#consultation" class="btn cta-btn w-100">Book Your Consultation</a>
                             </div>

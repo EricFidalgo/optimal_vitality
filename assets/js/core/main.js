@@ -302,7 +302,7 @@ function initMain() {
             // Mobile nav: App-style sliding drill-down
             if (mobileNav) {
                 mobileNav.className = 'w-100 mt-4 position-relative flex-grow-1';
-                mobileNav.style.cssText = 'list-style: none; padding: 0; overflow: hidden;';
+                mobileNav.style.cssText = 'padding: 0; overflow: hidden; min-height: 250px; display: block;';
 
                 let mainLinks = '';
                 let subPanels = '';
@@ -310,35 +310,35 @@ function initMain() {
                 data.navigation.forEach((link, index) => {
                     if (link.dropdown) {
                         mainLinks += `
-                            <li class="w-100 mb-3">
+                            <div class="w-100 mb-3">
                                 <a class="mobile-drill-open d-flex justify-content-center align-items-center gap-2 p-2 text-decoration-none text-white fw-bold" href="#" data-target="panel-${index}" style="font-size: 1.3rem; letter-spacing: 1px;">
                                     ${link.label} <i class="fas fa-chevron-right text-primary" style="font-size: 1rem;"></i>
                                 </a>
-                            </li>
+                            </div>
                         `;
                         const dropItems = link.dropdown.map(sub =>
-                            `<li class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white text-center" href="${resolveUrl(sub.href)}" style="font-size: 1.1rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase;">${sub.label}</a></li>`
+                            `<div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white text-center" href="${resolveUrl(sub.href)}" style="font-size: 1.1rem; letter-spacing: 1px; font-weight: 900; text-transform: uppercase;">${sub.label}</a></div>`
                         ).join('');
                         subPanels += `
                             <div id="panel-${index}" class="mobile-sub-panel">
                                 <button class="btn mobile-drill-back text-primary fw-bold text-uppercase mb-4 mt-2 w-100 d-flex align-items-center justify-content-center gap-2" style="font-size: 1.1rem; letter-spacing: 1px; border: none; background: transparent;">
                                     <i class="fas fa-chevron-left"></i> Back to Menu
                                 </button>
-                                <ul class="p-0 m-0 w-100" style="list-style: none;">${dropItems}</ul>
+                                <div class="p-0 m-0 w-100">${dropItems}</div>
                             </div>
                         `;
                     } else {
                         mainLinks += `
-                            <li class="w-100 mb-3">
+                            <div class="w-100 mb-3">
                                 <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${resolveUrl(link.href)}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
-                            </li>
+                            </div>
                         `;
                     }
                 });
 
                 mobileNav.innerHTML = `
                     <div class="mobile-nav-main w-100" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);">
-                        <ul class="p-0 m-0 w-100" style="list-style: none;">${mainLinks}</ul>
+                        <div class="p-0 m-0 w-100">${mainLinks}</div>
                     </div>
                     ${subPanels}
                 `;
