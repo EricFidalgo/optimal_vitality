@@ -3649,4 +3649,26 @@ body.modal-open,
   color: #ffffff !important;
 }
 
+/* ==========================================================================
+   35. MEMBERSHIP TIERS & IV EXPLANATION BANNER
+   ========================================================================== */
+.membership-card {
+  border-color: rgba(30, 45, 23, 0.08) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(30, 45, 23, 0.1) !important;
+}
+
+.featured-membership {
+  box-shadow: 0 15px 35px rgba(30, 45, 23, 0.25) !important;
+}
+
+.iv-explanation-banner {
+  border-color: rgba(230, 195, 129, 0.3) !important;
+  background-color: var(--bg-light) !important;
+}
+
 
