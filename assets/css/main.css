@@ -3845,6 +3845,33 @@ body.modal-open,
   background: linear-gradient(135deg, #1c3838 0%, var(--secondary-color) 100%) !important;
 }
 
+.membership-card.vip-executive-card,
+.mobile-plan-accordion .vip-executive-card {
+  background: linear-gradient(180deg, #fbf7f0 0%, #f5eee3 100%) !important;
+  border: 1.5px solid rgba(230, 195, 129, 0.65) !important;
+  border-top: 4px solid var(--primary-color) !important;
+  box-shadow: 0 12px 30px rgba(30, 45, 23, 0.08) !important;
+}
+
+.vip-executive-card .accordion-button {
+  background-color: transparent !important;
+}
+
+.vip-executive-card .btn-outline-secondary {
+  border: 1.5px solid var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  font-weight: 700 !important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.vip-executive-card .btn-outline-secondary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 8px 22px rgba(230, 195, 129, 0.5) !important;
+  transform: translateY(-2px);
+}
+
 .membership-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 35px rgba(30, 45, 23, 0.1) !important;
@@ -3872,9 +3899,39 @@ body.modal-open,
   outline: none !important;
 }
 
+/* Best Value Badge Styling across Desktop, iPad, and Mobile */
+.badge-best-value {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  font-weight: 800 !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(230, 195, 129, 0.45) !important;
+  display: inline-block;
+}
+
+/* VIP Executive Luxury Badge */
+.badge-vip-executive {
+  background-color: rgba(230, 195, 129, 0.18) !important;
+  color: var(--secondary-color) !important;
+  border: 1px solid rgba(230, 195, 129, 0.6) !important;
+  font-weight: 800 !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  display: inline-block;
+}
+
 .mobile-plan-accordion .accordion-button::after {
   background-size: 1rem;
   filter: opacity(0.7);
+}
+
+#headingOptimal .accordion-button::after {
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.95 !important;
 }
 
 /* Why-Us Section Card Backgrounds */
