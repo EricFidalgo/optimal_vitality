@@ -76,7 +76,7 @@ function initMain() {
      * Supports either infinite scroll snapping loop (cloning 20x + silent teleportation)
      * or standard scroll behavior (cloning 1x).
      */
-    function initMobileTrack(desktopId, trackId, dotsId = null, isInfinite = true, initialIndex = 0) {
+    function initMobileTrack(desktopId, trackId, dotsId = null, isInfinite = false, initialIndex = 0) {
         const desktopContainer = document.getElementById(desktopId);
         const mobileTrack = document.getElementById(trackId);
         const mobileDots = dotsId ? document.getElementById(dotsId) : null;
@@ -87,7 +87,6 @@ function initMain() {
         const numOriginals = originals.length;
         if (numOriginals === 0) return;
 
-        // Force non-infinite and center layout if there is only 1 item
         const actualInfinite = numOriginals === 1 ? false : isInfinite;
 
         if (mobileDots) {
@@ -101,16 +100,16 @@ function initMain() {
                 mobileTrack.style.justifyContent = '';
             }
 
-            // 1. Generate indicator dots
+            // 1. Generate indicator dots — Force 1st dot active on start
             mobileDots.innerHTML = '';
             if (numOriginals > 1) {
                 originals.forEach((_, index) => {
-                    mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === initialIndex ? 'active' : ''}"></button>`;
+                    mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
                 });
             }
         }
 
-        // 2. Clone items into the track (hide while building to avoid jitter)
+        // 2. Clone items into the track
         const SETS = actualInfinite ? 20 : 1;
         mobileTrack.innerHTML = '';
         mobileTrack.style.opacity = '0';
@@ -121,54 +120,74 @@ function initMain() {
                 const clone = document.createElement('div');
                 clone.className = 'native-scroll-item';
                 clone.setAttribute('data-original-index', index);
-                // Unwrap Bootstrap col-* wrappers
                 clone.innerHTML = item.className.match(/\bcol-/) ? item.innerHTML : '';
                 if (!clone.innerHTML) clone.appendChild(item.cloneNode(true));
                 mobileTrack.appendChild(clone);
             });
         }
 
-        // 3. Position, observe, and wire up events
+        // 3. Force start all the way to the left (scrollLeft = 0)
         setTimeout(() => {
             const items = mobileTrack.querySelectorAll('.native-scroll-item');
             const dots = mobileDots ? mobileDots.querySelectorAll('button') : [];
-            const targetIndex = actualInfinite ? (Math.floor(SETS / 2) * numOriginals + initialIndex) : Math.min(initialIndex, items.length - 1);
 
-            // Snap to starting position
-            if (items[targetIndex]) {
-                items[targetIndex].classList.add('active');
-                mobileTrack.style.scrollBehavior = 'auto';
+            // Reset scroll position flush to left
+            mobileTrack.style.scrollBehavior = 'auto';
+            mobileTrack.scrollLeft = 0;
 
-                const applyScrollCenter = () => {
-                    const targetOffset = items[targetIndex].offsetLeft - (mobileTrack.clientWidth - items[targetIndex].clientWidth) / 2;
-                    mobileTrack.scrollLeft = Math.max(0, targetOffset);
-                };
-
-                applyScrollCenter();
-                requestAnimationFrame(applyScrollCenter);
-
-                setTimeout(() => {
-                    applyScrollCenter();
-                    mobileTrack.style.scrollBehavior = 'smooth';
-                    mobileTrack.style.opacity = '1';
-                }, 50);
+            if (items[0]) items[0].classList.add('active');
+            if (dots[0]) {
+                dots.forEach(d => d.classList.remove('active'));
+                dots[0].classList.add('active');
             }
 
-            // Sync dots & active class via Intersection Observer
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    entry.target.classList.toggle('active', entry.isIntersecting);
-                    if (entry.isIntersecting && mobileDots) {
-                        const originalIdx = entry.target.getAttribute('data-original-index');
-                        dots.forEach(dot => dot.classList.remove('active'));
-                        if (dots[originalIdx]) dots[originalIdx].classList.add('active');
+            setTimeout(() => {
+                mobileTrack.scrollLeft = 0;
+                mobileTrack.style.scrollBehavior = 'smooth';
+                mobileTrack.style.opacity = '1';
+            }, 50);
+
+            // Left-aligned scroll calculation for active dot sync
+            let isTicking = false;
+            const updateActiveState = () => {
+                const scrollPos = mobileTrack.scrollLeft;
+                let closestOriginalIdx = 0;
+                let closestItemIndex = 0;
+                let minDiff = Infinity;
+
+                items.forEach((item, index) => {
+                    const itemLeft = item.offsetLeft;
+                    const diff = Math.abs(itemLeft - scrollPos);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        closestItemIndex = index;
+                        closestOriginalIdx = parseInt(item.getAttribute('data-original-index'), 10) || 0;
                     }
                 });
-            }, { root: mobileTrack, threshold: 0.6 });
-            items.forEach(item => observer.observe(item));
+
+                items.forEach((item, index) => {
+                    item.classList.toggle('active', index === closestItemIndex);
+                });
+
+                if (mobileDots && dots.length > 0) {
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === closestOriginalIdx);
+                    });
+                }
+                isTicking = false;
+            };
+
+            // Force initial update on load
+            updateActiveState();
+
+            mobileTrack.addEventListener('scroll', () => {
+                if (!isTicking) {
+                    requestAnimationFrame(updateActiveState);
+                    isTicking = true;
+                }
+            }, { passive: true });
 
             if (actualInfinite) {
-                // Teleportation logic when reaching boundary
                 let scrollTimeout;
                 mobileTrack.addEventListener('scroll', () => {
                     clearTimeout(scrollTimeout);
@@ -182,14 +201,13 @@ function initMain() {
                                 const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
                                 const targetItem = items[middleStartIndex + activeIdx];
                                 mobileTrack.style.scrollBehavior = 'auto';
-                                mobileTrack.scrollLeft = targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2;
+                                mobileTrack.scrollLeft = targetItem.offsetLeft;
                                 setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
                             }
                         }
                     }, 150);
                 });
 
-                // Dot clicks scroll to closest clone
                 dots.forEach((dot, idx) => {
                     dot.addEventListener('click', () => {
                         const currentScroll = mobileTrack.scrollLeft;
@@ -200,17 +218,21 @@ function initMain() {
                             const diff = Math.abs(item.offsetLeft - currentScroll);
                             if (diff < minDiff) { minDiff = diff; closestItem = item; }
                         });
-                        if (closestItem) closestItem.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        if (closestItem) {
+                            mobileTrack.scrollTo({
+                                left: closestItem.offsetLeft,
+                                behavior: 'smooth'
+                            });
+                        }
                     });
                 });
             } else {
-                // Standard dot clicks (simple 1-to-1 matching)
                 dots.forEach((dot, idx) => {
                     dot.addEventListener('click', () => {
                         const targetItem = items[idx];
                         if (targetItem) {
                             mobileTrack.scrollTo({
-                                left: targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2,
+                                left: targetItem.offsetLeft,
                                 behavior: 'smooth'
                             });
                         }
