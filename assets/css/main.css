@@ -782,8 +782,13 @@ h6 {
 }
 
 .premium-image-box {
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  max-height: 480px;
   padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .premium-image-box img {
@@ -854,18 +859,15 @@ h6 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(30px);
-  transition:
-    opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-    visibility 0.45s;
+  transform: none;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
   pointer-events: none;
 }
 
 .tab-pane.active.show {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  transform: none;
   pointer-events: auto;
   z-index: 2;
 }
@@ -882,7 +884,7 @@ h6 {
 }
 
 #therapy-tabs-content .row {
-  min-height: 450px;
+  min-height: 420px;
   height: 100%;
 }
 
@@ -890,26 +892,27 @@ h6 {
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 14px;
-  margin-bottom: 1.75rem;
+  gap: 14px 16px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
 
 .feature-list li {
-  font-weight: 600;
-  font-size: 0.92rem;
+  font-weight: 700;
+  font-size: 0.94rem;
+  line-height: 1.35;
   color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px 20px;
   margin-bottom: 0;
-  background: var(--bg-white);
-  border-radius: 14px;
-  box-shadow: 0 4px 15px rgba(5, 20, 17, 0.04);
-  border: 1px solid rgba(230, 195, 129, 0.35);
+  background: #ffffff !important;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(5, 20, 17, 0.07);
+  border: 1.5px solid rgba(230, 195, 129, 0.65);
   transition:
     transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
@@ -922,14 +925,6 @@ h6 {
     border-color: var(--primary-color);
     box-shadow: 0 8px 24px rgba(230, 195, 129, 0.25);
   }
-}
-
-#therapy-tabs-content .cta-btn {
-  width: 100%;
-  text-align: center;
-  display: block;
-  padding: 0.95rem 1.5rem;
-  font-size: 0.98rem;
 }
 
 /* ==========================================================================
@@ -1772,10 +1767,16 @@ h6 {
   }
 
   #therapy-tabs-content .premium-image-box {
-    height: 190px !important;
-    min-height: 190px !important;
-    max-height: 190px !important;
-    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    aspect-ratio: 16 / 10;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 340px !important;
+    border-radius: 16px;
   }
 
   #therapy-tabs-content h2 {
@@ -1807,15 +1808,19 @@ h6 {
   #therapy-tabs-content .feature-list {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    gap: 8px 10px;
-    margin-bottom: 1.25rem !important;
+    gap: 10px 12px;
+    margin-bottom: 0 !important;
   }
 
   #therapy-tabs-content .feature-list li {
-    font-size: 0.82rem;
-    line-height: 1.25;
-    padding: 12px 10px;
-    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 16px 12px;
+    border-radius: 14px;
+    background: #ffffff !important;
+    border: 1.5px solid rgba(230, 195, 129, 0.65);
+    box-shadow: 0 4px 14px rgba(5, 20, 17, 0.06);
   }
 
   #therapy-tabs-content .cta-btn {
@@ -1935,7 +1940,9 @@ h6 {
   }
 
   .premium-image-box {
-    height: 280px;
+    aspect-ratio: 16 / 10;
+    height: auto;
+    max-height: 320px;
   }
 
   .section-title {

@@ -407,7 +407,7 @@ function initMain() {
             coreServices.forEach((therapy, index) => {
                 const isActive = index === 0 ? 'active' : '';
                 const isShow = index === 0 ? 'show active' : '';
-                const rowReverse = index % 2 !== 0 ? 'flex-lg-row-reverse' : '';
+                const rowReverse = '';
                 const focusClass = index % 2 !== 0 ? 'top-focus' : 'center-focus';
                 const featuresHtml = therapy.features.map(f => `<li>${f}</li>`).join('');
 
@@ -423,8 +423,7 @@ function initMain() {
                                 <h2 class="mb-3 text-dark text-uppercase fw-bold">${therapy.title}</h2>
                                 <p class="lead mb-4" style="font-size: 1.15rem; color: #4a5568;">${therapy.lead}</p>
                                 <p class="text-muted mb-4">${therapy.description}</p>
-                                <ul class="list-unstyled mb-4 feature-list">${featuresHtml}</ul>
-                                <a href="${resolveUrl(therapy.href)}" class="btn cta-btn">${therapy.ctaText}</a>
+                                <ul class="list-unstyled mb-0 feature-list">${featuresHtml}</ul>
                             </div>
                             <div class="col-lg-6">
                                 <div class="premium-box premium-image-box rounded shadow-lg bg-white border position-relative overflow-hidden">
