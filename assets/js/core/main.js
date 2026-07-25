@@ -76,12 +76,12 @@ function initMain() {
      * Supports either infinite scroll snapping loop (cloning 20x + silent teleportation)
      * or standard scroll behavior (cloning 1x).
      */
-    function initMobileTrack(desktopId, trackId, dotsId, isInfinite = true) {
+    function initMobileTrack(desktopId, trackId, dotsId = null, isInfinite = true, initialIndex = 0) {
         const desktopContainer = document.getElementById(desktopId);
         const mobileTrack = document.getElementById(trackId);
-        const mobileDots = document.getElementById(dotsId);
+        const mobileDots = dotsId ? document.getElementById(dotsId) : null;
 
-        if (!desktopContainer || !mobileTrack || !mobileDots) return;
+        if (!desktopContainer || !mobileTrack) return;
 
         const originals = Array.from(desktopContainer.children);
         const numOriginals = originals.length;
@@ -90,23 +90,24 @@ function initMain() {
         // Force non-infinite and center layout if there is only 1 item
         const actualInfinite = numOriginals === 1 ? false : isInfinite;
 
-        if (numOriginals === 1) {
-            const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
-            if (controls) controls.style.display = 'none';
-            mobileTrack.style.justifyContent = 'center';
-        } else {
-            // Restore default styles for tracks with multiple items
-            const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
-            if (controls) controls.style.display = '';
-            mobileTrack.style.justifyContent = '';
-        }
+        if (mobileDots) {
+            if (numOriginals === 1) {
+                const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
+                if (controls) controls.style.display = 'none';
+                mobileTrack.style.justifyContent = 'center';
+            } else {
+                const controls = mobileDots.closest('.custom-carousel-controls') || mobileDots;
+                if (controls) controls.style.display = '';
+                mobileTrack.style.justifyContent = '';
+            }
 
-        // 1. Generate indicator dots
-        mobileDots.innerHTML = '';
-        if (numOriginals > 1) {
-            originals.forEach((_, index) => {
-                mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
-            });
+            // 1. Generate indicator dots
+            mobileDots.innerHTML = '';
+            if (numOriginals > 1) {
+                originals.forEach((_, index) => {
+                    mobileDots.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === initialIndex ? 'active' : ''}"></button>`;
+                });
+            }
         }
 
         // 2. Clone items into the track (hide while building to avoid jitter)
@@ -130,29 +131,34 @@ function initMain() {
         // 3. Position, observe, and wire up events
         setTimeout(() => {
             const items = mobileTrack.querySelectorAll('.native-scroll-item');
-            const dots = mobileDots.querySelectorAll('button');
-            const middleStartIndex = actualInfinite ? Math.floor(SETS / 2) * numOriginals : 0;
+            const dots = mobileDots ? mobileDots.querySelectorAll('button') : [];
+            const targetIndex = actualInfinite ? (Math.floor(SETS / 2) * numOriginals + initialIndex) : Math.min(initialIndex, items.length - 1);
 
             // Snap to starting position
-            if (items[middleStartIndex]) {
-                items[middleStartIndex].classList.add('active');
+            if (items[targetIndex]) {
+                items[targetIndex].classList.add('active');
                 mobileTrack.style.scrollBehavior = 'auto';
-                if (actualInfinite) {
-                    mobileTrack.scrollLeft = items[middleStartIndex].offsetLeft - (mobileTrack.clientWidth - items[middleStartIndex].clientWidth) / 2;
-                } else {
-                    mobileTrack.scrollLeft = 0;
-                }
+
+                const applyScrollCenter = () => {
+                    const targetOffset = items[targetIndex].offsetLeft - (mobileTrack.clientWidth - items[targetIndex].clientWidth) / 2;
+                    mobileTrack.scrollLeft = Math.max(0, targetOffset);
+                };
+
+                applyScrollCenter();
+                requestAnimationFrame(applyScrollCenter);
+
                 setTimeout(() => {
+                    applyScrollCenter();
                     mobileTrack.style.scrollBehavior = 'smooth';
                     mobileTrack.style.opacity = '1';
                 }, 50);
             }
 
-            // Sync dots via Intersection Observer
+            // Sync dots & active class via Intersection Observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     entry.target.classList.toggle('active', entry.isIntersecting);
-                    if (entry.isIntersecting) {
+                    if (entry.isIntersecting && mobileDots) {
                         const originalIdx = entry.target.getAttribute('data-original-index');
                         dots.forEach(dot => dot.classList.remove('active'));
                         if (dots[originalIdx]) dots[originalIdx].classList.add('active');
@@ -170,9 +176,10 @@ function initMain() {
                         const currentScroll = mobileTrack.scrollLeft;
                         const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
                         if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
-                            const activeDot = mobileDots.querySelector('.active');
+                            const activeDot = mobileDots ? mobileDots.querySelector('.active') : null;
                             if (activeDot) {
                                 const activeIdx = parseInt(activeDot.getAttribute('data-index'));
+                                const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
                                 const targetItem = items[middleStartIndex + activeIdx];
                                 mobileTrack.style.scrollBehavior = 'auto';
                                 mobileTrack.scrollLeft = targetItem.offsetLeft - (mobileTrack.clientWidth - targetItem.clientWidth) / 2;
@@ -961,6 +968,7 @@ function initMain() {
     // =========================================================================
     // 3. INITIALIZE ALL MOBILE TRACKS
     // =========================================================================
+    initMobileTrack('memberships-desktop', 'memberships-mobile-track', null, false, 1);
     initMobileTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators', false);
     initMobileTrack('protocols-desktop', 'protocols-mobile-track', 'protocols-mobile-indicators', true);
     initMobileTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators', false);
