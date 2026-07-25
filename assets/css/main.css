@@ -3943,6 +3943,18 @@ body.modal-open,
 
 #why-us .btn-outline-dark {
   background-color: #f5eee3 !important;
+  color: var(--secondary-color) !important;
+  border: 1.5px solid var(--secondary-color) !important;
+  font-weight: 700 !important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+#why-us .btn-outline-dark:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+  border-color: var(--secondary-color) !important;
+  box-shadow: 0 6px 18px rgba(5, 20, 17, 0.25) !important;
+  transform: translateY(-2px);
 }
 
 .mobile-plan-accordion .accordion-button:not(.collapsed)::after {
