@@ -1387,18 +1387,18 @@ h6 {
     display: block !important;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(15px);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(10px);
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.3s;
     pointer-events: none;
-    background-color: rgba(255, 255, 255, 0.82) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(30, 45, 23, 0.12) !important;
+    background-color: rgba(6, 10, 6, 0.97) !important;
+    border: 1px solid rgba(230, 195, 129, 0.35) !important;
     border-radius: 12px;
     padding: 10px 0;
     min-width: 250px;
-    margin-top: 10px !important;
-    box-shadow: 0 10px 30px rgba(15, 32, 54, 0.08) !important;
+    margin-top: 8px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55) !important;
   }
 
   .custom-desktop-menu.show {
@@ -1409,15 +1409,17 @@ h6 {
   }
 
   .custom-desktop-menu .dropdown-item {
-    color: var(--secondary-color) !important;
+    color: rgba(255, 255, 255, 0.82) !important;
     padding: 12px 20px;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
     letter-spacing: 1px;
     font-size: 0.85rem;
+    background-color: transparent !important;
   }
 
-  .custom-desktop-menu .dropdown-item:hover {
-    background-color: var(--secondary-color) !important;
+  .custom-desktop-menu .dropdown-item:hover,
+  .custom-desktop-menu .dropdown-item:focus {
+    background-color: transparent !important;
     color: var(--primary-color) !important;
   }
 }
