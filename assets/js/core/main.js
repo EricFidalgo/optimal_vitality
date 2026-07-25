@@ -968,6 +968,7 @@ function initMain() {
     // 3. INITIALIZE ALL MOBILE TRACKS
     // =========================================================================
     initMobileTrack('memberships-desktop', 'memberships-mobile-track', null, false, 1);
+    initMobileTrack('why-us-desktop', 'why-us-mobile-track', 'why-us-mobile-indicators', false);
     initMobileTrack('transformations-desktop', 'transformations-mobile-track', 'transformations-mobile-indicators', false);
     initMobileTrack('protocols-desktop', 'protocols-mobile-track', 'protocols-mobile-indicators', true);
     initMobileTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators', false);
