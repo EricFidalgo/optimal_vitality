@@ -147,23 +147,29 @@ function initMain() {
                 mobileTrack.style.opacity = '1';
             }, 50);
 
-            // Left-aligned scroll calculation for active dot sync
+            // Left-aligned scroll calculation with right boundary detection for active dot sync
             let isTicking = false;
             const updateActiveState = () => {
                 const scrollPos = mobileTrack.scrollLeft;
+                const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
                 let closestOriginalIdx = 0;
                 let closestItemIndex = 0;
-                let minDiff = Infinity;
 
-                items.forEach((item, index) => {
-                    const itemLeft = item.offsetLeft;
-                    const diff = Math.abs(itemLeft - scrollPos);
-                    if (diff < minDiff) {
-                        minDiff = diff;
-                        closestItemIndex = index;
-                        closestOriginalIdx = parseInt(item.getAttribute('data-original-index'), 10) || 0;
-                    }
-                });
+                if (maxScroll > 0 && scrollPos >= maxScroll - 15 && items.length > 0) {
+                    closestItemIndex = items.length - 1;
+                    closestOriginalIdx = (dots.length > 0) ? (dots.length - 1) : closestItemIndex;
+                } else {
+                    let minDiff = Infinity;
+                    items.forEach((item, index) => {
+                        const itemLeft = item.offsetLeft;
+                        const diff = Math.abs(itemLeft - scrollPos);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestItemIndex = index;
+                            closestOriginalIdx = parseInt(item.getAttribute('data-original-index'), 10) || index;
+                        }
+                    });
+                }
 
                 items.forEach((item, index) => {
                     item.classList.toggle('active', index === closestItemIndex);
@@ -219,8 +225,9 @@ function initMain() {
                             if (diff < minDiff) { minDiff = diff; closestItem = item; }
                         });
                         if (closestItem) {
+                            const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
                             mobileTrack.scrollTo({
-                                left: closestItem.offsetLeft,
+                                left: Math.min(closestItem.offsetLeft, maxScroll),
                                 behavior: 'smooth'
                             });
                         }
@@ -231,8 +238,9 @@ function initMain() {
                     dot.addEventListener('click', () => {
                         const targetItem = items[idx];
                         if (targetItem) {
+                            const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
                             mobileTrack.scrollTo({
-                                left: targetItem.offsetLeft,
+                                left: Math.min(targetItem.offsetLeft, maxScroll),
                                 behavior: 'smooth'
                             });
                         }
@@ -254,38 +262,78 @@ function initMain() {
         if (items.length === 0) return;
 
         // 1. Generate dots
+        dotsContainer.innerHTML = '';
         items.forEach((_, index) => {
             dotsContainer.innerHTML += `<button type="button" aria-label="Slide ${index + 1}" data-index="${index}" class="${index === 0 ? 'active' : ''}"></button>`;
         });
 
         const dots = dotsContainer.querySelectorAll('button');
 
-        // Mark initial active item
-        if (items[0]) {
-            items[0].classList.add('active');
+        // Mark initial active item & force scrollLeft = 0
+        track.style.scrollBehavior = 'auto';
+        track.scrollLeft = 0;
+        if (items[0]) items[0].classList.add('active');
+        if (dots[0]) {
+            dots.forEach(d => d.classList.remove('active'));
+            dots[0].classList.add('active');
         }
 
-        // 2. Intersection observer to update dots on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle('active', entry.isIntersecting);
-                if (entry.isIntersecting) {
-                    const idx = items.indexOf(entry.target);
-                    dots.forEach(dot => dot.classList.remove('active'));
-                    if (dots[idx]) dots[idx].classList.add('active');
-                }
-            });
-        }, { root: track, threshold: 0.6 });
+        setTimeout(() => {
+            track.scrollLeft = 0;
+            track.style.scrollBehavior = 'smooth';
+        }, 50);
 
-        items.forEach(item => observer.observe(item));
+        // 2. Left-aligned scroll calculation with right boundary detection
+        let isTicking = false;
+        const updateActiveState = () => {
+            const scrollPos = track.scrollLeft;
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            let closestItemIndex = 0;
+
+            if (maxScroll > 0 && scrollPos >= maxScroll - 15 && items.length > 0) {
+                closestItemIndex = items.length - 1;
+            } else {
+                let minDiff = Infinity;
+                items.forEach((item, index) => {
+                    const itemLeft = item.offsetLeft;
+                    const diff = Math.abs(itemLeft - scrollPos);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        closestItemIndex = index;
+                    }
+                });
+            }
+
+            items.forEach((item, index) => {
+                item.classList.toggle('active', index === closestItemIndex);
+            });
+
+            if (dots.length > 0) {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === closestItemIndex);
+                });
+            }
+            isTicking = false;
+        };
+
+        // Force initial update on load
+        updateActiveState();
+
+        track.addEventListener('scroll', () => {
+            if (!isTicking) {
+                requestAnimationFrame(updateActiveState);
+                isTicking = true;
+            }
+        }, { passive: true });
 
         // 3. Dot clicks scroll to targets
         dots.forEach((dot, idx) => {
             dot.addEventListener('click', () => {
                 const targetItem = items[idx];
                 if (targetItem) {
+                    const maxScroll = track.scrollWidth - track.clientWidth;
                     track.scrollTo({
-                        left: targetItem.offsetLeft - (track.clientWidth - targetItem.clientWidth) / 2,
+                        left: Math.min(targetItem.offsetLeft, maxScroll),
                         behavior: 'smooth'
                     });
                 }
