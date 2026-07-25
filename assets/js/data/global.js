@@ -60,6 +60,10 @@ Object.assign(window.clinicData, {
       facebook: {
         handle: "@oviwellness_",
         url: "https://www.facebook.com/profile.php?id=61590423610288"
+      },
+      tiktok: {
+        handle: "@oviwellness_",
+        url: "https://www.tiktok.com/@oviwellness_"
       }
     },
     address: {

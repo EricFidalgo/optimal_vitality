@@ -3821,6 +3821,25 @@ body.modal-open,
   box-shadow: none !important;
 }
 
+/* Mobile Plan Accordion (< 992px) */
+.mobile-plan-accordion .accordion-button {
+  box-shadow: none !important;
+}
+
+.mobile-plan-accordion .accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.mobile-plan-accordion .accordion-button::after {
+  background-size: 1rem;
+  filter: opacity(0.7);
+}
+
+.mobile-plan-accordion .accordion-button:not(.collapsed)::after {
+  filter: opacity(1);
+}
+
 .iv-explanation-banner {
   background: linear-gradient(
     135deg,
@@ -3850,6 +3869,62 @@ body.modal-open,
   );
   border-radius: 50%;
   pointer-events: none;
+}
+
+/* ===== SOCIAL MEDIA CONNECTION PILLS ===== */
+.social-connect-pills {
+  margin-top: 0.5rem;
+}
+
+.social-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.social-pill-btn i {
+  font-size: 1.15rem;
+  transition: transform 0.3s ease;
+}
+
+.social-pill-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-pill-btn:hover i {
+  transform: scale(1.15);
+}
+
+/* Platform specific hover states */
+.social-pill-instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+.social-pill-facebook:hover {
+  background: #1877f2;
+  border-color: transparent;
+  color: #ffffff !important;
+}
+
+.social-pill-tiktok:hover {
+  background: #000000;
+  border-color: #ff0050;
+  box-shadow: 0 0 15px rgba(255, 0, 80, 0.3), 0 0 15px rgba(0, 242, 234, 0.3);
+  color: #ffffff !important;
 }
 
 

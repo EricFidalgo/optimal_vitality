@@ -180,14 +180,9 @@
                     </div>
                 </div>
 
-                <!-- Tier 2: Optimal Plan (FEATURED / MOST POPULAR) -->
+                <!-- Tier 2: Optimal Plan (FEATURED) -->
                 <div class="col-lg-4 col-md-6">
                     <div class="membership-card featured-membership h-100 p-4 p-xl-5 rounded-4 border bg-dark text-white d-flex flex-column justify-content-between position-relative transition-all" style="background: linear-gradient(135deg, #1c3838 0%, var(--secondary-color) 100%) !important; border-color: var(--primary-color) !important;">
-                        <!-- Featured Badge -->
-                        <div class="position-absolute top-0 start-50 translate-middle" style="z-index: 10;">
-                            <span class="badge text-uppercase px-3 py-2 rounded-pill fw-bold" style="background-color: var(--primary-color) !important; color: var(--secondary-color) !important; font-size: 0.75rem; letter-spacing: 1.5px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;">Most Popular</span>
-                        </div>
-                        
                         <div>
                             <h3 class="h4 fw-bold text-white mb-1 mt-2 text-center">Optimal Plan</h3>
                             <div class="mb-3 text-center">
@@ -252,15 +247,111 @@
                 </div>
             </div>
 
-            <!-- Mobile & iPad Track (Sliding Horizontal Track for Mobile & Tablet < 992px) -->
-            <div class="d-lg-none position-relative mb-5 pt-2">
-                <!-- Visual Swipe Cue -->
-                <div class="d-flex align-items-center justify-content-center gap-2 text-muted small mb-2">
-                    <i class="fas fa-chevron-left text-primary" style="font-size: 0.75rem;"></i>
-                    <span class="fw-semibold text-uppercase" style="font-size: 0.75rem; letter-spacing: 1px; color: var(--secondary-color);">Swipe left or right to view plans</span>
-                    <i class="fas fa-chevron-right text-primary" style="font-size: 0.75rem;"></i>
+            <!-- Mobile & iPad Expandable Accordion Stack (< 992px) -->
+            <div class="d-lg-none mb-5">
+                <div class="accordion mobile-plan-accordion d-flex flex-column gap-3" id="mobilePlanAccordion">
+                    
+                    <!-- Tier 1: Essential Plan -->
+                    <div class="accordion-item border rounded-4 bg-white overflow-hidden shadow-sm">
+                        <h3 class="accordion-header" id="headingEssential">
+                            <button class="accordion-button collapsed px-4 py-3 bg-white text-dark d-flex align-items-center justify-content-between w-100 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEssential" aria-expanded="false" aria-controls="collapseEssential">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="fw-bold fs-5" style="color: var(--secondary-color);">Essential Plan</span>
+                                    <span class="badge bg-light text-dark border rounded-pill px-2.5 py-1" style="font-size: 0.7rem;">Starter</span>
+                                </div>
+                            </button>
+                        </h3>
+                        <div id="collapseEssential" class="accordion-collapse collapse" aria-labelledby="headingEssential" data-bs-parent="#mobilePlanAccordion">
+                            <div class="accordion-body px-4 pt-1 pb-4">
+                                <p class="text-muted small mb-3" style="line-height: 1.5;">Great if you want to boost your daily energy and balance your hormones with doctor guidance.</p>
+                                <ul class="list-unstyled d-flex flex-column gap-2.5 mb-4">
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Custom Hormone Therapy</strong> for real energy and mental clarity</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Regular Doctor Check-ups &amp; Blood Tests</strong> so you stay safe</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Direct Access to Your Doctor</strong> whenever you have questions</span>
+                                    </li>
+                                </ul>
+                                <a href="#consultation" class="btn btn-outline-secondary w-100 rounded-pill py-2.5 fw-bold text-uppercase" style="font-size: 0.8rem; letter-spacing: 0.8px;">Book Essential Plan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2: Optimal Plan (FEATURED - OPEN BY DEFAULT) -->
+                    <div class="accordion-item border rounded-4 text-white overflow-hidden position-relative shadow-md" style="background: linear-gradient(135deg, #1c3838 0%, var(--secondary-color) 100%) !important; border-color: var(--primary-color) !important;">
+                        <h3 class="accordion-header" id="headingOptimal">
+                            <button class="accordion-button px-4 py-3 bg-transparent text-white d-flex align-items-center justify-content-between w-100 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOptimal" aria-expanded="true" aria-controls="collapseOptimal">
+                                <div class="d-flex align-items-center gap-2 pt-1">
+                                    <span class="fw-bold fs-5 text-white">Optimal Plan</span>
+                                    <span class="badge bg-secondary text-primary border border-secondary rounded-pill px-2.5 py-1" style="font-size: 0.7rem;">Best Value</span>
+                                </div>
+                            </button>
+                        </h3>
+                        <div id="collapseOptimal" class="accordion-collapse collapse show" aria-labelledby="headingOptimal" data-bs-parent="#mobilePlanAccordion">
+                            <div class="accordion-body px-4 pt-1 pb-4">
+                                <p class="text-white-50 small mb-3" style="line-height: 1.5;">Our #1 plan to feel 10 years younger with maximum energy, fat loss, and fast recovery!</p>
+                                <ul class="list-unstyled d-flex flex-column gap-2.5 mb-4">
+                                    <li class="d-flex align-items-start gap-2 text-white-50 small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span class="text-white"><strong>Everything in Essential Plan</strong> included</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-white-50 small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>1 FREE Monthly IV Vitamin Drip</strong> for instant hydration and energy</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-white-50 small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Medical Weight Loss &amp; Anti-Aging</strong> options (GLP-1 available)</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-white-50 small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>VIP Priority Access &amp; Direct Phone Line</strong> to your doctor</span>
+                                    </li>
+                                </ul>
+                                <a href="#consultation" class="btn cta-btn w-100 rounded-pill py-2.5 fw-bold text-uppercase" style="font-size: 0.8rem; letter-spacing: 0.8px;">Book Optimal Plan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3: VIP Executive -->
+                    <div class="accordion-item border rounded-4 bg-white overflow-hidden shadow-sm">
+                        <h3 class="accordion-header" id="headingExecutive">
+                            <button class="accordion-button collapsed px-4 py-3 bg-white text-dark d-flex align-items-center justify-content-between w-100 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExecutive" aria-expanded="false" aria-controls="collapseExecutive">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="fw-bold fs-5" style="color: var(--secondary-color);">VIP Executive</span>
+                                    <span class="badge bg-light text-dark border rounded-pill px-2.5 py-1" style="font-size: 0.7rem;">All-Inclusive</span>
+                                </div>
+                            </button>
+                        </h3>
+                        <div id="collapseExecutive" class="accordion-collapse collapse" aria-labelledby="headingExecutive" data-bs-parent="#mobilePlanAccordion">
+                            <div class="accordion-body px-4 pt-1 pb-4">
+                                <p class="text-muted small mb-3" style="line-height: 1.5;">The ultimate 24/7 private medical care with unlimited IV drips and anti-aging treatments.</p>
+                                <ul class="list-unstyled d-flex flex-column gap-2.5 mb-4">
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Everything in Optimal Plan</strong> included</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>Unlimited Custom IV Drips &amp; Vitamin Shots</strong> anytime</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2 text-muted small">
+                                        <i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i>
+                                        <span><strong>24/7 Direct Doctor Call &amp; Text Line</strong> whenever you need help</span>
+                                    </li>
+                                </ul>
+                                <a href="#consultation" class="btn btn-outline-secondary w-100 rounded-pill py-2.5 fw-bold text-uppercase" style="font-size: 0.8rem; letter-spacing: 0.8px;">Book Executive VIP</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="native-scroll-wrapper" id="memberships-mobile-track"></div>
             </div>
 
             <!-- IV Therapy Feature Explanation Banner -->
