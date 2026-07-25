@@ -18,20 +18,20 @@ window.clinicData.services.push({
       type: "additional",
       tabLabel: "IV & Wellness",
       href: "iv-wellness.html",
-      title: "Drip Culture: Total Hydration & Nutrients",
-      lead: "Bypass your digestive ecosystem for immediate maximum nutrient bioavailability.",
+      title: "Instant 100% Vitamin & Energy Boost",
+      lead: "Bypass slow stomach pills and feel instant energy right into your system.",
       description:
-        "Intravenous delivery systems that supply vital antioxidants, clean hydration, and micronutrients straight to the cell matrix.",
+        "Get pure vitamins, antioxidants, and super-hydration delivered straight to your body. Feel sharp, energized, and rehydrated in under 45 minutes.",
       icon: "fa-tint",
       delay: "-5s",
       features: [
-        "Custom IV Micronutrient Therapy",
-        "High-Dose NAD+ Infusions",
-        "Vitamin Co-Factor Injections",
-        "Athletic & Performance Recovery",
+        "Immediate boost in energy & clarity",
+        "Strengthen your immune system fast",
+        "100% direct vitamin absorption",
+        "Relax in our luxury medical suite",
       ],
       image: "assets/images/photos/IV.jpg",
-      ctaText: "Join The Membership",
+      ctaText: "Get My Vitamin Drip",
 
       // ─── Page meta ────────────────────────────────────────────────────────
       pageTitle: "IV Therapy & Wellness Infusions — OVI Wellness",

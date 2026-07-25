@@ -18,20 +18,20 @@ window.clinicData.services.push({
       type: "additional",
       tabLabel: "Skin & Aesthetics",
       href: "skin-aesthetics.html",
-      title: "Medical Luxury Aesthetics",
-      lead: "Look as young, vital, and high-performing as you feel internally.",
+      title: "Look Fresh, Rested & Naturally Younger",
+      lead: "Smooth away lines and bring back your youthful glow in under 15 minutes.",
       description:
-        "Clinical-grade face and skin interventions designed to optimize structural symmetry, volume, and dermis vitality.",
+        "You don't need a fake or frozen look. Our medical pros use quick, gentle treatments that smooth wrinkles and keep you looking completely natural.",
       icon: "fa-magic",
       delay: "-4s",
       features: [
-        "Advanced Neurotoxins & Fillers",
-        "Biostimulators (Sculptra / Radiesse)",
-        "RF Microneedling Interventions",
-        "Medical-Grade Skincare Regimens",
+        "Smooth forehead lines & crow's feet",
+        "100% natural-looking results",
+        "Quick 15-minute visits",
+        "Done by experienced medical pros",
       ],
       image: "assets/images/photos/team-group.avif",
-      ctaText: "Refine Your Look",
+      ctaText: "Book My Glow Visit",
 
       // ─── Page meta ────────────────────────────────────────────────────────
       pageTitle: "Medical Luxury Aesthetics — OVI Wellness",

@@ -402,7 +402,7 @@ function initMain() {
                 const isShow = index === 0 ? 'show active' : '';
                 const rowReverse = index % 2 !== 0 ? 'flex-lg-row-reverse' : '';
                 const focusClass = index % 2 !== 0 ? 'top-focus' : 'center-focus';
-                const featuresHtml = therapy.features.map(f => `<li><i class="fas fa-check-circle me-3"></i> ${f}</li>`).join('');
+                const featuresHtml = therapy.features.map(f => `<li>${f}</li>`).join('');
 
                 tabsContainer.innerHTML += `
                     <li class="nav-item" role="presentation">
@@ -413,7 +413,7 @@ function initMain() {
                     <div class="tab-pane ${isShow}" id="${therapy.id}" role="tabpanel" tabindex="0">
                         <div class="row align-items-center ${rowReverse} gx-lg-5">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <h2 class="mb-3 text-secondary text-uppercase fw-bold">${therapy.title}</h2>
+                                <h2 class="mb-3 text-dark text-uppercase fw-bold">${therapy.title}</h2>
                                 <p class="lead mb-4" style="font-size: 1.15rem; color: #4a5568;">${therapy.lead}</p>
                                 <p class="text-muted mb-4">${therapy.description}</p>
                                 <ul class="list-unstyled mb-4 feature-list">${featuresHtml}</ul>

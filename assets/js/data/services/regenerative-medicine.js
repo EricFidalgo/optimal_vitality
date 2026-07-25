@@ -18,20 +18,20 @@ window.clinicData.services.push({
       type: "additional",
       tabLabel: "Regenerative Medicine",
       href: "regenerative-medicine.html",
-      title: "Advanced Regenerative Modalities",
-      lead: "Harness your body's native biological markers for deep cellular repair.",
+      title: "Fix Body Pain & Rebuild Cells Naturally",
+      lead: "Stop letting joint stiffness or thinning hair hold you back from living fully.",
       description:
-        "Cutting-edge anti-aging and autologous tissue therapies engineered to assist with systemic vitality and support structural health.",
+        "We use your body's own natural power to heal damaged joints, revive skin, and restore hair thick and strong—without invasive surgery.",
       icon: "fa-heartbeat",
       delay: "-3s",
       features: [
-        "Exosome Cellular Therapies",
-        "Platelet-Rich Plasma (PRP)",
-        "P-Shot & O-Shot Performance",
-        "Advanced Hair Restoration",
+        "Relieve stubborn joint aches & stiffness",
+        "Natural hair & skin rejuvenation",
+        "Pure cellular repair from within",
+        "Quick in-office treatments",
       ],
       image: "assets/images/photos/IV.jpg",
-      ctaText: "Explore Regeneration",
+      ctaText: "Fix My Joints & Hair",
 
       // ─── Page meta ────────────────────────────────────────────────────────
       pageTitle: "Advanced Regenerative Medicine — OVI Wellness",

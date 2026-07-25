@@ -870,46 +870,66 @@ h6 {
   z-index: 2;
 }
 
+#therapy-tabs-content h2 {
+  color: var(--secondary-color) !important;
+  font-weight: 700;
+  text-align: center;
+}
+
+#therapy-tabs-content .lead {
+  color: var(--secondary-color) !important;
+  font-weight: 500;
+}
+
 #therapy-tabs-content .row {
   min-height: 450px;
   height: 100%;
 }
 
-/* Feature list items inside therapy tabs */
+/* Feature list grid inside therapy tabs (2-column compact layout for desktop & mobile) */
 .feature-list {
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 14px;
+  margin-bottom: 1.75rem;
+  padding: 0;
+  list-style: none;
 }
 
 .feature-list li {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.92rem;
   color: var(--secondary-color);
   display: flex;
   align-items: center;
-  padding: 14px 20px;
-  margin-bottom: 14px;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 16px;
+  margin-bottom: 0;
   background: var(--bg-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(30, 45, 23, 0.04);
-  border-left: 4px solid var(--primary-color);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(5, 20, 17, 0.04);
+  border: 1px solid rgba(230, 195, 129, 0.35);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.3s ease;
 }
 
 @media (hover: hover) {
   .feature-list li:hover {
-    transform: translateX(8px);
-    box-shadow: 0 8px 20px rgba(30, 45, 23, 0.08);
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 24px rgba(230, 195, 129, 0.25);
   }
 }
 
-.feature-list i {
-  font-size: 1.3rem;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
+#therapy-tabs-content .cta-btn {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 0.95rem 1.5rem;
+  font-size: 0.98rem;
 }
 
 /* ==========================================================================
@@ -1722,15 +1742,72 @@ h6 {
     outline: none !important;
   }
 
+  #core-therapies {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  #core-therapies .mb-5 {
+    margin-bottom: 1.25rem !important;
+  }
+
   #therapy-tabs-content .row {
-    min-height: 320px;
-    height: 100%;
+    min-height: auto !important;
+    height: auto !important;
   }
 
   #therapy-tabs-content .premium-image-box {
-    height: 320px !important;
-    min-height: 320px;
-    max-height: 320px;
+    height: 190px !important;
+    min-height: 190px !important;
+    max-height: 190px !important;
+    margin-bottom: 1rem;
+  }
+
+  #therapy-tabs-content h2 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 0.6rem !important;
+  }
+
+  #therapy-tabs-content .lead {
+    font-size: 0.98rem !important;
+    text-align: center;
+    margin-bottom: 0.6rem !important;
+    line-height: 1.35;
+    color: var(--secondary-color) !important;
+    font-weight: 500;
+  }
+
+  #therapy-tabs-content p.text-muted {
+    font-size: 0.88rem !important;
+    text-align: center;
+    margin-bottom: 1.25rem !important;
+    line-height: 1.4;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #therapy-tabs-content .feature-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 10px;
+    margin-bottom: 1.25rem !important;
+  }
+
+  #therapy-tabs-content .feature-list li {
+    font-size: 0.82rem;
+    line-height: 1.25;
+    padding: 12px 10px;
+    border-radius: 12px;
+  }
+
+  #therapy-tabs-content .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    font-size: 0.92rem;
   }
 
   .team-list-container {
@@ -1936,14 +2013,14 @@ h6 {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 16px 8px;
+    padding: 10px 4px;
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.2;
     text-align: center;
     white-space: normal;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: var(--bg-white);
     color: var(--secondary-color);
     border: 1px solid rgba(30, 45, 23, 0.1);
@@ -1955,8 +2032,8 @@ h6 {
   .nav-pills .premium-tab::before {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 4px;
     color: var(--primary-color);
   }
 

@@ -17,22 +17,22 @@ window.clinicData.services.push({
       // ─── Card data ────────────────────────────────────────────────────────
       id: "glp-1therapies",
       type: "core",
-      tabLabel: "GLP-1 Therapies",
+      tabLabel: "GLP-1 Weight Loss",
       href: "glp-1therapies.html",
-      title: "Metabolic Optimization & Weight Loss",
-      lead: "Advanced, medically supervised protocols utilizing next-generation metabolic therapies.",
+      title: "Melt Away Fat Without Constant Cravings",
+      lead: "Drop the weight fast with simple doctor-backed treatments that actually keep it off.",
       description:
-        "We look beyond the scale at your direct metabolic markers to shed adipose tissue while preserving vital lean muscle mass.",
+        "No crazy starvation diets or endless cardio. Our targeted medicine turns off constant food cravings, helping you burn real body fat while protecting your muscle.",
       icon: "fa-weight-scale",
       delay: "-1s",
       features: [
-        "Retatrutide Protocols",
-        "Tirzepatide & Semaglutide",
-        "Metabolic Optimization Panels",
-        "Nutritional Architecture",
+        "Stop constant snack & food cravings",
+        "Target stubborn belly fat fast",
+        "Protect lean muscle as you lose weight",
+        "Easy doctor-supervised weekly plan",
       ],
-      image: "assets/images/photos/PA.png",
-      ctaText: "Optimize Metabolism",
+      image: "assets/images/photos/glp1-weight-loss.jpg",
+      ctaText: "Start My Weight Loss Plan",
 
       // ─── Page meta ────────────────────────────────────────────────────────
       pageTitle: "Medical Weight Loss & GLP-1 Therapies — OVI Wellness",
