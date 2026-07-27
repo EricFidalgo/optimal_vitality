@@ -112,7 +112,8 @@
 
     // --- Myths ---
     if (s.myths && s.myths.length > 0) {
-      document.getElementById("myths-container").style.display = "block";
+      const mythsContainer = document.getElementById("myths-container");
+      if (mythsContainer) mythsContainer.style.display = "block";
       buildMyths(s.myths);
     } else {
       hideById("myths-container");
