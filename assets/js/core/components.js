@@ -121,6 +121,12 @@
                                         <i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}
                                     </a>
                                 </p>
+                                ${c.fax ? `
+                                <p class="mb-3">
+                                    <span class="text-white-50 text-decoration-none">
+                                        <i class="fas fa-fax text-primary me-3 w-15px text-center"></i> ${c.fax}
+                                    </span>
+                                </p>` : ''}
                                 <p class="mb-3">
                                     <a href="mailto:${c.email}" class="text-white-50 text-decoration-none hover-white">
                                         <i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}

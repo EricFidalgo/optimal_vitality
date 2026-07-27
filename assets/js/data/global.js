@@ -50,7 +50,8 @@ const sharedTreatmentsGrid = [
 
 Object.assign(window.clinicData, {
   contact: {
-    phone: "(727) 555-0199", // TODO: Replace with your real clinic phone number
+    phone: "(727) 476-8966",
+    fax: "(727) 475-8004",
     email: "info@oviwellness.com",
     socials: {
       instagram: {
