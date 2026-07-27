@@ -15,7 +15,7 @@ function initMain() {
             return url;
         }
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
-        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "medical-aesthetics", "iv-wellness", "peptides", "detox", "advanced-labs"];
+        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "iv-wellness", "peptides", "detox", "advanced-labs"];
         const baseName = url.replace('.html', '').split('#')[0];
 
         if (isSubpage) {
@@ -523,9 +523,6 @@ function initMain() {
                                 <div class="card-icon"><i class="fas ${service.icon}"></i></div>
                                 <h4 class="card-title">${service.tabLabel}</h4>
                                 <p class="card-text">${service.description}</p>
-                            </div>
-                            <div class="service-link fw-bold text-decoration-none" style="color: var(--primary-color); font-size: 0.92rem; letter-spacing: 0.5px;">
-                                ${service.ctaText} <i class="fas fa-arrow-right ms-2"></i>
                             </div>
                         </div>
                     </a>

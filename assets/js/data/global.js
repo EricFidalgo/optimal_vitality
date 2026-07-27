@@ -40,13 +40,6 @@ const sharedTreatmentsGrid = [
     linkText: "Explore Sexual Wellness"
   },
   {
-    title: "Medical Aesthetics",
-    icon: "fa-spa",
-    desc: "Botox, dermal fillers, and anti-aging aesthetic treatments designed to restore natural facial contours and youthfulness.",
-    link: "services/sexual-wellness.html#aesthetics",
-    linkText: "Explore Aesthetics"
-  },
-  {
     title: "IV Nutrient Hydration",
     icon: "fa-tint",
     desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
@@ -124,11 +117,6 @@ Object.assign(window.clinicData, {
           label: "Sexual Wellness",
           href: "sexual-wellness.html",
           icon: "fa-heart",
-        },
-        {
-          label: "Medical Aesthetics",
-          href: "sexual-wellness.html#aesthetics",
-          icon: "fa-spa",
         },
         { label: "IV & Wellness", href: "iv-wellness.html", icon: "fa-tint" },
         { label: "Detox Protocols", href: "detox.html", icon: "fa-leaf" },

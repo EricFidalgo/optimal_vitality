@@ -2,316 +2,318 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
-      /* 
-    FUTURE: ADD SPECIFIC TESTIMONIALS
-    testimonials: [
-      {
-        initials: "JD",
-        name: "John D.",
-        tag: "JOINT REPAIR",
-        quote: "BPC-157 significantly supported my shoulder recovery in 6 weeks."
+  // ─── Card data ────────────────────────────────────────────────────────
+  id: "iv-wellness",
+  type: "additional",
+  tabLabel: "IV & Wellness",
+  href: "iv-wellness.html",
+  title: "Instant Vitamin & Energy Boost",
+  lead: "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
+  description:
+    "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. Feel sharp, energized, and rehydrated in under 45 minutes.",
+  icon: "fa-tint",
+  delay: "-5s",
+  features: [
+    "Immediate boost in energy & mental clarity",
+    "Strengthen your immune system fast",
+    "100% direct vitamin absorption",
+    "Relax in our luxury medical suite",
+  ],
+  image: "assets/images/photos/IV.jpg",
+  ctaText: "Book Your Doctor Consultation",
+
+  // ─── Page meta ────────────────────────────────────────────────────────
+  pageTitle: "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
+  pageDescription:
+    "Doctor-guided IV vitamin therapy, NAD+ infusions, and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
+
+  heroHeadline: "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
+  heroSubheadline:
+    "Prescription IV Drips & NAD+ therapy medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+  heroCTA: "Book Your Doctor Call Today",
+
+  quiz: {
+    badge: "Quick 1-Minute Assessment",
+    headline: "Find Your Best IV Drip Plan",
+    subheadline: "Answer 3 quick questions so our doctors can help you pick the right plan.",
+    step1: {
+      question: "What is your main goal today?",
+      sub: "Pick what you want to fix first.",
+      options: [
+        { value: "energy", icon: "fa-bolt", title: "Energy & Mental Clarity", desc: "Want to turn off brain fog, tiredness, and afternoon crashes." },
+        { value: "recovery", icon: "fa-first-aid", title: "Fast Athletic Recovery", desc: "Bounce back quickly from intense workouts or physical stress." },
+        { value: "immunity", icon: "fa-shield-alt", title: "Immune Boost Shield", desc: "Feeling run down, traveling, or wanting super illness defense." }
+      ]
+    },
+    step2: {
+      question: "Have you tried IV vitamin drips before?",
+      sub: "Helps our doctor guide your infusion dose.",
+      options: [
+        { value: "first", icon: "fa-star", title: "First Time", desc: "I am new to IV vitamin therapy." },
+        { value: "regular", icon: "fa-sync", title: "Yes, I Have", desc: "I get IV drips as part of my routine." }
+      ]
+    },
+    step3: {
+      question: "Are you interested in NAD+ cellular anti-aging?",
+      sub: "NAD+ is our top doctor infusion for deep energy and cellular repair.",
+      options: [
+        { value: "yes", icon: "fa-brain", title: "Yes, I Am", desc: "Want deep brain focus, anti-aging, and cell repair." },
+        { value: "no", icon: "fa-times", title: "Standard Drip", desc: "Just need standard vitamins, minerals, and hydration." }
+      ]
+    },
+    protocols: {
+      energy: {
+        tag: "Recommended Energy Drip",
+        name: "The Total Energy & Brain Reset",
+        peptides: "Prescription Myers' Cocktail + B-Complex + NAD+",
+        icon: "fa-bolt",
+        desc: "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
+        goalModifiers: {
+          yes: "Includes our premier doctor NAD+ infusion for maximum cellular power and anti-aging focus.",
+          no: "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
+        },
+        social: "Over 89 local patients received this energy drip in the last 30 days."
+      },
+      recovery: {
+        tag: "Athletic & Detox Drip",
+        name: "The Fast Recovery & Glutathione Stack",
+        peptides: "Prescription Glutathione + Amino Acids + Electrolytes",
+        icon: "fa-first-aid",
+        desc: "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
+        goalModifiers: {
+          yes: "Adds NAD+ to speed up muscle repair and cellular energy after hard training.",
+          no: "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
+        },
+        social: "114 local athletes and active patients run this recovery drip."
+      },
+      immunity: {
+        tag: "Immune Shield Drip",
+        name: "The Super Immune Defense Drip",
+        peptides: "High-Dose Vitamin C + Zinc + Myers' Cocktail",
+        icon: "fa-shield-alt",
+        desc: "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
+        goalModifiers: {
+          yes: "Combines high-dose immune defense with NAD+ to eliminate deep travel exhaustion.",
+          no: "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
+        },
+        social: "95 patients choose this immune shield when feeling run down."
       }
-    ], 
-    */
-      // ─── Card data ────────────────────────────────────────────────────────
-      id: "iv-wellness",
-      type: "additional",
-      tabLabel: "IV & Wellness",
-      href: "iv-wellness.html",
-      title: "Instant 100% Vitamin & Energy Boost",
-      lead: "Bypass slow stomach pills and feel instant energy right into your system.",
-      description:
-        "Get pure vitamins, antioxidants, and super-hydration delivered straight to your body. Feel sharp, energized, and rehydrated in under 45 minutes.",
-      icon: "fa-tint",
-      delay: "-5s",
-      features: [
-        "Immediate boost in energy & clarity",
-        "Strengthen your immune system fast",
-        "100% direct vitamin absorption",
-        "Relax in our luxury medical suite",
-      ],
-      image: "assets/images/photos/IV.jpg",
-      ctaText: "Get My Vitamin Drip",
+    },
+    timelineMap: {
+      first: "45 minutes (Immediate 100% absorption)",
+      regular: "2–4 weeks (Cumulative vitality plan)"
+    }
+  },
 
-      // ─── Page meta ────────────────────────────────────────────────────────
-      pageTitle: "IV Therapy & Wellness Infusions — OVI Wellness",
-      pageDescription:
-        "Custom IV micronutrient therapy, NAD+ infusions, and vitamin injections in St. Petersburg, FL. Maximum bioavailability — direct cellular delivery at OVI Wellness.",
-
-      heroHeadline: "Maximum Bioavailability.<br><span class=\"text-primary\">Zero Compromise.</span>",
-      heroCTA: "Book Your Infusion",
-
-      /*
-      transformations: {
-        headline: "Clinical Transformations",
-        subheadline: "Real outcomes from targeted intravenous therapy and wellness protocols.",
-        items: [
-          {
-            imageAfter: "assets/images/photos/IV.jpg",
-            imageBefore: "assets/images/photos/IV.jpg",
-            badgeAfter: "Post-Infusion",
-            badgeBefore: "Depleted",
-            title: "Rapid Cellular Hydration",
-            protocol: "NAD+ & Meyers Cocktail",
-            description: "Immediate restoration of cellular hydration, energy levels, and cognitive clarity."
-          }
-        ]
+  eligibility: {
+    badge: "Who Is This For?",
+    headline: "Are You a Candidate for IV Care?",
+    intro:
+      "IV therapy delivers pure vitamins and minerals directly into your blood, bypassing slow digestion completely. Supervised by licensed doctors, it is the fastest way to feel energized and rehydrated.",
+    note: "Questions about candidacy? Our medical team will guide you during your consultation.",
+    ctaText: "Call Us Now to Check Candidacy",
+    items: [
+      {
+        label: "Tired & Brain Fog",
+        detail:
+          "Adults struggling with midday crashes, slow mornings, or poor sleep.",
       },
-      */
-      
-      quiz: {
-        badge: "Clinical Self-Assessment",
-        headline: "Find Your Infusion",
-        subheadline: "Answer 3 quick questions to match you with the ideal IV therapy.",
-        step1: {
-          question: "What brings you in today?",
-          sub: "Select your primary reason for seeking IV therapy.",
-          options: [
-            { value: "energy", icon: "fa-bolt", title: "Energy & Focus", desc: "Need a boost in vitality and clarity." },
-            { value: "recovery", icon: "fa-first-aid", title: "Recovery", desc: "Athletic recovery or hangover relief." },
-            { value: "immunity", icon: "fa-shield-alt", title: "Immunity", desc: "Feeling run down or fighting a bug." }
-          ]
-        },
-        step2: {
-          question: "How often do you get IV treatments?",
-          sub: "Helps us plan your long-term wellness strategy.",
-          options: [
-            { value: "first", icon: "fa-star", title: "First Time", desc: "New to IV therapy." },
-            { value: "regular", icon: "fa-sync", title: "Regularly", desc: "Part of my routine." }
-          ]
-        },
-        step3: {
-          question: "Are you interested in NAD+?",
-          sub: "NAD+ is our premier anti-aging and cognitive therapy.",
-          options: [
-            { value: "yes", icon: "fa-brain", title: "Yes", desc: "Want to explore longevity protocols." },
-            { value: "no", icon: "fa-times", title: "Not today", desc: "Just need standard hydration/vitamins." }
-          ]
-        },
-        protocols: {
-          energy: {
-            tag: "Mitochondrial Support",
-            name: "The Peak Performance Infusion",
-            peptides: "High-Dose NAD+ + B-Complex + Amino Stacks",
-            icon: "fa-bolt",
-            desc: "Upregulates cellular ATP production and clears cognitive fog by supplying essential cofactors directly to your bloodstream.",
-            goalModifiers: {
-              yes: "Includes our premier NAD+ longevity infusion, maximizing mitochondrial repair and cellular ATP output.",
-              no: "Focuses on our core B-Complex, Vitamin C, and hydration blend for clean, jitter-free vitality."
-            },
-            social: "89 patients with your profile received this infusion recently."
-          },
-          recovery: {
-            tag: "Systemic Restoration",
-            name: "The Athletic Hydration & Detox Protocol",
-            peptides: "Glutathione + Amino Acids + Electrolyte Infusion",
-            icon: "fa-first-aid",
-            desc: "Flushes out lactic acid, restores glycogen balance, and aids muscle cell recovery while detoxifying the liver for rapid systemic relief.",
-            goalModifiers: {
-              yes: "Adds NAD+ to boost post-training muscle repair and systemic recovery pacing.",
-              no: "Provides immediate hydration, amino acids, and high-dose glutathione to reduce soreness and oxidative stress."
-            },
-            social: "114 patients with your profile run this protocol post-training."
-          },
-          immunity: {
-            tag: "Defensive Optimization",
-            name: "The Immune Defense Shield",
-            peptides: "High-Dose Vitamin C + Zinc + Myers Cocktail",
-            icon: "fa-shield-alt",
-            desc: "A potent concentration of systemic antioxidants and mineral cofactors designed to stimulate white blood cell production and combat viral load.",
-            goalModifiers: {
-              yes: "Combines immune defense with NAD+ to resolve systemic fatigue from being run down.",
-              no: "Provides our maximum concentration of Vitamin C and Zinc to quickly fortify your immune response."
-            },
-            social: "95 patients with your profile choose this shield when feeling run down."
-          }
-        },
-        timelineMap: {
-          first: "1–2 hours (Immediate hydration)",
-          regular: "2–4 weeks (Cumulative benefits)"
-        }
+      {
+        label: "Active Athletes",
+        detail:
+          "People needing fast muscle recovery, hydration, and soreness relief after workouts.",
       },
-
-      eligibility: {
-        badge: "Clinical Candidacy",
-        headline: "Who Is This Right For?",
-        intro:
-          "IV therapy delivers nutrients directly into the bloodstream, bypassing digestive absorption entirely. Whether you're recovering from illness, training hard, or investing in longevity — IV therapy is one of the fastest-acting wellness modalities available.",
-        note: "A quick intake assessment is all we need to design your perfect infusion protocol.",
-        ctaText: "Book Your First Infusion",
-        items: [
-          {
-            label: "High Performers & Athletes",
-            detail:
-              "Individuals with demanding physical or cognitive output who require accelerated recovery and peak nutrient status.",
-          },
-          {
-            label: "Chronic Fatigue",
-            detail:
-              "Adults experiencing persistent low energy, immune compromise, or post-viral fatigue that supplements haven't resolved.",
-          },
-          {
-            label: "Frequent Travelers",
-            detail:
-              "High-frequency travelers who struggle with dehydration, jet lag, and immune stress from constant environmental changes.",
-          },
-          {
-            label: "Longevity-Focused",
-            detail:
-              "Individuals investing in long-term cellular health who want direct access to NAD+, glutathione, and key antioxidants.",
-          },
-          {
-            label: "Recovery Support",
-            detail:
-              "Post-surgery, post-illness, or post-event recovery support requiring rapid repletion of hydration and micronutrients.",
-          },
-        ],
+      {
+        label: "Frequent Travelers",
+        detail:
+          "Anyone fighting jet lag, dry air, or travel bugs from flying.",
       },
-
-      protocols: {
-        badge: "Our Infusions",
-        sectionHeadline: "Our IV Protocols",
-        sectionSubheadline:
-          "Every infusion is compounded fresh and tailored to your specific recovery, performance, or longevity goals.",
-        items: [
-          {
-            icon: "fa-bolt",
-            name: "NAD+ Infusion",
-            tag: "Most Transformative",
-            description:
-              "High-dose intravenous NAD+ to restore mitochondrial energy production, support DNA repair, and combat cellular aging at the molecular level.",
-          },
-          {
-            icon: "fa-star",
-            name: "Glutathione Push",
-            tag: "",
-            description:
-              "The master antioxidant, delivered intravenously for immune enhancement, liver detoxification, and luminous skin brightening.",
-          },
-          {
-            icon: "fa-tint",
-            name: "Myers' Cocktail",
-            tag: "Most Popular",
-            description:
-              "The clinical gold standard IV — magnesium, B vitamins, vitamin C, and calcium delivered in a precisely balanced infusion for energy, immunity, and vitality.",
-          },
-          {
-            icon: "fa-dumbbell",
-            name: "Athletic Recovery IV",
-            tag: "",
-            description:
-              "Amino acids, electrolytes, and anti-inflammatory compounds for rapid post-training or post-competition muscle recovery and rehydration.",
-          },
-          {
-            icon: "fa-shield-alt",
-            name: "Immune Fortification",
-            tag: "",
-            description:
-              "High-dose vitamin C, zinc, B12, and immune-supporting co-factors to bolster defenses against illness, especially during seasonal or travel stress.",
-          },
-          {
-            icon: "fa-syringe",
-            name: "Vitamin Injections",
-            tag: "",
-            description:
-              "Targeted intramuscular B12, D3, MIC/B12 lipotropics, and other co-factor injections for rapid nutrient delivery without a full IV session.",
-          },
-        ],
+      {
+        label: "Immune Defense Needed",
+        detail:
+          "Anyone feeling run down or wanting strong, immediate illness protection.",
       },
-
-      science: {
-        badge: "The Clinical Method",
-        headline: "The Science of<br><span class=\"text-primary\">IV Nutrient Therapy</span>",
-        body: "When you consume vitamins orally, your digestive system filters, degrades, and limits how much reaches your cells — often absorbing less than 20% of the dose. Intravenous delivery bypasses this entirely. Nutrients arrive at maximum bioavailability, saturating your bloodstream and reaching cells efficiently — making IV therapy a highly effective delivery system.",
-        bullets: [
-          "Maximum Bioavailability vs. ~20% Oral Absorption",
-          "Compounded Fresh Per Protocol",
-          "Immediate Cellular Delivery",
-        ],
-        stats: [
-          { value: "Max", label: "Bioavailability vs. ~20% oral average" },
-          { value: "45m", label: "Average infusion session time" },
-          { value: "0%", label: "Digestive degradation" },
-          { icon: "fa-shield-alt", label: "RN-Administered" },
-        ],
-        cards: [
-          {
-            icon: "fa-microscope",
-            title: "Bypassing Digestion",
-            detail:
-              "IV delivery sidesteps the GI tract entirely — nutrients hit your bloodstream at full concentration and reach every cell immediately.",
-          },
-          {
-            icon: "fa-bullseye",
-            title: "NAD+ Cellular Power",
-            detail:
-              "NAD+ cannot be meaningfully absorbed orally at therapeutic doses. IV is the only clinically effective delivery method for high-dose NAD+ therapy.",
-          },
-        ],
+      {
+        label: "Ready for Doctor Care",
+        detail:
+          "Looking for safe, medical-grade vitamin infusions in a comfortable clinic suite.",
       },
+    ],
+  },
 
-      comparison: {
-        headline: "IV Therapy vs. Oral Supplements",
-        subheadline: "The absorption difference changes everything.",
-        ctaText: "Book Your First Infusion",
-        mobileStats: [
-          { icon: "fa-bolt", label: "Instant Effect" },
-          { icon: "fa-tint", label: "Full Hydration" },
-          { icon: "fa-star", label: "Maximum Absorption" },
-          { icon: "fa-heartbeat", label: "Cellular Delivery" },
-        ],
-        rows: [
-          { metric: "Absorption Rate", without: "10–30% oral average", with: "Maximized IV delivery" },
-          { metric: "Onset of Effect", without: "Hours to days", with: "During infusion" },
-          { metric: "NAD+ Delivery", without: "Ineffective orally at dose", with: "Only viable at therapeutic IV dose" },
-          { metric: "Hydration", without: "Digestive bottleneck", with: "Direct vascular repletion" },
-          { metric: "Consistency", without: "Variable digestion", with: "Precise, exact dosing" },
-        ],
-        stacks: [
-          {
-            name: "The Peak Performance Stack",
-            tag: "Most Popular",
-            compounds: "Myers' Cocktail + Glutathione Push",
-            description:
-              "The ultimate wellness infusion combination. Myers' delivers foundational energy and immunity while glutathione handles detoxification and cellular protection.",
-          },
-          {
-            name: "The Longevity Infusion",
-            tag: "Most Transformative",
-            compounds: "NAD+ + Vitamin C + Glutathione",
-            description:
-              "A powerful anti-aging and cellular optimization stack. High-dose NAD+ restores mitochondrial function while vitamin C and glutathione protect and detoxify.",
-          },
-          {
-            name: "The Recovery Protocol",
-            tag: "",
-            compounds: "Athletic Recovery IV + B12 Injection",
-            description:
-              "Designed for post-training or post-competition recovery. Amino acids, electrolytes, and anti-inflammatories paired with a B12 injection for rapid cellular rebound.",
-          },
-        ],
+  protocols: {
+    badge: "Prescription Options",
+    sectionHeadline: "Simple Doctor-Guided Treatments",
+    sectionSubheadline:
+      "Doctor-prescribed IV infusions tailored to your body in a luxury medical suite.",
+    items: [
+      {
+        icon: "fa-bolt",
+        name: "NAD+ Cellular Infusion",
+        tag: "Anti-Aging Core",
+        description:
+          "Doctor-prescribed NAD+ therapy to repair cell engines, clear brain fog, and boost long-term energy.",
       },
+      {
+        icon: "fa-star",
+        name: "Glutathione Detox Push",
+        tag: "Master Antioxidant",
+        description:
+          "Direct intravenous push of the body's strongest antioxidant to cleanse the liver and brighten skin.",
+      },
+      {
+        icon: "fa-tint",
+        name: "Myers' Cocktail Drip",
+        tag: "Most Popular",
+        description:
+          "The clinical gold standard IV drip—packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for instant energy.",
+      },
+      {
+        icon: "fa-dumbbell",
+        name: "Athletic Recovery Drip",
+        tag: "Muscle Rebound",
+        description:
+          "Targeted amino acids and electrolytes to flush out muscle soreness and rehydrate you after exercise.",
+      },
+      {
+        icon: "fa-shield-alt",
+        name: "Immune Fortification Drip",
+        tag: "Illness Shield",
+        description:
+          "High-dose Vitamin C, Zinc, and B12 to supercharge your immune system before travel or during cold season.",
+      },
+      {
+        icon: "fa-syringe",
+        name: "Doctor Vitamin Shots",
+        tag: "Quick Booster",
+        description:
+          "Quick B12, D3, or fat-burn intramuscular shots when you want instant energy without sitting for a full drip.",
+      },
+    ],
+  },
 
-      faqs: [
-        {
-          question: "How long does an IV infusion take?",
-          answer:
-            "Most infusions run 30–60 minutes depending on the protocol. NAD+ infusions take longer — typically 2–4 hours — due to the slow infusion rate required for optimal tolerance and efficacy.",
-        },
-        {
-          question: "How often should I get IV therapy?",
-          answer:
-            "Frequency depends on your goals. General wellness patients typically come once or twice monthly. Athletes or those in intensive recovery phases may benefit from weekly sessions. Our membership tiers are designed to optimize value for consistent patients.",
-        },
-        {
-          question: "Is IV therapy safe?",
-          answer:
-            "Yes. All infusions are administered by registered nurses under physician oversight. We screen all patients before their first session to ensure IV therapy is appropriate for their health profile.",
-        },
-        {
-          question: "What does NAD+ IV therapy actually do?",
-          answer:
-            "NAD+ (nicotinamide adenine dinucleotide) is a critical co-enzyme involved in energy metabolism and DNA repair. Levels decline significantly with age. IV NAD+ restores mitochondrial function, combats brain fog, reduces fatigue, and supports anti-aging pathways — effects that cannot be achieved with oral supplements at therapeutic doses.",
-        },
-      ],
-    });
+  science: {
+    badge: "How It Works",
+    headline: "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
+    body: "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
+    bullets: [
+      "100% direct cellular absorption vs ~20% for stomach pills",
+      "Compounded fresh & prescribed by licensed medical doctors",
+      "Administered by registered nurses in a relaxing clinic suite",
+    ],
+    stats: [
+      { value: "100%", label: "Direct vitamin absorption" },
+      { value: "45m", label: "Average drip session time" },
+      { value: "Safe", label: "Doctor supervised & RN administered" },
+      { icon: "fa-user-md", label: "Rx Doctor Certified" },
+    ],
+    cards: [
+      {
+        icon: "fa-microscope",
+        title: "Bypasses Stomach Breakdown",
+        detail:
+          "IV drips bypass digestion completely so vitamins enter your bloodstream at full power for instant results.",
+      },
+      {
+        icon: "fa-bullseye",
+        title: "NAD+ Power Cell Delivery",
+        detail:
+          "NAD+ cannot be absorbed well in stomach pills. IV drips are the only proven way to get real NAD+ into your cells.",
+      },
+    ],
+  },
+
+  myths: [
+    {
+      myth: "Does an IV drip hurt?",
+      reality:
+        "No. Our experienced registered nurses use tiny needles and gentle techniques so you barely feel a pinch. You can relax, read, or watch TV during your drip."
+    },
+    {
+      myth: "Aren't oral vitamin pills enough?",
+      reality:
+        "No. Your stomach filters out up to 80% of oral vitamins. IV drips give you 100% absorption directly into your bloodstream for instant energy."
+    },
+    {
+      myth: "Is doctor-guided IV therapy safe?",
+      reality:
+        "Yes! Every drip is prescribed by a licensed doctor and administered by trained registered nurses following strict medical safety rules."
+    }
+  ],
+
+  comparison: {
+    headline: "Doctor-Guided Care vs. Doing It Alone",
+    subheadline:
+      "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    ctaText: "Call Our Clinic Today",
+    mobileStats: [
+      { icon: "fa-bolt", label: "Instant Effect" },
+      { icon: "fa-tint", label: "Full Hydration" },
+      { icon: "fa-star", label: "100% Absorption" },
+      { icon: "fa-shield-alt", label: "Doctor Checked" },
+    ],
+    rows: [
+      { metric: "Vitamin Absorption", without: "Only 10%–30% in stomach", with: "100% direct vascular absorption" },
+      { metric: "How Fast It Works", without: "Takes hours or days", with: "Immediate while sitting in drip suite" },
+      { metric: "NAD+ Delivery", without: "Wasted in stomach acid", with: "100% active cellular delivery" },
+      { metric: "Rehydration Speed", without: "Slow drinking water", with: "Instant cellular rehydration" },
+      { metric: "Medical Oversight", without: "Unverified store pills", with: "Licensed doctor & RN care" },
+    ],
+    stacks: [
+      {
+        name: "Peak Vitality Drip Stack",
+        tag: "Most Popular",
+        compounds: "Myers' Cocktail + Glutathione Push",
+        description:
+          "Our top IV drip pairing Myers' vitamins for energy with Glutathione for deep liver detox and glowing skin.",
+      },
+      {
+        name: "Total Anti-Aging Longevity Drip",
+        tag: "Cell Reset",
+        compounds: "NAD+ + Vitamin C + Glutathione",
+        description:
+          "Doctor NAD+ drip paired with high-dose antioxidants to repair cells and reverse brain fog.",
+      },
+      {
+        name: "Athletic Rebound Stack",
+        tag: "Fast Recovery",
+        compounds: "Athletic Recovery IV + B12 Injection",
+        description:
+          "Designed to flush out muscle soreness fast with pure amino acids, electrolytes, and B12.",
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: "Do I need a doctor's consultation before getting an IV drip?",
+      answer:
+        "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor to make sure your drip is perfectly customized and safe.",
+    },
+    {
+      question: "What does the doctor-guided IV program include?",
+      answer:
+        "Your program includes a medical consultation, custom compounded IV vitamins prepared fresh, comfortable seating in our luxury medical suite, and professional administration by registered nurses.",
+    },
+    {
+      question: "How long does an IV drip session take?",
+      answer:
+        "Most standard IV vitamin drips take 30 to 45 minutes. Special high-dose NAD+ anti-aging drips take a bit longer (2 to 3 hours) so your body absorbs every drop comfortably.",
+    },
+    {
+      question: "How often should I get IV vitamin therapy?",
+      answer:
+        "Most wellness patients visit once or twice a month for high energy and immune health. Active athletes or those recovering from illness often get weekly drips.",
+    },
+    {
+      question: "Is IV therapy safe?",
+      answer:
+        "100% yes. All infusions are prescribed by licensed doctors, mixed in accredited pharmacies, and administered by trained registered nurses following strict medical safety rules.",
+    },
+    {
+      question: "How do I get started with IV therapy?",
+      answer:
+        "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our medical team will prepare your custom drip!",
+    },
+  ],
+});

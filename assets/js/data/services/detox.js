@@ -2,69 +2,318 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
+  // ─── Card data ────────────────────────────────────────────────────────
   id: "detox",
   type: "additional",
   tabLabel: "Detox Protocols",
   href: "detox.html",
-  title: "Clinical Detoxification & Parasite Cleansing",
-  lead: "Restore systemic health and gut function with medical-grade detox protocols.",
-  description: "Comprehensive protocols including mycotoxin testing, antifungal treatments, and parasite clearance to restore systemic health and gut function.",
+  title: "Cleanse Your Gut & Reset Your Energy",
+  lead: "Clear out mold toxins, gut bugs, and heavy fatigue so you feel light, sharp, and energized.",
+  description:
+    "Unexplained bloating, brain fog, and exhaustion often come from hidden mold toxins or gut bugs. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
   icon: "fa-leaf",
   delay: "-2s",
   features: [
-    "Mycotoxin urine analysis testing",
-    "Treatment with clinical antifungals",
-    "Comprehensive parasite and ovum testing",
-    "Targeted treatment with Ivermectin and Mebendazole"
+    "Simple lab test for hidden mold & gut bugs",
+    "Doctor-prescribed cellular cleansing",
+    "Fix bloating, brain fog & constant fatigue",
+    "100% doctor-checked for your safety",
   ],
   image: "assets/images/photos/team-group.avif",
-  ctaText: "Start Your Detox Protocol",
+  ctaText: "Book Your Doctor Consultation",
 
-  pageTitle: "Medical Detox & Cleansing Protocols — OVI Wellness",
-  pageDescription: "Clinical detoxification programs including mycotoxin testing, antifungal treatments, and parasite clearance in St. Petersburg, FL.",
+  // ─── Page meta ────────────────────────────────────────────────────────
+  pageTitle: "Doctor-Guided Detox & Cleansing Protocols — OVI Wellness",
+  pageDescription:
+    "Doctor-guided medical detox protocols in St. Petersburg, FL. Mycotoxin mold testing, antifungal care, and gut cleansing supervised by licensed medical providers.",
 
-  heroHeadline: "Restore Your<br><span class=\"text-primary\">Systemic Health</span>",
-  heroCTA: "Book Your Assessment",
+  heroHeadline: "Reset Your Gut &<br><span class=\"text-primary\">Systemic Energy</span>",
+  heroSubheadline:
+    "Prescription Mold & Gut Detox protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+  heroCTA: "Book Your Doctor Call Today",
 
-  /*
-  transformations: {
-    headline: "Clinical Outcomes",
-    subheadline: "Real results from comprehensive detoxification.",
+  quiz: {
+    badge: "Quick 1-Minute Assessment",
+    headline: "Find Your Best Detox Plan",
+    subheadline: "Answer 3 quick questions so our doctors can help you pick the right plan.",
+    step1: {
+      question: "What is your main health struggle?",
+      sub: "Pick what you want to clear up first.",
+      options: [
+        { value: "mold", icon: "fa-disease", title: "Mold Exposure & Fatigue", desc: "Feeling brain fog, fatigue, or breathing issues after mold exposure." },
+        { value: "gut", icon: "fa-bug", title: "Bloating & Gut Issues", desc: "Constant bloating, stomach cramps, or sluggish digestion." },
+        { value: "reset", icon: "fa-arrows-rotate", title: "Total Body Reset", desc: "Want a complete doctor-led detox to clean up energy markers." }
+      ]
+    },
+    step2: {
+      question: "How long have you felt this way?",
+      sub: "Helps our doctor choose your starting plan.",
+      options: [
+        { value: "months", icon: "fa-calendar", title: "A Few Months", desc: "Recent fatigue, bloating, or skin flare-ups." },
+        { value: "years", icon: "fa-calendar-alt", title: "A Few Years", desc: "Ongoing digestive trouble or chronic fatigue for years." }
+      ]
+    },
+    step3: {
+      question: "Have you completed a medical detox test before?",
+      sub: "Helps our doctor guide your lab test.",
+      options: [
+        { value: "no", icon: "fa-times", title: "First Time", desc: "I have never done a clinical detox test." },
+        { value: "yes", icon: "fa-check", title: "Yes, I Have", desc: "I have tried store detoxes or basic cleanses before." }
+      ]
+    },
+    protocols: {
+      mold: {
+        tag: "Recommended Mold Detox Plan",
+        name: "Total Mold & Mycotoxin Clearance",
+        peptides: "Prescription Antifungal + Cellular Binders",
+        icon: "fa-disease",
+        desc: "A simple doctor-guided plan that tests for mold toxins and uses safe prescription binders to clear them from your cells.",
+        goalModifiers: {
+          no: "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
+          yes: "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
+        },
+        social: "Over 60 local patients cleared brain fog with this doctor-guided plan."
+      },
+      gut: {
+        tag: "Gut Reset Plan",
+        name: "Targeted Gut Cleansing & Restoration",
+        peptides: "Prescription Antiparasitic + Gut Repair Protocol",
+        icon: "fa-bug",
+        desc: "Eliminates unwanted gut bugs and bad bacteria to stop bloating, restore digestion, and boost daily energy.",
+        goalModifiers: {
+          no: "Includes simple lab testing to identify bad gut bacteria and start a gentle cleanse.",
+          yes: "Advanced clinical protocol to clear stubborn gut issues and repair intestinal health."
+        },
+        social: "78 patients achieved flat, comfortable digestion with this protocol."
+      },
+      reset: {
+        tag: "Total Vitality Plan",
+        name: "Systemic Body & Energy Reset",
+        peptides: "Full Lab Panel + Liver & Gut Detox",
+        icon: "fa-arrows-rotate",
+        desc: "Full body reset that cleanses your liver, clears blood toxins, and restores youthful energy.",
+        goalModifiers: {
+          no: "Complete baseline lab check to pinpoint what is holding your daily energy back.",
+          yes: "High-potency cellular cleanse built for long-term health and vitality."
+        },
+        social: "Over 85 patients renewed their energy with this doctor reset."
+      }
+    },
+    timelineMap: {
+      months: "6–8 weeks (Fast Track Cleanse)",
+      years: "8–12 weeks (Full Reset Plan)"
+    }
+  },
+
+  eligibility: {
+    badge: "Who Is This For?",
+    headline: "Are You a Candidate for Detox Care?",
+    intro:
+      "Our detox protocols are safe, medical-grade plans supervised by licensed doctors. We test your health markers first so you get the exact right treatment for your body.",
+    note: "Questions about candidacy? Our medical team will guide you during your consultation.",
+    ctaText: "Call Us Now to Check Candidacy",
     items: [
       {
-        imageAfter: "assets/images/photos/team-group.avif",
-        imageBefore: "assets/images/photos/team-group.avif",
-        badgeAfter: "Optimized",
-        badgeBefore: "Baseline",
-        title: "Systemic Cleansing",
-        protocol: "Mold & Parasite Detox",
-        description: "Significant improvement in energy levels, cognitive clarity, and digestive health after completing a targeted antifungal and antiparasitic protocol."
-      }
-    ]
+        label: "Brain Fog & Fatigue",
+        detail:
+          "Adults dealing with constant exhaustion, poor focus, or heavy mornings.",
+      },
+      {
+        label: "Unexplained Bloating",
+        detail:
+          "Anyone struggling with stomach cramps, irregular digestion, or food reactions.",
+      },
+      {
+        label: "Known Mold Exposure",
+        detail:
+          "People who lived or worked in moldy buildings and feel run down.",
+      },
+      {
+        label: "Failed Juice Cleanses",
+        detail:
+          "Anyone tired of grocery store teas or juice fasts that don't solve real problems.",
+      },
+      {
+        label: "Ready for Doctor Care",
+        detail:
+          "Looking for safe, doctor-prescribed lab testing and targeted cleansing.",
+      },
+    ],
   },
-  */
 
-  quiz: null,
-  eligibility: null,
-  comparison: null,
   protocols: {
-    sectionHeadline: "Our Core Detox Protocols",
-    sectionSubheadline: "Targeted clinical treatments for mold and parasitic infections.",
+    badge: "Prescription Options",
+    sectionHeadline: "Simple Doctor-Guided Treatments",
+    sectionSubheadline:
+      "Doctor-prescribed detox options tailored to your body after simple lab testing.",
     items: [
       {
         icon: "fa-vial",
-        name: "Mycotoxin Analysis & Treatment",
-        tag: "Mold Detox",
-        description: "Comprehensive mycotoxin urine analysis testing followed by a tailored protocol utilizing prescription antifungals to eliminate mold toxins from your system."
+        name: "Mycotoxin Mold Analysis",
+        tag: "Mold Test",
+        description:
+          "Simple urine lab testing to find hidden mold toxins in your cells and guide your custom doctor cleanse.",
+      },
+      {
+        icon: "fa-leaf",
+        name: "Prescription Antifungal Therapy",
+        tag: "Mold Clear",
+        description:
+          "Targeted prescription care to clear mold residues from your liver, tissues, and gut safely.",
       },
       {
         icon: "fa-bug",
-        name: "Parasite & Ovum Eradication",
+        name: "Gut Bug & Parasite Eradication",
         tag: "Gut Health",
-        description: "Advanced parasite and ovum testing combined with precise treatments using highly effective agents like Ivermectin and Mebendazole to restore gut function."
-      }
-    ]
+        description:
+          "Advanced testing paired with doctor-prescribed cleansers to eliminate bad bacteria and restore gut comfort.",
+      },
+      {
+        icon: "fa-shield-alt",
+        name: "Cellular Tox-Binder Protocol",
+        tag: "Toxin Flush",
+        description:
+          "Specialized prescription binders that trap toxins in your gut so your body flushes them out naturally.",
+      },
+      {
+        icon: "fa-heartbeat",
+        name: "Liver & Lymphatic Flush",
+        tag: "Organ Support",
+        description:
+          "Targeted nutrients and glutathione support to help your liver and lymphatic system flush waste fast.",
+      },
+      {
+        icon: "fa-flask",
+        name: "Doctor Lab Check",
+        tag: "Safety First",
+        description:
+          "Comprehensive blood and urine tests so your doctor can track your progress and keep you safe.",
+      },
+    ],
   },
-  science: null,
-  faqs: []
+
+  science: {
+    badge: "How It Works",
+    headline: "Why It Works When<br><span class=\"text-primary\">Juice Fasting Fails</span>",
+    body: "Juice fasts only flush water and miss deep mold toxins trapped in your fatty tissues and liver. Our doctor-guided protocols use real lab testing to pinpoint exact toxins. We then prescribe medical binders and antifungals that latch onto toxins and pull them out of your body safely.",
+    bullets: [
+      "Prescribed & monitored by licensed medical doctors",
+      "Based on real urine and blood lab tests",
+      "Pulls deep cellular toxins out without starving your body",
+    ],
+    stats: [
+      { value: "Targeted", label: "Pulls deep mold & gut toxins" },
+      { value: "Safe", label: "Doctor supervised & lab checked" },
+      { value: "0%", label: "Extreme fasting required" },
+      { icon: "fa-user-md", label: "Rx Doctor Certified" },
+    ],
+    cards: [
+      {
+        icon: "fa-microscope",
+        title: "Real Lab Testing",
+        detail:
+          "We use advanced urine mycotoxin panels to prove what toxins are in your system before starting.",
+      },
+      {
+        icon: "fa-bullseye",
+        title: "Prescription Toxin Binders",
+        detail:
+          "Medical binders latch onto trapped mold and heavy metals so your body can eliminate them cleanly.",
+      },
+    ],
+  },
+
+  myths: [
+    {
+      myth: "Do I have to go on an extreme juice fast?",
+      reality:
+        "No. Extreme juice fasts do not clear deep mold or gut bugs. Our doctor plans use safe prescription binders and clean eating so you eat normally while healing."
+    },
+    {
+      myth: "Is a medical detox harsh on my body?",
+      reality:
+        "No. Our doctors customize your starting dose based on your lab work and check in regularly to make sure your cleanse is smooth, gentle, and effective."
+    },
+    {
+      myth: "Is doctor-guided detox therapy safe?",
+      reality:
+        "Yes. All treatments use FDA-approved medications and natural binders prescribed directly by licensed medical doctors under strict Florida health guidelines."
+    }
+  ],
+
+  comparison: {
+    headline: "Doctor-Guided Care vs. Doing It Alone",
+    subheadline:
+      "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    ctaText: "Call Our Clinic Today",
+    mobileStats: [
+      { icon: "fa-vial", label: "Lab Tested" },
+      { icon: "fa-leaf", label: "Clean Gut" },
+      { icon: "fa-brain", label: "Clear Focus" },
+      { icon: "fa-shield-alt", label: "Doctor Checked" },
+    ],
+    rows: [
+      { metric: "Diagnostic Method", without: "Guessing / store teas", with: "Real lab tests (mycotoxins/gut)" },
+      { metric: "Cleansing Depth", without: "Surface water loss only", with: "Deep tissue & liver toxin flush" },
+      { metric: "Brain Fog Relief", without: "Temporary or none", with: "Lasting mental clarity" },
+      { metric: "Medical Oversight", without: "Unmonitored web kits", with: "Licensed MD review & labs" },
+      { metric: "Long-Term Outcome", without: "Bloating comes right back", with: "Rebalanced gut & clean cells" },
+    ],
+    stacks: [
+      {
+        name: "Complete Mold & Mycotoxin Cleanse",
+        tag: "Most Popular",
+        compounds: "Antifungal + Toxin Binder Stack",
+        description:
+          "Our top mold protocol combining prescription antifungals with cellular binders to clear mold fatigue.",
+      },
+      {
+        name: "Total Gut & Parasite Reset",
+        tag: "Gut Health",
+        compounds: "Antiparasitic + Microbiome Protocol",
+        description:
+          "Eliminates unwanted gut bugs and bad bacteria to restore smooth, comfortable digestion.",
+      },
+      {
+        name: "Full Systemic Energy Flush",
+        tag: "Total Reset",
+        compounds: "Lab Panel + Liver & Lymph Support",
+        description:
+          "Comprehensive body audit and flush designed to eliminate brain fog, fatigue, and systemic swelling.",
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: "Do I need a doctor's consultation for detox protocols?",
+      answer:
+        "Yes. All our medical detox protocols require a consultation with a licensed medical doctor. Our doctor will evaluate your symptoms and order targeted lab tests before prescribing your plan.",
+    },
+    {
+      question: "What does the doctor-guided detox program include?",
+      answer:
+        "Your program includes a full medical consultation, specialized urine or blood lab testing, custom prescription binders or antifungals, eating guidelines, and follow-up check-ins.",
+    },
+    {
+      question: "How do I know if I have mold toxins or gut bugs?",
+      answer:
+        "We order simple, painless lab tests (such as a urine mycotoxin panel or gut stool test) that pinpoint exactly what toxins or microbes are causing your brain fog and bloating.",
+    },
+    {
+      question: "Will I experience uncomfortable detox side effects?",
+      answer:
+        "Our doctors start your plan gently to avoid 'detox crashes'. We adjust your binder dose to make sure toxins are removed smoothly without disrupting your daily routine.",
+    },
+    {
+      question: "How long does a medical detox protocol take?",
+      answer:
+        "Most patients complete their main cleansing phase in 6 to 12 weeks, with major improvements in brain fog, energy, and digestion appearing within the first 3 to 4 weeks.",
+    },
+    {
+      question: "How do I get started with a clinical detox?",
+      answer:
+        "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order your lab test and start your plan!",
+    },
+  ],
 });

@@ -2,316 +2,317 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
-      /* 
-    FUTURE: ADD SPECIFIC TESTIMONIALS
-    testimonials: [
-      {
-        initials: "JD",
-        name: "John D.",
-        tag: "JOINT REPAIR",
-        quote: "BPC-157 significantly supported my shoulder recovery in 6 weeks."
+  // ─── Card data ────────────────────────────────────────────────────────
+  id: "regenerative-medicine",
+  type: "additional",
+  tabLabel: "Regenerative Medicine",
+  href: "regenerative-medicine.html",
+  title: "Fix Body Pain & Rebuild Cells Naturally",
+  lead: "Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.",
+  description:
+    "We use your body's own natural power to heal damaged joints, revive skin, and restore thick, healthy hair—100% doctor-prescribed without invasive surgery.",
+  icon: "fa-heartbeat",
+  delay: "-3s",
+  features: [
+    "Relieve stubborn joint aches & stiffness",
+    "Natural hair & skin restoration",
+    "Restore intimate health & confidence",
+    "100% doctor-checked for your safety",
+  ],
+  image: "assets/images/photos/IV.jpg",
+  ctaText: "Book Your Doctor Consultation",
+
+  // ─── Page meta ────────────────────────────────────────────────────────
+  pageTitle: "Doctor-Guided Regenerative Medicine — OVI Wellness",
+  pageDescription:
+    "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, O-Shot, and hair restoration supervised by licensed medical doctors.",
+
+  heroHeadline: "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
+  heroSubheadline:
+    "Prescription PRP & Exosome regenerative protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+  heroCTA: "Book Your Doctor Call Today",
+
+  quiz: {
+    badge: "Quick 1-Minute Assessment",
+    headline: "Find Your Best Healing Plan",
+    subheadline: "Answer 3 quick questions so our doctors can help you pick the right plan.",
+    step1: {
+      question: "What is your main concern right now?",
+      sub: "Pick what you want to fix first.",
+      options: [
+        { value: "joint", icon: "fa-bone", title: "Joint Pain & Stiffness", desc: "Sore knees, shoulders, or chronic joint pain." },
+        { value: "hair", icon: "fa-cut", title: "Hair Thinning", desc: "Want to restore scalp hair density naturally." },
+        { value: "intimacy", icon: "fa-heart", title: "Intimacy & Sexual Health", desc: "P-Shot or O-Shot for natural drive and sensitivity." }
+      ]
+    },
+    step2: {
+      question: "How long have you noticed this issue?",
+      sub: "Helps our doctor choose your starting plan.",
+      options: [
+        { value: "mild", icon: "fa-thermometer-empty", title: "Just Started (Mild)", desc: "Recent pain or early hair thinning." },
+        { value: "severe", icon: "fa-thermometer-full", title: "Long-Term (Severe)", desc: "Ongoing pain or noticeable hair loss for months." }
+      ]
+    },
+    step3: {
+      question: "Have you tried PRP or regenerative treatments before?",
+      sub: "Helps our doctor guide your care.",
+      options: [
+        { value: "no", icon: "fa-times", title: "First Time", desc: "I have never tried regenerative care before." },
+        { value: "yes", icon: "fa-check", title: "Yes, I Have", desc: "I have tried PRP or joint shots in the past." }
+      ]
+    },
+    protocols: {
+      joint: {
+        tag: "Recommended Joint Repair Plan",
+        name: "Total Joint & Cellular Repair Plan",
+        peptides: "Prescription PRP + Exosome Therapy",
+        icon: "fa-bone",
+        desc: "Concentrates your body's natural healing factors to soothe joint inflammation and rebuild damaged tissue naturally.",
+        goalModifiers: {
+          no: "Our doctor will conduct a quick knee or shoulder evaluation to set your starting dose.",
+          yes: "Our doctor will adjust your cellular density for maximum long-term relief."
+        },
+        social: "Over 50 local patients are currently using this joint recovery plan."
+      },
+      hair: {
+        tag: "Hair & Scalp Plan",
+        name: "Natural Scalp & Hair Restoration",
+        peptides: "Prescription PRP + Scalp Exosome Therapy",
+        icon: "fa-cut",
+        desc: "Wakes up dormant hair follicles using natural growth signals to bring back thicker, fuller hair.",
+        goalModifiers: {
+          no: "First-time plan designed to activate sleeping hair roots over simple sessions.",
+          yes: "Booster plan tailored to maintain high follicle density and thickness."
+        },
+        social: "82 patients saw visible hair density improvements with this plan."
+      },
+      intimacy: {
+        tag: "Intimacy & Confidence Plan",
+        name: "Cellular Intimacy Reset (P-Shot / O-Shot)",
+        peptides: "Natural PRP + Growth Factor Booster",
+        icon: "fa-heart",
+        desc: "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence for men and women.",
+        goalModifiers: {
+          no: "Our doctor will guide you through a comfortable, simple starting treatment.",
+          yes: "Enhanced booster protocol designed to sustain long-term vitality."
+        },
+        social: "69 local patients completed this intimacy treatment recently."
       }
-    ], 
-    */
-      // ─── Card data ────────────────────────────────────────────────────────
-      id: "regenerative-medicine",
-      type: "additional",
-      tabLabel: "Regenerative Medicine",
-      href: "regenerative-medicine.html",
-      title: "Fix Body Pain & Rebuild Cells Naturally",
-      lead: "Stop letting joint stiffness or thinning hair hold you back from living fully.",
-      description:
-        "We use your body's own natural power to heal damaged joints, revive skin, and restore hair thick and strong—without invasive surgery.",
-      icon: "fa-heartbeat",
-      delay: "-3s",
-      features: [
-        "Relieve stubborn joint aches & stiffness",
-        "Natural hair & skin rejuvenation",
-        "Pure cellular repair from within",
-        "Quick in-office treatments",
-      ],
-      image: "assets/images/photos/IV.jpg",
-      ctaText: "Fix My Joints & Hair",
+    },
+    timelineMap: {
+      mild: "4–6 weeks (Fast Track Plan)",
+      severe: "8–12 weeks (Standard Doctor Plan)"
+    }
+  },
 
-      // ─── Page meta ────────────────────────────────────────────────────────
-      pageTitle: "Advanced Regenerative Medicine — OVI Wellness",
-      pageDescription:
-        "Exosome therapy, PRP, P-Shot, O-Shot, and hair restoration in St. Petersburg, FL. Doctor-led regenerative medicine protocols at OVI Wellness.",
-
-      heroHeadline: "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
-      heroCTA: "Start Your Protocol",
-
-      /*
-      transformations: {
-        headline: "Clinical Transformations",
-        subheadline: "Real outcomes from regenerative treatments.",
-        items: [
-          {
-            imageAfter: "assets/images/photos/regen-after.jpg",
-            imageBefore: "assets/images/photos/regen-before.jpg",
-            badgeAfter: "Post-Treatment",
-            badgeBefore: "Baseline",
-            title: "Joint & Tissue Repair",
-            protocol: "PRP & Exosome Therapy",
-            description: "Accelerated healing and restored function after targeted regenerative injections."
-          }
-        ]
+  eligibility: {
+    badge: "Who Is This For?",
+    headline: "Are You a Candidate for Regenerative Care?",
+    intro:
+      "Our regenerative treatments use your body's own biological strength, supervised by licensed medical doctors. We check your health first to make sure you get safe, targeted care.",
+    note: "Questions about candidacy? Our medical team will guide you during your consultation.",
+    ctaText: "Call Us Now to Check Candidacy",
+    items: [
+      {
+        label: "Joint Pain & Arthritis",
+        detail:
+          "Adults dealing with joint pain, knee or shoulder stiffness, or sports injuries.",
       },
-      */
-      
-      quiz: {
-        badge: "Clinical Self-Assessment",
-        headline: "Find Your Protocol",
-        subheadline: "Answer 3 quick questions to help us identify the best regenerative strategy for you.",
-        step1: {
-          question: "What is your main concern?",
-          sub: "Your primary symptom guides our approach.",
-          options: [
-            { value: "joint", icon: "fa-bone", title: "Joint Pain", desc: "Chronic pain or acute injury." },
-            { value: "hair", icon: "fa-cut", title: "Hair Thinning", desc: "Looking to restore hair density." },
-            { value: "intimacy", icon: "fa-heart", title: "Sexual Wellness", desc: "Seeking P-Shot or O-Shot treatments." }
-          ]
-        },
-        step2: {
-          question: "How severe is your condition?",
-          sub: "Severity dictates the compound used.",
-          options: [
-            { value: "mild", icon: "fa-thermometer-empty", title: "Mild", desc: "Preventative or early stage." },
-            { value: "severe", icon: "fa-thermometer-full", title: "Severe", desc: "Significant pain or noticeable loss." }
-          ]
-        },
-        step3: {
-          question: "Have you tried regenerative therapies before?",
-          sub: "Helps us plan the protocol.",
-          options: [
-            { value: "no", icon: "fa-times", title: "Never", desc: "First time." },
-            { value: "yes", icon: "fa-check", title: "Yes", desc: "Have had PRP or similar." }
-          ]
-        },
-        protocols: {
-          joint: {
-            tag: "Structural Rehabilitation",
-            name: "The Cellular Joint Repair Protocol",
-            peptides: "Platelet-Rich Plasma (PRP) + Exosomes",
-            icon: "fa-bone",
-            desc: "Targets chronic pain and tissue degradation by injecting high-concentration cellular growth factors directly into affected areas to promote active healing.",
-            goalModifiers: {
-              no: "As a first-time candidate, we recommend starting with a baseline orthopedic evaluation.",
-              yes: "Prior regenerative treatment indicates we can tailor cellular density for an enhanced repair response."
-            },
-            social: "55 patients with your profile are currently running this protocol."
-          },
-          hair: {
-            tag: "Follicle Stimulation",
-            name: "The Scalp Regeneration Matrix",
-            peptides: "PRP / Exosomes + Scalp Micro-Channeling",
-            icon: "fa-cut",
-            desc: "Reverses androgenic alopecia and thinning by delivering biological growth signals directly to dormant hair follicles, stimulating density and strength.",
-            goalModifiers: {
-              no: "First-time therapy. A multi-session baseline approach is recommended for optimal follicle awakening.",
-              yes: "Prior therapy suggests a maintenance or high-intensity booster protocol to sustain follicle activity."
-            },
-            social: "82 patients with your profile achieved visible density improvements."
-          },
-          intimacy: {
-            tag: "Sexual Wellness Restoration",
-            name: "The Cellular Intimacy Protocol (P-Shot / O-Shot)",
-            peptides: "Autologous PRP + Cellular Growth Factors",
-            icon: "fa-heart",
-            desc: "Utilizes highly concentrated platelets to restore blood flow, tissue responsiveness, and localized nerve sensitivity for enhanced sexual wellness.",
-            goalModifiers: {
-              no: "A baseline mapping session will help us determine target areas for optimal response.",
-              yes: "Prior treatments allow us to adjust density for enhanced longevity of results."
-            },
-            social: "69 patients with your profile completed this treatment recently."
-          }
-        },
-        timelineMap: {
-          mild: "4–6 weeks",
-          severe: "8–12 weeks"
-        }
+      {
+        label: "Hair Thinning",
+        detail:
+          "Men and women looking for natural, non-surgical hair restoration.",
       },
-
-      eligibility: {
-        badge: "Clinical Candidacy",
-        headline: "Who Is This Right For?",
-        intro:
-          "Regenerative medicine leverages your body's own biological intelligence — and cutting-edge cellular science — to repair what time and injury have degraded. These are precision, medical-grade interventions requiring clinical evaluation.",
-        note: "Not sure if you qualify? Our medical team evaluates every case to determine the ideal regenerative pathway.",
-        ctaText: "Am I a Candidate? Let's Talk",
-        items: [
-          {
-            label: "Chronic Pain & Injury",
-            detail:
-              "Adults managing long-standing joint pain, tendon injuries, arthritis, or post-surgical recovery that hasn't fully resolved.",
-          },
-          {
-            label: "Sexual Health Concerns",
-            detail:
-              "Men and women seeking enhanced sexual function, sensation, and wellness through the P-Shot or O-Shot protocols.",
-          },
-          {
-            label: "Hair Loss",
-            detail:
-              "Individuals experiencing androgenic alopecia or diffuse thinning who want clinically backed, non-surgical restoration.",
-          },
-          {
-            label: "Anti-Aging & Longevity",
-            detail:
-              "High performers seeking cellular rejuvenation and systemic repair beyond what conventional medicine offers.",
-          },
-          {
-            label: "Diagnostics Ready",
-            detail:
-              "Willing to complete a clinical consultation and, where required, baseline lab work before initiating any protocol.",
-          },
-        ],
+      {
+        label: "Intimate Wellness",
+        detail:
+          "Men and women wanting enhanced drive, sensitivity, and stamina with the P-Shot or O-Shot.",
       },
-
-      protocols: {
-        badge: "Our Modalities",
-        sectionHeadline: "Our Regenerative Modalities",
-        sectionSubheadline:
-          "Precision biological therapies designed to repair, restore, and rejuvenate at the cellular level.",
-        items: [
-          {
-            icon: "fa-dna",
-            name: "Exosome Cellular Therapy",
-            tag: "Most Advanced",
-            description:
-              "Next-generation signaling vesicles derived from mesenchymal stem cells. Delivered to direct cellular repair, reduce systemic inflammation, and accelerate tissue regeneration across multiple systems.",
-          },
-          {
-            icon: "fa-tint",
-            name: "Platelet-Rich Plasma (PRP)",
-            tag: "",
-            description:
-              "Autologous plasma concentrated with your own growth factors. Applied to joints, scalp, or tissue to stimulate native healing and structural repair.",
-          },
-          {
-            icon: "fa-mars",
-            name: "P-Shot (Priapus Shot)",
-            tag: "",
-            description:
-              "PRP-based sexual wellness protocol for men targeting erectile function, sensitivity enhancement, and Peyronie's disease management.",
-          },
-          {
-            icon: "fa-venus",
-            name: "O-Shot (Orgasm Shot)",
-            tag: "",
-            description:
-              "PRP-based female sexual wellness protocol addressing arousal, sensation, orgasmic function, and urinary stress incontinence.",
-          },
-          {
-            icon: "fa-leaf",
-            name: "Advanced Hair Restoration",
-            tag: "",
-            description:
-              "PRP and exosome-assisted hair restoration protocols targeting follicle stimulation, scalp health, and supporting hair density.",
-          },
-          {
-            icon: "fa-heartbeat",
-            name: "Joint & Tissue Recovery",
-            tag: "",
-            description:
-              "Targeted PRP and exosome injections for knee, shoulder, hip, and spine conditions — reducing pain and restoring function without surgery.",
-          },
-        ],
+      {
+        label: "Want Surgery Avoided",
+        detail:
+          "Anyone seeking natural healing without risky surgery or synthetic pills.",
       },
-
-      science: {
-        badge: "The Clinical Method",
-        headline: "The Science of<br><span class=\"text-primary\">Regenerative Medicine</span>",
-        body: "Regenerative medicine works by amplifying your body's own repair intelligence. Whether through autologous PRP — concentrated with your own growth factors — or exosome signaling vesicles that instruct cells to rebuild and reduce inflammation, these therapies don't mask symptoms. They direct biological repair at the source.",
-        bullets: [
-          "Autologous & Bio-Compatible Compounds",
-          "Growth Factor Amplification",
-          "Clinically Supervised Protocols",
-        ],
-        stats: [
-          { value: "PRP", label: "Your own growth factors, concentrated" },
-          { value: "3B+", label: "Exosomes per therapeutic dose" },
-          { value: "0%", label: "Synthetic pharmaceuticals required" },
-          { icon: "fa-shield-alt", label: "Physician-Led" },
-        ],
-        cards: [
-          {
-            icon: "fa-microscope",
-            title: "Autologous Precision",
-            detail:
-              "PRP uses your own blood — eliminating rejection risk while delivering concentrated native growth factors directly to the target tissue.",
-          },
-          {
-            icon: "fa-bullseye",
-            title: "Exosome Signaling",
-            detail:
-              "Exosomes carry molecular instructions that tell damaged cells exactly how to repair themselves — the most advanced regenerative tool available.",
-          },
-        ],
+      {
+        label: "Ready for Doctor Care",
+        detail:
+          "Looking for safe, doctor-administered treatments in a comfortable clinic.",
       },
+    ],
+  },
 
-      comparison: {
-        headline: "Regenerative vs. Conventional",
-        subheadline: "How regenerative medicine changes the outcome equation.",
-        ctaText: "Discuss Your Regenerative Options",
-        mobileStats: [
-          { icon: "fa-dna", label: "Cellular Repair" },
-          { icon: "fa-shield-alt", label: "Natural Compounds" },
-          { icon: "fa-bolt", label: "Faster Recovery" },
-          { icon: "fa-heart", label: "Long-Term Results" },
-        ],
-        rows: [
-          { metric: "Mechanism", without: "Symptom suppression", with: "Root-level cellular repair" },
-          { metric: "Compounds Used", without: "Synthetic pharmaceuticals", with: "Your own biology + exosomes" },
-          { metric: "Recovery Timeline", without: "Long, unpredictable", with: "Accelerated, measurable" },
-          { metric: "Side Effect Profile", without: "High", with: "Minimal — bio-compatible" },
-          { metric: "Long-Term Outcomes", without: "Dependency risk", with: "Durable structural improvement" },
-        ],
-        stacks: [
-          {
-            name: "The Full Repair Protocol",
-            tag: "Most Comprehensive",
-            compounds: "Exosomes + PRP",
-            description:
-              "The most advanced regenerative stack available. Combines exosome cellular signaling with concentrated growth factor delivery for maximum structural repair.",
-          },
-          {
-            name: "Sexual Wellness Package",
-            tag: "",
-            compounds: "P-Shot or O-Shot + Hormone Review",
-            description:
-              "Comprehensive sexual health protocol pairing PRP therapy with a hormonal review to address function, sensation, and wellness from every angle.",
-          },
-          {
-            name: "Hair Restoration Protocol",
-            tag: "",
-            compounds: "PRP + Exosome Scalp Therapy",
-            description:
-              "Dual-modality hair restoration targeting follicle activation and scalp cellular health for visible, measurable hair density improvement.",
-          },
-        ],
+  protocols: {
+    badge: "Prescription Options",
+    sectionHeadline: "Simple Doctor-Guided Treatments",
+    sectionSubheadline:
+      "Doctor-prescribed regenerative treatments tailored to your body after a medical evaluation.",
+    items: [
+      {
+        icon: "fa-dna",
+        name: "Exosome Cellular Therapy",
+        tag: "Most Advanced",
+        description:
+          "Advanced cellular signals that tell damaged cells to repair, reduce joint swelling, and rebuild healthy tissue fast.",
       },
+      {
+        icon: "fa-tint",
+        name: "Platelet-Rich Plasma (PRP)",
+        tag: "Natural Healing",
+        description:
+          "Concentrates your own blood's natural growth factors to rebuild joints, revive hair, and smooth skin.",
+      },
+      {
+        icon: "fa-mars",
+        name: "P-Shot (Men's Intimacy)",
+        tag: "For Men",
+        description:
+          "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance.",
+      },
+      {
+        icon: "fa-venus",
+        name: "O-Shot (Women's Intimacy)",
+        tag: "For Women",
+        description:
+          "Natural PRP treatment for women to enhance intimacy, sensation, arousal, and bladder control.",
+      },
+      {
+        icon: "fa-leaf",
+        name: "Hair Restoration Therapy",
+        tag: "Thicker Hair",
+        description:
+          "PRP and exosome scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth.",
+      },
+      {
+        icon: "fa-heartbeat",
+        name: "Joint & Knee Recovery",
+        tag: "Pain Relief",
+        description:
+          "Targeted PRP and exosome injections for knees, shoulders, and hips—so you can move without pain.",
+      },
+    ],
+  },
 
-      faqs: [
-        {
-          question: "What are exosomes and how are they different from stem cells?",
-          answer:
-            "Exosomes are signaling vesicles secreted by stem cells — they carry the molecular instructions that direct cellular repair. Unlike stem cells, they don't engraft or replicate. They simply deliver biological 'messages' that instruct your own cells to heal, reduce inflammation, and regenerate.",
-        },
-        {
-          question: "Is PRP therapy painful?",
-          answer:
-            "PRP involves a simple blood draw and targeted injection. Topical numbing is applied to all injection sites. Most patients report minimal discomfort and return to normal activity the same day.",
-        },
-        {
-          question: "How many sessions do I need to see results?",
-          answer:
-            "This depends on the indication. Most hair restoration and joint protocols require 3 sessions spaced 4–6 weeks apart. Sexual wellness protocols often show results after a single treatment, with optimal outcomes at 3 months.",
-        },
-        {
-          question: "Is regenerative medicine covered by insurance?",
-          answer:
-            "Most regenerative therapies are not yet covered by standard insurance as they are elective or emerging treatments. We offer flexible financing options to make these protocols accessible.",
-        },
-      ],
-    });
+  science: {
+    badge: "How It Works",
+    headline: "Why It Works When<br><span class=\"text-primary\">Pain Pills Fail</span>",
+    body: "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (Exosomes), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
+    bullets: [
+      "Prescribed & performed by licensed medical doctors",
+      "100% natural compounds matching your body",
+      "Non-surgical, quick in-office treatments",
+    ],
+    stats: [
+      { value: "Natural", label: "Uses your body's own growth factors" },
+      { value: "Safe", label: "Doctor supervised & lab checked" },
+      { value: "0%", label: "Synthetic pain drugs needed" },
+      { icon: "fa-user-md", label: "Rx Doctor Certified" },
+    ],
+    cards: [
+      {
+        icon: "fa-microscope",
+        title: "Natural PRP Healing",
+        detail:
+          "PRP uses a quick sample of your blood to concentrate your body's own healing power with zero rejection risk.",
+      },
+      {
+        icon: "fa-bullseye",
+        title: "Exosome Cell Messaging",
+        detail:
+          "Exosomes deliver natural molecular messages that tell damaged cells exactly how to rebuild.",
+      },
+    ],
+  },
+
+  myths: [
+    {
+      myth: "Is PRP or regenerative therapy painful?",
+      reality:
+        "No. Our doctors apply gentle topical numbing before any treatment so you feel comfortable. Most patients return to normal daily activities the very same day."
+    },
+    {
+      myth: "Are exosomes stem cells?",
+      reality:
+        "No. Exosomes are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
+    },
+    {
+      myth: "Is doctor-guided regenerative medicine safe?",
+      reality:
+        "Yes. All treatments use natural, bio-compatible compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+    }
+  ],
+
+  comparison: {
+    headline: "Doctor-Guided Care vs. Doing It Alone",
+    subheadline: "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    ctaText: "Call Our Clinic Today",
+    mobileStats: [
+      { icon: "fa-dna", label: "Cellular Healing" },
+      { icon: "fa-shield-alt", label: "Natural Safety" },
+      { icon: "fa-bolt", label: "Quick Relief" },
+      { icon: "fa-heart", label: "Long-Term Results" },
+    ],
+    rows: [
+      { metric: "How It Works", without: "Numbs pain temporarily", with: "Rebuilds damaged tissue at source" },
+      { metric: "Treatment Type", without: "Synthetic pain drugs / surgery", with: "Natural PRP & Exosomes" },
+      { metric: "Recovery Time", without: "Weeks of downtime / surgery", with: "Back to normal same day" },
+      { metric: "Safety Profile", without: "High risk & side effects", with: "100% natural bio-compatible" },
+      { metric: "Long-Term Relief", without: "Wears off quickly", with: "Lasting natural cellular repair" },
+    ],
+    stacks: [
+      {
+        name: "Complete Joint Repair Plan",
+        tag: "Most Popular",
+        compounds: "PRP + Exosome Protocol",
+        description:
+          "Our top joint protocol combining natural PRP growth factors with exosome cell signals for fast pain relief.",
+      },
+      {
+        name: "Intimacy Restoration Package",
+        tag: "Sexual Wellness",
+        compounds: "P-Shot or O-Shot + Doctor Review",
+        description:
+          "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence for men and women.",
+      },
+      {
+        name: "Natural Hair Restoration Plan",
+        tag: "Thicker Scalp",
+        compounds: "PRP + Scalp Exosome Therapy",
+        description:
+          "Dual-action scalp treatment designed to awaken sleeping hair roots and boost natural hair density.",
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: "Do I need a doctor's consultation for regenerative medicine?",
+      answer:
+        "Yes. All PRP, exosome, and intimacy treatments require a medical consultation. You will talk with our licensed medical doctor who evaluates your joint, hair, or intimacy health before creating your custom plan.",
+    },
+    {
+      question: "What does the doctor-guided regenerative program include?",
+      answer:
+        "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or exosome treatment, topical numbing for comfort, and follow-up progress check-ins.",
+    },
+    {
+      question: "Are PRP and exosome injections painful?",
+      answer:
+        "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day.",
+    },
+    {
+      question: "How many sessions do I need to see results?",
+      answer:
+        "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot and O-Shot) often deliver noticeable improvements after just one treatment!",
+    },
+    {
+      question: "How do exosomes differ from stem cell treatments?",
+      answer:
+        "Exosomes are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing.",
+    },
+    {
+      question: "How do I get started with regenerative medicine?",
+      answer:
+        "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your goals and start your personalized recovery plan.",
+    },
+  ],
+});

@@ -2,70 +2,318 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
+  // ─── Card data ────────────────────────────────────────────────────────
   id: "advanced-labs",
   type: "additional",
   tabLabel: "Advanced Labs",
   href: "advanced-labs.html",
-  title: "Precision Diagnostics & Biomarker Testing",
-  lead: "Uncover the root cause of your symptoms with comprehensive clinical panels.",
-  description: "We utilize cutting-edge diagnostics including MTHFR gene testing, micronutrient analysis, heavy metal screening, cardiac biomarkers, and complete hormone panels to map your biological health.",
+  title: "Uncover What Your Regular Bloodwork Misses",
+  lead: "Stop guessing why you feel tired, bloated, or worn out with simple, complete doctor lab panels.",
+  description:
+    "Standard doctor blood tests only check basic numbers. Our advanced lab tests look deep into your hormones, vitamins, gene markers (MTHFR), and heavy metals so our doctors can give you exact answers.",
   icon: "fa-flask",
   delay: "-3s",
   features: [
-    "MTHFR gene & methylation testing",
-    "Comprehensive micronutrient profiles",
-    "Heavy metal screening",
-    "Advanced cardiac & hormone panels"
+    "Complete hormone & energy blood panels",
+    "Vitamin & micronutrient levels checked",
+    "MTHFR gene & heavy metal screening",
+    "100% doctor-reviewed with custom plan",
   ],
   image: "assets/images/photos/team-group.avif",
-  ctaText: "Schedule Your Lab Draw",
+  ctaText: "Book Your Doctor Consultation",
 
-  pageTitle: "Advanced Diagnostic Labs — OVI Wellness",
-  pageDescription: "Comprehensive diagnostic testing including MTHFR, micronutrients, heavy metals, cardiac markers, and hormone panels in St. Petersburg, FL.",
+  // ─── Page meta ────────────────────────────────────────────────────────
+  pageTitle: "Doctor-Guided Advanced Diagnostic Labs — OVI Wellness",
+  pageDescription:
+    "Doctor-guided advanced diagnostic lab testing in St. Petersburg, FL. Hormone panels, MTHFR testing, micronutrients, and heavy metal screening.",
 
-  heroHeadline: "Data-Driven<br><span class=\"text-primary\">Health Intelligence</span>",
-  heroCTA: "Book Your Assessment",
+  heroHeadline: "Uncover Your Real<br><span class=\"text-primary\">Health Numbers</span>",
+  heroSubheadline:
+    "Advanced Doctor Lab Panels medically reviewed by Board-Certified Doctors in St. Petersburg, FL.",
+  heroCTA: "Book Your Doctor Call Today",
 
-  // transformations: null,
-  quiz: null,
-  eligibility: null,
-  comparison: null,
-  protocols: {
-    sectionHeadline: "Our Diagnostic Capabilities",
-    sectionSubheadline: "Identify deficiencies, genetic markers, and hidden health risks.",
+  quiz: {
+    badge: "Quick 1-Minute Assessment",
+    headline: "Find Your Best Lab Panel",
+    subheadline: "Answer 3 quick questions so our doctors can recommend the right blood test for you.",
+    step1: {
+      question: "What is your main reason for getting bloodwork?",
+      sub: "Pick what you want to check first.",
+      options: [
+        { value: "hormone", icon: "fa-syringe", title: "Hormones & Energy", desc: "Want to check testosterone, thyroid, and daily stamina." },
+        { value: "vitamins", icon: "fa-apple-alt", title: "Vitamin & Nutrient Deficiencies", desc: "Feeling tired, weak immunity, or hair thinning." },
+        { value: "genetics", icon: "fa-dna", title: "MTHFR & Heavy Metals", desc: "Want to check gene markers, mold, or heavy metal toxicity." }
+      ]
+    },
+    step2: {
+      question: "When was your last comprehensive blood test?",
+      sub: "Helps our doctor choose your panel depth.",
+      options: [
+        { value: "recent", icon: "fa-calendar", title: "In the last 6 months", desc: "I have basic recent lab results." },
+        { value: "old", icon: "fa-calendar-alt", title: "Over a year ago / Never", desc: "I need a complete baseline lab test." }
+      ]
+    },
+    step3: {
+      question: "Do you have unexplained symptoms like fatigue or brain fog?",
+      sub: "Helps our doctor target hidden root causes.",
+      options: [
+        { value: "yes", icon: "fa-triangle-exclamation", title: "Yes, I Do", desc: "Normal doctor tests came back 'fine' but I still feel bad." },
+        { value: "no", icon: "fa-circle-check", title: "No, Just Preventative", desc: "I feel okay but want peak longevity and health data." }
+      ]
+    },
+    protocols: {
+      hormone: {
+        tag: "Recommended Energy Panel",
+        name: "Total Hormone & Vitality Panel",
+        peptides: "Full Testosterone + Thyroid + Cortisol Analysis",
+        icon: "fa-syringe",
+        desc: "Measures total and free testosterone, thyroid function, cortisol, and energy markers to pinpoint why you feel tired.",
+        goalModifiers: {
+          yes: "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
+          no: "Great baseline check to keep your hormones balanced as you age."
+        },
+        social: "Over 120 local patients unlocked high energy with this doctor lab panel."
+      },
+      vitamins: {
+        tag: "Nutrient & Immunity Panel",
+        name: "Complete Micronutrient & Antioxidant Audit",
+        peptides: "Intracellular Vitamin & Mineral Testing",
+        icon: "fa-apple-alt",
+        desc: "Checks exact vitamin B12, D3, magnesium, and antioxidant levels inside your cells so you take only what you need.",
+        goalModifiers: {
+          yes: "Finds cellular vitamin gaps that cause brain fog, sluggishness, and slow recovery.",
+          no: "Helps build a clean, custom daily vitamin plan tailored strictly to your body."
+        },
+        social: "89 patients optimized their health with this intracellular audit."
+      },
+      genetics: {
+        tag: "Deep Health & Detox Panel",
+        name: "MTHFR Gene & Toxic Metal Panel",
+        peptides: "DNA Methylation + Lead/Mercury/Arsenic Screen",
+        icon: "fa-dna",
+        desc: "Scans your MTHFR gene variants and tests for toxic heavy metals that disrupt your brain, mood, and heart health.",
+        goalModifiers: {
+          yes: "Uncovers hidden genetic or toxic obstacles that prevent traditional treatments from working.",
+          no: "Advanced longevity test to ensure long-term brain, heart, and liver protection."
+        },
+        social: "73 patients discovered hidden genetic insights with this panel."
+      }
+    },
+    timelineMap: {
+      recent: "3–5 days (Fast Results Review)",
+      old: "5–7 days (Full Baseline Audit)"
+    }
+  },
+
+  eligibility: {
+    badge: "Who Is This For?",
+    headline: "Are You a Candidate for Advanced Labs?",
+    intro:
+      "Our diagnostic panels go far beyond standard annual bloodwork. Supervised by licensed medical doctors, we uncover hidden root causes so you get clear, actionable answers.",
+    note: "Questions about lab testing? Our medical team will guide you during your consultation.",
+    ctaText: "Call Us Now to Check Candidacy",
     items: [
       {
+        label: "Told Your Labs Are 'Normal'",
+        detail:
+          "Adults who feel exhausted or bloated despite primary care doctors saying labs are fine.",
+      },
+      {
+        label: "Tired All Day",
+        detail:
+          "Anyone struggling with brain fog, midday crashes, low drive, or poor sleep.",
+      },
+      {
+        label: "Family Heart & Gene Risk",
+        detail:
+          "People wanting MTHFR gene testing, ApoB, or advanced cardiac risk checks.",
+      },
+      {
+        label: "Want Data-Driven Care",
+        detail:
+          "Anyone starting TRT, weight loss, or peptides who needs accurate starting numbers.",
+      },
+      {
+        label: "Ready for Doctor Review",
+        detail:
+          "Looking for a 1-on-1 doctor review of every marker with a personalized plan.",
+      },
+    ],
+  },
+
+  protocols: {
+    badge: "Prescription Options",
+    sectionHeadline: "Simple Doctor-Guided Treatments",
+    sectionSubheadline:
+      "Comprehensive doctor-ordered lab panels drawn conveniently in our clinic or local lab.",
+    items: [
+      {
+        icon: "fa-syringe",
+        name: "Complete Hormone Panel",
+        tag: "Hormone Core",
+        description:
+          "Tests total & free testosterone, estrogen, thyroid (T3/T4), cortisol, and DHEA to restore peak energy.",
+      },
+      {
         icon: "fa-dna",
-        name: "MTHFR Gene Testing",
+        name: "MTHFR Gene Variant Test",
         tag: "Genetics",
-        description: "Identify key genetic variants (C677T/A1298C) that affect your body's methylation pathways and ability to process folate, allowing for precise supplementation."
+        description:
+          "Identifies C677T and A1298C gene variants to optimize your body's methylation, mood, and folate use.",
       },
       {
         icon: "fa-apple-alt",
-        name: "Comprehensive Micronutrient Testing",
-        tag: "Nutrition",
-        description: "Measure intracellular levels of essential vitamins, minerals, amino acids, and antioxidants to optimize your nutritional foundation."
+        name: "Micronutrient Intracellular Test",
+        tag: "Vitamins",
+        description:
+          "Measures vitamins, minerals, and antioxidants directly inside your blood cells for true accuracy.",
       },
       {
         icon: "fa-industry",
-        name: "Heavy Metal Testing",
-        tag: "Toxicity",
-        description: "Accurately screen for toxic elements such as lead, mercury, and arsenic that can disrupt endocrine function and cognitive health."
+        name: "Toxic Heavy Metal Screen",
+        tag: "Detox Check",
+        description:
+          "Screens for mercury, lead, and arsenic that accumulate over time and trigger fatigue and brain fog.",
       },
       {
         icon: "fa-heartbeat",
-        name: "Advanced Cardiac Biomarkers",
+        name: "Advanced Heart & Lipid Panel",
         tag: "Cardiovascular",
-        description: "Beyond standard cholesterol testing: analyze ApoB, Lp(a), hs-CRP, and lipid subfractions to accurately assess cardiovascular risk."
+        description:
+          "Goes beyond basic cholesterol to analyze ApoB, Lp(a), and hs-CRP for real heart safety.",
       },
       {
-        icon: "fa-syringe",
-        name: "Complete Hormone Panels",
-        tag: "Endocrinology",
-        description: "In-depth evaluation of total and free testosterone, estradiol, thyroid function, cortisol, and DHEA to guide your optimization protocol."
-      }
-    ]
+        icon: "fa-user-md",
+        name: "1-on-1 Doctor Review",
+        tag: "Doctor Consult",
+        description:
+          "Every lab draw includes a detailed 1-on-1 consultation with our doctor to explain your numbers.",
+      },
+    ],
   },
-  science: null,
-  faqs: []
+
+  science: {
+    badge: "How It Works",
+    headline: "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
+    body: "Standard doctor bloodwork only checks for disease red flags—not optimal health. Their 'normal' range includes sick or aging populations. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+    bullets: [
+      "Ordered & reviewed by licensed medical doctors",
+      "Tests optimal vitality ranges—not just 'disease normal'",
+      "Includes clear 1-on-1 doctor consultation & action plan",
+    ],
+    stats: [
+      { value: "Deep", label: "Tests optimal ranges, not basic averages" },
+      { value: "Safe", label: "Doctor reviewed & lab verified" },
+      { value: "1-on-1", label: "Personalized MD consultation" },
+      { icon: "fa-user-md", label: "Rx Doctor Certified" },
+    ],
+    cards: [
+      {
+        icon: "fa-microscope",
+        title: "Intracellular Precision",
+        detail:
+          "We measure nutrient levels inside your cells where they actually work, rather than just floating in serum.",
+      },
+      {
+        icon: "fa-bullseye",
+        title: "Actionable Doctor Plan",
+        detail:
+          "You don't just get a stack of confusing numbers—our doctor gives you a simple, step-by-step treatment plan.",
+      },
+    ],
+  },
+
+  myths: [
+    {
+      myth: "My doctor said my bloodwork is normal, so why do I feel bad?",
+      reality:
+        "Standard labs use wide population averages to spot disease. You can be in the 'normal' range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
+    },
+    {
+      myth: "Do I need to fast before getting my blood drawn?",
+      reality:
+        "For most comprehensive hormone and lipid panels, yes—a simple 8 to 12 hour overnight fast (water is okay) gives our doctor the cleanest, most accurate health reading."
+    },
+    {
+      myth: "Is doctor-guided lab testing covered or simple?",
+      reality:
+        "Yes! We make lab testing easy and seamless. You can get drawn right at our St. Petersburg clinic or at a local lab, followed by a full doctor consult."
+    }
+  ],
+
+  comparison: {
+    headline: "Doctor-Guided Care vs. Doing It Alone",
+    subheadline:
+      "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    ctaText: "Call Our Clinic Today",
+    mobileStats: [
+      { icon: "fa-flask", label: "Deep Labs" },
+      { icon: "fa-user-md", label: "Doctor Reviewed" },
+      { icon: "fa-bullseye", label: "Exact Target" },
+      { icon: "fa-shield-alt", label: "100% Safe" },
+    ],
+    rows: [
+      { metric: "Lab Depth", without: "Basic 5-marker check", with: "Full comprehensive biomarker audit" },
+      { metric: "Reference Ranges", without: "Wide 'sick population' normal", with: "Tight optimal health & energy range" },
+      { metric: "Genetic & Toxic Screening", without: "Never checked", with: "MTHFR, heavy metals & ApoB checked" },
+      { metric: "Doctor Review", without: "Automated portal email", with: "Detailed 1-on-1 MD consultation" },
+      { metric: "Treatment Plan", without: "No action plan given", with: "Custom doctor protocol prescribed" },
+    ],
+    stacks: [
+      {
+        name: "Complete Vitality & Hormone Panel",
+        tag: "Most Popular",
+        compounds: "Full Hormones + Thyroid + Metabolic",
+        description:
+          "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy.",
+      },
+      {
+        name: "MTHFR & Methylation DNA Audit",
+        tag: "Genetics",
+        compounds: "MTHFR Genes + Homocysteine + Folate",
+        description:
+          "Uncovers genetic methylation roadblocks to fix fatigue, brain fog, and mood slumps.",
+      },
+      {
+        name: "Total Body Longevity & Cardiac Audit",
+        tag: "Complete Check",
+        compounds: "ApoB + Heavy Metals + Micronutrients",
+        description:
+          "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins.",
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: "Do I need a doctor's order to get advanced lab testing?",
+      answer:
+        "Our licensed medical doctor provides the required lab order! You will consult with our medical team, who orders your custom panel based on your specific health goals and symptoms.",
+    },
+    {
+      question: "What does the doctor-guided lab program include?",
+      answer:
+        "Your program includes the physician lab order, your blood draw at our clinic or a local lab partner, a complete lab analysis, and a detailed 1-on-1 doctor consultation to explain your results.",
+    },
+    {
+      question: "Where do I go to get my blood drawn?",
+      answer:
+        "You can get your blood drawn right here at our comfortable St. Petersburg medical clinic, or we can send an order to a convenient local Quest or LabCorp near you!",
+    },
+    {
+      question: "How long does it take to get my lab results back?",
+      answer:
+        "Most routine hormone and metabolic lab results return within 3 to 5 business days. Specialized genetic or heavy metal panels typically take 7 to 10 days.",
+    },
+    {
+      question: "Will the doctor explain my numbers and create a treatment plan?",
+      answer:
+        "100% yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body.",
+    },
+    {
+      question: "How do I get started with advanced lab testing?",
+      answer:
+        "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order your custom lab panel today!",
+    },
+  ],
 });
