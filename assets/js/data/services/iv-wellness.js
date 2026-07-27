@@ -41,6 +41,7 @@ window.clinicData.services.push({
       heroHeadline: "Maximum Bioavailability.<br><span class=\"text-primary\">Zero Compromise.</span>",
       heroCTA: "Book Your Infusion",
 
+      /*
       transformations: {
         headline: "Clinical Transformations",
         subheadline: "Real outcomes from targeted intravenous therapy and wellness protocols.",
@@ -56,6 +57,7 @@ window.clinicData.services.push({
           }
         ]
       },
+      */
       
       quiz: {
         badge: "Clinical Self-Assessment",

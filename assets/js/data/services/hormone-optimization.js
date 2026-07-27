@@ -43,6 +43,7 @@ window.clinicData.services.push({
       heroHeadline: "Reclaim Your<br><span class=\"text-primary\">Hormonal</span> Edge",
       heroCTA: "Start Your Protocol",
 
+      /*
       transformations: {
         headline: "Clinical Transformations",
         subheadline: "Visual evidence of optimized hormone levels and body composition.",
@@ -58,6 +59,7 @@ window.clinicData.services.push({
           }
         ]
       },
+      */
       
       quiz: {
         badge: "Clinical Self-Assessment",

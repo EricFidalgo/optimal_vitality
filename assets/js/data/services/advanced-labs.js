@@ -26,7 +26,7 @@ window.clinicData.services.push({
   heroHeadline: "Data-Driven<br><span class=\"text-primary\">Health Intelligence</span>",
   heroCTA: "Book Your Assessment",
 
-  transformations: null,
+  // transformations: null,
   quiz: null,
   eligibility: null,
   comparison: null,

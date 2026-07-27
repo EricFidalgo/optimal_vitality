@@ -41,6 +41,7 @@ window.clinicData.services.push({
       heroHeadline: "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
       heroCTA: "Start Your Protocol",
 
+      /*
       transformations: {
         headline: "Clinical Transformations",
         subheadline: "Real outcomes from regenerative treatments.",
@@ -56,6 +57,7 @@ window.clinicData.services.push({
           }
         ]
       },
+      */
       
       quiz: {
         badge: "Clinical Self-Assessment",

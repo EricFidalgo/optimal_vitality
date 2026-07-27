@@ -26,6 +26,7 @@ window.clinicData.services.push({
   heroHeadline: "Restore Your<br><span class=\"text-primary\">Systemic Health</span>",
   heroCTA: "Book Your Assessment",
 
+  /*
   transformations: {
     headline: "Clinical Outcomes",
     subheadline: "Real results from comprehensive detoxification.",
@@ -41,6 +42,7 @@ window.clinicData.services.push({
       }
     ]
   },
+  */
 
   quiz: null,
   eligibility: null,

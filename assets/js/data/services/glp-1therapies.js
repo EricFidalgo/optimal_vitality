@@ -42,6 +42,7 @@ window.clinicData.services.push({
       heroHeadline: "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
       heroCTA: "Start Your Protocol",
 
+      /*
       transformations: {
         headline: "Clinical Transformations",
         subheadline: "Visual evidence of optimized body composition and metabolic health.",
@@ -66,6 +67,7 @@ window.clinicData.services.push({
           }
         ]
       },
+      */
       
       
       quiz: {

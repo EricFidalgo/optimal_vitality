@@ -34,6 +34,7 @@ window.clinicData.services.push({
       pageDescription: "Targeted cellular signaling through clinical-grade peptide therapy at the Optimal Vitality Institute.",
       heroHeadline: "Targeted <br><span class=\"text-primary\">Cellular</span> Signaling",
       heroCTA: "Start Your Protocol",
+      /*
       transformations: {
         headline: "Clinical Transformations",
         subheadline: "Visual evidence of optimized body composition, accelerated tissue repair, and complete metabolic restructuring.",
@@ -58,6 +59,7 @@ window.clinicData.services.push({
           }
         ]
       },
+      */
       eligibility: {
         badge: "Clinical Candidacy",
         headline: "Who Is This Right For?",
