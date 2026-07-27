@@ -8,7 +8,7 @@ window.clinicData.services.push({
   href: "detox.html",
   title: "Clinical Detoxification & Parasite Cleansing",
   lead: "Restore systemic health and gut function with medical-grade detox protocols.",
-  description: "Our comprehensive protocols include advanced mycotoxin urine analysis and parasite testing, paired with targeted treatments like antifungals and targeted antiparasitic agents to thoroughly clear your system.",
+  description: "Comprehensive protocols including mycotoxin testing, antifungal treatments, and parasite clearance to restore systemic health and gut function.",
   icon: "fa-leaf",
   delay: "-2s",
   features: [

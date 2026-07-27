@@ -15,7 +15,7 @@ function initMain() {
             return url;
         }
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
-        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "iv-wellness", "peptides", "detox", "advanced-labs"];
+        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "medical-aesthetics", "iv-wellness", "peptides", "detox", "advanced-labs"];
         const baseName = url.replace('.html', '').split('#')[0];
 
         if (isSubpage) {
@@ -465,7 +465,8 @@ function initMain() {
         // --- Hero Blob Menu ---
         const blobContainer = document.querySelector('.blob-menu-container');
         if (blobContainer && data.services) {
-            blobContainer.innerHTML = data.services.map(service => `
+            const coreServices = data.services.filter(s => s.type === 'core');
+            blobContainer.innerHTML = coreServices.map(service => `
                 <a href="${resolveUrl(service.href)}" class="service-blob" style="animation-delay: ${service.delay};">
                     <i class="fas ${service.icon} icon"></i>
                     <span class="blob-title">${service.tabLabel}</span>
@@ -889,7 +890,7 @@ function initMain() {
         const heroContent = document.querySelector('.hero-content');
         const heroActions = document.querySelector('.hero-actions');
         const blobs = document.querySelectorAll('.service-blob');
-        const promoBadge = document.querySelector('.hero-promo-badge');
+        const modalitiesBadge = document.querySelector('.hero-modalities-badge');
 
         // Only trigger on the homepage where these elements exist simultaneously
         if (heroContent && heroActions && blobs.length > 0) {
@@ -897,8 +898,8 @@ function initMain() {
             gsap.set(heroActions, { opacity: 0 });
             gsap.set(heroContent, { y: 120, opacity: 0 });
             gsap.set(blobs, { scale: 0, opacity: 0 });
-            if (promoBadge) {
-                gsap.set(promoBadge, { scale: 0, opacity: 0 });
+            if (modalitiesBadge) {
+                gsap.set(modalitiesBadge, { scale: 0, opacity: 0 });
             }
 
             const tl = gsap.timeline({ delay: 0.15 });
@@ -930,9 +931,9 @@ function initMain() {
                 clearProps: 'transform,opacity' // Clears GSAP inline styles so CSS morphing and hovers work perfectly
             }, '-=0.15');
 
-            // 4. Pop up the promotional badge right after the bubbles finish
-            if (promoBadge) {
-                tl.to(promoBadge, {
+            // 4. Pop up the modalities badge as the hero's sleek focal anchor
+            if (modalitiesBadge) {
+                tl.to(modalitiesBadge, {
                     scale: 1,
                     opacity: 1,
                     duration: 0.5,
