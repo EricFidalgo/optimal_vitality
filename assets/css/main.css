@@ -3824,11 +3824,15 @@ body.modal-open,
   color: var(--primary-color) !important;
 }
 
-/* Footer Link Hovers */
+/* Footer Link & Text Styling */
+.footer-text-soft,
 .footer a:not(.cta-btn) {
+  color: rgba(255, 255, 255, 0.82) !important;
   transition: color 0.2s ease;
 }
-.footer a:not(.cta-btn):hover {
+.footer a:not(.cta-btn):hover,
+.footer a:not(.cta-btn):focus,
+.footer a:not(.cta-btn):active {
   color: #ffffff !important;
 }
 

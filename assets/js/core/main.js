@@ -77,6 +77,7 @@ function initMain() {
      * or standard scroll behavior (cloning 1x).
      */
     function initMobileTrack(desktopId, trackId, dotsId = null, isInfinite = false, initialIndex = 0) {
+        window.initMobileTrack = initMobileTrack;
         const desktopContainer = document.getElementById(desktopId);
         const mobileTrack = document.getElementById(trackId);
         const mobileDots = dotsId ? document.getElementById(dotsId) : null;
@@ -513,12 +514,18 @@ function initMain() {
             const additionalServices = data.services.filter(s => s.type === 'additional');
             servicesDesktop.innerHTML = additionalServices.map(service => `
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-grid-card h-100">
-                        <div class="card-icon"><i class="fas ${service.icon}"></i></div>
-                        <h4 class="card-title">${service.tabLabel}</h4>
-                        <p class="card-text">${service.description}</p>
-                        <a href="${resolveUrl(service.href)}" class="service-link">${service.ctaText} <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <a href="${resolveUrl(service.href)}" class="text-decoration-none d-block h-100">
+                        <div class="service-grid-card h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-icon"><i class="fas ${service.icon}"></i></div>
+                                <h4 class="card-title">${service.tabLabel}</h4>
+                                <p class="card-text">${service.description}</p>
+                            </div>
+                            <div class="service-link fw-bold text-decoration-none" style="color: var(--primary-color); font-size: 0.92rem; letter-spacing: 0.5px;">
+                                ${service.ctaText} <i class="fas fa-arrow-right ms-2"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             `).join('');
         }
@@ -805,7 +812,7 @@ function initMain() {
             const footerServices = data.navigation[0].dropdown;
             footerServicesList.innerHTML = footerServices.map((service, index) => `
                 <li class="${index === footerServices.length - 1 ? 'mb-0' : 'mb-3'}">
-                    <a href="${resolveUrl(service.href)}" class="text-white-50 text-decoration-none footer-service-link">
+                    <a href="${resolveUrl(service.href)}" class="footer-text-soft text-decoration-none footer-service-link">
                         <i class="fas ${service.icon} text-primary me-3 w-15px text-center"></i> ${service.label}
                     </a>
                 </li>
@@ -834,7 +841,7 @@ function initMain() {
             if (locationHours && hoursData) {
                 locationHours.innerHTML = hoursData.map(h => 
                     `<div class="d-flex justify-content-between gap-4" style="max-width: 280px; font-size: 0.95rem;">
-                        <span class="text-white-50">${h.days}:</span>
+                        <span class="text-white fw-semibold">${h.days}:</span>
                         <span class="text-white fw-semibold">${h.time}</span>
                     </div>`
                 ).join('');
@@ -1042,6 +1049,7 @@ function initMain() {
     initMobileTrack('protocols-desktop', 'protocols-mobile-track', 'protocols-mobile-indicators', true);
     initMobileTrack('stacks-desktop', 'stacks-mobile-track', 'stacks-mobile-indicators', false);
     initMobileTrack('services-desktop', 'services-mobile-track', 'services-mobile-indicators', false);
+    initMobileTrack('treatments-desktop', 'treatments-mobile-track', 'treatments-mobile-indicators', false);
 
     // Initialize existing grid tracks
     initExistingTrack('myth-mobile-track', 'myth-mobile-indicators');

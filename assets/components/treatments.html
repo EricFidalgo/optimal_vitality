@@ -1,12 +1,23 @@
-    <!-- ===== TREATMENTS SECTION ===== -->
-    <section class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="section-title" data-slot="treatmentsHeadline"></h2>
-                <p class="lead text-muted max-w-700 mx-auto" data-slot="treatmentsSubheadline"></p>
+    <!-- ===== ADDITIONAL OPTIMIZATION SERVICES / TREATMENTS ===== -->
+    <section class="premium-services py-5" id="treatments">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto text-white">
+                    <h2 class="section-title mb-3 text-white" data-slot="treatmentsHeadline"></h2>
+                    <p class="lead text-white-50 max-w-700 mx-auto mb-0" data-slot="treatmentsSubheadline"></p>
+                </div>
             </div>
-            <div class="row g-4 justify-content-center" id="treatments-grid">
-                <!-- Populated by JS -->
+            <!-- Desktop Grid (Visible on Desktop: 992px and up) -->
+            <div class="row g-4 justify-content-center d-none d-lg-flex" id="treatments-desktop"></div>
+
+            <!-- Mobile Track (Visible on Mobile / Tablet: under 992px) -->
+            <div class="d-lg-none position-relative mt-4">
+                <div class="native-scroll-wrapper" id="treatments-mobile-track"></div>
+                <div class="custom-carousel-controls d-flex align-items-center justify-content-center mt-3">
+                    <div class="carousel-indicators position-relative m-0" id="treatments-mobile-indicators"></div>
+                </div>
             </div>
         </div>
     </section>
+
+

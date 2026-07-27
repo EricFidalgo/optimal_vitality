@@ -20,7 +20,6 @@
   function populateLocationPage(l) {
     // --- Hero ---
     setSlot("heroHeadline", l.heroHeadline);
-    setSlot("heroCTA", l.heroCTA || "Schedule Consultation <i class='fas fa-calendar-alt ms-2'></i>");
     
     if (l.heroSubheadline) {
       const sub = document.querySelector('[data-slot="heroSubheadline"]');
@@ -30,17 +29,11 @@
       }
     }
 
+    setSlot("heroCTA", l.heroCTA || "Book Consultation");
+
     // --- Advantage ---
     setSlot("advantageHeadline", l.advantageHeadline);
     setSlot("advantageText", l.advantageText);
-    
-    if (l.advantageBadge) {
-      const badge = document.querySelector('[data-slot="advantageBadge"]');
-      if (badge) {
-        badge.innerHTML = l.advantageBadge;
-        badge.style.display = 'inline-block';
-      }
-    }
 
     const img = document.getElementById("advantage-image");
     if (img && l.advantageImage) {
@@ -49,40 +42,35 @@
 
     const bulletsContainer = document.getElementById("advantage-bullets");
     if (bulletsContainer && l.advantageBullets) {
-      bulletsContainer.innerHTML = l.advantageBullets.map(b => `
-        <div class="col-sm-6">
-            <div class="advantage-bullet-card d-flex align-items-start gap-3 p-3 rounded-4 border h-100 bg-white">
-                <div class="bullet-icon-wrapper rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 28px; height: 28px; background-color: rgba(230, 195, 129, 0.08); color: var(--primary-color); border: 1px solid rgba(230, 195, 129, 0.15);">
-                    <i class="fas fa-check" style="font-size: 0.78rem;"></i>
-                </div>
-                <div class="flex-grow-1">
-                    <span class="fw-semibold text-dark" style="font-size: 0.95rem; line-height: 1.4; display: block; padding-top: 2px;">${b}</span>
-                </div>
-            </div>
-        </div>
-      `).join('');
+      bulletsContainer.innerHTML = l.advantageBullets.map(b => `<li>${b}</li>`).join('');
     }
 
     // --- Treatments ---
     setSlot("treatmentsHeadline", l.treatmentsHeadline);
     setSlot("treatmentsSubheadline", l.treatmentsSubheadline);
 
-    const treatmentsGrid = document.getElementById("treatments-grid");
+    const treatmentsGrid = document.getElementById("treatments-desktop") || document.getElementById("treatments-grid");
     if (treatmentsGrid && l.treatmentsGrid) {
       treatmentsGrid.innerHTML = l.treatmentsGrid.map(t => `
         <div class="col-md-6 col-lg-4">
-            <div class="treatment-card">
-                <div>
-                    <div class="treatment-icon-wrapper mb-3">
-                        <i class="fas ${t.icon}"></i>
+            <a href="${t.link}" class="text-decoration-none d-block h-100">
+                <div class="service-grid-card h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="card-icon"><i class="fas ${t.icon}"></i></div>
+                        <h4 class="card-title">${t.title}</h4>
+                        <p class="card-text">${t.desc}</p>
                     </div>
-                    <h4 class="treatment-title fw-bold mb-2">${t.title}</h4>
-                    <p class="treatment-desc text-muted mb-4">${t.desc}</p>
+                    <div class="service-link fw-bold text-decoration-none" style="color: var(--primary-color); font-size: 0.92rem; letter-spacing: 0.5px;">
+                        ${t.linkText || 'Learn More'} <i class="fas fa-arrow-right ms-2"></i>
+                    </div>
                 </div>
-                <a href="${t.link}" class="btn-treatment-card">${t.linkText} <i class="fas fa-arrow-right ms-2 transition-arrow"></i></a>
-            </div>
+            </a>
         </div>
       `).join('');
+
+      if (typeof window.initMobileTrack === 'function') {
+        window.initMobileTrack('treatments-desktop', 'treatments-mobile-track', 'treatments-mobile-indicators', false);
+      }
     }
   }
 

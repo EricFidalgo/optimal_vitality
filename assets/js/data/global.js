@@ -40,6 +40,13 @@ const sharedTreatmentsGrid = [
     linkText: "Explore Sexual Wellness"
   },
   {
+    title: "Medical Aesthetics",
+    icon: "fa-spa",
+    desc: "Botox, dermal fillers, and anti-aging aesthetic treatments designed to restore natural facial contours and youthfulness.",
+    link: "services/sexual-wellness.html#aesthetics",
+    linkText: "Explore Aesthetics"
+  },
+  {
     title: "IV Nutrient Hydration",
     icon: "fa-tint",
     desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
@@ -117,6 +124,11 @@ Object.assign(window.clinicData, {
           label: "Sexual Wellness",
           href: "sexual-wellness.html",
           icon: "fa-heart",
+        },
+        {
+          label: "Medical Aesthetics",
+          href: "sexual-wellness.html#aesthetics",
+          icon: "fa-spa",
         },
         { label: "IV & Wellness", href: "iv-wellness.html", icon: "fa-tint" },
         { label: "Detox Protocols", href: "detox.html", icon: "fa-leaf" },
@@ -253,20 +265,19 @@ team: [
         "Hillsborough County"
       ],
       heroHeadline: "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
-      heroSubheadline: "Our premier physical medical office providing doctor-led hormone optimization (TRT), metabolic weight loss, advanced peptide protocols, and aesthetics under strict medical board safety guidelines.",
-      heroCTA: "Book St. Pete Consultation",
-      advantageBadge: "PHYSICAL CLINIC LOCATION",
-      advantageHeadline: "Doctor-Led Longevity Medicine in St. Pete",
-      advantageText: "Located in the heart of St. Petersburg, our medical team—led by Chief Medical Officer Dr. Marcus Vance, MD—delivers personalized protocols designed to optimize your biomarkers. We combine advanced diagnostic lab work with sterile compounding pharmacy standards, ensuring your safety and clinical outcome.",
-      advantageImage: "assets/images/photos/process-review.jpg",
+      heroSubheadline: "Drop unwanted weight, feel 10 years younger, and get your daily energy back. Guided by licensed Florida doctors with simple blood tests and safe, proven treatments.",
+      heroCTA: "Book Consultation",
+      advantageHeadline: "Real Doctors. Real Safety. Real Results.",
+      advantageText: "Taking care of your body should be simple and safe. Our clinic in St. Petersburg is run by licensed medical doctors. We check your blood work first, make a custom plan just for you, and guide you every step of the way. All treatments follow strict Florida medical board guidelines and LegitScript compliance standards.",
+      advantageImage: "assets/images/photos/peptide-therapy.jpg",
       advantageBullets: [
-        "Active Florida Medical Licensure",
-        "CMO Physician Collaboration",
-        "Visits & Lab Work Reviews",
-        "FDA-Approved Compounds"
+        "Licensed Florida Medical Doctors",
+        "LegitScript Compliant & Safe",
+        "Blood Tests Before Treatment",
+        "Pharmacy-Grade Compounds"
       ],
-      treatmentsHeadline: "Our St. Petersburg Clinical Programs",
-      treatmentsSubheadline: "Explore our bio-calibrated treatments designed to restore energy, metabolism, healing, and skin vitality.",
+      treatmentsHeadline: "Simple Doctor-Backed Programs",
+      treatmentsSubheadline: "Choose the program that fits your goals. Every plan includes direct doctor care and progress check-ups.",
       treatmentsGrid: sharedTreatmentsGrid
     },
     tampa: {
@@ -281,20 +292,19 @@ team: [
         "Pinellas County"
       ],
       heroHeadline: "OVI Wellness <br><span class='text-primary'>Tampa Clinic</span>",
-      heroSubheadline: "Serving our Tampa patients from our premier physical medical clinic located just across the bridge in St. Petersburg — providing doctor-led hormone optimization (TRT), metabolic weight loss, advanced peptides, and aesthetics.",
-      heroCTA: "Book Tampa Clinic Consultation",
-      advantageBadge: "TAMPA CLINIC SERVICES",
-      advantageHeadline: "Your Tampa Clinic — Located Just Across the Bay",
-      advantageText: "Optimal Vitality Institute serves Tampa patients from our state-of-the-art physical clinic in nearby St. Petersburg. Because Tampa and St. Pete are close, our Tampa patients easily travel across the bridge for our full range of in-person clinical treatments, including IV infusions, blood draws, and Botox. For your convenience, we also coordinate diagnostic lab work in Tampa and offer telehealth consultations for follow-up care.",
-      advantageImage: "assets/images/photos/peptide.jpg",
+      heroSubheadline: "Easy weight loss, custom TRT, and anti-aging treatments for Tampa patients. Visit our physical clinic in nearby St. Pete or talk to your doctor online.",
+      heroCTA: "Book Consultation",
+      advantageHeadline: "Top Medical Care for Tampa Patients",
+      advantageText: "Living in Tampa? Our physical medical office is just a quick drive across the bridge in St. Pete. Get your blood drawn in person, meet your doctor, or get telehealth care right from home. Licensed doctors, full blood work review, and 100% legal, certified protocols.",
+      advantageImage: "assets/images/photos/peptide-therapy.jpg",
       advantageBullets: [
-        "Florida Board Certified Physicians",
-        "In-Person Clinic Visits & Diagnostics",
-        "Convenient St. Pete Physical Office",
-        "Telehealth Follow-up Consultations"
+        "Licensed Florida Medical Doctors",
+        "LegitScript Certified Standards",
+        "In-Person & Telehealth Visits",
+        "Safe, FDA-Compliant Medicine"
       ],
-      treatmentsHeadline: "Our Tampa Clinic Programs",
-      treatmentsSubheadline: "Explore our bio-calibrated wellness programs, available to Tampa patients at our nearby St. Petersburg facility.",
+      treatmentsHeadline: "Our Most Popular Tampa Programs",
+      treatmentsSubheadline: "Choose your protocol. Start with a quick doctor consult and personalized blood panel.",
       treatmentsGrid: sharedTreatmentsGrid
     }
   }
