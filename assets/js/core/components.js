@@ -45,10 +45,6 @@
                 <div class="container navbar-container">
                     <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
                         <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
-                        <div class="brand-text d-flex flex-column justify-content-center ms-2">
-                            <span class="brand-title">OVI</span>
-                            <span class="brand-subtitle">WELLNESS</span>
-                        </div>
                     </a>
 
                     <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
@@ -64,10 +60,6 @@
                         <div class="offcanvas-header border-bottom border-secondary bg-transparent">
                             <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
                                 <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
-                                <div class="brand-text d-flex flex-column justify-content-center ms-2">
-                                    <span class="brand-title text-white">OVI</span>
-                                    <span class="brand-subtitle">WELLNESS</span>
-                                </div>
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
