@@ -14,32 +14,32 @@ window.clinicData.services.push({
     ], 
     */
       // ─── Card data ────────────────────────────────────────────────────────
-      id: "skin-aesthetics",
+      id: "sexual-wellness",
       type: "additional",
-      tabLabel: "Skin & Aesthetics",
-      href: "skin-aesthetics.html",
-      title: "Look Fresh, Rested & Naturally Younger",
-      lead: "Smooth away lines and bring back your youthful glow in under 15 minutes.",
+      tabLabel: "Sexual Wellness",
+      href: "sexual-wellness.html",
+      title: "Enhance Intimacy & Vitality",
+      lead: "Targeted therapies to restore physical responsiveness and intimate drive.",
       description:
-        "You don't need a fake or frozen look. Our medical pros use quick, gentle treatments that smooth wrinkles and keep you looking completely natural.",
-      icon: "fa-magic",
+        "Using precise, individualized hormone balancing and regenerative treatments, we help you restore confidence, stamina, and satisfaction in your intimate life.",
+      icon: "fa-heart",
       delay: "-4s",
       features: [
-        "Smooth forehead lines & crow's feet",
-        "100% natural-looking results",
-        "Quick 15-minute visits",
-        "Done by experienced medical pros",
+        "Restore physical responsiveness",
+        "Enhance intimate drive and stamina",
+        "Targeted hormone balancing",
+        "Doctor-supervised, discreet care",
       ],
       image: "assets/images/photos/team-group.avif",
-      ctaText: "Book My Glow Visit",
+      ctaText: "Book Your Consultation",
 
       // ─── Page meta ────────────────────────────────────────────────────────
-      pageTitle: "Medical Luxury Aesthetics — OVI Wellness",
+      pageTitle: "Sexual Wellness & Intimacy Optimization — OVI Wellness",
       pageDescription:
-        "Neurotoxins, fillers, biostimulators, and RF microneedling in St. Petersburg, FL. Clinical-grade aesthetic medicine at OVI Wellness.",
+        "Advanced treatments to restore sexual health, intimacy, and vitality for men and women through clinical hormone balancing and regenerative therapies.",
 
-      heroHeadline: "Look As Good As<br><span class=\"text-primary\">You Perform</span>",
-      heroCTA: "Book a Consultation",
+      heroHeadline: "Reclaim Your<br><span class=\"text-primary\">Intimate Vitality</span>",
+      heroCTA: "Start Your Protocol",
 
       transformations: {
         headline: "Clinical Transformations",

@@ -33,11 +33,11 @@ const sharedTreatmentsGrid = [
     linkText: "Explore Regeneration"
   },
   {
-    title: "Skin & Aesthetics (Botox)",
-    icon: "fa-magic",
-    desc: "Smooth wrinkles and preserve natural facial expressions. Doctor-led Botox, Dysport, and advanced clinical skin rejuvenation therapies.",
-    link: "services/skin-aesthetics.html",
-    linkText: "Explore Aesthetics"
+    title: "Sexual Wellness",
+    icon: "fa-heart",
+    desc: "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+    link: "services/sexual-wellness.html",
+    linkText: "Explore Sexual Wellness"
   },
   {
     title: "IV Nutrient Hydration",
@@ -45,6 +45,20 @@ const sharedTreatmentsGrid = [
     desc: "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
     link: "services/iv-wellness.html",
     linkText: "Explore IV Drips"
+  },
+  {
+    title: "Detoxification Protocols",
+    icon: "fa-leaf",
+    desc: "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
+    link: "services/detox.html",
+    linkText: "Explore Detox"
+  },
+  {
+    title: "Advanced Diagnostic Labs",
+    icon: "fa-flask",
+    desc: "In-depth clinical panels including MTHFR, micronutrient profiles, heavy metals, and advanced cardiac biomarkers.",
+    link: "services/advanced-labs.html",
+    linkText: "Explore Labs"
   }
 ];
 
@@ -100,11 +114,13 @@ Object.assign(window.clinicData, {
           icon: "fa-heartbeat",
         },
         {
-          label: "Skin & Aesthetics",
-          href: "skin-aesthetics.html",
-          icon: "fa-magic",
+          label: "Sexual Wellness",
+          href: "sexual-wellness.html",
+          icon: "fa-heart",
         },
         { label: "IV & Wellness", href: "iv-wellness.html", icon: "fa-tint" },
+        { label: "Detox Protocols", href: "detox.html", icon: "fa-leaf" },
+        { label: "Advanced Labs", href: "advanced-labs.html", icon: "fa-flask" },
       ],
     },
     { label: "Team", href: "team.html" },

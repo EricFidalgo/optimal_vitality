@@ -15,7 +15,7 @@ function initMain() {
             return url;
         }
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
-        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "skin-aesthetics", "iv-wellness", "peptides"];
+        const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "iv-wellness", "peptides", "detox", "advanced-labs"];
         const baseName = url.replace('.html', '').split('#')[0];
 
         if (isSubpage) {
