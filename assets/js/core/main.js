@@ -167,7 +167,9 @@ function initMain() {
                         if (diff < minDiff) {
                             minDiff = diff;
                             closestItemIndex = index;
-                            closestOriginalIdx = parseInt(item.getAttribute('data-original-index'), 10) || index;
+                            const attrVal = item.getAttribute('data-original-index');
+                            const parsedVal = parseInt(attrVal, 10);
+                            closestOriginalIdx = (attrVal !== null && !isNaN(parsedVal)) ? parsedVal : index;
                         }
                     });
                 }

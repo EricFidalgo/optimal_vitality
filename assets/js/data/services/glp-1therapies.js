@@ -28,6 +28,7 @@ window.clinicData.services.push({
     "Doctor-guided medical weight loss protocols in St. Petersburg, FL. Semaglutide and Tirzepatide prescriptions supervised by licensed healthcare providers.",
 
   heroHeadline: "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
+  heroSubheadline: "Prescription Semaglutide & Tirzepatide weight loss protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   heroCTA: "Book Your Doctor Call Today",
 
   /*

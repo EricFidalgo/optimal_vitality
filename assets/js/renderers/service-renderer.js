@@ -41,8 +41,10 @@
     if (metaDesc && s.pageDescription) metaDesc.setAttribute("content", s.pageDescription);
 
     // --- Hero ---
+    setSlot("heroBadge", s.heroBadge);
     setSlot("heroHeadline", s.heroHeadline);
-    setSlot("heroCTABtn", s.heroCTA || "Start Your Protocol");
+    setSlot("heroSubheadline", s.heroSubheadline);
+    setSlot("heroCTA", s.heroCTA || "Book Your Doctor Call Today");
 
     // --- Transformations ---
     if (s.transformations) {
@@ -135,10 +137,15 @@
 
   // ─── 4. Helper — set slot content ─────────────────────────────────────────
   function setSlot(slotName, content) {
-    if (!content) return;
     const el = document.querySelector(`[data-slot="${slotName}"]`);
     if (!el) return;
+    if (!content) {
+      el.innerHTML = "";
+      el.style.display = "none";
+      return;
+    }
     el.innerHTML = content;
+    el.style.display = "";
   }
 
   // ─── 5. Helper — hide a data-section ──────────────────────────────────────
@@ -253,7 +260,9 @@
         .join("");
     }
 
-
+    if (typeof window.initMobileTrack === "function") {
+      window.initMobileTrack("protocols-desktop", "protocols-mobile-track", "protocols-mobile-indicators", true);
+    }
   }
 
   // ─── 11. Build science section ────────────────────────────────────────────
