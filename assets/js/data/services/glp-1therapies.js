@@ -2,314 +2,273 @@ window.clinicData = window.clinicData || {};
 window.clinicData.services = window.clinicData.services || [];
 
 window.clinicData.services.push({
+  // ─── Card data ────────────────────────────────────────────────────────
+  id: "glp-1therapies",
+  type: "core",
+  tabLabel: "GLP-1 Weight Loss",
+  href: "glp-1therapies.html",
+  title: "Lose Weight Fast Without Constant Cravings",
+  lead: "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
+  description:
+    "No starving yourself. No crazy workouts. Our simple weekly medical treatments turn off constant food thoughts so you can burn fat while protecting your muscle.",
+  icon: "fa-weight-scale",
+  delay: "-1s",
+  features: [
+    "Stop constant snack & food cravings",
+    "Burn stubborn fat while keeping muscle",
+    "Licensed doctor supervision & care",
+    "Simple weekly doctor-prescribed plan",
+  ],
+  image: "assets/images/photos/glp1-weight-loss.jpg",
+  ctaText: "Book Your Doctor Consultation",
 
-      /* 
-    FUTURE: ADD SPECIFIC TESTIMONIALS
-    testimonials: [
-      {
-        initials: "JD",
-        name: "John D.",
-        tag: "JOINT REPAIR",
-        quote: "BPC-157 significantly supported my shoulder recovery in 6 weeks."
+  // ─── Page meta ────────────────────────────────────────────────────────
+  pageTitle: "Doctor-Guided GLP-1 Medical Weight Loss — OVI Wellness",
+  pageDescription:
+    "Doctor-guided medical weight loss protocols in St. Petersburg, FL. Semaglutide and Tirzepatide prescriptions supervised by licensed healthcare providers.",
+
+  heroHeadline: "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
+  heroCTA: "Book Your Doctor Call Today",
+
+  /*
+  transformations: null,
+  */
+  
+  quiz: {
+    badge: "Quick 1-Minute Assessment",
+    headline: "Find Your Best Weight Loss Plan",
+    subheadline: "Answer 3 quick questions so our doctors can help you pick the right plan.",
+    step1: {
+      question: "What is your main weight goal?",
+      sub: "Pick what matters most to you right now.",
+      options: [
+        { value: "weight", icon: "fa-weight", title: "Lose Weight Fast", desc: "Burn body fat without feeling hungry all day." },
+        { value: "metabolic", icon: "fa-heartbeat", title: "Fix My Energy & Health", desc: "Boost metabolism, energy, and overall health." }
+      ]
+    },
+    step2: {
+      question: "Have you used GLP-1 weight loss treatments before?",
+      sub: "Helps our doctor choose your starting dose.",
+      options: [
+        { value: "no", icon: "fa-times-circle", title: "First Time", desc: "I have never tried GLP-1 treatments before." },
+        { value: "yes", icon: "fa-check-circle", title: "Yes, I Have", desc: "I have used Semaglutide or Tirzepatide before." }
+      ]
+    },
+    step3: {
+      question: "How much weight do you want to lose?",
+      sub: "Sets a simple timeline for your results.",
+      options: [
+        { value: "moderate", icon: "fa-arrow-down", title: "10 to 20 lbs", desc: "Targeted fat loss for a lighter feel." },
+        { value: "significant", icon: "fa-arrow-circle-down", title: "20+ lbs", desc: "Major weight loss to rebuild your body." }
+      ]
+    },
+    protocols: {
+      weight: {
+        tag: "Recommended Plan",
+        name: "Doctor-Guided Fat Burn Plan",
+        peptides: "Semaglutide or Tirzepatide Prescription",
+        icon: "fa-weight-scale",
+        desc: "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
+        goalModifiers: {
+          moderate: "Great for losing 10-20 lbs while keeping your daily energy high.",
+          significant: "Designed for 20+ lbs of fat loss with step-by-step doctor check-ins."
+        },
+        social: "Over 100 local patients are currently using this doctor-guided plan."
+      },
+      metabolic: {
+        tag: "Health & Vitality Plan",
+        name: "Total Body Reset Plan",
+        peptides: "Tirzepatide + Vitamin Support",
+        icon: "fa-heartbeat",
+        desc: "Builds a healthy metabolism, balances blood sugar, and keeps your body feeling young and energized.",
+        goalModifiers: {
+          moderate: "Helps fix daily energy slumps and mild weight gain.",
+          significant: "Comprehensive reset to clean up health markers and drop excess weight."
+        },
+        social: "84 patients started this doctor-led plan in the last 90 days."
       }
-    ], 
-    */
-      // ─── Card data ────────────────────────────────────────────────────────
-      id: "glp-1therapies",
-      type: "core",
-      tabLabel: "GLP-1 Weight Loss",
-      href: "glp-1therapies.html",
-      title: "Melt Away Fat Without Constant Cravings",
-      lead: "Drop the weight fast with simple doctor-backed treatments that actually keep it off.",
-      description:
-        "No crazy starvation diets or endless cardio. Our targeted medicine turns off constant food cravings, helping you burn real body fat while protecting your muscle.",
-      icon: "fa-weight-scale",
-      delay: "-1s",
-      features: [
-        "Stop constant snack & food cravings",
-        "Target stubborn belly fat fast",
-        "Protect lean muscle as you lose weight",
-        "Easy doctor-supervised weekly plan",
-      ],
-      image: "assets/images/photos/glp1-weight-loss.jpg",
-      ctaText: "Start My Weight Loss Plan",
+    },
+    timelineMap: {
+      no: "12–16 weeks (Standard Doctor Plan)",
+      yes: "8–12 weeks (Fast Track Plan)"
+    }
+  },
 
-      // ─── Page meta ────────────────────────────────────────────────────────
-      pageTitle: "Medical Weight Loss & GLP-1 Therapies — OVI Wellness",
-      pageDescription:
-        "Medically supervised GLP-1 and metabolic weight loss protocols in St. Petersburg, FL. Semaglutide, Tirzepatide, and Retatrutide — doctor-led and biomarker-driven.",
-
-      heroHeadline: "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
-      heroCTA: "Start Your Protocol",
-
-      /*
-      transformations: {
-        headline: "Clinical Transformations",
-        subheadline: "Visual evidence of optimized body composition and metabolic health.",
-        items: [
-          {
-            imageAfter: "assets/images/photos/glp-after.jpg",
-            imageBefore: "assets/images/photos/glp-before.jpg",
-            badgeAfter: "Week 16",
-            badgeBefore: "Baseline",
-            title: "Sustainable Weight Loss",
-            protocol: "Tirzepatide Optimization",
-            description: "Patient achieved a 15% reduction in total body weight while preserving lean muscle mass and improving metabolic markers."
-          }, 
-          {
-            imageAfter: "assets/images/photos/glp-after.jpg",
-            imageBefore: "assets/images/photos/glp-before.jpg",
-            badgeAfter: "Week 16",
-            badgeBefore: "Baseline",
-            title: "Sustainable Weight Loss",
-            protocol: "Tirzepatide Optimization",
-            description: "Patient achieved a 15% reduction in total body weight while preserving lean muscle mass and improving metabolic markers."
-          }
-        ]
+  eligibility: {
+    badge: "Who Is This For?",
+    headline: "Are You a Candidate for GLP-1 Care?",
+    intro:
+      "Our treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health first to make sure you get the best plan for your body.",
+    note: "Questions about candidacy? Our medical team will guide you during your consultation.",
+    ctaText: "Call Us Now to Check Candidacy",
+    items: [
+      {
+        label: "Stubborn Fat",
+        detail: "Adults with 15+ lbs to lose who struggle to shed fat with diet alone.",
       },
-      */
-      
-      
-      quiz: {
-        badge: "Clinical Self-Assessment",
-        headline: "Find Your Protocol",
-        subheadline: "Answer 3 quick questions to help us identify the best GLP-1 strategy for you.",
-        step1: {
-          question: "What's your primary goal?",
-          sub: "Your goal dictates the compound and dosing strategy.",
-          options: [
-            { value: "weight", icon: "fa-weight", title: "Weight Loss", desc: "Significant reduction in body fat." },
-            { value: "metabolic", icon: "fa-heartbeat", title: "Metabolic Health", desc: "Improve A1C, insulin sensitivity, and overall markers." }
-          ]
-        },
-        step2: {
-          question: "Have you tried GLP-1s before?",
-          sub: "Past experience helps us adjust your starting dose.",
-          options: [
-            { value: "no", icon: "fa-times-circle", title: "Never", desc: "First time using these therapies." },
-            { value: "yes", icon: "fa-check-circle", title: "Yes", desc: "Have used Semaglutide or Tirzepatide in the past." }
-          ]
-        },
-        step3: {
-          question: "How much weight do you want to lose?",
-          sub: "Sets realistic timelines for your protocol.",
-          options: [
-            { value: "moderate", icon: "fa-arrow-down", title: "10-20 lbs", desc: "Targeted fat loss." },
-            { value: "significant", icon: "fa-arrow-circle-down", title: "20+ lbs", desc: "Major body recomposition." }
-          ]
-        },
-        protocols: {
-          weight: {
-            tag: "Active Weight Management",
-            name: "The Metabolic Recomposition Protocol",
-            peptides: "Semaglutide or Tirzepatide",
-            icon: "fa-weight-scale",
-            desc: "A precision dosing schedule paired with lipotropic agents to target stubborn fat stores while actively preserving lean muscle tissue.",
-            goalModifiers: {
-              moderate: "Targeted for 10-20 lbs of fat loss, focusing on metabolic efficiency and sustainable lifestyle integration.",
-              significant: "Indicates a 20+ lbs weight loss goal, using progressive titration for long-term body recomposition."
-            },
-            social: "112 patients with your profile are currently running this protocol."
-          },
-          metabolic: {
-            tag: "Metabolic Optimization",
-            name: "The Systemic Balance Protocol",
-            peptides: "Tirzepatide + Bio-Identical Support",
-            icon: "fa-heartbeat",
-            desc: "Designed specifically to address cellular insulin sensitivity, stabilize blood glucose markers, and optimize lipid profiles.",
-            goalModifiers: {
-              moderate: "Focused on correcting moderate metabolic stall and improving baseline daily energy.",
-              significant: "Designed for significant metabolic restoration, aiming to reset systemic inflammatory markers and pancreatic efficiency."
-            },
-            social: "84 patients with your profile completed this protocol in the last 90 days."
-          }
-        },
-        timelineMap: {
-          no: "12–16 weeks (Standard Titration)",
-          yes: "8–12 weeks (Accelerated Titration)"
-        }
+      {
+        label: "Constant Cravings",
+        detail: "Anyone tired of thinking about food, snacking at night, or feeling hungry all day.",
       },
+      {
+        label: "Stuck Metabolism",
+        detail: "People who exercise or diet but cannot get weight off.",
+      },
+      {
+        label: "Want Muscle Saved",
+        detail: "You want to lose fat tissue while keeping your strong, healthy muscle.",
+      },
+      {
+        label: "Ready for Doctor Care",
+        detail: "Looking for a safe, doctor-prescribed plan with regular check-ins.",
+      },
+    ],
+  },
 
-      eligibility: {
-        badge: "Clinical Candidacy",
-        headline: "Who Is This Right For?",
-        intro:
-          "Our metabolic protocols are precision clinical tools — not crash diets. We evaluate your full metabolic panel before prescribing anything, ensuring every intervention is evidence-based and safe.",
-        note: "Not sure if you qualify? Our clinical team reviews every case individually.",
-        ctaText: "Am I a Candidate? Let's Talk",
-        items: [
-          {
-            label: "BMI & Weight Profile",
-            detail:
-              "Adults with a BMI of 27+ with at least one metabolic comorbidity, or BMI 30+ seeking medically supervised fat loss.",
-          },
-          {
-            label: "Stalled Fat Loss",
-            detail:
-              "Individuals who have hit a plateau despite consistent caloric management and structured exercise routines.",
-          },
-          {
-            label: "Metabolic Risk Factors",
-            detail:
-              "Elevated triglycerides, insulin resistance, pre-diabetes, or elevated fasting glucose markers.",
-          },
-          {
-            label: "Muscle Preservation Priority",
-            detail:
-              "Those who want to lose adipose tissue while maintaining or building lean muscle mass — not just 'weight loss.'",
-          },
-          {
-            label: "Diagnostics Ready",
-            detail:
-              "Willing to complete metabolic bloodwork and engage with ongoing nutritional and medical supervision.",
-          },
-        ],
+  protocols: {
+    badge: "Prescription Options",
+    sectionHeadline: "Simple Weekly Doctor Treatments",
+    sectionSubheadline:
+      "Doctor-prescribed weekly treatments tailored to your body after a medical consultation.",
+    items: [
+      {
+        icon: "fa-weight-scale",
+        name: "Semaglutide Protocol",
+        tag: "Most Popular",
+        description:
+          "Prescription GLP-1 treatment that calms hunger signals in your brain. A simple weekly dose to help you feel full and lose weight steadily.",
       },
+      {
+        icon: "fa-fire",
+        name: "Tirzepatide Protocol",
+        tag: "Fastest Results",
+        description:
+          "Dual-action prescription treatment that targets two natural hunger pathways for even faster fat loss while keeping your energy up.",
+      },
+      {
+        icon: "fa-dna",
+        name: "Retatrutide Protocol",
+        tag: "Next Generation",
+        description:
+          "Triple-action option for stubborn weight that hasn't responded to previous diets. Available upon medical evaluation.",
+      },
+      {
+        icon: "fa-leaf",
+        name: "Fat-Burn & B12 Injections",
+        tag: "Energy Booster",
+        description:
+          "Quick vitamin shots to boost your daily energy, support your liver, and keep your body burning fat fast.",
+      },
+      {
+        icon: "fa-chart-line",
+        name: "Doctor Blood Check",
+        tag: "Safety First",
+        description:
+          "Simple lab work so your doctor can customize your starting dose and ensure complete health and safety.",
+      },
+      {
+        icon: "fa-utensils",
+        name: "Simple Eating Guide",
+        tag: "Easy Meals",
+        description:
+          "Easy daily eating tips designed to protect your strong muscle while the weight comes off.",
+      },
+    ],
+  },
 
-      protocols: {
-        badge: "Our Protocols",
-        sectionHeadline: "Our Metabolic Protocols",
-        sectionSubheadline:
-          "Next-generation compounds prescribed based on your metabolic markers — not a generic plan.",
-        items: [
-          {
-            icon: "fa-weight-scale",
-            name: "Semaglutide (Ozempic®)",
-            tag: "Most Prescribed",
-            description:
-              "GLP-1 receptor agonist that reduces appetite signaling and improves insulin sensitivity. Weekly subcutaneous injection with consistent, measurable fat loss results.",
-          },
-          {
-            icon: "fa-fire",
-            name: "Tirzepatide (Mounjaro®)",
-            tag: "",
-            description:
-              "Dual GIP/GLP-1 agonist delivering superior fat loss versus single-mechanism agents. Clinically demonstrated 20%+ body weight reduction in trials.",
-          },
-          {
-            icon: "fa-dna",
-            name: "Retatrutide",
-            tag: "Cutting Edge",
-            description:
-              "Triple receptor agonist (GLP-1, GIP, glucagon) representing the next frontier of metabolic medicine. Highest efficacy of any current weight loss compound.",
-          },
-          {
-            icon: "fa-leaf",
-            name: "Lipotropic Injections",
-            tag: "",
-            description:
-              "MIC and B12 lipotropic injectables to accelerate fat metabolism, liver detoxification, and energy production — a powerful complement to GLP-1 protocols.",
-          },
-          {
-            icon: "fa-chart-line",
-            name: "Metabolic Optimization Panels",
-            tag: "",
-            description:
-              "Advanced lab work including insulin resistance scores, fasting glucose, lipid panels, and thyroid markers to establish your true metabolic baseline.",
-          },
-          {
-            icon: "fa-utensils",
-            name: "Nutritional Architecture",
-            tag: "",
-            description:
-              "Clinical nutritional guidance designed to preserve lean muscle during fat loss, calibrated around your protocol and biomarker response.",
-          },
-        ],
+  science: {
+    badge: "How It Works",
+    headline: "Why It Works When<br><span class=\"text-primary\">Diets Fail</span>",
+    body: "Most diets fail because your brain tells you that you are hungry. GLP-1 prescription treatments send natural fullness signals to your brain. You eat less naturally without feeling starved or weak. You burn fat while keeping your muscle.",
+    bullets: [
+      "Prescribed by real licensed medical doctors",
+      "Simple weekly treatment done at home or in clinic",
+      "Protects muscle so you burn pure fat",
+    ],
+    stats: [
+      { value: "Full", label: "No constant food cravings" },
+      { value: "Easy", label: "Simple weekly doctor plan" },
+      { value: "Safe", label: "Doctor supervised & lab checked" },
+      { icon: "fa-user-md", label: "Rx Doctor Certified" },
+    ],
+    cards: [
+      {
+        icon: "fa-brain",
+        title: "Turns Off Hunger Thoughts",
+        detail:
+          "Signals your brain that you are full after small meals so snacking stops naturally.",
       },
+      {
+        icon: "fa-dumbbell",
+        title: "Keeps Your Strong Muscle",
+        detail:
+          "Our doctor plans protect your muscle so your body burns fat for fuel.",
+      },
+    ],
+  },
 
-      science: {
-        badge: "The Clinical Method",
-        headline: "The Science of<br><span class=\"text-primary\">Metabolic Medicine</span>",
-        body: "GLP-1 receptor agonists work by mimicking natural gut hormones that regulate appetite, insulin secretion, and gastric emptying. Unlike stimulant-based diet pills, they work with your body's own signaling pathways — reducing hunger at the neurological level, not through willpower. The result is sustainable, medically supervised fat loss that preserves lean tissue.",
-        bullets: [
-          "Pharmacy-Grade Compounded Compounds",
-          "Biomarker-Driven Dosing",
-          "Muscle-Preserving Protocols",
-        ],
-        stats: [
-          { value: "20%", label: "Average body weight reduction in clinical trials" },
-          { value: "2×", label: "Faster fat loss vs. diet and exercise alone" },
-          { value: "0%", label: "Stimulants — no crash, no dependency" },
-          { icon: "fa-shield-alt", label: "FDA Rx" },
-        ],
-        cards: [
-          {
-            icon: "fa-brain",
-            title: "Neurological Appetite Control",
-            detail:
-              "GLP-1 agonists directly signal the brain's satiety centers — reducing hunger at the source, not masking it.",
-          },
-          {
-            icon: "fa-dumbbell",
-            title: "Muscle-First Fat Loss",
-            detail:
-              "Our protocols pair metabolic agents with protein targets and peptides to ensure lean mass is preserved throughout fat loss.",
-          },
-        ],
+  comparison: {
+    headline: "Doctor-Guided Care vs. Doing It Alone",
+    subheadline:
+      "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    ctaText: "Call Our Clinic Today",
+    mobileStats: [
+      { icon: "fa-fire", label: "Fat Burn" },
+      { icon: "fa-dumbbell", label: "Muscle Kept" },
+      { icon: "fa-brain", label: "No Hunger" },
+      { icon: "fa-chart-line", label: "Doctor Checked" },
+    ],
+    rows: [
+      { metric: "Hunger Level", without: "Always hungry & tired", with: "Feels full & satisfied" },
+      { metric: "Fat Loss Speed", without: "Slow & frustrating", with: "Steady & doctor-backed" },
+      { metric: "Muscle Protection", without: "Loses muscle & strength", with: "Protects muscle while burning fat" },
+      { metric: "Medical Safety", without: "Unsupervised / generic", with: "Doctor-prescribed & lab-monitored" },
+      { metric: "Long-Term Results", without: "Weight comes back", with: "Doctor guidance to keep it off" },
+    ],
+    stacks: [
+      {
+        name: "Fast Fat Loss Plan",
+        tag: "Most Popular",
+        compounds: "Tirzepatide + Vitamin B12 Booster",
+        description:
+          "Combines dual-action prescription treatment with energy boosters. Designed for fast fat burn while keeping your strength up.",
       },
-
-      comparison: {
-        headline: "Medically Supervised vs. On Your Own",
-        subheadline:
-          "The difference between a clinical metabolic protocol and unsupervised weight loss.",
-        ctaText: "Discuss Your Weight Loss Goals",
-        mobileStats: [
-          { icon: "fa-fire", label: "Active Fat Burn" },
-          { icon: "fa-dumbbell", label: "Muscle Preserved" },
-          { icon: "fa-brain", label: "Hunger Controlled" },
-          { icon: "fa-chart-line", label: "Progress Tracked" },
-        ],
-        rows: [
-          { metric: "Fat Loss Rate", without: "Slow, inconsistent", with: "Accelerated, consistent" },
-          { metric: "Muscle Retention", without: "Often sacrificed", with: "Actively preserved" },
-          { metric: "Hunger Control", without: "Willpower-dependent", with: "Neurologically managed" },
-          { metric: "Metabolic Markers", without: "Unmonitored", with: "Lab-tracked monthly" },
-          { metric: "Protocol Adjustments", without: "None", with: "Data-driven and ongoing" },
-        ],
-        stacks: [
-          {
-            name: "The Accelerator Protocol",
-            tag: "Most Popular",
-            compounds: "Tirzepatide + Lipotropics",
-            description:
-              "Dual-mechanism fat loss with lipotropic support. Maximizes adipose reduction while protecting lean muscle — the clinical gold standard for rapid, sustainable results.",
-          },
-          {
-            name: "The Foundation Protocol",
-            tag: "",
-            compounds: "Semaglutide + Nutritional Architecture",
-            description:
-              "Proven GLP-1 therapy paired with structured nutritional guidance. Ideal for first-time patients seeking medically supervised, steady-state fat loss.",
-          },
-          {
-            name: "The Elite Metabolic Stack",
-            tag: "Cutting Edge",
-            compounds: "Retatrutide + Full Metabolic Panel",
-            description:
-              "The most advanced metabolic protocol available. Triple receptor activation for maximum efficacy, guided by comprehensive metabolic bloodwork.",
-          },
-        ],
+      {
+        name: "Essential Weight Loss Plan",
+        tag: "Great Starter",
+        compounds: "Semaglutide + Eating Guide",
+        description:
+          "Proven GLP-1 prescription paired with simple daily meal guidance. Perfect for your first doctor-guided weight loss journey.",
       },
-      faqs: [
-        {
-          question: "How does the Metabolic Weight Loss program work?",
-          answer:
-            "We utilize advanced metabolic therapies like Semaglutide or Tirzepatide combined with lipotropic injectables. Your protocol is guided by metabolic lab markers and includes medical supervision, nutritional advising, and progress tracking to accelerate fat loss while preserving lean muscle.",
-        },
-        {
-          question: "What is the difference between Semaglutide and Tirzepatide?",
-          answer:
-            "Semaglutide is a single GLP-1 receptor agonist, while Tirzepatide activates both GIP and GLP-1 receptors. Clinical trials show Tirzepatide produces greater weight loss on average. Your clinician will recommend the right agent based on your metabolic panel and health history.",
-        },
-        {
-          question: "Will I lose muscle mass on these medications?",
-          answer:
-            "Not with our protocol. We actively pair metabolic agents with protein targets, resistance training guidance, and where appropriate, peptide support to ensure lean muscle is preserved while adipose tissue is reduced.",
-        },
-        {
-          question: "How long do I need to stay on GLP-1 therapy?",
-          answer:
-            "Protocol duration is highly individual. Most patients achieve their target weight in 6–18 months. We then work on a maintenance and tapering plan to sustain results long-term without indefinite medication dependence.",
-        },
-      ],
-    });
+      {
+        name: "Complete Health & Fat Loss Plan",
+        tag: "Full Reset",
+        compounds: "Retatrutide + Doctor Labs",
+        description:
+          "Advanced triple-action treatment guided by complete doctor health panels for maximum results.",
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: "Do I need a doctor's prescription for GLP-1 treatments?",
+      answer:
+        "Yes. All GLP-1 treatments are prescription medications. You will consult with our licensed medical doctor or healthcare provider who evaluates your health history to determine candidacy and prescribe the right plan for you.",
+    },
+    {
+      question: "How do GLP-1 weight loss treatments work?",
+      answer:
+        "GLP-1 treatments mimic your body's natural fullness hormone. This reduces hunger signals in your brain so you naturally eat smaller meals without feeling starved or craving snacks.",
+    },
+    {
+      question: "Will I lose muscle while losing weight?",
+      answer:
+        "No. Our doctor-guided plans include simple eating tips and protein targets to make sure your body burns fat tissue while protecting your strong, healthy muscle.",
+    },
+    {
+      question: "How do I get started?",
+      answer:
+        "Simply call our clinic or book an appointment online! You will talk with a licensed doctor who will review your health, answer your questions, and start your custom plan.",
+    },
+  ],
+});

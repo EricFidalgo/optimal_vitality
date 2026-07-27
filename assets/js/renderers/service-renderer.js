@@ -239,7 +239,7 @@
         ? `<h6 class="text-primary fw-bold text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">${item.tag}</h6>`
         : "";
       return `
-        <div class="service-grid-card h-100">
+        <div class="protocol-light-card h-100">
           <div class="card-icon"><i class="fas ${item.icon}"></i></div>
           <h4 class="card-title">${item.name}</h4>
           ${badge}
@@ -278,7 +278,7 @@
           : `<div class="fs-3 fw-bold mb-1 text-primary">${s.value}</div>`;
         return `
         <div class="col-6 col-md-3">
-          <div class="p-3 text-center rounded-4 h-100 bg-light border hover-lift">
+          <div class="p-3 text-center rounded-4 h-100 border hover-lift" style="background-color: #f5eee3 !important; border-color: rgba(230, 195, 129, 0.45) !important;">
             ${val}
             <div class="fw-bold text-uppercase text-muted" style="font-size: 0.65rem; letter-spacing: 1px;">${s.label}</div>
           </div>
@@ -295,7 +295,7 @@
       .map(
         (c) => `
       <div class="col-md-6 d-none d-lg-block">
-        <div class="p-4 rounded-4 h-100 bg-white shadow-sm border hover-lift">
+        <div class="p-4 rounded-4 h-100 shadow-sm border hover-lift" style="background-color: #f5eee3 !important; border-color: rgba(230, 195, 129, 0.45) !important;">
           <div class="d-flex align-items-center mb-3">
             <div class="rounded-3 d-flex align-items-center justify-content-center me-3 flex-shrink-0"
               style="width: 45px; height: 45px; background: rgba(230,195,129,0.15); color: var(--secondary-color);">
@@ -337,14 +337,14 @@
       .map((faq, idx) => {
         const i = idx + 100;
         return `
-      <div class="accordion-item mb-3 border-0 rounded-4 shadow-sm overflow-hidden">
+      <div class="accordion-item border-0 mb-3">
         <h2 class="accordion-header" id="heading${i}">
-          <button class="accordion-button collapsed fw-bold px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}" style="color: var(--secondary-color); font-size: 1.05rem;">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="false" aria-controls="collapse${i}">
             ${faq.question}
           </button>
         </h2>
         <div id="collapse${i}" class="accordion-collapse collapse" aria-labelledby="heading${i}" data-bs-parent="#serviceFaqAccordion">
-          <div class="accordion-body px-4 pb-4 pt-2 text-muted" style="line-height: 1.7; font-size: 0.95rem;">
+          <div class="accordion-body">
             ${faq.answer}
           </div>
         </div>

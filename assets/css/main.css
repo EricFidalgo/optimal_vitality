@@ -1044,6 +1044,50 @@ h6 {
   margin-bottom: 25px;
 }
 
+.protocol-light-card {
+  background: #ffffff !important;
+  border-radius: 20px;
+  padding: 35px 28px;
+  border: 1.5px solid rgba(230, 195, 129, 0.45) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.protocol-light-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 14px 30px rgba(31, 64, 109, 0.12) !important;
+}
+
+.protocol-light-card .card-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(230, 195, 129, 0.15) !important;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color) !important;
+  margin-bottom: 20px;
+}
+
+.protocol-light-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color) !important;
+  margin-bottom: 10px;
+}
+
+.protocol-light-card .card-text {
+  font-size: 0.92rem;
+  color: #555 !important;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 .service-link {
   font-weight: 700;
   font-size: 0.88rem;
@@ -1186,14 +1230,32 @@ h6 {
    14. TRUST SECTION
    ========================================================================== */
 .trust-section {
-  background: linear-gradient(135deg, #0e180b 0%, var(--secondary-color) 100%);
-  position: relative;
+  background-color: var(--secondary-color) !important;
+}
+
+.trust-section::before {
+  display: none !important;
 }
 
 .trust-section h2 {
   font-size: 2.5rem;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
+}
+
+.trust-section .border-secondary {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.trust-section .footer-text-soft {
+  color: rgba(255, 255, 255, 0.82) !important;
+  transition: color 0.2s ease;
+}
+
+.trust-section .footer-text-soft:hover,
+.trust-section .footer-text-soft:focus,
+.trust-section .footer-text-soft:active {
+  color: #ffffff !important;
 }
 
 /* ==========================================================================
@@ -2787,10 +2849,10 @@ h6 {
 }
 
 .eligibility-checklist-card {
-  background: var(--bg-light);
+  background-color: #f5eee3 !important;
   border-radius: 20px;
   padding: 40px;
-  border: 1px solid rgba(30, 45, 23, 0.06);
+  border: 1px solid rgba(230, 195, 129, 0.45) !important;
 }
 
 .eligibility-card-row {
