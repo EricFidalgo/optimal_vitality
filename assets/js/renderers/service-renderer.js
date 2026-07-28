@@ -543,7 +543,7 @@
         
         resultEl.innerHTML = `
             <div class="quiz-result-inner">
-                <div class="d-flex align-items-start gap-3 mb-1 flex-wrap">
+                <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
                     <div class="flex-grow-1">
                         <div class="quiz-protocol-tag">${protocol.tag}</div>
                         <div class="quiz-protocol-name">${protocol.name}</div>

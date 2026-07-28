@@ -3769,52 +3769,59 @@ body.modal-open,
 }
 
 .hero-modalities-badge {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(230, 195, 129, 0.4);
-  padding: 10px 24px;
-  border-radius: 50px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  color: #ffffff;
+  border-radius: 50px !important;
+  background-color: rgba(230, 195, 129, 0.12) !important;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.85rem 2.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
 }
 
-.hero-modalities-badge:hover {
-  background: rgba(230, 195, 129, 0.15);
-  border-color: var(--primary-color);
-  transform: translateY(-3px);
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.35),
-    0 0 25px rgba(230, 195, 129, 0.3);
-  color: #ffffff;
+.hero-modalities-badge:hover,
+.hero-modalities-badge:focus,
+.hero-modalities-badge:active {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(230, 195, 129, 0.35) !important;
 }
 
 .modalities-text {
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 1.2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.95);
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 .modalities-arrow {
-  font-size: 0.75rem;
-  color: var(--primary-color);
-  transition: transform 0.3s ease;
+  font-size: 0.85rem;
+  color: inherit;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .hero-modalities-badge:hover .modalities-arrow {
   transform: translateY(3px);
+  color: var(--secondary-color) !important;
+}
+
+.hero-modalities-badge:hover .modalities-text {
+  color: var(--secondary-color) !important;
 }
 
 @media (max-width: 576px) {
   .hero-modalities-badge {
-    padding: 8px 18px;
+    padding: 0.65rem 1.5rem;
   }
   .modalities-text {
-    font-size: 0.72rem;
-    letter-spacing: 0.8px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
   }
 }
 

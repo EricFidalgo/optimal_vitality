@@ -106,24 +106,48 @@
             return;
         }
 
+        const isEs = (window.OVI_I18N?.currentLang === 'es');
+        const ctaBtnText = isEs ? 'Reservar Consulta' : 'Secure Your Consultation';
+        const readyTitle = isEs ? '¿Listo para Transformar su Salud?' : 'Ready to Transform Your Health?';
+        const readyDesc  = isEs ? 'Dé el primer paso hacia su revitalización. Reserve su consulta para que nuestros expertos diseñen su protocolo personalizado.' : 'Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.';
+        const ourServicesTitle = isEs ? 'Nuestros Servicios' : 'Our Services';
+        const clinicInfoTitle  = isEs ? 'Información de la Clínica' : 'Clinic Information';
+
+        const disclaimerTitle = isEs ? 'Aviso Médico:' : 'Medical Disclaimer:';
+        const disclaimerText  = isEs 
+          ? 'Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.'
+          : 'All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.';
+
+        const copyrightText = isEs ? '&copy; 2026 Optimal Vitality Institute. Todos los derechos reservados.' : '&copy; 2026 Optimal Vitality Institute. All rights reserved.';
+
+        const legalPrivacy    = isEs ? 'Política de Privacidad' : 'Privacy Policy';
+        const legalTerms      = isEs ? 'Términos y Condiciones' : 'Terms & Conditions';
+        const legalHipaa      = isEs ? 'Aviso de HIPAA' : 'HIPAA Notice';
+        const legalMedical    = isEs ? 'Aviso Médico' : 'Medical Disclaimer';
+        const legalSms        = isEs ? 'Divulgación de Consentimiento SMS' : 'SMS Consent Disclosure';
+        const legalTelehealth = isEs ? 'Divulgación de Telesalud' : 'Telehealth Disclosure';
+        const legalFinancing  = isEs ? 'Divulgación de Financiamiento' : 'Financing Disclosure';
+        const legalForm       = isEs ? 'Descargo de Consentimiento de Formulario' : 'Form Consent Disclaimer';
+        const legalResults    = isEs ? 'Descargo de Resultados' : 'Results Disclaimer';
+
         root.innerHTML = `
             <footer class="footer py-5 text-center text-md-start" id="consultation">
                 <div class="container py-4">
                     <div class="row align-items-stretch g-4">
                         <div class="col-lg-4 align-self-center mb-5 mb-lg-0 text-center text-lg-start">
-                            <h2 class="mb-4 text-white">Ready to Transform Your Health?</h2>
-                            <p class="mb-4 text-white-50 mx-auto mx-lg-0" style="max-width: 500px;">Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.</p>
-                            <a href="#consultation" class="btn cta-btn btn-lg mt-2">Secure Your Consultation</a>
+                            <h2 class="mb-4 text-white">${readyTitle}</h2>
+                            <p class="mb-4 text-white-50 mx-auto mx-lg-0" style="max-width: 500px;">${readyDesc}</p>
+                            <a href="#consultation" class="btn cta-btn btn-lg mt-2">${ctaBtnText}</a>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
-                                <h4 class="text-primary mb-4 font-family-bebas">Our Services</h4>
+                                <h4 class="text-primary mb-4 font-family-bebas">${ourServicesTitle}</h4>
                                 <ul class="list-unstyled mb-0" id="footer-services-list"></ul>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
-                                <h4 class="text-primary mb-4 font-family-bebas">Clinic Information</h4>
+                                <h4 class="text-primary mb-4 font-family-bebas">${clinicInfoTitle}</h4>
                                 <p class="mb-3">
                                     <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.address.street}, ${c.address.city}, ${c.address.state} ${c.address.zip}`)}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none">
                                         <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span>
@@ -156,21 +180,19 @@
 
                     <div class="mt-5 pt-4 border-top border-secondary text-center">
                         <p class="text-white-50 max-w-950 mx-auto mb-3" style="font-size: 0.78rem; line-height: 1.6;">
-                            <strong>Medical Disclaimer:</strong> All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.
-
-                            Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.
+                            <strong>${disclaimerTitle}</strong> ${disclaimerText}
                         </p>
-                        <p class="mb-3 text-white-50"><small>&copy; 2026 Optimal Vitality Institute. All rights reserved.</small></p>
+                        <p class="mb-3 text-white-50"><small>${copyrightText}</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
-                            <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">Privacy Policy</a> &bull;
-                            <a href="${prefix}legal.html#terms" class="text-white-50 text-decoration-none hover-white">Terms & Conditions</a> &bull;
-                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">HIPAA Notice</a> &bull;
-                            <a href="${prefix}legal.html#medical" class="text-white-50 text-decoration-none hover-white">Medical Disclaimer</a> &bull;
-                            <a href="${prefix}legal.html#sms" class="text-white-50 text-decoration-none hover-white">SMS Consent Disclosure</a> &bull;
-                            <a href="${prefix}legal.html#telehealth" class="text-white-50 text-decoration-none hover-white">Telehealth Disclosure</a> &bull;
-                            <a href="${prefix}legal.html#financing" class="text-white-50 text-decoration-none hover-white">Financing Disclosure</a> &bull;
-                            <a href="${prefix}legal.html#form" class="text-white-50 text-decoration-none hover-white">Form Consent Disclaimer</a> &bull;
-                            <a href="${prefix}legal.html#results" class="text-white-50 text-decoration-none hover-white">Results Disclaimer</a>
+                            <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
+                            <a href="${prefix}legal.html#terms" class="text-white-50 text-decoration-none hover-white">${legalTerms}</a> &bull;
+                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">${legalHipaa}</a> &bull;
+                            <a href="${prefix}legal.html#medical" class="text-white-50 text-decoration-none hover-white">${legalMedical}</a> &bull;
+                            <a href="${prefix}legal.html#sms" class="text-white-50 text-decoration-none hover-white">${legalSms}</a> &bull;
+                            <a href="${prefix}legal.html#telehealth" class="text-white-50 text-decoration-none hover-white">${legalTelehealth}</a> &bull;
+                            <a href="${prefix}legal.html#financing" class="text-white-50 text-decoration-none hover-white">${legalFinancing}</a> &bull;
+                            <a href="${prefix}legal.html#form" class="text-white-50 text-decoration-none hover-white">${legalForm}</a> &bull;
+                            <a href="${prefix}legal.html#results" class="text-white-50 text-decoration-none hover-white">${legalResults}</a>
                         </div>
                     </div>
                 </div>

@@ -388,6 +388,9 @@ function initMain() {
                 let mainLinks = '';
                 let subPanels = '';
 
+                const isEs = (window.OVI_I18N?.currentLang === 'es');
+                const backText = isEs ? 'Volver al Menú' : 'Back to Menu';
+
                 data.navigation.forEach((link, index) => {
                     if (link.dropdown) {
                         mainLinks += `
@@ -403,7 +406,7 @@ function initMain() {
                         subPanels += `
                             <div id="panel-${index}" class="mobile-sub-panel">
                                 <button class="btn mobile-drill-back text-primary fw-bold text-uppercase mb-4 mt-2 w-100 d-flex align-items-center justify-content-center gap-2" style="font-size: 1.1rem; letter-spacing: 1px; border: none; background: transparent;">
-                                    <i class="fas fa-chevron-left"></i> Back to Menu
+                                    <i class="fas fa-chevron-left"></i> ${backText}
                                 </button>
                                 <div class="p-0 m-0 w-100">${dropItems}</div>
                             </div>

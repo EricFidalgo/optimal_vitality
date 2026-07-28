@@ -158,6 +158,7 @@
     ["Medical Disclaimer", "Aviso Médico"],
 
     // Buttons
+    ["Back to Menu", "Volver al Menú"],
     ["Book Appointment", "Reservar Cita"],
     ["Meet the Doctors & View Credentials", "Conozca a los Médicos y Vea Credenciales"],
     ["Meet the Doctors &amp; View Credentials", "Conozca a los Médicos y Vea Credenciales"],
@@ -166,6 +167,7 @@
     ["Book Essential Plan", "Reservar Plan Esencial"],
     ["Book Your Consultation Now", "Reservar Consulta"],
     ["Book Your Consultation", "Reservar Consulta"],
+    ["Secure Your Consultation", "Reservar Consulta"],
     ["Book Doctor Call", "Reservar Cita"]
   ];
 

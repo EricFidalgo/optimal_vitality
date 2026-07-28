@@ -12,12 +12,34 @@
   let blogData = [];
   let blogPage = null;
 
+  function parseArticleDate(dateStr) {
+    if (!dateStr) return 0;
+    const d = new Date(dateStr);
+    if (!isNaN(d.getTime())) return d.getTime();
+
+    const spanishMonths = {
+      enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5,
+      julio: 6, agosto: 7, septiembre: 8, octubre: 9, noviembre: 10, diciembre: 11
+    };
+
+    const match = String(dateStr).toLowerCase().match(/(\d{1,2})\s+de\s+([a-z]+)[,\s]+(\d{4})/);
+    if (match) {
+      const day = parseInt(match[1], 10);
+      const month = spanishMonths[match[2]];
+      const year = parseInt(match[3], 10);
+      if (month !== undefined) {
+        return new Date(year, month, day).getTime();
+      }
+    }
+    return 0;
+  }
+
   function init() {
     blogData = window.clinicData?.blog || [];
     blogPage = window.clinicData?.blogPage || null;
 
     // Sort articles by date descending (newest first)
-    blogData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    blogData.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
 
     // Determine which page we are on
     if (document.getElementById("blog-grid-container")) {
