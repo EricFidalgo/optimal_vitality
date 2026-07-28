@@ -337,15 +337,25 @@
            desc = window.clinicData.pages?.home?.seo?.description;
         }
 
-        if (title) document.title = title;
+        if (title) {
+          document.title = title;
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle) ogTitle.setAttribute('content', title);
+          const twTitle = document.querySelector('meta[property="twitter:title"]');
+          if (twTitle) twTitle.setAttribute('content', title);
+        }
         if (desc) {
-           let metaDesc = document.querySelector('meta[name="description"]');
-           if (!metaDesc) {
-             metaDesc = document.createElement('meta');
-             metaDesc.setAttribute('name', 'description');
-             document.head.appendChild(metaDesc);
-           }
-           metaDesc.setAttribute("content", desc);
+          let metaDesc = document.querySelector('meta[name="description"]');
+          if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.setAttribute('name', 'description');
+            document.head.appendChild(metaDesc);
+          }
+          metaDesc.setAttribute("content", desc);
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc) ogDesc.setAttribute('content', desc);
+          const twDesc = document.querySelector('meta[property="twitter:description"]');
+          if (twDesc) twDesc.setAttribute('content', desc);
         }
       }
       updateSeoTags();

@@ -31,10 +31,22 @@
 
   // ─── 3. Main population function ──────────────────────────────────────────
   function populatePage(s) {
-    // --- Page meta (in the current document, not the fetched one) ---
-    document.title = s.pageTitle || "OVI Wellness";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && s.pageDescription) metaDesc.setAttribute("content", s.pageDescription);
+    // --- Page meta ---
+    if (s.pageTitle) {
+      document.title = s.pageTitle;
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", s.pageTitle);
+      const twTitle = document.querySelector('meta[property="twitter:title"]');
+      if (twTitle) twTitle.setAttribute("content", s.pageTitle);
+    }
+    if (s.pageDescription) {
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute("content", s.pageDescription);
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", s.pageDescription);
+      const twDesc = document.querySelector('meta[property="twitter:description"]');
+      if (twDesc) twDesc.setAttribute("content", s.pageDescription);
+    }
 
     // --- Hero ---
     setSlot("heroBadge", s.heroBadge);
