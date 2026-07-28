@@ -1,5 +1,9 @@
 {
   "stPete": {
+    "seo": {
+      "title": "Optimal Vitality Institute | Clínica de St. Petersburg | TRT, Pérdida de Peso y Estética",
+      "description": "Visite Optimal Vitality Institute en St. Petersburg, FL. Clínica de TRT dirigida por médicos, pérdida de peso metabólica (Semaglutida/Tirzepatida), terapia de péptidos e inyecciones de Botox. ¡Reserve su consulta!"
+    },
     "name": "Optimal Vitality Institute — St. Petersburg",
     "description": "Clínica de TRT dirigida por médicos, pérdida de peso médica (Semaglutida/Tirzepatida), estética avanzada y terapia de péptidos en St. Petersburg, Florida.",
     "url": "https://oviwellness.com/st-pete.html",
@@ -84,6 +88,10 @@
     ]
   },
   "tampa": {
+    "seo": {
+      "title": "Optimal Vitality Institute | Clínica de Tampa | TRT, Pérdida de Peso y Estética",
+      "description": "Visite la Clínica de Tampa de Optimal Vitality Institute. Sirviendo a pacientes de Tampa con TRT dirigida por médicos, pérdida de peso metabólica, terapia de péptidos y Botox. ¡Reserve hoy!"
+    },
     "name": "Optimal Vitality Institute — Clínica Tampa",
     "description": "Clínica de TRT dirigida por médicos, pérdida de peso médica, péptidos y estética en la bahía de Tampa, con oficina física en St. Petersburg.",
     "url": "https://oviwellness.com/tampa.html",

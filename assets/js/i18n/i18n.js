@@ -264,6 +264,44 @@
         window.clinicData.pages.legal = legalPageData;
       }
 
+      function updateSeoTags() {
+        const path = window.location.pathname;
+        let title, desc;
+        if (path.includes("/services/")) {
+           return; // Service renderer handles its own SEO dynamically
+        } else if (path.includes("/blog.html") || path.includes("/article.html")) {
+           title = window.clinicData.blogPage?.seo?.title;
+           desc = window.clinicData.blogPage?.seo?.description;
+        } else if (path.includes("/team.html")) {
+           title = window.clinicData.teamPage?.seo?.title;
+           desc = window.clinicData.teamPage?.seo?.description;
+        } else if (path.includes("/legal.html")) {
+           title = window.clinicData.pages?.legal?.seo?.title;
+           desc = window.clinicData.pages?.legal?.seo?.description;
+        } else if (path.includes("/st-pete.html")) {
+           title = window.clinicData.locations?.stPete?.seo?.title;
+           desc = window.clinicData.locations?.stPete?.seo?.description;
+        } else if (path.includes("/tampa.html")) {
+           title = window.clinicData.locations?.tampa?.seo?.title;
+           desc = window.clinicData.locations?.tampa?.seo?.description;
+        } else {
+           title = window.clinicData.pages?.home?.seo?.title;
+           desc = window.clinicData.pages?.home?.seo?.description;
+        }
+
+        if (title) document.title = title;
+        if (desc) {
+           let metaDesc = document.querySelector('meta[name="description"]');
+           if (!metaDesc) {
+             metaDesc = document.createElement('meta');
+             metaDesc.setAttribute('name', 'description');
+             document.head.appendChild(metaDesc);
+           }
+           metaDesc.setAttribute("content", desc);
+        }
+      }
+      updateSeoTags();
+
       document.dispatchEvent(new CustomEvent("i18nLoaded", { detail: { lang: currentLang } }));
     } catch (err) {
       console.warn("[i18n] Failed loading locale JSON files, falling back to static JS data:", err);
