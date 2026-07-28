@@ -409,18 +409,23 @@ hr {
   border-color: #cda863 !important;
 }
 
-/* Sleek Glassmorphism Language Toggle Button */
+/* Sleek Glassmorphism Language Dropdown Button */
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .lang-toggle-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 6px;
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(230, 195, 129, 0.3);
   border-radius: 50px;
-  padding: 4px 10px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.72rem;
+  padding: 4px 14px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
@@ -432,54 +437,120 @@ hr {
   line-height: 1;
   text-align: center;
   vertical-align: middle;
-  height: 32px;
+  height: 34px;
 }
 
-.lang-toggle-btn:hover {
-  background: rgba(230, 195, 129, 0.15);
+.lang-toggle-btn::after {
+  display: none !important;
+}
+
+.lang-toggle-btn:hover,
+.lang-toggle-btn[aria-expanded="true"] {
+  background: rgba(230, 195, 129, 0.18);
   border-color: var(--primary-color);
   color: #ffffff;
-  box-shadow: 0 0 12px rgba(230, 195, 129, 0.22);
+  box-shadow: 0 0 14px rgba(230, 195, 129, 0.25);
 }
 
-.lang-toggle-btn .lang-badge {
+.lang-flag-trigger {
+  font-size: 1.05rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-flag {
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-current {
   font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.8px;
   color: var(--primary-color);
-  background: rgba(230, 195, 129, 0.18);
-  padding: 2px 7px;
-  border-radius: 10px;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
 }
 
-.lang-toggle-btn .lang-inactive {
-  opacity: 0.45;
-  font-weight: 500;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
-  padding: 2px 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  transition: opacity 0.2s ease;
-}
-
-.lang-toggle-btn .lang-divider {
-  opacity: 0.35;
-  font-size: 0.65rem;
-  margin: 0 1px;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-}
-
-.lang-toggle-btn:hover .lang-inactive {
+.lang-chevron {
+  font-size: 0.62rem;
   opacity: 0.75;
+  transition: transform 0.25s ease;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lang-toggle-btn[aria-expanded="true"] .lang-chevron {
+  transform: rotate(180deg);
+}
+
+/* Glassmorphism Language Dropdown Menu */
+.lang-dropdown-menu {
+  background: rgba(6, 10, 6, 0.96) !important;
+  border: 1px solid rgba(230, 195, 129, 0.35) !important;
+  border-radius: 12px !important;
+  padding: 6px !important;
+  min-width: 140px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 20px rgba(230, 195, 129, 0.15) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  margin-top: 8px !important;
+  text-align: left !important;
+  z-index: 1070;
+}
+
+.lang-dropdown-menu .dropdown-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  padding: 9px 14px !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+  background: transparent !important;
+  cursor: pointer;
+}
+
+.lang-dropdown-menu .dropdown-item:hover,
+.lang-dropdown-menu .dropdown-item:focus {
+  background: rgba(230, 195, 129, 0.15) !important;
+  color: var(--primary-color) !important;
+}
+
+.lang-dropdown-menu .dropdown-item.active {
+  background: rgba(230, 195, 129, 0.2) !important;
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+}
+
+.lang-dropdown-menu .check-icon {
+  font-size: 0.75rem;
+  color: var(--primary-color);
+}
+
+/* Mobile Language Drill-Down Panel Buttons */
+.active-lang-panel-btn {
+  background: rgba(230, 195, 129, 0.15) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(230, 195, 129, 0.2) !important;
+}
+
+.inactive-lang-panel-btn {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.25s ease !important;
+}
+
+.inactive-lang-panel-btn:hover,
+.inactive-lang-panel-btn:focus {
+  background: rgba(230, 195, 129, 0.1) !important;
+  border-color: rgba(230, 195, 129, 0.4) !important;
+  color: #ffffff !important;
 }
 
 

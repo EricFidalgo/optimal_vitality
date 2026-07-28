@@ -422,17 +422,40 @@ function initMain() {
                     }
                 });
 
+                // Add Language sliding drill-down panel
+                const langLabel = isEs ? 'Idioma' : 'Language';
+                const langFlag = currentLang === 'en' ? '🇺🇸' : '🇪🇸';
+
+                mainLinks += `
+                    <div class="w-100 mb-3">
+                        <a class="mobile-drill-open d-flex justify-content-center align-items-center gap-2 p-2 text-decoration-none text-white fw-bold" href="#" data-target="panel-lang" style="font-size: 1.3rem; letter-spacing: 1px;">
+                            ${langLabel} <span class="ms-1" style="font-size: 1.15rem; line-height: 1;">${langFlag}</span> <i class="fas fa-chevron-right text-primary" style="font-size: 1rem;"></i>
+                        </a>
+                    </div>
+                `;
+
+                subPanels += `
+                    <div id="panel-lang" class="mobile-sub-panel">
+                        <button class="btn mobile-drill-back text-primary fw-bold text-uppercase mb-4 mt-2 w-100 d-flex align-items-center justify-content-center gap-2" style="font-size: 1.1rem; letter-spacing: 1px; border: none; background: transparent;">
+                            <i class="fas fa-chevron-left"></i> ${backText}
+                        </button>
+                        <div class="p-0 m-0 w-100 d-flex flex-column align-items-center gap-3">
+                            <button type="button" class="btn w-100 py-3 px-4 rounded-3 d-flex align-items-center justify-content-between text-white fw-bold ${currentLang === 'en' ? 'active-lang-panel-btn' : 'inactive-lang-panel-btn'}" style="font-size: 1.1rem; letter-spacing: 1px;" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage('en')">
+                                <span class="d-flex align-items-center gap-2"><span style="font-size: 1.25rem;">🇺🇸</span> English</span>
+                                ${currentLang === 'en' ? '<i class="fas fa-check text-primary fs-5"></i>' : ''}
+                            </button>
+                            <button type="button" class="btn w-100 py-3 px-4 rounded-3 d-flex align-items-center justify-content-between text-white fw-bold ${currentLang === 'es' ? 'active-lang-panel-btn' : 'inactive-lang-panel-btn'}" style="font-size: 1.1rem; letter-spacing: 1px;" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage('es')">
+                                <span class="d-flex align-items-center gap-2"><span style="font-size: 1.25rem;">🇪🇸</span> Español</span>
+                                ${currentLang === 'es' ? '<i class="fas fa-check text-primary fs-5"></i>' : ''}
+                            </button>
+                        </div>
+                    </div>
+                `;
+
                 mobileNav.innerHTML = `
                     <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%;">
                         <div class="p-0 m-0 w-100 mt-3">${mainLinks}</div>
                         <div class="mt-auto pb-4 pt-3 w-100">
-                            <div class="d-flex justify-content-center mb-3">
-                              <button type="button" class="lang-toggle-btn py-2 px-3" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
-                                <span class="${currentLang === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
-                                <span class="lang-divider">|</span>
-                                <span class="${currentLang === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
-                              </button>
-                            </div>
                             <a href="#consultation" class="btn cta-btn w-100">${ctaText}</a>
                         </div>
                     </div>

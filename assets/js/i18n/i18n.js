@@ -22,6 +22,37 @@
       if (lang !== "en" && lang !== "es") return;
       localStorage.setItem(STORAGE_KEY, lang);
       window.location.reload();
+    },
+    renderDropdown: function (containerClass = '') {
+      const lang = (this.currentLang || 'en').toLowerCase();
+      const isEn = lang === 'en';
+      const isEs = lang === 'es';
+      const currentFlag = isEn ? '🇺🇸' : '🇪🇸';
+
+      return `
+        <div class="dropdown lang-dropdown ${containerClass}">
+          <button class="lang-toggle-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select Language">
+            <span class="lang-flag-trigger me-1">${currentFlag}</span>
+            <i class="fas fa-chevron-down lang-chevron"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end lang-dropdown-menu shadow-lg">
+            <li>
+              <button type="button" class="dropdown-item ${isEn ? 'active' : ''}" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage('en')">
+                <span class="lang-flag me-2">🇺🇸</span>
+                <span class="lang-name">English</span>
+                ${isEn ? '<i class="fas fa-check check-icon ms-auto"></i>' : ''}
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item ${isEs ? 'active' : ''}" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage('es')">
+                <span class="lang-flag me-2">🇪🇸</span>
+                <span class="lang-name">Español</span>
+                ${isEs ? '<i class="fas fa-check check-icon ms-auto"></i>' : ''}
+              </button>
+            </li>
+          </ul>
+        </div>
+      `;
     }
   };
 

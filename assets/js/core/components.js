@@ -49,11 +49,7 @@
 
                     <div class="collapse navbar-collapse d-none d-lg-flex align-items-center" id="navbarNav">
                         <ul class="navbar-nav ms-auto align-items-center" id="main-navbar-links"></ul>
-                        <button type="button" class="lang-toggle-btn ms-lg-3 me-lg-2" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
-                          <span class="${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
-                          <span class="lang-divider">|</span>
-                          <span class="${(window.OVI_I18N?.currentLang || 'en') === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
-                        </button>
+                        ${window.OVI_I18N ? window.OVI_I18N.renderDropdown('ms-lg-3 me-lg-2') : ''}
                         <a href="#consultation" class="btn cta-btn ms-lg-2">Book Your Consultation</a>
                     </div>
 
@@ -78,13 +74,6 @@
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
                                     </div>
                                     <div class="mt-auto pb-4 pt-3 w-100">
-                                        <div class="d-flex justify-content-center mb-3">
-                                          <button type="button" class="lang-toggle-btn py-2 px-3" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
-                                            <span class="${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
-                                            <span class="lang-divider">|</span>
-                                            <span class="${(window.OVI_I18N?.currentLang || 'en') === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
-                                          </button>
-                                        </div>
                                         <a href="#consultation" class="btn cta-btn w-100">${(window.OVI_I18N?.currentLang === 'es') ? 'Reservar Consulta' : 'Book Your Consultation'}</a>
                                     </div>
                                 </div>
