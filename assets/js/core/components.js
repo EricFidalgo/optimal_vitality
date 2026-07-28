@@ -213,6 +213,23 @@
     // -------------------------------------------------------------------------
     // CLINICAL DISCLOSURES
     // -------------------------------------------------------------------------
+    function populateDisclosures() {
+        const data = window.clinicData?.i18nComponents?.disclosures;
+        if (!data) return;
+        const setEl = (selector, text) => {
+            const el = document.querySelector(selector);
+            if (el && text) el.innerHTML = text;
+        };
+        setEl('[data-i18n="disclosures.title"]', data.title);
+        setEl('[data-i18n="disclosures.intro"]', data.intro);
+        setEl('[data-i18n="disclosures.physicianTitle"]', data.physicianTitle);
+        setEl('[data-i18n="disclosures.physicianText"]', data.physicianText);
+        setEl('[data-i18n="disclosures.diagnosticTitle"]', data.diagnosticTitle);
+        setEl('[data-i18n="disclosures.diagnosticText"]', data.diagnosticText);
+        setEl('[data-i18n="disclosures.disclaimerTitle"]', data.disclaimerTitle);
+        setEl('[data-i18n="disclosures.disclaimerText"]', data.disclaimerText);
+    }
+
     function renderDisclosures() {
         const root = document.getElementById("disclosures-root");
         if (!root) return;
@@ -224,6 +241,7 @@
             })
             .then(html => {
                 root.innerHTML = html;
+                populateDisclosures();
             })
             .catch(err => console.error(err));
     }
@@ -343,11 +361,36 @@
             el.innerHTML = `<i class="fas fa-phone-alt me-2"></i> ${c.phone}`;
             if (el.tagName === 'A') el.href = "tel:" + c.phone.replace(/\D/g, '');
         });
+
+        const isEs = (window.OVI_I18N?.currentLang === 'es');
         document.querySelectorAll('[data-global-contact="email"]').forEach(el => {
-            el.innerHTML = `<i class="fas fa-envelope me-2"></i> Email Clinical Team`;
+            const label = isEs ? 'Enviar Correo al Equipo Clínico' : 'Email Clinical Team';
+            // Preserve icon if already in innerHTML (e.g. cta.html has <i> before the slot)
+            const icon = el.querySelector('i');
+            if (icon) {
+                el.innerHTML = '';
+                el.appendChild(icon);
+                el.innerHTML += ` ${label}`;
+            } else {
+                el.innerHTML = `<i class="fas fa-envelope me-2"></i> ${label}`;
+            }
             if (el.tagName === 'A') el.href = "mailto:" + c.email;
         });
+
+        // Resolve data-i18n location.* labels injected by location.html component
+        const loc = window.clinicData?.location;
+        if (loc) {
+            document.querySelectorAll('[data-i18n="location.sectionTitle"]').forEach(el => { el.textContent = loc.sectionTitle || ''; });
+            document.querySelectorAll('[data-i18n="location.clinicName"]').forEach(el => { el.textContent = loc.clinicName || ''; });
+            document.querySelectorAll('[data-i18n="location.labelAddress"]').forEach(el => { el.textContent = loc.labelAddress || ''; });
+            document.querySelectorAll('[data-i18n="location.labelHours"]').forEach(el => { el.textContent = loc.labelHours || ''; });
+            document.querySelectorAll('[data-i18n="location.labelContact"]').forEach(el => { el.textContent = loc.labelContact || ''; });
+            document.querySelectorAll('[data-i18n="location.getDirections"]').forEach(el => { el.textContent = loc.getDirections || ''; });
+        }
+
+        populateDisclosures();
     }
+
 
     // -------------------------------------------------------------------------
     // DYNAMIC CONSULTATION MODAL & MULTI-STEP LOGIC

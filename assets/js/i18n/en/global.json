@@ -171,5 +171,13 @@
       "question": "Are peptide therapies safe and how are they administered?",
       "answer": "Yes, peptides are extremely well-tolerated because they are naturally occurring compounds within your body. We exclusively prescribe rigorously tested, pharmacy-grade peptides. Most are administered via a virtually painless subcutaneous injection using a micro-needle, though some protocols use topical or oral alternatives."
     }
-  ]
+  ],
+  "location": {
+    "sectionTitle": "Find Our Clinic",
+    "clinicName": "Optimal Vitality Institute",
+    "labelAddress": "Address",
+    "labelHours": "Hours of Operation",
+    "labelContact": "Contact",
+    "getDirections": "Get Directions"
+  }
 }

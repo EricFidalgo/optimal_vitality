@@ -131,6 +131,8 @@
     setSlot("ctaBadge1", isEs ? "Clínica Licenciada" : "Licensed Clinic");
     setSlot("ctaBadge2", isEs ? "Ubicada en Florida" : "Florida-Based");
     setSlot("ctaBadge3", isEs ? "Credenciales Verificadas" : "Verified Credentials");
+    setSlot("ctaBookBtn", isEs ? "Reservar Consulta" : "Book Your Consultation");
+    setSlot("ctaEmailBtn", isEs ? "Enviar Correo al Equipo Clínico" : "Email Clinical Team");
 
     // --- FAQs Title & Subheadline ---
     buildFAQs(s.faqs || window.clinicData?.faqs || []);

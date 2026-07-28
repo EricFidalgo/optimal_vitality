@@ -171,5 +171,13 @@
       "question": "¿Son seguras las terapias de péptidos y cómo se administran?",
       "answer": "Sí, los péptidos son extremadamente bien tolerados porque son compuestos naturales de su cuerpo. Prescribimos exclusivamente péptidos probados de grado farmacéutico, administrados por microinyecciones subcutáneas prácticamente indoloras."
     }
-  ]
+  ],
+  "location": {
+    "sectionTitle": "Nuestra Clínica",
+    "clinicName": "Optimal Vitality Institute",
+    "labelAddress": "Dirección",
+    "labelHours": "Horario de Atención",
+    "labelContact": "Contacto",
+    "getDirections": "Cómo Llegar"
+  }
 }
