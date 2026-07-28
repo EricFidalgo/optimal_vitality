@@ -175,6 +175,8 @@
                         <p class="text-white-50 max-w-950 mx-auto mb-3" style="font-size: 0.78rem; line-height: 1.6;">
                             <strong>${disclaimerTitle}</strong> ${disclaimerText}
                         </p>
+                        <p class="mb-1 text-white-50"><small><strong>Optimal Vitality Institute, LLC d/b/a OVI Wellness</strong></small></p>
+                        <p class="mb-1 text-white-50"><small>${isEs ? 'Con licencia en el Estado de Florida' : 'Licensed in the State of Florida'}</small></p>
                         <p class="mb-3 text-white-50"><small>${copyrightText}</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
                             <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
@@ -647,18 +649,8 @@
             document.getElementById('success-chosen-service').innerText = successText;
 
             try {
-                // If the key is not configured yet, skip sending to avoid Web3Forms error responses.
-                if (accessKey && accessKey !== "YOUR_ACCESS_KEY_HERE") {
-                    const response = await fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        body: formData
-                    });
-                    if (!response.ok) {
-                        throw new Error(`Submission failed: ${response.status}`);
-                    }
-                } else {
-                    console.log("Web3Forms Key is placeholder. Data stored locally:", Object.fromEntries(formData.entries()));
-                }
+                console.warn("Form submission: HIPAA-capable CRM endpoint not yet configured. Data captured locally only.");
+                console.log("Form data:", Object.fromEntries(formData.entries()));
 
                 steps.forEach(step => step.classList.remove('active'));
                 const successStep = form.querySelector('.modal-step[data-step="success"]');
