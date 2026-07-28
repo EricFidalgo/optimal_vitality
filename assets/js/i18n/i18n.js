@@ -188,7 +188,14 @@
     ["HIPAA Notice", "Aviso de HIPAA"],
     ["Medical Disclaimer", "Aviso Médico"],
 
+    // 404 Page Not Found
+    ["Page Not Found — OVI Wellness", "Página No Encontrada — OVI Wellness"],
+    ["The page you are looking for does not exist.", "La página que está buscando no existe."],
+    ["Page Not Found", "Página No Encontrada"],
+    ["The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.", "Es posible que la página que está buscando haya sido eliminada, haya cambiado de nombre o no esté disponible temporalmente."],
+
     // Buttons
+    ["Back to Home", "Volver al Inicio"],
     ["Back to Menu", "Volver al Menú"],
     ["Book Appointment", "Reservar Cita"],
     ["Meet the Doctors & View Credentials", "Conozca a los Médicos y Vea Credenciales"],
@@ -230,7 +237,7 @@
   // Fetch locale JSON files prior to component rendering
   async function loadLocaleData() {
     try {
-      const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes, homePageRes, legalPageRes] = await Promise.all([
+      const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes, homePageRes, legalPageRes, notFoundPageRes] = await Promise.all([
         fetch(basePath + "global.json").catch(() => null),
         fetch(basePath + "services.json").catch(() => null),
         fetch(basePath + "team.json").catch(() => null),
@@ -238,7 +245,8 @@
         fetch(basePath + "blog.json").catch(() => null),
         fetch(basePath + "components.json").catch(() => null),
         fetch(basePath + "pages/home.json").catch(() => null),
-        fetch(basePath + "pages/legal.json").catch(() => null)
+        fetch(basePath + "pages/legal.json").catch(() => null),
+        fetch(basePath + "pages/notFound.json").catch(() => null)
       ]);
 
       if (globalRes && globalRes.ok) {
@@ -295,6 +303,12 @@
         window.clinicData.pages.legal = legalPageData;
       }
 
+      if (notFoundPageRes && notFoundPageRes.ok) {
+        const notFoundPageData = await notFoundPageRes.json();
+        window.clinicData.pages = window.clinicData.pages || {};
+        window.clinicData.pages.notFound = notFoundPageData;
+      }
+
       function updateSeoTags() {
         const path = window.location.pathname;
         let title, desc;
@@ -309,6 +323,9 @@
         } else if (path.includes("/legal.html")) {
            title = window.clinicData.pages?.legal?.seo?.title;
            desc = window.clinicData.pages?.legal?.seo?.description;
+        } else if (path.includes("/404.html")) {
+           title = window.clinicData.pages?.notFound?.seo?.title;
+           desc = window.clinicData.pages?.notFound?.seo?.description;
         } else if (path.includes("/st-pete.html")) {
            title = window.clinicData.locations?.stPete?.seo?.title;
            desc = window.clinicData.locations?.stPete?.seo?.description;

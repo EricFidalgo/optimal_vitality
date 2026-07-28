@@ -509,6 +509,20 @@ function initMain() {
             }
         }
 
+        // --- 404 Page Not Found ---
+        const notFoundData = data.pages?.notFound?.notFound;
+        if (notFoundData) {
+            const codeEl  = document.querySelector('[data-i18n="notFound.code"]');
+            const titleEl = document.querySelector('[data-i18n="notFound.title"]');
+            const descEl  = document.querySelector('[data-i18n="notFound.description"]');
+            const btnEl   = document.querySelector('[data-i18n="notFound.homeBtn"]');
+
+            if (codeEl)  codeEl.textContent  = notFoundData.code || '404';
+            if (titleEl) titleEl.textContent = notFoundData.title || 'Page Not Found';
+            if (descEl)  descEl.textContent  = notFoundData.description || '';
+            if (btnEl)   btnEl.textContent   = notFoundData.homeBtn || 'Back to Home';
+        }
+
         // --- Hero Blob Menu ---
         const blobContainer = document.querySelector('.blob-menu-container');
         if (blobContainer && data.services) {

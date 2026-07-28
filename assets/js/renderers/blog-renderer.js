@@ -35,8 +35,12 @@
   }
 
   function init() {
-    blogData = window.clinicData?.blog || [];
-    blogPage = window.clinicData?.blogPage || null;
+    if (!window.clinicData?.blog || window.clinicData.blog.length === 0) {
+      return;
+    }
+
+    blogData = window.clinicData.blog;
+    blogPage = window.clinicData.blogPage || null;
 
     // Sort articles by date descending (newest first)
     blogData.sort((a, b) => parseArticleDate(b.date) - parseArticleDate(a.date));
@@ -121,7 +125,11 @@
     const ui = blogPage?.ui || {};
     const byText = ui.byAuthor || "By";
 
-    const article = blogData.find((a) => a.id === articleId);
+    // If no articleId is specified, fallback to the first article in the dataset
+    let article = blogData.find((a) => a.id === articleId);
+    if (!article && !articleId && blogData.length > 0) {
+      article = blogData[0];
+    }
 
     if (!article) {
       const notFoundTitle = ui.articleNotFound || "Article Not Found";
@@ -132,11 +140,15 @@
       const container = document.getElementById("article-content-container");
       if (container) {
         container.innerHTML = `
-          <div class="text-center py-5 my-5">
-            <h1 class="display-5 fw-bold mb-3">${notFoundTitle}</h1>
-            <p class="text-muted mb-4">${notFoundDesc}</p>
-            <a href="blog.html" class="btn btn-primary px-4 py-2">${returnBtnText}</a>
-          </div>
+          <section class="section-light py-5 d-flex align-items-center justify-content-center" style="min-height: 60vh; padding-top: 140px !important;">
+            <div class="container text-center py-5">
+              <h1 class="display-4 fw-bold mb-3 text-uppercase" style="color: var(--secondary-color); font-size: 2.5rem;">${notFoundTitle}</h1>
+              <p class="text-muted mb-4 lead mx-auto" style="max-width: 550px;">${notFoundDesc}</p>
+              <a href="blog.html" class="btn cta-btn btn-lg rounded-pill px-4 py-3">
+                <i class="fas fa-arrow-left me-2"></i>${returnBtnText}
+              </a>
+            </div>
+          </section>
         `;
       }
       fadeInPage();
