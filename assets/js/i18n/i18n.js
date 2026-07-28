@@ -142,6 +142,11 @@
 
     // Footer & Disclaimer
     ["Connect with Us on Social Media", "Conéctese con Nosotros en Redes Sociales"],
+    ["Frequently Asked Questions", "Preguntas Frecuentes"],
+    ["Ready to Optimize?", "¿Listo para Optimizar?"],
+    ["Licensed Clinic", "Clínica Licenciada"],
+    ["Florida-Based", "Ubicada en Florida"],
+    ["Verified Credentials", "Credenciales Verificadas"],
     ["Ready to Transform Your Health?", "¿Listo para Transformar su Salud?"],
     ["Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.", "Dé el primer paso hacia su revitalización. Reserve su consulta para que nuestros expertos diseñen su protocolo personalizado."],
     ["Our Services", "Nuestros Servicios"],

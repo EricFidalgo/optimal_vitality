@@ -115,15 +115,34 @@
       hideById("myths-container");
     }
 
-    // --- CTA subheadline ---
+    // --- CTA Title, Subheadline & Badges ---
+    const isEs = (window.OVI_I18N?.currentLang === 'es');
+
+    const ctaTitle = s.ctaHeadline || (isEs ? "¿Listo para Optimizar?" : "Ready to Optimize?");
+    setSlot("ctaTitle", ctaTitle);
+
     const ctaSub =
       s.ctaSubheadline ||
-      `Stop settling for average. Get clinical-grade ${s.tabLabel || "treatment"} directed by medical professionals.`;
+      (isEs
+        ? `Deje de conformarse con lo común. Obtenga tratamientos de nivel clínico de ${s.tabLabel || "optimización"} dirigidos por profesionales médicos.`
+        : `Stop settling for average. Get clinical-grade ${s.tabLabel || "treatment"} directed by medical professionals.`);
     setSlot("ctaSubheadline", ctaSub);
 
-    // --- FAQs ---
+    setSlot("ctaBadge1", isEs ? "Clínica Licenciada" : "Licensed Clinic");
+    setSlot("ctaBadge2", isEs ? "Ubicada en Florida" : "Florida-Based");
+    setSlot("ctaBadge3", isEs ? "Credenciales Verificadas" : "Verified Credentials");
+
+    // --- FAQs Title & Subheadline ---
     buildFAQs(s.faqs || window.clinicData?.faqs || []);
-    const faqSub = `Everything you need to know about our ${s.tabLabel || ""} protocols.`;
+
+    const faqTitle = s.faqHeadline || (isEs ? "Preguntas Frecuentes" : "Frequently Asked Questions");
+    setSlot("faqHeadline", faqTitle);
+
+    const faqSub =
+      s.faqSubheadline ||
+      (isEs
+        ? `Todo lo que necesita saber sobre nuestros protocolos de ${s.tabLabel || ""}.`
+        : `Everything you need to know about our ${s.tabLabel || ""} protocols.`);
     setSlot("faqSubheadline", faqSub);
 
     // Re-init Bootstrap carousels that were injected dynamically
