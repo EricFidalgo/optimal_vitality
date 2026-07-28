@@ -17,9 +17,9 @@
   "image": "",
   "ctaText": "Reserve su Consulta Médica",
   "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Terapia de vitaminas IV guiada por médicos, infusiones de NAD+ y Cóctel de Myers en St. Petersburg, FL. Prescrita y supervisada por proveedores médicos licenciados.",
+  "pageDescription": "Terapia de vitaminas IV guiada por médicos y Cóctel de Myers en St. Petersburg, FL. Prescrita y supervisada por proveedores médicos licenciados.",
   "heroHeadline": "Hidratación Instantánea y<br><span class=\"text-primary\">Energía Celular</span>",
-  "heroSubheadline": "Sueros IV bajo receta y terapia de NAD+ supervisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroSubheadline": "Sueros IV bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
   "heroCTA": "Reserve su Cita Médica Hoy",
   "quiz": {
     "badge": "Evaluación Rápida de 1 Minuto",
@@ -68,14 +68,14 @@
       ]
     },
     "step3": {
-      "question": "¿Está interesado en el antiaging celular con NAD+?",
-      "sub": "El NAD+ es nuestra principal infusión médica para energía profunda y reparación celular.",
+      "question": "¿Desea un potenciador detox de Glutatión?",
+      "sub": "El Glutatión es nuestra principal infusión antioxidante para desintoxicación profunda y defensa celular.",
       "options": [
         {
           "value": "yes",
           "icon": "fa-brain",
-          "title": "Sí, Me Interesa",
-          "desc": "Quiero enfoque cerebral profundo, antiaging y reparación celular."
+          "title": "Sí, Añadir Glutatión",
+          "desc": "Quiero desintoxicación profunda, potencia antioxidante y protección celular."
         },
         {
           "value": "no",
@@ -89,11 +89,11 @@
       "energy": {
         "tag": "Suero de Energía Recomendado",
         "name": "El Restablecimiento Total de Energía y Cerebro",
-        "peptides": "Prescripción de Cóctel de Myers + Complejo B + NAD+",
+        "peptides": "Prescripción de Cóctel de Myers + Complejo B + Glutatión",
         "icon": "fa-bolt",
         "desc": "Recarga sus células con vitaminas y minerales puros entregados directamente a su torrente sanguíneo para energía inmediata y sin nerviosismo.",
         "goalModifiers": {
-          "yes": "Incluye nuestra infusión médica de NAD+ para máxima potencia celular y enfoque antiaging.",
+          "yes": "Incluye Complejo B de alta dosis y empuje de Glutatión para máxima energía y enfoque mental.",
           "no": "Cargado con Complejo B, Vitamina C y electrolitos para energía diaria limpia y duradera."
         },
         "social": "Más de 89 pacientes locales recibieron este suero de energía en los últimos 30 días."
@@ -105,7 +105,7 @@
         "icon": "fa-first-aid",
         "desc": "Elimina el dolor muscular, rehidrata su cuerpo completamente y desintoxica su hígado para que se recupere rápidamente.",
         "goalModifiers": {
-          "yes": "Añade NAD+ para acelerar la reparación muscular y la energía celular después del entrenamiento intenso.",
+          "yes": "Añade empuje de Glutatión para acelerar la reparación muscular y la energía celular después del entrenamiento intenso.",
           "no": "Cargado con Glutatión y aminoácidos de alta dosis para detener rápidamente el dolor muscular."
         },
         "social": "114 atletas locales y pacientes activos siguen este suero de recuperación."
@@ -117,7 +117,7 @@
         "icon": "fa-shield-alt",
         "desc": "Concentra minerales potenciadores de glóbulos blancos y Vitamina C para proteger su cuerpo y detener las enfermedades en seco.",
         "goalModifiers": {
-          "yes": "Combina defensa inmune de alta dosis con NAD+ para eliminar el agotamiento profundo de viaje.",
+          "yes": "Combina defensa inmune de alta dosis con Vitamina C para eliminar el agotamiento profundo de viaje.",
           "no": "Entrega el máximo de Vitamina C y Zinc para fortalecer su sistema inmune de inmediato."
         },
         "social": "95 pacientes eligen este escudo inmune cuando se sienten agotados."
@@ -163,10 +163,10 @@
     "sectionSubheadline": "Infusiones IV prescritas por médicos adaptadas a su cuerpo en una suite médica de lujo.",
     "items": [
       {
-        "icon": "fa-bolt",
-        "name": "Infusión Celular de NAD+",
-        "tag": "Núcleo Antiaging",
-        "description": "Terapia de NAD+ prescrita por médicos para reparar los motores celulares, eliminar la niebla mental y aumentar la energía a largo plazo."
+        "icon": "fa-shield-virus",
+        "name": "Infusión de Vitamina C en Altas Dosis",
+        "tag": "Defensa Inmune",
+        "description": "Vitamina C en altas dosis prescrita por médicos para reforzar la inmunidad, combatir el estrés oxidativo y eliminar la fatiga."
       },
       {
         "icon": "fa-star",
@@ -235,8 +235,8 @@
       },
       {
         "icon": "fa-bullseye",
-        "title": "Entrega de Células de Energía NAD+",
-        "detail": "El NAD+ no se puede absorber bien en pastillas estomacales. Los sueros IV son la única forma comprobada de introducir NAD+ real en sus células."
+        "title": "Entrega Vascular Directa",
+        "detail": "Los sueros intravenosos entregan nutrientes directamente a su torrente sanguíneo a máxima potencia para absorción celular instantánea."
       }
     ]
   },
@@ -288,7 +288,7 @@
         "with": "Inmediata mientras está en la suite de suero"
       },
       {
-        "metric": "Entrega de NAD+",
+        "metric": "Entrega de Antioxidante Maestro",
         "without": "Desperdiciado en ácido estomacal",
         "with": "100% entrega celular activa"
       },
@@ -313,8 +313,8 @@
       {
         "name": "Suero Total de Longevidad Antiaging",
         "tag": "Restablecimiento Celular",
-        "compounds": "NAD+ + Vitamina C + Glutatión",
-        "description": "Suero de NAD+ médico combinado con antioxidantes de alta dosis para reparar células y revertir la niebla mental."
+        "compounds": "Vitamina C en Altas Dosis + Complejo B + Glutatión",
+        "description": "Suero de vitaminas médico combinado con antioxidantes de alta dosis para reparar células y revertir la niebla mental."
       },
       {
         "name": "Pila de Recuperación Deportiva",
@@ -335,7 +335,7 @@
     },
     {
       "question": "¿Cuánto tiempo dura una sesión de suero IV?",
-      "answer": "La mayoría de los sueros estándar de vitaminas IV tardan 30 a 45 minutos. Los sueros especiales de NAD+ antiaging de alta dosis tardan un poco más (2 a 3 horas) para que su cuerpo absorba cada gota cómodamente."
+      "answer": "La mayoría de los sueros estándar de vitaminas IV tardan 30 a 45 minutos, permitiendo que su cuerpo absorba cada gota cómodamente."
     },
     {
       "question": "¿Con qué frecuencia debo recibir terapia de vitaminas IV?",

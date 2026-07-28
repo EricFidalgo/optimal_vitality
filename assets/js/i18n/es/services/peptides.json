@@ -141,7 +141,7 @@
       "energy": {
         "tag": "Plan de Energía Celular",
         "name": "Restablecimiento Total de Energía Corporal y Enfoque",
-        "peptides": "Protocolo de NAD+ y Potenciador Celular",
+        "peptides": "Protocolo de Energía Celular y Recuperación",
         "icon": "fa-bolt",
         "desc": "Recarga sus motores celulares para eliminar la niebla mental, combatir la fatiga y sentirse lleno de energía todo el día.",
         "goalModifiers": {
@@ -233,9 +233,9 @@
       },
       {
         "icon": "fa-battery-full",
-        "name": "Terapia de NAD+",
-        "tag": "Energía Celular",
-        "description": "Recarga sus baterías celulares para eliminar la niebla mental, aumentar la energía diaria y combatir la fatiga sistémica."
+        "name": "Empuje Celular de Glutatión",
+        "tag": "Escudo Antioxidante",
+        "description": "Empuje de antioxidantes prescrito por médicos para limpiar células, apoyar la función hepática y eliminar la fatiga."
       },
       {
         "icon": "fa-flask",
@@ -364,7 +364,7 @@
       {
         "name": "Restablecimiento Bioenergético Total",
         "tag": "Vitalidad Completa",
-        "compounds": "NAD+ + Pila de Recuperación Celular",
+        "compounds": "BPC-157 + Pila de Recuperación Celular",
         "description": "Recarga las centrales celulares para eliminar la fatiga crónica, restaurar el enfoque y aumentar la resistencia."
       }
     ]

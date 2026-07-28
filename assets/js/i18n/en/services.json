@@ -1390,9 +1390,9 @@
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
-    "pageDescription": "Doctor-guided IV vitamin therapy, NAD+ infusions, and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
+    "pageDescription": "Doctor-guided IV vitamin therapy and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
     "heroHeadline": "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
-    "heroSubheadline": "Prescription IV Drips & NAD+ therapy medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroSubheadline": "Prescription IV Drips medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
       "badge": "Quick 1-Minute Assessment",
@@ -1441,14 +1441,14 @@
         ]
       },
       "step3": {
-        "question": "Are you interested in NAD+ cellular anti-aging?",
-        "sub": "NAD+ is our top doctor infusion for deep energy and cellular repair.",
+        "question": "Would you like a Glutathione detox booster?",
+        "sub": "Glutathione is our top antioxidant push for deep detox and cell defense.",
         "options": [
           {
             "value": "yes",
             "icon": "fa-brain",
-            "title": "Yes, I Am",
-            "desc": "Want deep brain focus, anti-aging, and cell repair."
+            "title": "Yes, Add Glutathione",
+            "desc": "Want deep detox, antioxidant power, and cell protection."
           },
           {
             "value": "no",
@@ -1462,11 +1462,11 @@
         "energy": {
           "tag": "Recommended Energy Drip",
           "name": "The Total Energy & Brain Reset",
-          "peptides": "Prescription Myers' Cocktail + B-Complex + NAD+",
+          "peptides": "Prescription Myers' Cocktail + B-Complex + Glutathione",
           "icon": "fa-bolt",
           "desc": "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
           "goalModifiers": {
-            "yes": "Includes our premier doctor NAD+ infusion for maximum cellular power and anti-aging focus.",
+            "yes": "Includes high-dose B-Complex and Glutathione push for maximum energy and mental focus.",
             "no": "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
           },
           "social": "Over 89 local patients received this energy drip in the last 30 days."
@@ -1478,7 +1478,7 @@
           "icon": "fa-first-aid",
           "desc": "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
           "goalModifiers": {
-            "yes": "Adds NAD+ to speed up muscle repair and cellular energy after hard training.",
+            "yes": "Adds Glutathione push to speed up muscle repair and cellular energy after hard training.",
             "no": "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
           },
           "social": "114 local athletes and active patients run this recovery drip."
@@ -1490,7 +1490,7 @@
           "icon": "fa-shield-alt",
           "desc": "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
           "goalModifiers": {
-            "yes": "Combines high-dose immune defense with NAD+ to eliminate deep travel exhaustion.",
+            "yes": "Combines high-dose immune defense with Vitamin C to eliminate deep travel exhaustion.",
             "no": "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
           },
           "social": "95 patients choose this immune shield when feeling run down."
@@ -1536,10 +1536,10 @@
       "sectionSubheadline": "Doctor-prescribed IV infusions tailored to your body in a luxury medical suite.",
       "items": [
         {
-          "icon": "fa-bolt",
-          "name": "NAD+ Cellular Infusion",
-          "tag": "Anti-Aging Core",
-          "description": "Doctor-prescribed NAD+ therapy to repair cell engines, clear brain fog, and boost long-term energy."
+          "icon": "fa-shield-virus",
+          "name": "High-Dose Vitamin C Infusion",
+          "tag": "Immune Defense",
+          "description": "Doctor-prescribed high-dose Vitamin C to boost immunity, fight oxidative stress, and clear fatigue."
         },
         {
           "icon": "fa-star",
@@ -1608,8 +1608,8 @@
         },
         {
           "icon": "fa-bullseye",
-          "title": "NAD+ Power Cell Delivery",
-          "detail": "NAD+ cannot be absorbed well in stomach pills. IV drips are the only proven way to get real NAD+ into your cells."
+          "title": "Direct Vascular Delivery",
+          "detail": "Intravenous drips deliver nutrients straight into your bloodstream at full power for instant cellular absorption."
         }
       ]
     },
@@ -1661,7 +1661,7 @@
           "with": "Immediate while sitting in drip suite"
         },
         {
-          "metric": "NAD+ Delivery",
+          "metric": "Master Antioxidant Delivery",
           "without": "Wasted in stomach acid",
           "with": "100% active cellular delivery"
         },
@@ -1686,8 +1686,8 @@
         {
           "name": "Total Anti-Aging Longevity Drip",
           "tag": "Cell Reset",
-          "compounds": "NAD+ + Vitamin C + Glutathione",
-          "description": "Doctor NAD+ drip paired with high-dose antioxidants to repair cells and reverse brain fog."
+          "compounds": "High-Dose Vitamin C + B-Complex + Glutathione",
+          "description": "Doctor vitamin drip paired with high-dose antioxidants to repair cells and reverse brain fog."
         },
         {
           "name": "Athletic Rebound Stack",
@@ -1708,7 +1708,7 @@
       },
       {
         "question": "How long does an IV drip session take?",
-        "answer": "Most standard IV vitamin drips take 30 to 45 minutes. Special high-dose NAD+ anti-aging drips take a bit longer (2 to 3 hours) so your body absorbs every drop comfortably."
+        "answer": "Most standard IV vitamin drips take 30 to 45 minutes, allowing your body to absorb every drop comfortably."
       },
       {
         "question": "How often should I get IV vitamin therapy?",
@@ -1867,7 +1867,7 @@
         "energy": {
           "tag": "Cellular Energy Plan",
           "name": "Total Body Energy & Focus Reset",
-          "peptides": "NAD+ & Cellular Booster Protocol",
+          "peptides": "Cellular Energy & Recovery Protocol",
           "icon": "fa-bolt",
           "desc": "Recharges your cellular engines so you clear brain fog, fight fatigue, and feel energized all day.",
           "goalModifiers": {
@@ -1959,9 +1959,9 @@
         },
         {
           "icon": "fa-battery-full",
-          "name": "NAD+ Therapy",
-          "tag": "Cellular Energy",
-          "description": "Recharges your cellular batteries to clear brain fog, boost daily energy, and fight systemic fatigue."
+          "name": "Glutathione Cellular Push",
+          "tag": "Antioxidant Shield",
+          "description": "Doctor-prescribed antioxidant push to cleanse cells, support liver function, and eliminate fatigue."
         },
         {
           "icon": "fa-flask",
@@ -2090,7 +2090,7 @@
         {
           "name": "Total Bioenergetic Reset",
           "tag": "Full Vitality",
-          "compounds": "NAD+ + Cellular Recovery Stack",
+          "compounds": "BPC-157 + Cellular Recovery Stack",
           "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
         }
       ]
@@ -2141,7 +2141,7 @@
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
-    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, O-Shot, and hair restoration supervised by licensed medical doctors.",
+    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, and hair restoration supervised by licensed medical doctors.",
     "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
     "heroSubheadline": "Prescription PRP & Exosome regenerative protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -2169,7 +2169,7 @@
             "value": "intimacy",
             "icon": "fa-heart",
             "title": "Intimacy & Sexual Health",
-            "desc": "P-Shot or O-Shot for natural drive and sensitivity."
+            "desc": "P-Shot for natural drive and sensitivity."
           }
         ]
       },
@@ -2236,10 +2236,10 @@
         },
         "intimacy": {
           "tag": "Intimacy & Confidence Plan",
-          "name": "Cellular Intimacy Reset (P-Shot / O-Shot)",
+          "name": "Cellular Intimacy Reset (P-Shot)",
           "peptides": "Natural PRP + Growth Factor Booster",
           "icon": "fa-heart",
-          "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence for men and women.",
+          "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence.",
           "goalModifiers": {
             "no": "Our doctor will guide you through a comfortable, simple starting treatment.",
             "yes": "Enhanced booster protocol designed to sustain long-term vitality."
@@ -2269,7 +2269,7 @@
         },
         {
           "label": "Intimate Wellness",
-          "detail": "Men and women wanting enhanced drive, sensitivity, and stamina with the P-Shot or O-Shot."
+          "detail": "Patients wanting enhanced drive, sensitivity, and stamina with targeted doctor-guided care."
         },
         {
           "label": "Want Surgery Avoided",
@@ -2305,10 +2305,10 @@
           "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance."
         },
         {
-          "icon": "fa-venus",
-          "name": "O-Shot (Women's Intimacy)",
-          "tag": "For Women",
-          "description": "Natural PRP treatment for women to enhance intimacy, sensation, arousal, and bladder control."
+          "icon": "fa-sparkles",
+          "name": "Facial PRP Bio-Rejuvenation",
+          "tag": "Skin Rejuvenation",
+          "description": "Natural PRP facial therapy using your body's growth factors to restore skin elasticity, collagen, and youthful glow."
         },
         {
           "icon": "fa-leaf",
@@ -2437,8 +2437,8 @@
         {
           "name": "Intimacy Restoration Package",
           "tag": "Sexual Wellness",
-          "compounds": "P-Shot or O-Shot + Doctor Review",
-          "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence for men and women."
+          "compounds": "P-Shot + Doctor Review",
+          "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence."
         },
         {
           "name": "Natural Hair Restoration Plan",
@@ -2463,7 +2463,7 @@
       },
       {
         "question": "How many sessions do I need to see results?",
-        "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot and O-Shot) often deliver noticeable improvements after just one treatment!"
+        "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
       },
       {
         "question": "How do exosomes differ from stem cell treatments?",
@@ -2482,19 +2482,19 @@
     "href": "sexual-wellness.html",
     "title": "Bring Back Passion, Drive & Intimacy",
     "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
-    "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot & O-Shot) and custom hormone balancing to bring back your passion and performance.",
+    "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot) and custom hormone balancing to bring back your passion and performance.",
     "icon": "fa-heart",
     "delay": "-4s",
     "features": [
       "Bring back natural drive & stamina",
-      "P-Shot for men & O-Shot for women",
+      "P-Shot for men & Bio-Identical HRT for women",
       "100% doctor-prescribed & discreet",
       "100% doctor-checked for your safety"
     ],
     "image": "assets/images/photos/team-group.avif",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided Sexual Wellness — OVI Wellness",
-    "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, O-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
+    "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
     "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
     "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -2577,10 +2577,10 @@
         },
         "women": {
           "tag": "Recommended Women's Plan",
-          "name": "The Female Intimacy Reset (O-Shot + HRT)",
-          "peptides": "Prescription O-Shot + Bio-Identical HRT",
+          "name": "The Female Intimacy Reset (Bio-Identical HRT)",
+          "peptides": "Prescription Bio-Identical HRT + PT-141",
           "icon": "fa-venus",
-          "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using your body's own natural growth factors.",
+          "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using targeted hormone balancing.",
           "goalModifiers": {
             "no": "Gentle starting plan supervised by compassionate medical doctors.",
             "yes": "Targeted booster protocol for deep cellular arousal and lasting satisfaction."
@@ -2647,9 +2647,9 @@
         },
         {
           "icon": "fa-venus",
-          "name": "O-Shot (Orgasm Shot)",
+          "name": "PT-141 Women's Wellness",
           "tag": "For Women",
-          "description": "Natural PRP treatment for women that restores nerve sensitivity, natural lubrication, and intense arousal."
+          "description": "Doctor-guided peptide therapy for women to restore natural desire, nerve sensitivity, and intimate satisfaction."
         },
         {
           "icon": "fa-syringe",
@@ -2708,7 +2708,7 @@
         {
           "icon": "fa-microscope",
           "title": "Natural PRP Tissue Repair",
-          "detail": "The P-Shot and O-Shot use concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
+          "detail": "The P-Shot uses concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
         },
         {
           "icon": "fa-bullseye",
@@ -2724,7 +2724,7 @@
       },
       {
         "myth": "Do intimacy treatments only work for men?",
-        "reality": "Not at all! Women suffer from hormonal and tissue changes too. The O-Shot and bio-identical HRT restore lubrication, sensation, and arousal for women naturally."
+        "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
       },
       {
         "myth": "Is doctor-guided intimacy care safe?",
@@ -2790,7 +2790,7 @@
         {
           "name": "Women's Vitality & Sensation Stack",
           "tag": "For Women",
-          "compounds": "O-Shot + Bio-Identical HRT",
+          "compounds": "Bio-Identical HRT + PT-141",
           "description": "Complete female intimacy reset restoring nerve sensitivity, lubrication, and emotional balance."
         },
         {
@@ -2804,14 +2804,14 @@
     "faqs": [
       {
         "question": "Do I need a doctor's consultation for sexual wellness treatments?",
-        "answer": "Yes. All P-Shot, O-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
+        "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
       },
       {
         "question": "What does the doctor-guided intimacy program include?",
         "answer": "Your program includes a private 1-on-1 consultation with a board-certified doctor, baseline bloodwork, your customized in-office treatment with prescription numbing, and ongoing follow-up check-ins."
       },
       {
-        "question": "Are P-Shot and O-Shot treatments painful?",
+        "question": "Are P-Shot treatments painful?",
         "answer": "Not at all! We apply strong medical-grade numbing cream before every treatment. Most patients feel only slight pressure and go right back to work or normal activities the same day."
       },
       {

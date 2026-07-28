@@ -17,7 +17,7 @@
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
-  "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, O-Shot, and hair restoration supervised by licensed medical doctors.",
+  "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, and hair restoration supervised by licensed medical doctors.",
   "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
   "heroSubheadline": "Prescription PRP & Exosome regenerative protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -45,7 +45,7 @@
           "value": "intimacy",
           "icon": "fa-heart",
           "title": "Intimacy & Sexual Health",
-          "desc": "P-Shot or O-Shot for natural drive and sensitivity."
+          "desc": "P-Shot for natural drive and sensitivity."
         }
       ]
     },
@@ -112,10 +112,10 @@
       },
       "intimacy": {
         "tag": "Intimacy & Confidence Plan",
-        "name": "Cellular Intimacy Reset (P-Shot / O-Shot)",
+        "name": "Cellular Intimacy Reset (P-Shot)",
         "peptides": "Natural PRP + Growth Factor Booster",
         "icon": "fa-heart",
-        "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence for men and women.",
+        "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence.",
         "goalModifiers": {
           "no": "Our doctor will guide you through a comfortable, simple starting treatment.",
           "yes": "Enhanced booster protocol designed to sustain long-term vitality."
@@ -145,7 +145,7 @@
       },
       {
         "label": "Intimate Wellness",
-        "detail": "Men and women wanting enhanced drive, sensitivity, and stamina with the P-Shot or O-Shot."
+        "detail": "Patients wanting enhanced drive, sensitivity, and stamina with targeted doctor-guided care."
       },
       {
         "label": "Want Surgery Avoided",
@@ -181,10 +181,10 @@
         "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance."
       },
       {
-        "icon": "fa-venus",
-        "name": "O-Shot (Women's Intimacy)",
-        "tag": "For Women",
-        "description": "Natural PRP treatment for women to enhance intimacy, sensation, arousal, and bladder control."
+        "icon": "fa-sparkles",
+        "name": "Facial PRP Bio-Rejuvenation",
+        "tag": "Skin Rejuvenation",
+        "description": "Natural PRP facial therapy using your body's growth factors to restore skin elasticity, collagen, and youthful glow."
       },
       {
         "icon": "fa-leaf",
@@ -313,8 +313,8 @@
       {
         "name": "Intimacy Restoration Package",
         "tag": "Sexual Wellness",
-        "compounds": "P-Shot or O-Shot + Doctor Review",
-        "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence for men and women."
+        "compounds": "P-Shot + Doctor Review",
+        "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence."
       },
       {
         "name": "Natural Hair Restoration Plan",
@@ -339,7 +339,7 @@
     },
     {
       "question": "How many sessions do I need to see results?",
-      "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot and O-Shot) often deliver noticeable improvements after just one treatment!"
+      "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
     },
     {
       "question": "How do exosomes differ from stem cell treatments?",

@@ -17,9 +17,9 @@
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
-  "pageDescription": "Doctor-guided IV vitamin therapy, NAD+ infusions, and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
+  "pageDescription": "Doctor-guided IV vitamin therapy and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
   "heroHeadline": "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
-  "heroSubheadline": "Prescription IV Drips & NAD+ therapy medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+  "heroSubheadline": "Prescription IV Drips medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
     "badge": "Quick 1-Minute Assessment",
@@ -68,14 +68,14 @@
       ]
     },
     "step3": {
-      "question": "Are you interested in NAD+ cellular anti-aging?",
-      "sub": "NAD+ is our top doctor infusion for deep energy and cellular repair.",
+      "question": "Would you like a Glutathione detox booster?",
+      "sub": "Glutathione is our top antioxidant push for deep detox and cell defense.",
       "options": [
         {
           "value": "yes",
           "icon": "fa-brain",
-          "title": "Yes, I Am",
-          "desc": "Want deep brain focus, anti-aging, and cell repair."
+          "title": "Yes, Add Glutathione",
+          "desc": "Want deep detox, antioxidant power, and cell protection."
         },
         {
           "value": "no",
@@ -89,11 +89,11 @@
       "energy": {
         "tag": "Recommended Energy Drip",
         "name": "The Total Energy & Brain Reset",
-        "peptides": "Prescription Myers' Cocktail + B-Complex + NAD+",
+        "peptides": "Prescription Myers' Cocktail + B-Complex + Glutathione",
         "icon": "fa-bolt",
         "desc": "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
         "goalModifiers": {
-          "yes": "Includes our premier doctor NAD+ infusion for maximum cellular power and anti-aging focus.",
+          "yes": "Includes high-dose B-Complex and Glutathione push for maximum energy and mental focus.",
           "no": "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
         },
         "social": "Over 89 local patients received this energy drip in the last 30 days."
@@ -105,7 +105,7 @@
         "icon": "fa-first-aid",
         "desc": "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
         "goalModifiers": {
-          "yes": "Adds NAD+ to speed up muscle repair and cellular energy after hard training.",
+          "yes": "Adds Glutathione push to speed up muscle repair and cellular energy after hard training.",
           "no": "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
         },
         "social": "114 local athletes and active patients run this recovery drip."
@@ -117,7 +117,7 @@
         "icon": "fa-shield-alt",
         "desc": "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
         "goalModifiers": {
-          "yes": "Combines high-dose immune defense with NAD+ to eliminate deep travel exhaustion.",
+          "yes": "Combines high-dose immune defense with Vitamin C to eliminate deep travel exhaustion.",
           "no": "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
         },
         "social": "95 patients choose this immune shield when feeling run down."
@@ -163,10 +163,10 @@
     "sectionSubheadline": "Doctor-prescribed IV infusions tailored to your body in a luxury medical suite.",
     "items": [
       {
-        "icon": "fa-bolt",
-        "name": "NAD+ Cellular Infusion",
-        "tag": "Anti-Aging Core",
-        "description": "Doctor-prescribed NAD+ therapy to repair cell engines, clear brain fog, and boost long-term energy."
+        "icon": "fa-shield-virus",
+        "name": "High-Dose Vitamin C Infusion",
+        "tag": "Immune Defense",
+        "description": "Doctor-prescribed high-dose Vitamin C to boost immunity, fight oxidative stress, and clear fatigue."
       },
       {
         "icon": "fa-star",
@@ -235,8 +235,8 @@
       },
       {
         "icon": "fa-bullseye",
-        "title": "NAD+ Power Cell Delivery",
-        "detail": "NAD+ cannot be absorbed well in stomach pills. IV drips are the only proven way to get real NAD+ into your cells."
+        "title": "Direct Vascular Delivery",
+        "detail": "Intravenous drips deliver nutrients straight into your bloodstream at full power for instant cellular absorption."
       }
     ]
   },
@@ -288,7 +288,7 @@
         "with": "Immediate while sitting in drip suite"
       },
       {
-        "metric": "NAD+ Delivery",
+        "metric": "Master Antioxidant Delivery",
         "without": "Wasted in stomach acid",
         "with": "100% active cellular delivery"
       },
@@ -313,8 +313,8 @@
       {
         "name": "Total Anti-Aging Longevity Drip",
         "tag": "Cell Reset",
-        "compounds": "NAD+ + Vitamin C + Glutathione",
-        "description": "Doctor NAD+ drip paired with high-dose antioxidants to repair cells and reverse brain fog."
+        "compounds": "High-Dose Vitamin C + B-Complex + Glutathione",
+        "description": "Doctor vitamin drip paired with high-dose antioxidants to repair cells and reverse brain fog."
       },
       {
         "name": "Athletic Rebound Stack",
@@ -335,7 +335,7 @@
     },
     {
       "question": "How long does an IV drip session take?",
-      "answer": "Most standard IV vitamin drips take 30 to 45 minutes. Special high-dose NAD+ anti-aging drips take a bit longer (2 to 3 hours) so your body absorbs every drop comfortably."
+      "answer": "Most standard IV vitamin drips take 30 to 45 minutes, allowing your body to absorb every drop comfortably."
     },
     {
       "question": "How often should I get IV vitamin therapy?",

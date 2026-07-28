@@ -5,19 +5,19 @@
   "href": "sexual-wellness.html",
   "title": "Bring Back Passion, Drive & Intimacy",
   "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
-  "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot & O-Shot) and custom hormone balancing to bring back your passion and performance.",
+  "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot) and custom hormone balancing to bring back your passion and performance.",
   "icon": "fa-heart",
   "delay": "-4s",
   "features": [
     "Bring back natural drive & stamina",
-    "P-Shot for men & O-Shot for women",
+    "P-Shot for men & Bio-Identical HRT for women",
     "100% doctor-prescribed & discreet",
     "100% doctor-checked for your safety"
   ],
   "image": "assets/images/photos/team-group.avif",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Doctor-Guided Sexual Wellness — OVI Wellness",
-  "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, O-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
+  "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
   "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
   "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -100,10 +100,10 @@
       },
       "women": {
         "tag": "Recommended Women's Plan",
-        "name": "The Female Intimacy Reset (O-Shot + HRT)",
-        "peptides": "Prescription O-Shot + Bio-Identical HRT",
+        "name": "The Female Intimacy Reset (Bio-Identical HRT)",
+        "peptides": "Prescription Bio-Identical HRT + PT-141",
         "icon": "fa-venus",
-        "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using your body's own natural growth factors.",
+        "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using targeted hormone balancing.",
         "goalModifiers": {
           "no": "Gentle starting plan supervised by compassionate medical doctors.",
           "yes": "Targeted booster protocol for deep cellular arousal and lasting satisfaction."
@@ -170,9 +170,9 @@
       },
       {
         "icon": "fa-venus",
-        "name": "O-Shot (Orgasm Shot)",
+        "name": "PT-141 Women's Wellness",
         "tag": "For Women",
-        "description": "Natural PRP treatment for women that restores nerve sensitivity, natural lubrication, and intense arousal."
+        "description": "Doctor-guided peptide therapy for women to restore natural desire, nerve sensitivity, and intimate satisfaction."
       },
       {
         "icon": "fa-syringe",
@@ -231,7 +231,7 @@
       {
         "icon": "fa-microscope",
         "title": "Natural PRP Tissue Repair",
-        "detail": "The P-Shot and O-Shot use concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
+        "detail": "The P-Shot uses concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
       },
       {
         "icon": "fa-bullseye",
@@ -247,7 +247,7 @@
     },
     {
       "myth": "Do intimacy treatments only work for men?",
-      "reality": "Not at all! Women suffer from hormonal and tissue changes too. The O-Shot and bio-identical HRT restore lubrication, sensation, and arousal for women naturally."
+      "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
     },
     {
       "myth": "Is doctor-guided intimacy care safe?",
@@ -313,7 +313,7 @@
       {
         "name": "Women's Vitality & Sensation Stack",
         "tag": "For Women",
-        "compounds": "O-Shot + Bio-Identical HRT",
+        "compounds": "Bio-Identical HRT + PT-141",
         "description": "Complete female intimacy reset restoring nerve sensitivity, lubrication, and emotional balance."
       },
       {
@@ -327,14 +327,14 @@
   "faqs": [
     {
       "question": "Do I need a doctor's consultation for sexual wellness treatments?",
-      "answer": "Yes. All P-Shot, O-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
+      "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
     },
     {
       "question": "What does the doctor-guided intimacy program include?",
       "answer": "Your program includes a private 1-on-1 consultation with a board-certified doctor, baseline bloodwork, your customized in-office treatment with prescription numbing, and ongoing follow-up check-ins."
     },
     {
-      "question": "Are P-Shot and O-Shot treatments painful?",
+      "question": "Are P-Shot treatments painful?",
       "answer": "Not at all! We apply strong medical-grade numbing cream before every treatment. Most patients feel only slight pressure and go right back to work or normal activities the same day."
     },
     {

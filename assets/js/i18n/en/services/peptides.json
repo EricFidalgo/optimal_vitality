@@ -141,7 +141,7 @@
       "energy": {
         "tag": "Cellular Energy Plan",
         "name": "Total Body Energy & Focus Reset",
-        "peptides": "NAD+ & Cellular Booster Protocol",
+        "peptides": "Cellular Energy & Recovery Protocol",
         "icon": "fa-bolt",
         "desc": "Recharges your cellular engines so you clear brain fog, fight fatigue, and feel energized all day.",
         "goalModifiers": {
@@ -233,9 +233,9 @@
       },
       {
         "icon": "fa-battery-full",
-        "name": "NAD+ Therapy",
-        "tag": "Cellular Energy",
-        "description": "Recharges your cellular batteries to clear brain fog, boost daily energy, and fight systemic fatigue."
+        "name": "Glutathione Cellular Push",
+        "tag": "Antioxidant Shield",
+        "description": "Doctor-prescribed antioxidant push to cleanse cells, support liver function, and eliminate fatigue."
       },
       {
         "icon": "fa-flask",
@@ -364,7 +364,7 @@
       {
         "name": "Total Bioenergetic Reset",
         "tag": "Full Vitality",
-        "compounds": "NAD+ + Cellular Recovery Stack",
+        "compounds": "BPC-157 + Cellular Recovery Stack",
         "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
       }
     ]

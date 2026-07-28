@@ -1445,10 +1445,10 @@
     ],
     "image": "",
     "ctaText": "Reserve su Consulta Médica",
-    "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
-    "pageDescription": "Terapia de vitaminas IV guiada por médicos, infusiones de NAD+ y Cóctel de Myers en St. Petersburg, FL. Prescrita y supervisada por proveedores médicos licenciados.",
+    "pageTitle": "Terapia de Vitaminas IV Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Terapia de vitaminas IV guiada por médicos y Cóctel de Myers en St. Petersburg, FL. Prescrita y supervisada por proveedores médicos licenciados.",
     "heroHeadline": "Hidratación Instantánea y<br><span class=\"text-primary\">Energía Celular</span>",
-    "heroSubheadline": "Sueros IV bajo receta y terapia de NAD+ supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroSubheadline": "Sueros IV bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
     "heroCTA": "Reserve su Cita Médica Hoy",
     "quiz": {
       "badge": "Evaluación Rápida de 1 Minuto",
@@ -1462,25 +1462,25 @@
             "value": "energy",
             "icon": "fa-bolt",
             "title": "Energía y Claridad Mental",
-            "desc": "Quiero eliminar la niebla mental, el cansancio y las caídas de la tarde."
+            "desc": "Quiero eliminar la niebla mental, el cansancio y los bajones por la tarde."
           },
           {
             "value": "recovery",
             "icon": "fa-first-aid",
-            "title": "Recuperación Deportiva Rápida",
-            "desc": "Recuperarse rápidamente de entrenamientos intensos o estrés físico."
+            "title": "Recuperación Atlética Rápida",
+            "desc": "Recupérese rápidamente de entrenamientos intensos o estrés físico."
           },
           {
             "value": "immunity",
             "icon": "fa-shield-alt",
             "title": "Escudo de Refuerzo Inmune",
-            "desc": "Sintiéndose agotado, viajando o queriendo una defensa súper contra enfermedades."
+            "desc": "Se siente agotado, viaja o desea súper defensa contra enfermedades."
           }
         ]
       },
       "step2": {
         "question": "¿Ha probado sueros de vitaminas IV antes?",
-        "sub": "Ayuda a nuestro médico a orientar la dosis de su infusión.",
+        "sub": "Ayuda a nuestro médico a orientar su dosis de infusión.",
         "options": [
           {
             "value": "first",
@@ -1497,14 +1497,14 @@
         ]
       },
       "step3": {
-        "question": "¿Está interesado en el antiaging celular con NAD+?",
-        "sub": "El NAD+ es nuestra principal infusión médica para energía profunda y reparación celular.",
+        "question": "¿Desea un potenciador desintoxicante de Glutatión?",
+        "sub": "El glutatión es nuestro principal impulso antioxidante para la desintoxicación celular.",
         "options": [
           {
             "value": "yes",
             "icon": "fa-brain",
-            "title": "Sí, Me Interesa",
-            "desc": "Quiero enfoque cerebral profundo, antiaging y reparación celular."
+            "title": "Sí, Añadir Glutatión",
+            "desc": "Quiero desintoxicación profunda, poder antioxidante y protección celular."
           },
           {
             "value": "no",
@@ -1518,71 +1518,71 @@
         "energy": {
           "tag": "Suero de Energía Recomendado",
           "name": "El Restablecimiento Total de Energía y Cerebro",
-          "peptides": "Prescripción de Cóctel de Myers + Complejo B + NAD+",
+          "peptides": "Prescripción de Cóctel de Myers + Complejo B + Glutatión",
           "icon": "fa-bolt",
-          "desc": "Recarga sus células con vitaminas y minerales puros entregados directamente a su torrente sanguíneo para energía inmediata y sin nerviosismo.",
+          "desc": "Recarga sus células con vitaminas y minerales puros entregados directamente a su torrente sanguíneo para energía inmediata sin nerviosismo.",
           "goalModifiers": {
-            "yes": "Incluye nuestra infusión médica de NAD+ para máxima potencia celular y enfoque antiaging.",
-            "no": "Cargado con Complejo B, Vitamina C y electrolitos para energía diaria limpia y duradera."
+            "yes": "Incluye Complejo B de alta dosis e impulso de Glutatión para máxima energía y enfoque mental.",
+            "no": "Cargado con Complejo B, Vitamina C y electrólitos para una energía diaria limpia y duradera."
           },
           "social": "Más de 89 pacientes locales recibieron este suero de energía en los últimos 30 días."
         },
         "recovery": {
-          "tag": "Suero Deportivo y Detox",
-          "name": "La Pila de Recuperación Rápida y Glutatión",
-          "peptides": "Prescripción de Glutatión + Aminoácidos + Electrolitos",
+          "tag": "Suero Atlético y Desintoxicante",
+          "name": "Pila de Recuperación Rápida y Glutatión",
+          "peptides": "Prescripción de Glutatión + Aminoácidos + Electrólitos",
           "icon": "fa-first-aid",
-          "desc": "Elimina el dolor muscular, rehidrata su cuerpo completamente y desintoxica su hígado para que se recupere rápidamente.",
+          "desc": "Elimina el dolor, rehidrata su cuerpo por completo y desintoxica su hígado para que se recupere rápidamente.",
           "goalModifiers": {
-            "yes": "Añade NAD+ para acelerar la reparación muscular y la energía celular después del entrenamiento intenso.",
-            "no": "Cargado con Glutatión y aminoácidos de alta dosis para detener rápidamente el dolor muscular."
+            "yes": "Añade impulso de Glutatión para acelerar la reparación muscular y la energía celular después del entrenamiento intenso.",
+            "no": "Empacado con alta dosis de Glutatión y aminoácidos para detener el dolor muscular rápidamente."
           },
-          "social": "114 atletas locales y pacientes activos siguen este suero de recuperación."
+          "social": "114 atletas locales y pacientes activos usan este suero de recuperación."
         },
         "immunity": {
-          "tag": "Suero Escudo Inmune",
-          "name": "El Suero Súper de Defensa Inmune",
+          "tag": "Suero de Escudo Inmune",
+          "name": "El Suero de Súper Defensa Inmune",
           "peptides": "Vitamina C de Alta Dosis + Zinc + Cóctel de Myers",
           "icon": "fa-shield-alt",
-          "desc": "Concentra minerales potenciadores de glóbulos blancos y Vitamina C para proteger su cuerpo y detener las enfermedades en seco.",
+          "desc": "Concentra minerales y Vitamina C que aumentan las células blancas para proteger su cuerpo y detener enfermedades.",
           "goalModifiers": {
-            "yes": "Combina defensa inmune de alta dosis con NAD+ para eliminar el agotamiento profundo de viaje.",
-            "no": "Entrega el máximo de Vitamina C y Zinc para fortalecer su sistema inmune de inmediato."
+            "yes": "Combina defensa inmune de alta dosis con Vitamina C para eliminar el agotamiento profundo de viaje.",
+            "no": "Entrega máxima Vitamina C y Zinc para fortificar su sistema inmunológico de inmediato."
           },
           "social": "95 pacientes eligen este escudo inmune cuando se sienten agotados."
         }
       },
       "timelineMap": {
-        "first": "45 minutos (Absorción 100% inmediata)",
+        "first": "45 minutos (Absorción inmediata del 100%)",
         "regular": "2–4 semanas (Plan de vitalidad acumulativa)"
       }
     },
     "eligibility": {
       "badge": "¿Para Quién Es?",
       "headline": "¿Es Usted Candidato para Atención IV?",
-      "intro": "La terapia IV entrega vitaminas y minerales puros directamente en su sangre, evitando completamente la digestión lenta. Supervisada por médicos licenciados, es la forma más rápida de sentirse energizado e hidratado.",
+      "intro": "La terapia IV entrega vitaminas y minerales puros directamente en su sangre, superando la digestión lenta por completo. Supervisado por médicos licenciados, es la forma más rápida de sentirse energizado y rehidratado.",
       "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
       "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
       "items": [
         {
-          "label": "Cansado y con Niebla Mental",
-          "detail": "Adultos con caídas a mitad del día, mañanas lentas o mal sueño."
+          "label": "Cansancio y Niebla Mental",
+          "detail": "Adultos que luchan con bajones a mediodía, mañanas lentas o mal sueño."
         },
         {
           "label": "Atletas Activos",
-          "detail": "Personas que necesitan recuperación muscular rápida, hidratación y alivio del dolor muscular después de los entrenamientos."
+          "detail": "Personas que necesitan rápida recuperación muscular, hidratación y alivio del dolor tras hacer ejercicio."
         },
         {
           "label": "Viajeros Frecuentes",
-          "detail": "Cualquiera que combata el jet lag, el aire seco o los virus de viaje al volar."
+          "detail": "Cualquiera que luche contra el desajuste horario, el aire seco o virus de viaje."
         },
         {
           "label": "Defensa Inmune Necesaria",
-          "detail": "Cualquiera que se sienta agotado o quiera una protección fuerte e inmediata contra enfermedades."
+          "detail": "Cualquiera que se sienta agotado o quiera protección fuerte e inmediata contra enfermedades."
         },
         {
           "label": "Listo para Atención Médica",
-          "detail": "Buscando infusiones de vitaminas de grado médico seguras en una suite clínica cómoda."
+          "detail": "Buscando infusiones de vitaminas seguras de grado médico en una suite clínica cómoda."
         }
       ]
     },
@@ -1592,51 +1592,51 @@
       "sectionSubheadline": "Infusiones IV prescritas por médicos adaptadas a su cuerpo en una suite médica de lujo.",
       "items": [
         {
-          "icon": "fa-bolt",
-          "name": "Infusión Celular de NAD+",
-          "tag": "Núcleo Antiaging",
-          "description": "Terapia de NAD+ prescrita por médicos para reparar los motores celulares, eliminar la niebla mental y aumentar la energía a largo plazo."
+          "icon": "fa-shield-virus",
+          "name": "Infusión de Vitamina C de Alta Dosis",
+          "tag": "Defensa Inmune",
+          "description": "Vitamina C de alta dosis prescrita por médicos para aumentar la inmunidad, combatir el estrés oxidativo y eliminar la fatiga."
         },
         {
           "icon": "fa-star",
-          "name": "Empuje Detox de Glutatión",
+          "name": "Impulso Desintoxicante de Glutatión",
           "tag": "Antioxidante Maestro",
-          "description": "Empuje intravenoso directo del antioxidante más poderoso del cuerpo para limpiar el hígado y aclarar la piel."
+          "description": "Inyección directa intravenosa del antioxidante más fuerte del cuerpo para limpiar el hígado y iluminar la piel."
         },
         {
           "icon": "fa-tint",
-          "name": "Suero de Cóctel de Myers",
+          "name": "Suero Cóctel de Myers",
           "tag": "Más Popular",
-          "description": "El suero IV de estándar clínico dorado—cargado con Magnesio, Vitaminas B, Vitamina C y Calcio para energía instantánea."
+          "description": "El suero IV estándar de oro clínico, cargado con Magnesio, Vitaminas B, Vitamina C y Calcio para energía instantánea."
         },
         {
           "icon": "fa-dumbbell",
-          "name": "Suero de Recuperación Deportiva",
+          "name": "Suero de Recuperación Atlética",
           "tag": "Rebote Muscular",
-          "description": "Aminoácidos y electrolitos dirigidos para eliminar el dolor muscular y rehidratarle después del ejercicio."
+          "description": "Aminoácidos y electrólitos dirigidos para eliminar el dolor muscular y rehidratarle después del ejercicio."
         },
         {
           "icon": "fa-shield-alt",
-          "name": "Suero de Fortalecimiento Inmune",
+          "name": "Suero de Fortificación Inmune",
           "tag": "Escudo contra Enfermedades",
-          "description": "Vitamina C, Zinc y B12 de alta dosis para superactivar su sistema inmune antes de viajar o durante la temporada de resfriados."
+          "description": "Vitamina C de alta dosis, Zinc y B12 para recargar su sistema inmunológico antes de viajar o en temporada de resfriados."
         },
         {
           "icon": "fa-syringe",
           "name": "Inyecciones de Vitaminas Médicas",
           "tag": "Potenciador Rápido",
-          "description": "Inyecciones intramusculares rápidas de B12, D3 o quema de grasa cuando quiere energía instantánea sin sentarse para un suero completo."
+          "description": "Inyecciones intramusculares rápidas de B12, D3 o quema de grasa cuando desea energía instantánea sin sentarse a un suero completo."
         }
       ]
     },
     "science": {
       "badge": "Cómo Funciona",
       "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas de Vitaminas Fallan</span>",
-      "body": "Cuando traga pastillas de vitaminas, su estómago las descompone, dejando menos del 20% para sus células. La terapia IV entrega el 100% de vitaminas puras directamente a su sangre. Sus células las absorben inmediatamente, dándole hidratación instantánea y energía máxima.",
+      "body": "Cuando traga pastillas de vitaminas, su estómago las descompone, dejando menos del 20% para sus células. La terapia IV entrega vitaminas 100% puras directamente a su sangre. Sus células las absorben de inmediato, dándole hidratación instantánea y máxima energía.",
       "bullets": [
-        "100% de absorción celular directa vs ~20% de pastillas estomacales",
-        "Compuesto fresco y prescrito por médicos licenciados",
-        "Administrado por enfermeras registradas en una suite clínica relajante"
+        "100% absorción celular directa vs ~20% para pastillas estomacales",
+        "Formulado fresco y prescrito por médicos licenciados",
+        "Administrado por enfermeros registrados en una suite clínica relajante"
       ],
       "stats": [
         {
@@ -1645,11 +1645,11 @@
         },
         {
           "value": "45m",
-          "label": "Tiempo promedio de sesión de suero"
+          "label": "Tiempo promedio por sesión"
         },
         {
           "value": "Seguro",
-          "label": "Supervisado por médicos y administrado por enfermeras"
+          "label": "Supervisado por médicos y administrado por enfermeros"
         },
         {
           "icon": "fa-user-md",
@@ -1659,28 +1659,28 @@
       "cards": [
         {
           "icon": "fa-microscope",
-          "title": "Evita la Digestión Estomacal",
-          "detail": "Los sueros IV evitan completamente la digestión para que las vitaminas ingresen a su torrente sanguíneo con plena potencia para resultados instantáneos."
+          "title": "Evita la Descomposición Estomacal",
+          "detail": "Los sueros IV evitan la digestión por completo para que las vitaminas entren a su torrente sanguíneo a plena potencia."
         },
         {
           "icon": "fa-bullseye",
-          "title": "Entrega de Células de Energía NAD+",
-          "detail": "El NAD+ no se puede absorber bien en pastillas estomacales. Los sueros IV son la única forma comprobada de introducir NAD+ real en sus células."
+          "title": "Entrega Vascular Directa",
+          "detail": "Los sueros intravenosos entregan nutrientes directamente a su torrente sanguíneo a plena potencia para absorción celular instantánea."
         }
       ]
     },
     "myths": [
       {
         "myth": "¿Duele un suero IV?",
-        "reality": "No. Nuestras enfermeras registradas experimentadas usan agujas pequeñas y técnicas suaves para que apenas sienta un pinchazo. Puede relajarse, leer o ver televisión durante su suero."
+        "reality": "No. Nuestros enfermeros experimentados usan agujas diminutas y técnicas suaves para que apenas sienta un pellizco. Puede relajarse, leer o ver televisión durante su suero."
       },
       {
         "myth": "¿No son suficientes las pastillas de vitaminas orales?",
-        "reality": "No. Su estómago filtra hasta el 80% de las vitaminas orales. Los sueros IV le dan el 100% de absorción directamente a su torrente sanguíneo para energía instantánea."
+        "reality": "No. Su estómago filtra hasta el 80% de las vitaminas orales. Los sueros IV le dan un 100% de absorción directamente en su torrente sanguíneo para energía instantánea."
       },
       {
         "myth": "¿Es segura la terapia IV guiada por médicos?",
-        "reality": "¡Sí! Cada suero es prescrito por un médico licenciado y administrado por enfermeras registradas capacitadas siguiendo estrictas reglas de seguridad médica."
+        "reality": "¡Sí! Cada suero es prescrito por un médico licenciado y administrado por enfermeros entrenados siguiendo estrictas normas médicas."
       }
     ],
     "comparison": {
@@ -1702,54 +1702,54 @@
         },
         {
           "icon": "fa-shield-alt",
-          "label": "Verificado por Médico"
+          "label": "Revisado por Médicos"
         }
       ],
       "rows": [
         {
           "metric": "Absorción de Vitaminas",
-          "without": "Solo 10%–30% en el estómago",
+          "without": "Solo 10%–30% en estómago",
           "with": "100% absorción vascular directa"
         },
         {
-          "metric": "Velocidad de Acción",
+          "metric": "Qué Tan Rápido Funciona",
           "without": "Tarda horas o días",
-          "with": "Inmediata mientras está en la suite de suero"
+          "with": "Inmediato mientras está sentado"
         },
         {
-          "metric": "Entrega de NAD+",
-          "without": "Desperdiciado en ácido estomacal",
+          "metric": "Entrega Antioxidante Maestro",
+          "without": "Perdido en ácido estomacal",
           "with": "100% entrega celular activa"
         },
         {
           "metric": "Velocidad de Rehidratación",
-          "without": "Beber agua lentamente",
+          "without": "Lenta al beber agua",
           "with": "Rehidratación celular instantánea"
         },
         {
           "metric": "Supervisión Médica",
-          "without": "Pastillas de tienda no verificadas",
-          "with": "Atención de médico licenciado y enfermera"
+          "without": "Pastillas de tienda sin verificar",
+          "with": "Atención de médico y enfermero"
         }
       ],
       "stacks": [
         {
           "name": "Pila de Suero de Máxima Vitalidad",
           "tag": "Más Popular",
-          "compounds": "Cóctel de Myers + Empuje de Glutatión",
-          "description": "Nuestro mejor suero IV combinando las vitaminas de Myers para energía con Glutatión para detox profundo del hígado y piel radiante."
+          "compounds": "Cóctel de Myers + Impulso de Glutatión",
+          "description": "Nuestro mejor suero IV combinando vitaminas Myers para energía con Glutatión para desintoxicación hepática y piel radiante."
         },
         {
-          "name": "Suero Total de Longevidad Antiaging",
+          "name": "Suero Total Antiaging Longevidad",
           "tag": "Restablecimiento Celular",
-          "compounds": "NAD+ + Vitamina C + Glutatión",
-          "description": "Suero de NAD+ médico combinado con antioxidantes de alta dosis para reparar células y revertir la niebla mental."
+          "compounds": "Vitamina C Alta Dosis + Complejo B + Glutatión",
+          "description": "Suero de vitaminas médico combinado con antioxidantes de alta dosis para reparar células y revertir la niebla mental."
         },
         {
-          "name": "Pila de Recuperación Deportiva",
+          "name": "Pila de Rebote Atlético",
           "tag": "Recuperación Rápida",
-          "compounds": "IV de Recuperación Deportiva + Inyección de B12",
-          "description": "Diseñado para eliminar rápidamente el dolor muscular con aminoácidos puros, electrolitos y B12."
+          "compounds": "IV de Recuperación Deportiva + Inyección B12",
+          "description": "Diseñado para eliminar el dolor muscular rápidamente con aminoácidos puros, electrólitos y B12."
         }
       ]
     },
@@ -1763,8 +1763,8 @@
         "answer": "Su programa incluye una consulta médica, vitaminas IV compuestas personalizadas preparadas frescas, asientos cómodos en nuestra suite médica de lujo y administración profesional por enfermeras registradas."
       },
       {
-        "question": "¿Cuánto tiempo dura una sesión de suero IV?",
-        "answer": "La mayoría de los sueros estándar de vitaminas IV tardan 30 a 45 minutos. Los sueros especiales de NAD+ antiaging de alta dosis tardan un poco más (2 a 3 horas) para que su cuerpo absorba cada gota cómodamente."
+        "question": "¿Cuánto tiempo tarda una sesión de suero IV?",
+        "answer": "La mayoría de los sueros estándar de vitaminas IV tardan 30 a 45 minutos, permitiendo que su cuerpo absorba cada gota cómodamente."
       },
       {
         "question": "¿Con qué frecuencia debo recibir terapia de vitaminas IV?",
@@ -1923,7 +1923,7 @@
         "energy": {
           "tag": "Plan de Energía Celular",
           "name": "Restablecimiento Total de Energía Corporal y Enfoque",
-          "peptides": "Protocolo de NAD+ y Potenciador Celular",
+          "peptides": "Protocolo de Energía Celular y Recuperación",
           "icon": "fa-bolt",
           "desc": "Recarga sus motores celulares para eliminar la niebla mental, combatir la fatiga y sentirse lleno de energía todo el día.",
           "goalModifiers": {
@@ -2015,9 +2015,9 @@
         },
         {
           "icon": "fa-battery-full",
-          "name": "Terapia de NAD+",
-          "tag": "Energía Celular",
-          "description": "Recarga sus baterías celulares para eliminar la niebla mental, aumentar la energía diaria y combatir la fatiga sistémica."
+          "name": "Impulso Celular de Glutatión",
+          "tag": "Escudo Antioxidante",
+          "description": "Impulso de antioxidante prescrito por médicos para limpiar las células, respaldar la función hepática y eliminar la fatiga."
         },
         {
           "icon": "fa-flask",
@@ -2146,7 +2146,7 @@
         {
           "name": "Restablecimiento Bioenergético Total",
           "tag": "Vitalidad Completa",
-          "compounds": "NAD+ + Pila de Recuperación Celular",
+          "compounds": "BPC-157 + Pila de Recuperación Celular",
           "description": "Recarga las centrales celulares para eliminar la fatiga crónica, restaurar el enfoque y aumentar la resistencia."
         }
       ]
@@ -2197,7 +2197,7 @@
     "image": "",
     "ctaText": "Reserve su Consulta Médica",
     "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
-    "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot, O-Shot y restauración capilar supervisados por médicos licenciados.",
+    "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot y restauración capilar supervisados por médicos licenciados.",
     "heroHeadline": "Regenerar.<br><span class=\"text-primary\">Restaurar.</span> Reconstruir.",
     "heroSubheadline": "Protocolos regenerativos de PRP y Exosomas bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
     "heroCTA": "Reserve su Cita Médica Hoy",
@@ -2225,7 +2225,7 @@
             "value": "intimacy",
             "icon": "fa-heart",
             "title": "Intimidad y Salud Sexual",
-            "desc": "P-Shot o O-Shot para impulso natural y sensibilidad."
+            "desc": "P-Shot para impulso natural y sensibilidad."
           }
         ]
       },
@@ -2292,10 +2292,10 @@
         },
         "intimacy": {
           "tag": "Plan de Intimidad y Confianza",
-          "name": "Restablecimiento de Intimidad Celular (P-Shot / O-Shot)",
+          "name": "Restablecimiento de Intimidad Celular (P-Shot)",
           "peptides": "PRP Natural + Potenciador de Factor de Crecimiento",
           "icon": "fa-heart",
-          "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima para hombres y mujeres.",
+          "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima.",
           "goalModifiers": {
             "no": "Nuestro médico le guiará a través de un tratamiento inicial cómodo y simple.",
             "yes": "Protocolo de refuerzo mejorado diseñado para mantener la vitalidad a largo plazo."
@@ -2325,7 +2325,7 @@
         },
         {
           "label": "Bienestar Íntimo",
-          "detail": "Hombres y mujeres que quieren mayor impulso, sensibilidad y resistencia con el P-Shot o O-Shot."
+          "detail": "Pacientes que quieren mayor impulso, sensibilidad y resistencia con atención médica dirigida."
         },
         {
           "label": "Quiere Evitar la Cirugía",
@@ -2361,10 +2361,10 @@
           "description": "Tratamiento de PRP natural para hombres para restaurar el flujo sanguíneo fuerte, la sensibilidad y el rendimiento íntimo."
         },
         {
-          "icon": "fa-venus",
-          "name": "O-Shot (Intimidad Femenina)",
-          "tag": "Para Mujeres",
-          "description": "Tratamiento de PRP natural para mujeres para mejorar la intimidad, la sensación, la excitación y el control de la vejiga."
+          "icon": "fa-sparkles",
+          "name": "Bio-Rejuvenecimiento Facial con PRP",
+          "tag": "Rejuvenecimiento Cutáneo",
+          "description": "Terapia facial de PRP natural que utiliza los factores de crecimiento de su cuerpo para restaurar la elasticidad, el colágeno y el brillo juvenil de la piel."
         },
         {
           "icon": "fa-leaf",
@@ -2493,8 +2493,8 @@
         {
           "name": "Paquete de Restauración de Intimidad",
           "tag": "Bienestar Sexual",
-          "compounds": "P-Shot o O-Shot + Revisión Médica",
-          "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza para hombres y mujeres."
+          "compounds": "P-Shot + Revisión Médica",
+          "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza."
         },
         {
           "name": "Plan Natural de Restauración Capilar",
@@ -2519,7 +2519,7 @@
       },
       {
         "question": "¿Cuántas sesiones necesito para ver resultados?",
-        "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot y O-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
+        "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
       },
       {
         "question": "¿En qué se diferencian los exosomas de los tratamientos con células madre?",
@@ -2538,19 +2538,19 @@
     "href": "sexual-wellness.html",
     "title": "Recupere la Pasión, el Impulso y la Intimidad",
     "lead": "Siéntase seguro, fuerte y profundamente conectado de nuevo con atención íntima guiada por médicos.",
-    "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot y O-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
+    "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
     "icon": "fa-heart",
     "delay": "-4s",
     "features": [
       "Recupere el impulso y la resistencia naturales",
-      "P-Shot para hombres y O-Shot para mujeres",
+      "P-Shot para hombres y TRH Bioidéntica para mujeres",
       "100% prescrito por médicos y discreto",
       "100% verificado por médicos para su seguridad"
     ],
     "image": "assets/images/photos/team-group.avif",
     "ctaText": "Reserve su Consulta Médica",
     "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
-    "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, O-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
+    "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
     "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Impulso Íntimo</span>",
     "heroSubheadline": "Protocolos de Bienestar Sexual e Intimidad bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
     "heroCTA": "Reserve su Cita Médica Hoy",
@@ -2633,10 +2633,10 @@
         },
         "women": {
           "tag": "Plan Recomendado para Mujeres",
-          "name": "El Restablecimiento de Intimidad Femenina (O-Shot + TRH)",
-          "peptides": "Prescripción de O-Shot + TRH Bioidéntica",
+          "name": "El Restablecimiento de Intimidad Femenina (TRH Bioidéntica)",
+          "peptides": "Prescripción de TRH Bioidéntica + PT-141",
           "icon": "fa-venus",
-          "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo usando los propios factores de crecimiento naturales de su cuerpo.",
+          "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo mediante equilibrio hormonal dirigido.",
           "goalModifiers": {
             "no": "Plan inicial suave supervisado por médicos compasivos.",
             "yes": "Protocolo de refuerzo dirigido para excitación celular profunda y satisfacción duradera."
@@ -2703,9 +2703,9 @@
         },
         {
           "icon": "fa-venus",
-          "name": "O-Shot (Inyección de Orgasmo)",
+          "name": "Bienestar Femenino PT-141",
           "tag": "Para Mujeres",
-          "description": "Tratamiento de PRP natural para mujeres que restaura la sensibilidad nerviosa, la lubricación natural y la excitación intensa."
+          "description": "Terapia de péptidos guiada por médicos para mujeres para restaurar el deseo natural, la sensibilidad nerviosa y la satisfacción íntima."
         },
         {
           "icon": "fa-syringe",
@@ -2764,7 +2764,7 @@
         {
           "icon": "fa-microscope",
           "title": "Reparación Natural de Tejidos con PRP",
-          "detail": "El P-Shot y el O-Shot usan factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
+          "detail": "El P-Shot usa factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
         },
         {
           "icon": "fa-bullseye",
@@ -2780,7 +2780,7 @@
       },
       {
         "myth": "¿Los tratamientos de intimidad solo funcionan para hombres?",
-        "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. El O-Shot y la TRH bioidéntica restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
+        "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. La TRH bioidéntica y la terapia de péptidos dirigida restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
       },
       {
         "myth": "¿Es segura la atención de intimidad guiada por médicos?",
@@ -2846,7 +2846,7 @@
         {
           "name": "Pila de Vitalidad y Sensación Femenina",
           "tag": "Para Mujeres",
-          "compounds": "O-Shot + TRH Bioidéntica",
+          "compounds": "TRH Bioidéntica + PT-141",
           "description": "Restablecimiento completo de intimidad femenina que restaura la sensibilidad nerviosa, la lubricación y el equilibrio emocional."
         },
         {
@@ -2860,14 +2860,14 @@
     "faqs": [
       {
         "question": "¿Necesito una consulta médica para los tratamientos de bienestar sexual?",
-        "answer": "Sí. Todos los tratamientos de P-Shot, O-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
+        "answer": "Sí. Todos los tratamientos de P-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
       },
       {
         "question": "¿Qué incluye el programa de intimidad guiado por médicos?",
         "answer": "Su programa incluye una consulta privada uno a uno con un médico certificado, análisis de sangre basal, su tratamiento personalizado en consultorio con anestesia bajo receta y seguimientos continuos."
       },
       {
-        "question": "¿Son dolorosos los tratamientos de P-Shot y O-Shot?",
+        "question": "¿Son dolorosos los tratamientos de P-Shot?",
         "answer": "¡Para nada! Aplicamos crema anestésica de grado médico fuerte antes de cada tratamiento. La mayoría de los pacientes sienten solo una leve presión y vuelven directamente al trabajo o actividades normales el mismo día."
       },
       {

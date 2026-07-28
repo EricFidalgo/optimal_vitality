@@ -5,19 +5,19 @@
   "href": "sexual-wellness.html",
   "title": "Recupere la Pasión, el Impulso y la Intimidad",
   "lead": "Siéntase seguro, fuerte y profundamente conectado de nuevo con atención íntima guiada por médicos.",
-  "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot y O-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
+  "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
   "icon": "fa-heart",
   "delay": "-4s",
   "features": [
     "Recupere el impulso y la resistencia naturales",
-    "P-Shot para hombres y O-Shot para mujeres",
+    "P-Shot para hombres y TRH Bioidéntica para mujeres",
     "100% prescrito por médicos y discreto",
     "100% verificado por médicos para su seguridad"
   ],
   "image": "assets/images/photos/team-group.avif",
   "ctaText": "Reserve su Consulta Médica",
   "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
-  "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, O-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
+  "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
   "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Impulso Íntimo</span>",
   "heroSubheadline": "Protocolos de Bienestar Sexual e Intimidad bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
   "heroCTA": "Reserve su Cita Médica Hoy",
@@ -100,10 +100,10 @@
       },
       "women": {
         "tag": "Plan Recomendado para Mujeres",
-        "name": "El Restablecimiento de Intimidad Femenina (O-Shot + TRH)",
-        "peptides": "Prescripción de O-Shot + TRH Bioidéntica",
+        "name": "El Restablecimiento de Intimidad Femenina (TRH Bioidéntica)",
+        "peptides": "Prescripción de TRH Bioidéntica + PT-141",
         "icon": "fa-venus",
-        "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo usando los propios factores de crecimiento naturales de su cuerpo.",
+        "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo mediante equilibrio hormonal dirigido.",
         "goalModifiers": {
           "no": "Plan inicial suave supervisado por médicos compasivos.",
           "yes": "Protocolo de refuerzo dirigido para excitación celular profunda y satisfacción duradera."
@@ -170,9 +170,9 @@
       },
       {
         "icon": "fa-venus",
-        "name": "O-Shot (Inyección de Orgasmo)",
+        "name": "Bienestar Femenino PT-141",
         "tag": "Para Mujeres",
-        "description": "Tratamiento de PRP natural para mujeres que restaura la sensibilidad nerviosa, la lubricación natural y la excitación intensa."
+        "description": "Terapia de péptidos guiada por médicos para mujeres para restaurar el deseo natural, la sensibilidad nerviosa y la satisfacción íntima."
       },
       {
         "icon": "fa-syringe",
@@ -231,7 +231,7 @@
       {
         "icon": "fa-microscope",
         "title": "Reparación Natural de Tejidos con PRP",
-        "detail": "El P-Shot y el O-Shot usan factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
+        "detail": "El P-Shot usa factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
       },
       {
         "icon": "fa-bullseye",
@@ -247,7 +247,7 @@
     },
     {
       "myth": "¿Los tratamientos de intimidad solo funcionan para hombres?",
-      "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. El O-Shot y la TRH bioidéntica restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
+      "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. La TRH bioidéntica y la terapia de péptidos dirigida restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
     },
     {
       "myth": "¿Es segura la atención de intimidad guiada por médicos?",
@@ -313,7 +313,7 @@
       {
         "name": "Pila de Vitalidad y Sensación Femenina",
         "tag": "Para Mujeres",
-        "compounds": "O-Shot + TRH Bioidéntica",
+        "compounds": "TRH Bioidéntica + PT-141",
         "description": "Restablecimiento completo de intimidad femenina que restaura la sensibilidad nerviosa, la lubricación y el equilibrio emocional."
       },
       {
@@ -327,14 +327,14 @@
   "faqs": [
     {
       "question": "¿Necesito una consulta médica para los tratamientos de bienestar sexual?",
-      "answer": "Sí. Todos los tratamientos de P-Shot, O-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
+      "answer": "Sí. Todos los tratamientos de P-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
     },
     {
       "question": "¿Qué incluye el programa de intimidad guiado por médicos?",
       "answer": "Su programa incluye una consulta privada uno a uno con un médico certificado, análisis de sangre basal, su tratamiento personalizado en consultorio con anestesia bajo receta y seguimientos continuos."
     },
     {
-      "question": "¿Son dolorosos los tratamientos de P-Shot y O-Shot?",
+      "question": "¿Son dolorosos los tratamientos de P-Shot?",
       "answer": "¡Para nada! Aplicamos crema anestésica de grado médico fuerte antes de cada tratamiento. La mayoría de los pacientes sienten solo una leve presión y vuelven directamente al trabajo o actividades normales el mismo día."
     },
     {

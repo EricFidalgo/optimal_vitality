@@ -17,7 +17,7 @@
   "image": "",
   "ctaText": "Reserve su Consulta Médica",
   "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot, O-Shot y restauración capilar supervisados por médicos licenciados.",
+  "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot y restauración capilar supervisados por médicos licenciados.",
   "heroHeadline": "Regenerar.<br><span class=\"text-primary\">Restaurar.</span> Reconstruir.",
   "heroSubheadline": "Protocolos regenerativos de PRP y Exosomas bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
   "heroCTA": "Reserve su Cita Médica Hoy",
@@ -45,7 +45,7 @@
           "value": "intimacy",
           "icon": "fa-heart",
           "title": "Intimidad y Salud Sexual",
-          "desc": "P-Shot o O-Shot para impulso natural y sensibilidad."
+          "desc": "P-Shot para impulso natural y sensibilidad."
         }
       ]
     },
@@ -112,10 +112,10 @@
       },
       "intimacy": {
         "tag": "Plan de Intimidad y Confianza",
-        "name": "Restablecimiento de Intimidad Celular (P-Shot / O-Shot)",
+        "name": "Restablecimiento de Intimidad Celular (P-Shot)",
         "peptides": "PRP Natural + Potenciador de Factor de Crecimiento",
         "icon": "fa-heart",
-        "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima para hombres y mujeres.",
+        "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima.",
         "goalModifiers": {
           "no": "Nuestro médico le guiará a través de un tratamiento inicial cómodo y simple.",
           "yes": "Protocolo de refuerzo mejorado diseñado para mantener la vitalidad a largo plazo."
@@ -145,7 +145,7 @@
       },
       {
         "label": "Bienestar Íntimo",
-        "detail": "Hombres y mujeres que quieren mayor impulso, sensibilidad y resistencia con el P-Shot o O-Shot."
+        "detail": "Pacientes que quieren mayor impulso, sensibilidad y resistencia con atención médica dirigida."
       },
       {
         "label": "Quiere Evitar la Cirugía",
@@ -181,10 +181,10 @@
         "description": "Tratamiento de PRP natural para hombres para restaurar el flujo sanguíneo fuerte, la sensibilidad y el rendimiento íntimo."
       },
       {
-        "icon": "fa-venus",
-        "name": "O-Shot (Intimidad Femenina)",
-        "tag": "Para Mujeres",
-        "description": "Tratamiento de PRP natural para mujeres para mejorar la intimidad, la sensación, la excitación y el control de la vejiga."
+        "icon": "fa-sparkles",
+        "name": "Bio-Rejuvenecimiento Facial con PRP",
+        "tag": "Rejuvenecimiento Cutáneo",
+        "description": "Terapia facial de PRP natural que utiliza los factores de crecimiento de su cuerpo para restaurar la elasticidad, el colágeno y el brillo juvenil de la piel."
       },
       {
         "icon": "fa-leaf",
@@ -313,8 +313,8 @@
       {
         "name": "Paquete de Restauración de Intimidad",
         "tag": "Bienestar Sexual",
-        "compounds": "P-Shot o O-Shot + Revisión Médica",
-        "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza para hombres y mujeres."
+        "compounds": "P-Shot + Revisión Médica",
+        "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza."
       },
       {
         "name": "Plan Natural de Restauración Capilar",
@@ -339,7 +339,7 @@
     },
     {
       "question": "¿Cuántas sesiones necesito para ver resultados?",
-      "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot y O-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
+      "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
     },
     {
       "question": "¿En qué se diferencian los exosomas de los tratamientos con células madre?",
