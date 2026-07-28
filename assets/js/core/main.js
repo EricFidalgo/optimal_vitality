@@ -382,14 +382,16 @@ function initMain() {
 
             // Mobile nav: App-style sliding drill-down
             if (mobileNav) {
-                mobileNav.className = 'w-100 mt-4 position-relative flex-grow-1';
-                mobileNav.style.cssText = 'padding: 0; overflow: hidden; min-height: 250px; display: block;';
+                mobileNav.className = 'w-100 position-relative flex-grow-1 d-flex flex-column';
+                mobileNav.style.cssText = 'padding: 0; overflow: hidden; min-height: 250px; display: flex; flex-direction: column; height: 100%;';
 
                 let mainLinks = '';
                 let subPanels = '';
 
                 const isEs = (window.OVI_I18N?.currentLang === 'es');
                 const backText = isEs ? 'Volver al Menú' : 'Back to Menu';
+                const ctaText = isEs ? 'Reservar Consulta' : 'Book Your Consultation';
+                const currentLang = window.OVI_I18N?.currentLang || 'en';
 
                 data.navigation.forEach((link, index) => {
                     if (link.dropdown) {
@@ -421,8 +423,18 @@ function initMain() {
                 });
 
                 mobileNav.innerHTML = `
-                    <div class="mobile-nav-main w-100" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);">
-                        <div class="p-0 m-0 w-100">${mainLinks}</div>
+                    <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%;">
+                        <div class="p-0 m-0 w-100 mt-3">${mainLinks}</div>
+                        <div class="mt-auto pb-4 pt-3 w-100">
+                            <div class="d-flex justify-content-center mb-3">
+                              <button type="button" class="lang-toggle-btn py-2 px-3" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
+                                <span class="${currentLang === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
+                                <span class="lang-divider">|</span>
+                                <span class="${currentLang === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
+                              </button>
+                            </div>
+                            <a href="#consultation" class="btn cta-btn w-100">${ctaText}</a>
+                        </div>
                     </div>
                     ${subPanels}
                 `;
@@ -444,6 +456,15 @@ function initMain() {
                             if (panel) { panel.classList.remove('active'); mainView.style.transform = 'translateX(0)'; }
                         });
                     });
+
+                    // Reset drill-down view when offcanvas menu is closed
+                    const mobileMenuEl = document.getElementById('mobileMenu');
+                    if (mobileMenuEl) {
+                        mobileMenuEl.addEventListener('hidden.bs.offcanvas', () => {
+                            if (mainView) mainView.style.transform = 'translateX(0)';
+                            mobileNav.querySelectorAll('.mobile-sub-panel').forEach(p => p.classList.remove('active'));
+                        });
+                    }
 
                     // Direct auto-close offcanvas on mobile menu link clicks for iOS Safari compatibility
                     mobileNav.querySelectorAll('a').forEach(lnk => {

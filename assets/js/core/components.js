@@ -68,22 +68,26 @@
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body d-flex flex-column text-center">
-                            <div class="navbar-nav mb-auto mt-4 w-100" id="mobile-navbar-links">
-                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#treatments">Treatments</a></div>
-                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team.html">Team</a></div>
-                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#faqs">FAQs</a></div>
-                                <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
-                            </div>
-                            <div class="mt-auto pb-4">
-                                <div class="d-flex justify-content-center mb-3">
-                                  <button type="button" class="lang-toggle-btn py-2 px-3" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
-                                    <span class="${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
-                                    <span class="lang-divider">|</span>
-                                    <span class="${(window.OVI_I18N?.currentLang || 'en') === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
-                                  </button>
+                        <div class="offcanvas-body d-flex flex-column text-center p-3">
+                            <div class="navbar-nav w-100 flex-grow-1 position-relative d-flex flex-column" id="mobile-navbar-links" style="overflow: hidden; height: 100%;">
+                                <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%;">
+                                    <div class="p-0 m-0 w-100 mt-3">
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#treatments">Treatments</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team.html">Team</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#faqs">FAQs</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
+                                    </div>
+                                    <div class="mt-auto pb-4 pt-3 w-100">
+                                        <div class="d-flex justify-content-center mb-3">
+                                          <button type="button" class="lang-toggle-btn py-2 px-3" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" aria-label="Toggle Language">
+                                            <span class="${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'lang-badge' : 'lang-inactive'}">EN</span>
+                                            <span class="lang-divider">|</span>
+                                            <span class="${(window.OVI_I18N?.currentLang || 'en') === 'es' ? 'lang-badge' : 'lang-inactive'}">ES</span>
+                                          </button>
+                                        </div>
+                                        <a href="#consultation" class="btn cta-btn w-100">${(window.OVI_I18N?.currentLang === 'es') ? 'Reservar Consulta' : 'Book Your Consultation'}</a>
+                                    </div>
                                 </div>
-                                <a href="#consultation" class="btn cta-btn w-100">Book Your Consultation</a>
                             </div>
                         </div>
                     </div>

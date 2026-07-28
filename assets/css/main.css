@@ -1577,8 +1577,10 @@ hr {
     width: 100%;
     height: 100%;
     background-color: var(--secondary-color);
+    background: #051411;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 10;
+    overflow-y: auto;
   }
 
   .mobile-sub-panel.active {
@@ -1859,18 +1861,24 @@ hr {
   }
 
   #mobile-navbar-links {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
     visibility: visible !important;
     opacity: 1 !important;
     width: 100% !important;
+    height: 100% !important;
     min-height: 250px !important;
   }
 
   .mobile-nav-main {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
     visibility: visible !important;
     opacity: 1 !important;
     width: 100% !important;
+    height: 100% !important;
   }
 
   .offcanvas-body a,
