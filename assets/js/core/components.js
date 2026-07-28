@@ -189,14 +189,7 @@
                         <p class="mb-3 text-white-50"><small>${copyrightText}</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
                             <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
-                            <a href="${prefix}legal.html#terms" class="text-white-50 text-decoration-none hover-white">${legalTerms}</a> &bull;
-                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">${legalHipaa}</a> &bull;
-                            <a href="${prefix}legal.html#medical" class="text-white-50 text-decoration-none hover-white">${legalMedical}</a> &bull;
-                            <a href="${prefix}legal.html#sms" class="text-white-50 text-decoration-none hover-white">${legalSms}</a> &bull;
-                            <a href="${prefix}legal.html#telehealth" class="text-white-50 text-decoration-none hover-white">${legalTelehealth}</a> &bull;
-                            <a href="${prefix}legal.html#financing" class="text-white-50 text-decoration-none hover-white">${legalFinancing}</a> &bull;
-                            <a href="${prefix}legal.html#form" class="text-white-50 text-decoration-none hover-white">${legalForm}</a> &bull;
-                            <a href="${prefix}legal.html#results" class="text-white-50 text-decoration-none hover-white">${legalResults}</a>
+                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">${legalHipaa}</a>
                         </div>
                     </div>
                 </div>
@@ -506,7 +499,7 @@
                     <div class="form-check mb-3 text-start">
                       <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes" checked required>
                       <label class="form-check-label text-white-50" for="smsOptIn" style="font-size: 0.72rem; line-height: 1.4;">
-                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal.html#sms" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">SMS Consent Policy</a> and <a href="${prefix}legal.html#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
+                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal.html#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
                       </label>
                       <div class="text-danger small d-none mt-1" id="step3-error">You must accept the SMS consent disclosure to continue.</div>
                     </div>

@@ -32,10 +32,14 @@
         // Pane
         const pane = document.getElementById(`v-pills-${key}`);
         if (pane) {
-          const h3 = pane.querySelector('h3');
-          const p = pane.querySelector('p');
-          if (h3 && tabData.title) h3.textContent = tabData.title;
-          if (p && tabData.content) p.textContent = tabData.content;
+          if (tabData.html) {
+            pane.innerHTML = tabData.html;
+          } else {
+            const h3 = pane.querySelector('h3');
+            const p = pane.querySelector('p');
+            if (h3 && tabData.title) h3.textContent = tabData.title;
+            if (p && tabData.content) p.innerHTML = tabData.content;
+          }
         }
       });
     }
