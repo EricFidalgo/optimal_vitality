@@ -865,6 +865,7 @@ function initMain() {
 
     // Run all renders
     renderDynamicContent();
+    document.addEventListener('i18nLoaded', renderDynamicContent);
 
     // =========================================================================
     // 2. UI LOGIC

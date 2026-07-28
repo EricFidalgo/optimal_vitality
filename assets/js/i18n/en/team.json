@@ -1,7 +1,15 @@
 {
   "pageTitle": "Meet Our Medical Team — OVI Wellness",
-  "heroHeadline": "Guided by <span class=\"text-primary\">Board-Certified Doctors</span>",
-  "heroSubheadline": "Our multidisciplinary medical team combines longevity science with individualized diagnostic tracking to deliver safe, high-performance results.",
+  "heroHeadline": "Meet Our",
+  "heroHeadlineHighlight": "Medical Experts",
+  "heroSubheadline": "A dedicated team of licensed professionals committed to engineering your optimal physical and cognitive performance.",
+  "ui": {
+    "viewProfile": "View Full Profile",
+    "professionalAssociations": "Professional Associations",
+    "professionalBio": "Professional Bio",
+    "philosophyOfCare": "Philosophy of Care",
+    "clinicalExpertise": "Clinical Expertise"
+  },
   "team": [
     {
       "name": "Dr. Marcus Vance, MD",

@@ -213,6 +213,13 @@
       if (teamRes && teamRes.ok) {
         const teamData = await teamRes.json();
         if (teamData.team) window.clinicData.team = teamData.team;
+        // Expose page-level labels (hero text, UI strings) separately for team-renderer.js
+        window.clinicData.teamPage = {
+          heroHeadline:          teamData.heroHeadline,
+          heroHeadlineHighlight: teamData.heroHeadlineHighlight,
+          heroSubheadline:       teamData.heroSubheadline,
+          ui:                    teamData.ui
+        };
       }
 
       if (locationsRes && locationsRes.ok) {
