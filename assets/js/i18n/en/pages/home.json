@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "headline": "Human Performance<br><span>Optimized</span>",
+    "subheadline": "Advanced Wellness & Regenerative Aesthetics Designed for Optimal Vitality.",
+    "cta": "Book Your Consultation",
+    "exploreBtn": "Explore More Protocols"
+  },
+  "coreTherapies": {
+    "sectionTitle": "Core Optimization Therapies"
+  },
+  "memberships": {
+    "sectionTitle": "Simple Membership Plans",
+    "ivBanner": {
+      "title": "Why Add IV Therapy?",
+      "body": "Vitamin pills only absorb about 20% in your stomach. Our IV drips send <strong class=\"text-white\">100% pure vitamins straight into your body</strong> so you feel energized immediately!",
+      "callBtn": "Call (727) 476-8966",
+      "bookBtn": "Book Appointment"
+    },
+    "plans": [
+      {
+        "id": "essential",
+        "name": "Essential Plan",
+        "badge": "Starter",
+        "description": "Great if you want to boost your daily energy and balance your hormones with doctor guidance.",
+        "features": [
+          "<strong>Custom Hormone Therapy</strong> for real energy and mental clarity",
+          "<strong>Regular Doctor Check-ups &amp; Blood Tests</strong> so you stay safe",
+          "<strong>Direct Access to Your Doctor</strong> whenever you have questions"
+        ],
+        "cta": "Book Essential Plan"
+      },
+      {
+        "id": "vip",
+        "name": "VIP Executive",
+        "badge": "VIP Concierge",
+        "description": "Expanded concierge medical care with priority access &amp; 24/7 direct doctor line.",
+        "features": [
+          "<strong>Everything in Essential Plan</strong> included",
+          "<strong>24/7 Direct Doctor Call &amp; Text Line</strong> whenever you need help",
+          "<strong>Advanced Lab Panel Monitoring</strong> &amp; custom dose adjustments",
+          "<strong>Priority Prescription Delivery</strong> &amp; dedicated care coordination"
+        ],
+        "cta": "Book Executive VIP"
+      },
+      {
+        "id": "optimal",
+        "name": "Optimal Plan",
+        "badge": "Most Popular",
+        "description": "Our #1 ultimate all-inclusive protocol for maximum energy, fat loss, and anti-aging!",
+        "features": [
+          "<strong>Everything in VIP Executive Plan</strong> included",
+          "<strong>1 FREE Monthly IV Vitamin Drip</strong> for instant hydration and energy",
+          "<strong>Medical Weight Loss &amp; Anti-Aging</strong> options (GLP-1 available)",
+          "<strong>Unlimited Custom Vitamin Injections</strong> &amp; peak performance care"
+        ],
+        "cta": "Book Optimal Plan"
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Real Doctors. Real Results. Made Just For You.",
+    "teamBadge": "Board-Certified Medical Directors",
+    "teamSub": "Florida State Licensed Concierge Clinic",
+    "meetBtn": "Meet the Doctors &amp; View Credentials",
+    "benefits": [
+      {
+        "icon": "fa-user-md",
+        "title": "Talk Directly to Your Doctor",
+        "detail": "No call centers. Direct access to licensed medical doctors."
+      },
+      {
+        "icon": "fa-vial",
+        "title": "Built Just for Your Body",
+        "detail": "Personalized protocols calibrated to your exact blood work."
+      },
+      {
+        "icon": "fa-file-invoice-dollar",
+        "title": "One Simple Price, No Surprises",
+        "detail": "Doctor visits, lab monitoring & adjustments included. Zero hidden fees."
+      }
+    ]
+  },
+  "additionalServices": {
+    "sectionTitle": "Additional Optimization Services"
+  },
+  "faqs": {
+    "sectionTitle": "Frequently Asked Questions"
+  }
+}

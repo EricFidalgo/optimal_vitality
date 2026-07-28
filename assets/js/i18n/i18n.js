@@ -190,13 +190,14 @@
   // Fetch locale JSON files prior to component rendering
   async function loadLocaleData() {
     try {
-      const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes] = await Promise.all([
+      const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes, homePageRes] = await Promise.all([
         fetch(basePath + "global.json").catch(() => null),
         fetch(basePath + "services.json").catch(() => null),
         fetch(basePath + "team.json").catch(() => null),
         fetch(basePath + "locations.json").catch(() => null),
         fetch(basePath + "blog.json").catch(() => null),
-        fetch(basePath + "components.json").catch(() => null)
+        fetch(basePath + "components.json").catch(() => null),
+        fetch(basePath + "pages/home.json").catch(() => null)
       ]);
 
       if (globalRes && globalRes.ok) {
@@ -226,6 +227,12 @@
 
       if (componentsRes && componentsRes.ok) {
         window.clinicData.i18nComponents = await componentsRes.json();
+      }
+
+      if (homePageRes && homePageRes.ok) {
+        const homePageData = await homePageRes.json();
+        window.clinicData.pages = window.clinicData.pages || {};
+        window.clinicData.pages.home = homePageData;
       }
 
       document.dispatchEvent(new CustomEvent("i18nLoaded", { detail: { lang: currentLang } }));
