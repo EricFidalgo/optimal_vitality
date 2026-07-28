@@ -88,6 +88,13 @@ h6 {
 /* ==========================================================================
    3. BOOTSTRAP OVERRIDES & UTILITIES
    ========================================================================== */
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(230, 195, 129, 0.15) 0%, rgba(5, 20, 17, 0.25) 50%, rgba(230, 195, 129, 0.15) 100%) !important;
+  opacity: 1 !important;
+  margin: 2.5rem 0;
+}
 .text-primary {
   color: var(--primary-color) !important;
 }

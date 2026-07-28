@@ -21,6 +21,19 @@
     }
   });
 
+  function getCategoryIcon(category) {
+    switch (category) {
+      case "Medical Weight Loss": return "fas fa-weight-hanging";
+      case "IV & Wellness": return "fas fa-vial";
+      case "Peptide Therapy": return "fas fa-dna";
+      case "Hormone Optimization": return "fas fa-heartbeat";
+      case "Advanced Diagnostics": return "fas fa-notes-medical";
+      case "Regenerative Medicine": return "fas fa-atom";
+      case "Detox & Recovery": return "fas fa-leaf";
+      default: return "fas fa-stethoscope";
+    }
+  }
+
   function renderBlogIndex() {
     const container = document.getElementById("blog-grid-container");
     if (!container) return;
@@ -31,20 +44,23 @@
       return;
     }
 
-    let html = "";
+    let gridHtml = "";
     blogData.forEach((article) => {
-      html += `
+      gridHtml += `
         <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card h-100 border-0 shadow-sm hover-lift ovi-card">
-            <img src="${article.image}" class="card-img-top article-card-img" alt="${article.title}" style="height: 240px; object-fit: cover;">
+          <div class="card h-100 border-0 shadow-sm hover-lift ovi-card" style="border-radius: 14px; border-top: 3px solid var(--primary-color) !important; background: #ffffff;">
             <div class="card-body d-flex flex-column p-4">
-              <span class="badge bg-primary text-white bg-opacity-75 mb-3 align-self-start py-2 px-3 fw-normal" style="font-size: 0.75rem; letter-spacing: 0.5px;">${article.category}</span>
-              <h4 class="card-title h5 fw-semibold mb-3">${article.title}</h4>
-              <p class="card-text text-muted mb-4 small" style="line-height: 1.6;">${article.excerpt}</p>
-              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
-                <span class="text-muted small">${article.date}</span>
-                <a href="article.html?id=${article.id}" class="text-primary fw-semibold text-decoration-none small stretched-link d-flex align-items-center group">
-                  Read Article <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x"></i>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge py-2 px-3 fw-semibold" style="font-size: 0.725rem; letter-spacing: 0.5px; text-transform: uppercase; background-color: rgba(5, 20, 17, 0.05); color: var(--secondary-color); border: 1px solid rgba(5, 20, 17, 0.12); border-radius: 4px;">
+                  <i class="${getCategoryIcon(article.category)} me-1 text-primary"></i> ${article.category}
+                </span>
+              </div>
+              <h4 class="card-title h6 fw-bold mb-3 lh-base text-uppercase" style="color: var(--secondary-color); font-size: 1.05rem; letter-spacing: 0.3px;">${article.title}</h4>
+              <p class="card-text text-muted mb-4 small" style="line-height: 1.6; font-size: 0.88rem;">${article.excerpt}</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: rgba(0,0,0,0.06) !important;">
+                <span class="text-muted small" style="font-size: 0.8rem;"><i class="far fa-calendar-alt me-1 text-muted"></i> ${article.date}</span>
+                <a href="article.html?id=${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
+                  Read Article <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
                 </a>
               </div>
             </div>
@@ -53,7 +69,7 @@
       `;
     });
 
-    container.innerHTML = `<div class="row g-4">${html}</div>`;
+    container.innerHTML = `<div class="row g-4">${gridHtml}</div>`;
     fadeInPage();
   }
 
@@ -89,14 +105,6 @@
     setSlot("articleTitle", article.title);
     setSlot("articleAuthor", `By ${article.author}`);
     setSlot("articleDate", article.date);
-
-    // Set background image
-    const heroSection = document.getElementById("article-hero-section");
-    if (heroSection) {
-      heroSection.style.backgroundImage = `linear-gradient(180deg, rgba(15, 32, 54, 0.6) 0%, rgba(15, 32, 54, 0.85) 100%), url('${article.image}')`;
-      heroSection.style.backgroundSize = "cover";
-      heroSection.style.backgroundPosition = "center";
-    }
 
     // Populate content sections
     if (article.content) {
