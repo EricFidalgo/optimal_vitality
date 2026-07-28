@@ -1,0 +1,51 @@
+{
+  "title": "Legal & Compliance Disclosures",
+  "effectiveDate": "Effective Date: June 2026",
+  "tabs": {
+    "privacy": {
+      "nav": "Privacy Policy",
+      "title": "Privacy Policy",
+      "content": "We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us."
+    },
+    "terms": {
+      "nav": "Terms & Conditions",
+      "title": "Terms & Conditions",
+      "content": "These terms and conditions outline the rules and regulations for the use of OVI Wellness's Website and clinic services."
+    },
+    "hipaa": {
+      "nav": "HIPAA Notice",
+      "title": "HIPAA Notice of Privacy Practices",
+      "content": "This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully."
+    },
+    "medical": {
+      "nav": "Medical Disclaimer",
+      "title": "Medical Disclaimer",
+      "content": "Prescription treatments are provided only after a thorough clinician evaluation and diagnostic review. The content on this website is for informational purposes only and does not substitute professional medical advice, diagnosis, or treatment."
+    },
+    "sms": {
+      "nav": "SMS Consent",
+      "title": "SMS Consent Disclosure",
+      "content": "By providing your phone number, you agree to receive text messages from OVI Wellness. Message and data rates may apply. Message frequency varies."
+    },
+    "telehealth": {
+      "nav": "Telehealth",
+      "title": "Telehealth Disclosure",
+      "content": "Telehealth involves the use of electronic communications to enable healthcare providers at different locations to share individual patient medical information for the purpose of improving patient care."
+    },
+    "financing": {
+      "nav": "Financing",
+      "title": "Financing Disclosure",
+      "content": "Financing options are subject to credit approval. Terms and conditions apply."
+    },
+    "form": {
+      "nav": "Form Consent",
+      "title": "Form Consent Disclaimer",
+      "content": "By submitting any forms on this website, you consent to have OVI Wellness collect your information to contact you regarding your inquiry."
+    },
+    "results": {
+      "nav": "Results",
+      "title": "Results Disclaimer",
+      "content": "Individual results may vary. Testimonials are not claimed to represent typical results. All testimonials are from real patients, and may not reflect the typical patient's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results."
+    }
+  }
+}

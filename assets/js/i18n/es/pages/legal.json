@@ -1,0 +1,51 @@
+{
+  "title": "Divulgaciones Legales y de Cumplimiento",
+  "effectiveDate": "Fecha de Entrada en Vigor: Junio 2026",
+  "tabs": {
+    "privacy": {
+      "nav": "Política de Privacidad",
+      "title": "Política de Privacidad",
+      "content": "Estamos comprometidos a proteger su información personal y su derecho a la privacidad. Si tiene alguna pregunta o inquietud sobre nuestra política o nuestras prácticas con respecto a su información personal, comuníquese con nosotros."
+    },
+    "terms": {
+      "nav": "Términos y Condiciones",
+      "title": "Términos y Condiciones",
+      "content": "Estos términos y condiciones definen las reglas y regulaciones para el uso del sitio web de OVI Wellness y los servicios de la clínica."
+    },
+    "hipaa": {
+      "nav": "Aviso de HIPAA",
+      "title": "Aviso de Prácticas de Privacidad de HIPAA",
+      "content": "Este aviso describe cómo se puede utilizar y divulgar la información médica sobre usted y cómo puede acceder a esta información. Por favor revíselo cuidadosamente."
+    },
+    "medical": {
+      "nav": "Aviso Médico",
+      "title": "Aviso Médico",
+      "content": "Los tratamientos bajo receta se proporcionan únicamente después de una evaluación médica exhaustiva y una revisión diagnóstica. El contenido de este sitio web es solo para fines informativos y no sustituye el asesoramiento, diagnóstico o tratamiento médico profesional."
+    },
+    "sms": {
+      "nav": "Consentimiento SMS",
+      "title": "Divulgación de Consentimiento SMS",
+      "content": "Al proporcionar su número de teléfono, acepta recibir mensajes de texto de OVI Wellness. Se pueden aplicar tarifas de mensajes y datos. La frecuencia de los mensajes varía."
+    },
+    "telehealth": {
+      "nav": "Telesalud",
+      "title": "Divulgación de Telesalud",
+      "content": "La telesalud implica el uso de comunicaciones electrónicas para permitir que los proveedores de atención médica en diferentes ubicaciones compartan información médica individual del paciente con el fin de mejorar la atención."
+    },
+    "financing": {
+      "nav": "Financiamiento",
+      "title": "Divulgación de Financiamiento",
+      "content": "Las opciones de financiamiento están sujetas a aprobación de crédito. Se aplican términos y condiciones."
+    },
+    "form": {
+      "nav": "Consentimiento de Formulario",
+      "title": "Descargo de Consentimiento de Formulario",
+      "content": "Al enviar cualquier formulario en este sitio web, usted da su consentimiento para que OVI Wellness recopile su información para comunicarse con usted con respecto a su consulta."
+    },
+    "results": {
+      "nav": "Resultados",
+      "title": "Descargo de Resultados",
+      "content": "Los resultados individuales pueden variar. Los testimonios no pretenden representar resultados típicos. Todos los testimonios son de pacientes reales y pueden no reflejar la experiencia típica del paciente, y no pretenden representar ni garantizar que alguien logre los mismos resultados o similares."
+    }
+  }
+}
