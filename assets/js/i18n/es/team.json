@@ -2,44 +2,44 @@
   "pageTitle": "Conozca a Nuestro Equipo Médico — OVI Wellness",
   "seo": {
     "title": "Nuestro Equipo Médico — Optimal Vitality Institute",
-    "description": "Conozca a los expertos médicos detrás de su atención en el Optimal Vitality Institute. Especialistas en rendimiento humano altamente acreditados y dirigidos por médicos."
+    "description": "Conozca a los expertos médicos detrás de su atención en el Optimal Vitality Institute. Proveedores de atención médica con licencia y especialistas altamente acreditados."
   },
   "heroHeadline": "Conozca a Nuestros",
   "heroHeadlineHighlight": "Expertos Médicos",
-  "heroSubheadline": "Un equipo dedicado de profesionales licenciados comprometidos a potenciar su rendimiento físico y cognitivo óptimo.",
+  "heroSubheadline": "Un equipo dedicado de proveedores de atención médica con licencia comprometidos a proporcionar atención médica individualizada.",
   "ui": {
     "viewProfile": "Ver Perfil Completo",
     "professionalAssociations": "Asociaciones Profesionales",
     "professionalBio": "Biografía Profesional",
     "philosophyOfCare": "Filosofía de Atención",
-    "clinicalExpertise": "Especialidad Clínica"
+    "clinicalExpertise": "Experiencia Clínica"
   },
   "team": [
     {
       "name": "Dr. Marcus Vance, MD",
       "credentials": "MD, FAARM",
-      "role": "Director Médico Principal",
-      "bio": "Especialista certificado en medicina antienvejecimiento y optimización hormonal bioidéntica, guiando protocolos de precisión para la longevidad sistémica.",
-      "philosophy": "La optimización no se trata de perseguir números; se trata de restaurar la resiliencia fisiológica de la juventud mediante dosis de precisión y seguimiento de biomarcadores.",
+      "role": "Director Médico",
+      "bio": "Médico con capacitación en optimización hormonal y terapias bioidénticas, guiando protocolos de precisión para el bienestar sistémico.",
+      "philosophy": "La optimización no se trata de perseguir números; se trata de apoyar la resiliencia fisiológica a través de dosis precisas y un seguimiento avanzado de biomarcadores, basado en su evaluación clínica.",
       "expertise": [
-        "Terapia Hormonal Bioidéntica",
+        "Terapia de Reemplazo Hormonal Bioidéntica",
         "Endocrinología Avanzada",
         "Protocolos de Síntesis de Péptidos",
         "Medicina de Longevidad"
       ],
       "associations": [
-        "Miembro de la Academia Americana de Medicina Antienvejecimiento (A4M)",
-        "Asociación Médica Americana"
+        "Fellow of the American Academy of Anti-Aging Medicine (A4M)",
+        "American Medical Association"
       ],
-      "personalDetail": "El Dr. Vance es un ávido triatleta y utiliza los mismos protocolos que prescribe para mantener un rendimiento cardiovascular de élite.",
+      "personalDetail": "El Dr. Vance es un ávido triatleta y utiliza los mismos protocolos que prescribe para mantener el rendimiento cardiovascular.",
       "image": "assets/images/photos/team/vance.png"
     },
     {
       "name": "Sarah Jenkins, FNP-C",
       "credentials": "FNP-C",
       "role": "Especialista Clínica Principal",
-      "bio": "Experta en terapias con péptidos dirigidos y programas avanzados de pérdida de peso metabólica para preservar la masa muscular magra.",
-      "philosophy": "La verdadera pérdida de peso es la rehabilitación metabólica. No solo reducimos masa; reingenierizamos su metabolismo celular para proteger el tejido magro y aumentar la energía.",
+      "bio": "Experta en terapias dirigidas con péptidos y programación metabólica avanzada para el control de peso para preservar la masa muscular magra.",
+      "philosophy": "La verdadera pérdida de peso es rehabilitación metabólica. No solo reducimos la masa; apoyamos su metabolismo celular para proteger el tejido magro y mejorar la producción de energía.",
       "expertise": [
         "Agonistas GLP-1/GIP",
         "Optimización Metabólica",
@@ -47,28 +47,28 @@
         "Nutrición Clínica"
       ],
       "associations": [
-        "Asociación Americana de Enfermeros Practicantes (AANP)",
-        "Asociación de Medicina de la Obesidad"
+        "American Association of Nurse Practitioners (AANP)",
+        "Obesity Medicine Association"
       ],
-      "personalDetail": "Sarah conecta la ciencia clínica con un estilo de vida sostenible, empoderando a los pacientes a tomar el control de su salud.",
+      "personalDetail": "Sarah integra la ciencia clínica con un estilo de vida sostenible, empoderando a los pacientes en su camino hacia la salud.",
       "image": "assets/images/photos/team/jenkins.png"
     },
     {
       "name": "David Chen, RN",
       "credentials": "RN, BSN",
       "role": "Director de Infusiones",
-      "bio": "Supervisa nuestra división Drip Culture, garantizando una biodisponibilidad y seguridad perfectas para infusiones de longevidad con vitaminas IV y Glutatión.",
-      "philosophy": "La terapia intravenosa supera la impredecibilidad del sistema digestivo. Al entregar nutrientes de grado clínico directamente al torrente sanguíneo, maximizamos la absorción.",
+      "bio": "Supervisa nuestra división Drip Culture, asegurando la biodisponibilidad y seguridad de todas las infusiones IV de vitaminas y glutatión.",
+      "philosophy": "La terapia intravenosa evita la imprevisibilidad del intestino. Al administrar nutrientes de grado clínico directamente al torrente sanguíneo, apoyamos la absorción y promovemos el impacto celular.",
       "expertise": [
-        "Protocolos Vitamínicos IV",
+        "Protocolos de Vitaminas IV",
         "Vitamina C en Altas Dosis",
         "Hidratación Celular",
-        "Sueroterapia de Recuperación"
+        "Infusiones IV para la Recuperación Posquirúrgica"
       ],
       "associations": [
-        "Sociedad de Enfermeros de Infusión (INS)"
+        "Infusion Nurses Society (INS)"
       ],
-      "personalDetail": "David ha administrado de forma segura más de 10,000 protocolos IV y es reconocido por sus técnicas de aplicación indoloras.",
+      "personalDetail": "David ha administrado de manera segura más de 10,000 protocolos IV y es conocido por sus técnicas de inserción enfocadas en la comodidad del paciente.",
       "image": "assets/images/photos/team/chen.png"
     }
   ]

@@ -3,7 +3,7 @@
   "type": "core",
   "tabLabel": "Peptide Therapy",
   "href": "peptides.html",
-  "title": "Heal Faster & Feel Like Yourself Again",
+  "title": "Peptide-Related Consultation",
   "lead": "Supercharge your body's natural healing power to fix joint pain, recover fast, and feel full of life.",
   "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
   "icon": "fa-vial",
@@ -17,7 +17,7 @@
   "image": "assets/images/photos/peptide-therapy.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Doctor-Guided Peptide Therapy — OVI Wellness",
-  "pageDescription": "Doctor-guided peptide therapy in St. Petersburg, FL. BPC-157, TB-500, and Ipamorelin protocols prescribed by licensed medical providers.",
+  "pageDescription": "Doctor-guided peptide therapy in St. Petersburg, FL. Peptide prescribed by licensed medical providers.",
   "heroHeadline": "Accelerate Healing &<br><span class=\"text-primary\">Cellular Recovery</span>",
   "heroSubheadline": "Prescription Peptide protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -113,7 +113,7 @@
       "pain": {
         "tag": "Recommended Joint Repair Plan",
         "name": "The Total Joint & Tissue Reset",
-        "peptides": "Prescription BPC-157 + TB-500 Protocol",
+        "peptides": "Prescription Peptide options + Peptide options Protocol",
         "icon": "fa-shield-alt",
         "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
         "goalModifiers": {
@@ -127,7 +127,7 @@
       "performance": {
         "tag": "Strength & Growth Plan",
         "name": "Peak Performance & Growth Stack",
-        "peptides": "Prescription Ipamorelin + Tesamorelin",
+        "peptides": "Prescription Peptide options + Tesamorelin",
         "icon": "fa-dumbbell",
         "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
         "goalModifiers": {
@@ -155,7 +155,7 @@
       "body": {
         "tag": "Fat Burn & Recomp Plan",
         "name": "Lean Muscle & Fat Burn Reset",
-        "peptides": "Tesamorelin + Ipamorelin Protocol",
+        "peptides": "Tesamorelin + Peptide options Protocol",
         "icon": "fa-fire",
         "desc": "Targets deep belly fat that diets miss, while protecting your lean, strong muscle.",
         "goalModifiers": {
@@ -209,19 +209,19 @@
     "items": [
       {
         "icon": "fa-running",
-        "name": "BPC-157 Protocol",
+        "name": "Peptide options Protocol",
         "tag": "Joint Repair",
         "description": "Targeted prescription peptide that tells your cells to repair joints, tendons, gut lining, and torn muscle tissue."
       },
       {
         "icon": "fa-kit-medical",
-        "name": "TB-500 Protocol",
+        "name": "Peptide options Protocol",
         "tag": "Tissue Healing",
-        "description": "Works alongside BPC-157 to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
+        "description": "Works alongside Peptide options to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
       },
       {
         "icon": "fa-dumbbell",
-        "name": "Ipamorelin Protocol",
+        "name": "Peptide options Protocol",
         "tag": "Growth & Sleep",
         "description": "Natural growth secretagogue that improves deep sleep, speeds up muscle recovery, and keeps bones strong."
       },
@@ -296,7 +296,7 @@
     },
     {
       "myth": "Is doctor-guided peptide therapy safe and legal?",
-      "reality": "Yes. All treatments we prescribe are legal, pharmacy-grade medications prescribed by licensed medical doctors following strict Florida medical standards."
+      "reality": "Yes. Treatment options are discussed during consultation. prescribed by licensed medical doctors following strict Florida medical standards."
     }
   ],
   "comparison": {
@@ -352,19 +352,19 @@
       {
         "name": "Joint & Tissue Repair Stack",
         "tag": "Most Popular",
-        "compounds": "BPC-157 + TB-500 Protocol",
+        "compounds": "Peptide options + Peptide options Protocol",
         "description": "Combines twin repair peptides for fast joint relief, ligament repair, and tendon healing."
       },
       {
         "name": "Growth & Lean Muscle Stack",
         "tag": "Strength Boost",
-        "compounds": "Tesamorelin + Ipamorelin Protocol",
+        "compounds": "Tesamorelin + Peptide options Protocol",
         "description": "Designed for active adults looking to burn stubborn belly fat, gain lean muscle, and sleep deeply."
       },
       {
         "name": "Total Bioenergetic Reset",
         "tag": "Full Vitality",
-        "compounds": "BPC-157 + Cellular Recovery Stack",
+        "compounds": "Peptide options + Cellular Recovery Stack",
         "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
       }
     ]
@@ -384,7 +384,7 @@
     },
     {
       "question": "How fast will I see results from peptide therapy?",
-      "answer": "Joint repair peptides like BPC-157 often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
+      "answer": "Joint repair peptides like Peptide options often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
     },
     {
       "question": "Can I combine peptides with TRT or hormone therapy?",

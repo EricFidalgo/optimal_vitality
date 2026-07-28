@@ -3,14 +3,14 @@
   "type": "core",
   "tabLabel": "Hormone Optimization",
   "href": "hormone-optimization.html",
-  "title": "Feel Young, Strong & Full of Energy Again",
-  "lead": "Tired of feeling worn out? Our licensed doctors balance your hormones so you can thrive every day.",
+  "title": "Individualized Evaluation and Treatment for Clinically Significant Hormone Deficiency",
+  "lead": "Tired of feeling worn out? A licensed clinician evaluates symptoms, medical history, examination findings, and laboratory results to determine whether hormone therapy is appropriate.",
   "description": "When your hormones drop, you feel tired, gain weight, and lose focus. Our doctors run simple blood tests and create a custom plan to give you back your strength, focus, and drive.",
   "icon": "fa-syringe",
   "delay": "0s",
   "features": [
     "Reclaim high daily energy & focus",
-    "Build lean muscle & burn body fat",
+    "Potential treatment goals may include improvement in symptoms.",
     "Enjoy deep sleep & better mood",
     "100% doctor-checked for your safety"
   ],
@@ -343,7 +343,7 @@
     },
     {
       "question": "Will I get bad side effects or dangerous steroid effects?",
-      "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and side-effect free."
+      "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and adverse effects vary."
     },
     {
       "question": "How do I get started with hormone optimization?",

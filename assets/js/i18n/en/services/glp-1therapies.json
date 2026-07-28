@@ -3,9 +3,9 @@
   "type": "core",
   "tabLabel": "GLP-1 Weight Loss",
   "href": "glp-1therapies.html",
-  "title": "Lose Weight Fast Without Constant Cravings",
+  "title": "Medical Weight Management with Clinician-Guided Treatment Options",
   "lead": "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
-  "description": "No starving yourself. No crazy workouts. Our simple weekly medical treatments turn off constant food thoughts so you can burn fat while protecting your muscle.",
+  "description": "For eligible patients, prescription weight-management medications may reduce appetite and support weight loss when combined with nutrition, physical activity, and ongoing clinical monitoring.",
   "icon": "fa-weight-scale",
   "delay": "-1s",
   "features": [
@@ -17,7 +17,7 @@
   "image": "assets/images/photos/glp1-weight-loss.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Doctor-Guided GLP-1 Medical Weight Loss — OVI Wellness",
-  "pageDescription": "Doctor-guided medical weight loss protocols in St. Petersburg, FL. Semaglutide and Tirzepatide prescriptions supervised by licensed healthcare providers.",
+  "pageDescription": "Doctor-guided medical weight loss protocols in St. Petersburg, FL. FDA-approved medications may be prescribed when indicated. supervised by licensed healthcare providers.",
   "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
   "heroSubheadline": "Prescription Semaglutide & Tirzepatide weight loss protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -83,7 +83,7 @@
       "weight": {
         "tag": "Recommended Plan",
         "name": "Doctor-Guided Fat Burn Plan",
-        "peptides": "Semaglutide or Tirzepatide Prescription",
+        "peptides": "FDA-approved medications may be prescribed when indicated.",
         "icon": "fa-weight-scale",
         "desc": "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
         "goalModifiers": {

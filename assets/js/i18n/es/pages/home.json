@@ -5,7 +5,7 @@
   },
   "hero": {
     "headline": "Rendimiento Humano<br><span>Optimizado</span>",
-    "subheadline": "Bienestar Avanzado y Estética Regenerativa Diseñados para la Vitalidad Óptima.",
+    "subheadline": "Servicios personalizados de bienestar médico y estética guiados por profesionales de la salud con licencia.",
     "cta": "Reserve su Consulta Médica",
     "exploreBtn": "Explorar Más Protocolos"
   },
@@ -16,7 +16,7 @@
     "sectionTitle": "Planes de Membresía Simples",
     "ivBanner": {
       "title": "¿Por Qué Agregar Terapia IV?",
-      "body": "Las pastillas de vitaminas solo absorben el 20% en su estómago. Nuestros sueros IV envían <strong class=\"text-white\">100% de vitaminas puras directamente a su cuerpo</strong> ¡para que se sienta lleno de energía de inmediato!",
+      "body": "La hidratación IV entrega fluidos y nutrientes seleccionados directamente en el torrente sanguíneo. Los beneficios potenciales, riesgos y la idoneidad varían según el paciente y son revisados por un proveedor de atención médica con licencia antes del tratamiento.",
       "callBtn": "Llamar al (727) 476-8966",
       "bookBtn": "Reservar Cita"
     },
@@ -50,37 +50,37 @@
         "id": "optimal",
         "name": "Plan Óptimo",
         "badge": "Más Popular",
-        "description": "¡Nuestro protocolo #1 todo incluido para máxima energía, pérdida de grasa y anti-aging!",
+        "description": "Nuestra opción de membresía más completa, que combina seguimiento clínico continuo con acceso a servicios elegibles de bienestar y control de peso. Los servicios son individualizados y están sujetos a evaluación médica.",
         "features": [
           "<strong>Todo lo del Plan VIP Ejecutivo</strong> incluido",
-          "<strong>1 Suero de Vitaminas IV Mensual GRATIS</strong> para hidratación y energía instantánea",
+          "<strong>Una sesión mensual de hidratación IV incluida, cuando sea médicamente apropiado.</strong> La formulación y elegibilidad se determinan tras una evaluación clínica.",
           "<strong>Pérdida de Peso Médica y Anti-Aging</strong> (GLP-1 disponible)",
-          "<strong>Inyecciones de Vitaminas Personalizadas Ilimitadas</strong> y atención de máximo rendimiento"
+          "<strong>Inyecciones de Vitaminas Personalizadas</strong> y atención de máximo rendimiento"
         ],
         "cta": "Reservar Plan Óptimo"
       }
     ]
   },
   "whyUs": {
-    "sectionTitle": "Médicos Reales. Resultados Reales. Hecho Solo Para Usted.",
+    "sectionTitle": "Clínicos Licenciados. Atención Individualizada. Supervisión Médica Clara.",
     "teamBadge": "Directores Médicos Certificados",
     "teamSub": "Clínica Concierge con Licencia en Florida",
     "meetBtn": "Conozca a los Médicos y Vea Credenciales",
     "benefits": [
       {
         "icon": "fa-user-md",
-        "title": "Hable Directamente con su Médico",
-        "detail": "Sin centros de llamadas. Acceso directo a médicos licenciados."
+        "title": "Hable Directamente con su Proveedor",
+        "detail": "Sin centros de llamadas. Acceso directo a profesionales médicos licenciados."
       },
       {
         "icon": "fa-vial",
         "title": "Diseñado Solo para su Cuerpo",
-        "detail": "Protocolos personalizados calibrados a sus análisis de sangre exactos."
+        "detail": "Recomendaciones de tratamiento basadas en historial médico, síntomas, examen cuando sea apropiado, y hallazgos de laboratorio relevantes."
       },
       {
         "icon": "fa-file-invoice-dollar",
-        "title": "Un Precio Simple, Sin Sorpresas",
-        "detail": "Visitas al médico, monitoreo de laboratorio y ajustes incluidos. Cero cargos ocultos."
+        "title": "Inclusiones de Membresía Claramente Definidas",
+        "detail": "Los medicamentos, pruebas de especialidad, procedimientos y cargos de farmacias de terceros se listan por separado cuando no están incluidos."
       }
     ]
   },

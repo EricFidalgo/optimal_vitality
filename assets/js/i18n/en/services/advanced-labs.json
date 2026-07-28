@@ -3,7 +3,7 @@
   "type": "additional",
   "tabLabel": "Advanced Labs",
   "href": "advanced-labs.html",
-  "title": "Uncover What Your Regular Bloodwork Misses",
+  "title": "Expanded Laboratory Testing Based on Clinical Need",
   "lead": "Stop guessing why you feel tired, bloated, or worn out with simple, complete doctor lab panels.",
   "description": "Standard doctor blood tests only check basic numbers. Our advanced lab tests look deep into your hormones, vitamins, gene markers (MTHFR), and heavy metals so our doctors can give you exact answers.",
   "icon": "fa-flask",
@@ -172,7 +172,7 @@
         "icon": "fa-dna",
         "name": "MTHFR Gene Variant Test",
         "tag": "Genetics",
-        "description": "Identifies C677T and A1298C gene variants to optimize your body's methylation, mood, and folate use."
+        "description": "MTHFR testing may be considered in specific clinical contexts following evaluation."
       },
       {
         "icon": "fa-apple-alt",
@@ -203,7 +203,7 @@
   "science": {
     "badge": "How It Works",
     "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
-    "body": "Standard doctor bloodwork only checks for disease red flags—not optimal health. Their 'normal' range includes sick or aging populations. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+    "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
     "bullets": [
       "Ordered & reviewed by licensed medical doctors",
       "Tests optimal vitality ranges—not just 'disease normal'",

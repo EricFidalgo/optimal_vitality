@@ -5,7 +5,7 @@
   },
   "hero": {
     "headline": "Human Performance<br><span>Optimized</span>",
-    "subheadline": "Advanced Wellness & Regenerative Aesthetics Designed for Optimal Vitality.",
+    "subheadline": "Personalized medical wellness and aesthetic services guided by licensed healthcare professionals.",
     "cta": "Book Your Consultation",
     "exploreBtn": "Explore More Protocols"
   },
@@ -16,7 +16,7 @@
     "sectionTitle": "Simple Membership Plans",
     "ivBanner": {
       "title": "Why Add IV Therapy?",
-      "body": "Vitamin pills only absorb about 20% in your stomach. Our IV drips send <strong class=\"text-white\">100% pure vitamins straight into your body</strong> so you feel energized immediately!",
+      "body": "IV hydration delivers fluids and selected nutrients directly into the bloodstream. Potential benefits, risks, and appropriateness vary by patient and are reviewed by a licensed healthcare provider before treatment.",
       "callBtn": "Call (727) 476-8966",
       "bookBtn": "Book Appointment"
     },
@@ -50,37 +50,37 @@
         "id": "optimal",
         "name": "Optimal Plan",
         "badge": "Most Popular",
-        "description": "Our #1 ultimate all-inclusive protocol for maximum energy, fat loss, and anti-aging!",
+        "description": "Our most comprehensive membership option, combining ongoing clinical follow-up with access to eligible wellness and weight-management services. Services are individualized and subject to medical evaluation.",
         "features": [
           "<strong>Everything in VIP Executive Plan</strong> included",
-          "<strong>1 FREE Monthly IV Vitamin Drip</strong> for instant hydration and energy",
+          "<strong>One included monthly IV hydration session, when medically appropriate.</strong> Formulation and eligibility are determined after clinical screening.",
           "<strong>Medical Weight Loss &amp; Anti-Aging</strong> options (GLP-1 available)",
-          "<strong>Unlimited Custom Vitamin Injections</strong> &amp; peak performance care"
+          "<strong>Custom Vitamin Injections</strong> &amp; peak performance care"
         ],
         "cta": "Book Optimal Plan"
       }
     ]
   },
   "whyUs": {
-    "sectionTitle": "Real Doctors. Real Results. Made Just For You.",
+    "sectionTitle": "Licensed Clinicians. Individualized Care. Clear Medical Oversight.",
     "teamBadge": "Board-Certified Medical Directors",
     "teamSub": "Florida State Licensed Concierge Clinic",
     "meetBtn": "Meet the Doctors &amp; View Credentials",
     "benefits": [
       {
         "icon": "fa-user-md",
-        "title": "Talk Directly to Your Doctor",
-        "detail": "No call centers. Direct access to licensed medical doctors."
+        "title": "Talk Directly to Your Provider",
+        "detail": "No call centers. Direct access to licensed medical professionals."
       },
       {
         "icon": "fa-vial",
         "title": "Built Just for Your Body",
-        "detail": "Personalized protocols calibrated to your exact blood work."
+        "detail": "Treatment recommendations based on medical history, symptoms, examination when appropriate, and relevant laboratory findings."
       },
       {
         "icon": "fa-file-invoice-dollar",
-        "title": "One Simple Price, No Surprises",
-        "detail": "Doctor visits, lab monitoring & adjustments included. Zero hidden fees."
+        "title": "Clearly Defined Membership Inclusions",
+        "detail": "Medication, specialty testing, procedures, and third-party pharmacy charges are listed separately when not included."
       }
     ]
   },

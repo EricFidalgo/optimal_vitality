@@ -40,7 +40,7 @@
       "href": "#",
       "dropdown": [
         {
-          "label": "Optimización Hormonal (TRT)",
+          "label": "Optimización Hormonal",
           "href": "hormone-optimization.html",
           "icon": "fa-syringe"
         },
@@ -65,7 +65,7 @@
           "icon": "fa-heart"
         },
         {
-          "label": "Hidratación IV y Nutrientes",
+          "label": "IV y Bienestar",
           "href": "iv-wellness.html",
           "icon": "fa-tint"
         },
@@ -75,7 +75,7 @@
           "icon": "fa-leaf"
         },
         {
-          "label": "Laboratorios Diagnósticos",
+          "label": "Laboratorios Avanzados",
           "href": "advanced-labs.html",
           "icon": "fa-flask"
         }
@@ -86,7 +86,7 @@
       "href": "team.html"
     },
     {
-      "label": "FAQs",
+      "label": "Preguntas Frecuentes",
       "href": "index.html#faqs"
     },
     {
@@ -104,11 +104,11 @@
       "icon": "fa-map-marker-alt"
     },
     {
-      "label": "Clínica Médica Licenciada",
+      "label": "Clínica Médica con Licencia",
       "icon": "fa-shield-alt"
     },
     {
-      "label": "Cumplimiento HIPAA",
+      "label": "Cumple con HIPAA",
       "icon": "fa-user-shield"
     },
     {
@@ -121,63 +121,63 @@
       "initials": "JT",
       "name": "James T.",
       "tag": "PACIENTE DE TRT",
-      "quote": "El programa de TRT cambió completamente mi vida. En dos meses, la niebla mental desapareció y mis niveles de energía volvieron a ser los de mis 20 años. El equipo médico es increíblemente minucioso y preciso."
+      "quote": "El programa de TRT ha sido transformador para mi bienestar. En dos meses, mi confusión mental mejoró y mis niveles de energía aumentaron significativamente. El equipo médico de aquí es increíblemente minucioso y preciso con los análisis de sangre."
     },
     {
       "initials": "SM",
       "name": "Sarah M.",
       "tag": "OPTIMIZACIÓN METABÓLICA",
-      "quote": "Luché con la pérdida de peso durante años. El protocolo metabólico, combinado con su guía nutricional, me ayudó a perder 35 libras manteniendo mi masa muscular."
+      "quote": "He luchado con la pérdida de peso durante años. El protocolo metabólico, combinado con su orientación nutricional, me ayudó a perder 35 libras manteniendo mi masa muscular. Es la primera vez que una clínica evalúa mis marcadores metabólicos en lugar de usar solo una báscula."
     },
     {
       "initials": "MR",
       "name": "Michael R.",
-      "tag": "MIEMBRO TERAPIA IV",
-      "quote": "La membresía de Drip Culture es mi arma secreta. Como viajero frecuente, las sueroterapias de Glutatión y vitaminas IV mantienen mi sistema inmunológico fuerte y mi energía equilibrada."
+      "tag": "MIEMBRO DE TERAPIA IV",
+      "quote": "La membresía de Drip Culture es un excelente apoyo. Como viajero frecuente, la terapia de vitaminas intravenosas y glutatión ayuda a respaldar mi sistema inmunológico y mantener un buen nivel de energía. La sala de infusiones es una experiencia fantástica."
     },
     {
       "initials": "DL",
       "name": "David L.",
       "tag": "TERAPIA DE PÉPTIDOS",
-      "quote": "Los protocolos personalizados aceleraron mi recuperación más rápido que cualquier otra cosa que haya probado. Se enfocan realmente en la precisión médica."
+      "quote": "Los protocolos específicos apoyaron mi recuperación de manera efectiva. Verdaderamente se enfocan en la precisión y en ayudar a que su cuerpo funcione de manera eficiente. Recomiendo ampliamente esta clínica."
     },
     {
       "initials": "EK",
       "name": "Elena K.",
       "tag": "PROTOCOLOS DE LONGEVIDAD",
-      "quote": "Una experiencia médica verdaderamente personalizada. Me siento diez años más joven tras utilizar sus tratamientos de bienestar y estética. El personal es increíble."
+      "quote": "Una experiencia médica verdaderamente exclusiva. Siento una gran mejora en mi vitalidad después de utilizar consistentemente sus tratamientos estéticos y de bienestar. El personal es increíble."
     },
     {
       "initials": "KT",
       "name": "Kyle T.",
       "tag": "PACIENTE DE TRT",
-      "quote": "Estos péptidos son realmente fantásticos. Siento que tengo 20 años de nuevo."
+      "quote": "Estas terapias han sido excelentes. Siento un nivel de energía renovado al seguir el protocolo."
     }
   ],
   "faqs": [
     {
       "question": "¿Qué incluye el programa de TRT?",
-      "answer": "Nuestro programa de TRT ofrece optimización hormonal integral supervisada por médicos. Incluye consultas médicas continuas, análisis completos de sangre y testosterona bioidéntica de grado farmacéutico personalizada."
+      "answer": "Nuestro programa de TRT proporciona una optimización hormonal integral y médicamente supervisada. Incluye consultas continuas con un proveedor de atención médica con licencia, amplios análisis de sangre de biomarcadores de rutina y testosterona bioidéntica de grado farmacéutico dosificada a medida para ayudar a mantener sus niveles optimizados con precisión."
     },
     {
       "question": "¿Cómo funciona el programa de Pérdida de Peso Médica?",
-      "answer": "Utilizamos terapias metabólicas avanzadas como Semaglutida o Tirzepatida combinadas con inyectables lipotrópicos, supervisión médica, asesoramiento nutricional y seguimiento continuo."
+      "answer": "Utilizamos terapias metabólicas avanzadas como Semaglutida o Tirzepatida combinadas con inyectables lipotrópicos. Su protocolo es guiado por marcadores metabólicos de laboratorio e incluye supervisión médica, asesoramiento nutricional y seguimiento del progreso para apoyar la pérdida de grasa mientras se preserva el músculo magro."
     },
     {
-      "question": "¿Cuánto tiempo toma ver resultados?",
-      "answer": "Depende de la terapia. La sueroterapia IV ofrece mejoras inmediatas en hidratación y energía. En TRT y péptidos, los pacientes notan mayor claridad mental en semanas, y cambios corporales profundos en 3 a 6 meses."
+      "question": "¿Cuánto tiempo se tarda en ver resultados?",
+      "answer": "Los resultados dependen completamente de la terapia. Los resultados individuales varían. La terapia intravenosa puede ofrecer mejoras en la hidratación y la energía. En el caso del TRT y los péptidos, los pacientes a menudo notan una mejora en la claridad mental y el sueño en semanas, mientras que los cambios en la composición corporal y la reparación de tejidos generalmente requieren de 3 a 6 meses de cumplimiento constante."
     },
     {
       "question": "¿Son seguras las terapias de péptidos y cómo se administran?",
-      "answer": "Sí, los péptidos son extremadamente bien tolerados porque son compuestos naturales de su cuerpo. Prescribimos exclusivamente péptidos probados de grado farmacéutico, administrados por microinyecciones subcutáneas prácticamente indoloras."
+      "answer": "Los péptidos son generalmente bien tolerados porque son compuestos que se encuentran naturalmente en el cuerpo. Prescribimos exclusivamente péptidos de grado farmacéutico rigurosamente probados. La mayoría se administran mediante una inyección subcutánea utilizando una microaguja, aunque algunos protocolos utilizan alternativas tópicas u orales según la evaluación clínica."
     }
   ],
   "location": {
-    "sectionTitle": "Nuestra Clínica",
+    "sectionTitle": "Encuentre Nuestra Clínica",
     "clinicName": "Optimal Vitality Institute",
     "labelAddress": "Dirección",
     "labelHours": "Horario de Atención",
     "labelContact": "Contacto",
-    "getDirections": "Cómo Llegar"
+    "getDirections": "Obtener Direcciones"
   }
 }

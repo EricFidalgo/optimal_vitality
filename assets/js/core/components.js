@@ -108,8 +108,8 @@
 
         const disclaimerTitle = isEs ? 'Aviso Médico:' : 'Medical Disclaimer:';
         const disclaimerText  = isEs 
-          ? 'Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.'
-          : 'All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.';
+          ? 'Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.<br><br><strong>Aviso de Medicamentos Compuestos:</strong> Algunas opciones de tratamiento pueden incluir un medicamento compuesto preparado para un paciente individual por una farmacia con licencia cuando un prescriptor con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas de ese paciente. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad antes de su comercialización. Su disponibilidad está sujeta a la elegibilidad clínica, la ley aplicable y la dispensación de la farmacia.'
+          : 'All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.<br><br><strong>Compounded Medication Disclosure:</strong> Some treatment options may involve a compounded medication prepared for an individual patient by a licensed pharmacy when a licensed prescriber determines that an FDA-approved product does not meet that patient’s clinical needs. Compounded medications are not FDA-approved, and FDA does not review them for safety, effectiveness, or quality before marketing. Availability is subject to clinical eligibility, applicable law, and pharmacy fulfillment.';
 
         const copyrightText = isEs ? '&copy; 2026 Optimal Vitality Institute. Todos los derechos reservados.' : '&copy; 2026 Optimal Vitality Institute. All rights reserved.';
 
@@ -470,23 +470,16 @@
                     <h6 class="text-white-50 text-uppercase fw-bold mb-3" style="font-size: 0.75rem; letter-spacing: 1px;">Step 3: Select Offer & Confirm</h6>
                     
                     <div class="p-3 bg-dark bg-opacity-25 rounded border border-secondary mb-3 text-start">
-                      <span class="badge px-2 py-1 text-uppercase mb-2 text-primary" style="font-size: 0.65rem; background-color: rgba(230, 195, 129, 0.12); border: 1px solid var(--primary-color);">First-Time Welcome Offer</span>
                       <div class="form-check mb-2">
-                        <input class="form-check-input" type="radio" name="welcome_offer" id="offerFree" value="Complimentary Initial Consultation" checked>
+                        <input class="form-check-input" type="radio" name="welcome_offer" id="offerFree" value="Consultation Request" checked>
                         <label class="form-check-label text-white small" for="offerFree">
-                          Complimentary Initial Consultation
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="welcome_offer" id="offerWelcome" value="$99 New Patient Welcome Special">
-                        <label class="form-check-label text-white small" for="offerWelcome">
-                          $99 New Patient Welcome Special (Includes body composition scan)
+                          Consultation Request
                         </label>
                       </div>
                     </div>
 
                     <div class="form-check mb-3 text-start">
-                      <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes" checked required>
+                      <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes">
                       <label class="form-check-label text-white-50" for="smsOptIn" style="font-size: 0.72rem; line-height: 1.4;">
                         I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal.html#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
                       </label>
@@ -637,13 +630,7 @@
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            const smsOptIn = document.getElementById('smsOptIn');
-            const step3Error = document.getElementById('step3-error');
-
-            if (!smsOptIn.checked) {
-                step3Error.classList.remove('d-none');
-                return;
-            }
+            // SMS opt-in is optional now, so no need to require it
             step3Error.classList.add('d-none');
 
             const submitBtn = document.getElementById('submitFormBtn');

@@ -4,7 +4,7 @@
     "type": "additional",
     "tabLabel": "Advanced Labs",
     "href": "advanced-labs.html",
-    "title": "Uncover What Your Regular Bloodwork Misses",
+    "title": "Expanded Laboratory Testing Based on Clinical Need",
     "lead": "Stop guessing why you feel tired, bloated, or worn out with simple, complete doctor lab panels.",
     "description": "Standard doctor blood tests only check basic numbers. Our advanced lab tests look deep into your hormones, vitamins, gene markers (MTHFR), and heavy metals so our doctors can give you exact answers.",
     "icon": "fa-flask",
@@ -173,7 +173,7 @@
           "icon": "fa-dna",
           "name": "MTHFR Gene Variant Test",
           "tag": "Genetics",
-          "description": "Identifies C677T and A1298C gene variants to optimize your body's methylation, mood, and folate use."
+          "description": "MTHFR testing may be considered in specific clinical contexts following evaluation."
         },
         {
           "icon": "fa-apple-alt",
@@ -204,7 +204,7 @@
     "science": {
       "badge": "How It Works",
       "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
-      "body": "Standard doctor bloodwork only checks for disease red flags—not optimal health. Their 'normal' range includes sick or aging populations. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+      "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
       "bullets": [
         "Ordered & reviewed by licensed medical doctors",
         "Tests optimal vitality ranges—not just 'disease normal'",
@@ -357,9 +357,9 @@
     "type": "additional",
     "tabLabel": "Detox Protocols",
     "href": "detox.html",
-    "title": "Cleanse Your Gut & Reset Your Energy",
+    "title": "Evaluation of Persistent Gastrointestinal or Exposure-Related Symptoms",
     "lead": "Clear out mold toxins, gut bugs, and heavy fatigue so you feel light, sharp, and energized.",
-    "description": "Unexplained bloating, brain fog, and exhaustion often come from hidden mold toxins or gut bugs. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
+    "description": "Symptoms such as fatigue, bloating, and cognitive complaints have many possible causes. A clinician can evaluate whether targeted testing is appropriate. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
     "icon": "fa-leaf",
     "delay": "-2s",
     "features": [
@@ -710,9 +710,9 @@
     "type": "core",
     "tabLabel": "GLP-1 Weight Loss",
     "href": "glp-1therapies.html",
-    "title": "Lose Weight Fast Without Constant Cravings",
+    "title": "Medical Weight Management with Clinician-Guided Treatment Options",
     "lead": "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
-    "description": "No starving yourself. No crazy workouts. Our simple weekly medical treatments turn off constant food thoughts so you can burn fat while protecting your muscle.",
+    "description": "For eligible patients, prescription weight-management medications may reduce appetite and support weight loss when combined with nutrition, physical activity, and ongoing clinical monitoring.",
     "icon": "fa-weight-scale",
     "delay": "-1s",
     "features": [
@@ -724,7 +724,7 @@
     "image": "assets/images/photos/glp1-weight-loss.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided GLP-1 Medical Weight Loss — OVI Wellness",
-    "pageDescription": "Doctor-guided medical weight loss protocols in St. Petersburg, FL. Semaglutide and Tirzepatide prescriptions supervised by licensed healthcare providers.",
+    "pageDescription": "Doctor-guided medical weight loss protocols in St. Petersburg, FL. FDA-approved medications may be prescribed when indicated. supervised by licensed healthcare providers.",
     "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
     "heroSubheadline": "Prescription Semaglutide & Tirzepatide weight loss protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -790,7 +790,7 @@
         "weight": {
           "tag": "Recommended Plan",
           "name": "Doctor-Guided Fat Burn Plan",
-          "peptides": "Semaglutide or Tirzepatide Prescription",
+          "peptides": "FDA-approved medications may be prescribed when indicated.",
           "icon": "fa-weight-scale",
           "desc": "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
           "goalModifiers": {
@@ -1023,14 +1023,14 @@
     "type": "core",
     "tabLabel": "Hormone Optimization",
     "href": "hormone-optimization.html",
-    "title": "Feel Young, Strong & Full of Energy Again",
-    "lead": "Tired of feeling worn out? Our licensed doctors balance your hormones so you can thrive every day.",
+    "title": "Individualized Evaluation and Treatment for Clinically Significant Hormone Deficiency",
+    "lead": "Tired of feeling worn out? A licensed clinician evaluates symptoms, medical history, examination findings, and laboratory results to determine whether hormone therapy is appropriate.",
     "description": "When your hormones drop, you feel tired, gain weight, and lose focus. Our doctors run simple blood tests and create a custom plan to give you back your strength, focus, and drive.",
     "icon": "fa-syringe",
     "delay": "0s",
     "features": [
       "Reclaim high daily energy & focus",
-      "Build lean muscle & burn body fat",
+      "Potential treatment goals may include improvement in symptoms.",
       "Enjoy deep sleep & better mood",
       "100% doctor-checked for your safety"
     ],
@@ -1363,7 +1363,7 @@
       },
       {
         "question": "Will I get bad side effects or dangerous steroid effects?",
-        "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and side-effect free."
+        "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and adverse effects vary."
       },
       {
         "question": "How do I get started with hormone optimization?",
@@ -1376,14 +1376,14 @@
     "type": "additional",
     "tabLabel": "IV & Wellness",
     "href": "iv-wellness.html",
-    "title": "Instant Vitamin & Energy Boost",
+    "title": "IV Hydration and Nutrient Therapy",
     "lead": "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
-    "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. Feel sharp, energized, and rehydrated in under 45 minutes.",
+    "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. IV therapy can provide fluids and selected nutrients directly into the bloodstream. Clinical effects and treatment time vary by formulation and patient.",
     "icon": "fa-tint",
     "delay": "-5s",
     "features": [
       "Immediate boost in energy & mental clarity",
-      "Strengthen your immune system fast",
+      "Nutrient support",
       "100% direct vitamin absorption",
       "Relax in our luxury medical suite"
     ],
@@ -1578,7 +1578,7 @@
       "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
       "body": "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
       "bullets": [
-        "100% direct cellular absorption vs ~20% for stomach pills",
+        "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
         "Compounded fresh & prescribed by licensed medical doctors",
         "Administered by registered nurses in a relaxing clinic suite"
       ],
@@ -1729,7 +1729,7 @@
     "type": "core",
     "tabLabel": "Peptide Therapy",
     "href": "peptides.html",
-    "title": "Heal Faster & Feel Like Yourself Again",
+    "title": "Peptide-Related Consultation",
     "lead": "Supercharge your body's natural healing power to fix joint pain, recover fast, and feel full of life.",
     "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
     "icon": "fa-vial",
@@ -1743,7 +1743,7 @@
     "image": "assets/images/photos/peptide-therapy.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided Peptide Therapy — OVI Wellness",
-    "pageDescription": "Doctor-guided peptide therapy in St. Petersburg, FL. BPC-157, TB-500, and Ipamorelin protocols prescribed by licensed medical providers.",
+    "pageDescription": "Doctor-guided peptide therapy in St. Petersburg, FL. Peptide prescribed by licensed medical providers.",
     "heroHeadline": "Accelerate Healing &<br><span class=\"text-primary\">Cellular Recovery</span>",
     "heroSubheadline": "Prescription Peptide protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -1839,7 +1839,7 @@
         "pain": {
           "tag": "Recommended Joint Repair Plan",
           "name": "The Total Joint & Tissue Reset",
-          "peptides": "Prescription BPC-157 + TB-500 Protocol",
+          "peptides": "Prescription Peptide options + Peptide options Protocol",
           "icon": "fa-shield-alt",
           "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
           "goalModifiers": {
@@ -1853,7 +1853,7 @@
         "performance": {
           "tag": "Strength & Growth Plan",
           "name": "Peak Performance & Growth Stack",
-          "peptides": "Prescription Ipamorelin + Tesamorelin",
+          "peptides": "Prescription Peptide options + Tesamorelin",
           "icon": "fa-dumbbell",
           "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
           "goalModifiers": {
@@ -1881,7 +1881,7 @@
         "body": {
           "tag": "Fat Burn & Recomp Plan",
           "name": "Lean Muscle & Fat Burn Reset",
-          "peptides": "Tesamorelin + Ipamorelin Protocol",
+          "peptides": "Tesamorelin + Peptide options Protocol",
           "icon": "fa-fire",
           "desc": "Targets deep belly fat that diets miss, while protecting your lean, strong muscle.",
           "goalModifiers": {
@@ -1935,19 +1935,19 @@
       "items": [
         {
           "icon": "fa-running",
-          "name": "BPC-157 Protocol",
+          "name": "Peptide options Protocol",
           "tag": "Joint Repair",
           "description": "Targeted prescription peptide that tells your cells to repair joints, tendons, gut lining, and torn muscle tissue."
         },
         {
           "icon": "fa-kit-medical",
-          "name": "TB-500 Protocol",
+          "name": "Peptide options Protocol",
           "tag": "Tissue Healing",
-          "description": "Works alongside BPC-157 to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
+          "description": "Works alongside Peptide options to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
         },
         {
           "icon": "fa-dumbbell",
-          "name": "Ipamorelin Protocol",
+          "name": "Peptide options Protocol",
           "tag": "Growth & Sleep",
           "description": "Natural growth secretagogue that improves deep sleep, speeds up muscle recovery, and keeps bones strong."
         },
@@ -2022,7 +2022,7 @@
       },
       {
         "myth": "Is doctor-guided peptide therapy safe and legal?",
-        "reality": "Yes. All treatments we prescribe are legal, pharmacy-grade medications prescribed by licensed medical doctors following strict Florida medical standards."
+        "reality": "Yes. Treatment options are discussed during consultation. prescribed by licensed medical doctors following strict Florida medical standards."
       }
     ],
     "comparison": {
@@ -2078,19 +2078,19 @@
         {
           "name": "Joint & Tissue Repair Stack",
           "tag": "Most Popular",
-          "compounds": "BPC-157 + TB-500 Protocol",
+          "compounds": "Peptide options + Peptide options Protocol",
           "description": "Combines twin repair peptides for fast joint relief, ligament repair, and tendon healing."
         },
         {
           "name": "Growth & Lean Muscle Stack",
           "tag": "Strength Boost",
-          "compounds": "Tesamorelin + Ipamorelin Protocol",
+          "compounds": "Tesamorelin + Peptide options Protocol",
           "description": "Designed for active adults looking to burn stubborn belly fat, gain lean muscle, and sleep deeply."
         },
         {
           "name": "Total Bioenergetic Reset",
           "tag": "Full Vitality",
-          "compounds": "BPC-157 + Cellular Recovery Stack",
+          "compounds": "Peptide options + Cellular Recovery Stack",
           "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
         }
       ]
@@ -2110,7 +2110,7 @@
       },
       {
         "question": "How fast will I see results from peptide therapy?",
-        "answer": "Joint repair peptides like BPC-157 often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
+        "answer": "Joint repair peptides like Peptide options often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
       },
       {
         "question": "Can I combine peptides with TRT or hormone therapy?",
@@ -2127,7 +2127,7 @@
     "type": "additional",
     "tabLabel": "Regenerative Medicine",
     "href": "regenerative-medicine.html",
-    "title": "Fix Body Pain & Rebuild Cells Naturally",
+    "title": "PRP Consultation for Selected Musculoskeletal or Aesthetic Uses",
     "lead": "Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.",
     "description": "We use your body's own natural power to heal damaged joints, revive skin, and restore thick, healthy hair—100% doctor-prescribed without invasive surgery.",
     "icon": "fa-heartbeat",
@@ -2141,9 +2141,9 @@
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
-    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, and hair restoration supervised by licensed medical doctors.",
+    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, PRP, P-Shot, and hair restoration supervised by licensed medical doctors.",
     "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
-    "heroSubheadline": "Prescription PRP & Exosome regenerative protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroSubheadline": "Prescription PRP Regenerative Protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
       "badge": "Quick 1-Minute Assessment",
@@ -2213,7 +2213,7 @@
         "joint": {
           "tag": "Recommended Joint Repair Plan",
           "name": "Total Joint & Cellular Repair Plan",
-          "peptides": "Prescription PRP + Exosome Therapy",
+          "peptides": "Prescription PRP + PRP Therapy",
           "icon": "fa-bone",
           "desc": "Concentrates your body's natural healing factors to soothe joint inflammation and rebuild damaged tissue naturally.",
           "goalModifiers": {
@@ -2225,7 +2225,7 @@
         "hair": {
           "tag": "Hair & Scalp Plan",
           "name": "Natural Scalp & Hair Restoration",
-          "peptides": "Prescription PRP + Scalp Exosome Therapy",
+          "peptides": "Prescription PRP + Scalp PRP Therapy",
           "icon": "fa-cut",
           "desc": "Wakes up dormant hair follicles using natural growth signals to bring back thicker, fuller hair.",
           "goalModifiers": {
@@ -2288,7 +2288,7 @@
       "items": [
         {
           "icon": "fa-dna",
-          "name": "Exosome Cellular Therapy",
+          "name": "PRP Cellular Therapy",
           "tag": "Most Advanced",
           "description": "Advanced cellular signals that tell damaged cells to repair, reduce joint swelling, and rebuild healthy tissue fast."
         },
@@ -2314,20 +2314,20 @@
           "icon": "fa-leaf",
           "name": "Hair Restoration Therapy",
           "tag": "Thicker Hair",
-          "description": "PRP and exosome scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth."
+          "description": "PRP and PRP scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth."
         },
         {
           "icon": "fa-heartbeat",
           "name": "Joint & Knee Recovery",
           "tag": "Pain Relief",
-          "description": "Targeted PRP and exosome injections for knees, shoulders, and hips—so you can move without pain."
+          "description": "Targeted PRP and PRP injections for knees, shoulders, and hips—so you can move without pain."
         }
       ]
     },
     "science": {
       "badge": "How It Works",
       "headline": "Why It Works When<br><span class=\"text-primary\">Pain Pills Fail</span>",
-      "body": "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (Exosomes), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
+      "body": "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (PRP), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
       "bullets": [
         "Prescribed & performed by licensed medical doctors",
         "100% natural compounds matching your body",
@@ -2359,8 +2359,8 @@
         },
         {
           "icon": "fa-bullseye",
-          "title": "Exosome Cell Messaging",
-          "detail": "Exosomes deliver natural molecular messages that tell damaged cells exactly how to rebuild."
+          "title": "PRP Cell Messaging",
+          "detail": "PRP deliver natural molecular messages that tell damaged cells exactly how to rebuild."
         }
       ]
     },
@@ -2370,8 +2370,8 @@
         "reality": "No. Our doctors apply gentle topical numbing before any treatment so you feel comfortable. Most patients return to normal daily activities the very same day."
       },
       {
-        "myth": "Are exosomes stem cells?",
-        "reality": "No. Exosomes are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
+        "myth": "Are PRP stem cells?",
+        "reality": "No. PRP are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
       },
       {
         "myth": "Is doctor-guided regenerative medicine safe?",
@@ -2409,7 +2409,7 @@
         {
           "metric": "Treatment Type",
           "without": "Synthetic pain drugs / surgery",
-          "with": "Natural PRP & Exosomes"
+          "with": "Natural PRP & PRP"
         },
         {
           "metric": "Recovery Time",
@@ -2431,8 +2431,8 @@
         {
           "name": "Complete Joint Repair Plan",
           "tag": "Most Popular",
-          "compounds": "PRP + Exosome Protocol",
-          "description": "Our top joint protocol combining natural PRP growth factors with exosome cell signals for fast pain relief."
+          "compounds": "PRP + PRP Protocol",
+          "description": "Our top joint protocol combining natural PRP growth factors with PRP cell signals for fast pain relief."
         },
         {
           "name": "Intimacy Restoration Package",
@@ -2443,7 +2443,7 @@
         {
           "name": "Natural Hair Restoration Plan",
           "tag": "Thicker Scalp",
-          "compounds": "PRP + Scalp Exosome Therapy",
+          "compounds": "PRP + Scalp PRP Therapy",
           "description": "Dual-action scalp treatment designed to awaken sleeping hair roots and boost natural hair density."
         }
       ]
@@ -2451,14 +2451,14 @@
     "faqs": [
       {
         "question": "Do I need a doctor's consultation for regenerative medicine?",
-        "answer": "Yes. All PRP, exosome, and intimacy treatments require a medical consultation. You will talk with our licensed medical doctor who evaluates your joint, hair, or intimacy health before creating your custom plan."
+        "answer": "Yes. All PRP, PRP, and intimacy treatments require a medical consultation. You will talk with our licensed medical doctor who evaluates your joint, hair, or intimacy health before creating your custom plan."
       },
       {
         "question": "What does the doctor-guided regenerative program include?",
-        "answer": "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or exosome treatment, topical numbing for comfort, and follow-up progress check-ins."
+        "answer": "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or PRP treatment, topical numbing for comfort, and follow-up progress check-ins."
       },
       {
-        "question": "Are PRP and exosome injections painful?",
+        "question": "Are PRP and PRP injections painful?",
         "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
       },
       {
@@ -2466,8 +2466,8 @@
         "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
       },
       {
-        "question": "How do exosomes differ from stem cell treatments?",
-        "answer": "Exosomes are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing."
+        "question": "How do PRP differ from stem cell treatments?",
+        "answer": "PRP are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing."
       },
       {
         "question": "How do I get started with regenerative medicine?",
@@ -2480,7 +2480,7 @@
     "type": "additional",
     "tabLabel": "Sexual Wellness",
     "href": "sexual-wellness.html",
-    "title": "Bring Back Passion, Drive & Intimacy",
+    "title": "Confidential Sexual Health Evaluation and Treatment Options",
     "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
     "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot) and custom hormone balancing to bring back your passion and performance.",
     "icon": "fa-heart",
@@ -2762,7 +2762,7 @@
         {
           "metric": "Side Effect Risk",
           "without": "Headaches & blood pressure spikes",
-          "with": "100% safe & bio-compatible"
+          "with": "Discuss alternatives and risks & bio-compatible"
         },
         {
           "metric": "Sensory Feeling",

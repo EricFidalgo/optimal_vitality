@@ -1,327 +1,313 @@
 {
   "id": "glp-1therapies",
   "type": "core",
-  "tabLabel": "Pérdida de Peso Médica (GLP-1)",
+  "tabLabel": "Control de Peso GLP-1",
   "href": "glp-1therapies.html",
-  "title": "Pierda Peso Rápido Sin Antojos Constantes",
-  "lead": "Médicos reales guían su plan para que pierda grasa, se sienta satisfecho y mantenga la energía alta.",
-  "description": "Sin privarse de comida. Sin entrenamientos locos. Nuestros simples tratamientos médicos semanales apagan los pensamientos constantes sobre comida para que queme grasa mientras protege su músculo.",
+  "title": "Control Médico de Peso con Opciones de Tratamiento Guiadas por Médicos",
+  "lead": "Los proveedores de atención médica con licencia guían su plan para ayudarle a controlar el peso, mantener la saciedad y apoyar sus niveles de energía.",
+  "description": "Para los pacientes elegibles, los medicamentos recetados para el control de peso pueden reducir el apetito y apoyar la pérdida de peso cuando se combinan con nutrición, actividad física y monitoreo clínico continuo.",
   "icon": "fa-weight-scale",
   "delay": "-1s",
   "features": [
-    "Detenga los antojos constantes de comida",
-    "Queme grasa rebelde manteniendo el músculo",
-    "Supervisión y atención de médicos licenciados",
-    "Plan semanal simple prescrito por médicos"
+    "Control clínico del apetito y los antojos",
+    "Reducción de peso con enfoque en la protección de masa magra",
+    "Supervisión por un proveedor de atención médica con licencia",
+    "Plan clínico semanal tras una evaluación médica"
   ],
   "image": "assets/images/photos/glp1-weight-loss.jpg",
-  "ctaText": "Reserve su Consulta Médica",
-  "pageTitle": "Pérdida de Peso Médica GLP-1 Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Protocolos de pérdida de peso médica guiados por médicos en St. Petersburg, FL. Prescripciones de Semaglutida y Tirzepatida supervisadas por profesionales de la salud licenciados.",
-  "heroHeadline": "Optimización<br><span class=\"text-primary\">Metabólica</span> Redefinida",
-  "heroSubheadline": "Protocolos de pérdida de peso con Semaglutida y Tirzepatida bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
-  "heroCTA": "Reserve su Cita Médica Hoy",
+  "ctaText": "Programe su Evaluación Clínica",
+  "pageTitle": "Control Médico de Peso con Opciones de Tratamiento Guiadas por Médicos",
+  "pageDescription": "Protocolos de control médico de peso en St. Petersburg, FL. Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado, bajo supervisión de proveedores de atención médica con licencia.",
+  "heroHeadline": "Optimización<br><span class=\"text-primary\">Metabólica</span> Clínica",
+  "heroSubheadline": "Protocolos de control médico de peso supervisados por proveedores de atención médica con licencia en St. Petersburg, FL. Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado.",
+  "heroCTA": "Programe su Evaluación Clínica Hoy",
   "quiz": {
-    "badge": "Evaluación Rápida de 1 Minuto",
-    "headline": "Encuentre Su Mejor Plan de Pérdida de Peso",
-    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "badge": "Breve Evaluación Clínica",
+    "headline": "Encuentre su Plan de Control de Peso",
+    "subheadline": "Responda 3 breves preguntas para que nuestros proveedores de atención médica con licencia evalúen sus necesidades.",
     "step1": {
-      "question": "¿Cuál es su principal objetivo de peso?",
-      "sub": "Elija lo que más le importa ahora mismo.",
+      "question": "¿Cuál es su objetivo principal de peso?",
+      "sub": "Seleccione el aspecto clínico de mayor prioridad para usted.",
       "options": [
         {
           "value": "weight",
           "icon": "fa-weight",
-          "title": "Perder Peso Rápido",
-          "desc": "Quemar grasa corporal sin sentir hambre todo el día."
+          "title": "Reducción de Peso Clínica",
+          "desc": "Apoyo médico para el control del peso y regulación del apetito."
         },
         {
           "value": "metabolic",
           "icon": "fa-heartbeat",
-          "title": "Mejorar mi Energía y Salud",
-          "desc": "Acelerar el metabolismo, la energía y la salud en general."
+          "title": "Apoyo Metabólico",
+          "desc": "Apoyo para el metabolismo y la salud general bajo supervisión."
         }
       ]
     },
     "step2": {
-      "question": "¿Ha usado antes tratamientos de pérdida de peso GLP-1?",
-      "sub": "Ayuda a nuestro médico a elegir su dosis inicial.",
+      "question": "¿Ha utilizado tratamientos GLP-1 para el control de peso anteriormente?",
+      "sub": "Esta información ayuda durante su evaluación clínica.",
       "options": [
         {
           "value": "no",
           "icon": "fa-times-circle",
           "title": "Primera Vez",
-          "desc": "Nunca he probado los tratamientos GLP-1 antes."
+          "desc": "No he probado tratamientos con GLP-1 anteriormente."
         },
         {
           "value": "yes",
           "icon": "fa-check-circle",
-          "title": "Sí, Lo He Intentado",
-          "desc": "He usado Semaglutida o Tirzepatida antes."
+          "title": "Sí, lo he hecho",
+          "desc": "He utilizado tratamientos GLP-1 recetados con anterioridad."
         }
       ]
     },
     "step3": {
-      "question": "¿Cuánto peso desea perder?",
-      "sub": "Establece un cronograma simple para sus resultados.",
+      "question": "¿Cuál es su meta de reducción de peso?",
+      "sub": "Ayuda a establecer un plan clínico. Los resultados individuales varían.",
       "options": [
         {
           "value": "moderate",
           "icon": "fa-arrow-down",
-          "title": "5 a 10 kg",
-          "desc": "Pérdida de grasa dirigida para sentirse más liviano."
+          "title": "10 a 20 lbs",
+          "desc": "Reducción de peso dirigida mediante atención médica."
         },
         {
           "value": "significant",
           "icon": "fa-arrow-circle-down",
-          "title": "Más de 10 kg",
-          "desc": "Pérdida de peso importante para reconstruir su cuerpo."
+          "title": "Más de 20 lbs",
+          "desc": "Manejo integral del peso con monitoreo clínico continuo."
         }
       ]
     },
     "protocols": {
       "weight": {
-        "tag": "Plan Recomendado",
-        "name": "Plan de Quema de Grasa Guiado por Médicos",
-        "peptides": "Prescripción de Semaglutida o Tirzepatida",
+        "tag": "Plan Clínico Estándar",
+        "name": "Plan de Control de Peso Guiado",
+        "peptides": "Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado.",
         "icon": "fa-weight-scale",
-        "desc": "Un tratamiento semanal simple prescrito por un médico licenciado que apaga el hambre y ayuda a su cuerpo a quemar grasa cada día.",
+        "desc": "Un tratamiento supervisado por un proveedor de atención médica con licencia que ayuda a regular el apetito y apoyar sus objetivos de salud.",
         "goalModifiers": {
-          "moderate": "Ideal para perder 5-10 kg manteniendo su energía diaria alta.",
-          "significant": "Diseñado para más de 10 kg de pérdida de grasa con chequeos médicos paso a paso."
+          "moderate": "Enfoque clínico para metas moderadas. Los resultados individuales varían.",
+          "significant": "Manejo clínico continuo para objetivos de control de peso mayores. Los resultados individuales varían."
         },
-        "social": "Más de 100 pacientes locales están usando actualmente este plan guiado por médicos."
+        "social": "Pacientes locales actualmente participan en este protocolo de atención supervisada."
       },
       "metabolic": {
-        "tag": "Plan de Salud y Vitalidad",
-        "name": "Plan de Restablecimiento Corporal Total",
-        "peptides": "Tirzepatida + Soporte de Vitaminas",
+        "tag": "Plan de Apoyo a la Salud",
+        "name": "Plan Integral de Salud",
+        "peptides": "Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado, junto con apoyo vitamínico.",
         "icon": "fa-heartbeat",
-        "desc": "Construye un metabolismo saludable, equilibra el azúcar en sangre y mantiene su cuerpo sintiéndose joven y lleno de energía.",
+        "desc": "Apoyo clínico enfocado en el bienestar metabólico y el monitoreo de marcadores de salud.",
         "goalModifiers": {
-          "moderate": "Ayuda a corregir caídas de energía diarias y aumento de peso leve.",
-          "significant": "Restablecimiento integral para limpiar marcadores de salud y eliminar el exceso de peso."
+          "moderate": "Ayuda a apoyar la salud metabólica general bajo supervisión.",
+          "significant": "Apoyo clínico integral para personas con múltiples marcadores de salud a evaluar. Los resultados individuales varían."
         },
-        "social": "84 pacientes comenzaron este plan guiado por médicos en los últimos 90 días."
+        "social": "Varios pacientes han iniciado este protocolo clínico recientemente."
       }
     },
     "timelineMap": {
-      "no": "12–16 semanas (Plan Médico Estándar)",
-      "yes": "8–12 semanas (Plan de Seguimiento Rápido)"
+      "no": "12–16 semanas (Fase Clínica Inicial)",
+      "yes": "8–12 semanas (Fase Clínica Adaptada)"
     }
   },
   "eligibility": {
-    "badge": "¿Para Quién Es?",
-    "headline": "¿Es Usted Candidato para el Tratamiento GLP-1?",
-    "intro": "Nuestros tratamientos son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Verificamos su salud primero para asegurarnos de que obtenga el mejor plan para su cuerpo.",
-    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
-    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "badge": "Elegibilidad Médica",
+    "headline": "¿Es Candidato para el Protocolo GLP-1?",
+    "intro": "Nuestros protocolos son tratamientos recetados y supervisados por proveedores de atención médica con licencia. Realizamos una evaluación clínica inicial para determinar su elegibilidad.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo de atención lo guiará durante su evaluación clínica.",
+    "ctaText": "Programe su Evaluación Clínica Inicial",
     "items": [
       {
-        "label": "Grasa Rebelde",
-        "detail": "Adultos con más de 7 kg que perder que tienen dificultades para eliminar la grasa solo con dieta."
+        "label": "Dificultad para Reducir Peso",
+        "detail": "Adultos que buscan asistencia clínica tras encontrar limitaciones en el control de peso."
       },
       {
-        "label": "Antojos Constantes",
-        "detail": "Cualquiera cansado de pensar en comida, picar de noche o sentir hambre todo el día."
+        "label": "Gestión del Apetito",
+        "detail": "Pacientes que requieren apoyo médico para regular la ingesta y el apetito."
       },
       {
-        "label": "Metabolismo Estancado",
-        "detail": "Personas que hacen ejercicio o dieta pero no pueden bajar de peso."
+        "label": "Apoyo Metabólico",
+        "detail": "Individuos que se benefician de una evaluación clínica de su respuesta metabólica."
       },
       {
-        "label": "Quiere Preservar el Músculo",
-        "detail": "Desea perder tejido graso manteniendo su músculo fuerte y saludable."
+        "label": "Protección de Masa Magra",
+        "detail": "La pérdida de masa magra puede ocurrir. Nuestro plan de atención aborda esto mediante orientación especializada."
       },
       {
-        "label": "Listo para Atención Médica",
-        "detail": "Buscando un plan seguro prescrito por médicos con controles periódicos."
+        "label": "Supervisión Clínica",
+        "detail": "Pacientes que requieren protocolos recetados y monitoreo continuo por un profesional con licencia."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones bajo Receta",
-    "sectionHeadline": "Tratamientos Médicos Semanales Simples",
-    "sectionSubheadline": "Tratamientos semanales prescritos por médicos adaptados a su cuerpo tras una consulta médica.",
+    "badge": "Opciones Clínicas",
+    "sectionHeadline": "Protocolos de Atención Continua",
+    "sectionSubheadline": "Tratamientos recetados y adaptados tras una evaluación clínica exhaustiva.",
     "items": [
       {
         "icon": "fa-weight-scale",
-        "name": "Protocolo de Semaglutida",
-        "tag": "Más Popular",
-        "description": "Tratamiento GLP-1 bajo receta que calma las señales de hambre en su cerebro. Una dosis semanal simple para sentirse satisfecho y perder peso de manera constante."
+        "name": "Protocolo de Control de Peso",
+        "tag": "Atención Focalizada",
+        "description": "Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado, ayudando a regular las señales de apetito como parte de su plan médico."
       },
       {
         "icon": "fa-fire",
-        "name": "Protocolo de Tirzepatida",
-        "tag": "Resultados Más Rápidos",
-        "description": "Tratamiento de doble acción bajo receta que actúa sobre dos vías naturales de hambre para una pérdida de grasa aún más rápida manteniendo su energía."
+        "name": "Protocolo Metabólico Integral",
+        "tag": "Apoyo Avanzado",
+        "description": "Tratamiento recetado diseñado para abordar múltiples receptores metabólicos. Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado."
       },
       {
         "icon": "fa-dna",
-        "name": "Protocolo de Retatrutida",
-        "tag": "Nueva Generación",
-        "description": "Opción de triple acción para el peso rebelde que no ha respondido a dietas anteriores. Disponible previa evaluación médica."
+        "name": "Protocolo de Evaluación Continua",
+        "tag": "Manejo Específico",
+        "description": "Opción clínica para pacientes bajo monitoreo especializado, determinada mediante evaluación médica exhaustiva."
       },
       {
         "icon": "fa-leaf",
-        "name": "Inyecciones de Quema de Grasa y B12",
-        "tag": "Potenciador de Energía",
-        "description": "Inyecciones rápidas de vitaminas para aumentar su energía diaria, apoyar su hígado y mantener su cuerpo quemando grasa rápidamente."
+        "name": "Apoyo Nutricional B12",
+        "tag": "Complemento Clínico",
+        "description": "Suplementación vitamínica para apoyar la función metabólica y los niveles de energía durante su tratamiento."
       },
       {
         "icon": "fa-chart-line",
-        "name": "Chequeo Médico de Sangre",
-        "tag": "Seguridad Primero",
-        "description": "Análisis de laboratorio simples para que su médico pueda personalizar su dosis inicial y garantizar su salud y seguridad completas."
+        "name": "Monitoreo de Laboratorio",
+        "tag": "Revisión Médica",
+        "description": "Análisis clínicos rutinarios que permiten a su proveedor de atención médica con licencia evaluar su progreso."
       },
       {
         "icon": "fa-utensils",
-        "name": "Guía Alimentaria Simple",
-        "tag": "Comidas Fáciles",
-        "description": "Consejos alimentarios diarios fáciles diseñados para proteger su músculo fuerte mientras el peso desaparece."
+        "name": "Orientación Dietética Clínica",
+        "tag": "Apoyo a Masa Magra",
+        "description": "Dado que la pérdida de masa magra puede ocurrir, proveemos estrategias nutricionales para ayudar a proteger su salud muscular."
       }
     ]
   },
   "science": {
-    "badge": "Cómo Funciona",
-    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Dietas Fallan</span>",
-    "body": "La mayoría de las dietas fallan porque su cerebro le dice que tiene hambre. Los tratamientos con GLP-1 bajo receta envían señales naturales de saciedad a su cerebro. Come menos de forma natural sin sentirse privado o débil. Quema grasa mientras mantiene su músculo.",
+    "badge": "Mecanismo Clínico",
+    "headline": "El Enfoque Médico para la <br><span class=\"text-primary\">Salud Metabólica</span>",
+    "body": "Los medicamentos recetados GLP-1 actúan sobre los receptores que regulan el apetito. Esto asiste en la reducción de la ingesta calórica. Como la pérdida de masa magra puede ocurrir durante el control de peso, nuestro plan de atención aborda esto activamente.",
     "bullets": [
-      "Prescrito por médicos licenciados reales",
-      "Tratamiento semanal simple en casa o en la clínica",
-      "Protege el músculo para que queme grasa pura"
+      "Supervisado por proveedores de atención médica con licencia",
+      "Monitoreo clínico continuo para ajustar el tratamiento",
+      "Incluye estrategias para mitigar la pérdida de masa magra"
     ],
     "stats": [
       {
-        "value": "Satisfecho",
-        "label": "Sin antojos constantes de comida"
+        "value": "Control",
+        "label": "Gestión médica del apetito"
       },
       {
-        "value": "Fácil",
-        "label": "Plan médico semanal simple"
+        "value": "Guiado",
+        "label": "Protocolo clínico estructurado"
       },
       {
-        "value": "Seguro",
-        "label": "Supervisado por médicos y analizado en laboratorio"
+        "value": "Monitoreo",
+        "label": "Evaluación clínica periódica"
       },
       {
         "icon": "fa-user-md",
-        "label": "Certificado por Médico con Receta"
+        "label": "Atención con Licencia"
       }
     ],
     "cards": [
       {
         "icon": "fa-brain",
-        "title": "Apaga los Pensamientos de Hambre",
-        "detail": "Envía señales a su cerebro de que está satisfecho tras comidas pequeñas para que el picoteo se detenga naturalmente."
+        "title": "Regulación Neurológica del Apetito",
+        "detail": "Interactúa con los receptores de saciedad para ayudar a gestionar el consumo de alimentos."
       },
       {
         "icon": "fa-dumbbell",
-        "title": "Mantiene su Músculo Fuerte",
-        "detail": "Nuestros planes médicos protegen su músculo para que su cuerpo queme grasa como combustible."
+        "title": "Atención a la Composición Corporal",
+        "detail": "La pérdida de masa magra puede ocurrir. Nuestro plan de atención aborda esto incorporando nutrición dirigida."
       }
     ]
   },
-  "myths": [
-    {
-      "myth": "¿Tengo que morirme de hambre?",
-      "reality": "No. Nuestros planes médicos usan inyecciones semanales que apagan el hambre de forma natural. Usted come comidas normales con porciones más pequeñas sin sentirse privado."
-    },
-    {
-      "myth": "¿Solo funciona para la obesidad severa?",
-      "reality": "No. Nuestros médicos prescriben tratamientos GLP-1 para cualquier adulto con peso rebelde, antojos constantes o metabolismo lento que quiera resultados seguros."
-    },
-    {
-      "myth": "¿Los tratamientos GLP-1 guiados por médicos son seguros?",
-      "reality": "Sí. Todos los tratamientos son medicamentos aprobados por la FDA prescritos directamente por médicos licenciados siguiendo estrictas pautas médicas de Florida."
-    }
-  ],
   "comparison": {
-    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
-    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
-    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "headline": "Supervisión Clínica vs. Enfoques No Monitoreados",
+    "subheadline": "La atención proporcionada por un proveedor de atención médica con licencia asegura un protocolo estructurado.",
+    "ctaText": "Programe su Evaluación Clínica",
     "mobileStats": [
       {
         "icon": "fa-fire",
-        "label": "Quema de Grasa"
+        "label": "Control de Peso"
       },
       {
         "icon": "fa-dumbbell",
-        "label": "Músculo Preservado"
+        "label": "Masa Magra"
       },
       {
         "icon": "fa-brain",
-        "label": "Sin Hambre"
+        "label": "Regulación"
       },
       {
         "icon": "fa-chart-line",
-        "label": "Verificado por Médico"
+        "label": "Evaluación"
       }
     ],
     "rows": [
       {
-        "metric": "Nivel de Hambre",
-        "without": "Siempre hambriento y cansado",
-        "with": "Se siente satisfecho y saciado"
+        "metric": "Gestión del Apetito",
+        "without": "Difícil de controlar de forma independiente",
+        "with": "Apoyo clínico estructurado"
       },
       {
-        "metric": "Velocidad de Pérdida de Grasa",
-        "without": "Lenta y frustrante",
-        "with": "Constante y respaldada por médicos"
+        "metric": "Control de Peso",
+        "without": "Variables impredecibles",
+        "with": "Progreso monitoreado clínicamente"
       },
       {
-        "metric": "Protección del Músculo",
-        "without": "Pierde músculo y fuerza",
-        "with": "Protege el músculo mientras quema grasa"
+        "metric": "Masa Muscular",
+        "without": "Riesgo de pérdida de masa magra no abordado",
+        "with": "Estrategias para mitigar la pérdida de masa magra"
       },
       {
-        "metric": "Seguridad Médica",
-        "without": "Sin supervisión / genérico",
-        "with": "Prescrito por médicos y monitoreado en laboratorio"
+        "metric": "Supervisión",
+        "without": "Ausencia de revisión médica",
+        "with": "Monitoreado por proveedores de atención médica con licencia"
       },
       {
-        "metric": "Resultados a Largo Plazo",
-        "without": "El peso vuelve",
-        "with": "Orientación médica para mantenerlo"
+        "metric": "Apoyo Continuo",
+        "without": "Sin seguimiento a largo plazo",
+        "with": "Evaluaciones clínicas periódicas"
       }
     ],
     "stacks": [
       {
-        "name": "Plan de Pérdida de Grasa Rápida",
-        "tag": "Más Popular",
-        "compounds": "Tirzepatida + Potenciador de Vitamina B12",
-        "description": "Combina el tratamiento de doble acción bajo receta con energizantes. Diseñado para quemar grasa rápidamente manteniendo su fuerza."
+        "name": "Protocolo Clínico Integral",
+        "tag": "Apoyo Completo",
+        "compounds": "Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado + Soporte Clínico",
+        "description": "Plan estructurado enfocado en el manejo del peso con el respaldo de supervisión continua."
       },
       {
-        "name": "Plan Esencial de Pérdida de Peso",
-        "tag": "Gran Inicio",
-        "compounds": "Semaglutida + Guía Alimentaria",
-        "description": "GLP-1 bajo receta probado combinado con orientación alimentaria diaria simple. Perfecto para su primera experiencia de pérdida de peso guiada por médicos."
+        "name": "Protocolo de Intervención Primaria",
+        "tag": "Fase Inicial",
+        "compounds": "Evaluación Clínica + Guía de Nutrición",
+        "description": "Introducción médica al control de peso. Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado."
       },
       {
-        "name": "Plan Completo de Salud y Pérdida de Grasa",
-        "tag": "Restablecimiento Total",
-        "compounds": "Retatrutida + Laboratorios Médicos",
-        "description": "Tratamiento avanzado de triple acción guiado por paneles completos de salud médica para obtener los máximos resultados."
+        "name": "Protocolo de Manejo Avanzado",
+        "tag": "Monitoreo Estricto",
+        "compounds": "Supervisión Médica Extensiva + Análisis Clínicos",
+        "description": "Atención especializada mediante evaluación clínica regular y estudios de laboratorio."
       }
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito una receta médica para los tratamientos GLP-1?",
-      "answer": "Sí. Todos los tratamientos GLP-1 son medicamentos bajo receta. Se consultará con nuestro médico licenciado o proveedor de salud quien evalúa su historial médico para determinar la candidatura y prescribir el plan adecuado."
+      "question": "¿Requiero una receta médica para los tratamientos de control de peso GLP-1?",
+      "answer": "Sí. Requerirá una evaluación clínica con un proveedor de atención médica con licencia, quien determinará su elegibilidad. Se pueden recetar medicamentos aprobados por la FDA cuando esté indicado."
     },
     {
-      "question": "¿Cómo funcionan los tratamientos de pérdida de peso GLP-1?",
-      "answer": "Los tratamientos GLP-1 imitan la hormona natural de saciedad de su cuerpo. Esto reduce las señales de hambre en su cerebro para que coma naturalmente comidas más pequeñas sin sentirse privado o con antojo de bocadillos."
+      "question": "¿Cómo apoyan los tratamientos GLP-1 el control de peso?",
+      "answer": "Estos tratamientos ayudan a regular las señales de apetito, apoyando el cumplimiento de un plan de alimentación saludable bajo supervisión. Los resultados individuales varían."
     },
     {
-      "question": "¿Perderé músculo mientras pierdo peso?",
-      "answer": "No. Nuestros planes guiados por médicos incluyen consejos alimentarios simples y objetivos de proteínas para asegurarse de que su cuerpo queme tejido graso mientras protege su músculo fuerte y saludable."
+      "question": "¿Experimentaré una disminución de masa muscular?",
+      "answer": "La pérdida de masa magra puede ocurrir durante la reducción de peso. Nuestro plan de atención aborda esto integrando pautas clínicas y nutricionales para ayudar a proteger el tejido muscular."
     },
     {
-      "question": "¿Cómo empiezo?",
-      "answer": "¡Simplemente llame a nuestra clínica o reserve una cita en línea! Hablará con un médico licenciado que revisará su salud, responderá sus preguntas y comenzará su plan personalizado."
+      "question": "¿Cuál es el proceso para iniciar una evaluación?",
+      "answer": "Programe una evaluación clínica inicial. Un proveedor de atención médica con licencia revisará su historial médico para determinar el enfoque adecuado."
     }
   ]
 }

@@ -1,47 +1,47 @@
 {
-  "pageTitle": "Conocimientos Clínicos y Ciencia de la Longevidad — OVI Wellness",
+  "pageTitle": "Perspectivas Clínicas y Ciencia de la Longevidad — OVI Wellness",
   "seo": {
     "title": "Contenido Educativo y Blog de Autoridad — Optimal Vitality Institute",
-    "description": "Explore conocimientos clínicos, terapias emergentes y protocolos detallados de los expertos médicos de Optimal Vitality Institute."
+    "description": "Explore perspectivas clínicas, terapias emergentes y protocolos detallados de los expertos médicos en Optimal Vitality Institute."
   },
   "heroEyebrow": "Revista Médica y Protocolos Clínicos",
   "heroHeadline": "Perspectivas Clínicas",
-  "heroSubheadline": "Análisis profundos sobre terapias emergentes, ciencia metabólica y protocolos regenerativos de nuestro equipo médico.",
+  "heroSubheadline": "Análisis profundos de terapias emergentes, ciencia metabólica y protocolos regenerativos por parte de nuestro equipo médico.",
   "ui": {
     "readArticle": "Leer Artículo",
     "byAuthor": "Por",
     "emptyBlog": "Vuelva pronto para ver nuevo contenido educativo.",
-    "articleNotFound": "Artículo No Encontrado",
+    "articleNotFound": "Artículo no encontrado",
     "articleNotFoundDesc": "El artículo clínico que busca no existe o ha sido movido.",
-    "returnToBlog": "Volver al Blog",
+    "returnToBlog": "Volver al blog",
     "readyTitle": "¿Listo para optimizar su salud?",
-    "readyDesc": "Programe una consulta clínica integral para analizar si esta terapia es adecuada para usted.",
-    "bookConsultation": "Reservar Consulta",
+    "readyDesc": "Programe una consulta clínica integral para determinar si esta terapia es adecuada para usted.",
+    "bookConsultation": "Programar consulta",
     "sections": {
       "consumerSafety": "Seguridad del Consumidor",
-      "candidacyRequirements": "Requisitos de Elegibilidad",
+      "candidacyRequirements": "Requisitos de Candidatura",
       "timelineExpectations": "Expectativas de Tiempo",
       "expectedResults": "Resultados Esperados",
-      "downtime": "Tiempo de Recuperación",
+      "downtime": "Tiempo de Inactividad Potencial",
       "clinicalRisks": "Riesgos Clínicos"
     }
   },
   "posts": [
     {
       "id": "what-is-retatrutide",
-      "title": "¿Qué es la Retatrutida? La Próxima Evolución en Medicina Metabólica",
+      "title": "¿Qué es la Retatrutida? La próxima evolución en la medicina metabólica",
       "category": "Pérdida de Peso Médica",
       "author": "Dr. Marcus Vance, MD",
-      "date": "04 de junio, 2026",
-      "excerpt": "Una visión clínica completa sobre la Retatrutida, su mecanismo triple agonista y lo que significa para el futuro de la recomposición corporal.",
+      "date": "04 de junio de 2026",
+      "excerpt": "Una descripción clínica integral de la Retatrutida, su mecanismo de triple agonista y lo que significa para el futuro de la recomposición corporal.",
       "content": {
-        "overview": "La Retatrutida representa un cambio de paradigma en el control médico del peso. A diferencia de las generaciones anteriores de terapias que se dirigían a uno o dos receptores (como la semaglutida o la tirzepatida), la retatrutida es un triple agonista. Se dirige simultáneamente a los receptores GLP-1, GIP y Glucagón. Este enfoque sinérgico no solo suprime el apetito y mejora la sensibilidad a la insulina, sino que aumenta significativamente la tasa metabólica basal y la eliminación de grasa hepática.",
-        "consumerSafety": "La Retatrutida se encuentra actualmente en ensayos clínicos de fase avanzada y aún no ha sido aprobada por la FDA para la pérdida de peso general. Como péptido obtenido de farmacias de formulación magistral en ciertos entornos clínicos, su uso debe ser estrictamente supervisado. Los protocolos de seguridad requieren paneles metabólicos basales completos, evaluación cardiovascular y chequeos médicos mensuales para monitorear posibles complicaciones pancreáticas o tiroideas.",
-        "candidacyRequirements": "Los candidatos ideales son personas con un IMC > 30, o > 27 con comorbilidades relacionadas con la obesidad (como diabetes tipo 2, hipertensión o dislipidemia severa) que se hayan estancado con agonistas dobles como la tirzepatida. Esta terapia está contraindicada para pacientes con antecedentes personales o familiares de carcinoma medular de tiroides o síndrome de Neoplasia Endocrina Múltiple tipo 2 (MEN 2).",
-        "timelineExpectations": "La titulación es gradual para mitigar las molestias gastrointestinales. Los pacientes suelen comenzar con una microdosis de 1 mg por semana durante cuatro semanas, aumentando lentamente a lo largo de 6 a 8 meses. La máxima optimización metabólica y la reducción significativa de peso se observan generalmente entre los meses 6 y 11.",
-        "downtime": "No requiere tiempo de recuperación física. Los pacientes se administran la inyección subcutánea una vez a la semana. Sin embargo, puede haber fatiga leve o náuseas dentro de las 24 a 48 horas posteriores a la inyección durante las fases de incremento inicial de la dosis.",
-        "expectedResults": "Los datos clínicos de fase 2 sugieren una eficacia sin precedentes, logrando que los pacientes alcancen una pérdida media del 24.2% del peso corporal en 48 semanas. Más allá de la pérdida de peso, las expectativas clínicas estándar incluyen mejoras profundas en los perfiles lipídicos, la sensibilidad a la insulina y la reducción de la grasa hepática (que a menudo supera el 80% de eliminación).",
-        "clinicalRisks": "Los eventos adversos más comunes son gastrointestinales: náuseas, diarrea, vómitos y estreñimiento, los cuales generalmente dependen de la dosis y son transitorios. Los riesgos más graves, aunque raros, incluyen pancreatitis, enfermedad de la vesícula biliar, hipoglucemia (si se combina con otros antidiabéticos) y posible elevación de la frecuencia cardíaca."
+        "overview": "La retatrutida representa un cambio de paradigma en el manejo médico del peso. A diferencia de las generaciones anteriores de terapias que se dirigían a uno o dos receptores (como la semaglutida o la tirzepatida), la retatrutida es un agonista 'triple G'. Se dirige a los receptores GLP-1, GIP y glucagón simultáneamente. Este enfoque sinérgico no solo suprime el apetito y mejora la sensibilidad a la insulina, sino que aumenta significativamente la tasa metabólica basal y la eliminación de grasa hepática.",
+        "consumerSafety": "La retatrutida se encuentra actualmente en ensayos clínicos de última fase y aún no está aprobada por la FDA para la pérdida de peso general. Como un péptido de farmacia de formulación magistral en ciertos entornos clínicos, su uso debe ser estrictamente monitorizado. Los protocolos de seguridad requieren paneles metabólicos de referencia completos, exámenes cardiovasculares y controles mensuales con un proveedor de atención médica con licencia para monitorizar posibles complicaciones pancreáticas o tiroideas.",
+        "candidacyRequirements": "Los candidatos ideales son personas con un IMC > 30, o > 27 con comorbilidades relacionadas con la obesidad (como diabetes tipo 2, hipertensión o dislipidemia grave) que se han estancado con agonistas duales como la tirzepatida. Esta terapia está contraindicada para pacientes con antecedentes personales o familiares de carcinoma medular de tiroides o síndrome de neoplasia endocrina múltiple tipo 2 (MEN 2).",
+        "timelineExpectations": "La titulación es gradual para mitigar el malestar gastrointestinal. Los pacientes generalmente comienzan con una microdosis de 1 mg semanal durante cuatro semanas, aumentando lentamente durante 6 a 8 meses. La optimización metabólica máxima y la reducción de peso significativa se observan generalmente entre los meses 6 y 11.",
+        "downtime": "Hay cero tiempo de inactividad físico. Los pacientes se administran la inyección subcutánea una vez a la semana. Sin embargo, puede ocurrir fatiga leve o náuseas dentro de las 24 a 48 horas posteriores a la inyección durante las fases iniciales de aumento de la dosis.",
+        "expectedResults": "Los datos clínicos de la fase 2 sugieren una eficacia sin precedentes, y los pacientes logran una pérdida de peso corporal promedio del 24.2% durante 48 semanas. Más allá de la pérdida de peso, se esperan profundas mejoras en los perfiles de lípidos, la sensibilidad a la insulina y la reducción de grasa hepática (que a menudo supera el 80% de eliminación) como expectativas clínicas estándar. Los resultados individuales varían.",
+        "clinicalRisks": "Los eventos adversos más comunes son gastrointestinales: náuseas, diarrea, vómitos y estreñimiento, que generalmente dependen de la dosis y son transitorios. Los riesgos más graves, aunque poco frecuentes, incluyen pancreatitis, enfermedad de la vesícula biliar, hipoglucemia (si se combina con otros agentes antidiabéticos) y posible elevación de la frecuencia cardíaca."
       }
     },
     {
@@ -49,101 +49,101 @@
       "title": "Los Beneficios Clínicos de la Terapia de Péptidos",
       "category": "Terapia de Péptidos",
       "author": "Sarah Jenkins, FNP-C",
-      "date": "02 de julio, 2026",
-      "excerpt": "Cómo las secuencias de aminoácidos dirigidas están revolucionando la medicina regenerativa, la modulación inmunológica y la reparación tisular.",
+      "date": "02 de julio de 2026",
+      "excerpt": "Cómo las secuencias de aminoácidos dirigidas están revolucionando la medicina regenerativa, la modulación inmunológica y la reparación de tejidos.",
       "content": {
-        "overview": "Los péptidos son cadenas cortas de aminoácidos que actúan como moléculas de señalización precisas dentro del cuerpo. A diferencia de los fármacos de amplio espectro, la terapia de péptidos proporciona instrucciones altamente dirigidas a las células, estimulándolas para liberar hormonas de crecimiento, reducir la inflamación o acelerar la reparación de tejidos. Al utilizar estructuras bioidénticas, podemos 'reprogramar' la función celular hacia un estado más juvenil.",
-        "consumerSafety": "El perfil de seguridad de los péptidos de grado clínico y formulación farmacéutica es excelente debido a su naturaleza bioidéntica: imitan moléculas que su cuerpo ya produce. El mayor riesgo para los consumidores proviene del mercado ilícito de péptidos 'químicos de investigación', que frecuentemente contienen impurezas peligrosas, endotoxinas y dosificaciones incorrectas. Utilizamos exclusivamente instalaciones de formulación magistral reguladas por la FDA (503B).",
-        "candidacyRequirements": "La elegibilidad depende totalmente del protocolo de péptidos específico. Por ejemplo, BPC-157 es ideal para personas que se recuperan de lesiones de tejidos blandos o dolor articular, mientras que CJC-1295/Ipamorelin es adecuado para pacientes que buscan recomposición corporal, mejor sueño y optimización natural de la hormona del crecimiento. Se requieren análisis de sangre completos.",
-        "timelineExpectations": "Los péptidos no son soluciones farmacéuticas inmediatas; son terapias regenerativas. La mayoría de los protocolos requieren inyecciones subcutáneas diarias o administración oral durante 8 a 12 semanas. Las mejoras notables en el sueño y la recuperación suelen ocurrir para la semana 3, mientras que los cambios estructurales se manifiestan cerca de la semana 8.",
-        "downtime": "Cero tiempo de inactividad. Las inyecciones subcutáneas utilizan una jeringa de insulina pequeña e indolora. Los pacientes continúan con sus actividades diarias sin interrupción.",
-        "expectedResults": "Los resultados dependen del péptido. Los secretagogos de hormona de crecimiento (CJC/Ipamorelin) producen un sueño profundo mejorado, mayor retención de masa muscular magra y recuperación acelerada. Los péptidos de soporte (BPC-157/TB-500) demuestran utilidad clínica para la salud articular y la recuperación de tendones y ligamentos.",
-        "clinicalRisks": "Los riesgos son mínimos bajo supervisión clínica. Las reacciones en el sitio de inyección (enrojecimiento o picazón leve) son la queja más común. Dependiendo de la secuencia, puede producirse una retención de líquidos menor o pequeños aumentos en el azúcar en sangre, razón por la cual el monitoreo médico es fundamental."
+        "overview": "Los péptidos son cadenas cortas de aminoácidos que actúan como moléculas de señalización precisas dentro del cuerpo. A diferencia de los productos farmacéuticos de amplio espectro, la terapia con péptidos proporciona instrucciones altamente dirigidas a las células, impulsándolas a liberar hormonas de crecimiento, reducir la inflamación o acelerar la reparación de tejidos. Al utilizar estructuras bioidénticas, esencialmente podemos 'reprogramar' la función celular a un estado más juvenil.",
+        "consumerSafety": "El perfil de seguridad de los péptidos compuestos en farmacia de grado clínico es excelente debido a su naturaleza bioidéntica: imitan las moléculas que su cuerpo ya produce. El mayor riesgo de seguridad para los consumidores es el mercado ilícito de péptidos de 'productos químicos de investigación', que con frecuencia contienen impurezas peligrosas, endotoxinas y dosis incorrectas. Utilizamos exclusivamente instalaciones de externalización reguladas estrictamente (503B) para nuestras formulaciones.",
+        "candidacyRequirements": "La candidatura depende completamente del protocolo de péptidos específico. Por ejemplo, las opciones de péptidos son ideales para personas que se recuperan de lesiones de tejidos blandos o dolor en las articulaciones, mientras que CJC-1295 y otras opciones de péptidos son adecuadas para pacientes que buscan recomposición corporal, mejor sueño y optimización natural de la hormona del crecimiento. Se requieren análisis de sangre completos para hacer coincidir la secuencia correcta de péptidos con el déficit fisiológico.",
+        "timelineExpectations": "Los péptidos no son soluciones farmacéuticas inmediatas; son terapias regenerativas. La mayoría de los protocolos requieren inyecciones subcutáneas diarias o administración oral durante 8 a 12 semanas para lograr una señalización celular en estado estacionario. Mejoras notables en el sueño y la recuperación a menudo ocurren hacia la semana 3, mientras que los cambios estructurales (reparación de tejidos, pérdida de grasa) se manifiestan más cerca de la semana 8.",
+        "downtime": "No hay tiempo de inactividad físico. Las inyecciones subcutáneas utilizan una pequeña jeringa de insulina indolora. Los pacientes continúan con su vida diaria y rutinas de ejercicio sin interrupción.",
+        "expectedResults": "Los resultados son altamente específicos de los péptidos. Los secretagogos de la hormona del crecimiento (CJC/opciones de péptidos) producen un sueño profundo mejorado, una mejor retención de masa muscular magra y una recuperación acelerada. Los péptidos de apoyo (opciones de péptidos/opciones de péptidos) demuestran utilidad clínica al ayudar con la salud de las articulaciones y respaldar la recuperación de tendones, ligamentos y el revestimiento intestinal. Los resultados individuales varían.",
+        "clinicalRisks": "Los riesgos son generalmente mínimos cuando se supervisan clínicamente. Las reacciones en el lugar de la inyección (enrojecimiento leve o picazón) son la queja más común. Dependiendo de la secuencia, puede ocurrir una retención de agua menor o aumentos leves en el nivel de azúcar en la sangre, por lo que el monitoreo por parte de un proveedor de atención médica con licencia y los ciclos (por ejemplo, 3 meses de uso, 1 mes de descanso) son componentes críticos de un protocolo seguro."
       }
     },
     {
       "id": "trt-myths",
-      "title": "Desmitificando el TRT: Lo Que los Hombres Deben Saber",
+      "title": "Desmintiendo Mitos de la TRT: Lo que los hombres deben saber",
       "category": "Optimización Hormonal",
       "author": "Dr. Marcus Vance, MD",
-      "date": "15 de julio, 2026",
-      "excerpt": "Separando la realidad clínica de los mitos de internet sobre la Terapia de Reemplazo de Testosterona y la salud cardiovascular.",
+      "date": "15 de julio de 2026",
+      "excerpt": "Separando los hechos clínicos de la ficción en internet sobre la Terapia de Reemplazo de Testosterona y la salud cardiovascular.",
       "content": {
-        "overview": "La Terapia de Reemplazo de Testosterona (TRT) es una de las modalidades más incomprendidas de la medicina moderna. A menudo confundida con el abuso de esteroides anabólicos, la TRT clínica se enfoca en restaurar el nivel fisiológico básico del hombre a niveles óptimos. Cuando se administra correctamente, ayuda a aliviar los síntomas del hipogonadismo (letargo, pérdida muscular, depresión y disfunción eréctil) mientras respalda la salud sistémica.",
-        "consumerSafety": "La TRT clínica moderna es sumamente segura cuando se guía por análisis de laboratorio de precisión. La seguridad requiere un monitoreo continuo de conteos sanguíneos completos (hematocrito), antígeno prostático específico (PSA), estradiol y marcadores cardiovasculares para garantizar que el protocolo siga siendo terapéutico.",
-        "candidacyRequirements": "La elegibilidad se determina estrictamente mediante serología completa (análisis de sangre) y síntomas clínicos. El paciente debe demostrar dos niveles independientes de testosterona total matutina en ayunas por debajo de los rangos óptimos.",
-        "timelineExpectations": "Los beneficios psicológicos y metabólicos siguen una cronología predecible. La libido, el estado de ánimo y el sueño suelen mejorar dentro de las 3 a 4 semanas. Los cambios en la composición corporal y la densidad mineral ósea requieren entre 3 y 6 meses de terapia constante.",
-        "downtime": "La TRT no requiere tiempo de recuperación. La terapia se integra sin problemas mediante microinyecciones dos veces por semana, cremas magistrales diarias o implantes de pellets.",
-        "expectedResults": "Los pacientes pueden esperar un retorno profundo de la vitalidad: mayor impulso cognitivo, estado de ánimo estable, recuperación muscular acelerada, reducción de la grasa visceral y restauración de la función sexual.",
-        "clinicalRisks": "Los principales riesgos clínicos incluyen la policitemia secundaria (espesamiento de la sangre), que se maneja fácilmente mediante ajustes de dosis. Otros riesgos incluyen una posible exacerbación de la apnea del sueño y atrofia testicular leve (prevenible con terapia concomitante con HCG)."
+        "overview": "La Terapia de Reemplazo de Testosterona (TRT) es una de las modalidades peor entendidas en la medicina moderna. A menudo confundida con el abuso de esteroides anabólicos, la TRT clínica se trata fundamentalmente de restaurar la línea base fisiológica de un hombre a niveles óptimos. Cuando se administra correctamente, está diseñada para ayudar a aliviar los síntomas del hipogonadismo (incluyendo letargo, pérdida de masa muscular, depresión y disfunción eréctil) al tiempo que apoya la salud sistémica.",
+        "consumerSafety": "La TRT clínica moderna es muy segura cuando se guía por análisis de laboratorio de precisión. El enfoque generalizado de recetar dosis idénticas de testosterona a cada paciente es obsoleto y no es seguro. La seguridad requiere un monitoreo continuo de hemogramas completos (hematocrito), antígeno prostático específico (PSA), estradiol y marcadores cardiovasculares para asegurar que el protocolo se mantenga completamente terapéutico y nunca suprafisiológico.",
+        "candidacyRequirements": "La candidatura se determina estrictamente mediante serología integral (análisis de sangre) y evaluación clínica. Un paciente debe demostrar dos niveles matutinos de testosterona total en ayunas por debajo de los rangos óptimos (a menudo < 500 ng/dL, dependiendo de la edad y los niveles de testosterona libre), junto con síntomas clínicos de deficiencia de andrógenos. No se receta simplemente para el rendimiento atlético.",
+        "timelineExpectations": "Los beneficios psicológicos y metabólicos de la TRT siguen una línea de tiempo predecible. Las mejoras en la libido, el estado de ánimo y el sueño se notan típicamente entre 3 y 4 semanas. Los cambios en la composición corporal, el aumento de la densidad mineral ósea y las mejoras máximas en la función eréctil a menudo requieren de 3 a 6 meses de terapia constante para materializarse por completo.",
+        "downtime": "La TRT no implica tiempo de inactividad. La terapia se integra sin problemas en la rutina del paciente a través de microinyecciones dos veces por semana, cremas de formulación magistral diarias o inserciones de pellets. Se recomienda encarecidamente el ejercicio regular y una dieta limpia inmediatamente después de comenzar.",
+        "expectedResults": "Los pacientes pueden esperar un profundo retorno de vitalidad. Esto incluye un impulso cognitivo mejorado, estado de ánimo estabilizado, recuperación acelerada del ejercicio, aumento de la masa muscular magra, reducción de la grasa corporal visceral y función sexual restaurada. Es esencialmente una restauración de la resiliencia fisiológica asociada con los últimos años de la década de los 20 de un hombre. Los resultados individuales varían.",
+        "clinicalRisks": "Los riesgos clínicos principales involucran la policitemia secundaria (espesamiento de la sangre debido a un aumento en la producción de glóbulos rojos), que se maneja fácilmente mediante el ajuste de la dosis o la flebotomía terapéutica. Otros riesgos incluyen la posible exacerbación de la apnea del sueño, atrofia testicular leve (prevenible con la terapia simultánea con HCG) y fluctuaciones en los niveles de estrógeno."
       }
     },
     {
       "id": "precision-biomarker-testing",
-      "title": "Por Qué los Análisis de Sangre Estándar No Muestran el Cuadro Completo: El Enfoque de Biomarcadores de Precisión",
-      "category": "Laboratorios Avanzados",
+      "title": "Por Qué los Análisis de Sangre Estándar No Muestran el Panorama Completo: El Enfoque de Biomarcadores de Precisión",
+      "category": "Diagnósticos Avanzados",
       "author": "Dr. Marcus Vance, MD",
-      "date": "22 de julio, 2026",
-      "excerpt": "Cómo los paneles metabólicos, endocrinos e inflamatorios completos descubren las causas fundamentales de disfunción antes de que se manifieste la enfermedad.",
+      "date": "22 de julio de 2026",
+      "excerpt": "Cómo los paneles metabólicos, endocrinos e inflamatorios completos revelan las causas fundamentales de la disfunción antes de que se manifieste la enfermedad.",
       "content": {
-        "overview": "Los paneles de laboratorio anuales estándar suelen buscar enfermedades patológicas visibles en lugar de la optimización funcional. Los paneles de biomarcadores de precisión evalúan más de 80 biomarcadores específicos (incluidas subfracciones lipídicas avanzadas, marcadores inflamatorios como la hs-CRP, insulina en ayunas, cascadas hormonales y niveles de micronutrientes).",
-        "consumerSafety": "Los paneles sanguíneos completos son totalmente no invasivos y solo requieren una venopunción de rutina en ayunas. La seguridad implica garantizar una interpretación clínica adecuada por parte de proveedores médicos experimentados.",
-        "candidacyRequirements": "Recomendado para cualquier persona que busque longevidad proactiva, optimización metabólica o que sufra de fatiga inexplicable, resistencia al peso o lentitud cognitiva a pesar de resultados 'normales'.",
-        "timelineExpectations": "La toma de muestra toma menos de 15 minutos. Los resultados diagnósticos completos y la consulta médica se completan en un plazo de 7 a 10 días hábiles.",
-        "downtime": "Cero tiempo de inactividad. Extracción de sangre de rutina con breve presión aplicada en el sitio de punción.",
-        "expectedResults": "Un mapa biológico basal de su salud metabólica, hormonal y cardiovascular, que da como resultado un plan de tratamiento personalizado.",
-        "clinicalRisks": "Riesgos mínimos limitados a hematomas leves localizados o sensibilidad temporal en el sitio de extracción."
+        "overview": "Los paneles de laboratorio anuales estándar generalmente prueban la presencia de enfermedades evidentes en lugar de la optimización funcional. Los paneles de biomarcadores de precisión evalúan más de 80 biomarcadores específicos, incluidas las subfracciones de lípidos avanzadas, los marcadores inflamatorios como la proteína C reactiva ultrasensible (hs-CRP), la insulina en ayunas, las cascadas hormonales y los niveles de micronutrientes. Estos datos granulares permiten a los médicos identificar cuellos de botella metabólicos y deterioro celular años antes de que se presenten los síntomas.",
+        "consumerSafety": "Los paneles de sangre completos son completamente no invasivos y requieren solo una punción venosa de rutina en ayunas. La seguridad implica garantizar una interpretación clínica adecuada por parte de proveedores de atención médica con licencia experimentados que analizan las interacciones de los biomarcadores en lugar de ver los valores de laboratorio de forma aislada.",
+        "candidacyRequirements": "Recomendado para cualquier individuo que busque longevidad proactiva, optimización metabólica o aquellos que sufren de fatiga inexplicable, resistencia al peso o lentitud cognitiva a pesar de los resultados de laboratorio estándar 'normales'.",
+        "timelineExpectations": "La recolección de muestras de laboratorio toma menos de 15 minutos. Los resultados de los diagnósticos integrales y los protocolos detallados de consulta dirigidos por médicos se completan en 7 a 10 días hábiles.",
+        "downtime": "Cero tiempo de inactividad. Extracción de sangre de rutina con breve presión aplicada en el lugar de la punción venosa.",
+        "expectedResults": "Un mapa biológico de referencia de su salud metabólica, hormonal y cardiovascular, que conduce a un plan de tratamiento clínico personalizado diseñado específicamente para su genética y bioquímica. Los resultados individuales varían.",
+        "clinicalRisks": "Riesgos mínimos limitados a hematomas localizados menores o sensibilidad temporal en el sitio de extracción de sangre."
       }
     },
     {
       "id": "glp-1-side-effects",
-      "title": "Guía para el Paciente sobre los Efectos Secundarios de los GLP-1",
+      "title": "Navegando los Efectos Secundarios del GLP-1: Una Guía para Pacientes",
       "category": "Pérdida de Peso Médica",
       "author": "Sarah Jenkins, FNP-C",
-      "date": "02 de agosto, 2026",
-      "excerpt": "Cómo manejar, mitigar y prevenir los efectos secundarios gastrointestinales comunes durante las terapias con agonistas de receptores GLP-1 y GIP.",
+      "date": "02 de agosto de 2026",
+      "excerpt": "Cómo manejar, mitigar y prevenir los efectos secundarios gastrointestinales comunes durante las terapias con agonistas de los receptores GLP-1 y GIP.",
       "content": {
-        "overview": "Los agonistas de receptores GLP-1 (como la semaglutida y la tirzepatida) han revolucionado el tratamiento de la obesidad. Al imitar las hormonas intestinales, retrasan el vaciado gástrico y señalan saciedad al cerebro. Comprender cómo manejar estos síntomas garantiza un proceso cómodo y exitoso.",
-        "consumerSafety": "Los medicamentos GLP-1 son fármacos metabólicos potentes y deben tomarse bajo estricta supervisión clínica. Su uso seguro requiere una titulación cuidadosa de la dosis, paneles metabólicos de rutina y evaluaciones tiroideas.",
-        "candidacyRequirements": "Los candidatos son personas con un IMC de 30 o superior, o 27 con condiciones relacionadas con la obesidad, comprometidos con una terapia metabólica a largo plazo.",
-        "timelineExpectations": "Los efectos secundarios son más comunes durante las fases iniciales de incremento de dosis. La mayoría de los pacientes experimentan síntomas leves y transitorios que se resuelven en 1 a 2 semanas.",
-        "downtime": "No hay tiempo de inactividad física. La inyección se administra por vía subcutánea una vez por semana.",
-        "expectedResults": "Pérdida constante de peso promedio del 15% al 20% del peso corporal total en 40 a 52 semanas, junto con mejoras significativas en la presión arterial y el control glucémico.",
-        "clinicalRisks": "Los riesgos comunes incluyen náuseas, vómitos, diarrea, estreñimiento y fatiga. Los riesgos raros incluyen pancreatitis o deshidratación severa."
+        "overview": "Los agonistas de los receptores GLP-1 (como la semaglutida y la tirzepatida) han revolucionado el tratamiento de la obesidad y el síndrome metabólico. Al imitar las hormonas intestinales, retrasan el vaciado gástrico y envían señales de saciedad al cerebro. Sin embargo, esta digestión más lenta puede desencadenar efectos secundarios gastrointestinales. Entender cómo manejar estos síntomas asegura un progreso de pérdida de peso cómodo y exitoso.",
+        "consumerSafety": "Los medicamentos GLP-1 son fármacos metabólicos potentes y deben tomarse bajo estricta supervisión clínica. El uso seguro requiere una titulación cuidadosa de la dosis, paneles metabólicos de rutina, pruebas de enzimas pancreáticas y revisión de antecedentes personales o familiares de afecciones tiroideas específicas. Comprar compuestos no verificados en línea sin supervisión médica es altamente inseguro.",
+        "candidacyRequirements": "Los candidatos son personas con un IMC de 30 o mayor, o 27 o mayor con condiciones relacionadas con la obesidad (como hipertensión o colesterol alto), que se comprometen con una terapia metabólica a largo plazo. Este tratamiento está contraindicado para pacientes con antecedentes personales o familiares de carcinoma medular de tiroides o MEN 2.",
+        "timelineExpectations": "Los efectos secundarios son más comunes durante las fases iniciales de aumento de la dosis. La mayoría de los pacientes experimentan síntomas leves y transitorios que se resuelven dentro de 1 a 2 semanas después de comenzar un nuevo nivel de dosis. Una vía típica de titulación clínica abarca de 16 a 20 semanas para alcanzar la dosis de mantenimiento óptima.",
+        "downtime": "Hay cero tiempo de inactividad físico. La inyección se administra por vía subcutánea una vez a la semana. Los pacientes pueden regresar inmediatamente al trabajo y a actividades ligeras, aunque descansar el día de la inyección puede ayudar si se presenta fatiga leve o náuseas.",
+        "expectedResults": "Al manejar exitosamente los efectos secundarios, los pacientes pueden esperar una pérdida de peso constante con un promedio del 15% al ​​20% del peso corporal total en un período de 40 a 52 semanas, junto con mejoras significativas en la presión arterial, la circunferencia de la cintura y el control glucémico. Los resultados individuales varían.",
+        "clinicalRisks": "Los riesgos clínicos comunes incluyen náuseas, vómitos, diarrea, estreñimiento, reflujo ácido y fatiga. Si bien generalmente son leves, los riesgos graves pero poco frecuentes incluyen pancreatitis, enfermedad aguda de la vesícula biliar, deshidratación grave debido al vómito o hipoglucemia cuando se combina con otros medicamentos para la diabetes."
       }
     },
     {
-      "id": "regenerative-exosome-protocols",
-      "title": "Protocolos Regenerativos con Exosomas para la Reparación Articular y de Tejidos Blandos",
+      "id": "regenerative-PRP-protocols",
+      "title": "Protocolos Regenerativos de PRP para la Reparación de Articulaciones y Tejidos Blandos",
       "category": "Medicina Regenerativa",
       "author": "Sarah Jenkins, FNP-C",
-      "date": "09 de agosto, 2026",
-      "excerpt": "Comprendiendo la señalización de vesículas extracelulares y cómo los protocolos regenerativos no quirúrgicos respaldan la curación celular.",
+      "date": "09 de agosto de 2026",
+      "excerpt": "Comprendiendo la señalización de vesículas extracelulares y cómo los protocolos regenerativos no quirúrgicos apoyan la curación celular.",
       "content": {
-        "overview": "La terapia con exosomas representa la próxima generación de la medicina regenerativa. Los exosomas son vesículas extracelulares bioidénticas secretadas por células madre que transportan microARN, factores de crecimiento y proteínas de señalización. Al dirigirse a articulaciones o tendones inflamados, actúan como mensajeros celulares que suprimen la inflamación crónica.",
-        "consumerSafety": "Las preparaciones de exosomas deben obtenerse de bancos de tejidos acreditados que cumplan con la FDA y se sometan a rigurosas pruebas de esterilidad.",
-        "candidacyRequirements": "Ideal para personas que sufren de dolor articular crónico, tendinitis, esguinces de ligamentos, osteoartritis o quienes se recuperan de procedimientos ortopédicos.",
-        "timelineExpectations": "La señalización biológica inicial comienza en cuestión de días. La regeneración tisular progresiva y la reducción del dolor se manifiestan entre 4 y 12 semanas.",
-        "downtime": "Tiempo de inactividad física mínimo. Se aconseja no realizar actividad física de alto impacto durante 48 a 72 horas.",
-        "expectedResults": "Reducción significativa de las molestias articulares, mayor movilidad y reparación acelerada del tejido conectivo.",
-        "clinicalRisks": "Hinchazón localizada o molestia leve en el sitio de inyección durante 24-48 horas."
+        "overview": "La terapia con PRP representa la próxima generación de medicina regenerativa. El PRP son vesículas extracelulares bioidénticas secretadas por células madre que transportan microARN, factores de crecimiento y proteínas de señalización. Cuando se dirigen a articulaciones inflamadas, tendones o tejidos dañados, el PRP actúa como mensajero celular que suprime la inflamación crónica y estimula la remodelación local del tejido.",
+        "consumerSafety": "Las preparaciones de PRP deben obtenerse de bancos de tejidos estrictamente acreditados que cumplan con la FDA, los cuales se someten a pruebas rigurosas de detección de donantes, pruebas de esterilidad y pruebas de ácido nucleico para garantizar productos puros y estériles, libres de desechos celulares o agentes infecciosos.",
+        "candidacyRequirements": "Ideal para personas que sufren de dolor articular crónico, tendinitis, esguinces de ligamentos, osteoartritis o aquellos que se recuperan de procedimientos ortopédicos y desean acelerar la curación sin cirugía.",
+        "timelineExpectations": "La señalización biológica inicial y la acción antiinflamatoria comienzan en unos pocos días. La regeneración progresiva del tejido y la reducción del dolor se manifiestan entre 4 y 12 semanas posteriores al procedimiento.",
+        "downtime": "Tiempo de inactividad físico mínimo. Se aconseja a los pacientes que se abstengan de realizar actividades físicas de alto impacto o entrenamiento de resistencia pesado durante 48 a 72 horas posteriores a la inyección.",
+        "expectedResults": "Reducción significativa del malestar articular, mejora de la movilidad y del rango de movimiento, y reparación acelerada del tejido conectivo microdañado. Los resultados individuales varían.",
+        "clinicalRisks": "Hinchazón localizada, dolor leve o rigidez transitoria en el sitio de inyección durante 24-48 horas. Los riesgos de infección sistémica o reacción alérgica son extremadamente raros bajo protocolos clínicos estériles."
       }
     },
     {
       "id": "cellular-detox-protocols",
-      "title": "Desintoxicación Celular: Soporte para la Depuración Hepática y Sistémica",
+      "title": "Desintoxicación Celular: Apoyo a la Eliminación Hepática y Sistémica",
       "category": "Desintoxicación y Recuperación",
       "author": "David Chen, RN",
-      "date": "14 de agosto, 2026",
-      "excerpt": "La ciencia clínica de la fijación de metales pesados, optimización del glutatión y depuración celular sistémica.",
+      "date": "14 de agosto de 2026",
+      "excerpt": "La ciencia clínica de la unión de metales pesados, la optimización del glutatión y la eliminación celular sistémica.",
       "content": {
-        "overview": "La desintoxicación celular se enfoca en optimizar las vías de desintoxicación hepática mientras neutraliza metales pesados y toxinas ambientales almacenadas en el tejido adiposo. Utilizando glutatión IV, fijadores liposomales y aminoácidos, este protocolo respalda la eliminación de toxinas y restaura la producción de ATP.",
-        "consumerSafety": "Los protocolos deben ser titulados cuidadosamente en función de la función renal y hepática. La supervisión médica garantiza una eliminación segura sin desequilibrios electrolíticos.",
-        "candidacyRequirements": "Recomendado para pacientes con inflamación sistémica, fatiga crónica, niebla mental o alta carga de metales pesados.",
-        "timelineExpectations": "Los protocolos duran de 4 a 8 semanas con infusiones semanales y agentes orales diarios. La claridad cognitiva mejora a partir de la semana 3.",
-        "downtime": "Cero tiempo de inactividad. Las infusiones se realizan en clínica en 45-60 minutos.",
-        "expectedResults": "Reducción de la inflamación sistémica, mayor agudeza mental y energía celular restaurada.",
-        "clinicalRisks": "Fatiga leve o dolor de cabeza transitorio a medida que se movilizan las toxinas."
+        "overview": "La desintoxicación celular se centra en optimizar las vías de desintoxicación del hígado de la Fase I y la Fase II mientras neutraliza los metales pesados y las toxinas ambientales almacenadas en el tejido adiposo y neural. Al utilizar glutatión intravenoso dirigido, aglutinantes liposomales y aminoácidos específicos, este protocolo apoya la eliminación sistémica de toxinas y restaura la producción de ATP mitocondrial.",
+        "consumerSafety": "Los protocolos de desintoxicación deben titularse cuidadosamente según la función renal y hepática de referencia. Una desintoxicación demasiado agresiva puede movilizar las toxinas más rápido de lo que los órganos de eliminación pueden procesarlas. La supervisión por parte de un proveedor de atención médica con licencia garantiza una eliminación segura sin desequilibrios electrolíticos ni reacciones de Herxheimer.",
+        "candidacyRequirements": "Recomendado para pacientes que presentan inflamación sistémica, síndrome de fatiga crónica, niebla mental, alta carga de metales pesados o aquellos que se someten a una optimización integral de su estilo de vida.",
+        "timelineExpectations": "Los protocolos generalmente duran de 4 a 8 semanas y consisten en infusiones intravenosas semanales junto con agentes aglutinantes orales diarios. Se notan mejoras progresivas en la claridad cognitiva y la energía hacia la tercera semana.",
+        "downtime": "Cero tiempo de inactividad. Las infusiones se completan en la clínica en 45-60 minutos, lo que permite a los pacientes reanudar su actividad normal completa inmediatamente.",
+        "expectedResults": "Reducción de la inflamación sistémica, mejora de la agudeza mental, mejora del metabolismo de la grasa hepática y restauración de la producción de energía celular. Los resultados individuales varían.",
+        "clinicalRisks": "Fatiga leve y transitoria, dolor de cabeza leve o mareos a medida que se movilizan las toxinas, todos los cuales se manejan mediante una hidratación adecuada y la titulación del aglutinante."
       }
     }
   ]

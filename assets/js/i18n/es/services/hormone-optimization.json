@@ -3,393 +3,351 @@
   "type": "core",
   "tabLabel": "Optimización Hormonal",
   "href": "hormone-optimization.html",
-  "title": "Siéntase Joven, Fuerte y Lleno de Energía Nuevamente",
-  "lead": "¿Cansado de sentirse agotado? Nuestros médicos licenciados equilibran sus hormonas para que pueda prosperar cada día.",
-  "description": "Cuando sus hormonas bajan, se siente cansado, aumenta de peso y pierde concentración. Nuestros médicos realizan análisis de sangre sencillos y crean un plan a su medida para devolverle su fuerza y vitalidad.",
+  "title": "Evaluación y Tratamiento Individualizados para la Deficiencia Hormonal Clínicamente Significativa",
+  "lead": "¿Experimenta fatiga persistente? Un proveedor de atención médica con licencia evalúa sus síntomas, historial médico, hallazgos de exámenes y resultados de laboratorio para determinar si la terapia hormonal es apropiada.",
+  "description": "Cuando los niveles hormonales disminuyen, puede experimentar fatiga, aumento de peso y falta de concentración. Nuestros proveedores de atención médica con licencia realizan análisis de sangre y desarrollan un plan de tratamiento individualizado basándose en una evaluación clínica.",
   "icon": "fa-syringe",
   "delay": "0s",
   "features": [
-    "Recupere alta energía diaria y concentración",
-    "Desarrolle músculo magro y queme grasa corporal",
-    "Disfrute de un sueño profundo y mejor estado de ánimo",
-    "100% verificado por médicos para su seguridad"
+    "Evaluación de la energía y concentración diaria",
+    "Los objetivos potenciales del tratamiento pueden incluir la mejora de los síntomas.",
+    "Apoyo clínico para los patrones de sueño y el estado de ánimo",
+    "Requiere monitoreo individualizado por un proveedor de atención médica con licencia"
   ],
   "image": "assets/images/photos/trt-therapy.jpg",
-  "ctaText": "Reservar Consulta Médica",
-  "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Terapia de hormonas bioidénticas y protocolos de TRT guiados por médicos licenciados en St. Petersburg, FL.",
-  "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Energía y Fuerza</span>",
-  "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo receta médica supervisada por Médicos Certificados en St. Petersburg, FL.",
-  "heroCTA": "Reserve Su Cita Médica Hoy",
+  "ctaText": "Programe su evaluación clínica",
+  "pageTitle": "Optimización Hormonal Supervisada — OVI Wellness",
+  "pageDescription": "Protocolos de terapia hormonal y TRT supervisados clínicamente por proveedores de atención médica con licencia en St. Petersburg, FL.",
+  "heroHeadline": "Evaluación Clínica de su<br><span class=\"text-primary\">Energía y Vitalidad</span>",
+  "heroSubheadline": "Terapia hormonal con receta médica bajo la supervisión de un proveedor de atención médica con licencia en St. Petersburg, FL.",
+  "heroCTA": "Programe su evaluación clínica hoy",
   "quiz": {
-    "badge": "Evaluación Rápida de 1 Minuto",
-    "headline": "Encuentre Su Mejor Plan Hormonal",
-    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "badge": "Evaluación Inicial",
+    "headline": "Determine sus Opciones de Terapia Hormonal",
+    "subheadline": "Responda estas preguntas para que nuestro proveedor de atención médica con licencia pueda evaluar su caso clínico.",
     "step1": {
-      "question": "¿Cuál es su mayor lucha diaria?",
-      "sub": "Elija lo que desea solucionar primero.",
+      "question": "¿Cuál es su principal inquietud de salud?",
+      "sub": "Seleccione el área que requiere evaluación clínica.",
       "options": [
         {
           "value": "energy",
           "icon": "fa-battery-quarter",
-          "title": "Baja Energía y Niebla Mental",
-          "desc": "Sentirse cansado todo el día con caídas de energía a mitad del día."
+          "title": "Baja energía y dificultad de concentración",
+          "desc": "Fatiga persistente a lo largo del día y episodios de cansancio."
         },
         {
           "value": "libido",
           "icon": "fa-fire",
-          "title": "Bajo Impulso y Pasión",
-          "desc": "Desea recuperar la intimidad, el impulso y la confianza."
+          "title": "Bajo deseo o libido",
+          "desc": "Evaluación clínica para abordar cambios en la intimidad y la motivación."
         },
         {
           "value": "muscle",
           "icon": "fa-dumbbell",
-          "title": "Peso Rebelde y Pérdida Muscular",
-          "desc": "Dificultad para ganar músculo o perder grasa abdominal."
+          "title": "Cambios en la composición corporal",
+          "desc": "Dificultades relacionadas con la masa muscular o retención de peso."
         }
       ]
     },
     "step2": {
-      "question": "¿Cuánto tiempo lleva sintiéndose así?",
-      "sub": "Ayuda a nuestro médico a elegir su plan de inicio.",
+      "question": "¿Por cuánto tiempo ha experimentado estos síntomas?",
+      "sub": "Esta información ayuda a nuestra evaluación clínica.",
       "options": [
         {
           "value": "months",
           "icon": "fa-calendar",
-          "title": "Unos Pocos Meses",
-          "desc": "Recientemente empecé a sentirme cansado o débil."
+          "title": "Algunos meses",
+          "desc": "Comencé a notar estos cambios recientemente."
         },
         {
           "value": "years",
           "icon": "fa-calendar-alt",
-          "title": "Unos Cuantos Años",
-          "desc": "Llevo mucho tiempo sintiéndome con baja energía."
+          "title": "Algunos años",
+          "desc": "He experimentado estos síntomas por un período prolongado."
         }
       ]
     },
     "step3": {
-      "question": "¿Se ha realizado análisis hormonales recientemente?",
-      "sub": "Guía a nuestro médico para solicitar sus análisis de sangre.",
+      "question": "¿Se ha realizado análisis de niveles hormonales recientemente?",
+      "sub": "La terapia hormonal requiere evaluación clínica, historial médico y pruebas de laboratorio antes de la prescripción.",
       "options": [
         {
           "value": "yes",
           "icon": "fa-vial",
-          "title": "Sí, me los he hecho",
-          "desc": "Me hice análisis de sangre en los últimos 6 meses."
+          "title": "Sí, me los he realizado",
+          "desc": "Tengo resultados de laboratorio de los últimos 6 meses."
         },
         {
           "value": "no",
           "icon": "fa-times",
-          "title": "Aún No",
-          "desc": "Necesito que el médico solicite mi análisis de laboratorio."
+          "title": "Aún no",
+          "desc": "Necesito que el proveedor de atención médica con licencia ordene mis pruebas de laboratorio."
         }
       ]
     },
     "protocols": {
       "energy": {
-        "tag": "Plan de Energía Recomendado",
-        "name": "Restablecimiento de Vitalidad y Energía Total",
-        "peptides": "Terapia Bioidéntica Recetada por Médicos",
+        "tag": "Evaluación de Energía",
+        "name": "Protocolo de Evaluación de Vitalidad",
+        "peptides": "Terapia con receta médica",
         "icon": "fa-battery-quarter",
-        "desc": "Un plan sencillo guiado por médicos que equilibra las hormonas energéticas de su cuerpo para que despierte renovado.",
+        "desc": "Un plan clínico supervisado por un proveedor de atención médica con licencia que evalúa los desequilibrios hormonales relacionados con la energía.",
         "goalModifiers": {
-          "yes": "Nuestro médico revisará sus análisis de inmediato para crear su dosis de tratamiento personalizada.",
-          "no": "Solicitaremos un análisis de sangre básico rápido para verificar sus niveles antes de comenzar."
+          "yes": "Nuestro proveedor de atención médica con licencia revisará sus laboratorios para determinar una dosis de tratamiento apropiada.",
+          "no": "Ordenaremos un análisis de sangre para evaluar sus niveles antes de iniciar cualquier tratamiento."
         },
-        "social": "Más de 90 pacientes locales utilizan actualmente este plan guiado por médicos."
+        "social": "Pacientes locales participan en este plan de evaluación clínica."
       },
       "libido": {
-        "tag": "Plan de Intimidad y Confianza",
-        "name": "Plan de Máxima Pasión e Impulso",
-        "peptides": "Terapia de Vitalidad y Hormonas Bajo Receta",
+        "tag": "Plan de Evaluación de Intimidad",
+        "name": "Manejo Clínico de Libido",
+        "peptides": "Terapia Hormonal con Receta",
         "icon": "fa-fire",
-        "desc": "Terapia médica dirigida para recuperar la energía íntima, el estado de ánimo y la resistencia diaria.",
+        "desc": "Terapia médica enfocada en el manejo de los síntomas relacionados con la intimidad y el estado de ánimo.",
         "goalModifiers": {
-          "yes": "Revisaremos sus análisis recientes para iniciar su plan rápidamente.",
-          "no": "Nuestro médico solicitará una revisión sanguínea sencilla para precisar sus necesidades exactas."
+          "yes": "Evaluaremos sus análisis de laboratorio recientes para determinar el plan adecuado.",
+          "no": "Nuestro proveedor de atención médica con licencia ordenará análisis de sangre para identificar sus necesidades clínicas."
         },
-        "social": "73 pacientes iniciaron este plan guiado por médicos en los últimos 90 días."
+        "social": "Pacientes han iniciado este plan de evaluación clínica."
       },
       "muscle": {
-        "tag": "Plan de Fuerza y Músculo Magro",
-        "name": "Restablecimiento de Cuerpo Fuerte y Quema de Grasa",
-        "peptides": "TRT y Soporte de Crecimiento Bioidéntico",
+        "tag": "Protocolo de Composición Corporal",
+        "name": "Manejo Clínico de Composición Corporal",
+        "peptides": "Soporte Médico TRT",
         "icon": "fa-dumbbell",
-        "desc": "Le ayuda a quemar grasa abdominal rebelde, desarrollar músculo magro y recuperarse rápido tras los entrenamientos.",
+        "desc": "Protocolo enfocado en la evaluación clínica para apoyar el manejo de la composición corporal.",
         "goalModifiers": {
-          "yes": "Sus análisis recientes ayudarán a nuestro médico a establecer su dosis inicial óptima de forma segura.",
-          "no": "Nuestro médico realizará sus análisis de sangre sencillos para verificar sus marcadores de testosterona y energía."
+          "yes": "Sus análisis recientes ayudarán a nuestro proveedor de atención médica con licencia a determinar una dosis clínica.",
+          "no": "Nuestro proveedor de atención médica con licencia ordenará los laboratorios necesarios para evaluar la testosterona y otros marcadores."
         },
-        "social": "Más de 100 pacientes locales se encuentran actualmente en este protocolo de fuerza."
+        "social": "Pacientes locales participan en este protocolo de evaluación."
       }
     },
     "timelineMap": {
-      "months": "8–12 semanas (Plan Médico Estándar)",
-      "years": "12–16 semanas (Plan de Restablecimiento Completo)"
+      "months": "El cronograma de tratamiento depende de la evaluación clínica. Los resultados individuales varían.",
+      "years": "El cronograma de tratamiento se determina individualmente. Los resultados individuales varían."
     }
   },
   "eligibility": {
-    "badge": "Elegibilidad de Tratamiento",
-    "headline": "¿Es Usted Candidato para la Atención Hormonal?",
-    "subheadline": "Nuestros tratamientos hormonales son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Revisamos sus análisis de sangre primero para darle la dosis exacta para su cuerpo.",
+    "badge": "¿Para quién es indicado?",
+    "headline": "¿Es candidato para el manejo hormonal?",
+    "intro": "Nuestros tratamientos requieren evaluación clínica, historial médico y análisis de laboratorio antes de la prescripción por un proveedor de atención médica con licencia. Requiere monitoreo individualizado.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su evaluación clínica.",
+    "ctaText": "Programe su evaluación clínica",
     "items": [
       {
-        "label": "Sentirse Agotado",
-        "detail": "Adultos que luchan con fatiga diaria, niebla mental, bajo impulso o peso rebelde."
+        "label": "Fatiga Persistente",
+        "detail": "Adultos que experimentan fatiga diaria, dificultad de concentración o bajo deseo."
       },
       {
         "label": "Niveles Hormonales Bajos",
-        "detail": "Cualquier persona con baja testosterona, tiroides o hormonas energéticas confirmadas por análisis de sangre."
+        "detail": "Individuos con niveles hormonales confirmados por debajo del rango óptimo mediante análisis de sangre."
       },
       {
-        "label": "Suplementos Sin Éxito",
-        "detail": "Personas que probaron vitaminas de venta libre o ejercicios sin obtener resultados reales."
+        "label": "Manejo Previo No Exitoso",
+        "detail": "Personas que buscan evaluación médica profesional para sus síntomas persistentes."
       },
       {
-        "label": "Desea Músculo y Energía",
-        "detail": "Hombres y mujeres listos para quemar grasa, mantener músculo fuerte y sentirse jóvenes nuevamente."
+        "label": "Soporte de Composición Corporal",
+        "detail": "Pacientes buscando evaluación clínica para el manejo de masa muscular y función general."
       },
       {
-        "label": "Listo para Atención Médica",
-        "detail": "Buscando un plan seguro prescrito por médicos con chequeos sanguíneos periódicos."
+        "label": "Dispuesto a Supervisión Médica",
+        "detail": "Personas que buscan un plan prescrito por un proveedor de atención médica con licencia, con monitoreo regular."
       }
-    ],
-    "callout": {
-      "title": "¿Preguntas sobre su elegibilidad?",
-      "text": "Nuestro equipo médico le guiará durante su consulta."
-    }
+    ]
   },
   "protocols": {
-    "badge": "Prescription Options",
-    "sectionHeadline": "Simple Doctor-Guided Treatments",
-    "sectionSubheadline": "Doctor-prescribed treatments tailored to your body after a medical blood check.",
+    "badge": "Opciones con Receta Médica",
+    "sectionHeadline": "Tratamientos Médicamente Supervisados",
+    "sectionSubheadline": "Tratamientos prescritos adaptados a sus necesidades tras una evaluación clínica y análisis de sangre.",
     "items": [
       {
         "icon": "fa-syringe",
-        "name": "Testosterone Therapy (TRT)",
-        "tag": "Most Popular",
-        "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+        "name": "Terapia con Testosterona (TRT)",
+        "tag": "Evaluación Médica",
+        "description": "Tratamiento de testosterona calibrado para hombres tras evaluación clínica. Rutina bajo supervisión de un proveedor de atención médica con licencia."
       },
       {
         "icon": "fa-venus",
-        "name": "Women's Bio-Identical HRT",
-        "tag": "For Women",
-        "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+        "name": "Terapia Hormonal para Mujeres",
+        "tag": "Para Mujeres",
+        "description": "Manejo médico hormonal para mujeres que buscan apoyo para los cambios de humor y la baja energía."
       },
       {
         "icon": "fa-vial",
-        "name": "Peptide Support Boosters",
-        "tag": "Cell Recovery",
-        "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+        "name": "Protocolos de Apoyo",
+        "tag": "Evaluación Celular",
+        "description": "Opciones de apoyo integradas a su plan clínico bajo supervisión médica."
       },
       {
         "icon": "fa-heart",
-        "name": "Sexual Wellness Therapy",
-        "tag": "Vitality Boost",
-        "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+        "name": "Terapia de Bienestar Sexual",
+        "tag": "Manejo de Vitalidad",
+        "description": "Tratamientos prescritos para apoyar la salud sexual según se determine en la evaluación clínica."
       },
       {
         "icon": "fa-shield-alt",
-        "name": "Thyroid & Adrenal Balance",
-        "tag": "Energy Core",
-        "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+        "name": "Manejo Tiroideo y Suprarrenal",
+        "tag": "Soporte Metabólico",
+        "description": "Soporte médico para la función tiroidea y suprarrenal basado en hallazgos clínicos."
       },
       {
         "icon": "fa-flask",
-        "name": "Doctor Blood Check",
-        "tag": "Safety First",
-        "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+        "name": "Análisis de Laboratorio Médico",
+        "tag": "Monitoreo Clínico",
+        "description": "Pruebas de laboratorio necesarias para que el proveedor de atención médica con licencia evalúe los niveles hormonales de forma apropiada."
       }
     ]
   },
   "science": {
-    "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
-    "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+    "badge": "Cómo Funciona",
+    "headline": "El Proceso de la<br><span class=\"text-primary\">Evaluación Hormonal Médica</span>",
+    "body": "El manejo hormonal aborda los desequilibrios identificados clínicamente. La terapia hormonal requiere una evaluación clínica, historial médico y pruebas de laboratorio antes de la prescripción. Los tratamientos prescritos buscan apoyar las deficiencias identificadas por su proveedor de atención médica con licencia.",
     "bullets": [
-      "Prescribed by real licensed medical doctors",
-      "100% natural bio-identical matching your body",
-      "Regular blood checks to ensure complete safety"
+      "Prescrito por un proveedor de atención médica con licencia",
+      "Adaptado a las necesidades clínicas identificadas en las pruebas",
+      "Requiere monitoreo individualizado constante"
     ],
     "stats": [
       {
-        "value": "9 out of 10",
-        "label": "Feel higher energy in 6 weeks"
+        "value": "Monitoreado",
+        "label": "Requiere monitoreo individualizado"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Clínico",
+        "label": "Supervisado por un proveedor de atención médica con licencia"
       },
       {
-        "value": "Simple",
-        "label": "Tailored to your bloodwork"
+        "value": "Adaptado",
+        "label": "Evaluado mediante análisis de sangre"
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Certificado por Receta Médica"
       }
     ],
     "cards": [
       {
         "icon": "fa-vial",
-        "title": "Based On Your Bloodwork",
-        "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+        "title": "Basado en Análisis de Laboratorio",
+        "detail": "Las dosis se calculan a partir de sus pruebas de laboratorio específicas para proporcionar un tratamiento clínico enfocado."
       },
       {
         "icon": "fa-shield-alt",
-        "title": "Natural Bio-Identical Match",
-        "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+        "title": "Tratamiento Clínico",
+        "detail": "Utilizamos hormonas prescritas basándonos en la evaluación clínica de sus necesidades."
       }
     ]
   },
   "myths": [
     {
-      "myth": "Are these synthetic steroids?",
-      "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+      "myth": "¿Son estos tratamientos esteroides destinados al culturismo?",
+      "reality": "No. La terapia hormonal se enfoca en abordar deficiencias clínicas para la salud general, bajo la estricta supervisión de un proveedor de atención médica con licencia, y no utiliza dosis para fines no médicos."
     },
     {
-      "myth": "Do I have to stay on this forever?",
-      "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+      "myth": "¿Tengo que continuar con el tratamiento indefinidamente?",
+      "reality": "El tiempo de tratamiento se basa en la evaluación clínica. Si interrumpe el tratamiento, los niveles hormonales generalmente regresarán a los valores previos al tratamiento. Requiere monitoreo individualizado."
     },
     {
-      "myth": "Is doctor-guided hormone care safe?",
-      "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+      "myth": "¿Es segura la atención hormonal supervisada?",
+      "reality": "Cualquier tratamiento médico conlleva riesgos. Requiere monitoreo individualizado. Cada tratamiento es recetado por un proveedor de atención médica con licencia y se monitorea mediante análisis de sangre regulares."
     }
   ],
   "comparison": {
-    "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
-    "ctaText": "Call Our Clinic Today",
+    "headline": "Atención Médicamente Supervisada",
+    "subheadline": "La supervisión por un proveedor de atención médica con licencia proporciona un enfoque estructurado para la evaluación hormonal.",
+    "ctaText": "Comuníquese con nuestra clínica hoy",
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "High Energy"
+        "label": "Evaluación de Energía"
       },
       {
         "icon": "fa-brain",
-        "label": "Clear Focus"
+        "label": "Evaluación de Concentración"
       },
       {
         "icon": "fa-dumbbell",
-        "label": "Lean Muscle"
+        "label": "Composición Corporal"
       },
       {
         "icon": "fa-moon",
-        "label": "Deep Sleep"
+        "label": "Evaluación de Sueño"
       }
     ],
     "rows": [
       {
-        "metric": "Daily Energy",
-        "without": "Tired all day & crashes",
-        "with": "High, steady energy all day"
+        "metric": "Manejo de Energía",
+        "without": "Sin evaluación médica",
+        "with": "Protocolo guiado clínicamente"
       },
       {
-        "metric": "Muscle & Body Fat",
-        "without": "Gains fat, loses muscle",
-        "with": "Burns fat & keeps strong muscle"
+        "metric": "Composición Corporal",
+        "without": "Sin supervisión",
+        "with": "Evaluación de composición corporal"
       },
       {
-        "metric": "Mental Clarity",
-        "without": "Brain fog & slow focus",
-        "with": "Sharp, clear thinking"
+        "metric": "Claridad Mental",
+        "without": "Fatiga persistente",
+        "with": "Apoyo clínico para la concentración"
       },
       {
-        "metric": "Sleep Quality",
-        "without": "Wakes up tired",
-        "with": "Deep, restorative sleep"
+        "metric": "Monitoreo del Sueño",
+        "without": "Despertares no evaluados",
+        "with": "Manejo de síntomas del sueño"
       },
       {
-        "metric": "Medical Safety",
-        "without": "Unmonitored / OTC pills",
-        "with": "Doctor-prescribed & blood checked"
+        "metric": "Supervisión Médica",
+        "without": "Sin control",
+        "with": "Receta por proveedor de atención médica con licencia"
       }
     ],
     "stacks": [
       {
-        "name": "Male Performance Plan",
-        "tag": "Most Popular",
-        "compounds": "TRT + Recovery Peptide Stack",
-        "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+        "name": "Plan de Evaluación Masculina",
+        "tag": "Evaluación Médica",
+        "compounds": "Protocolo TRT",
+        "description": "Protocolo de testosterona prescrito tras evaluación clínica para apoyar los niveles hormonales. Los resultados individuales varían."
       },
       {
-        "name": "Women's Balance Plan",
-        "tag": "For Women",
-        "compounds": "Estrogen + Progesterone + Low-Dose T",
-        "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+        "name": "Plan de Evaluación Femenina",
+        "tag": "Para Mujeres",
+        "compounds": "Evaluación de Estrógeno y Progesterona",
+        "description": "Terapia hormonal enfocada en la evaluación clínica para apoyar los síntomas del desequilibrio hormonal."
       },
       {
-        "name": "Complete Longevity Reset Plan",
-        "tag": "Full Audit",
-        "compounds": "Full Hormone Panel + Thyroid Support",
-        "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+        "name": "Plan de Evaluación General",
+        "tag": "Evaluación Integral",
+        "compounds": "Panel Hormonal y Soporte Tiroideo",
+        "description": "Evaluación clínica comprensiva guiada por análisis de sangre para el manejo de la salud a largo plazo."
       }
     ]
   },
   "faqs": [
     {
       "question": "¿Necesito una receta médica para la terapia hormonal?",
-      "answer": "Sí. Todas las terapias hormonales en nuestra clínica requieren evaluación médica, análisis de sangre y una receta emitida por un médico licenciado."
+      "answer": "Sí. Todos los tratamientos hormonales son medicamentos recetados. La terapia hormonal requiere una evaluación clínica, historial médico y laboratorios antes de prescribir un plan por parte de un proveedor de atención médica con licencia."
     },
     {
-      "question": "¿Qué incluye el programa hormonal guiado por médicos?",
-      "answer": "Incluye consultas médicas, análisis periódicos de biomarcadores y medicamentos personalizados de grado farmacéutico."
+      "question": "¿Qué incluye la evaluación hormonal supervisada?",
+      "answer": "Incluye consultas con nuestro proveedor de atención médica con licencia, análisis de sangre de referencia y seguimiento, hormonas recetadas según la evaluación, y monitoreo individualizado."
     },
     {
-      "question": "¿Qué tan rápido sentiré resultados con la terapia hormonal?",
-      "answer": "Muchos pacientes notan mayor claridad mental y mejor sueño en 2 a 3 semanas. Los cambios en composición corporal suelen ser visibles entre el segundo y tercer mes."
+      "question": "¿Cuándo podré notar los resultados de la terapia hormonal?",
+      "answer": "El tiempo y la naturaleza de las respuestas al tratamiento dependen de la fisiología única de cada paciente. Los resultados individuales varían y no hay cronogramas garantizados."
     },
     {
-      "question": "¿Es segura la terapia hormonal tanto para hombres como para mujeres?",
-      "answer": "Sí. Diseñamos protocolos específicos según el sexo y la fisiología individual, monitoreando continuamente sus niveles en sangre."
+      "question": "¿Es la terapia hormonal apropiada para hombres y mujeres?",
+      "answer": "Nuestros tratamientos se adaptan clínicamente tanto para hombres como para mujeres tras una evaluación. Un proveedor de atención médica con licencia evaluará sus resultados de laboratorio para determinar su protocolo."
+    },
+    {
+      "question": "¿La terapia tiene efectos secundarios?",
+      "answer": "Requiere monitoreo individualizado. Como con cualquier terapia médica, existen riesgos y efectos secundarios potenciales. Su proveedor de atención médica con licencia monitoreará su protocolo estrictamente."
+    },
+    {
+      "question": "¿Cómo inicio la evaluación para el manejo hormonal?",
+      "answer": "Llame a nuestra clínica al (727) 476-8966 o haga clic en 'Programe su evaluación clínica' en línea. Nuestro proveedor de atención médica con licencia ordenará pruebas de laboratorio y realizará una evaluación clínica para determinar los pasos a seguir."
     }
-  ],
-  "treatments": [
-    {
-      "title": "Terapia de Testosterona (TRT)",
-      "badge": "Más Popular",
-      "desc": "Tratamiento de testosterona calibrado por médicos para hombres con baja energía, niebla mental o pérdida muscular. Rutina semanal sencilla bajo supervisión médica.",
-      "linkText": "Explorar Programa TRT"
-    },
-    {
-      "title": "TRH Bioidéntica para Mujeres",
-      "badge": "Para Mujeres",
-      "desc": "Equilibrio natural de estrógenos y progesterona bioidéntica para mujeres que manejan cambios de humor, sudores nocturnos o baja energía.",
-      "linkText": "Explorar TRH Femenina"
-    },
-    {
-      "title": "Impulsores de Péptidos",
-      "badge": "Recuperación Celular",
-      "desc": "Impulsores de péptidos especiales combinados con su plan para acelerar la recuperación, apoyar la salud articular y mejorar la reparación celular.",
-      "linkText": "Explorar Péptidos"
-    },
-    {
-      "title": "Terapia de Bienestar Sexual",
-      "badge": "Aumento de Vitalidad",
-      "desc": "Tratamientos bajo receta diseñados para restaurar el impulso saludable, el flujo sanguíneo y la confianza íntima para hombres y mujeres.",
-      "linkText": "Explorar Salud Íntima"
-    },
-    {
-      "title": "Equilibrio Tiroideo y Adrenal",
-      "badge": "Núcleo de Energía",
-      "desc": "Soporte tiroideo y adrenal completo para corregir caídas de energía a mitad del día y mantener fuerte el motor energético de su cuerpo.",
-      "linkText": "Explorar Cuidado Tiroideo"
-    },
-    {
-      "title": "Chequeo Médico de Sangre",
-      "badge": "Seguridad Primero",
-      "desc": "Análisis de laboratorio sencillos para que su médico verifique sus niveles hormonales exactos y personalice su dosis inicial de forma segura.",
-      "linkText": "Ordenar Análisis de Sangre"
-    }
-  ],
-  "disclosures": {
-    "title": "Supervisión Clínica y Seguridad Médica",
-    "text": "En Optimal Vitality Institute operamos bajo los estándares más estrictos de seguridad médica y cumplimiento de licencias en el estado de Florida. Todos los tratamientos son prescriptos y monitoreados por profesionales de la salud licenciados tras una evaluación diagnóstica rigurosa.",
-    "collaborationTitle": "Colaboración Médica",
-    "collaborationText": "Cada protocolo es supervisado por nuestro Director Médico Principal. Nuestros profesionales licenciados operan bajo acuerdos colaborativos activos, garantizando una revisión multidisciplinaria de sus marcadores de salud.",
-    "diagnosticTitle": "Mandato Diagnóstico",
-    "diagnosticText": "Ninguna terapia hormonal o de péptidos se entrega sin análisis de laboratorio previos exhaustivos, revisión de historial médico y una relación médico-paciente activa.",
-    "trademarkTitle": "Deslinde de Marcas Registradas y Medicamentos con Receta",
-    "trademarkText": "Los medicamentos GLP-1 (incluyendo Semaglutida y Tirzepatida) son fármacos bajo receta que requieren consulta con un profesional médico licenciado. Ozempic®, Wegovy®, Mounjaro® y Zepbound® son marcas registradas de sus respectivos dueños (Novo Nordisk y Eli Lilly). Optimal Vitality Institute es una práctica médica independiente no afiliada a dichas empresas."
-  }
+  ]
 }

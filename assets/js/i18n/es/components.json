@@ -1,40 +1,40 @@
 {
   "header": {
     "phoneCall": "Llámenos",
-    "bookConsultation": "Reservar Cita Médica",
-    "switchLanguage": "Idioma / Language"
+    "bookConsultation": "Programar consulta médica",
+    "switchLanguage": "Language / Idioma"
   },
   "cta": {
-    "badge": "Supervisión Médica Garantizada",
-    "title": "¿Listo para Restaurar su Vitalidad y Recuperar su Energía?",
-    "description": "Dé el primer paso hacia su rendimiento físico óptimo y longevidad. Reserve su consulta médica hoy mismo.",
-    "button": "Reserve su Consulta Médica Ahora",
-    "guarantee": "100% Supervisado por Médicos Licenciados y Certificado LegitScript"
+    "badge": "Supervisión médica",
+    "title": "¿Listo para restaurar su vitalidad y recuperar su energía?",
+    "description": "Dé el primer paso hacia un rendimiento físico máximo y longevidad. Programe su consulta médica hoy.",
+    "button": "Programe su consulta clínica ahora",
+    "guarantee": "Supervisado por un médico y certificado por LegitScript"
   },
   "disclosures": {
-    "title": "Supervisión Clínica y Seguridad Médica",
-    "intro": "En Optimal Vitality Institute operamos bajo los estándares más estrictos de seguridad médica y absoluto cumplimiento de las regulaciones del estado de Florida. Todos los tratamientos son prescriptos y monitoreados por profesionales médicos licenciados tras una rigurosa evaluación diagnóstica basada en evidencia.",
-    "physicianTitle": "Colaboración Médica",
-    "physicianText": "Cada protocolo es supervisado por nuestro Director Médico Principal. Nuestros profesionales licenciados (NPs y PAs) operan bajo acuerdos colaborativos activos, garantizando una revisión multidisciplinaria de sus marcadores de salud.",
-    "diagnosticTitle": "Mandato Diagnóstico",
-    "diagnosticText": "Ninguna terapia hormonal o de péptidos se entrega sin análisis de laboratorio previos exhaustivos, revisión de historial médico y una relación médico-paciente activa.",
-    "disclaimerTitle": "Deslinde de Marcas Registradas y Medicamentos con Receta",
-    "disclaimerText": "Los medicamentos GLP-1 (incluyendo Semaglutida y Tirzepatida) son fármacos bajo receta que requieren consulta con un profesional médico licenciado. Ozempic®, Wegovy®, Mounjaro® y Zepbound® son marcas registradas de sus respectivos dueños (Novo Nordisk y Eli Lilly). Optimal Vitality Institute es una práctica médica independiente.",
-    "medicalTitle": "Aviso Médico y Regulatorio",
-    "medicalText": "La información proporcionada en este sitio web es solo para fines educativos e informativos y no constituye asesoramiento médico. Los protocolos de tratamiento (TRT, Semaglutida, Tirzepatida y péptidos) se prescriben tras una evaluación médica completa, análisis de sangre y aprobación médica.",
-    "fdaTitle": "Declaración sobre la FDA y Farmacias de Formulación",
-    "fdaText": "Los medicamentos magistrales son formulaciones farmacéuticas personalizadas preparadas por farmacias autorizadas 503A o 503B según prescripción médica individual. Aunque no son aprobados en masa por la FDA, sus ingredientes activos se fabrican en instalaciones inspeccionadas por la FDA.",
-    "telehealthTitle": "Telesalud y Licencias Estatales",
-    "telehealthText": "Los servicios médicos son proporcionados por profesionales de la salud con licencia en el estado de Florida. Las consultas de telesalud están sujetas a regulaciones estatales y elegibilidad médica."
+    "title": "Supervisión clínica y seguridad médica",
+    "intro": "En Optimal Vitality Institute, operamos bajo los estándares más estrictos de seguridad médica y cumplimiento absoluto con las regulaciones de licencias del estado de Florida. Todos los tratamientos son recetados y monitoreados por profesionales médicos con licencia completa después de una evaluación clínica rigurosa y basada en evidencia.",
+    "physicianTitle": "Colaboración médica",
+    "physicianText": "Cada protocolo es supervisado por nuestro Director Médico. Nuestros profesionales de nivel medio con licencia (NP y PA) practican bajo acuerdos de colaboración activos, asegurando una revisión multidisciplinaria de sus marcadores de salud.",
+    "diagnosticTitle": "Requisito de diagnóstico",
+    "diagnosticText": "Ninguna terapia hormonal o de péptidos se dispensa sin paneles de laboratorio preliminares completos, una revisión exhaustiva del historial médico y una relación activa médico-paciente.",
+    "disclaimerTitle": "Descargos de responsabilidad sobre medicamentos recetados y marcas comerciales",
+    "disclaimerText": "Los medicamentos GLP-1 (incluyendo Semaglutida y Tirzepatida) son medicamentos recetados que requieren una consulta con un proveedor de atención médica con licencia que evalúe su historial de salud para determinar su idoneidad médica. Ozempic®, Wegovy®, Mounjaro® y Zepbound® son marcas registradas de sus respectivos propietarios de marcas (Novo Nordisk y Eli Lilly). Optimal Vitality Institute es una práctica médica independiente y no está afiliada, patrocinada ni respaldada por Novo Nordisk ni Eli Lilly. Los resultados individuales varían según el historial médico, la dieta, el ejercicio y el cumplimiento personal.",
+    "medicalTitle": "Descargo de responsabilidad médica y aviso regulatorio",
+    "medicalText": "La información proporcionada en este sitio web es solo para fines educativos e informativos y no constituye asesoramiento médico. Los protocolos de tratamiento, incluyendo TRT, Semaglutida, Tirzepatida y péptidos, se recetan después de una evaluación clínica exhaustiva, un panel de diagnóstico de sangre y la aprobación de un médico.",
+    "fdaTitle": "Descargo de responsabilidad de la FDA y compuestos",
+    "fdaText": "Los medicamentos compuestos son formulaciones farmacéuticas personalizadas preparadas por farmacias de compuestos con licencia 503A o 503B en base a una receta específica para un paciente. Los medicamentos compuestos no están aprobados por la FDA, aunque sus ingredientes farmacéuticos activos (API) se fabrican en instalaciones inspeccionadas por la FDA.",
+    "telehealthTitle": "Telesalud y licencias estatales",
+    "telehealthText": "Los servicios médicos son proporcionados por profesionales de la salud de Florida con licencia. Las consultas de telesalud están sujetas a las regulaciones estatales y la elegibilidad clínica."
   },
   "footer": {
-    "tagline": "Optimización hormonal bioidéntica guiada por médicos, pérdida de peso médica y terapias de péptidos en St. Petersburg, FL.",
-    "quickLinks": "Enlaces Rápidos",
-    "contactUs": "Contacto",
-    "hours": "Horario de Atención",
+    "tagline": "Optimización hormonal bioidéntica, pérdida de peso y terapias de péptidos guiadas por un médico en St. Petersburg, FL.",
+    "quickLinks": "Enlaces rápidos",
+    "contactUs": "Contáctenos",
+    "hours": "Horario de atención",
     "rights": "Todos los derechos reservados. Optimal Vitality Institute.",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio",
-    "disclosures": "Avisos Médicos"
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "disclosures": "Divulgaciones médicas"
   }
 }

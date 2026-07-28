@@ -3,14 +3,14 @@
   "type": "additional",
   "tabLabel": "IV & Wellness",
   "href": "iv-wellness.html",
-  "title": "Instant Vitamin & Energy Boost",
+  "title": "IV Hydration and Nutrient Therapy",
   "lead": "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
-  "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. Feel sharp, energized, and rehydrated in under 45 minutes.",
+  "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. IV therapy can provide fluids and selected nutrients directly into the bloodstream. Clinical effects and treatment time vary by formulation and patient.",
   "icon": "fa-tint",
   "delay": "-5s",
   "features": [
     "Immediate boost in energy & mental clarity",
-    "Strengthen your immune system fast",
+    "Nutrient support",
     "100% direct vitamin absorption",
     "Relax in our luxury medical suite"
   ],
@@ -205,7 +205,7 @@
     "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
     "body": "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
     "bullets": [
-      "100% direct cellular absorption vs ~20% for stomach pills",
+      "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
       "Compounded fresh & prescribed by licensed medical doctors",
       "Administered by registered nurses in a relaxing clinic suite"
     ],

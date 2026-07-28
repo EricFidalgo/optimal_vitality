@@ -3,351 +3,351 @@
   "type": "additional",
   "tabLabel": "Protocolos de Desintoxicación",
   "href": "detox.html",
-  "title": "Limpie su Intestino y Restablezca su Energía",
-  "lead": "Elimine toxinas de moho, parásitos intestinales y fatiga persistente para sentirse ligero, agudo y lleno de energía.",
-  "description": "El hinchazón inexplicable, la niebla mental y el agotamiento suelen provenir de toxinas de moho ocultas o parásitos intestinales. Nuestros médicos usan análisis de laboratorio simples y limpiezas bajo receta para restaurar su intestino y energía.",
+  "title": "Evaluación de Síntomas Gastrointestinales Persistentes o Relacionados con la Exposición",
+  "lead": "Apoyo clínico para síntomas de exposición al moho, malestar gastrointestinal y fatiga para ayudar a recuperar su energía.",
+  "description": "Los síntomas como fatiga, hinchazón y quejas cognitivas tienen muchas causas posibles. Un médico puede evaluar si las pruebas dirigidas son apropiadas. Nuestros proveedores de atención médica con licencia utilizan pruebas de laboratorio y protocolos clínicos para apoyar su salud intestinal y nivel de energía. Los resultados individuales varían.",
   "icon": "fa-leaf",
   "delay": "-2s",
   "features": [
-    "Análisis de laboratorio simple para moho oculto y parásitos intestinales",
-    "Limpieza celular prescrita por médicos",
-    "Solucione hinchazón, niebla mental y fatiga constante",
-    "100% verificado por médicos para su seguridad"
+    "Pruebas de laboratorio para evaluar posibles exposiciones",
+    "Protocolos clínicos recetados por un médico",
+    "Apoyo para síntomas de hinchazón, niebla mental y fatiga",
+    "Supervisado por un médico para su bienestar"
   ],
   "image": "assets/images/photos/team-group.avif",
-  "ctaText": "Reserve su Consulta Médica",
-  "pageTitle": "Protocolos Médicos de Desintoxicación — OVI Wellness",
-  "pageDescription": "Protocolos médicos de desintoxicación guiados por médicos en St. Petersburg, FL. Análisis de micotoxinas, cuidado antifúngico y limpieza intestinal supervisada por profesionales médicos licenciados.",
-  "heroHeadline": "Desintoxicación<br><span class=\"text-primary\">Sistémica Profunda</span>",
-  "heroSubheadline": "Protocolos de Desintoxicación de Moho e Intestinal bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
-  "heroCTA": "Reserve su Cita Médica Hoy",
+  "ctaText": "Programe su Consulta Médica",
+  "pageTitle": "Protocolos Clínicos y Evaluación Médica — OVI Wellness",
+  "pageDescription": "Protocolos clínicos supervisados por médicos en St. Petersburg, FL. Evaluación de exposición al moho, cuidado antifúngico y apoyo a la salud intestinal bajo la supervisión de proveedores de atención médica con licencia.",
+  "heroHeadline": "Apoyo para su Salud Intestinal y<br><span class=\"text-primary\">Energía Sistémica</span>",
+  "heroSubheadline": "Protocolos clínicos para problemas gastrointestinales y exposición al moho, supervisados por médicos certificados en St. Petersburg, FL.",
+  "heroCTA": "Programe su Evaluación Clínica Hoy",
   "quiz": {
-    "badge": "Evaluación Rápida de 1 Minuto",
-    "headline": "Encuentre Su Mejor Plan Detox",
-    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "badge": "Evaluación Inicial",
+    "headline": "Encuentre su Enfoque Clínico",
+    "subheadline": "Responda 3 breves preguntas para que nuestros médicos puedan guiar su plan.",
     "step1": {
-      "question": "¿Cuál es su principal problema de salud?",
-      "sub": "Elija lo que desea resolver primero.",
+      "question": "¿Cuál es su principal desafío de salud?",
+      "sub": "Seleccione el área que desea abordar.",
       "options": [
         {
           "value": "mold",
           "icon": "fa-disease",
-          "title": "Exposición al Moho y Fatiga",
-          "desc": "Niebla mental, fatiga o problemas respiratorios tras exposición al moho."
+          "title": "Posible Exposición al Moho y Fatiga",
+          "desc": "Sensación de niebla mental, fatiga o molestias tras exposición al moho."
         },
         {
           "value": "gut",
           "icon": "fa-bug",
-          "title": "Hinchazón y Problemas Intestinales",
-          "desc": "Hinchazón constante, cólicos estomacales o digestión lenta."
+          "title": "Hinchazón y Molestias Gastrointestinales",
+          "desc": "Hinchazón persistente, molestias estomacales o digestión lenta."
         },
         {
           "value": "reset",
           "icon": "fa-arrows-rotate",
-          "title": "Restablecimiento Total del Cuerpo",
-          "desc": "Quiero una desintoxicación médica completa para limpiar mis marcadores de energía."
+          "title": "Evaluación General de Bienestar",
+          "desc": "Busca un enfoque clínico completo para apoyar los niveles de energía."
         }
       ]
     },
     "step2": {
-      "question": "¿Cuánto tiempo lleva sintiéndose así?",
-      "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+      "question": "¿Cuánto tiempo lleva experimentando estos síntomas?",
+      "sub": "Ayuda a nuestro médico a determinar el punto de partida.",
       "options": [
         {
           "value": "months",
           "icon": "fa-calendar",
-          "title": "Unos Pocos Meses",
-          "desc": "Fatiga reciente, hinchazón o brotes en la piel."
+          "title": "Algunos Meses",
+          "desc": "Fatiga reciente, hinchazón o molestias cutáneas."
         },
         {
           "value": "years",
           "icon": "fa-calendar-alt",
-          "title": "Varios Años",
-          "desc": "Problemas digestivos continuos o fatiga crónica por años."
+          "title": "Algunos Años",
+          "desc": "Problemas digestivos continuos o fatiga persistente durante años."
         }
       ]
     },
     "step3": {
-      "question": "¿Ha realizado antes una prueba médica de desintoxicación?",
-      "sub": "Ayuda a nuestro médico a orientar su análisis de laboratorio.",
+      "question": "¿Ha completado una evaluación clínica o prueba similar antes?",
+      "sub": "Ayuda a nuestro médico a guiar sus pruebas de laboratorio.",
       "options": [
         {
           "value": "no",
           "icon": "fa-times",
           "title": "Primera Vez",
-          "desc": "Nunca he hecho una prueba clínica de desintoxicación."
+          "desc": "Nunca he realizado una evaluación clínica de este tipo."
         },
         {
           "value": "yes",
           "icon": "fa-check",
-          "title": "Sí, Lo He Intentado",
-          "desc": "He probado desintoxicaciones de tienda o limpiezas básicas antes."
+          "title": "Sí, lo he hecho",
+          "desc": "He probado protocolos básicos o terapias previas."
         }
       ]
     },
     "protocols": {
       "mold": {
-        "tag": "Plan Recomendado de Detox de Moho",
-        "name": "Eliminación Total de Moho y Micotoxinas",
-        "peptides": "Antifúngico Bajo Receta + Ligantes Celulares",
+        "tag": "Plan Clínico Sugerido",
+        "name": "Evaluación y Cuidado para Micotoxinas",
+        "peptides": "Cuidado Antifúngico Recetado y Apoyo Celular",
         "icon": "fa-disease",
-        "desc": "Un plan sencillo guiado por médicos que analiza las toxinas de moho y usa ligantes seguros para eliminarlos de sus células.",
+        "desc": "Un enfoque guiado por un médico que evalúa las toxinas del moho e incorpora terapias recetadas para apoyar su eliminación celular.",
         "goalModifiers": {
-          "no": "Plan inicial con un simple análisis de orina para detectar toxinas de moho ocultas.",
-          "yes": "Protocolo médico dirigido a eliminar residuos de moho profundos en tejidos."
+          "no": "Plan inicial con pruebas de laboratorio de orina para evaluar la posible presencia de micotoxinas.",
+          "yes": "Protocolo clínico dirigido para abordar residuos persistentes."
         },
-        "social": "Más de 60 pacientes locales eliminaron la niebla mental con este plan guiado por médicos."
+        "social": "Muchos pacientes locales han recibido apoyo clínico con este plan guiado por un médico. Los resultados individuales varían."
       },
       "gut": {
-        "tag": "Plan de Restablecimiento Intestinal",
-        "name": "Limpieza Intestinal Dirigida y Restauración",
-        "peptides": "Antiparasitario Bajo Receta + Protocolo de Reparación Intestinal",
+        "tag": "Plan de Apoyo Intestinal",
+        "name": "Restauración y Apoyo Gastrointestinal",
+        "peptides": "Apoyo Antiparasitario Recetado y Protocolo Intestinal",
         "icon": "fa-bug",
-        "desc": "Elimina parásitos y bacterias malas para detener la hinchazón, restaurar la digestión y mejorar la energía diaria.",
+        "desc": "Aborda desequilibrios en la flora intestinal para ayudar a reducir la hinchazón y apoyar la digestión y energía.",
         "goalModifiers": {
-          "no": "Incluye análisis de laboratorio simple para identificar bacterias malas y comenzar una limpieza suave.",
-          "yes": "Protocolo clínico avanzado para eliminar problemas intestinales persistentes y reparar la salud intestinal."
+          "no": "Incluye pruebas de laboratorio para evaluar la flora intestinal y comenzar un cuidado adecuado.",
+          "yes": "Protocolo clínico avanzado para problemas intestinales persistentes."
         },
-        "social": "78 pacientes lograron una digestión cómoda y plana con este protocolo."
+        "social": "Muchos pacientes han logrado una digestión más cómoda con este protocolo. Los resultados individuales varían."
       },
       "reset": {
-        "tag": "Plan de Vitalidad Total",
-        "name": "Restablecimiento Sistémico del Cuerpo y la Energía",
-        "peptides": "Panel Completo de Laboratorio + Detox de Hígado e Intestino",
+        "tag": "Plan de Vitalidad",
+        "name": "Apoyo Sistémico y de Energía",
+        "peptides": "Panel de Laboratorio Completo y Apoyo Orgánico",
         "icon": "fa-arrows-rotate",
-        "desc": "Restablecimiento corporal completo que limpia su hígado, elimina toxinas de la sangre y restaura la energía juvenil.",
+        "desc": "Evaluación general que apoya el bienestar celular y ayuda a promover la vitalidad.",
         "goalModifiers": {
-          "no": "Análisis de laboratorio basal completo para identificar qué frena su energía diaria.",
-          "yes": "Limpieza celular de alta potencia diseñada para la salud y vitalidad a largo plazo."
+          "no": "Análisis de laboratorio inicial completo para evaluar marcadores de energía.",
+          "yes": "Cuidado clínico intensivo diseñado para el bienestar y la vitalidad a largo plazo."
         },
-        "social": "Más de 85 pacientes renovaron su energía con este restablecimiento médico."
+        "social": "Muchos pacientes han buscado renovar su energía con este plan. Los resultados individuales varían."
       }
     },
     "timelineMap": {
-      "months": "6–8 semanas (Limpieza Acelerada)",
-      "years": "8–12 semanas (Plan de Restablecimiento Completo)"
+      "months": "6–8 semanas (Fase Inicial)",
+      "years": "8–12 semanas (Plan Completo)"
     }
   },
   "eligibility": {
-    "badge": "¿Para Quién Es?",
-    "headline": "¿Es Usted Candidato para la Atención Detox?",
-    "intro": "Nuestros protocolos de desintoxicación son planes seguros de grado médico supervisados por médicos licenciados. Analizamos sus marcadores de salud primero para darle el tratamiento exacto para su cuerpo.",
-    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
-    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "badge": "¿Para Quién es Esto?",
+    "headline": "¿Es Candidato para Nuestros Protocolos Clínicos?",
+    "intro": "Nuestros protocolos son planes de grado médico supervisados por proveedores de atención médica con licencia. Primero evaluamos sus marcadores de salud para que reciba el tratamiento adecuado para su cuerpo.",
+    "note": "¿Preguntas sobre su candidatura? Nuestro equipo médico le guiará durante su evaluación clínica.",
+    "ctaText": "Llame para su Evaluación Clínica",
     "items": [
       {
         "label": "Niebla Mental y Fatiga",
-        "detail": "Adultos con agotamiento constante, poca concentración o mañanas pesadas."
+        "detail": "Adultos que lidian con agotamiento persistente o falta de concentración."
       },
       {
-        "label": "Hinchazón Inexplicable",
-        "detail": "Cualquiera que sufra cólicos estomacales, digestión irregular o reacciones a alimentos."
+        "label": "Hinchazón sin Explicación",
+        "detail": "Personas con molestias estomacales, digestión irregular o reacciones alimentarias."
       },
       {
         "label": "Exposición Conocida al Moho",
-        "detail": "Personas que vivieron o trabajaron en edificios con moho y se sienten agotadas."
+        "detail": "Personas que han estado en edificios con moho y experimentan malestar."
       },
       {
-        "label": "Limpiezas de Jugo Sin Éxito",
-        "detail": "Quienes están cansados de tés de tienda o ayunos de jugos que no resuelven los problemas reales."
+        "label": "Protocolos Previos sin Éxito",
+        "detail": "Cualquiera que busque alternativas clínicas a los métodos no médicos."
       },
       {
-        "label": "Listo para Atención Médica",
-        "detail": "Buscando análisis de laboratorio seguros prescritos por médicos y limpieza dirigida."
+        "label": "Listo para Cuidado Médico",
+        "detail": "Buscando pruebas de laboratorio recetadas por un médico y apoyo clínico dirigido."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones bajo Receta",
-    "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
-    "sectionSubheadline": "Opciones de desintoxicación prescritas por médicos adaptadas a su cuerpo tras análisis de laboratorio simples.",
+    "badge": "Opciones Recetadas",
+    "sectionHeadline": "Tratamientos Guiados por un Médico",
+    "sectionSubheadline": "Opciones clínicas recetadas y adaptadas a su cuerpo tras pruebas de laboratorio.",
     "items": [
       {
         "icon": "fa-vial",
-        "name": "Análisis de Micotoxinas de Moho",
-        "tag": "Prueba de Moho",
-        "description": "Análisis de orina simple para encontrar toxinas de moho ocultas en sus células y guiar su limpieza médica personalizada."
+        "name": "Análisis de Micotoxinas",
+        "tag": "Prueba de Laboratorio",
+        "description": "Un médico puede evaluar si las pruebas dirigidas son apropiadas para guiar su plan clínico personalizado."
       },
       {
         "icon": "fa-leaf",
-        "name": "Terapia Antifúngica bajo Receta",
-        "tag": "Eliminación de Moho",
-        "description": "Atención médica dirigida para eliminar de forma segura residuos de moho de su hígado, tejidos e intestino."
+        "name": "Terapia Antifúngica Recetada",
+        "tag": "Cuidado Dirigido",
+        "description": "Cuidado recetado para ayudar a procesar y eliminar residuos del cuerpo de manera médicamente supervisada."
       },
       {
         "icon": "fa-bug",
-        "name": "Erradicación de Parásitos Intestinales",
+        "name": "Apoyo Antiparasitario y Flora Intestinal",
         "tag": "Salud Intestinal",
-        "description": "Análisis avanzados combinados con limpiadores prescritos por médicos para eliminar bacterias malas y restaurar el confort digestivo."
+        "description": "Pruebas avanzadas junto con terapias recetadas por un médico para abordar desequilibrios bacterianos."
       },
       {
         "icon": "fa-shield-alt",
-        "name": "Protocolo de Ligantes de Toxinas Celulares",
-        "tag": "Expulsión de Toxinas",
-        "description": "Ligantes especializados bajo receta que atrapan toxinas en su intestino para que su cuerpo las elimine naturalmente."
+        "name": "Protocolo Celular Aglutinante",
+        "tag": "Apoyo Sistémico",
+        "description": "Aglutinantes recetados que ayudan al cuerpo en el procesamiento de residuos metabólicos y ambientales."
       },
       {
         "icon": "fa-heartbeat",
-        "name": "Limpieza Hepática y Linfática",
-        "tag": "Soporte de Órganos",
-        "description": "Nutrientes dirigidos y soporte de glutatión para ayudar a su hígado y sistema linfático a eliminar desechos rápidamente."
+        "name": "Apoyo Hepático y Linfático",
+        "tag": "Apoyo de Órganos",
+        "description": "Nutrientes y apoyo de glutatión para ayudar a los sistemas hepático y linfático en sus funciones naturales."
       },
       {
         "icon": "fa-flask",
-        "name": "Chequeo Médico de Laboratorio",
-        "tag": "Seguridad Primero",
-        "description": "Análisis completos de sangre y orina para que su médico pueda monitorear su progreso y mantenerlo seguro."
+        "name": "Evaluación Médica y Laboratorio",
+        "tag": "Supervisión Médica",
+        "description": "Análisis completos de sangre y orina para que su médico pueda monitorear su progreso."
       }
     ]
   },
   "science": {
     "badge": "Cómo Funciona",
-    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">el Ayuno de Jugos Falla</span>",
-    "body": "Los ayunos de jugos solo eliminan agua y pierden las toxinas de moho profundas atrapadas en sus tejidos grasos e hígado. Nuestros protocolos guiados por médicos usan análisis de laboratorio reales para identificar toxinas exactas. Luego prescribimos ligantes médicos y antifúngicos que se adhieren a las toxinas y las extraen de su cuerpo de forma segura.",
+    "headline": "Un Enfoque Médico y <span class=\"text-primary\">Clínico</span>",
+    "body": "Los métodos no médicos pueden no abordar los problemas subyacentes. Nuestros protocolos guiados por un médico utilizan evaluaciones clínicas para comprender sus síntomas. Un médico puede evaluar si las pruebas dirigidas son apropiadas. Luego, recetamos tratamientos que ayudan a su cuerpo a procesar residuos de forma supervisada.",
     "bullets": [
-      "Prescrito y supervisado por médicos licenciados",
-      "Basado en análisis de laboratorio reales de orina y sangre",
-      "Extrae toxinas celulares profundas sin privar a su cuerpo"
+      "Recetado y monitoreado por proveedores de atención médica con licencia",
+      "Basado en pruebas de laboratorio de orina y sangre",
+      "Apoya los procesos naturales del cuerpo bajo supervisión médica"
     ],
     "stats": [
       {
         "value": "Dirigido",
-        "label": "Extrae moho profundo y toxinas intestinales"
+        "label": "Aborda problemas subyacentes"
       },
       {
-        "value": "Seguro",
-        "label": "Supervisado por médicos y analizado en laboratorio"
+        "value": "Supervisado",
+        "label": "Revisado por un médico"
       },
       {
         "value": "0%",
-        "label": "Ayuno extremo requerido"
+        "label": "Dietas extremas requeridas"
       },
       {
         "icon": "fa-user-md",
-        "label": "Certificado por Médico con Receta"
+        "label": "Certificado por un Médico"
       }
     ],
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Análisis de Laboratorio Real",
-        "detail": "Usamos paneles avanzados de micotoxinas en orina para probar qué toxinas están en su sistema antes de comenzar."
+        "title": "Pruebas de Laboratorio",
+        "detail": "Un médico puede evaluar si las pruebas dirigidas son apropiadas para guiar su tratamiento."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Ligantes de Toxinas bajo Receta",
-        "detail": "Los ligantes médicos se adhieren al moho atrapado y los metales pesados para que su cuerpo los elimine limpiamente."
+        "title": "Tratamientos Recetados",
+        "detail": "Se utilizan opciones médicas para apoyar la eliminación de residuos corporales."
       }
     ]
   },
   "myths": [
     {
-      "myth": "¿Tengo que hacer un ayuno extremo de jugos?",
-      "reality": "No. Los ayunos extremos no eliminan el moho profundo ni los parásitos intestinales. Nuestros planes médicos usan ligantes seguros y alimentación limpia para que coma normalmente mientras sana."
+      "myth": "¿Tengo que hacer ayunos extremos?",
+      "reality": "No. Nuestros planes guiados por médicos utilizan medicamentos recetados y una alimentación adecuada para que mantenga una dieta regular durante el cuidado."
     },
     {
-      "myth": "¿Una desintoxicación médica es agresiva para mi cuerpo?",
-      "reality": "No. Nuestros médicos personalizan su dosis inicial según sus análisis y hacen seguimiento regular para asegurar que su limpieza sea suave, gentil y efectiva."
+      "myth": "¿Es el proceso difícil para mi cuerpo?",
+      "reality": "Nuestros médicos personalizan su dosis inicial según sus análisis de laboratorio y monitorean regularmente para buscar que su experiencia sea manejable."
     },
     {
-      "myth": "¿Es segura la terapia de desintoxicación guiada por médicos?",
-      "reality": "Sí. Todos los tratamientos usan medicamentos aprobados por la FDA y ligantes naturales prescritos directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+      "myth": "¿Son seguras estas terapias?",
+      "reality": "Todos los tratamientos utilizan medicamentos e ingredientes recetados directamente por proveedores de atención médica con licencia bajo estrictas pautas clínicas."
     }
   ],
   "comparison": {
-    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
-    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "headline": "Cuidado Guiado por un Médico vs. Métodos No Clínicos",
+    "subheadline": "Vea por qué la supervisión de un médico proporciona un enfoque más integral y monitoreado. Los resultados individuales varían.",
     "ctaText": "Llame a Nuestra Clínica Hoy",
     "mobileStats": [
       {
         "icon": "fa-vial",
-        "label": "Analizado en Laboratorio"
+        "label": "Laboratorios"
       },
       {
         "icon": "fa-leaf",
-        "label": "Intestino Limpio"
+        "label": "Salud Intestinal"
       },
       {
         "icon": "fa-brain",
-        "label": "Mente Clara"
+        "label": "Claridad"
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Verificado por Médico"
+        "label": "Supervisado"
       }
     ],
     "rows": [
       {
-        "metric": "Método Diagnóstico",
-        "without": "Adivinanzas / tés de tienda",
-        "with": "Análisis reales de laboratorio (micotoxinas/intestino)"
+        "metric": "Método de Evaluación",
+        "without": "Suposiciones / Tés comerciales",
+        "with": "Evaluación clínica y laboratorios"
       },
       {
-        "metric": "Profundidad de Limpieza",
-        "without": "Solo pérdida superficial de agua",
-        "with": "Eliminación profunda de toxinas de tejidos e hígado"
+        "metric": "Profundidad del Enfoque",
+        "without": "Pérdida temporal de agua",
+        "with": "Apoyo sistémico y celular"
       },
       {
-        "metric": "Alivio de Niebla Mental",
-        "without": "Temporal o ninguno",
-        "with": "Claridad mental duradera"
+        "metric": "Apoyo Cognitivo",
+        "without": "Temporal o nulo",
+        "with": "Enfoque en la claridad mental"
       },
       {
         "metric": "Supervisión Médica",
         "without": "Kits web no monitoreados",
-        "with": "Revisión y laboratorio de médico licenciado"
+        "with": "Revisión por médicos con licencia"
       },
       {
         "metric": "Resultado a Largo Plazo",
-        "without": "La hinchazón vuelve de inmediato",
-        "with": "Intestino reequilibrado y células limpias"
+        "without": "Posible recurrencia rápida",
+        "with": "Apoyo para el bienestar sostenido. Los resultados individuales varían."
       }
     ],
     "stacks": [
       {
-        "name": "Limpieza Completa de Moho y Micotoxinas",
-        "tag": "Más Popular",
-        "compounds": "Antifúngico + Pila de Ligantes de Toxinas",
-        "description": "Nuestro protocolo líder de moho combinando antifúngicos bajo receta con ligantes celulares para eliminar la fatiga por moho."
+        "name": "Plan Integral para Micotoxinas",
+        "tag": "Opción Común",
+        "compounds": "Apoyo Antifúngico y Aglutinante",
+        "description": "Nuestro protocolo que combina antifúngicos recetados con apoyo celular."
       },
       {
-        "name": "Restablecimiento Total de Intestino y Parásitos",
+        "name": "Restauración Intestinal y Antiparasitaria",
         "tag": "Salud Intestinal",
-        "compounds": "Antiparasitario + Protocolo de Microbioma",
-        "description": "Elimina parásitos y bacterias malas para restaurar una digestión suave y cómoda."
+        "compounds": "Antiparasitario y Protocolo de Microbioma",
+        "description": "Aborda desequilibrios bacterianos para apoyar una digestión cómoda."
       },
       {
-        "name": "Limpieza Sistémica Completa de Energía",
-        "tag": "Restablecimiento Total",
-        "compounds": "Panel de Laboratorio + Soporte de Hígado y Linfático",
-        "description": "Auditoría corporal completa diseñada para eliminar la niebla mental, la fatiga y la hinchazón sistémica."
+        "name": "Apoyo Sistémico Completo",
+        "tag": "Evaluación General",
+        "compounds": "Panel de Laboratorio y Apoyo Linfático",
+        "description": "Auditoría integral diseñada para evaluar fatiga y apoyar el bienestar general."
       }
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito una consulta médica para los protocolos de desintoxicación?",
-      "answer": "Sí. Todos nuestros protocolos de desintoxicación médica requieren una consulta con un médico licenciado. Nuestro médico evaluará sus síntomas y ordenará análisis de laboratorio dirigidos antes de prescribir su plan."
+      "question": "¿Necesito una evaluación clínica para estos protocolos?",
+      "answer": "Sí. Todos nuestros protocolos médicos requieren una evaluación clínica con un proveedor de atención médica con licencia. Nuestro equipo evaluará sus síntomas y puede ordenar pruebas de laboratorio dirigidas."
     },
     {
-      "question": "¿Qué incluye el programa de desintoxicación guiado por médicos?",
-      "answer": "Su programa incluye una consulta médica completa, análisis de laboratorio especializados de orina o sangre, ligantes o antifúngicos bajo receta personalizados, pautas alimentarias y seguimientos de control."
+      "question": "¿Qué incluye el programa médico?",
+      "answer": "Su programa incluye una evaluación clínica completa, posibles pruebas de laboratorio, tratamientos recetados personalizados, pautas alimenticias y seguimiento médico regular."
     },
     {
-      "question": "¿Cómo sé si tengo toxinas de moho o parásitos intestinales?",
-      "answer": "Ordenamos análisis de laboratorio simples e indoloros (como un panel de micotoxinas en orina o una prueba fecal intestinal) que identifican exactamente qué toxinas o microbios están causando su niebla mental e hinchazón."
+      "question": "¿Cómo sé si mis síntomas provienen de estas causas?",
+      "answer": "Los síntomas tienen muchas causas posibles. Un médico puede evaluar si las pruebas dirigidas son apropiadas, como paneles de micotoxinas en orina o pruebas intestinales, para guiar su plan de atención."
     },
     {
-      "question": "¿Experimentaré efectos secundarios de desintoxicación incómodos?",
-      "answer": "Nuestros médicos inician su plan suavemente para evitar 'crisis de desintoxicación'. Ajustamos la dosis de su ligante para asegurarse de que las toxinas se eliminen de forma suave sin interrumpir su rutina diaria."
+      "question": "¿Experimentaré efectos secundarios durante el tratamiento?",
+      "answer": "Nuestros médicos inician su plan de manera conservadora y monitorean su progreso. Ajustamos sus dosis para buscar que el proceso sea lo más manejable posible, aunque los resultados individuales varían."
     },
     {
-      "question": "¿Cuánto dura un protocolo médico de desintoxicación?",
-      "answer": "La mayoría de los pacientes completan su fase principal de limpieza en 6 a 12 semanas, con mejoras importantes en la niebla mental, la energía y la digestión dentro de las primeras 3 a 4 semanas."
+      "question": "¿Cuánto tiempo toma un protocolo clínico?",
+      "answer": "La mayoría de los pacientes completan su fase principal en 6 a 12 semanas. Los resultados individuales y los plazos varían para las mejoras en la energía y digestión."
     },
     {
-      "question": "¿Cómo empiezo con una desintoxicación clínica?",
-      "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico ordenará su análisis de laboratorio y comenzará su plan!"
+      "question": "¿Cómo comienzo con una evaluación clínica?",
+      "answer": "¡Comenzar es sencillo! Llame a nuestra clínica hoy mismo al (727) 476-8966 o haga clic en 'Programe su Consulta Médica' en línea. ¡Nuestro equipo puede guiar su evaluación clínica para empezar!"
     }
   ]
 }
