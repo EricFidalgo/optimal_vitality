@@ -46,6 +46,9 @@
 
     // FAQs
     setText('[data-i18n="faqs.sectionTitle"]', t.faqs && t.faqs.sectionTitle);
+
+    // Social Proof
+    setText('[data-i18n="socialProof.sectionTitle"]', t.socialProof && t.socialProof.sectionTitle);
   }
 
   function renderMembershipPlans(plans) {

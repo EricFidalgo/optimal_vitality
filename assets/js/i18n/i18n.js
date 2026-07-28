@@ -141,6 +141,7 @@
     ["Get Directions", "Obtener Direcciones"],
 
     // Footer & Disclaimer
+    ["Connect with Us on Social Media", "Conéctese con Nosotros en Redes Sociales"],
     ["Ready to Transform Your Health?", "¿Listo para Transformar su Salud?"],
     ["Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.", "Dé el primer paso hacia su revitalización. Reserve su consulta para que nuestros expertos diseñen su protocolo personalizado."],
     ["Our Services", "Nuestros Servicios"],
@@ -158,9 +159,9 @@
     ["Book Executive VIP", "Reservar Plan VIP Ejecutivo"],
     ["Book Optimal Plan", "Reservar Plan Óptimo"],
     ["Book Essential Plan", "Reservar Plan Esencial"],
-    ["Book Your Consultation Now", "Reserve su Consulta Ahora"],
-    ["Book Your Consultation", "Reserve su Consulta Médica"],
-    ["Book Doctor Call", "Reservar Cita Médica"]
+    ["Book Your Consultation Now", "Reservar Consulta"],
+    ["Book Your Consultation", "Reservar Consulta"],
+    ["Book Doctor Call", "Reservar Cita"]
   ];
 
   function applyDomTranslations() {
