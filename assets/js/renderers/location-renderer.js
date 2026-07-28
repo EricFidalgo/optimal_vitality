@@ -2,20 +2,17 @@
  * location-renderer.js
  *
  * Populates data-slot elements for location landing pages (St. Pete, Tampa).
+ * Listens to both componentsLoaded and i18nLoaded to ensure real-time translation updates.
  */
 (function () {
+  'use strict';
   if (typeof OVI_LOCATION_ID === "undefined") return;
 
-  const loc = window.clinicData?.locations?.[OVI_LOCATION_ID];
-
-  if (!loc) {
-    console.error("[location-renderer] No location found for ID:", OVI_LOCATION_ID);
-    return;
-  }
-
-  document.addEventListener("componentsLoaded", function () {
+  function render() {
+    const loc = window.clinicData?.locations?.[OVI_LOCATION_ID];
+    if (!loc) return;
     populateLocationPage(loc);
-  });
+  }
 
   function populateLocationPage(l) {
     // --- Hero ---
@@ -29,7 +26,8 @@
       }
     }
 
-    setSlot("heroCTA", l.heroCTA || "Book Consultation");
+    const isEs = (window.OVI_I18N?.currentLang === 'es');
+    setSlot("heroCTA", l.heroCTA || (isEs ? "Reservar Consulta" : "Book Consultation"));
 
     // --- Advantage ---
     setSlot("advantageHeadline", l.advantageHeadline);
@@ -60,9 +58,6 @@
                         <h4 class="card-title">${t.title}</h4>
                         <p class="card-text">${t.desc}</p>
                     </div>
-                    <div class="service-link fw-bold text-decoration-none" style="color: var(--primary-color); font-size: 0.92rem; letter-spacing: 0.5px;">
-                        ${t.linkText || 'Learn More'} <i class="fas fa-arrow-right ms-2"></i>
-                    </div>
                 </div>
             </a>
         </div>
@@ -79,5 +74,12 @@
     const el = document.querySelector(`[data-slot="${slotName}"]`);
     if (!el) return;
     el.innerHTML = content;
+  }
+
+  document.addEventListener("componentsLoaded", render);
+  document.addEventListener("i18nLoaded", render);
+
+  if (window.clinicData?.locations?.[OVI_LOCATION_ID]) {
+    render();
   }
 })();

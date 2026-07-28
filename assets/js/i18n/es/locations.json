@@ -23,7 +23,65 @@
       "Compuestos de Grado Farmacéutico"
     ],
     "treatmentsHeadline": "Programas Sencillos Respaldados por Médicos",
-    "treatmentsSubheadline": "Elija el programa que se ajuste a sus metas. Cada plan incluye atención médica directa y revisiones de progreso."
+    "treatmentsSubheadline": "Elija el programa que se ajuste a sus metas. Cada plan incluye atención médica directa y revisiones de progreso.",
+    "treatmentsGrid": [
+      {
+        "title": "Optimización Hormonal (TRT)",
+        "icon": "fa-syringe",
+        "desc": "Recupere su energía física y concentración. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores bajo supervisión médica.",
+        "link": "services/hormone-optimization.html",
+        "linkText": "Explorar Programa TRT"
+      },
+      {
+        "title": "Pérdida de Peso Médica",
+        "icon": "fa-weight-scale",
+        "desc": "Elimine la grasa visceral conservando activamente la masa muscular magra. Protocolos de Semaglutida y Tirzepatida de primera calidad calibrados a su metabolismo.",
+        "link": "services/glp-1therapies.html",
+        "linkText": "Explorar Pérdida de Peso"
+      },
+      {
+        "title": "Terapia de Péptidos",
+        "icon": "fa-vial",
+        "desc": "Acelere la cicatrización de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de grado farmacéutico (BPC-157, TB-500, Ipamorelina).",
+        "link": "services/peptides.html",
+        "linkText": "Explorar Péptidos"
+      },
+      {
+        "title": "Medicina Regenerativa",
+        "icon": "fa-heartbeat",
+        "desc": "Aproveche las terapias de exosomas, Plasma Rico en Plaquetas (PRP) autólogo y factores de crecimiento clínicos para la reparación avanzada de articulaciones, folículos y células.",
+        "link": "services/regenerative-medicine.html",
+        "linkText": "Explorar Regeneración"
+      },
+      {
+        "title": "Bienestar Sexual",
+        "icon": "fa-heart",
+        "desc": "Terapia dirigida para restaurar la respuesta física, el impulso íntimo y la vitalidad general mediante un equilibrio hormonal preciso e individual.",
+        "link": "services/sexual-wellness.html",
+        "linkText": "Explorar Bienestar Sexual"
+      },
+      {
+        "title": "Hidratación IV y Nutrientes",
+        "icon": "fa-tint",
+        "desc": "Suministre NAD+, Glutatión e hidratación esencial directamente al torrente sanguíneo para una absorción inmediata y revitalización celular.",
+        "link": "services/iv-wellness.html",
+        "linkText": "Explorar Sueros IV"
+      },
+      {
+        "title": "Protocolos de Desintoxicación",
+        "icon": "fa-leaf",
+        "desc": "Protocolos de limpieza integrales para micotoxinas y parásitos para restaurar la salud sistémica y la función intestinal óptima.",
+        "link": "services/detox.html",
+        "linkText": "Explorar Desintoxicación"
+      },
+      {
+        "title": "Laboratorios Diagnósticos Avanzados",
+        "icon": "fa-flask",
+        "desc": "Paneles clínicos detallados que incluyen MTHFR, perfiles de micronutrientes, metales pesados y biomarcadores cardíacos avanzados.",
+        "link": "services/advanced-labs.html",
+        "linkText": "Explorar Laboratorios"
+      }
+    ]
   },
   "tampa": {
     "name": "Optimal Vitality Institute — Clínica Tampa",
@@ -49,6 +107,64 @@
       "Medicamentos Seguros Cumpliendo la FDA"
     ],
     "treatmentsHeadline": "Nuestros Programas Más Populares en Tampa",
-    "treatmentsSubheadline": "Elija su protocolo. Comience con una rápida consulta médica y un panel de sangre personalizado."
+    "treatmentsSubheadline": "Elija su protocolo. Comience con una rápida consulta médica y un panel de sangre personalizado.",
+    "treatmentsGrid": [
+      {
+        "title": "Optimización Hormonal (TRT)",
+        "icon": "fa-syringe",
+        "desc": "Recupere su energía física y concentración. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores bajo supervisión médica.",
+        "link": "services/hormone-optimization.html",
+        "linkText": "Explorar Programa TRT"
+      },
+      {
+        "title": "Pérdida de Peso Médica",
+        "icon": "fa-weight-scale",
+        "desc": "Elimine la grasa visceral conservando activamente la masa muscular magra. Protocolos de Semaglutida y Tirzepatida de primera calidad calibrados a su metabolismo.",
+        "link": "services/glp-1therapies.html",
+        "linkText": "Explorar Pérdida de Peso"
+      },
+      {
+        "title": "Terapia de Péptidos",
+        "icon": "fa-vial",
+        "desc": "Acelere la cicatrización de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de grado farmacéutico (BPC-157, TB-500, Ipamorelina).",
+        "link": "services/peptides.html",
+        "linkText": "Explorar Péptidos"
+      },
+      {
+        "title": "Medicina Regenerativa",
+        "icon": "fa-heartbeat",
+        "desc": "Aproveche las terapias de exosomas, Plasma Rico en Plaquetas (PRP) autólogo y factores de crecimiento clínicos para la reparación avanzada de articulaciones, folículos y células.",
+        "link": "services/regenerative-medicine.html",
+        "linkText": "Explorar Regeneración"
+      },
+      {
+        "title": "Bienestar Sexual",
+        "icon": "fa-heart",
+        "desc": "Terapia dirigida para restaurar la respuesta física, el impulso íntimo y la vitalidad general mediante un equilibrio hormonal preciso e individual.",
+        "link": "services/sexual-wellness.html",
+        "linkText": "Explorar Bienestar Sexual"
+      },
+      {
+        "title": "Hidratación IV y Nutrientes",
+        "icon": "fa-tint",
+        "desc": "Suministre NAD+, Glutatión e hidratación esencial directamente al torrente sanguíneo para una absorción inmediata y revitalización celular.",
+        "link": "services/iv-wellness.html",
+        "linkText": "Explorar Sueros IV"
+      },
+      {
+        "title": "Protocolos de Desintoxicación",
+        "icon": "fa-leaf",
+        "desc": "Protocolos de limpieza integrales para micotoxinas y parásitos para restaurar la salud sistémica y la función intestinal óptima.",
+        "link": "services/detox.html",
+        "linkText": "Explorar Desintoxicación"
+      },
+      {
+        "title": "Laboratorios Diagnósticos Avanzados",
+        "icon": "fa-flask",
+        "desc": "Paneles clínicos detallados que incluyen MTHFR, perfiles de micronutrientes, metales pesados y biomarcadores cardíacos avanzados.",
+        "link": "services/advanced-labs.html",
+        "linkText": "Explorar Laboratorios"
+      }
+    ]
   }
 }

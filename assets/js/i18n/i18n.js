@@ -179,9 +179,10 @@
       if (node.nodeType === Node.TEXT_NODE) {
         let val = node.nodeValue;
         if (!val || !val.trim()) return;
+        const trimmed = val.trim();
 
         spanishDomMap.forEach(([en, es]) => {
-          if (val.includes(en)) {
+          if (trimmed === en) {
             node.nodeValue = val.replace(en, es);
           }
         });
