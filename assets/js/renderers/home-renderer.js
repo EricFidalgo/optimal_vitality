@@ -189,16 +189,23 @@
     document.querySelectorAll(selector).forEach(function(el) { el.innerHTML = value; });
   }
 
+  var _rendered = false;
+
   function boot() {
+    if (_rendered) return;
     var homeData = window.clinicData && window.clinicData.pages && window.clinicData.pages.home;
-    if (homeData) renderHome(homeData);
+    if (!homeData) return;
+    _rendered = true;
+    renderHome(homeData);
   }
 
-  document.addEventListener('i18nLoaded', function() {
-    boot();
-    document.addEventListener('componentsLoaded', boot);
-  });
+  // i18nLoaded fires once locale JSON is ready; componentsLoaded fires once
+  // injected components (navbar, footer, location) are in the DOM.
+  // Listen to both independently — the guard above ensures only one render.
+  document.addEventListener('i18nLoaded', boot);
+  document.addEventListener('componentsLoaded', boot);
 
+  // Sync fallback: if clinicData is already populated when this script runs
   if (window.clinicData && window.clinicData.pages && window.clinicData.pages.home) {
     boot();
   }

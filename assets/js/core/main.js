@@ -505,6 +505,8 @@ function initMain() {
             tabsContainer.innerHTML = '';
             contentContainer.innerHTML = '';
             const coreServices = data.services.filter(s => s.type === 'core');
+            let tabsHtml = '';
+            let contentHtml = '';
             coreServices.forEach((therapy, index) => {
                 const isActive = index === 0 ? 'active' : '';
                 const isShow = index === 0 ? 'show active' : '';
@@ -512,12 +514,12 @@ function initMain() {
                 const focusClass = index % 2 !== 0 ? 'top-focus' : 'center-focus';
                 const featuresHtml = therapy.features.map(f => `<li>${f}</li>`).join('');
 
-                tabsContainer.innerHTML += `
+                tabsHtml += `
                     <li class="nav-item" role="presentation">
                         <button class="nav-link ${isActive} premium-tab" id="${therapy.id}-tab" data-bs-toggle="pill" data-bs-target="#${therapy.id}" type="button" role="tab">${therapy.tabLabel}</button>
                     </li>
                 `;
-                contentContainer.innerHTML += `
+                contentHtml += `
                     <div class="tab-pane ${isShow}" id="${therapy.id}" role="tabpanel" tabindex="0">
                         <div class="row align-items-center ${rowReverse} gx-lg-5">
                             <div class="col-lg-6 mb-4 mb-lg-0">
@@ -535,6 +537,8 @@ function initMain() {
                     </div>
                 `;
             });
+            tabsContainer.innerHTML = tabsHtml;
+            contentContainer.innerHTML = contentHtml;
         }
 
         // --- Additional Services (Desktop Grid) ---
@@ -893,8 +897,8 @@ function initMain() {
         }
     }
 
-    // Run all renders
-    renderDynamicContent();
+    // Run all renders when i18n locale data is ready; the guard inside
+    // renderDynamicContent ensures it only executes once per page load.
     document.addEventListener('i18nLoaded', renderDynamicContent);
 
     // =========================================================================
