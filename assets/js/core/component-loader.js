@@ -8,6 +8,9 @@
     "use strict";
 
     window.loadComponents = async function() {
+        if (window.oviI18nPromise) {
+            await window.oviI18nPromise;
+        }
         const elements = document.querySelectorAll('[data-include-component]');
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
         const prefix = isSubpage ? '../' : '';

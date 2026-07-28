@@ -1,0 +1,398 @@
+{
+  "id": "peptides",
+  "type": "core",
+  "tabLabel": "Terapia de Péptidos",
+  "href": "peptides.html",
+  "title": "Sane Más Rápido y Siéntase Como Usted Mismo de Nuevo",
+  "lead": "Potencie el poder curativo natural de su cuerpo para corregir el dolor articular, recuperarse rápido y sentirse lleno de vida.",
+  "description": "Los péptidos son señales naturales que le dicen a su cuerpo que repare músculos, articulaciones y tejido intestinal dañados. Despierte sin rigidez articular, recupérese de los entrenamientos y siéntase lleno de energía cada día.",
+  "icon": "fa-vial",
+  "delay": "-2s",
+  "features": [
+    "Recuperación rápida articular, tendinosa y muscular",
+    "Sueño nocturno profundo y reparador",
+    "Potencie la salud intestinal e inmunológica",
+    "100% verificado por médicos para su seguridad"
+  ],
+  "image": "assets/images/photos/peptide-therapy.jpg",
+  "ctaText": "Reserve su Consulta Médica",
+  "pageTitle": "Terapia de Péptidos Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Terapia de péptidos guiada por médicos en St. Petersburg, FL. Protocolos de BPC-157, TB-500 e Ipamorelin prescritos por proveedores médicos licenciados.",
+  "heroHeadline": "Acelere la Curación y<br><span class=\"text-primary\">Recuperación Celular</span>",
+  "heroSubheadline": "Protocolos de Péptidos bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Plan de Curación",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "step1": {
+      "question": "¿Cuál es su mayor lucha diaria?",
+      "sub": "Elija lo que desea solucionar primero.",
+      "options": [
+        {
+          "value": "pain",
+          "icon": "fa-crutch",
+          "title": "Dolor Articular y Muscular",
+          "desc": "Articulaciones doloridas, curación lenta de lesiones o rigidez matutina."
+        },
+        {
+          "value": "performance",
+          "icon": "fa-stopwatch",
+          "title": "Recuperación Lenta de Entrenamiento",
+          "desc": "Progreso estancado, recuperación lenta después del ejercicio."
+        },
+        {
+          "value": "energy",
+          "icon": "fa-battery-quarter",
+          "title": "Fatiga y Baja Energía",
+          "desc": "Cansado todo el día, sueño deficiente o niebla mental."
+        },
+        {
+          "value": "body",
+          "icon": "fa-fire",
+          "title": "Grasa Abdominal Rebelde",
+          "desc": "Mantiene peso extra a pesar de comer limpio y hacer ejercicio."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Cuánto tiempo lleva sintiéndose así?",
+      "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+      "options": [
+        {
+          "value": "short",
+          "icon": "fa-calendar",
+          "title": "Menos de 3 Meses",
+          "desc": "Problema reciente o lesión nueva de entrenamiento."
+        },
+        {
+          "value": "medium",
+          "icon": "fa-calendar-alt",
+          "title": "3 a 12 Meses",
+          "desc": "Me ha molestado durante varios meses."
+        },
+        {
+          "value": "long",
+          "icon": "fa-calendar-check",
+          "title": "Más de 1 Año",
+          "desc": "Dolor articular a largo plazo o fatiga crónica."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Cuál es su principal objetivo ahora mismo?",
+      "sub": "Ayuda a establecer un cronograma claro para sus resultados.",
+      "options": [
+        {
+          "value": "train",
+          "icon": "fa-dumbbell",
+          "title": "Volver a los Entrenamientos",
+          "desc": "Moverse sin dolor y hacer ejercicio con toda la fuerza."
+        },
+        {
+          "value": "muscle",
+          "icon": "fa-chart-line",
+          "title": "Desarrollar Músculo Magro",
+          "desc": "Ganar fuerza funcional y recuperarse más rápido."
+        },
+        {
+          "value": "feel",
+          "icon": "fa-brain",
+          "title": "Despertar Lleno de Energía",
+          "desc": "Disfrutar de sueño profundo, enfoque claro y alta energía."
+        },
+        {
+          "value": "fat",
+          "icon": "fa-weight",
+          "title": "Quemar Grasa Corporal",
+          "desc": "Eliminar la grasa rebelde manteniendo el músculo fuerte."
+        }
+      ]
+    },
+    "protocols": {
+      "pain": {
+        "tag": "Plan Recomendado de Reparación Articular",
+        "name": "El Restablecimiento Total Articular y de Tejidos",
+        "peptides": "Protocolo de Prescripción BPC-157 + TB-500",
+        "icon": "fa-shield-alt",
+        "desc": "Un tratamiento simple prescrito por médicos que señala a sus células que reparen articulaciones, tendones y músculos rápidamente.",
+        "goalModifiers": {
+          "train": "Diseñado para volver a los entrenamientos activos sin que el dolor lo detenga.",
+          "muscle": "Acelera la reparación del tejido celular para que reconstruya el músculo más fuerte que antes.",
+          "feel": "Calma la inflamación articular para que despierte renovado y se mueva cómodamente.",
+          "fat": "Ayuda a su cuerpo a sanar para que pueda mantenerse activo y quemar calorías extra."
+        },
+        "social": "Más de 60 pacientes locales completaron este plan de recuperación en los últimos 90 días."
+      },
+      "performance": {
+        "tag": "Plan de Fuerza y Crecimiento",
+        "name": "Pila de Máximo Rendimiento y Crecimiento",
+        "peptides": "Prescripción de Ipamorelin + Tesamorelin",
+        "icon": "fa-dumbbell",
+        "desc": "Potencia sus hormonas de crecimiento naturales para ganar músculo magro, recuperarse rápido y sentirse fuerte.",
+        "goalModifiers": {
+          "train": "Le ayuda a superar mesetas y recuperarse en la mitad del tiempo.",
+          "muscle": "Apoya el desarrollo muscular natural y la absorción de proteínas.",
+          "feel": "Promueve un sueño profundo y reparador para despertar con alta energía.",
+          "fat": "Ataca la grasa abdominal rebelde mientras protege su músculo magro."
+        },
+        "social": "88 pacientes están actualmente siguiendo esta pila prescrita por médicos."
+      },
+      "energy": {
+        "tag": "Plan de Energía Celular",
+        "name": "Restablecimiento Total de Energía Corporal y Enfoque",
+        "peptides": "Protocolo de NAD+ y Potenciador Celular",
+        "icon": "fa-bolt",
+        "desc": "Recarga sus motores celulares para eliminar la niebla mental, combatir la fatiga y sentirse lleno de energía todo el día.",
+        "goalModifiers": {
+          "train": "Aumenta la resistencia celular para que los entrenamientos se sientan más ligeros.",
+          "muscle": "Mejora la recuperación celular después de sesiones de entrenamiento intensas.",
+          "feel": "Construido específicamente para apagar el cansancio constante y restaurar la claridad mental.",
+          "fat": "Potencia el motor metabólico diario para quemar grasa de forma constante."
+        },
+        "social": "44 pacientes locales comenzaron este plan de energía en los últimos 60 días."
+      },
+      "body": {
+        "tag": "Plan de Quema de Grasa y Recomposición",
+        "name": "Restablecimiento de Músculo Magro y Quema de Grasa",
+        "peptides": "Protocolo de Tesamorelin + Ipamorelin",
+        "icon": "fa-fire",
+        "desc": "Ataca la grasa abdominal profunda que las dietas pierden, mientras protege su músculo magro y fuerte.",
+        "goalModifiers": {
+          "train": "Mejora la resistencia y la resistencia para entrenamientos más largos.",
+          "muscle": "Quema tejido graso mientras preserva la masa muscular magra.",
+          "feel": "Mejora la confianza corporal general, el sueño y el enfoque diurno.",
+          "fat": "Diseñado específicamente para la grasa rebelde que no se mueve con la dieta sola."
+        },
+        "social": "73 pacientes completaron este protocolo de quema de grasa recientemente."
+      }
+    },
+    "timelineMap": {
+      "short": "6–8 semanas (Plan de Recuperación Rápida)",
+      "medium": "8–12 semanas (Plan Médico Estándar)",
+      "long": "12–16 semanas (Plan de Restablecimiento Completo)"
+    }
+  },
+  "eligibility": {
+    "badge": "¿Para Quién Es?",
+    "headline": "¿Es Usted Candidato para la Terapia de Péptidos?",
+    "intro": "Nuestros tratamientos de péptidos son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Verificamos su salud y análisis de sangre primero para darle el mejor plan para su cuerpo.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "items": [
+      {
+        "label": "Dolor Articular y Muscular",
+        "detail": "Adultos con rigidez articular, curación lenta de lesiones o dolor tendinoso."
+      },
+      {
+        "label": "Cansado y Recuperación Lenta",
+        "detail": "Cualquiera que tarde días en recuperarse del ejercicio o se sienta constantemente agotado."
+      },
+      {
+        "label": "Suplementos de Venta Libre Sin Éxito",
+        "detail": "Personas que tomaron vitaminas de tienda o pastillas para articulaciones sin obtener alivio real."
+      },
+      {
+        "label": "Quiere Músculo y Sueño Profundo",
+        "detail": "Hombres y mujeres activos listos para quemar grasa, dormir profundamente y sanar más rápido."
+      },
+      {
+        "label": "Listo para Atención Médica",
+        "detail": "Buscando tratamientos médicos seguros de grado farmacéutico con controles periódicos."
+      }
+    ]
+  },
+  "protocols": {
+    "badge": "Opciones bajo Receta",
+    "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+    "sectionSubheadline": "Opciones de péptidos prescritas por médicos adaptadas a su cuerpo tras una consulta médica.",
+    "items": [
+      {
+        "icon": "fa-running",
+        "name": "Protocolo BPC-157",
+        "tag": "Reparación Articular",
+        "description": "Péptido bajo receta que le dice a sus células que reparen articulaciones, tendones, el revestimiento intestinal y el tejido muscular desgarrado."
+      },
+      {
+        "icon": "fa-kit-medical",
+        "name": "Protocolo TB-500",
+        "tag": "Curación de Tejidos",
+        "description": "Trabaja junto con BPC-157 para reducir la inflamación crónica, mejorar la flexibilidad articular y acelerar la recuperación."
+      },
+      {
+        "icon": "fa-dumbbell",
+        "name": "Protocolo de Ipamorelin",
+        "tag": "Crecimiento y Sueño",
+        "description": "Secretagogo de crecimiento natural que mejora el sueño profundo, acelera la recuperación muscular y mantiene los huesos fuertes."
+      },
+      {
+        "icon": "fa-bolt-lightning",
+        "name": "Protocolo de Tesamorelin",
+        "tag": "Quema de Grasa Abdominal",
+        "description": "Péptido bajo receta diseñado para quemar la grasa abdominal rebelde mientras protege la masa muscular magra."
+      },
+      {
+        "icon": "fa-battery-full",
+        "name": "Terapia de NAD+",
+        "tag": "Energía Celular",
+        "description": "Recarga sus baterías celulares para eliminar la niebla mental, aumentar la energía diaria y combatir la fatiga sistémica."
+      },
+      {
+        "icon": "fa-flask",
+        "name": "Chequeo Médico de Sangre",
+        "tag": "Seguridad Primero",
+        "description": "Análisis de laboratorio simple para que su médico verifique su salud basal y construya su dosis inicial exacta de forma segura."
+      }
+    ]
+  },
+  "science": {
+    "badge": "Cómo Funciona",
+    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">los Suplementos Fallan</span>",
+    "body": "Piense en sus células como motores. Los péptidos son señales naturales que su cuerpo ya entiende. Las vitaminas de tienda pasan directamente por su intestino. Nuestros péptidos bioidénticos prescritos por médicos entregan señales moleculares directas a sus células, diciéndoles que se reconstruyan, reparen y se energicen de forma natural.",
+    "bullets": [
+      "Prescrito por médicos licenciados reales",
+      "Compuestos bioidénticos 100% de grado farmacéutico",
+      "Acción segura y dirigida sin rellenos sintéticos"
+    ],
+    "stats": [
+      {
+        "value": "Rápido",
+        "label": "Nota alivio articular en semanas"
+      },
+      {
+        "value": "Seguro",
+        "label": "Supervisado por médicos y analizado en laboratorio"
+      },
+      {
+        "value": "100%",
+        "label": "Calidad de grado farmacéutico"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Certificado por Médico con Receta"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-vial",
+        "title": "Compuesto y Verificado por Médico",
+        "detail": "Cada dosis es compuesta en farmacias acreditadas y prescrita por proveedores de salud licenciados."
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Acción Celular Dirigida",
+        "detail": "Los péptidos envían señales de reparación precisas directamente a las células dañadas sin perturbar otros sistemas corporales."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "¿Son los péptidos solo esteroides anabólicos?",
+      "reality": "No. Los péptidos son señales naturales de aminoácidos, las mismas señales que su cuerpo ya produce. No apagan sus hormonas, no causan estrés hepático ni actúan como esteroides."
+    },
+    {
+      "myth": "¿Tengo que hacer esto para siempre?",
+      "reality": "No. La mayoría de los planes de péptidos duran de 8 a 16 semanas para restablecer su tejido y salud celular. Una vez curado, muchos pacientes mantienen sus resultados con un cuidado de estilo de vida simple."
+    },
+    {
+      "myth": "¿Es segura y legal la terapia de péptidos guiada por médicos?",
+      "reality": "Sí. Todos los tratamientos que prescribimos son medicamentos legales de grado farmacéutico prescritos por médicos licenciados siguiendo estrictos estándares médicos de Florida."
+    }
+  ],
+  "comparison": {
+    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "mobileStats": [
+      {
+        "icon": "fa-bolt",
+        "label": "Recuperación Rápida"
+      },
+      {
+        "icon": "fa-fire",
+        "label": "Quema de Grasa"
+      },
+      {
+        "icon": "fa-brain",
+        "label": "Mente Clara"
+      },
+      {
+        "icon": "fa-shield-alt",
+        "label": "Verificado por Médico"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Velocidad de Recuperación",
+        "without": "5–7 días de dolor",
+        "with": "Recuperación rápida en 2–3 días"
+      },
+      {
+        "metric": "Confort Articular",
+        "without": "Rígido y adolorido",
+        "with": "Flexible y sin dolor"
+      },
+      {
+        "metric": "Energía Diaria",
+        "without": "Cansado y con niebla mental",
+        "with": "Alta energía todo el día"
+      },
+      {
+        "metric": "Calidad del Sueño",
+        "without": "Inquieto y con vueltas",
+        "with": "Sueño profundo y reparador"
+      },
+      {
+        "metric": "Seguridad Médica",
+        "without": "Pastillas web no reguladas",
+        "with": "Prescrito por médicos y analizado en laboratorio"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Pila de Reparación Articular y de Tejidos",
+        "tag": "Más Popular",
+        "compounds": "Protocolo BPC-157 + TB-500",
+        "description": "Combina péptidos de doble reparación para alivio rápido articular, reparación de ligamentos y curación de tendones."
+      },
+      {
+        "name": "Pila de Crecimiento y Músculo Magro",
+        "tag": "Potenciador de Fuerza",
+        "compounds": "Protocolo de Tesamorelin + Ipamorelin",
+        "description": "Diseñado para adultos activos que buscan quemar grasa abdominal rebelde, ganar músculo magro y dormir profundamente."
+      },
+      {
+        "name": "Restablecimiento Bioenergético Total",
+        "tag": "Vitalidad Completa",
+        "compounds": "NAD+ + Pila de Recuperación Celular",
+        "description": "Recarga las centrales celulares para eliminar la fatiga crónica, restaurar el enfoque y aumentar la resistencia."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una receta médica para la terapia de péptidos?",
+      "answer": "Sí. Todos los protocolos clínicos de péptidos son medicamentos bajo receta. Se consultará con nuestro médico licenciado quien evalúa su salud y ordena análisis de sangre antes de prescribir su plan personalizado."
+    },
+    {
+      "question": "¿Qué incluye el programa de péptidos guiado por médicos?",
+      "answer": "Su programa incluye consultas médicas directas con un médico certificado, análisis de sangre basal, péptidos personalizados de grado farmacéutico y controles continuos para asegurarse de que obtenga resultados óptimos de forma segura."
+    },
+    {
+      "question": "¿Cómo se administran los tratamientos de péptidos?",
+      "answer": "La mayoría de los protocolos de péptidos usan inyecciones subcutáneas pequeñas y prácticamente indoloras con microagujas (en casa o en la clínica). Algunos péptidos también están disponibles en cápsulas orales o aerosoles nasales según las recomendaciones del médico."
+    },
+    {
+      "question": "¿Qué tan rápido veré resultados con la terapia de péptidos?",
+      "answer": "Los péptidos de reparación articular como BPC-157 a menudo muestran alivio notable del dolor en 2 a 4 semanas. Los beneficios de recuperación muscular, calidad del sueño y pérdida de grasa se desarrollan durante 6 a 12 semanas."
+    },
+    {
+      "question": "¿Puedo combinar péptidos con TRT o terapia hormonal?",
+      "answer": "¡Sí! De hecho, los péptidos funcionan maravillosamente junto con TRT o terapia hormonal guiada por médicos para impulsar la reparación celular, acelerar la pérdida de grasa y mantener alta su energía."
+    },
+    {
+      "question": "¿Cómo empiezo con la terapia de péptidos?",
+      "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico revisará su salud, ordenará los análisis necesarios y comenzará su plan de curación personalizado!"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "pageTitle": "Legal & Medical Disclosures — OVI Wellness",
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: January 2024",
+    "intro": "Optimal Vitality Institute ('OVI Wellness') values your privacy. This policy details how we collect, protect, and handle your medical and personal information under HIPAA and applicable privacy laws.",
+    "sections": [
+      {
+        "heading": "1. Information We Collect",
+        "text": "We collect personal identification details (name, email, phone) and medical history forms provided when booking a consultation or filling out diagnostic intake forms."
+      },
+      {
+        "heading": "2. How Information Is Used",
+        "text": "Your information is used strictly by our medical providers to evaluate treatment candidacy, schedule lab panels, and manage your custom protocols. We never sell your personal data."
+      },
+      {
+        "heading": "3. HIPAA Security & Protection",
+        "text": "All health records and electronic communications are encrypted and stored in HIPAA-compliant electronic health record (EHR) systems."
+      }
+    ]
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: January 2024",
+    "intro": "By using this website and booking services with Optimal Vitality Institute, you agree to the following terms.",
+    "sections": [
+      {
+        "heading": "1. Medical Evaluation Requirement",
+        "text": "All medical protocols (TRT, GLP-1, Peptides) require explicit physician evaluation, laboratory blood testing, and continuous clinical oversight."
+      },
+      {
+        "heading": "2. Payment & Membership Terms",
+        "text": "Fees for diagnostic lab panels and prescription therapies are disclosed prior to enrollment. Subscriptions and protocol renewals may be managed via patient portal."
+      }
+    ]
+  }
+}

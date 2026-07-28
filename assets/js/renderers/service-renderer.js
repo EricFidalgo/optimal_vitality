@@ -17,19 +17,15 @@
  * To change layout:  edit assets/components/*.html
  */
 (function () {
-  // ─── 1. Find the service data ─────────────────────────────────────────────
-  const service = window.clinicData?.services?.find((s) => s.id === OVI_SERVICE_ID);
-
-  if (!service) {
-    console.error("[service-renderer] No service found for ID:", OVI_SERVICE_ID);
-    document.title = "Service Not Found — OVI Wellness";
-    return;
-  }
-
-  // ─── 2. Populate on componentsLoaded ─────────────────────────────────────
-  // The layout HTML is already in the page (generated from components).
-  // We just need to fill in the data-slot elements and build dynamic content.
+  // ─── Populate on componentsLoaded ─────────────────────────────────────────
   document.addEventListener("componentsLoaded", function () {
+    const service = window.clinicData?.services?.find((s) => s.id === OVI_SERVICE_ID);
+
+    if (!service) {
+      console.error("[service-renderer] No service found for ID:", typeof OVI_SERVICE_ID !== "undefined" ? OVI_SERVICE_ID : "undefined");
+      return;
+    }
+
     populatePage(service);
   });
 
@@ -170,8 +166,8 @@
       <div class="eligibility-card-row">
         <div class="eligibility-icon-wrapper"><i class="fas fa-check"></i></div>
         <div class="eligibility-row-content">
-          <strong>${item.label}</strong>
-          <p>${item.detail}</p>
+          <strong>${item.label || item.title || ""}</strong>
+          <p>${item.detail || item.desc || ""}</p>
         </div>
       </div>`
       )
@@ -515,10 +511,13 @@
     }
 
     function showResult() {
+        if (!quizData || !quizData.protocols) return;
         const protocol = quizData.protocols[answers.step1];
         if (!protocol) return;
-        const timeline = quizData.timelineMap[answers.step2] || '8–12 weeks';
-        const goalDesc = protocol.goalModifiers[answers.step3] || '';
+
+        const isEs = (window.OVI_I18N?.currentLang === 'es');
+        const timeline = quizData.timelineMap ? (quizData.timelineMap[answers.step2] || (isEs ? '8–12 semanas' : '8–12 weeks')) : (isEs ? '8–12 semanas' : '8–12 weeks');
+        const goalDesc = protocol.goalModifiers ? (protocol.goalModifiers[answers.step3] || '') : '';
 
         const resultEl = document.getElementById('quiz-step-result');
         if (!resultEl) return;
@@ -538,16 +537,16 @@
                 </div>
                 <div class="quiz-timeline-badge mb-4">
                     <i class="fas fa-clock text-primary"></i>
-                    Initial results in ${timeline}
+                    ${isEs ? 'Resultados iniciales en' : 'Initial results in'} ${timeline}
                 </div>
                 <p class="quiz-result-desc">${protocol.desc}</p>
-                <p class="quiz-result-desc"><strong style="color:var(--secondary-color);">For your goal:</strong> ${goalDesc}</p>
+                <p class="quiz-result-desc"><strong style="color:var(--secondary-color);">${isEs ? 'Para su objetivo:' : 'For your goal:'}</strong> ${goalDesc}</p>
                 <div class="quiz-social-proof mb-4">
                     <i class="fas fa-users text-primary me-2"></i>${protocol.social}
                 </div>
                 <div class="quiz-result-actions">
-                    <a href="#consultation" class="btn cta-btn">Get My Custom Protocol</a>
-                    <button class="quiz-restart" id="quiz-restart-btn">Start Over</button>
+                    <a href="#consultation" class="btn cta-btn">${isEs ? 'Obtener Mi Protocolo Personalizado' : 'Get My Custom Protocol'}</a>
+                    <button class="quiz-restart" id="quiz-restart-btn">${isEs ? 'Volver a Empezar' : 'Start Over'}</button>
                 </div>
             </div>
         `;

@@ -1,0 +1,2887 @@
+[
+  {
+    "id": "advanced-labs",
+    "type": "additional",
+    "tabLabel": "Laboratorios Avanzados",
+    "href": "advanced-labs.html",
+    "title": "Descubra Lo Que Sus Análisis de Sangre Regulares Pasan Por Alto",
+    "lead": "Deje de adivinar por qué se siente cansado, hinchado o agotado con paneles médicos completos y simples.",
+    "description": "Los análisis de sangre estándar del médico solo verifican números básicos. Nuestros análisis de laboratorio avanzados examinan profundamente sus hormonas, vitaminas, marcadores genéticos (MTHFR) y metales pesados para que nuestros médicos puedan darle respuestas exactas.",
+    "icon": "fa-flask",
+    "delay": "-3s",
+    "features": [
+      "Paneles completos de hormona y energía en sangre",
+      "Niveles de vitaminas y micronutrientes verificados",
+      "Análisis del gen MTHFR y detección de metales pesados",
+      "100% revisado por médicos con plan personalizado"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Laboratorios Diagnósticos Avanzados Guiados por Médicos — OVI Wellness",
+    "pageDescription": "Análisis de laboratorio diagnóstico avanzado guiado por médicos en St. Petersburg, FL. Paneles hormonales, pruebas de MTHFR, micronutrientes y detección de metales pesados.",
+    "heroHeadline": "Descubra Sus Números<br><span class=\"text-primary\">Reales de Salud</span>",
+    "heroSubheadline": "Paneles de Laboratorio Médico Avanzado revisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Panel de Laboratorio",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le recomienden el análisis de sangre adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal razón para hacerse análisis de sangre?",
+        "sub": "Elija lo que desea verificar primero.",
+        "options": [
+          {
+            "value": "hormone",
+            "icon": "fa-syringe",
+            "title": "Hormonas y Energía",
+            "desc": "Quiero verificar testosterona, tiroides y resistencia diaria."
+          },
+          {
+            "value": "vitamins",
+            "icon": "fa-apple-alt",
+            "title": "Deficiencias de Vitaminas y Nutrientes",
+            "desc": "Cansancio, inmunidad débil o adelgazamiento del cabello."
+          },
+          {
+            "value": "genetics",
+            "icon": "fa-dna",
+            "title": "MTHFR y Metales Pesados",
+            "desc": "Quiero verificar marcadores genéticos, moho o toxicidad de metales pesados."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuándo fue su último análisis de sangre completo?",
+        "sub": "Ayuda a nuestro médico a elegir la profundidad de su panel.",
+        "options": [
+          {
+            "value": "recent",
+            "icon": "fa-calendar",
+            "title": "En los últimos 6 meses",
+            "desc": "Tengo resultados básicos recientes de laboratorio."
+          },
+          {
+            "value": "old",
+            "icon": "fa-calendar-alt",
+            "title": "Hace más de un año / Nunca",
+            "desc": "Necesito un análisis de laboratorio basal completo."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Tiene síntomas inexplicables como fatiga o niebla mental?",
+        "sub": "Ayuda a nuestro médico a identificar causas raíz ocultas.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-triangle-exclamation",
+            "title": "Sí, Los Tengo",
+            "desc": "Las pruebas normales del médico resultaron 'bien' pero aún me siento mal."
+          },
+          {
+            "value": "no",
+            "icon": "fa-circle-check",
+            "title": "No, Solo Preventivo",
+            "desc": "Me siento bien pero quiero datos de longevidad y salud máxima."
+          }
+        ]
+      },
+      "protocols": {
+        "hormone": {
+          "tag": "Panel de Energía Recomendado",
+          "name": "Panel Total de Hormona y Vitalidad",
+          "peptides": "Análisis Completo de Testosterona + Tiroides + Cortisol",
+          "icon": "fa-syringe",
+          "desc": "Mide la testosterona total y libre, la función tiroidea, el cortisol y los marcadores de energía para identificar por qué se siente cansado.",
+          "goalModifiers": {
+            "yes": "Dirigido a encontrar caídas hormonales ocultas que las pruebas básicas de atención primaria pasan completamente por alto.",
+            "no": "Excelente verificación basal para mantener sus hormonas equilibradas a medida que envejece."
+          },
+          "social": "Más de 120 pacientes locales desbloquearon alta energía con este panel de laboratorio médico."
+        },
+        "vitamins": {
+          "tag": "Panel de Nutrientes e Inmunidad",
+          "name": "Auditoría Completa de Micronutrientes y Antioxidantes",
+          "peptides": "Prueba Intracelular de Vitaminas y Minerales",
+          "icon": "fa-apple-alt",
+          "desc": "Verifica los niveles exactos de vitamina B12, D3, magnesio y antioxidantes dentro de sus células para que tome solo lo que necesita.",
+          "goalModifiers": {
+            "yes": "Encuentra brechas vitamínicas celulares que causan niebla mental, lentitud y recuperación lenta.",
+            "no": "Ayuda a construir un plan diario de vitaminas limpio y personalizado adaptado estrictamente a su cuerpo."
+          },
+          "social": "89 pacientes optimizaron su salud con esta auditoría intracelular."
+        },
+        "genetics": {
+          "tag": "Panel Profundo de Salud y Detox",
+          "name": "Panel de Gen MTHFR y Metales Tóxicos",
+          "peptides": "Metilación de ADN + Análisis de Plomo/Mercurio/Arsénico",
+          "icon": "fa-dna",
+          "desc": "Analiza sus variantes del gen MTHFR y prueba metales pesados tóxicos que interrumpen su cerebro, humor y salud cardíaca.",
+          "goalModifiers": {
+            "yes": "Descubre obstáculos genéticos o tóxicos ocultos que impiden que los tratamientos tradicionales funcionen.",
+            "no": "Prueba avanzada de longevidad para garantizar la protección cerebral, cardíaca y hepática a largo plazo."
+          },
+          "social": "73 pacientes descubrieron información genética oculta con este panel."
+        }
+      },
+      "timelineMap": {
+        "recent": "3–5 días (Revisión Rápida de Resultados)",
+        "old": "5–7 días (Auditoría Basal Completa)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para Laboratorios Avanzados?",
+      "intro": "Nuestros paneles de diagnóstico van mucho más allá de los análisis de sangre anuales estándar. Supervisados por médicos licenciados, descubrimos las causas raíz ocultas para que obtenga respuestas claras y prácticas.",
+      "note": "¿Preguntas sobre análisis de laboratorio? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Le Dijeron que Sus Análisis Son 'Normales'",
+          "detail": "Adultos que se sienten exhaustos o hinchados a pesar de que los médicos de atención primaria dicen que los análisis están bien."
+        },
+        {
+          "label": "Cansado Todo el Día",
+          "detail": "Cualquiera que luche con niebla mental, caídas a mitad del día, bajo impulso o mal sueño."
+        },
+        {
+          "label": "Riesgo Familiar de Corazón y Genes",
+          "detail": "Personas que quieren pruebas del gen MTHFR, ApoB o verificaciones avanzadas de riesgo cardíaco."
+        },
+        {
+          "label": "Quiere Atención Basada en Datos",
+          "detail": "Cualquiera que comience TRT, pérdida de peso o péptidos que necesite números de inicio precisos."
+        },
+        {
+          "label": "Listo para Revisión Médica",
+          "detail": "Buscando una revisión médica uno a uno de cada marcador con un plan personalizado."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Análisis de Laboratorio Simples Guiados por Médicos",
+      "sectionSubheadline": "Paneles de laboratorio ordenados por médicos y extraídos cómodamente en nuestra clínica o laboratorio local.",
+      "items": [
+        {
+          "icon": "fa-syringe",
+          "name": "Panel Hormonal Completo",
+          "tag": "Núcleo Hormonal",
+          "description": "Analiza testosterona total y libre, estrógeno, tiroides (T3/T4), cortisol y DHEA para restaurar la energía máxima."
+        },
+        {
+          "icon": "fa-dna",
+          "name": "Prueba de Variante del Gen MTHFR",
+          "tag": "Genética",
+          "description": "Identifica variantes del gen C677T y A1298C para optimizar la metilación, el humor y el uso de folato de su cuerpo."
+        },
+        {
+          "icon": "fa-apple-alt",
+          "name": "Prueba Intracelular de Micronutrientes",
+          "tag": "Vitaminas",
+          "description": "Mide vitaminas, minerales y antioxidantes directamente dentro de sus células sanguíneas para una verdadera precisión."
+        },
+        {
+          "icon": "fa-industry",
+          "name": "Análisis de Metales Pesados Tóxicos",
+          "tag": "Control de Detox",
+          "description": "Analiza mercurio, plomo y arsénico que se acumulan con el tiempo y desencadenan fatiga y niebla mental."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Panel Avanzado Cardíaco y de Lípidos",
+          "tag": "Cardiovascular",
+          "description": "Va más allá del colesterol básico para analizar ApoB, Lp(a) y hs-CRP para una verdadera seguridad cardíaca."
+        },
+        {
+          "icon": "fa-user-md",
+          "name": "Revisión Médica Uno a Uno",
+          "tag": "Consulta Médica",
+          "description": "Cada extracción de laboratorio incluye una consulta detallada uno a uno con nuestro médico para explicar sus números."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">los Laboratorios Estándar Fallan</span>",
+      "body": "Los análisis de sangre estándar solo verifican señales de enfermedades, no una salud óptima. Su rango 'normal' incluye poblaciones enfermas o envejecidas. Nuestros paneles médicos avanzados prueban rangos óptimos estrechos y niveles celulares, revelando los desequilibrios ocultos que las pruebas de atención primaria pasan por alto.",
+      "bullets": [
+        "Ordenado y revisado por médicos licenciados",
+        "Prueba rangos óptimos de vitalidad, no solo 'normal de enfermedad'",
+        "Incluye consulta médica uno a uno clara y plan de acción"
+      ],
+      "stats": [
+        {
+          "value": "Profundo",
+          "label": "Prueba rangos óptimos, no promedios básicos"
+        },
+        {
+          "value": "Seguro",
+          "label": "Revisado por médicos y verificado en laboratorio"
+        },
+        {
+          "value": "1-a-1",
+          "label": "Consulta médica personalizada"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Precisión Intracelular",
+          "detail": "Medimos los niveles de nutrientes dentro de sus células donde realmente funcionan, en lugar de solo flotar en el suero."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Plan Médico Práctico",
+          "detail": "No solo obtiene una pila de números confusos: nuestro médico le da un plan de tratamiento simple paso a paso."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Mi médico dijo que mis análisis de sangre son normales, ¿por qué me siento mal?",
+        "reality": "Los laboratorios estándar usan promedios poblacionales amplios para detectar enfermedades. Puede estar en el rango 'normal' y aún tener baja energía u hormonas subóptimas. Nosotros probamos rangos de salud óptima."
+      },
+      {
+        "myth": "¿Necesito ayunar antes de que me extraigan sangre?",
+        "reality": "Para la mayoría de los paneles completos de hormonas y lípidos, sí—un simple ayuno nocturno de 8 a 12 horas (el agua está bien) le da a nuestro médico la lectura de salud más limpia y precisa."
+      },
+      {
+        "myth": "¿Es cubierta o simple la prueba de laboratorio guiada por médicos?",
+        "reality": "¡Sí! Hacemos que las pruebas de laboratorio sean fáciles y fluidas. Puede extraerse sangre aquí mismo en nuestra cómoda clínica de St. Petersburg o enviamos una orden a un Quest o LabCorp local conveniente cerca de usted."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-flask",
+          "label": "Laboratorios Profundos"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Revisado por Médico"
+        },
+        {
+          "icon": "fa-bullseye",
+          "label": "Objetivo Exacto"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "100% Seguro"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Profundidad del Laboratorio",
+          "without": "Verificación básica de 5 marcadores",
+          "with": "Auditoría completa de biomarcadores integrales"
+        },
+        {
+          "metric": "Rangos de Referencia",
+          "without": "Normal amplio de 'población enferma'",
+          "with": "Rango estrecho de salud y energía óptima"
+        },
+        {
+          "metric": "Análisis Genético y Tóxico",
+          "without": "Nunca verificado",
+          "with": "MTHFR, metales pesados y ApoB verificados"
+        },
+        {
+          "metric": "Revisión Médica",
+          "without": "Correo electrónico automático del portal",
+          "with": "Consulta médica detallada uno a uno"
+        },
+        {
+          "metric": "Plan de Tratamiento",
+          "without": "No se da plan de acción",
+          "with": "Protocolo médico personalizado prescrito"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Panel Completo de Vitalidad y Hormonas",
+          "tag": "Más Popular",
+          "compounds": "Hormonas Completas + Tiroides + Metabólico",
+          "description": "Nuestra auditoría de laboratorio fundamental que verifica todos los principales marcadores de hormonas, tiroides y azúcar en sangre para máxima energía."
+        },
+        {
+          "name": "Auditoría de ADN MTHFR y Metilación",
+          "tag": "Genética",
+          "compounds": "Genes MTHFR + Homocisteína + Folato",
+          "description": "Descubre obstáculos genéticos de metilación para corregir fatiga, niebla mental y cambios de humor."
+        },
+        {
+          "name": "Auditoría Cardíaca y de Longevidad Corporal Total",
+          "tag": "Verificación Completa",
+          "compounds": "ApoB + Metales Pesados + Micronutrientes",
+          "description": "Prueba profunda integral para seguridad cardíaca, cargas de metales tóxicos y vitaminas intracelulares."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una orden médica para las pruebas de laboratorio avanzadas?",
+        "answer": "¡Nuestro médico licenciado proporciona la orden de laboratorio requerida! Se consultará con nuestro equipo médico, que ordena su panel personalizado basado en sus objetivos de salud y síntomas específicos."
+      },
+      {
+        "question": "¿Qué incluye el programa de laboratorio guiado por médicos?",
+        "answer": "Su programa incluye la orden de laboratorio del médico, su extracción de sangre en nuestra clínica o en un socio de laboratorio local, un análisis de laboratorio completo y una consulta médica detallada uno a uno para explicar sus resultados."
+      },
+      {
+        "question": "¿Dónde voy a extraerme sangre?",
+        "answer": "¡Puede extraerse sangre aquí mismo en nuestra cómoda clínica médica de St. Petersburg, o podemos enviar una orden a un Quest o LabCorp local conveniente cerca de usted!"
+      },
+      {
+        "question": "¿Cuánto tiempo tarda en obtener mis resultados de laboratorio?",
+        "answer": "La mayoría de los resultados rutinarios de hormonas y metabolismo regresan dentro de 3 a 5 días hábiles. Los paneles especializados genéticos o de metales pesados típicamente tardan de 7 a 10 días."
+      },
+      {
+        "question": "¿El médico explicará mis números y creará un plan de tratamiento?",
+        "answer": "¡100% sí! No se quedará adivinando. Nuestro médico le guiará a través de cada marcador en español simple y diseñará un plan de tratamiento personalizado (TRT, pérdida de peso, péptidos o vitaminas) adaptado a su cuerpo."
+      },
+      {
+        "question": "¿Cómo empiezo con las pruebas de laboratorio avanzadas?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico ordenará su panel de laboratorio personalizado hoy!"
+      }
+    ]
+  },
+  {
+    "id": "detox",
+    "type": "additional",
+    "tabLabel": "Protocolos de Desintoxicación",
+    "href": "detox.html",
+    "title": "Limpie su Intestino y Restablezca su Energía",
+    "lead": "Elimine toxinas de moho, parásitos intestinales y fatiga persistente para sentirse ligero, agudo y lleno de energía.",
+    "description": "El hinchazón inexplicable, la niebla mental y el agotamiento suelen provenir de toxinas de moho ocultas o parásitos intestinales. Nuestros médicos usan análisis de laboratorio simples y limpiezas bajo receta para restaurar su intestino y energía.",
+    "icon": "fa-leaf",
+    "delay": "-2s",
+    "features": [
+      "Análisis de laboratorio simple para moho oculto y parásitos intestinales",
+      "Limpieza celular prescrita por médicos",
+      "Solucione hinchazón, niebla mental y fatiga constante",
+      "100% verificado por médicos para su seguridad"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Protocolos Médicos de Desintoxicación — OVI Wellness",
+    "pageDescription": "Protocolos médicos de desintoxicación guiados por médicos en St. Petersburg, FL. Análisis de micotoxinas, cuidado antifúngico y limpieza intestinal supervisada por profesionales médicos licenciados.",
+    "heroHeadline": "Desintoxicación<br><span class=\"text-primary\">Sistémica Profunda</span>",
+    "heroSubheadline": "Protocolos de Desintoxicación de Moho e Intestinal bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan Detox",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal problema de salud?",
+        "sub": "Elija lo que desea resolver primero.",
+        "options": [
+          {
+            "value": "mold",
+            "icon": "fa-disease",
+            "title": "Exposición al Moho y Fatiga",
+            "desc": "Niebla mental, fatiga o problemas respiratorios tras exposición al moho."
+          },
+          {
+            "value": "gut",
+            "icon": "fa-bug",
+            "title": "Hinchazón y Problemas Intestinales",
+            "desc": "Hinchazón constante, cólicos estomacales o digestión lenta."
+          },
+          {
+            "value": "reset",
+            "icon": "fa-arrows-rotate",
+            "title": "Restablecimiento Total del Cuerpo",
+            "desc": "Quiero una desintoxicación médica completa para limpiar mis marcadores de energía."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuánto tiempo lleva sintiéndose así?",
+        "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "Unos Pocos Meses",
+            "desc": "Fatiga reciente, hinchazón o brotes en la piel."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "Varios Años",
+            "desc": "Problemas digestivos continuos o fatiga crónica por años."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Ha realizado antes una prueba médica de desintoxicación?",
+        "sub": "Ayuda a nuestro médico a orientar su análisis de laboratorio.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Primera Vez",
+            "desc": "Nunca he hecho una prueba clínica de desintoxicación."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Sí, Lo He Intentado",
+            "desc": "He probado desintoxicaciones de tienda o limpiezas básicas antes."
+          }
+        ]
+      },
+      "protocols": {
+        "mold": {
+          "tag": "Plan Recomendado de Detox de Moho",
+          "name": "Eliminación Total de Moho y Micotoxinas",
+          "peptides": "Antifúngico Bajo Receta + Ligantes Celulares",
+          "icon": "fa-disease",
+          "desc": "Un plan sencillo guiado por médicos que analiza las toxinas de moho y usa ligantes seguros para eliminarlos de sus células.",
+          "goalModifiers": {
+            "no": "Plan inicial con un simple análisis de orina para detectar toxinas de moho ocultas.",
+            "yes": "Protocolo médico dirigido a eliminar residuos de moho profundos en tejidos."
+          },
+          "social": "Más de 60 pacientes locales eliminaron la niebla mental con este plan guiado por médicos."
+        },
+        "gut": {
+          "tag": "Plan de Restablecimiento Intestinal",
+          "name": "Limpieza Intestinal Dirigida y Restauración",
+          "peptides": "Antiparasitario Bajo Receta + Protocolo de Reparación Intestinal",
+          "icon": "fa-bug",
+          "desc": "Elimina parásitos y bacterias malas para detener la hinchazón, restaurar la digestión y mejorar la energía diaria.",
+          "goalModifiers": {
+            "no": "Incluye análisis de laboratorio simple para identificar bacterias malas y comenzar una limpieza suave.",
+            "yes": "Protocolo clínico avanzado para eliminar problemas intestinales persistentes y reparar la salud intestinal."
+          },
+          "social": "78 pacientes lograron una digestión cómoda y plana con este protocolo."
+        },
+        "reset": {
+          "tag": "Plan de Vitalidad Total",
+          "name": "Restablecimiento Sistémico del Cuerpo y la Energía",
+          "peptides": "Panel Completo de Laboratorio + Detox de Hígado e Intestino",
+          "icon": "fa-arrows-rotate",
+          "desc": "Restablecimiento corporal completo que limpia su hígado, elimina toxinas de la sangre y restaura la energía juvenil.",
+          "goalModifiers": {
+            "no": "Análisis de laboratorio basal completo para identificar qué frena su energía diaria.",
+            "yes": "Limpieza celular de alta potencia diseñada para la salud y vitalidad a largo plazo."
+          },
+          "social": "Más de 85 pacientes renovaron su energía con este restablecimiento médico."
+        }
+      },
+      "timelineMap": {
+        "months": "6–8 semanas (Limpieza Acelerada)",
+        "years": "8–12 semanas (Plan de Restablecimiento Completo)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para la Atención Detox?",
+      "intro": "Nuestros protocolos de desintoxicación son planes seguros de grado médico supervisados por médicos licenciados. Analizamos sus marcadores de salud primero para darle el tratamiento exacto para su cuerpo.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Niebla Mental y Fatiga",
+          "detail": "Adultos con agotamiento constante, poca concentración o mañanas pesadas."
+        },
+        {
+          "label": "Hinchazón Inexplicable",
+          "detail": "Cualquiera que sufra cólicos estomacales, digestión irregular o reacciones a alimentos."
+        },
+        {
+          "label": "Exposición Conocida al Moho",
+          "detail": "Personas que vivieron o trabajaron en edificios con moho y se sienten agotadas."
+        },
+        {
+          "label": "Limpiezas de Jugo Sin Éxito",
+          "detail": "Quienes están cansados de tés de tienda o ayunos de jugos que no resuelven los problemas reales."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando análisis de laboratorio seguros prescritos por médicos y limpieza dirigida."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+      "sectionSubheadline": "Opciones de desintoxicación prescritas por médicos adaptadas a su cuerpo tras análisis de laboratorio simples.",
+      "items": [
+        {
+          "icon": "fa-vial",
+          "name": "Análisis de Micotoxinas de Moho",
+          "tag": "Prueba de Moho",
+          "description": "Análisis de orina simple para encontrar toxinas de moho ocultas en sus células y guiar su limpieza médica personalizada."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Terapia Antifúngica bajo Receta",
+          "tag": "Eliminación de Moho",
+          "description": "Atención médica dirigida para eliminar de forma segura residuos de moho de su hígado, tejidos e intestino."
+        },
+        {
+          "icon": "fa-bug",
+          "name": "Erradicación de Parásitos Intestinales",
+          "tag": "Salud Intestinal",
+          "description": "Análisis avanzados combinados con limpiadores prescritos por médicos para eliminar bacterias malas y restaurar el confort digestivo."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Protocolo de Ligantes de Toxinas Celulares",
+          "tag": "Expulsión de Toxinas",
+          "description": "Ligantes especializados bajo receta que atrapan toxinas en su intestino para que su cuerpo las elimine naturalmente."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Limpieza Hepática y Linfática",
+          "tag": "Soporte de Órganos",
+          "description": "Nutrientes dirigidos y soporte de glutatión para ayudar a su hígado y sistema linfático a eliminar desechos rápidamente."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Chequeo Médico de Laboratorio",
+          "tag": "Seguridad Primero",
+          "description": "Análisis completos de sangre y orina para que su médico pueda monitorear su progreso y mantenerlo seguro."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">el Ayuno de Jugos Falla</span>",
+      "body": "Los ayunos de jugos solo eliminan agua y pierden las toxinas de moho profundas atrapadas en sus tejidos grasos e hígado. Nuestros protocolos guiados por médicos usan análisis de laboratorio reales para identificar toxinas exactas. Luego prescribimos ligantes médicos y antifúngicos que se adhieren a las toxinas y las extraen de su cuerpo de forma segura.",
+      "bullets": [
+        "Prescrito y supervisado por médicos licenciados",
+        "Basado en análisis de laboratorio reales de orina y sangre",
+        "Extrae toxinas celulares profundas sin privar a su cuerpo"
+      ],
+      "stats": [
+        {
+          "value": "Dirigido",
+          "label": "Extrae moho profundo y toxinas intestinales"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y analizado en laboratorio"
+        },
+        {
+          "value": "0%",
+          "label": "Ayuno extremo requerido"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Análisis de Laboratorio Real",
+          "detail": "Usamos paneles avanzados de micotoxinas en orina para probar qué toxinas están en su sistema antes de comenzar."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Ligantes de Toxinas bajo Receta",
+          "detail": "Los ligantes médicos se adhieren al moho atrapado y los metales pesados para que su cuerpo los elimine limpiamente."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Tengo que hacer un ayuno extremo de jugos?",
+        "reality": "No. Los ayunos extremos no eliminan el moho profundo ni los parásitos intestinales. Nuestros planes médicos usan ligantes seguros y alimentación limpia para que coma normalmente mientras sana."
+      },
+      {
+        "myth": "¿Una desintoxicación médica es agresiva para mi cuerpo?",
+        "reality": "No. Nuestros médicos personalizan su dosis inicial según sus análisis y hacen seguimiento regular para asegurar que su limpieza sea suave, gentil y efectiva."
+      },
+      {
+        "myth": "¿Es segura la terapia de desintoxicación guiada por médicos?",
+        "reality": "Sí. Todos los tratamientos usan medicamentos aprobados por la FDA y ligantes naturales prescritos directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-vial",
+          "label": "Analizado en Laboratorio"
+        },
+        {
+          "icon": "fa-leaf",
+          "label": "Intestino Limpio"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Mente Clara"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Verificado por Médico"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Método Diagnóstico",
+          "without": "Adivinanzas / tés de tienda",
+          "with": "Análisis reales de laboratorio (micotoxinas/intestino)"
+        },
+        {
+          "metric": "Profundidad de Limpieza",
+          "without": "Solo pérdida superficial de agua",
+          "with": "Eliminación profunda de toxinas de tejidos e hígado"
+        },
+        {
+          "metric": "Alivio de Niebla Mental",
+          "without": "Temporal o ninguno",
+          "with": "Claridad mental duradera"
+        },
+        {
+          "metric": "Supervisión Médica",
+          "without": "Kits web no monitoreados",
+          "with": "Revisión y laboratorio de médico licenciado"
+        },
+        {
+          "metric": "Resultado a Largo Plazo",
+          "without": "La hinchazón vuelve de inmediato",
+          "with": "Intestino reequilibrado y células limpias"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Limpieza Completa de Moho y Micotoxinas",
+          "tag": "Más Popular",
+          "compounds": "Antifúngico + Pila de Ligantes de Toxinas",
+          "description": "Nuestro protocolo líder de moho combinando antifúngicos bajo receta con ligantes celulares para eliminar la fatiga por moho."
+        },
+        {
+          "name": "Restablecimiento Total de Intestino y Parásitos",
+          "tag": "Salud Intestinal",
+          "compounds": "Antiparasitario + Protocolo de Microbioma",
+          "description": "Elimina parásitos y bacterias malas para restaurar una digestión suave y cómoda."
+        },
+        {
+          "name": "Limpieza Sistémica Completa de Energía",
+          "tag": "Restablecimiento Total",
+          "compounds": "Panel de Laboratorio + Soporte de Hígado y Linfático",
+          "description": "Auditoría corporal completa diseñada para eliminar la niebla mental, la fatiga y la hinchazón sistémica."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una consulta médica para los protocolos de desintoxicación?",
+        "answer": "Sí. Todos nuestros protocolos de desintoxicación médica requieren una consulta con un médico licenciado. Nuestro médico evaluará sus síntomas y ordenará análisis de laboratorio dirigidos antes de prescribir su plan."
+      },
+      {
+        "question": "¿Qué incluye el programa de desintoxicación guiado por médicos?",
+        "answer": "Su programa incluye una consulta médica completa, análisis de laboratorio especializados de orina o sangre, ligantes o antifúngicos bajo receta personalizados, pautas alimentarias y seguimientos de control."
+      },
+      {
+        "question": "¿Cómo sé si tengo toxinas de moho o parásitos intestinales?",
+        "answer": "Ordenamos análisis de laboratorio simples e indoloros (como un panel de micotoxinas en orina o una prueba fecal intestinal) que identifican exactamente qué toxinas o microbios están causando su niebla mental e hinchazón."
+      },
+      {
+        "question": "¿Experimentaré efectos secundarios de desintoxicación incómodos?",
+        "answer": "Nuestros médicos inician su plan suavemente para evitar 'crisis de desintoxicación'. Ajustamos la dosis de su ligante para asegurarse de que las toxinas se eliminen de forma suave sin interrumpir su rutina diaria."
+      },
+      {
+        "question": "¿Cuánto dura un protocolo médico de desintoxicación?",
+        "answer": "La mayoría de los pacientes completan su fase principal de limpieza en 6 a 12 semanas, con mejoras importantes en la niebla mental, la energía y la digestión dentro de las primeras 3 a 4 semanas."
+      },
+      {
+        "question": "¿Cómo empiezo con una desintoxicación clínica?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico ordenará su análisis de laboratorio y comenzará su plan!"
+      }
+    ]
+  },
+  {
+    "id": "glp-1therapies",
+    "type": "core",
+    "tabLabel": "Pérdida de Peso Médica (GLP-1)",
+    "href": "glp-1therapies.html",
+    "title": "Pierda Peso Rápido Sin Antojos Constantes",
+    "lead": "Médicos reales guían su plan para que pierda grasa, se sienta satisfecho y mantenga la energía alta.",
+    "description": "Sin privarse de comida. Sin entrenamientos locos. Nuestros simples tratamientos médicos semanales apagan los pensamientos constantes sobre comida para que queme grasa mientras protege su músculo.",
+    "icon": "fa-weight-scale",
+    "delay": "-1s",
+    "features": [
+      "Detenga los antojos constantes de comida",
+      "Queme grasa rebelde manteniendo el músculo",
+      "Supervisión y atención de médicos licenciados",
+      "Plan semanal simple prescrito por médicos"
+    ],
+    "image": "assets/images/photos/glp1-weight-loss.jpg",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Pérdida de Peso Médica GLP-1 Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Protocolos de pérdida de peso médica guiados por médicos en St. Petersburg, FL. Prescripciones de Semaglutida y Tirzepatida supervisadas por profesionales de la salud licenciados.",
+    "heroHeadline": "Optimización<br><span class=\"text-primary\">Metabólica</span> Redefinida",
+    "heroSubheadline": "Protocolos de pérdida de peso con Semaglutida y Tirzepatida bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan de Pérdida de Peso",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal objetivo de peso?",
+        "sub": "Elija lo que más le importa ahora mismo.",
+        "options": [
+          {
+            "value": "weight",
+            "icon": "fa-weight",
+            "title": "Perder Peso Rápido",
+            "desc": "Quemar grasa corporal sin sentir hambre todo el día."
+          },
+          {
+            "value": "metabolic",
+            "icon": "fa-heartbeat",
+            "title": "Mejorar mi Energía y Salud",
+            "desc": "Acelerar el metabolismo, la energía y la salud en general."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Ha usado antes tratamientos de pérdida de peso GLP-1?",
+        "sub": "Ayuda a nuestro médico a elegir su dosis inicial.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times-circle",
+            "title": "Primera Vez",
+            "desc": "Nunca he probado los tratamientos GLP-1 antes."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check-circle",
+            "title": "Sí, Lo He Intentado",
+            "desc": "He usado Semaglutida o Tirzepatida antes."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Cuánto peso desea perder?",
+        "sub": "Establece un cronograma simple para sus resultados.",
+        "options": [
+          {
+            "value": "moderate",
+            "icon": "fa-arrow-down",
+            "title": "5 a 10 kg",
+            "desc": "Pérdida de grasa dirigida para sentirse más liviano."
+          },
+          {
+            "value": "significant",
+            "icon": "fa-arrow-circle-down",
+            "title": "Más de 10 kg",
+            "desc": "Pérdida de peso importante para reconstruir su cuerpo."
+          }
+        ]
+      },
+      "protocols": {
+        "weight": {
+          "tag": "Plan Recomendado",
+          "name": "Plan de Quema de Grasa Guiado por Médicos",
+          "peptides": "Prescripción de Semaglutida o Tirzepatida",
+          "icon": "fa-weight-scale",
+          "desc": "Un tratamiento semanal simple prescrito por un médico licenciado que apaga el hambre y ayuda a su cuerpo a quemar grasa cada día.",
+          "goalModifiers": {
+            "moderate": "Ideal para perder 5-10 kg manteniendo su energía diaria alta.",
+            "significant": "Diseñado para más de 10 kg de pérdida de grasa con chequeos médicos paso a paso."
+          },
+          "social": "Más de 100 pacientes locales están usando actualmente este plan guiado por médicos."
+        },
+        "metabolic": {
+          "tag": "Plan de Salud y Vitalidad",
+          "name": "Plan de Restablecimiento Corporal Total",
+          "peptides": "Tirzepatida + Soporte de Vitaminas",
+          "icon": "fa-heartbeat",
+          "desc": "Construye un metabolismo saludable, equilibra el azúcar en sangre y mantiene su cuerpo sintiéndose joven y lleno de energía.",
+          "goalModifiers": {
+            "moderate": "Ayuda a corregir caídas de energía diarias y aumento de peso leve.",
+            "significant": "Restablecimiento integral para limpiar marcadores de salud y eliminar el exceso de peso."
+          },
+          "social": "84 pacientes comenzaron este plan guiado por médicos en los últimos 90 días."
+        }
+      },
+      "timelineMap": {
+        "no": "12–16 semanas (Plan Médico Estándar)",
+        "yes": "8–12 semanas (Plan de Seguimiento Rápido)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para el Tratamiento GLP-1?",
+      "intro": "Nuestros tratamientos son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Verificamos su salud primero para asegurarnos de que obtenga el mejor plan para su cuerpo.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Grasa Rebelde",
+          "detail": "Adultos con más de 7 kg que perder que tienen dificultades para eliminar la grasa solo con dieta."
+        },
+        {
+          "label": "Antojos Constantes",
+          "detail": "Cualquiera cansado de pensar en comida, picar de noche o sentir hambre todo el día."
+        },
+        {
+          "label": "Metabolismo Estancado",
+          "detail": "Personas que hacen ejercicio o dieta pero no pueden bajar de peso."
+        },
+        {
+          "label": "Quiere Preservar el Músculo",
+          "detail": "Desea perder tejido graso manteniendo su músculo fuerte y saludable."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando un plan seguro prescrito por médicos con controles periódicos."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Médicos Semanales Simples",
+      "sectionSubheadline": "Tratamientos semanales prescritos por médicos adaptados a su cuerpo tras una consulta médica.",
+      "items": [
+        {
+          "icon": "fa-weight-scale",
+          "name": "Protocolo de Semaglutida",
+          "tag": "Más Popular",
+          "description": "Tratamiento GLP-1 bajo receta que calma las señales de hambre en su cerebro. Una dosis semanal simple para sentirse satisfecho y perder peso de manera constante."
+        },
+        {
+          "icon": "fa-fire",
+          "name": "Protocolo de Tirzepatida",
+          "tag": "Resultados Más Rápidos",
+          "description": "Tratamiento de doble acción bajo receta que actúa sobre dos vías naturales de hambre para una pérdida de grasa aún más rápida manteniendo su energía."
+        },
+        {
+          "icon": "fa-dna",
+          "name": "Protocolo de Retatrutida",
+          "tag": "Nueva Generación",
+          "description": "Opción de triple acción para el peso rebelde que no ha respondido a dietas anteriores. Disponible previa evaluación médica."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Inyecciones de Quema de Grasa y B12",
+          "tag": "Potenciador de Energía",
+          "description": "Inyecciones rápidas de vitaminas para aumentar su energía diaria, apoyar su hígado y mantener su cuerpo quemando grasa rápidamente."
+        },
+        {
+          "icon": "fa-chart-line",
+          "name": "Chequeo Médico de Sangre",
+          "tag": "Seguridad Primero",
+          "description": "Análisis de laboratorio simples para que su médico pueda personalizar su dosis inicial y garantizar su salud y seguridad completas."
+        },
+        {
+          "icon": "fa-utensils",
+          "name": "Guía Alimentaria Simple",
+          "tag": "Comidas Fáciles",
+          "description": "Consejos alimentarios diarios fáciles diseñados para proteger su músculo fuerte mientras el peso desaparece."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Dietas Fallan</span>",
+      "body": "La mayoría de las dietas fallan porque su cerebro le dice que tiene hambre. Los tratamientos con GLP-1 bajo receta envían señales naturales de saciedad a su cerebro. Come menos de forma natural sin sentirse privado o débil. Quema grasa mientras mantiene su músculo.",
+      "bullets": [
+        "Prescrito por médicos licenciados reales",
+        "Tratamiento semanal simple en casa o en la clínica",
+        "Protege el músculo para que queme grasa pura"
+      ],
+      "stats": [
+        {
+          "value": "Satisfecho",
+          "label": "Sin antojos constantes de comida"
+        },
+        {
+          "value": "Fácil",
+          "label": "Plan médico semanal simple"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y analizado en laboratorio"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-brain",
+          "title": "Apaga los Pensamientos de Hambre",
+          "detail": "Envía señales a su cerebro de que está satisfecho tras comidas pequeñas para que el picoteo se detenga naturalmente."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "title": "Mantiene su Músculo Fuerte",
+          "detail": "Nuestros planes médicos protegen su músculo para que su cuerpo queme grasa como combustible."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Tengo que morirme de hambre?",
+        "reality": "No. Nuestros planes médicos usan inyecciones semanales que apagan el hambre de forma natural. Usted come comidas normales con porciones más pequeñas sin sentirse privado."
+      },
+      {
+        "myth": "¿Solo funciona para la obesidad severa?",
+        "reality": "No. Nuestros médicos prescriben tratamientos GLP-1 para cualquier adulto con peso rebelde, antojos constantes o metabolismo lento que quiera resultados seguros."
+      },
+      {
+        "myth": "¿Los tratamientos GLP-1 guiados por médicos son seguros?",
+        "reality": "Sí. Todos los tratamientos son medicamentos aprobados por la FDA prescritos directamente por médicos licenciados siguiendo estrictas pautas médicas de Florida."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-fire",
+          "label": "Quema de Grasa"
+        },
+        {
+          "icon": "fa-dumbbell",
+          "label": "Músculo Preservado"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Sin Hambre"
+        },
+        {
+          "icon": "fa-chart-line",
+          "label": "Verificado por Médico"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Nivel de Hambre",
+          "without": "Siempre hambriento y cansado",
+          "with": "Se siente satisfecho y saciado"
+        },
+        {
+          "metric": "Velocidad de Pérdida de Grasa",
+          "without": "Lenta y frustrante",
+          "with": "Constante y respaldada por médicos"
+        },
+        {
+          "metric": "Protección del Músculo",
+          "without": "Pierde músculo y fuerza",
+          "with": "Protege el músculo mientras quema grasa"
+        },
+        {
+          "metric": "Seguridad Médica",
+          "without": "Sin supervisión / genérico",
+          "with": "Prescrito por médicos y monitoreado en laboratorio"
+        },
+        {
+          "metric": "Resultados a Largo Plazo",
+          "without": "El peso vuelve",
+          "with": "Orientación médica para mantenerlo"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Plan de Pérdida de Grasa Rápida",
+          "tag": "Más Popular",
+          "compounds": "Tirzepatida + Potenciador de Vitamina B12",
+          "description": "Combina el tratamiento de doble acción bajo receta con energizantes. Diseñado para quemar grasa rápidamente manteniendo su fuerza."
+        },
+        {
+          "name": "Plan Esencial de Pérdida de Peso",
+          "tag": "Gran Inicio",
+          "compounds": "Semaglutida + Guía Alimentaria",
+          "description": "GLP-1 bajo receta probado combinado con orientación alimentaria diaria simple. Perfecto para su primera experiencia de pérdida de peso guiada por médicos."
+        },
+        {
+          "name": "Plan Completo de Salud y Pérdida de Grasa",
+          "tag": "Restablecimiento Total",
+          "compounds": "Retatrutida + Laboratorios Médicos",
+          "description": "Tratamiento avanzado de triple acción guiado por paneles completos de salud médica para obtener los máximos resultados."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una receta médica para los tratamientos GLP-1?",
+        "answer": "Sí. Todos los tratamientos GLP-1 son medicamentos bajo receta. Se consultará con nuestro médico licenciado o proveedor de salud quien evalúa su historial médico para determinar la candidatura y prescribir el plan adecuado."
+      },
+      {
+        "question": "¿Cómo funcionan los tratamientos de pérdida de peso GLP-1?",
+        "answer": "Los tratamientos GLP-1 imitan la hormona natural de saciedad de su cuerpo. Esto reduce las señales de hambre en su cerebro para que coma naturalmente comidas más pequeñas sin sentirse privado o con antojo de bocadillos."
+      },
+      {
+        "question": "¿Perderé músculo mientras pierdo peso?",
+        "answer": "No. Nuestros planes guiados por médicos incluyen consejos alimentarios simples y objetivos de proteínas para asegurarse de que su cuerpo queme tejido graso mientras protege su músculo fuerte y saludable."
+      },
+      {
+        "question": "¿Cómo empiezo?",
+        "answer": "¡Simplemente llame a nuestra clínica o reserve una cita en línea! Hablará con un médico licenciado que revisará su salud, responderá sus preguntas y comenzará su plan personalizado."
+      }
+    ]
+  },
+  {
+    "id": "hormone-optimization",
+    "type": "core",
+    "tabLabel": "Optimización Hormonal",
+    "href": "hormone-optimization.html",
+    "title": "Siéntase Joven, Fuerte y Lleno de Energía Nuevamente",
+    "lead": "¿Cansado de sentirse agotado? Nuestros médicos licenciados equilibran sus hormonas para que pueda prosperar cada día.",
+    "description": "Cuando sus hormonas bajan, se siente cansado, aumenta de peso y pierde concentración. Nuestros médicos realizan análisis de sangre sencillos y crean un plan a su medida para devolverle su fuerza y vitalidad.",
+    "icon": "fa-syringe",
+    "delay": "0s",
+    "features": [
+      "Recupere alta energía diaria y concentración",
+      "Desarrolle músculo magro y queme grasa corporal",
+      "Disfrute de un sueño profundo y mejor estado de ánimo",
+      "100% verificado por médicos para su seguridad"
+    ],
+    "image": "assets/images/photos/trt-therapy.jpg",
+    "ctaText": "Reservar Consulta Médica",
+    "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Terapia de hormonas bioidénticas y protocolos de TRT guiados por médicos licenciados en St. Petersburg, FL.",
+    "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Energía y Fuerza</span>",
+    "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo receta médica supervisada por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve Su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan Hormonal",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su mayor lucha diaria?",
+        "sub": "Elija lo que desea solucionar primero.",
+        "options": [
+          {
+            "value": "energy",
+            "icon": "fa-battery-quarter",
+            "title": "Baja Energía y Niebla Mental",
+            "desc": "Sentirse cansado todo el día con caídas de energía a mitad del día."
+          },
+          {
+            "value": "libido",
+            "icon": "fa-fire",
+            "title": "Bajo Impulso y Pasión",
+            "desc": "Desea recuperar la intimidad, el impulso y la confianza."
+          },
+          {
+            "value": "muscle",
+            "icon": "fa-dumbbell",
+            "title": "Peso Rebelde y Pérdida Muscular",
+            "desc": "Dificultad para ganar músculo o perder grasa abdominal."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuánto tiempo lleva sintiéndose así?",
+        "sub": "Ayuda a nuestro médico a elegir su plan de inicio.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "Unos Pocos Meses",
+            "desc": "Recientemente empecé a sentirme cansado o débil."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "Unos Cuantos Años",
+            "desc": "Llevo mucho tiempo sintiéndome con baja energía."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Se ha realizado análisis hormonales recientemente?",
+        "sub": "Guía a nuestro médico para solicitar sus análisis de sangre.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-vial",
+            "title": "Sí, me los he hecho",
+            "desc": "Me hice análisis de sangre en los últimos 6 meses."
+          },
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Aún No",
+            "desc": "Necesito que el médico solicite mi análisis de laboratorio."
+          }
+        ]
+      },
+      "protocols": {
+        "energy": {
+          "tag": "Plan de Energía Recomendado",
+          "name": "Restablecimiento de Vitalidad y Energía Total",
+          "peptides": "Terapia Bioidéntica Recetada por Médicos",
+          "icon": "fa-battery-quarter",
+          "desc": "Un plan sencillo guiado por médicos que equilibra las hormonas energéticas de su cuerpo para que despierte renovado.",
+          "goalModifiers": {
+            "yes": "Nuestro médico revisará sus análisis de inmediato para crear su dosis de tratamiento personalizada.",
+            "no": "Solicitaremos un análisis de sangre básico rápido para verificar sus niveles antes de comenzar."
+          },
+          "social": "Más de 90 pacientes locales utilizan actualmente este plan guiado por médicos."
+        },
+        "libido": {
+          "tag": "Plan de Intimidad y Confianza",
+          "name": "Plan de Máxima Pasión e Impulso",
+          "peptides": "Terapia de Vitalidad y Hormonas Bajo Receta",
+          "icon": "fa-fire",
+          "desc": "Terapia médica dirigida para recuperar la energía íntima, el estado de ánimo y la resistencia diaria.",
+          "goalModifiers": {
+            "yes": "Revisaremos sus análisis recientes para iniciar su plan rápidamente.",
+            "no": "Nuestro médico solicitará una revisión sanguínea sencilla para precisar sus necesidades exactas."
+          },
+          "social": "73 pacientes iniciaron este plan guiado por médicos en los últimos 90 días."
+        },
+        "muscle": {
+          "tag": "Plan de Fuerza y Músculo Magro",
+          "name": "Restablecimiento de Cuerpo Fuerte y Quema de Grasa",
+          "peptides": "TRT y Soporte de Crecimiento Bioidéntico",
+          "icon": "fa-dumbbell",
+          "desc": "Le ayuda a quemar grasa abdominal rebelde, desarrollar músculo magro y recuperarse rápido tras los entrenamientos.",
+          "goalModifiers": {
+            "yes": "Sus análisis recientes ayudarán a nuestro médico a establecer su dosis inicial óptima de forma segura.",
+            "no": "Nuestro médico realizará sus análisis de sangre sencillos para verificar sus marcadores de testosterona y energía."
+          },
+          "social": "Más de 100 pacientes locales se encuentran actualmente en este protocolo de fuerza."
+        }
+      },
+      "timelineMap": {
+        "months": "8–12 semanas (Plan Médico Estándar)",
+        "years": "12–16 semanas (Plan de Restablecimiento Completo)"
+      }
+    },
+    "eligibility": {
+      "badge": "Elegibilidad de Tratamiento",
+      "headline": "¿Es Usted Candidato para la Atención Hormonal?",
+      "subheadline": "Nuestros tratamientos hormonales son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Revisamos sus análisis de sangre primero para darle la dosis exacta para su cuerpo.",
+      "items": [
+        {
+          "label": "Sentirse Agotado",
+          "detail": "Adultos que luchan con fatiga diaria, niebla mental, bajo impulso o peso rebelde."
+        },
+        {
+          "label": "Niveles Hormonales Bajos",
+          "detail": "Cualquier persona con baja testosterona, tiroides o hormonas energéticas confirmadas por análisis de sangre."
+        },
+        {
+          "label": "Suplementos Sin Éxito",
+          "detail": "Personas que probaron vitaminas de venta libre o ejercicios sin obtener resultados reales."
+        },
+        {
+          "label": "Desea Músculo y Energía",
+          "detail": "Hombres y mujeres listos para quemar grasa, mantener músculo fuerte y sentirse jóvenes nuevamente."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando un plan seguro prescrito por médicos con chequeos sanguíneos periódicos."
+        }
+      ],
+      "callout": {
+        "title": "¿Preguntas sobre su elegibilidad?",
+        "text": "Nuestro equipo médico le guiará durante su consulta."
+      }
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed treatments tailored to your body after a medical blood check.",
+      "items": [
+        {
+          "icon": "fa-syringe",
+          "name": "Testosterone Therapy (TRT)",
+          "tag": "Most Popular",
+          "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "Women's Bio-Identical HRT",
+          "tag": "For Women",
+          "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+        },
+        {
+          "icon": "fa-vial",
+          "name": "Peptide Support Boosters",
+          "tag": "Cell Recovery",
+          "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+        },
+        {
+          "icon": "fa-heart",
+          "name": "Sexual Wellness Therapy",
+          "tag": "Vitality Boost",
+          "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Thyroid & Adrenal Balance",
+          "tag": "Energy Core",
+          "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Doctor Blood Check",
+          "tag": "Safety First",
+          "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
+      "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+      "bullets": [
+        "Prescribed by real licensed medical doctors",
+        "100% natural bio-identical matching your body",
+        "Regular blood checks to ensure complete safety"
+      ],
+      "stats": [
+        {
+          "value": "9 out of 10",
+          "label": "Feel higher energy in 6 weeks"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "Simple",
+          "label": "Tailored to your bloodwork"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-vial",
+          "title": "Based On Your Bloodwork",
+          "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "title": "Natural Bio-Identical Match",
+          "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Are these synthetic steroids?",
+        "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+      },
+      {
+        "myth": "Do I have to stay on this forever?",
+        "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+      },
+      {
+        "myth": "Is doctor-guided hormone care safe?",
+        "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "High Energy"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Clear Focus"
+        },
+        {
+          "icon": "fa-dumbbell",
+          "label": "Lean Muscle"
+        },
+        {
+          "icon": "fa-moon",
+          "label": "Deep Sleep"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Daily Energy",
+          "without": "Tired all day & crashes",
+          "with": "High, steady energy all day"
+        },
+        {
+          "metric": "Muscle & Body Fat",
+          "without": "Gains fat, loses muscle",
+          "with": "Burns fat & keeps strong muscle"
+        },
+        {
+          "metric": "Mental Clarity",
+          "without": "Brain fog & slow focus",
+          "with": "Sharp, clear thinking"
+        },
+        {
+          "metric": "Sleep Quality",
+          "without": "Wakes up tired",
+          "with": "Deep, restorative sleep"
+        },
+        {
+          "metric": "Medical Safety",
+          "without": "Unmonitored / OTC pills",
+          "with": "Doctor-prescribed & blood checked"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Male Performance Plan",
+          "tag": "Most Popular",
+          "compounds": "TRT + Recovery Peptide Stack",
+          "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+        },
+        {
+          "name": "Women's Balance Plan",
+          "tag": "For Women",
+          "compounds": "Estrogen + Progesterone + Low-Dose T",
+          "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+        },
+        {
+          "name": "Complete Longevity Reset Plan",
+          "tag": "Full Audit",
+          "compounds": "Full Hormone Panel + Thyroid Support",
+          "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una receta médica para la terapia hormonal?",
+        "answer": "Sí. Todas las terapias hormonales en nuestra clínica requieren evaluación médica, análisis de sangre y una receta emitida por un médico licenciado."
+      },
+      {
+        "question": "¿Qué incluye el programa hormonal guiado por médicos?",
+        "answer": "Incluye consultas médicas, análisis periódicos de biomarcadores y medicamentos personalizados de grado farmacéutico."
+      },
+      {
+        "question": "¿Qué tan rápido sentiré resultados con la terapia hormonal?",
+        "answer": "Muchos pacientes notan mayor claridad mental y mejor sueño en 2 a 3 semanas. Los cambios en composición corporal suelen ser visibles entre el segundo y tercer mes."
+      },
+      {
+        "question": "¿Es segura la terapia hormonal tanto para hombres como para mujeres?",
+        "answer": "Sí. Diseñamos protocolos específicos según el sexo y la fisiología individual, monitoreando continuamente sus niveles en sangre."
+      }
+    ],
+    "treatments": [
+      {
+        "title": "Terapia de Testosterona (TRT)",
+        "badge": "Más Popular",
+        "desc": "Tratamiento de testosterona calibrado por médicos para hombres con baja energía, niebla mental o pérdida muscular. Rutina semanal sencilla bajo supervisión médica.",
+        "linkText": "Explorar Programa TRT"
+      },
+      {
+        "title": "TRH Bioidéntica para Mujeres",
+        "badge": "Para Mujeres",
+        "desc": "Equilibrio natural de estrógenos y progesterona bioidéntica para mujeres que manejan cambios de humor, sudores nocturnos o baja energía.",
+        "linkText": "Explorar TRH Femenina"
+      },
+      {
+        "title": "Impulsores de Péptidos",
+        "badge": "Recuperación Celular",
+        "desc": "Impulsores de péptidos especiales combinados con su plan para acelerar la recuperación, apoyar la salud articular y mejorar la reparación celular.",
+        "linkText": "Explorar Péptidos"
+      },
+      {
+        "title": "Terapia de Bienestar Sexual",
+        "badge": "Aumento de Vitalidad",
+        "desc": "Tratamientos bajo receta diseñados para restaurar el impulso saludable, el flujo sanguíneo y la confianza íntima para hombres y mujeres.",
+        "linkText": "Explorar Salud Íntima"
+      },
+      {
+        "title": "Equilibrio Tiroideo y Adrenal",
+        "badge": "Núcleo de Energía",
+        "desc": "Soporte tiroideo y adrenal completo para corregir caídas de energía a mitad del día y mantener fuerte el motor energético de su cuerpo.",
+        "linkText": "Explorar Cuidado Tiroideo"
+      },
+      {
+        "title": "Chequeo Médico de Sangre",
+        "badge": "Seguridad Primero",
+        "desc": "Análisis de laboratorio sencillos para que su médico verifique sus niveles hormonales exactos y personalice su dosis inicial de forma segura.",
+        "linkText": "Ordenar Análisis de Sangre"
+      }
+    ],
+    "disclosures": {
+      "title": "Supervisión Clínica y Seguridad Médica",
+      "text": "En Optimal Vitality Institute operamos bajo los estándares más estrictos de seguridad médica y cumplimiento de licencias en el estado de Florida. Todos los tratamientos son prescriptos y monitoreados por profesionales de la salud licenciados tras una evaluación diagnóstica rigurosa.",
+      "collaborationTitle": "Colaboración Médica",
+      "collaborationText": "Cada protocolo es supervisado por nuestro Director Médico Principal. Nuestros profesionales licenciados operan bajo acuerdos colaborativos activos, garantizando una revisión multidisciplinaria de sus marcadores de salud.",
+      "diagnosticTitle": "Mandato Diagnóstico",
+      "diagnosticText": "Ninguna terapia hormonal o de péptidos se entrega sin análisis de laboratorio previos exhaustivos, revisión de historial médico y una relación médico-paciente activa.",
+      "trademarkTitle": "Deslinde de Marcas Registradas y Medicamentos con Receta",
+      "trademarkText": "Los medicamentos GLP-1 (incluyendo Semaglutida y Tirzepatida) son fármacos bajo receta que requieren consulta con un profesional médico licenciado. Ozempic®, Wegovy®, Mounjaro® y Zepbound® son marcas registradas de sus respectivos dueños (Novo Nordisk y Eli Lilly). Optimal Vitality Institute es una práctica médica independiente no afiliada a dichas empresas."
+    }
+  },
+  {
+    "id": "iv-wellness",
+    "type": "additional",
+    "tabLabel": "IV y Bienestar",
+    "href": "iv-wellness.html",
+    "title": "Impulso Instantáneo de Vitaminas y Energía",
+    "lead": "Evite las pastillas lentas del estómago y sienta energía instantánea entregada directamente a sus células.",
+    "description": "Obtenga vitaminas puras, antioxidantes y superhidratación entregados directamente a su torrente sanguíneo. Siéntase agudo, lleno de energía e hidratado en menos de 45 minutos.",
+    "icon": "fa-tint",
+    "delay": "-5s",
+    "features": [
+      "Aumento inmediato de energía y claridad mental",
+      "Fortalezca su sistema inmune rápidamente",
+      "100% absorción directa de vitaminas",
+      "Relájese en nuestra suite médica de lujo"
+    ],
+    "image": "assets/images/photos/IV.jpg",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Terapia de vitaminas IV guiada por médicos, infusiones de NAD+ y Cóctel de Myers en St. Petersburg, FL. Prescrita y supervisada por proveedores médicos licenciados.",
+    "heroHeadline": "Hidratación Instantánea y<br><span class=\"text-primary\">Energía Celular</span>",
+    "heroSubheadline": "Sueros IV bajo receta y terapia de NAD+ supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan de Suero IV",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal objetivo hoy?",
+        "sub": "Elija lo que desea solucionar primero.",
+        "options": [
+          {
+            "value": "energy",
+            "icon": "fa-bolt",
+            "title": "Energía y Claridad Mental",
+            "desc": "Quiero eliminar la niebla mental, el cansancio y las caídas de la tarde."
+          },
+          {
+            "value": "recovery",
+            "icon": "fa-first-aid",
+            "title": "Recuperación Deportiva Rápida",
+            "desc": "Recuperarse rápidamente de entrenamientos intensos o estrés físico."
+          },
+          {
+            "value": "immunity",
+            "icon": "fa-shield-alt",
+            "title": "Escudo de Refuerzo Inmune",
+            "desc": "Sintiéndose agotado, viajando o queriendo una defensa súper contra enfermedades."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Ha probado sueros de vitaminas IV antes?",
+        "sub": "Ayuda a nuestro médico a orientar la dosis de su infusión.",
+        "options": [
+          {
+            "value": "first",
+            "icon": "fa-star",
+            "title": "Primera Vez",
+            "desc": "Soy nuevo en la terapia de vitaminas IV."
+          },
+          {
+            "value": "regular",
+            "icon": "fa-sync",
+            "title": "Sí, Lo He Intentado",
+            "desc": "Recibo sueros IV como parte de mi rutina."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Está interesado en el antiaging celular con NAD+?",
+        "sub": "El NAD+ es nuestra principal infusión médica para energía profunda y reparación celular.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-brain",
+            "title": "Sí, Me Interesa",
+            "desc": "Quiero enfoque cerebral profundo, antiaging y reparación celular."
+          },
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Suero Estándar",
+            "desc": "Solo necesito vitaminas estándar, minerales e hidratación."
+          }
+        ]
+      },
+      "protocols": {
+        "energy": {
+          "tag": "Suero de Energía Recomendado",
+          "name": "El Restablecimiento Total de Energía y Cerebro",
+          "peptides": "Prescripción de Cóctel de Myers + Complejo B + NAD+",
+          "icon": "fa-bolt",
+          "desc": "Recarga sus células con vitaminas y minerales puros entregados directamente a su torrente sanguíneo para energía inmediata y sin nerviosismo.",
+          "goalModifiers": {
+            "yes": "Incluye nuestra infusión médica de NAD+ para máxima potencia celular y enfoque antiaging.",
+            "no": "Cargado con Complejo B, Vitamina C y electrolitos para energía diaria limpia y duradera."
+          },
+          "social": "Más de 89 pacientes locales recibieron este suero de energía en los últimos 30 días."
+        },
+        "recovery": {
+          "tag": "Suero Deportivo y Detox",
+          "name": "La Pila de Recuperación Rápida y Glutatión",
+          "peptides": "Prescripción de Glutatión + Aminoácidos + Electrolitos",
+          "icon": "fa-first-aid",
+          "desc": "Elimina el dolor muscular, rehidrata su cuerpo completamente y desintoxica su hígado para que se recupere rápidamente.",
+          "goalModifiers": {
+            "yes": "Añade NAD+ para acelerar la reparación muscular y la energía celular después del entrenamiento intenso.",
+            "no": "Cargado con Glutatión y aminoácidos de alta dosis para detener rápidamente el dolor muscular."
+          },
+          "social": "114 atletas locales y pacientes activos siguen este suero de recuperación."
+        },
+        "immunity": {
+          "tag": "Suero Escudo Inmune",
+          "name": "El Suero Súper de Defensa Inmune",
+          "peptides": "Vitamina C de Alta Dosis + Zinc + Cóctel de Myers",
+          "icon": "fa-shield-alt",
+          "desc": "Concentra minerales potenciadores de glóbulos blancos y Vitamina C para proteger su cuerpo y detener las enfermedades en seco.",
+          "goalModifiers": {
+            "yes": "Combina defensa inmune de alta dosis con NAD+ para eliminar el agotamiento profundo de viaje.",
+            "no": "Entrega el máximo de Vitamina C y Zinc para fortalecer su sistema inmune de inmediato."
+          },
+          "social": "95 pacientes eligen este escudo inmune cuando se sienten agotados."
+        }
+      },
+      "timelineMap": {
+        "first": "45 minutos (Absorción 100% inmediata)",
+        "regular": "2–4 semanas (Plan de vitalidad acumulativa)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para Atención IV?",
+      "intro": "La terapia IV entrega vitaminas y minerales puros directamente en su sangre, evitando completamente la digestión lenta. Supervisada por médicos licenciados, es la forma más rápida de sentirse energizado e hidratado.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Cansado y con Niebla Mental",
+          "detail": "Adultos con caídas a mitad del día, mañanas lentas o mal sueño."
+        },
+        {
+          "label": "Atletas Activos",
+          "detail": "Personas que necesitan recuperación muscular rápida, hidratación y alivio del dolor muscular después de los entrenamientos."
+        },
+        {
+          "label": "Viajeros Frecuentes",
+          "detail": "Cualquiera que combata el jet lag, el aire seco o los virus de viaje al volar."
+        },
+        {
+          "label": "Defensa Inmune Necesaria",
+          "detail": "Cualquiera que se sienta agotado o quiera una protección fuerte e inmediata contra enfermedades."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando infusiones de vitaminas de grado médico seguras en una suite clínica cómoda."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+      "sectionSubheadline": "Infusiones IV prescritas por médicos adaptadas a su cuerpo en una suite médica de lujo.",
+      "items": [
+        {
+          "icon": "fa-bolt",
+          "name": "Infusión Celular de NAD+",
+          "tag": "Núcleo Antiaging",
+          "description": "Terapia de NAD+ prescrita por médicos para reparar los motores celulares, eliminar la niebla mental y aumentar la energía a largo plazo."
+        },
+        {
+          "icon": "fa-star",
+          "name": "Empuje Detox de Glutatión",
+          "tag": "Antioxidante Maestro",
+          "description": "Empuje intravenoso directo del antioxidante más poderoso del cuerpo para limpiar el hígado y aclarar la piel."
+        },
+        {
+          "icon": "fa-tint",
+          "name": "Suero de Cóctel de Myers",
+          "tag": "Más Popular",
+          "description": "El suero IV de estándar clínico dorado—cargado con Magnesio, Vitaminas B, Vitamina C y Calcio para energía instantánea."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "name": "Suero de Recuperación Deportiva",
+          "tag": "Rebote Muscular",
+          "description": "Aminoácidos y electrolitos dirigidos para eliminar el dolor muscular y rehidratarle después del ejercicio."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Suero de Fortalecimiento Inmune",
+          "tag": "Escudo contra Enfermedades",
+          "description": "Vitamina C, Zinc y B12 de alta dosis para superactivar su sistema inmune antes de viajar o durante la temporada de resfriados."
+        },
+        {
+          "icon": "fa-syringe",
+          "name": "Inyecciones de Vitaminas Médicas",
+          "tag": "Potenciador Rápido",
+          "description": "Inyecciones intramusculares rápidas de B12, D3 o quema de grasa cuando quiere energía instantánea sin sentarse para un suero completo."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas de Vitaminas Fallan</span>",
+      "body": "Cuando traga pastillas de vitaminas, su estómago las descompone, dejando menos del 20% para sus células. La terapia IV entrega el 100% de vitaminas puras directamente a su sangre. Sus células las absorben inmediatamente, dándole hidratación instantánea y energía máxima.",
+      "bullets": [
+        "100% de absorción celular directa vs ~20% de pastillas estomacales",
+        "Compuesto fresco y prescrito por médicos licenciados",
+        "Administrado por enfermeras registradas en una suite clínica relajante"
+      ],
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Absorción directa de vitaminas"
+        },
+        {
+          "value": "45m",
+          "label": "Tiempo promedio de sesión de suero"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y administrado por enfermeras"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Evita la Digestión Estomacal",
+          "detail": "Los sueros IV evitan completamente la digestión para que las vitaminas ingresen a su torrente sanguíneo con plena potencia para resultados instantáneos."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Entrega de Células de Energía NAD+",
+          "detail": "El NAD+ no se puede absorber bien en pastillas estomacales. Los sueros IV son la única forma comprobada de introducir NAD+ real en sus células."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Duele un suero IV?",
+        "reality": "No. Nuestras enfermeras registradas experimentadas usan agujas pequeñas y técnicas suaves para que apenas sienta un pinchazo. Puede relajarse, leer o ver televisión durante su suero."
+      },
+      {
+        "myth": "¿No son suficientes las pastillas de vitaminas orales?",
+        "reality": "No. Su estómago filtra hasta el 80% de las vitaminas orales. Los sueros IV le dan el 100% de absorción directamente a su torrente sanguíneo para energía instantánea."
+      },
+      {
+        "myth": "¿Es segura la terapia IV guiada por médicos?",
+        "reality": "¡Sí! Cada suero es prescrito por un médico licenciado y administrado por enfermeras registradas capacitadas siguiendo estrictas reglas de seguridad médica."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "Efecto Instantáneo"
+        },
+        {
+          "icon": "fa-tint",
+          "label": "Hidratación Total"
+        },
+        {
+          "icon": "fa-star",
+          "label": "100% Absorción"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Verificado por Médico"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Absorción de Vitaminas",
+          "without": "Solo 10%–30% en el estómago",
+          "with": "100% absorción vascular directa"
+        },
+        {
+          "metric": "Velocidad de Acción",
+          "without": "Tarda horas o días",
+          "with": "Inmediata mientras está en la suite de suero"
+        },
+        {
+          "metric": "Entrega de NAD+",
+          "without": "Desperdiciado en ácido estomacal",
+          "with": "100% entrega celular activa"
+        },
+        {
+          "metric": "Velocidad de Rehidratación",
+          "without": "Beber agua lentamente",
+          "with": "Rehidratación celular instantánea"
+        },
+        {
+          "metric": "Supervisión Médica",
+          "without": "Pastillas de tienda no verificadas",
+          "with": "Atención de médico licenciado y enfermera"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Pila de Suero de Máxima Vitalidad",
+          "tag": "Más Popular",
+          "compounds": "Cóctel de Myers + Empuje de Glutatión",
+          "description": "Nuestro mejor suero IV combinando las vitaminas de Myers para energía con Glutatión para detox profundo del hígado y piel radiante."
+        },
+        {
+          "name": "Suero Total de Longevidad Antiaging",
+          "tag": "Restablecimiento Celular",
+          "compounds": "NAD+ + Vitamina C + Glutatión",
+          "description": "Suero de NAD+ médico combinado con antioxidantes de alta dosis para reparar células y revertir la niebla mental."
+        },
+        {
+          "name": "Pila de Recuperación Deportiva",
+          "tag": "Recuperación Rápida",
+          "compounds": "IV de Recuperación Deportiva + Inyección de B12",
+          "description": "Diseñado para eliminar rápidamente el dolor muscular con aminoácidos puros, electrolitos y B12."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una consulta médica antes de recibir un suero IV?",
+        "answer": "Sí. Todas las infusiones de vitaminas IV son tratamientos médicos bajo receta. Completará una revisión de salud rápida con nuestro médico licenciado para asegurarse de que su suero esté perfectamente personalizado y sea seguro."
+      },
+      {
+        "question": "¿Qué incluye el programa de IV guiado por médicos?",
+        "answer": "Su programa incluye una consulta médica, vitaminas IV compuestas personalizadas preparadas frescas, asientos cómodos en nuestra suite médica de lujo y administración profesional por enfermeras registradas."
+      },
+      {
+        "question": "¿Cuánto tiempo dura una sesión de suero IV?",
+        "answer": "La mayoría de los sueros estándar de vitaminas IV tardan 30 a 45 minutos. Los sueros especiales de NAD+ antiaging de alta dosis tardan un poco más (2 a 3 horas) para que su cuerpo absorba cada gota cómodamente."
+      },
+      {
+        "question": "¿Con qué frecuencia debo recibir terapia de vitaminas IV?",
+        "answer": "La mayoría de los pacientes de bienestar visitan una o dos veces al mes para alta energía y salud inmune. Los atletas activos o aquellos que se recuperan de enfermedades a menudo reciben sueros semanales."
+      },
+      {
+        "question": "¿Es segura la terapia IV?",
+        "answer": "100% sí. Todas las infusiones son prescritas por médicos licenciados, mezcladas en farmacias acreditadas y administradas por enfermeras registradas capacitadas siguiendo estrictas reglas de seguridad médica."
+      },
+      {
+        "question": "¿Cómo empiezo con la terapia IV?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro equipo médico preparará su suero personalizado!"
+      }
+    ]
+  },
+  {
+    "id": "peptides",
+    "type": "core",
+    "tabLabel": "Terapia de Péptidos",
+    "href": "peptides.html",
+    "title": "Sane Más Rápido y Siéntase Como Usted Mismo de Nuevo",
+    "lead": "Potencie el poder curativo natural de su cuerpo para corregir el dolor articular, recuperarse rápido y sentirse lleno de vida.",
+    "description": "Los péptidos son señales naturales que le dicen a su cuerpo que repare músculos, articulaciones y tejido intestinal dañados. Despierte sin rigidez articular, recupérese de los entrenamientos y siéntase lleno de energía cada día.",
+    "icon": "fa-vial",
+    "delay": "-2s",
+    "features": [
+      "Recuperación rápida articular, tendinosa y muscular",
+      "Sueño nocturno profundo y reparador",
+      "Potencie la salud intestinal e inmunológica",
+      "100% verificado por médicos para su seguridad"
+    ],
+    "image": "assets/images/photos/peptide-therapy.jpg",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Terapia de Péptidos Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Terapia de péptidos guiada por médicos en St. Petersburg, FL. Protocolos de BPC-157, TB-500 e Ipamorelin prescritos por proveedores médicos licenciados.",
+    "heroHeadline": "Acelere la Curación y<br><span class=\"text-primary\">Recuperación Celular</span>",
+    "heroSubheadline": "Protocolos de Péptidos bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan de Curación",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su mayor lucha diaria?",
+        "sub": "Elija lo que desea solucionar primero.",
+        "options": [
+          {
+            "value": "pain",
+            "icon": "fa-crutch",
+            "title": "Dolor Articular y Muscular",
+            "desc": "Articulaciones doloridas, curación lenta de lesiones o rigidez matutina."
+          },
+          {
+            "value": "performance",
+            "icon": "fa-stopwatch",
+            "title": "Recuperación Lenta de Entrenamiento",
+            "desc": "Progreso estancado, recuperación lenta después del ejercicio."
+          },
+          {
+            "value": "energy",
+            "icon": "fa-battery-quarter",
+            "title": "Fatiga y Baja Energía",
+            "desc": "Cansado todo el día, sueño deficiente o niebla mental."
+          },
+          {
+            "value": "body",
+            "icon": "fa-fire",
+            "title": "Grasa Abdominal Rebelde",
+            "desc": "Mantiene peso extra a pesar de comer limpio y hacer ejercicio."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuánto tiempo lleva sintiéndose así?",
+        "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+        "options": [
+          {
+            "value": "short",
+            "icon": "fa-calendar",
+            "title": "Menos de 3 Meses",
+            "desc": "Problema reciente o lesión nueva de entrenamiento."
+          },
+          {
+            "value": "medium",
+            "icon": "fa-calendar-alt",
+            "title": "3 a 12 Meses",
+            "desc": "Me ha molestado durante varios meses."
+          },
+          {
+            "value": "long",
+            "icon": "fa-calendar-check",
+            "title": "Más de 1 Año",
+            "desc": "Dolor articular a largo plazo o fatiga crónica."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Cuál es su principal objetivo ahora mismo?",
+        "sub": "Ayuda a establecer un cronograma claro para sus resultados.",
+        "options": [
+          {
+            "value": "train",
+            "icon": "fa-dumbbell",
+            "title": "Volver a los Entrenamientos",
+            "desc": "Moverse sin dolor y hacer ejercicio con toda la fuerza."
+          },
+          {
+            "value": "muscle",
+            "icon": "fa-chart-line",
+            "title": "Desarrollar Músculo Magro",
+            "desc": "Ganar fuerza funcional y recuperarse más rápido."
+          },
+          {
+            "value": "feel",
+            "icon": "fa-brain",
+            "title": "Despertar Lleno de Energía",
+            "desc": "Disfrutar de sueño profundo, enfoque claro y alta energía."
+          },
+          {
+            "value": "fat",
+            "icon": "fa-weight",
+            "title": "Quemar Grasa Corporal",
+            "desc": "Eliminar la grasa rebelde manteniendo el músculo fuerte."
+          }
+        ]
+      },
+      "protocols": {
+        "pain": {
+          "tag": "Plan Recomendado de Reparación Articular",
+          "name": "El Restablecimiento Total Articular y de Tejidos",
+          "peptides": "Protocolo de Prescripción BPC-157 + TB-500",
+          "icon": "fa-shield-alt",
+          "desc": "Un tratamiento simple prescrito por médicos que señala a sus células que reparen articulaciones, tendones y músculos rápidamente.",
+          "goalModifiers": {
+            "train": "Diseñado para volver a los entrenamientos activos sin que el dolor lo detenga.",
+            "muscle": "Acelera la reparación del tejido celular para que reconstruya el músculo más fuerte que antes.",
+            "feel": "Calma la inflamación articular para que despierte renovado y se mueva cómodamente.",
+            "fat": "Ayuda a su cuerpo a sanar para que pueda mantenerse activo y quemar calorías extra."
+          },
+          "social": "Más de 60 pacientes locales completaron este plan de recuperación en los últimos 90 días."
+        },
+        "performance": {
+          "tag": "Plan de Fuerza y Crecimiento",
+          "name": "Pila de Máximo Rendimiento y Crecimiento",
+          "peptides": "Prescripción de Ipamorelin + Tesamorelin",
+          "icon": "fa-dumbbell",
+          "desc": "Potencia sus hormonas de crecimiento naturales para ganar músculo magro, recuperarse rápido y sentirse fuerte.",
+          "goalModifiers": {
+            "train": "Le ayuda a superar mesetas y recuperarse en la mitad del tiempo.",
+            "muscle": "Apoya el desarrollo muscular natural y la absorción de proteínas.",
+            "feel": "Promueve un sueño profundo y reparador para despertar con alta energía.",
+            "fat": "Ataca la grasa abdominal rebelde mientras protege su músculo magro."
+          },
+          "social": "88 pacientes están actualmente siguiendo esta pila prescrita por médicos."
+        },
+        "energy": {
+          "tag": "Plan de Energía Celular",
+          "name": "Restablecimiento Total de Energía Corporal y Enfoque",
+          "peptides": "Protocolo de NAD+ y Potenciador Celular",
+          "icon": "fa-bolt",
+          "desc": "Recarga sus motores celulares para eliminar la niebla mental, combatir la fatiga y sentirse lleno de energía todo el día.",
+          "goalModifiers": {
+            "train": "Aumenta la resistencia celular para que los entrenamientos se sientan más ligeros.",
+            "muscle": "Mejora la recuperación celular después de sesiones de entrenamiento intensas.",
+            "feel": "Construido específicamente para apagar el cansancio constante y restaurar la claridad mental.",
+            "fat": "Potencia el motor metabólico diario para quemar grasa de forma constante."
+          },
+          "social": "44 pacientes locales comenzaron este plan de energía en los últimos 60 días."
+        },
+        "body": {
+          "tag": "Plan de Quema de Grasa y Recomposición",
+          "name": "Restablecimiento de Músculo Magro y Quema de Grasa",
+          "peptides": "Protocolo de Tesamorelin + Ipamorelin",
+          "icon": "fa-fire",
+          "desc": "Ataca la grasa abdominal profunda que las dietas pierden, mientras protege su músculo magro y fuerte.",
+          "goalModifiers": {
+            "train": "Mejora la resistencia y la resistencia para entrenamientos más largos.",
+            "muscle": "Quema tejido graso mientras preserva la masa muscular magra.",
+            "feel": "Mejora la confianza corporal general, el sueño y el enfoque diurno.",
+            "fat": "Diseñado específicamente para la grasa rebelde que no se mueve con la dieta sola."
+          },
+          "social": "73 pacientes completaron este protocolo de quema de grasa recientemente."
+        }
+      },
+      "timelineMap": {
+        "short": "6–8 semanas (Plan de Recuperación Rápida)",
+        "medium": "8–12 semanas (Plan Médico Estándar)",
+        "long": "12–16 semanas (Plan de Restablecimiento Completo)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para la Terapia de Péptidos?",
+      "intro": "Nuestros tratamientos de péptidos son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Verificamos su salud y análisis de sangre primero para darle el mejor plan para su cuerpo.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Dolor Articular y Muscular",
+          "detail": "Adultos con rigidez articular, curación lenta de lesiones o dolor tendinoso."
+        },
+        {
+          "label": "Cansado y Recuperación Lenta",
+          "detail": "Cualquiera que tarde días en recuperarse del ejercicio o se sienta constantemente agotado."
+        },
+        {
+          "label": "Suplementos de Venta Libre Sin Éxito",
+          "detail": "Personas que tomaron vitaminas de tienda o pastillas para articulaciones sin obtener alivio real."
+        },
+        {
+          "label": "Quiere Músculo y Sueño Profundo",
+          "detail": "Hombres y mujeres activos listos para quemar grasa, dormir profundamente y sanar más rápido."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando tratamientos médicos seguros de grado farmacéutico con controles periódicos."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+      "sectionSubheadline": "Opciones de péptidos prescritas por médicos adaptadas a su cuerpo tras una consulta médica.",
+      "items": [
+        {
+          "icon": "fa-running",
+          "name": "Protocolo BPC-157",
+          "tag": "Reparación Articular",
+          "description": "Péptido bajo receta que le dice a sus células que reparen articulaciones, tendones, el revestimiento intestinal y el tejido muscular desgarrado."
+        },
+        {
+          "icon": "fa-kit-medical",
+          "name": "Protocolo TB-500",
+          "tag": "Curación de Tejidos",
+          "description": "Trabaja junto con BPC-157 para reducir la inflamación crónica, mejorar la flexibilidad articular y acelerar la recuperación."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "name": "Protocolo de Ipamorelin",
+          "tag": "Crecimiento y Sueño",
+          "description": "Secretagogo de crecimiento natural que mejora el sueño profundo, acelera la recuperación muscular y mantiene los huesos fuertes."
+        },
+        {
+          "icon": "fa-bolt-lightning",
+          "name": "Protocolo de Tesamorelin",
+          "tag": "Quema de Grasa Abdominal",
+          "description": "Péptido bajo receta diseñado para quemar la grasa abdominal rebelde mientras protege la masa muscular magra."
+        },
+        {
+          "icon": "fa-battery-full",
+          "name": "Terapia de NAD+",
+          "tag": "Energía Celular",
+          "description": "Recarga sus baterías celulares para eliminar la niebla mental, aumentar la energía diaria y combatir la fatiga sistémica."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Chequeo Médico de Sangre",
+          "tag": "Seguridad Primero",
+          "description": "Análisis de laboratorio simple para que su médico verifique su salud basal y construya su dosis inicial exacta de forma segura."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">los Suplementos Fallan</span>",
+      "body": "Piense en sus células como motores. Los péptidos son señales naturales que su cuerpo ya entiende. Las vitaminas de tienda pasan directamente por su intestino. Nuestros péptidos bioidénticos prescritos por médicos entregan señales moleculares directas a sus células, diciéndoles que se reconstruyan, reparen y se energicen de forma natural.",
+      "bullets": [
+        "Prescrito por médicos licenciados reales",
+        "Compuestos bioidénticos 100% de grado farmacéutico",
+        "Acción segura y dirigida sin rellenos sintéticos"
+      ],
+      "stats": [
+        {
+          "value": "Rápido",
+          "label": "Nota alivio articular en semanas"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y analizado en laboratorio"
+        },
+        {
+          "value": "100%",
+          "label": "Calidad de grado farmacéutico"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-vial",
+          "title": "Compuesto y Verificado por Médico",
+          "detail": "Cada dosis es compuesta en farmacias acreditadas y prescrita por proveedores de salud licenciados."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Acción Celular Dirigida",
+          "detail": "Los péptidos envían señales de reparación precisas directamente a las células dañadas sin perturbar otros sistemas corporales."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Son los péptidos solo esteroides anabólicos?",
+        "reality": "No. Los péptidos son señales naturales de aminoácidos, las mismas señales que su cuerpo ya produce. No apagan sus hormonas, no causan estrés hepático ni actúan como esteroides."
+      },
+      {
+        "myth": "¿Tengo que hacer esto para siempre?",
+        "reality": "No. La mayoría de los planes de péptidos duran de 8 a 16 semanas para restablecer su tejido y salud celular. Una vez curado, muchos pacientes mantienen sus resultados con un cuidado de estilo de vida simple."
+      },
+      {
+        "myth": "¿Es segura y legal la terapia de péptidos guiada por médicos?",
+        "reality": "Sí. Todos los tratamientos que prescribimos son medicamentos legales de grado farmacéutico prescritos por médicos licenciados siguiendo estrictos estándares médicos de Florida."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "Recuperación Rápida"
+        },
+        {
+          "icon": "fa-fire",
+          "label": "Quema de Grasa"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Mente Clara"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Verificado por Médico"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Velocidad de Recuperación",
+          "without": "5–7 días de dolor",
+          "with": "Recuperación rápida en 2–3 días"
+        },
+        {
+          "metric": "Confort Articular",
+          "without": "Rígido y adolorido",
+          "with": "Flexible y sin dolor"
+        },
+        {
+          "metric": "Energía Diaria",
+          "without": "Cansado y con niebla mental",
+          "with": "Alta energía todo el día"
+        },
+        {
+          "metric": "Calidad del Sueño",
+          "without": "Inquieto y con vueltas",
+          "with": "Sueño profundo y reparador"
+        },
+        {
+          "metric": "Seguridad Médica",
+          "without": "Pastillas web no reguladas",
+          "with": "Prescrito por médicos y analizado en laboratorio"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Pila de Reparación Articular y de Tejidos",
+          "tag": "Más Popular",
+          "compounds": "Protocolo BPC-157 + TB-500",
+          "description": "Combina péptidos de doble reparación para alivio rápido articular, reparación de ligamentos y curación de tendones."
+        },
+        {
+          "name": "Pila de Crecimiento y Músculo Magro",
+          "tag": "Potenciador de Fuerza",
+          "compounds": "Protocolo de Tesamorelin + Ipamorelin",
+          "description": "Diseñado para adultos activos que buscan quemar grasa abdominal rebelde, ganar músculo magro y dormir profundamente."
+        },
+        {
+          "name": "Restablecimiento Bioenergético Total",
+          "tag": "Vitalidad Completa",
+          "compounds": "NAD+ + Pila de Recuperación Celular",
+          "description": "Recarga las centrales celulares para eliminar la fatiga crónica, restaurar el enfoque y aumentar la resistencia."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una receta médica para la terapia de péptidos?",
+        "answer": "Sí. Todos los protocolos clínicos de péptidos son medicamentos bajo receta. Se consultará con nuestro médico licenciado quien evalúa su salud y ordena análisis de sangre antes de prescribir su plan personalizado."
+      },
+      {
+        "question": "¿Qué incluye el programa de péptidos guiado por médicos?",
+        "answer": "Su programa incluye consultas médicas directas con un médico certificado, análisis de sangre basal, péptidos personalizados de grado farmacéutico y controles continuos para asegurarse de que obtenga resultados óptimos de forma segura."
+      },
+      {
+        "question": "¿Cómo se administran los tratamientos de péptidos?",
+        "answer": "La mayoría de los protocolos de péptidos usan inyecciones subcutáneas pequeñas y prácticamente indoloras con microagujas (en casa o en la clínica). Algunos péptidos también están disponibles en cápsulas orales o aerosoles nasales según las recomendaciones del médico."
+      },
+      {
+        "question": "¿Qué tan rápido veré resultados con la terapia de péptidos?",
+        "answer": "Los péptidos de reparación articular como BPC-157 a menudo muestran alivio notable del dolor en 2 a 4 semanas. Los beneficios de recuperación muscular, calidad del sueño y pérdida de grasa se desarrollan durante 6 a 12 semanas."
+      },
+      {
+        "question": "¿Puedo combinar péptidos con TRT o terapia hormonal?",
+        "answer": "¡Sí! De hecho, los péptidos funcionan maravillosamente junto con TRT o terapia hormonal guiada por médicos para impulsar la reparación celular, acelerar la pérdida de grasa y mantener alta su energía."
+      },
+      {
+        "question": "¿Cómo empiezo con la terapia de péptidos?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico revisará su salud, ordenará los análisis necesarios y comenzará su plan de curación personalizado!"
+      }
+    ]
+  },
+  {
+    "id": "regenerative-medicine",
+    "type": "additional",
+    "tabLabel": "Medicina Regenerativa",
+    "href": "regenerative-medicine.html",
+    "title": "Cure el Dolor Corporal y Reconstruya las Células Naturalmente",
+    "lead": "Deje de dejar que la rigidez articular, el cabello adelgazado o la baja intimidad le impidan vivir plenamente.",
+    "description": "Usamos el poder natural de su propio cuerpo para sanar articulaciones dañadas, revitalizar la piel y restaurar un cabello grueso y saludable—100% prescrito por médicos sin cirugía invasiva.",
+    "icon": "fa-heartbeat",
+    "delay": "-3s",
+    "features": [
+      "Alivio de dolores articulares y rigidez persistentes",
+      "Restauración natural del cabello y la piel",
+      "Restauración de la salud íntima y la confianza",
+      "100% verificado por médicos para su seguridad"
+    ],
+    "image": "assets/images/photos/IV.jpg",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
+    "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot, O-Shot y restauración capilar supervisados por médicos licenciados.",
+    "heroHeadline": "Regenerar.<br><span class=\"text-primary\">Restaurar.</span> Reconstruir.",
+    "heroSubheadline": "Protocolos regenerativos de PRP y Exosomas bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan de Curación",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal preocupación ahora mismo?",
+        "sub": "Elija lo que desea solucionar primero.",
+        "options": [
+          {
+            "value": "joint",
+            "icon": "fa-bone",
+            "title": "Dolor y Rigidez Articular",
+            "desc": "Rodillas doloridas, hombros o dolor articular crónico."
+          },
+          {
+            "value": "hair",
+            "icon": "fa-cut",
+            "title": "Adelgazamiento del Cabello",
+            "desc": "Quiero restaurar la densidad del cuero cabelludo de forma natural."
+          },
+          {
+            "value": "intimacy",
+            "icon": "fa-heart",
+            "title": "Intimidad y Salud Sexual",
+            "desc": "P-Shot o O-Shot para impulso natural y sensibilidad."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuánto tiempo ha notado este problema?",
+        "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+        "options": [
+          {
+            "value": "mild",
+            "icon": "fa-thermometer-empty",
+            "title": "Recién Comenzó (Leve)",
+            "desc": "Dolor reciente o adelgazamiento capilar temprano."
+          },
+          {
+            "value": "severe",
+            "icon": "fa-thermometer-full",
+            "title": "Largo Plazo (Severo)",
+            "desc": "Dolor continuo o pérdida de cabello notable por meses."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Ha probado tratamientos de PRP o regenerativos antes?",
+        "sub": "Ayuda a nuestro médico a orientar su atención.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Primera Vez",
+            "desc": "Nunca he probado atención regenerativa antes."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Sí, Lo He Intentado",
+            "desc": "He probado PRP o inyecciones articulares en el pasado."
+          }
+        ]
+      },
+      "protocols": {
+        "joint": {
+          "tag": "Plan Recomendado de Reparación Articular",
+          "name": "Plan Total de Reparación Articular y Celular",
+          "peptides": "Prescripción de PRP + Terapia de Exosomas",
+          "icon": "fa-bone",
+          "desc": "Concentra los factores curativos naturales de su cuerpo para aliviar la inflamación articular y reconstruir el tejido dañado de forma natural.",
+          "goalModifiers": {
+            "no": "Nuestro médico realizará una evaluación rápida de rodilla u hombro para establecer su dosis inicial.",
+            "yes": "Nuestro médico ajustará su densidad celular para el máximo alivio a largo plazo."
+          },
+          "social": "Más de 50 pacientes locales están usando actualmente este plan de recuperación articular."
+        },
+        "hair": {
+          "tag": "Plan de Cabello y Cuero Cabelludo",
+          "name": "Restauración Natural del Cuero Cabelludo y el Cabello",
+          "peptides": "Prescripción de PRP + Terapia de Exosomas del Cuero Cabelludo",
+          "icon": "fa-cut",
+          "desc": "Despierta los folículos capilares dormidos usando señales de crecimiento naturales para recuperar un cabello más grueso y abundante.",
+          "goalModifiers": {
+            "no": "Plan inicial diseñado para activar las raíces capilares dormidas durante sesiones simples.",
+            "yes": "Plan de refuerzo adaptado para mantener alta densidad folicular y grosor."
+          },
+          "social": "82 pacientes vieron mejoras visibles en la densidad capilar con este plan."
+        },
+        "intimacy": {
+          "tag": "Plan de Intimidad y Confianza",
+          "name": "Restablecimiento de Intimidad Celular (P-Shot / O-Shot)",
+          "peptides": "PRP Natural + Potenciador de Factor de Crecimiento",
+          "icon": "fa-heart",
+          "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima para hombres y mujeres.",
+          "goalModifiers": {
+            "no": "Nuestro médico le guiará a través de un tratamiento inicial cómodo y simple.",
+            "yes": "Protocolo de refuerzo mejorado diseñado para mantener la vitalidad a largo plazo."
+          },
+          "social": "69 pacientes locales completaron este tratamiento de intimidad recientemente."
+        }
+      },
+      "timelineMap": {
+        "mild": "4–6 semanas (Plan de Seguimiento Rápido)",
+        "severe": "8–12 semanas (Plan Médico Estándar)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para Atención Regenerativa?",
+      "intro": "Nuestros tratamientos regenerativos usan la fuerza biológica propia de su cuerpo, supervisados por médicos licenciados. Verificamos su salud primero para asegurarnos de que obtenga atención segura y dirigida.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Dolor Articular y Artritis",
+          "detail": "Adultos con dolor articular, rigidez de rodilla u hombro, o lesiones deportivas."
+        },
+        {
+          "label": "Adelgazamiento del Cabello",
+          "detail": "Hombres y mujeres que buscan restauración capilar natural sin cirugía."
+        },
+        {
+          "label": "Bienestar Íntimo",
+          "detail": "Hombres y mujeres que quieren mayor impulso, sensibilidad y resistencia con el P-Shot o O-Shot."
+        },
+        {
+          "label": "Quiere Evitar la Cirugía",
+          "detail": "Cualquiera que busque curación natural sin cirugía riesgosa o pastillas sintéticas."
+        },
+        {
+          "label": "Listo para Atención Médica",
+          "detail": "Buscando tratamientos seguros administrados por médicos en una clínica cómoda."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+      "sectionSubheadline": "Tratamientos regenerativos prescritos por médicos adaptados a su cuerpo tras una evaluación médica.",
+      "items": [
+        {
+          "icon": "fa-dna",
+          "name": "Terapia de Exosomas Celulares",
+          "tag": "Más Avanzado",
+          "description": "Señales celulares avanzadas que le dicen a las células dañadas que se reparen, reduzcan la hinchazón articular y reconstruyan tejido sano rápidamente."
+        },
+        {
+          "icon": "fa-tint",
+          "name": "Plasma Rico en Plaquetas (PRP)",
+          "tag": "Curación Natural",
+          "description": "Concentra los factores de crecimiento naturales de su propia sangre para reconstruir articulaciones, revitalizar el cabello y suavizar la piel."
+        },
+        {
+          "icon": "fa-mars",
+          "name": "P-Shot (Intimidad Masculina)",
+          "tag": "Para Hombres",
+          "description": "Tratamiento de PRP natural para hombres para restaurar el flujo sanguíneo fuerte, la sensibilidad y el rendimiento íntimo."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "O-Shot (Intimidad Femenina)",
+          "tag": "Para Mujeres",
+          "description": "Tratamiento de PRP natural para mujeres para mejorar la intimidad, la sensación, la excitación y el control de la vejiga."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Terapia de Restauración Capilar",
+          "tag": "Cabello Más Grueso",
+          "description": "Tratamientos capilares de PRP y exosomas que despiertan las raíces capilares dormidas para un crecimiento capilar más grueso y abundante."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Recuperación Articular y de Rodilla",
+          "tag": "Alivio del Dolor",
+          "description": "Inyecciones dirigidas de PRP y exosomas para rodillas, hombros y caderas para que pueda moverse sin dolor."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas para el Dolor Fallan</span>",
+      "body": "Las pastillas para el dolor solo adormecen el dolor temporalmente. La medicina regenerativa ayuda a su cuerpo a reparar el daño. Al usar sus propios factores de crecimiento naturales (PRP) y señales celulares (Exosomas), nuestros médicos instruyen a sus células para que reconstruyan el tejido articular y despierten las raíces capilares dormidas en la fuente.",
+      "bullets": [
+        "Prescrito y realizado por médicos licenciados",
+        "100% compuestos naturales que coinciden con su cuerpo",
+        "Tratamientos rápidos en consultorio sin cirugía"
+      ],
+      "stats": [
+        {
+          "value": "Natural",
+          "label": "Usa los factores de crecimiento propios de su cuerpo"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y analizado en laboratorio"
+        },
+        {
+          "value": "0%",
+          "label": "Medicamentos sintéticos para el dolor necesarios"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Curación Natural con PRP",
+          "detail": "El PRP usa una muestra rápida de su sangre para concentrar el poder curativo propio de su cuerpo con cero riesgo de rechazo."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Mensajería Celular con Exosomas",
+          "detail": "Los exosomas entregan mensajes moleculares naturales que le dicen exactamente a las células dañadas cómo reconstruirse."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Es dolorosa la terapia de PRP o regenerativa?",
+        "reality": "No. Nuestros médicos aplican anestesia tópica suave antes de cualquier tratamiento para que se sienta cómodo. La mayoría de los pacientes regresan a sus actividades diarias normales el mismo día."
+      },
+      {
+        "myth": "¿Son los exosomas células madre?",
+        "reality": "No. Los exosomas no son células madre. Son mensajeros celulares naturales que llevan instrucciones claras de curación para ayudar a su cuerpo a repararse de forma segura."
+      },
+      {
+        "myth": "¿Es segura la medicina regenerativa guiada por médicos?",
+        "reality": "Sí. Todos los tratamientos usan compuestos naturales biocompatibles administrados directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-dna",
+          "label": "Curación Celular"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Seguridad Natural"
+        },
+        {
+          "icon": "fa-bolt",
+          "label": "Alivio Rápido"
+        },
+        {
+          "icon": "fa-heart",
+          "label": "Resultados Duraderos"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Cómo Funciona",
+          "without": "Adormece el dolor temporalmente",
+          "with": "Reconstruye el tejido dañado en la fuente"
+        },
+        {
+          "metric": "Tipo de Tratamiento",
+          "without": "Medicamentos sintéticos / cirugía",
+          "with": "PRP y Exosomas naturales"
+        },
+        {
+          "metric": "Tiempo de Recuperación",
+          "without": "Semanas de inactividad / cirugía",
+          "with": "Vuelta a lo normal el mismo día"
+        },
+        {
+          "metric": "Perfil de Seguridad",
+          "without": "Alto riesgo y efectos secundarios",
+          "with": "100% natural y biocompatible"
+        },
+        {
+          "metric": "Alivio a Largo Plazo",
+          "without": "Se desvanece rápidamente",
+          "with": "Reparación celular natural duradera"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Plan Completo de Reparación Articular",
+          "tag": "Más Popular",
+          "compounds": "Protocolo de PRP + Exosomas",
+          "description": "Nuestro mejor protocolo articular combinando factores de crecimiento de PRP naturales con señales celulares de exosomas para un alivio rápido del dolor."
+        },
+        {
+          "name": "Paquete de Restauración de Intimidad",
+          "tag": "Bienestar Sexual",
+          "compounds": "P-Shot o O-Shot + Revisión Médica",
+          "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza para hombres y mujeres."
+        },
+        {
+          "name": "Plan Natural de Restauración Capilar",
+          "tag": "Cuero Cabelludo Más Grueso",
+          "compounds": "PRP + Terapia de Exosomas del Cuero Cabelludo",
+          "description": "Tratamiento capilar de doble acción diseñado para despertar las raíces capilares dormidas y aumentar la densidad capilar natural."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una consulta médica para la medicina regenerativa?",
+        "answer": "Sí. Todos los tratamientos de PRP, exosomas e intimidad requieren una consulta médica. Hablará con nuestro médico licenciado quien evalúa su salud articular, capilar o íntima antes de crear su plan personalizado."
+      },
+      {
+        "question": "¿Qué incluye el programa regenerativo guiado por médicos?",
+        "answer": "Su programa incluye una consulta médica completa con un médico certificado, su tratamiento personalizado en consultorio de PRP o exosomas, anestesia tópica para comodidad y seguimiento de progreso."
+      },
+      {
+        "question": "¿Son dolorosas las inyecciones de PRP y exosomas?",
+        "answer": "¡Para nada! Usamos cremas anestésicas tópicas fuertes antes de cada procedimiento. La mayoría de los pacientes reportan mínima presión y regresan al trabajo o actividades normales el mismo día."
+      },
+      {
+        "question": "¿Cuántas sesiones necesito para ver resultados?",
+        "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot y O-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
+      },
+      {
+        "question": "¿En qué se diferencian los exosomas de los tratamientos con células madre?",
+        "answer": "Los exosomas son mensajeros naturales no celulares que llevan instrucciones de curación a sus células. No se replican ni se injertan, lo que los hace una señal celular extremadamente segura y pura para una curación rápida."
+      },
+      {
+        "question": "¿Cómo empiezo con la medicina regenerativa?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. Nuestro médico revisará sus objetivos y comenzará su plan de recuperación personalizado."
+      }
+    ]
+  },
+  {
+    "id": "sexual-wellness",
+    "type": "additional",
+    "tabLabel": "Bienestar Sexual",
+    "href": "sexual-wellness.html",
+    "title": "Recupere la Pasión, el Impulso y la Intimidad",
+    "lead": "Siéntase seguro, fuerte y profundamente conectado de nuevo con atención íntima guiada por médicos.",
+    "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot y O-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
+    "icon": "fa-heart",
+    "delay": "-4s",
+    "features": [
+      "Recupere el impulso y la resistencia naturales",
+      "P-Shot para hombres y O-Shot para mujeres",
+      "100% prescrito por médicos y discreto",
+      "100% verificado por médicos para su seguridad"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Reserve su Consulta Médica",
+    "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
+    "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, O-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
+    "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Impulso Íntimo</span>",
+    "heroSubheadline": "Protocolos de Bienestar Sexual e Intimidad bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+    "heroCTA": "Reserve su Cita Médica Hoy",
+    "quiz": {
+      "badge": "Evaluación Rápida de 1 Minuto",
+      "headline": "Encuentre Su Mejor Plan de Intimidad",
+      "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+      "step1": {
+        "question": "¿Cuál es su principal objetivo ahora mismo?",
+        "sub": "Elija lo que desea mejorar primero.",
+        "options": [
+          {
+            "value": "men",
+            "icon": "fa-mars",
+            "title": "Rendimiento e Impulso Masculino",
+            "desc": "Quiero erecciones más fuertes, resistencia y energía juvenil."
+          },
+          {
+            "value": "women",
+            "icon": "fa-venus",
+            "title": "Sensación y Humor Femenino",
+            "desc": "Quiero mayor deseo, mejor lubricación y excitación."
+          },
+          {
+            "value": "balance",
+            "icon": "fa-scale-balanced",
+            "title": "Equilibrio Total de Pareja",
+            "desc": "Optimización de hormonas e impulso para ambos compañeros."
+          }
+        ]
+      },
+      "step2": {
+        "question": "¿Cuánto tiempo ha notado menor impulso o rendimiento?",
+        "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "Unos Pocos Meses",
+            "desc": "Declive reciente debido al estrés o la edad."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "Varios Años",
+            "desc": "Bajo impulso a largo plazo o frustración íntima."
+          }
+        ]
+      },
+      "step3": {
+        "question": "¿Ha probado tratamientos de intimidad antes?",
+        "sub": "Ayuda a nuestro médico a orientar su atención.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Primera Vez",
+            "desc": "Nunca he probado atención clínica de intimidad antes."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Sí, Lo He Intentado",
+            "desc": "He probado pastillas o suplementos sin éxito duradero."
+          }
+        ]
+      },
+      "protocols": {
+        "men": {
+          "tag": "Plan Recomendado para Hombres",
+          "name": "El Plan de Máximo Rendimiento Masculino (P-Shot + TRT)",
+          "peptides": "Prescripción de P-Shot + Soporte Hormonal",
+          "icon": "fa-mars",
+          "desc": "Combina factores de crecimiento naturales de PRP con equilibrio hormonal médico para restaurar el fuerte flujo sanguíneo, la resistencia y la confianza.",
+          "goalModifiers": {
+            "no": "Plan inicial con una evaluación médica cómoda y panel de sangre.",
+            "yes": "Protocolo avanzado diseñado para superar las pastillas OTC débiles y ofrecer resultados clínicos reales."
+          },
+          "social": "Más de 80 pacientes masculinos locales lograron resultados sobresalientes con este plan."
+        },
+        "women": {
+          "tag": "Plan Recomendado para Mujeres",
+          "name": "El Restablecimiento de Intimidad Femenina (O-Shot + TRH)",
+          "peptides": "Prescripción de O-Shot + TRH Bioidéntica",
+          "icon": "fa-venus",
+          "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo usando los propios factores de crecimiento naturales de su cuerpo.",
+          "goalModifiers": {
+            "no": "Plan inicial suave supervisado por médicos compasivos.",
+            "yes": "Protocolo de refuerzo dirigido para excitación celular profunda y satisfacción duradera."
+          },
+          "social": "74 pacientes femeninas restauraron su confianza íntima con este protocolo."
+        },
+        "balance": {
+          "tag": "Plan de Restablecimiento de Pareja",
+          "name": "Pila Total de Pasión y Sinergia Hormonal",
+          "peptides": "Prescripción de PT-141 / Kisspeptina + Paneles Hormonales",
+          "icon": "fa-heart",
+          "desc": "Pila de intimidad integral diseñada para desencadenar señales naturales de deseo cerebral y aumentar la energía física.",
+          "goalModifiers": {
+            "no": "Control completo de salud basal para alinear los niveles de energía y pasión de ambos compañeros.",
+            "yes": "Terapia de alta potencia construida para revivir la intimidad profunda y la resistencia."
+          },
+          "social": "Más de 65 parejas han renovado su chispa con este plan guiado por médicos."
+        }
+      },
+      "timelineMap": {
+        "months": "4–6 semanas (Plan de Seguimiento Rápido)",
+        "years": "8–12 semanas (Plan de Restablecimiento Completo)"
+      }
+    },
+    "eligibility": {
+      "badge": "¿Para Quién Es?",
+      "headline": "¿Es Usted Candidato para Atención de Bienestar Íntimo?",
+      "intro": "Nuestros tratamientos de bienestar sexual son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Evaluamos su salud en un ambiente clínico privado y respetuoso.",
+      "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+      "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+      "items": [
+        {
+          "label": "Bajo Impulso y Deseo",
+          "detail": "Hombres y mujeres que sienten un declive en la intimidad natural, la pasión o la energía."
+        },
+        {
+          "label": "Problemas de Erección y Resistencia",
+          "detail": "Hombres con dificultades en el flujo sanguíneo, mantener la firmeza o ansiedad de rendimiento."
+        },
+        {
+          "label": "Sequedad y Baja Sensación",
+          "detail": "Mujeres que experimentan baja excitación, incomodidad o sensibilidad íntima reducida."
+        },
+        {
+          "label": "Pastillas Azules / OTC Sin Éxito",
+          "detail": "Cualquiera cansado de suplementos de venta libre o pastillas que causan malos efectos secundarios."
+        },
+        {
+          "label": "Listo para Atención Médica Privada",
+          "detail": "Buscando tratamientos seguros y discretos administrados por médicos en un consultorio privado."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Opciones bajo Receta",
+      "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+      "sectionSubheadline": "Opciones de intimidad prescritas por médicos adaptadas a su cuerpo en una clínica médica privada.",
+      "items": [
+        {
+          "icon": "fa-mars",
+          "name": "P-Shot (Inyección Priapus)",
+          "tag": "Para Hombres",
+          "description": "Tratamiento de PRP natural para hombres para mejorar el flujo sanguíneo, la firmeza, la salud del tejido y la confianza íntima."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "O-Shot (Inyección de Orgasmo)",
+          "tag": "Para Mujeres",
+          "description": "Tratamiento de PRP natural para mujeres que restaura la sensibilidad nerviosa, la lubricación natural y la excitación intensa."
+        },
+        {
+          "icon": "fa-syringe",
+          "name": "TRT Médico para Hombres",
+          "tag": "Potenciador de Resistencia",
+          "description": "Equilibrio de testosterona guiado por médicos para reconstruir la energía diaria, la fuerza muscular y la resistencia íntima."
+        },
+        {
+          "icon": "fa-heart",
+          "name": "TRH Bioidéntica para Mujeres",
+          "tag": "Restablecimiento Hormonal",
+          "description": "Equilibrio natural de estrógenos y progesterona bioidéntica para corregir cambios de humor, sudores nocturnos y bajo impulso."
+        },
+        {
+          "icon": "fa-brain",
+          "name": "Terapia de Deseo PT-141",
+          "tag": "Señal Cerebral",
+          "description": "Tratamiento de péptido estudiado por la FDA que actúa directamente sobre las vías centrales del cerebro para desencadenar el deseo natural."
+        },
+        {
+          "icon": "fa-vial",
+          "name": "Chequeo Médico de Sangre",
+          "tag": "Seguridad Primero",
+          "description": "Análisis de laboratorio simple para verificar sus marcadores hormonales exactos y garantizar un tratamiento seguro y efectivo."
+        }
+      ]
+    },
+    "science": {
+      "badge": "Cómo Funciona",
+      "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas Azules Fallan</span>",
+      "body": "Las pastillas solo fuerzan temporalmente el flujo sanguíneo y a menudo causan dolores de cabeza o presión arterial alta. Nuestros tratamientos guiados por médicos reparan los tejidos subyacentes y equilibran las hormonas naturales. Usando factores de crecimiento naturales (PRP) y señales de deseo cerebral (PT-141), reconstruimos la resistencia, sensibilidad e impulso natural a largo plazo.",
+      "bullets": [
+        "Prescrito y administrado por médicos licenciados",
+        "100% compuestos bioidénticos naturales sin rellenos sintéticos",
+        "Atención médica privada, respetuosa y discreta"
+      ],
+      "stats": [
+        {
+          "value": "Discreto",
+          "label": "Atención médica privada uno a uno"
+        },
+        {
+          "value": "Seguro",
+          "label": "Supervisado por médicos y analizado en laboratorio"
+        },
+        {
+          "value": "Natural",
+          "label": "Usa los factores de crecimiento de su cuerpo"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Certificado por Médico con Receta"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Reparación Natural de Tejidos con PRP",
+          "detail": "El P-Shot y el O-Shot usan factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Señalización Natural de Deseo Cerebral",
+          "detail": "Péptidos como PT-141 actúan sobre los receptores cerebrales centrales para encender la pasión natural sin estrés cardiovascular."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "¿Son dolorosas las inyecciones de intimidad?",
+        "reality": "No. Nuestros médicos aplican una crema anestésica tópica fuerte de grado médico antes de cualquier procedimiento. La mayoría de los pacientes sienten solo una leve presión y regresan inmediatamente a las actividades normales."
+      },
+      {
+        "myth": "¿Los tratamientos de intimidad solo funcionan para hombres?",
+        "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. El O-Shot y la TRH bioidéntica restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
+      },
+      {
+        "myth": "¿Es segura la atención de intimidad guiada por médicos?",
+        "reality": "Sí. Todos los tratamientos usan factores de crecimiento naturales o compuestos estudiados por la FDA administrados directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+      }
+    ],
+    "comparison": {
+      "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+      "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+      "ctaText": "Llame a Nuestra Clínica Hoy",
+      "mobileStats": [
+        {
+          "icon": "fa-user-md",
+          "label": "Guiado por Médico"
+        },
+        {
+          "icon": "fa-heart",
+          "label": "Alto Impulso"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Seguro y Natural"
+        },
+        {
+          "icon": "fa-clock",
+          "label": "Resultados Duraderos"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Cómo Funciona",
+          "without": "Máscara temporal de pastilla",
+          "with": "Reconstruye tejidos y equilibra hormonas"
+        },
+        {
+          "metric": "Riesgo de Efectos Secundarios",
+          "without": "Dolores de cabeza y subidas de presión",
+          "with": "100% seguro y biocompatible"
+        },
+        {
+          "metric": "Sensación",
+          "without": "Sin cambios o entumecido",
+          "with": "Sensibilidad nerviosa y pasión restauradas"
+        },
+        {
+          "metric": "Supervisión Médica",
+          "without": "Pastillas de gasolinera / pedidos web",
+          "with": "Consulta y laboratorio de médico licenciado"
+        },
+        {
+          "metric": "Resultado a Largo Plazo",
+          "without": "Se desvanece en horas",
+          "with": "Rendimiento natural duradero"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Pila de Máxima Intimidad Masculina",
+          "tag": "Más Popular",
+          "compounds": "P-Shot + Protocolo de TRT Médico",
+          "description": "Nuestro mejor protocolo masculino combinando el P-Shot para el flujo sanguíneo con TRT para la resistencia y energía."
+        },
+        {
+          "name": "Pila de Vitalidad y Sensación Femenina",
+          "tag": "Para Mujeres",
+          "compounds": "O-Shot + TRH Bioidéntica",
+          "description": "Restablecimiento completo de intimidad femenina que restaura la sensibilidad nerviosa, la lubricación y el equilibrio emocional."
+        },
+        {
+          "name": "Potenciador de Pasión y Deseo de Pareja",
+          "tag": "Restablecimiento del Deseo",
+          "compounds": "PT-141 + Control Hormonal",
+          "description": "Terapia de péptido de deseo cerebral central diseñada para encender la pasión y resistencia espontáneas."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "¿Necesito una consulta médica para los tratamientos de bienestar sexual?",
+        "answer": "Sí. Todos los tratamientos de P-Shot, O-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
+      },
+      {
+        "question": "¿Qué incluye el programa de intimidad guiado por médicos?",
+        "answer": "Su programa incluye una consulta privada uno a uno con un médico certificado, análisis de sangre basal, su tratamiento personalizado en consultorio con anestesia bajo receta y seguimientos continuos."
+      },
+      {
+        "question": "¿Son dolorosos los tratamientos de P-Shot y O-Shot?",
+        "answer": "¡Para nada! Aplicamos crema anestésica de grado médico fuerte antes de cada tratamiento. La mayoría de los pacientes sienten solo una leve presión y vuelven directamente al trabajo o actividades normales el mismo día."
+      },
+      {
+        "question": "¿Qué tan rápido notaré resultados con la terapia de intimidad?",
+        "answer": "Muchos pacientes notan mejora en sensibilidad, flujo sanguíneo y deseo dentro de 2 a 4 semanas. La regeneración completa del tejido y los resultados máximos se desarrollan durante 8 a 12 semanas."
+      },
+      {
+        "question": "¿Son estos tratamientos privados y confidenciales?",
+        "answer": "100% sí. Su privacidad es nuestra máxima prioridad. Todas las consultas y tratamientos tienen lugar en habitaciones privadas en nuestra clínica discreta de St. Petersburg."
+      },
+      {
+        "question": "¿Cómo empiezo con la atención de bienestar sexual?",
+        "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. Nuestro médico responderá todas sus preguntas con total confidencialidad y comenzará su plan."
+      }
+    ]
+  }
+]

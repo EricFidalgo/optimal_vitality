@@ -1,0 +1,327 @@
+{
+  "id": "glp-1therapies",
+  "type": "core",
+  "tabLabel": "Pérdida de Peso Médica (GLP-1)",
+  "href": "glp-1therapies.html",
+  "title": "Pierda Peso Rápido Sin Antojos Constantes",
+  "lead": "Médicos reales guían su plan para que pierda grasa, se sienta satisfecho y mantenga la energía alta.",
+  "description": "Sin privarse de comida. Sin entrenamientos locos. Nuestros simples tratamientos médicos semanales apagan los pensamientos constantes sobre comida para que queme grasa mientras protege su músculo.",
+  "icon": "fa-weight-scale",
+  "delay": "-1s",
+  "features": [
+    "Detenga los antojos constantes de comida",
+    "Queme grasa rebelde manteniendo el músculo",
+    "Supervisión y atención de médicos licenciados",
+    "Plan semanal simple prescrito por médicos"
+  ],
+  "image": "assets/images/photos/glp1-weight-loss.jpg",
+  "ctaText": "Reserve su Consulta Médica",
+  "pageTitle": "Pérdida de Peso Médica GLP-1 Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Protocolos de pérdida de peso médica guiados por médicos en St. Petersburg, FL. Prescripciones de Semaglutida y Tirzepatida supervisadas por profesionales de la salud licenciados.",
+  "heroHeadline": "Optimización<br><span class=\"text-primary\">Metabólica</span> Redefinida",
+  "heroSubheadline": "Protocolos de pérdida de peso con Semaglutida y Tirzepatida bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Plan de Pérdida de Peso",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "step1": {
+      "question": "¿Cuál es su principal objetivo de peso?",
+      "sub": "Elija lo que más le importa ahora mismo.",
+      "options": [
+        {
+          "value": "weight",
+          "icon": "fa-weight",
+          "title": "Perder Peso Rápido",
+          "desc": "Quemar grasa corporal sin sentir hambre todo el día."
+        },
+        {
+          "value": "metabolic",
+          "icon": "fa-heartbeat",
+          "title": "Mejorar mi Energía y Salud",
+          "desc": "Acelerar el metabolismo, la energía y la salud en general."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Ha usado antes tratamientos de pérdida de peso GLP-1?",
+      "sub": "Ayuda a nuestro médico a elegir su dosis inicial.",
+      "options": [
+        {
+          "value": "no",
+          "icon": "fa-times-circle",
+          "title": "Primera Vez",
+          "desc": "Nunca he probado los tratamientos GLP-1 antes."
+        },
+        {
+          "value": "yes",
+          "icon": "fa-check-circle",
+          "title": "Sí, Lo He Intentado",
+          "desc": "He usado Semaglutida o Tirzepatida antes."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Cuánto peso desea perder?",
+      "sub": "Establece un cronograma simple para sus resultados.",
+      "options": [
+        {
+          "value": "moderate",
+          "icon": "fa-arrow-down",
+          "title": "5 a 10 kg",
+          "desc": "Pérdida de grasa dirigida para sentirse más liviano."
+        },
+        {
+          "value": "significant",
+          "icon": "fa-arrow-circle-down",
+          "title": "Más de 10 kg",
+          "desc": "Pérdida de peso importante para reconstruir su cuerpo."
+        }
+      ]
+    },
+    "protocols": {
+      "weight": {
+        "tag": "Plan Recomendado",
+        "name": "Plan de Quema de Grasa Guiado por Médicos",
+        "peptides": "Prescripción de Semaglutida o Tirzepatida",
+        "icon": "fa-weight-scale",
+        "desc": "Un tratamiento semanal simple prescrito por un médico licenciado que apaga el hambre y ayuda a su cuerpo a quemar grasa cada día.",
+        "goalModifiers": {
+          "moderate": "Ideal para perder 5-10 kg manteniendo su energía diaria alta.",
+          "significant": "Diseñado para más de 10 kg de pérdida de grasa con chequeos médicos paso a paso."
+        },
+        "social": "Más de 100 pacientes locales están usando actualmente este plan guiado por médicos."
+      },
+      "metabolic": {
+        "tag": "Plan de Salud y Vitalidad",
+        "name": "Plan de Restablecimiento Corporal Total",
+        "peptides": "Tirzepatida + Soporte de Vitaminas",
+        "icon": "fa-heartbeat",
+        "desc": "Construye un metabolismo saludable, equilibra el azúcar en sangre y mantiene su cuerpo sintiéndose joven y lleno de energía.",
+        "goalModifiers": {
+          "moderate": "Ayuda a corregir caídas de energía diarias y aumento de peso leve.",
+          "significant": "Restablecimiento integral para limpiar marcadores de salud y eliminar el exceso de peso."
+        },
+        "social": "84 pacientes comenzaron este plan guiado por médicos en los últimos 90 días."
+      }
+    },
+    "timelineMap": {
+      "no": "12–16 semanas (Plan Médico Estándar)",
+      "yes": "8–12 semanas (Plan de Seguimiento Rápido)"
+    }
+  },
+  "eligibility": {
+    "badge": "¿Para Quién Es?",
+    "headline": "¿Es Usted Candidato para el Tratamiento GLP-1?",
+    "intro": "Nuestros tratamientos son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Verificamos su salud primero para asegurarnos de que obtenga el mejor plan para su cuerpo.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "items": [
+      {
+        "label": "Grasa Rebelde",
+        "detail": "Adultos con más de 7 kg que perder que tienen dificultades para eliminar la grasa solo con dieta."
+      },
+      {
+        "label": "Antojos Constantes",
+        "detail": "Cualquiera cansado de pensar en comida, picar de noche o sentir hambre todo el día."
+      },
+      {
+        "label": "Metabolismo Estancado",
+        "detail": "Personas que hacen ejercicio o dieta pero no pueden bajar de peso."
+      },
+      {
+        "label": "Quiere Preservar el Músculo",
+        "detail": "Desea perder tejido graso manteniendo su músculo fuerte y saludable."
+      },
+      {
+        "label": "Listo para Atención Médica",
+        "detail": "Buscando un plan seguro prescrito por médicos con controles periódicos."
+      }
+    ]
+  },
+  "protocols": {
+    "badge": "Opciones bajo Receta",
+    "sectionHeadline": "Tratamientos Médicos Semanales Simples",
+    "sectionSubheadline": "Tratamientos semanales prescritos por médicos adaptados a su cuerpo tras una consulta médica.",
+    "items": [
+      {
+        "icon": "fa-weight-scale",
+        "name": "Protocolo de Semaglutida",
+        "tag": "Más Popular",
+        "description": "Tratamiento GLP-1 bajo receta que calma las señales de hambre en su cerebro. Una dosis semanal simple para sentirse satisfecho y perder peso de manera constante."
+      },
+      {
+        "icon": "fa-fire",
+        "name": "Protocolo de Tirzepatida",
+        "tag": "Resultados Más Rápidos",
+        "description": "Tratamiento de doble acción bajo receta que actúa sobre dos vías naturales de hambre para una pérdida de grasa aún más rápida manteniendo su energía."
+      },
+      {
+        "icon": "fa-dna",
+        "name": "Protocolo de Retatrutida",
+        "tag": "Nueva Generación",
+        "description": "Opción de triple acción para el peso rebelde que no ha respondido a dietas anteriores. Disponible previa evaluación médica."
+      },
+      {
+        "icon": "fa-leaf",
+        "name": "Inyecciones de Quema de Grasa y B12",
+        "tag": "Potenciador de Energía",
+        "description": "Inyecciones rápidas de vitaminas para aumentar su energía diaria, apoyar su hígado y mantener su cuerpo quemando grasa rápidamente."
+      },
+      {
+        "icon": "fa-chart-line",
+        "name": "Chequeo Médico de Sangre",
+        "tag": "Seguridad Primero",
+        "description": "Análisis de laboratorio simples para que su médico pueda personalizar su dosis inicial y garantizar su salud y seguridad completas."
+      },
+      {
+        "icon": "fa-utensils",
+        "name": "Guía Alimentaria Simple",
+        "tag": "Comidas Fáciles",
+        "description": "Consejos alimentarios diarios fáciles diseñados para proteger su músculo fuerte mientras el peso desaparece."
+      }
+    ]
+  },
+  "science": {
+    "badge": "Cómo Funciona",
+    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Dietas Fallan</span>",
+    "body": "La mayoría de las dietas fallan porque su cerebro le dice que tiene hambre. Los tratamientos con GLP-1 bajo receta envían señales naturales de saciedad a su cerebro. Come menos de forma natural sin sentirse privado o débil. Quema grasa mientras mantiene su músculo.",
+    "bullets": [
+      "Prescrito por médicos licenciados reales",
+      "Tratamiento semanal simple en casa o en la clínica",
+      "Protege el músculo para que queme grasa pura"
+    ],
+    "stats": [
+      {
+        "value": "Satisfecho",
+        "label": "Sin antojos constantes de comida"
+      },
+      {
+        "value": "Fácil",
+        "label": "Plan médico semanal simple"
+      },
+      {
+        "value": "Seguro",
+        "label": "Supervisado por médicos y analizado en laboratorio"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Certificado por Médico con Receta"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-brain",
+        "title": "Apaga los Pensamientos de Hambre",
+        "detail": "Envía señales a su cerebro de que está satisfecho tras comidas pequeñas para que el picoteo se detenga naturalmente."
+      },
+      {
+        "icon": "fa-dumbbell",
+        "title": "Mantiene su Músculo Fuerte",
+        "detail": "Nuestros planes médicos protegen su músculo para que su cuerpo queme grasa como combustible."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "¿Tengo que morirme de hambre?",
+      "reality": "No. Nuestros planes médicos usan inyecciones semanales que apagan el hambre de forma natural. Usted come comidas normales con porciones más pequeñas sin sentirse privado."
+    },
+    {
+      "myth": "¿Solo funciona para la obesidad severa?",
+      "reality": "No. Nuestros médicos prescriben tratamientos GLP-1 para cualquier adulto con peso rebelde, antojos constantes o metabolismo lento que quiera resultados seguros."
+    },
+    {
+      "myth": "¿Los tratamientos GLP-1 guiados por médicos son seguros?",
+      "reality": "Sí. Todos los tratamientos son medicamentos aprobados por la FDA prescritos directamente por médicos licenciados siguiendo estrictas pautas médicas de Florida."
+    }
+  ],
+  "comparison": {
+    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "mobileStats": [
+      {
+        "icon": "fa-fire",
+        "label": "Quema de Grasa"
+      },
+      {
+        "icon": "fa-dumbbell",
+        "label": "Músculo Preservado"
+      },
+      {
+        "icon": "fa-brain",
+        "label": "Sin Hambre"
+      },
+      {
+        "icon": "fa-chart-line",
+        "label": "Verificado por Médico"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Nivel de Hambre",
+        "without": "Siempre hambriento y cansado",
+        "with": "Se siente satisfecho y saciado"
+      },
+      {
+        "metric": "Velocidad de Pérdida de Grasa",
+        "without": "Lenta y frustrante",
+        "with": "Constante y respaldada por médicos"
+      },
+      {
+        "metric": "Protección del Músculo",
+        "without": "Pierde músculo y fuerza",
+        "with": "Protege el músculo mientras quema grasa"
+      },
+      {
+        "metric": "Seguridad Médica",
+        "without": "Sin supervisión / genérico",
+        "with": "Prescrito por médicos y monitoreado en laboratorio"
+      },
+      {
+        "metric": "Resultados a Largo Plazo",
+        "without": "El peso vuelve",
+        "with": "Orientación médica para mantenerlo"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Plan de Pérdida de Grasa Rápida",
+        "tag": "Más Popular",
+        "compounds": "Tirzepatida + Potenciador de Vitamina B12",
+        "description": "Combina el tratamiento de doble acción bajo receta con energizantes. Diseñado para quemar grasa rápidamente manteniendo su fuerza."
+      },
+      {
+        "name": "Plan Esencial de Pérdida de Peso",
+        "tag": "Gran Inicio",
+        "compounds": "Semaglutida + Guía Alimentaria",
+        "description": "GLP-1 bajo receta probado combinado con orientación alimentaria diaria simple. Perfecto para su primera experiencia de pérdida de peso guiada por médicos."
+      },
+      {
+        "name": "Plan Completo de Salud y Pérdida de Grasa",
+        "tag": "Restablecimiento Total",
+        "compounds": "Retatrutida + Laboratorios Médicos",
+        "description": "Tratamiento avanzado de triple acción guiado por paneles completos de salud médica para obtener los máximos resultados."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una receta médica para los tratamientos GLP-1?",
+      "answer": "Sí. Todos los tratamientos GLP-1 son medicamentos bajo receta. Se consultará con nuestro médico licenciado o proveedor de salud quien evalúa su historial médico para determinar la candidatura y prescribir el plan adecuado."
+    },
+    {
+      "question": "¿Cómo funcionan los tratamientos de pérdida de peso GLP-1?",
+      "answer": "Los tratamientos GLP-1 imitan la hormona natural de saciedad de su cuerpo. Esto reduce las señales de hambre en su cerebro para que coma naturalmente comidas más pequeñas sin sentirse privado o con antojo de bocadillos."
+    },
+    {
+      "question": "¿Perderé músculo mientras pierdo peso?",
+      "answer": "No. Nuestros planes guiados por médicos incluyen consejos alimentarios simples y objetivos de proteínas para asegurarse de que su cuerpo queme tejido graso mientras protege su músculo fuerte y saludable."
+    },
+    {
+      "question": "¿Cómo empiezo?",
+      "answer": "¡Simplemente llame a nuestra clínica o reserve una cita en línea! Hablará con un médico licenciado que revisará su salud, responderá sus preguntas y comenzará su plan personalizado."
+    }
+  ]
+}

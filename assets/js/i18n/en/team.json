@@ -1,0 +1,63 @@
+{
+  "pageTitle": "Meet Our Medical Team — OVI Wellness",
+  "heroHeadline": "Guided by <span class=\"text-primary\">Board-Certified Doctors</span>",
+  "heroSubheadline": "Our multidisciplinary medical team combines longevity science with individualized diagnostic tracking to deliver safe, high-performance results.",
+  "team": [
+    {
+      "name": "Dr. Marcus Vance, MD",
+      "credentials": "MD, FAARM",
+      "role": "Chief Medical Officer",
+      "bio": "Board-certified specialist in anti-aging medicine and bio-identical hormone optimization, guiding precision protocols for systemic longevity.",
+      "philosophy": "Optimization is not about chasing numbers; it's about restoring the physiological resilience of youth through precision dosing and advanced biomarker tracking.",
+      "expertise": [
+        "Bio-identical Hormone Therapy",
+        "Advanced Endocrinology",
+        "Peptide Synthesis Protocols",
+        "Longevity Medicine"
+      ],
+      "associations": [
+        "Fellow of the American Academy of Anti-Aging Medicine (A4M)",
+        "American Medical Association"
+      ],
+      "personalDetail": "Dr. Vance is an avid triathlete and utilizes the very protocols he prescribes to maintain elite cardiovascular performance.",
+      "image": "assets/images/photos/team/vance.png"
+    },
+    {
+      "name": "Sarah Jenkins, FNP-C",
+      "credentials": "FNP-C",
+      "role": "Lead Clinical Specialist",
+      "bio": "Expert in targeted peptide therapies and advanced metabolic weight loss programming to preserve lean muscle mass.",
+      "philosophy": "True weight loss is metabolic rehabilitation. We don't just reduce mass; we re-engineer your cellular metabolism to protect lean tissue and enhance energy output.",
+      "expertise": [
+        "GLP-1/GIP Agonists",
+        "Metabolic Optimization",
+        "Body Recomposition",
+        "Clinical Nutrition"
+      ],
+      "associations": [
+        "American Association of Nurse Practitioners (AANP)",
+        "Obesity Medicine Association"
+      ],
+      "personalDetail": "Sarah bridges the gap between clinical science and sustainable lifestyle integration, empowering patients to own their health journey.",
+      "image": "assets/images/photos/team/jenkins.png"
+    },
+    {
+      "name": "David Chen, RN",
+      "credentials": "RN, BSN",
+      "role": "Infusion Director",
+      "bio": "Overseeing our Drip Culture division, ensuring perfect bioavailability and safety for all NAD+ and Glutathione longevity infusions.",
+      "philosophy": "Intravenous therapy bypasses the unpredictability of the gut. By delivering clinical-grade nutrients directly to the bloodstream, we maximize absorption and promote immediate cellular impact.",
+      "expertise": [
+        "NAD+ Protocols",
+        "High-Dose Vitamin C",
+        "Cellular Hydration",
+        "Post-Surgical Recovery IVs"
+      ],
+      "associations": [
+        "Infusion Nurses Society (INS)"
+      ],
+      "personalDetail": "David has safely administered over 10,000 IV protocols and is known for his perfectly painless insertion techniques.",
+      "image": "assets/images/photos/team/chen.png"
+    }
+  ]
+}

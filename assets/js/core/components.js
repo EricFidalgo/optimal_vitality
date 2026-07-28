@@ -47,9 +47,12 @@
                         <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
                     </a>
 
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                    <div class="collapse navbar-collapse d-none d-lg-flex align-items-center" id="navbarNav">
                         <ul class="navbar-nav ms-auto" id="main-navbar-links"></ul>
-                        <a href="#consultation" class="btn cta-btn ms-lg-3">Book Your Consultation</a>
+                        <button type="button" class="btn btn-outline-light btn-sm ms-lg-3 px-3 rounded-pill fw-bold" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')" style="font-size: 0.85rem; border-color: rgba(255,255,255,0.4);">
+                          <i class="fas fa-globe me-1"></i> ${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'ES' : 'EN'}
+                        </button>
+                        <a href="#consultation" class="btn cta-btn ms-lg-2">Book Your Consultation</a>
                     </div>
 
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle Navigation">
@@ -71,6 +74,9 @@
                                 <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
                             </div>
                             <div class="mt-auto pb-4">
+                                <button type="button" class="btn btn-outline-light btn-sm w-100 mb-3 rounded-pill fw-bold" onclick="window.OVI_I18N && window.OVI_I18N.setLanguage(window.OVI_I18N.currentLang === 'en' ? 'es' : 'en')">
+                                  <i class="fas fa-globe me-1"></i> ${(window.OVI_I18N?.currentLang || 'en') === 'en' ? 'Cambiar a Español' : 'Switch to English'}
+                                </button>
                                 <a href="#consultation" class="btn cta-btn w-100">Book Your Consultation</a>
                             </div>
                         </div>

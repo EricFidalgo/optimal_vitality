@@ -1,0 +1,353 @@
+{
+  "id": "regenerative-medicine",
+  "type": "additional",
+  "tabLabel": "Medicina Regenerativa",
+  "href": "regenerative-medicine.html",
+  "title": "Cure el Dolor Corporal y Reconstruya las Células Naturalmente",
+  "lead": "Deje de dejar que la rigidez articular, el cabello adelgazado o la baja intimidad le impidan vivir plenamente.",
+  "description": "Usamos el poder natural de su propio cuerpo para sanar articulaciones dañadas, revitalizar la piel y restaurar un cabello grueso y saludable—100% prescrito por médicos sin cirugía invasiva.",
+  "icon": "fa-heartbeat",
+  "delay": "-3s",
+  "features": [
+    "Alivio de dolores articulares y rigidez persistentes",
+    "Restauración natural del cabello y la piel",
+    "Restauración de la salud íntima y la confianza",
+    "100% verificado por médicos para su seguridad"
+  ],
+  "image": "assets/images/photos/IV.jpg",
+  "ctaText": "Reserve su Consulta Médica",
+  "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. PRP, Exosomas, P-Shot, O-Shot y restauración capilar supervisados por médicos licenciados.",
+  "heroHeadline": "Regenerar.<br><span class=\"text-primary\">Restaurar.</span> Reconstruir.",
+  "heroSubheadline": "Protocolos regenerativos de PRP y Exosomas bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Plan de Curación",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "step1": {
+      "question": "¿Cuál es su principal preocupación ahora mismo?",
+      "sub": "Elija lo que desea solucionar primero.",
+      "options": [
+        {
+          "value": "joint",
+          "icon": "fa-bone",
+          "title": "Dolor y Rigidez Articular",
+          "desc": "Rodillas doloridas, hombros o dolor articular crónico."
+        },
+        {
+          "value": "hair",
+          "icon": "fa-cut",
+          "title": "Adelgazamiento del Cabello",
+          "desc": "Quiero restaurar la densidad del cuero cabelludo de forma natural."
+        },
+        {
+          "value": "intimacy",
+          "icon": "fa-heart",
+          "title": "Intimidad y Salud Sexual",
+          "desc": "P-Shot o O-Shot para impulso natural y sensibilidad."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Cuánto tiempo ha notado este problema?",
+      "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+      "options": [
+        {
+          "value": "mild",
+          "icon": "fa-thermometer-empty",
+          "title": "Recién Comenzó (Leve)",
+          "desc": "Dolor reciente o adelgazamiento capilar temprano."
+        },
+        {
+          "value": "severe",
+          "icon": "fa-thermometer-full",
+          "title": "Largo Plazo (Severo)",
+          "desc": "Dolor continuo o pérdida de cabello notable por meses."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Ha probado tratamientos de PRP o regenerativos antes?",
+      "sub": "Ayuda a nuestro médico a orientar su atención.",
+      "options": [
+        {
+          "value": "no",
+          "icon": "fa-times",
+          "title": "Primera Vez",
+          "desc": "Nunca he probado atención regenerativa antes."
+        },
+        {
+          "value": "yes",
+          "icon": "fa-check",
+          "title": "Sí, Lo He Intentado",
+          "desc": "He probado PRP o inyecciones articulares en el pasado."
+        }
+      ]
+    },
+    "protocols": {
+      "joint": {
+        "tag": "Plan Recomendado de Reparación Articular",
+        "name": "Plan Total de Reparación Articular y Celular",
+        "peptides": "Prescripción de PRP + Terapia de Exosomas",
+        "icon": "fa-bone",
+        "desc": "Concentra los factores curativos naturales de su cuerpo para aliviar la inflamación articular y reconstruir el tejido dañado de forma natural.",
+        "goalModifiers": {
+          "no": "Nuestro médico realizará una evaluación rápida de rodilla u hombro para establecer su dosis inicial.",
+          "yes": "Nuestro médico ajustará su densidad celular para el máximo alivio a largo plazo."
+        },
+        "social": "Más de 50 pacientes locales están usando actualmente este plan de recuperación articular."
+      },
+      "hair": {
+        "tag": "Plan de Cabello y Cuero Cabelludo",
+        "name": "Restauración Natural del Cuero Cabelludo y el Cabello",
+        "peptides": "Prescripción de PRP + Terapia de Exosomas del Cuero Cabelludo",
+        "icon": "fa-cut",
+        "desc": "Despierta los folículos capilares dormidos usando señales de crecimiento naturales para recuperar un cabello más grueso y abundante.",
+        "goalModifiers": {
+          "no": "Plan inicial diseñado para activar las raíces capilares dormidas durante sesiones simples.",
+          "yes": "Plan de refuerzo adaptado para mantener alta densidad folicular y grosor."
+        },
+        "social": "82 pacientes vieron mejoras visibles en la densidad capilar con este plan."
+      },
+      "intimacy": {
+        "tag": "Plan de Intimidad y Confianza",
+        "name": "Restablecimiento de Intimidad Celular (P-Shot / O-Shot)",
+        "peptides": "PRP Natural + Potenciador de Factor de Crecimiento",
+        "icon": "fa-heart",
+        "desc": "Procedimiento médico natural que restaura el flujo sanguíneo, la sensibilidad nerviosa y la confianza íntima para hombres y mujeres.",
+        "goalModifiers": {
+          "no": "Nuestro médico le guiará a través de un tratamiento inicial cómodo y simple.",
+          "yes": "Protocolo de refuerzo mejorado diseñado para mantener la vitalidad a largo plazo."
+        },
+        "social": "69 pacientes locales completaron este tratamiento de intimidad recientemente."
+      }
+    },
+    "timelineMap": {
+      "mild": "4–6 semanas (Plan de Seguimiento Rápido)",
+      "severe": "8–12 semanas (Plan Médico Estándar)"
+    }
+  },
+  "eligibility": {
+    "badge": "¿Para Quién Es?",
+    "headline": "¿Es Usted Candidato para Atención Regenerativa?",
+    "intro": "Nuestros tratamientos regenerativos usan la fuerza biológica propia de su cuerpo, supervisados por médicos licenciados. Verificamos su salud primero para asegurarnos de que obtenga atención segura y dirigida.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "items": [
+      {
+        "label": "Dolor Articular y Artritis",
+        "detail": "Adultos con dolor articular, rigidez de rodilla u hombro, o lesiones deportivas."
+      },
+      {
+        "label": "Adelgazamiento del Cabello",
+        "detail": "Hombres y mujeres que buscan restauración capilar natural sin cirugía."
+      },
+      {
+        "label": "Bienestar Íntimo",
+        "detail": "Hombres y mujeres que quieren mayor impulso, sensibilidad y resistencia con el P-Shot o O-Shot."
+      },
+      {
+        "label": "Quiere Evitar la Cirugía",
+        "detail": "Cualquiera que busque curación natural sin cirugía riesgosa o pastillas sintéticas."
+      },
+      {
+        "label": "Listo para Atención Médica",
+        "detail": "Buscando tratamientos seguros administrados por médicos en una clínica cómoda."
+      }
+    ]
+  },
+  "protocols": {
+    "badge": "Opciones bajo Receta",
+    "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+    "sectionSubheadline": "Tratamientos regenerativos prescritos por médicos adaptados a su cuerpo tras una evaluación médica.",
+    "items": [
+      {
+        "icon": "fa-dna",
+        "name": "Terapia de Exosomas Celulares",
+        "tag": "Más Avanzado",
+        "description": "Señales celulares avanzadas que le dicen a las células dañadas que se reparen, reduzcan la hinchazón articular y reconstruyan tejido sano rápidamente."
+      },
+      {
+        "icon": "fa-tint",
+        "name": "Plasma Rico en Plaquetas (PRP)",
+        "tag": "Curación Natural",
+        "description": "Concentra los factores de crecimiento naturales de su propia sangre para reconstruir articulaciones, revitalizar el cabello y suavizar la piel."
+      },
+      {
+        "icon": "fa-mars",
+        "name": "P-Shot (Intimidad Masculina)",
+        "tag": "Para Hombres",
+        "description": "Tratamiento de PRP natural para hombres para restaurar el flujo sanguíneo fuerte, la sensibilidad y el rendimiento íntimo."
+      },
+      {
+        "icon": "fa-venus",
+        "name": "O-Shot (Intimidad Femenina)",
+        "tag": "Para Mujeres",
+        "description": "Tratamiento de PRP natural para mujeres para mejorar la intimidad, la sensación, la excitación y el control de la vejiga."
+      },
+      {
+        "icon": "fa-leaf",
+        "name": "Terapia de Restauración Capilar",
+        "tag": "Cabello Más Grueso",
+        "description": "Tratamientos capilares de PRP y exosomas que despiertan las raíces capilares dormidas para un crecimiento capilar más grueso y abundante."
+      },
+      {
+        "icon": "fa-heartbeat",
+        "name": "Recuperación Articular y de Rodilla",
+        "tag": "Alivio del Dolor",
+        "description": "Inyecciones dirigidas de PRP y exosomas para rodillas, hombros y caderas para que pueda moverse sin dolor."
+      }
+    ]
+  },
+  "science": {
+    "badge": "Cómo Funciona",
+    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas para el Dolor Fallan</span>",
+    "body": "Las pastillas para el dolor solo adormecen el dolor temporalmente. La medicina regenerativa ayuda a su cuerpo a reparar el daño. Al usar sus propios factores de crecimiento naturales (PRP) y señales celulares (Exosomas), nuestros médicos instruyen a sus células para que reconstruyan el tejido articular y despierten las raíces capilares dormidas en la fuente.",
+    "bullets": [
+      "Prescrito y realizado por médicos licenciados",
+      "100% compuestos naturales que coinciden con su cuerpo",
+      "Tratamientos rápidos en consultorio sin cirugía"
+    ],
+    "stats": [
+      {
+        "value": "Natural",
+        "label": "Usa los factores de crecimiento propios de su cuerpo"
+      },
+      {
+        "value": "Seguro",
+        "label": "Supervisado por médicos y analizado en laboratorio"
+      },
+      {
+        "value": "0%",
+        "label": "Medicamentos sintéticos para el dolor necesarios"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Certificado por Médico con Receta"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-microscope",
+        "title": "Curación Natural con PRP",
+        "detail": "El PRP usa una muestra rápida de su sangre para concentrar el poder curativo propio de su cuerpo con cero riesgo de rechazo."
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Mensajería Celular con Exosomas",
+        "detail": "Los exosomas entregan mensajes moleculares naturales que le dicen exactamente a las células dañadas cómo reconstruirse."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "¿Es dolorosa la terapia de PRP o regenerativa?",
+      "reality": "No. Nuestros médicos aplican anestesia tópica suave antes de cualquier tratamiento para que se sienta cómodo. La mayoría de los pacientes regresan a sus actividades diarias normales el mismo día."
+    },
+    {
+      "myth": "¿Son los exosomas células madre?",
+      "reality": "No. Los exosomas no son células madre. Son mensajeros celulares naturales que llevan instrucciones claras de curación para ayudar a su cuerpo a repararse de forma segura."
+    },
+    {
+      "myth": "¿Es segura la medicina regenerativa guiada por médicos?",
+      "reality": "Sí. Todos los tratamientos usan compuestos naturales biocompatibles administrados directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+    }
+  ],
+  "comparison": {
+    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "mobileStats": [
+      {
+        "icon": "fa-dna",
+        "label": "Curación Celular"
+      },
+      {
+        "icon": "fa-shield-alt",
+        "label": "Seguridad Natural"
+      },
+      {
+        "icon": "fa-bolt",
+        "label": "Alivio Rápido"
+      },
+      {
+        "icon": "fa-heart",
+        "label": "Resultados Duraderos"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Cómo Funciona",
+        "without": "Adormece el dolor temporalmente",
+        "with": "Reconstruye el tejido dañado en la fuente"
+      },
+      {
+        "metric": "Tipo de Tratamiento",
+        "without": "Medicamentos sintéticos / cirugía",
+        "with": "PRP y Exosomas naturales"
+      },
+      {
+        "metric": "Tiempo de Recuperación",
+        "without": "Semanas de inactividad / cirugía",
+        "with": "Vuelta a lo normal el mismo día"
+      },
+      {
+        "metric": "Perfil de Seguridad",
+        "without": "Alto riesgo y efectos secundarios",
+        "with": "100% natural y biocompatible"
+      },
+      {
+        "metric": "Alivio a Largo Plazo",
+        "without": "Se desvanece rápidamente",
+        "with": "Reparación celular natural duradera"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Plan Completo de Reparación Articular",
+        "tag": "Más Popular",
+        "compounds": "Protocolo de PRP + Exosomas",
+        "description": "Nuestro mejor protocolo articular combinando factores de crecimiento de PRP naturales con señales celulares de exosomas para un alivio rápido del dolor."
+      },
+      {
+        "name": "Paquete de Restauración de Intimidad",
+        "tag": "Bienestar Sexual",
+        "compounds": "P-Shot o O-Shot + Revisión Médica",
+        "description": "Tratamiento íntimo dirigido con PRP para recuperar la sensación, el impulso y la confianza para hombres y mujeres."
+      },
+      {
+        "name": "Plan Natural de Restauración Capilar",
+        "tag": "Cuero Cabelludo Más Grueso",
+        "compounds": "PRP + Terapia de Exosomas del Cuero Cabelludo",
+        "description": "Tratamiento capilar de doble acción diseñado para despertar las raíces capilares dormidas y aumentar la densidad capilar natural."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una consulta médica para la medicina regenerativa?",
+      "answer": "Sí. Todos los tratamientos de PRP, exosomas e intimidad requieren una consulta médica. Hablará con nuestro médico licenciado quien evalúa su salud articular, capilar o íntima antes de crear su plan personalizado."
+    },
+    {
+      "question": "¿Qué incluye el programa regenerativo guiado por médicos?",
+      "answer": "Su programa incluye una consulta médica completa con un médico certificado, su tratamiento personalizado en consultorio de PRP o exosomas, anestesia tópica para comodidad y seguimiento de progreso."
+    },
+    {
+      "question": "¿Son dolorosas las inyecciones de PRP y exosomas?",
+      "answer": "¡Para nada! Usamos cremas anestésicas tópicas fuertes antes de cada procedimiento. La mayoría de los pacientes reportan mínima presión y regresan al trabajo o actividades normales el mismo día."
+    },
+    {
+      "question": "¿Cuántas sesiones necesito para ver resultados?",
+      "answer": "Los protocolos de restauración articular y capilar típicamente muestran excelentes resultados en 2 a 3 sesiones. ¡Los tratamientos de intimidad (P-Shot y O-Shot) a menudo entregan mejoras notables después de solo un tratamiento!"
+    },
+    {
+      "question": "¿En qué se diferencian los exosomas de los tratamientos con células madre?",
+      "answer": "Los exosomas son mensajeros naturales no celulares que llevan instrucciones de curación a sus células. No se replican ni se injertan, lo que los hace una señal celular extremadamente segura y pura para una curación rápida."
+    },
+    {
+      "question": "¿Cómo empiezo con la medicina regenerativa?",
+      "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. Nuestro médico revisará sus objetivos y comenzará su plan de recuperación personalizado."
+    }
+  ]
+}

@@ -1,0 +1,2831 @@
+[
+  {
+    "id": "advanced-labs",
+    "type": "additional",
+    "tabLabel": "Advanced Labs",
+    "href": "advanced-labs.html",
+    "title": "Uncover What Your Regular Bloodwork Misses",
+    "lead": "Stop guessing why you feel tired, bloated, or worn out with simple, complete doctor lab panels.",
+    "description": "Standard doctor blood tests only check basic numbers. Our advanced lab tests look deep into your hormones, vitamins, gene markers (MTHFR), and heavy metals so our doctors can give you exact answers.",
+    "icon": "fa-flask",
+    "delay": "-3s",
+    "features": [
+      "Complete hormone & energy blood panels",
+      "Vitamin & micronutrient levels checked",
+      "MTHFR gene & heavy metal screening",
+      "100% doctor-reviewed with custom plan"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Advanced Diagnostic Labs — OVI Wellness",
+    "pageDescription": "Doctor-guided advanced diagnostic lab testing in St. Petersburg, FL. Hormone panels, MTHFR testing, micronutrients, and heavy metal screening.",
+    "heroHeadline": "Uncover Your Real<br><span class=\"text-primary\">Health Numbers</span>",
+    "heroSubheadline": "Advanced Doctor Lab Panels medically reviewed by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Lab Panel",
+      "subheadline": "Answer 3 quick questions so our doctors can recommend the right blood test for you.",
+      "step1": {
+        "question": "What is your main reason for getting bloodwork?",
+        "sub": "Pick what you want to check first.",
+        "options": [
+          {
+            "value": "hormone",
+            "icon": "fa-syringe",
+            "title": "Hormones & Energy",
+            "desc": "Want to check testosterone, thyroid, and daily stamina."
+          },
+          {
+            "value": "vitamins",
+            "icon": "fa-apple-alt",
+            "title": "Vitamin & Nutrient Deficiencies",
+            "desc": "Feeling tired, weak immunity, or hair thinning."
+          },
+          {
+            "value": "genetics",
+            "icon": "fa-dna",
+            "title": "MTHFR & Heavy Metals",
+            "desc": "Want to check gene markers, mold, or heavy metal toxicity."
+          }
+        ]
+      },
+      "step2": {
+        "question": "When was your last comprehensive blood test?",
+        "sub": "Helps our doctor choose your panel depth.",
+        "options": [
+          {
+            "value": "recent",
+            "icon": "fa-calendar",
+            "title": "In the last 6 months",
+            "desc": "I have basic recent lab results."
+          },
+          {
+            "value": "old",
+            "icon": "fa-calendar-alt",
+            "title": "Over a year ago / Never",
+            "desc": "I need a complete baseline lab test."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Do you have unexplained symptoms like fatigue or brain fog?",
+        "sub": "Helps our doctor target hidden root causes.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-triangle-exclamation",
+            "title": "Yes, I Do",
+            "desc": "Normal doctor tests came back 'fine' but I still feel bad."
+          },
+          {
+            "value": "no",
+            "icon": "fa-circle-check",
+            "title": "No, Just Preventative",
+            "desc": "I feel okay but want peak longevity and health data."
+          }
+        ]
+      },
+      "protocols": {
+        "hormone": {
+          "tag": "Recommended Energy Panel",
+          "name": "Total Hormone & Vitality Panel",
+          "peptides": "Full Testosterone + Thyroid + Cortisol Analysis",
+          "icon": "fa-syringe",
+          "desc": "Measures total and free testosterone, thyroid function, cortisol, and energy markers to pinpoint why you feel tired.",
+          "goalModifiers": {
+            "yes": "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
+            "no": "Great baseline check to keep your hormones balanced as you age."
+          },
+          "social": "Over 120 local patients unlocked high energy with this doctor lab panel."
+        },
+        "vitamins": {
+          "tag": "Nutrient & Immunity Panel",
+          "name": "Complete Micronutrient & Antioxidant Audit",
+          "peptides": "Intracellular Vitamin & Mineral Testing",
+          "icon": "fa-apple-alt",
+          "desc": "Checks exact vitamin B12, D3, magnesium, and antioxidant levels inside your cells so you take only what you need.",
+          "goalModifiers": {
+            "yes": "Finds cellular vitamin gaps that cause brain fog, sluggishness, and slow recovery.",
+            "no": "Helps build a clean, custom daily vitamin plan tailored strictly to your body."
+          },
+          "social": "89 patients optimized their health with this intracellular audit."
+        },
+        "genetics": {
+          "tag": "Deep Health & Detox Panel",
+          "name": "MTHFR Gene & Toxic Metal Panel",
+          "peptides": "DNA Methylation + Lead/Mercury/Arsenic Screen",
+          "icon": "fa-dna",
+          "desc": "Scans your MTHFR gene variants and tests for toxic heavy metals that disrupt your brain, mood, and heart health.",
+          "goalModifiers": {
+            "yes": "Uncovers hidden genetic or toxic obstacles that prevent traditional treatments from working.",
+            "no": "Advanced longevity test to ensure long-term brain, heart, and liver protection."
+          },
+          "social": "73 patients discovered hidden genetic insights with this panel."
+        }
+      },
+      "timelineMap": {
+        "recent": "3–5 days (Fast Results Review)",
+        "old": "5–7 days (Full Baseline Audit)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Advanced Labs?",
+      "intro": "Our diagnostic panels go far beyond standard annual bloodwork. Supervised by licensed medical doctors, we uncover hidden root causes so you get clear, actionable answers.",
+      "note": "Questions about lab testing? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Told Your Labs Are 'Normal'",
+          "detail": "Adults who feel exhausted or bloated despite primary care doctors saying labs are fine."
+        },
+        {
+          "label": "Tired All Day",
+          "detail": "Anyone struggling with brain fog, midday crashes, low drive, or poor sleep."
+        },
+        {
+          "label": "Family Heart & Gene Risk",
+          "detail": "People wanting MTHFR gene testing, ApoB, or advanced cardiac risk checks."
+        },
+        {
+          "label": "Want Data-Driven Care",
+          "detail": "Anyone starting TRT, weight loss, or peptides who needs accurate starting numbers."
+        },
+        {
+          "label": "Ready for Doctor Review",
+          "detail": "Looking for a 1-on-1 doctor review of every marker with a personalized plan."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Comprehensive doctor-ordered lab panels drawn conveniently in our clinic or local lab.",
+      "items": [
+        {
+          "icon": "fa-syringe",
+          "name": "Complete Hormone Panel",
+          "tag": "Hormone Core",
+          "description": "Tests total & free testosterone, estrogen, thyroid (T3/T4), cortisol, and DHEA to restore peak energy."
+        },
+        {
+          "icon": "fa-dna",
+          "name": "MTHFR Gene Variant Test",
+          "tag": "Genetics",
+          "description": "Identifies C677T and A1298C gene variants to optimize your body's methylation, mood, and folate use."
+        },
+        {
+          "icon": "fa-apple-alt",
+          "name": "Micronutrient Intracellular Test",
+          "tag": "Vitamins",
+          "description": "Measures vitamins, minerals, and antioxidants directly inside your blood cells for true accuracy."
+        },
+        {
+          "icon": "fa-industry",
+          "name": "Toxic Heavy Metal Screen",
+          "tag": "Detox Check",
+          "description": "Screens for mercury, lead, and arsenic that accumulate over time and trigger fatigue and brain fog."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Advanced Heart & Lipid Panel",
+          "tag": "Cardiovascular",
+          "description": "Goes beyond basic cholesterol to analyze ApoB, Lp(a), and hs-CRP for real heart safety."
+        },
+        {
+          "icon": "fa-user-md",
+          "name": "1-on-1 Doctor Review",
+          "tag": "Doctor Consult",
+          "description": "Every lab draw includes a detailed 1-on-1 consultation with our doctor to explain your numbers."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
+      "body": "Standard doctor bloodwork only checks for disease red flags—not optimal health. Their 'normal' range includes sick or aging populations. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+      "bullets": [
+        "Ordered & reviewed by licensed medical doctors",
+        "Tests optimal vitality ranges—not just 'disease normal'",
+        "Includes clear 1-on-1 doctor consultation & action plan"
+      ],
+      "stats": [
+        {
+          "value": "Deep",
+          "label": "Tests optimal ranges, not basic averages"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor reviewed & lab verified"
+        },
+        {
+          "value": "1-on-1",
+          "label": "Personalized MD consultation"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Intracellular Precision",
+          "detail": "We measure nutrient levels inside your cells where they actually work, rather than just floating in serum."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Actionable Doctor Plan",
+          "detail": "You don't just get a stack of confusing numbers—our doctor gives you a simple, step-by-step treatment plan."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "My doctor said my bloodwork is normal, so why do I feel bad?",
+        "reality": "Standard labs use wide population averages to spot disease. You can be in the 'normal' range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
+      },
+      {
+        "myth": "Do I need to fast before getting my blood drawn?",
+        "reality": "For most comprehensive hormone and lipid panels, yes—a simple 8 to 12 hour overnight fast (water is okay) gives our doctor the cleanest, most accurate health reading."
+      },
+      {
+        "myth": "Is doctor-guided lab testing covered or simple?",
+        "reality": "Yes! We make lab testing easy and seamless. You can get drawn right at our St. Petersburg clinic or at a local lab, followed by a full doctor consult."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-flask",
+          "label": "Deep Labs"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Doctor Reviewed"
+        },
+        {
+          "icon": "fa-bullseye",
+          "label": "Exact Target"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "100% Safe"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Lab Depth",
+          "without": "Basic 5-marker check",
+          "with": "Full comprehensive biomarker audit"
+        },
+        {
+          "metric": "Reference Ranges",
+          "without": "Wide 'sick population' normal",
+          "with": "Tight optimal health & energy range"
+        },
+        {
+          "metric": "Genetic & Toxic Screening",
+          "without": "Never checked",
+          "with": "MTHFR, heavy metals & ApoB checked"
+        },
+        {
+          "metric": "Doctor Review",
+          "without": "Automated portal email",
+          "with": "Detailed 1-on-1 MD consultation"
+        },
+        {
+          "metric": "Treatment Plan",
+          "without": "No action plan given",
+          "with": "Custom doctor protocol prescribed"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Complete Vitality & Hormone Panel",
+          "tag": "Most Popular",
+          "compounds": "Full Hormones + Thyroid + Metabolic",
+          "description": "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy."
+        },
+        {
+          "name": "MTHFR & Methylation DNA Audit",
+          "tag": "Genetics",
+          "compounds": "MTHFR Genes + Homocysteine + Folate",
+          "description": "Uncovers genetic methylation roadblocks to fix fatigue, brain fog, and mood slumps."
+        },
+        {
+          "name": "Total Body Longevity & Cardiac Audit",
+          "tag": "Complete Check",
+          "compounds": "ApoB + Heavy Metals + Micronutrients",
+          "description": "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's order to get advanced lab testing?",
+        "answer": "Our licensed medical doctor provides the required lab order! You will consult with our medical team, who orders your custom panel based on your specific health goals and symptoms."
+      },
+      {
+        "question": "What does the doctor-guided lab program include?",
+        "answer": "Your program includes the physician lab order, your blood draw at our clinic or a local lab partner, a complete lab analysis, and a detailed 1-on-1 doctor consultation to explain your results."
+      },
+      {
+        "question": "Where do I go to get my blood drawn?",
+        "answer": "You can get your blood drawn right here at our comfortable St. Petersburg medical clinic, or we can send an order to a convenient local Quest or LabCorp near you!"
+      },
+      {
+        "question": "How long does it take to get my lab results back?",
+        "answer": "Most routine hormone and metabolic lab results return within 3 to 5 business days. Specialized genetic or heavy metal panels typically take 7 to 10 days."
+      },
+      {
+        "question": "Will the doctor explain my numbers and create a treatment plan?",
+        "answer": "100% yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
+      },
+      {
+        "question": "How do I get started with advanced lab testing?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order your custom lab panel today!"
+      }
+    ]
+  },
+  {
+    "id": "detox",
+    "type": "additional",
+    "tabLabel": "Detox Protocols",
+    "href": "detox.html",
+    "title": "Cleanse Your Gut & Reset Your Energy",
+    "lead": "Clear out mold toxins, gut bugs, and heavy fatigue so you feel light, sharp, and energized.",
+    "description": "Unexplained bloating, brain fog, and exhaustion often come from hidden mold toxins or gut bugs. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
+    "icon": "fa-leaf",
+    "delay": "-2s",
+    "features": [
+      "Simple lab test for hidden mold & gut bugs",
+      "Doctor-prescribed cellular cleansing",
+      "Fix bloating, brain fog & constant fatigue",
+      "100% doctor-checked for your safety"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Detox & Cleansing Protocols — OVI Wellness",
+    "pageDescription": "Doctor-guided medical detox protocols in St. Petersburg, FL. Mycotoxin mold testing, antifungal care, and gut cleansing supervised by licensed medical providers.",
+    "heroHeadline": "Reset Your Gut &<br><span class=\"text-primary\">Systemic Energy</span>",
+    "heroSubheadline": "Prescription Mold & Gut Detox protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Detox Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your main health struggle?",
+        "sub": "Pick what you want to clear up first.",
+        "options": [
+          {
+            "value": "mold",
+            "icon": "fa-disease",
+            "title": "Mold Exposure & Fatigue",
+            "desc": "Feeling brain fog, fatigue, or breathing issues after mold exposure."
+          },
+          {
+            "value": "gut",
+            "icon": "fa-bug",
+            "title": "Bloating & Gut Issues",
+            "desc": "Constant bloating, stomach cramps, or sluggish digestion."
+          },
+          {
+            "value": "reset",
+            "icon": "fa-arrows-rotate",
+            "title": "Total Body Reset",
+            "desc": "Want a complete doctor-led detox to clean up energy markers."
+          }
+        ]
+      },
+      "step2": {
+        "question": "How long have you felt this way?",
+        "sub": "Helps our doctor choose your starting plan.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "A Few Months",
+            "desc": "Recent fatigue, bloating, or skin flare-ups."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "A Few Years",
+            "desc": "Ongoing digestive trouble or chronic fatigue for years."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Have you completed a medical detox test before?",
+        "sub": "Helps our doctor guide your lab test.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "First Time",
+            "desc": "I have never done a clinical detox test."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Yes, I Have",
+            "desc": "I have tried store detoxes or basic cleanses before."
+          }
+        ]
+      },
+      "protocols": {
+        "mold": {
+          "tag": "Recommended Mold Detox Plan",
+          "name": "Total Mold & Mycotoxin Clearance",
+          "peptides": "Prescription Antifungal + Cellular Binders",
+          "icon": "fa-disease",
+          "desc": "A simple doctor-guided plan that tests for mold toxins and uses safe prescription binders to clear them from your cells.",
+          "goalModifiers": {
+            "no": "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
+            "yes": "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
+          },
+          "social": "Over 60 local patients cleared brain fog with this doctor-guided plan."
+        },
+        "gut": {
+          "tag": "Gut Reset Plan",
+          "name": "Targeted Gut Cleansing & Restoration",
+          "peptides": "Prescription Antiparasitic + Gut Repair Protocol",
+          "icon": "fa-bug",
+          "desc": "Eliminates unwanted gut bugs and bad bacteria to stop bloating, restore digestion, and boost daily energy.",
+          "goalModifiers": {
+            "no": "Includes simple lab testing to identify bad gut bacteria and start a gentle cleanse.",
+            "yes": "Advanced clinical protocol to clear stubborn gut issues and repair intestinal health."
+          },
+          "social": "78 patients achieved flat, comfortable digestion with this protocol."
+        },
+        "reset": {
+          "tag": "Total Vitality Plan",
+          "name": "Systemic Body & Energy Reset",
+          "peptides": "Full Lab Panel + Liver & Gut Detox",
+          "icon": "fa-arrows-rotate",
+          "desc": "Full body reset that cleanses your liver, clears blood toxins, and restores youthful energy.",
+          "goalModifiers": {
+            "no": "Complete baseline lab check to pinpoint what is holding your daily energy back.",
+            "yes": "High-potency cellular cleanse built for long-term health and vitality."
+          },
+          "social": "Over 85 patients renewed their energy with this doctor reset."
+        }
+      },
+      "timelineMap": {
+        "months": "6–8 weeks (Fast Track Cleanse)",
+        "years": "8–12 weeks (Full Reset Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Detox Care?",
+      "intro": "Our detox protocols are safe, medical-grade plans supervised by licensed doctors. We test your health markers first so you get the exact right treatment for your body.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Brain Fog & Fatigue",
+          "detail": "Adults dealing with constant exhaustion, poor focus, or heavy mornings."
+        },
+        {
+          "label": "Unexplained Bloating",
+          "detail": "Anyone struggling with stomach cramps, irregular digestion, or food reactions."
+        },
+        {
+          "label": "Known Mold Exposure",
+          "detail": "People who lived or worked in moldy buildings and feel run down."
+        },
+        {
+          "label": "Failed Juice Cleanses",
+          "detail": "Anyone tired of grocery store teas or juice fasts that don't solve real problems."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for safe, doctor-prescribed lab testing and targeted cleansing."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed detox options tailored to your body after simple lab testing.",
+      "items": [
+        {
+          "icon": "fa-vial",
+          "name": "Mycotoxin Mold Analysis",
+          "tag": "Mold Test",
+          "description": "Simple urine lab testing to find hidden mold toxins in your cells and guide your custom doctor cleanse."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Prescription Antifungal Therapy",
+          "tag": "Mold Clear",
+          "description": "Targeted prescription care to clear mold residues from your liver, tissues, and gut safely."
+        },
+        {
+          "icon": "fa-bug",
+          "name": "Gut Bug & Parasite Eradication",
+          "tag": "Gut Health",
+          "description": "Advanced testing paired with doctor-prescribed cleansers to eliminate bad bacteria and restore gut comfort."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Cellular Tox-Binder Protocol",
+          "tag": "Toxin Flush",
+          "description": "Specialized prescription binders that trap toxins in your gut so your body flushes them out naturally."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Liver & Lymphatic Flush",
+          "tag": "Organ Support",
+          "description": "Targeted nutrients and glutathione support to help your liver and lymphatic system flush waste fast."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Doctor Lab Check",
+          "tag": "Safety First",
+          "description": "Comprehensive blood and urine tests so your doctor can track your progress and keep you safe."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Juice Fasting Fails</span>",
+      "body": "Juice fasts only flush water and miss deep mold toxins trapped in your fatty tissues and liver. Our doctor-guided protocols use real lab testing to pinpoint exact toxins. We then prescribe medical binders and antifungals that latch onto toxins and pull them out of your body safely.",
+      "bullets": [
+        "Prescribed & monitored by licensed medical doctors",
+        "Based on real urine and blood lab tests",
+        "Pulls deep cellular toxins out without starving your body"
+      ],
+      "stats": [
+        {
+          "value": "Targeted",
+          "label": "Pulls deep mold & gut toxins"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "0%",
+          "label": "Extreme fasting required"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Real Lab Testing",
+          "detail": "We use advanced urine mycotoxin panels to prove what toxins are in your system before starting."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Prescription Toxin Binders",
+          "detail": "Medical binders latch onto trapped mold and heavy metals so your body can eliminate them cleanly."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Do I have to go on an extreme juice fast?",
+        "reality": "No. Extreme juice fasts do not clear deep mold or gut bugs. Our doctor plans use safe prescription binders and clean eating so you eat normally while healing."
+      },
+      {
+        "myth": "Is a medical detox harsh on my body?",
+        "reality": "No. Our doctors customize your starting dose based on your lab work and check in regularly to make sure your cleanse is smooth, gentle, and effective."
+      },
+      {
+        "myth": "Is doctor-guided detox therapy safe?",
+        "reality": "Yes. All treatments use FDA-approved medications and natural binders prescribed directly by licensed medical doctors under strict Florida health guidelines."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-vial",
+          "label": "Lab Tested"
+        },
+        {
+          "icon": "fa-leaf",
+          "label": "Clean Gut"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Clear Focus"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Doctor Checked"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Diagnostic Method",
+          "without": "Guessing / store teas",
+          "with": "Real lab tests (mycotoxins/gut)"
+        },
+        {
+          "metric": "Cleansing Depth",
+          "without": "Surface water loss only",
+          "with": "Deep tissue & liver toxin flush"
+        },
+        {
+          "metric": "Brain Fog Relief",
+          "without": "Temporary or none",
+          "with": "Lasting mental clarity"
+        },
+        {
+          "metric": "Medical Oversight",
+          "without": "Unmonitored web kits",
+          "with": "Licensed MD review & labs"
+        },
+        {
+          "metric": "Long-Term Outcome",
+          "without": "Bloating comes right back",
+          "with": "Rebalanced gut & clean cells"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Complete Mold & Mycotoxin Cleanse",
+          "tag": "Most Popular",
+          "compounds": "Antifungal + Toxin Binder Stack",
+          "description": "Our top mold protocol combining prescription antifungals with cellular binders to clear mold fatigue."
+        },
+        {
+          "name": "Total Gut & Parasite Reset",
+          "tag": "Gut Health",
+          "compounds": "Antiparasitic + Microbiome Protocol",
+          "description": "Eliminates unwanted gut bugs and bad bacteria to restore smooth, comfortable digestion."
+        },
+        {
+          "name": "Full Systemic Energy Flush",
+          "tag": "Total Reset",
+          "compounds": "Lab Panel + Liver & Lymph Support",
+          "description": "Comprehensive body audit and flush designed to eliminate brain fog, fatigue, and systemic swelling."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's consultation for detox protocols?",
+        "answer": "Yes. All our medical detox protocols require a consultation with a licensed medical doctor. Our doctor will evaluate your symptoms and order targeted lab tests before prescribing your plan."
+      },
+      {
+        "question": "What does the doctor-guided detox program include?",
+        "answer": "Your program includes a full medical consultation, specialized urine or blood lab testing, custom prescription binders or antifungals, eating guidelines, and follow-up check-ins."
+      },
+      {
+        "question": "How do I know if I have mold toxins or gut bugs?",
+        "answer": "We order simple, painless lab tests (such as a urine mycotoxin panel or gut stool test) that pinpoint exactly what toxins or microbes are causing your brain fog and bloating."
+      },
+      {
+        "question": "Will I experience uncomfortable detox side effects?",
+        "answer": "Our doctors start your plan gently to avoid 'detox crashes'. We adjust your binder dose to make sure toxins are removed smoothly without disrupting your daily routine."
+      },
+      {
+        "question": "How long does a medical detox protocol take?",
+        "answer": "Most patients complete their main cleansing phase in 6 to 12 weeks, with major improvements in brain fog, energy, and digestion appearing within the first 3 to 4 weeks."
+      },
+      {
+        "question": "How do I get started with a clinical detox?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order your lab test and start your plan!"
+      }
+    ]
+  },
+  {
+    "id": "glp-1therapies",
+    "type": "core",
+    "tabLabel": "GLP-1 Weight Loss",
+    "href": "glp-1therapies.html",
+    "title": "Lose Weight Fast Without Constant Cravings",
+    "lead": "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
+    "description": "No starving yourself. No crazy workouts. Our simple weekly medical treatments turn off constant food thoughts so you can burn fat while protecting your muscle.",
+    "icon": "fa-weight-scale",
+    "delay": "-1s",
+    "features": [
+      "Stop constant snack & food cravings",
+      "Burn stubborn fat while keeping muscle",
+      "Licensed doctor supervision & care",
+      "Simple weekly doctor-prescribed plan"
+    ],
+    "image": "assets/images/photos/glp1-weight-loss.jpg",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided GLP-1 Medical Weight Loss — OVI Wellness",
+    "pageDescription": "Doctor-guided medical weight loss protocols in St. Petersburg, FL. Semaglutide and Tirzepatide prescriptions supervised by licensed healthcare providers.",
+    "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
+    "heroSubheadline": "Prescription Semaglutide & Tirzepatide weight loss protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Weight Loss Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your main weight goal?",
+        "sub": "Pick what matters most to you right now.",
+        "options": [
+          {
+            "value": "weight",
+            "icon": "fa-weight",
+            "title": "Lose Weight Fast",
+            "desc": "Burn body fat without feeling hungry all day."
+          },
+          {
+            "value": "metabolic",
+            "icon": "fa-heartbeat",
+            "title": "Fix My Energy & Health",
+            "desc": "Boost metabolism, energy, and overall health."
+          }
+        ]
+      },
+      "step2": {
+        "question": "Have you used GLP-1 weight loss treatments before?",
+        "sub": "Helps our doctor choose your starting dose.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times-circle",
+            "title": "First Time",
+            "desc": "I have never tried GLP-1 treatments before."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check-circle",
+            "title": "Yes, I Have",
+            "desc": "I have used Semaglutide or Tirzepatide before."
+          }
+        ]
+      },
+      "step3": {
+        "question": "How much weight do you want to lose?",
+        "sub": "Sets a simple timeline for your results.",
+        "options": [
+          {
+            "value": "moderate",
+            "icon": "fa-arrow-down",
+            "title": "10 to 20 lbs",
+            "desc": "Targeted fat loss for a lighter feel."
+          },
+          {
+            "value": "significant",
+            "icon": "fa-arrow-circle-down",
+            "title": "20+ lbs",
+            "desc": "Major weight loss to rebuild your body."
+          }
+        ]
+      },
+      "protocols": {
+        "weight": {
+          "tag": "Recommended Plan",
+          "name": "Doctor-Guided Fat Burn Plan",
+          "peptides": "Semaglutide or Tirzepatide Prescription",
+          "icon": "fa-weight-scale",
+          "desc": "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
+          "goalModifiers": {
+            "moderate": "Great for losing 10-20 lbs while keeping your daily energy high.",
+            "significant": "Designed for 20+ lbs of fat loss with step-by-step doctor check-ins."
+          },
+          "social": "Over 100 local patients are currently using this doctor-guided plan."
+        },
+        "metabolic": {
+          "tag": "Health & Vitality Plan",
+          "name": "Total Body Reset Plan",
+          "peptides": "Tirzepatide + Vitamin Support",
+          "icon": "fa-heartbeat",
+          "desc": "Builds a healthy metabolism, balances blood sugar, and keeps your body feeling young and energized.",
+          "goalModifiers": {
+            "moderate": "Helps fix daily energy slumps and mild weight gain.",
+            "significant": "Comprehensive reset to clean up health markers and drop excess weight."
+          },
+          "social": "84 patients started this doctor-led plan in the last 90 days."
+        }
+      },
+      "timelineMap": {
+        "no": "12–16 weeks (Standard Doctor Plan)",
+        "yes": "8–12 weeks (Fast Track Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for GLP-1 Care?",
+      "intro": "Our treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health first to make sure you get the best plan for your body.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Stubborn Fat",
+          "detail": "Adults with 15+ lbs to lose who struggle to shed fat with diet alone."
+        },
+        {
+          "label": "Constant Cravings",
+          "detail": "Anyone tired of thinking about food, snacking at night, or feeling hungry all day."
+        },
+        {
+          "label": "Stuck Metabolism",
+          "detail": "People who exercise or diet but cannot get weight off."
+        },
+        {
+          "label": "Want Muscle Saved",
+          "detail": "You want to lose fat tissue while keeping your strong, healthy muscle."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for a safe, doctor-prescribed plan with regular check-ins."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Weekly Doctor Treatments",
+      "sectionSubheadline": "Doctor-prescribed weekly treatments tailored to your body after a medical consultation.",
+      "items": [
+        {
+          "icon": "fa-weight-scale",
+          "name": "Semaglutide Protocol",
+          "tag": "Most Popular",
+          "description": "Prescription GLP-1 treatment that calms hunger signals in your brain. A simple weekly dose to help you feel full and lose weight steadily."
+        },
+        {
+          "icon": "fa-fire",
+          "name": "Tirzepatide Protocol",
+          "tag": "Fastest Results",
+          "description": "Dual-action prescription treatment that targets two natural hunger pathways for even faster fat loss while keeping your energy up."
+        },
+        {
+          "icon": "fa-dna",
+          "name": "Retatrutide Protocol",
+          "tag": "Next Generation",
+          "description": "Triple-action option for stubborn weight that hasn't responded to previous diets. Available upon medical evaluation."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Fat-Burn & B12 Injections",
+          "tag": "Energy Booster",
+          "description": "Quick vitamin shots to boost your daily energy, support your liver, and keep your body burning fat fast."
+        },
+        {
+          "icon": "fa-chart-line",
+          "name": "Doctor Blood Check",
+          "tag": "Safety First",
+          "description": "Simple lab work so your doctor can customize your starting dose and ensure complete health and safety."
+        },
+        {
+          "icon": "fa-utensils",
+          "name": "Simple Eating Guide",
+          "tag": "Easy Meals",
+          "description": "Easy daily eating tips designed to protect your strong muscle while the weight comes off."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Diets Fail</span>",
+      "body": "Most diets fail because your brain tells you that you are hungry. GLP-1 prescription treatments send natural fullness signals to your brain. You eat less naturally without feeling starved or weak. You burn fat while keeping your muscle.",
+      "bullets": [
+        "Prescribed by real licensed medical doctors",
+        "Simple weekly treatment done at home or in clinic",
+        "Protects muscle so you burn pure fat"
+      ],
+      "stats": [
+        {
+          "value": "Full",
+          "label": "No constant food cravings"
+        },
+        {
+          "value": "Easy",
+          "label": "Simple weekly doctor plan"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-brain",
+          "title": "Turns Off Hunger Thoughts",
+          "detail": "Signals your brain that you are full after small meals so snacking stops naturally."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "title": "Keeps Your Strong Muscle",
+          "detail": "Our doctor plans protect your muscle so your body burns fat for fuel."
+        }
+      ]
+    },
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-fire",
+          "label": "Fat Burn"
+        },
+        {
+          "icon": "fa-dumbbell",
+          "label": "Muscle Kept"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "No Hunger"
+        },
+        {
+          "icon": "fa-chart-line",
+          "label": "Doctor Checked"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Hunger Level",
+          "without": "Always hungry & tired",
+          "with": "Feels full & satisfied"
+        },
+        {
+          "metric": "Fat Loss Speed",
+          "without": "Slow & frustrating",
+          "with": "Steady & doctor-backed"
+        },
+        {
+          "metric": "Muscle Protection",
+          "without": "Loses muscle & strength",
+          "with": "Protects muscle while burning fat"
+        },
+        {
+          "metric": "Medical Safety",
+          "without": "Unsupervised / generic",
+          "with": "Doctor-prescribed & lab-monitored"
+        },
+        {
+          "metric": "Long-Term Results",
+          "without": "Weight comes back",
+          "with": "Doctor guidance to keep it off"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Fast Fat Loss Plan",
+          "tag": "Most Popular",
+          "compounds": "Tirzepatide + Vitamin B12 Booster",
+          "description": "Combines dual-action prescription treatment with energy boosters. Designed for fast fat burn while keeping your strength up."
+        },
+        {
+          "name": "Essential Weight Loss Plan",
+          "tag": "Great Starter",
+          "compounds": "Semaglutide + Eating Guide",
+          "description": "Proven GLP-1 prescription paired with simple daily meal guidance. Perfect for your first doctor-guided weight loss journey."
+        },
+        {
+          "name": "Complete Health & Fat Loss Plan",
+          "tag": "Full Reset",
+          "compounds": "Retatrutide + Doctor Labs",
+          "description": "Advanced triple-action treatment guided by complete doctor health panels for maximum results."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's prescription for GLP-1 treatments?",
+        "answer": "Yes. All GLP-1 treatments are prescription medications. You will consult with our licensed medical doctor or healthcare provider who evaluates your health history to determine candidacy and prescribe the right plan for you."
+      },
+      {
+        "question": "How do GLP-1 weight loss treatments work?",
+        "answer": "GLP-1 treatments mimic your body's natural fullness hormone. This reduces hunger signals in your brain so you naturally eat smaller meals without feeling starved or craving snacks."
+      },
+      {
+        "question": "Will I lose muscle while losing weight?",
+        "answer": "No. Our doctor-guided plans include simple eating tips and protein targets to make sure your body burns fat tissue while protecting your strong, healthy muscle."
+      },
+      {
+        "question": "How do I get started?",
+        "answer": "Simply call our clinic or book an appointment online! You will talk with a licensed doctor who will review your health, answer your questions, and start your custom plan."
+      }
+    ]
+  },
+  {
+    "id": "hormone-optimization",
+    "type": "core",
+    "tabLabel": "Hormone Optimization",
+    "href": "hormone-optimization.html",
+    "title": "Feel Young, Strong & Full of Energy Again",
+    "lead": "Tired of feeling worn out? Our licensed doctors balance your hormones so you can thrive every day.",
+    "description": "When your hormones drop, you feel tired, gain weight, and lose focus. Our doctors run simple blood tests and create a custom plan to give you back your strength, focus, and drive.",
+    "icon": "fa-syringe",
+    "delay": "0s",
+    "features": [
+      "Reclaim high daily energy & focus",
+      "Build lean muscle & burn body fat",
+      "Enjoy deep sleep & better mood",
+      "100% doctor-checked for your safety"
+    ],
+    "image": "assets/images/photos/trt-therapy.jpg",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Hormone Optimization — OVI Wellness",
+    "pageDescription": "Doctor-guided bio-identical hormone therapy and TRT protocols in St. Petersburg, FL. Medically supervised by licensed healthcare providers.",
+    "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Energy & Strength</span>",
+    "heroSubheadline": "Prescription TRT & Bio-Identical Hormone therapy medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Hormone Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your biggest daily struggle?",
+        "sub": "Pick what you want to fix first.",
+        "options": [
+          {
+            "value": "energy",
+            "icon": "fa-battery-quarter",
+            "title": "Low Energy & Brain Fog",
+            "desc": "Feeling tired all day with midday energy crashes."
+          },
+          {
+            "value": "libido",
+            "icon": "fa-fire",
+            "title": "Low Drive & Passion",
+            "desc": "Want to bring back intimacy, drive, and confidence."
+          },
+          {
+            "value": "muscle",
+            "icon": "fa-dumbbell",
+            "title": "Stubborn Weight & Muscle Loss",
+            "desc": "Hard to build muscle or lose belly fat."
+          }
+        ]
+      },
+      "step2": {
+        "question": "How long have you felt this way?",
+        "sub": "Helps our doctor choose your starting plan.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "A Few Months",
+            "desc": "I recently started feeling tired or weak."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "A Few Years",
+            "desc": "I have felt low on energy for a long time."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Have you had your hormone levels tested recently?",
+        "sub": "Helps our doctor guide your bloodwork order.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-vial",
+            "title": "Yes, I Have",
+            "desc": "I had bloodwork done in the last 6 months."
+          },
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Not Yet",
+            "desc": "I need our doctor to order my simple lab test."
+          }
+        ]
+      },
+      "protocols": {
+        "energy": {
+          "tag": "Recommended Energy Plan",
+          "name": "Total Vitality & Energy Reset",
+          "peptides": "Doctor-Prescribed Bio-Identical Therapy",
+          "icon": "fa-battery-quarter",
+          "desc": "A simple doctor-guided plan that balances your body's energy hormones so you wake up refreshed and stay sharp all day.",
+          "goalModifiers": {
+            "yes": "Our doctor will review your labs right away to build your custom treatment dose.",
+            "no": "We will order a quick baseline blood test to check your levels before starting."
+          },
+          "social": "Over 90 local patients are currently using this doctor-guided plan."
+        },
+        "libido": {
+          "tag": "Intimacy & Confidence Plan",
+          "name": "Peak Drive & Passion Plan",
+          "peptides": "Prescription Hormone & Vitality Therapy",
+          "icon": "fa-fire",
+          "desc": "Targeted doctor therapy to bring back intimate energy, mood, and daily stamina.",
+          "goalModifiers": {
+            "yes": "We will review your recent labs to start your plan fast.",
+            "no": "Our doctor will order a simple blood check to pinpoint your exact needs."
+          },
+          "social": "73 patients started this doctor-led plan in the last 90 days."
+        },
+        "muscle": {
+          "tag": "Strength & Lean Muscle Plan",
+          "name": "Strong Body & Fat Burn Reset",
+          "peptides": "TRT & Bio-Identical Growth Support",
+          "icon": "fa-dumbbell",
+          "desc": "Helps you burn stubborn belly fat, build lean muscle, and recover fast after workouts.",
+          "goalModifiers": {
+            "yes": "Your recent labs will help our doctor set your optimal starting dose safely.",
+            "no": "Our doctor will get your simple bloodwork done to check your testosterone and energy markers."
+          },
+          "social": "Over 100 local patients are currently on this strength protocol."
+        }
+      },
+      "timelineMap": {
+        "months": "8–12 weeks (Standard Doctor Plan)",
+        "years": "12–16 weeks (Full Reset Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Hormone Care?",
+      "intro": "Our hormone treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your bloodwork first so you get the exact right dose for your body.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Feeling Worn Out",
+          "detail": "Adults struggling with daily fatigue, brain fog, low drive, or stubborn weight."
+        },
+        {
+          "label": "Low Hormone Levels",
+          "detail": "Anyone with low testosterone, thyroid, or energy hormones confirmed by simple bloodwork."
+        },
+        {
+          "label": "Unsuccessful Supplements",
+          "detail": "People who tried over-the-counter vitamins or workouts without getting real results."
+        },
+        {
+          "label": "Want Muscle & Energy",
+          "detail": "Men and women ready to burn fat, keep strong muscle, and feel young again."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for a safe, doctor-prescribed plan with regular blood checks and check-ins."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed treatments tailored to your body after a medical blood check.",
+      "items": [
+        {
+          "icon": "fa-syringe",
+          "name": "Testosterone Therapy (TRT)",
+          "tag": "Most Popular",
+          "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "Women's Bio-Identical HRT",
+          "tag": "For Women",
+          "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+        },
+        {
+          "icon": "fa-vial",
+          "name": "Peptide Support Boosters",
+          "tag": "Cell Recovery",
+          "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+        },
+        {
+          "icon": "fa-heart",
+          "name": "Sexual Wellness Therapy",
+          "tag": "Vitality Boost",
+          "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Thyroid & Adrenal Balance",
+          "tag": "Energy Core",
+          "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Doctor Blood Check",
+          "tag": "Safety First",
+          "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
+      "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+      "bullets": [
+        "Prescribed by real licensed medical doctors",
+        "100% natural bio-identical matching your body",
+        "Regular blood checks to ensure complete safety"
+      ],
+      "stats": [
+        {
+          "value": "9 out of 10",
+          "label": "Feel higher energy in 6 weeks"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "Simple",
+          "label": "Tailored to your bloodwork"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-vial",
+          "title": "Based On Your Bloodwork",
+          "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "title": "Natural Bio-Identical Match",
+          "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Are these synthetic steroids?",
+        "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+      },
+      {
+        "myth": "Do I have to stay on this forever?",
+        "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+      },
+      {
+        "myth": "Is doctor-guided hormone care safe?",
+        "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "High Energy"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Clear Focus"
+        },
+        {
+          "icon": "fa-dumbbell",
+          "label": "Lean Muscle"
+        },
+        {
+          "icon": "fa-moon",
+          "label": "Deep Sleep"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Daily Energy",
+          "without": "Tired all day & crashes",
+          "with": "High, steady energy all day"
+        },
+        {
+          "metric": "Muscle & Body Fat",
+          "without": "Gains fat, loses muscle",
+          "with": "Burns fat & keeps strong muscle"
+        },
+        {
+          "metric": "Mental Clarity",
+          "without": "Brain fog & slow focus",
+          "with": "Sharp, clear thinking"
+        },
+        {
+          "metric": "Sleep Quality",
+          "without": "Wakes up tired",
+          "with": "Deep, restorative sleep"
+        },
+        {
+          "metric": "Medical Safety",
+          "without": "Unmonitored / OTC pills",
+          "with": "Doctor-prescribed & blood checked"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Male Performance Plan",
+          "tag": "Most Popular",
+          "compounds": "TRT + Recovery Peptide Stack",
+          "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+        },
+        {
+          "name": "Women's Balance Plan",
+          "tag": "For Women",
+          "compounds": "Estrogen + Progesterone + Low-Dose T",
+          "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+        },
+        {
+          "name": "Complete Longevity Reset Plan",
+          "tag": "Full Audit",
+          "compounds": "Full Hormone Panel + Thyroid Support",
+          "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's prescription for hormone therapy?",
+        "answer": "Yes. All hormone optimization treatments are prescription medications. You will consult with our licensed medical doctor who reviews your health history and bloodwork before prescribing a custom plan tailored to your body."
+      },
+      {
+        "question": "What does the doctor-guided hormone program include?",
+        "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom pharmacy-grade bio-identical hormones, and ongoing medical check-ins to make sure you stay safe and feel your best."
+      },
+      {
+        "question": "How fast will I feel results from hormone therapy?",
+        "answer": "Most patients report higher daily energy, better sleep, and improved mood within 2 to 4 weeks. Major benefits like fat loss, lean muscle gains, sharp focus, and restored drive build steadily over 6 to 12 weeks."
+      },
+      {
+        "question": "Is hormone therapy safe for both men and women?",
+        "answer": "Yes! Our treatments use natural bio-identical hormones tailored specifically for men and women. Because our licensed doctors measure your exact blood levels, your protocol is always safe, balanced, and targeted to your body."
+      },
+      {
+        "question": "Will I get bad side effects or dangerous steroid effects?",
+        "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and side-effect free."
+      },
+      {
+        "question": "How do I get started with hormone optimization?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order a quick blood test, review your results, and launch your personalized vitality plan."
+      }
+    ]
+  },
+  {
+    "id": "iv-wellness",
+    "type": "additional",
+    "tabLabel": "IV & Wellness",
+    "href": "iv-wellness.html",
+    "title": "Instant Vitamin & Energy Boost",
+    "lead": "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
+    "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. Feel sharp, energized, and rehydrated in under 45 minutes.",
+    "icon": "fa-tint",
+    "delay": "-5s",
+    "features": [
+      "Immediate boost in energy & mental clarity",
+      "Strengthen your immune system fast",
+      "100% direct vitamin absorption",
+      "Relax in our luxury medical suite"
+    ],
+    "image": "assets/images/photos/IV.jpg",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
+    "pageDescription": "Doctor-guided IV vitamin therapy, NAD+ infusions, and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
+    "heroHeadline": "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
+    "heroSubheadline": "Prescription IV Drips & NAD+ therapy medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best IV Drip Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your main goal today?",
+        "sub": "Pick what you want to fix first.",
+        "options": [
+          {
+            "value": "energy",
+            "icon": "fa-bolt",
+            "title": "Energy & Mental Clarity",
+            "desc": "Want to turn off brain fog, tiredness, and afternoon crashes."
+          },
+          {
+            "value": "recovery",
+            "icon": "fa-first-aid",
+            "title": "Fast Athletic Recovery",
+            "desc": "Bounce back quickly from intense workouts or physical stress."
+          },
+          {
+            "value": "immunity",
+            "icon": "fa-shield-alt",
+            "title": "Immune Boost Shield",
+            "desc": "Feeling run down, traveling, or wanting super illness defense."
+          }
+        ]
+      },
+      "step2": {
+        "question": "Have you tried IV vitamin drips before?",
+        "sub": "Helps our doctor guide your infusion dose.",
+        "options": [
+          {
+            "value": "first",
+            "icon": "fa-star",
+            "title": "First Time",
+            "desc": "I am new to IV vitamin therapy."
+          },
+          {
+            "value": "regular",
+            "icon": "fa-sync",
+            "title": "Yes, I Have",
+            "desc": "I get IV drips as part of my routine."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Are you interested in NAD+ cellular anti-aging?",
+        "sub": "NAD+ is our top doctor infusion for deep energy and cellular repair.",
+        "options": [
+          {
+            "value": "yes",
+            "icon": "fa-brain",
+            "title": "Yes, I Am",
+            "desc": "Want deep brain focus, anti-aging, and cell repair."
+          },
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "Standard Drip",
+            "desc": "Just need standard vitamins, minerals, and hydration."
+          }
+        ]
+      },
+      "protocols": {
+        "energy": {
+          "tag": "Recommended Energy Drip",
+          "name": "The Total Energy & Brain Reset",
+          "peptides": "Prescription Myers' Cocktail + B-Complex + NAD+",
+          "icon": "fa-bolt",
+          "desc": "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
+          "goalModifiers": {
+            "yes": "Includes our premier doctor NAD+ infusion for maximum cellular power and anti-aging focus.",
+            "no": "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
+          },
+          "social": "Over 89 local patients received this energy drip in the last 30 days."
+        },
+        "recovery": {
+          "tag": "Athletic & Detox Drip",
+          "name": "The Fast Recovery & Glutathione Stack",
+          "peptides": "Prescription Glutathione + Amino Acids + Electrolytes",
+          "icon": "fa-first-aid",
+          "desc": "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
+          "goalModifiers": {
+            "yes": "Adds NAD+ to speed up muscle repair and cellular energy after hard training.",
+            "no": "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
+          },
+          "social": "114 local athletes and active patients run this recovery drip."
+        },
+        "immunity": {
+          "tag": "Immune Shield Drip",
+          "name": "The Super Immune Defense Drip",
+          "peptides": "High-Dose Vitamin C + Zinc + Myers' Cocktail",
+          "icon": "fa-shield-alt",
+          "desc": "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
+          "goalModifiers": {
+            "yes": "Combines high-dose immune defense with NAD+ to eliminate deep travel exhaustion.",
+            "no": "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
+          },
+          "social": "95 patients choose this immune shield when feeling run down."
+        }
+      },
+      "timelineMap": {
+        "first": "45 minutes (Immediate 100% absorption)",
+        "regular": "2–4 weeks (Cumulative vitality plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for IV Care?",
+      "intro": "IV therapy delivers pure vitamins and minerals directly into your blood, bypassing slow digestion completely. Supervised by licensed doctors, it is the fastest way to feel energized and rehydrated.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Tired & Brain Fog",
+          "detail": "Adults struggling with midday crashes, slow mornings, or poor sleep."
+        },
+        {
+          "label": "Active Athletes",
+          "detail": "People needing fast muscle recovery, hydration, and soreness relief after workouts."
+        },
+        {
+          "label": "Frequent Travelers",
+          "detail": "Anyone fighting jet lag, dry air, or travel bugs from flying."
+        },
+        {
+          "label": "Immune Defense Needed",
+          "detail": "Anyone feeling run down or wanting strong, immediate illness protection."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for safe, medical-grade vitamin infusions in a comfortable clinic suite."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed IV infusions tailored to your body in a luxury medical suite.",
+      "items": [
+        {
+          "icon": "fa-bolt",
+          "name": "NAD+ Cellular Infusion",
+          "tag": "Anti-Aging Core",
+          "description": "Doctor-prescribed NAD+ therapy to repair cell engines, clear brain fog, and boost long-term energy."
+        },
+        {
+          "icon": "fa-star",
+          "name": "Glutathione Detox Push",
+          "tag": "Master Antioxidant",
+          "description": "Direct intravenous push of the body's strongest antioxidant to cleanse the liver and brighten skin."
+        },
+        {
+          "icon": "fa-tint",
+          "name": "Myers' Cocktail Drip",
+          "tag": "Most Popular",
+          "description": "The clinical gold standard IV drip—packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for instant energy."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "name": "Athletic Recovery Drip",
+          "tag": "Muscle Rebound",
+          "description": "Targeted amino acids and electrolytes to flush out muscle soreness and rehydrate you after exercise."
+        },
+        {
+          "icon": "fa-shield-alt",
+          "name": "Immune Fortification Drip",
+          "tag": "Illness Shield",
+          "description": "High-dose Vitamin C, Zinc, and B12 to supercharge your immune system before travel or during cold season."
+        },
+        {
+          "icon": "fa-syringe",
+          "name": "Doctor Vitamin Shots",
+          "tag": "Quick Booster",
+          "description": "Quick B12, D3, or fat-burn intramuscular shots when you want instant energy without sitting for a full drip."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
+      "body": "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
+      "bullets": [
+        "100% direct cellular absorption vs ~20% for stomach pills",
+        "Compounded fresh & prescribed by licensed medical doctors",
+        "Administered by registered nurses in a relaxing clinic suite"
+      ],
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Direct vitamin absorption"
+        },
+        {
+          "value": "45m",
+          "label": "Average drip session time"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & RN administered"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Bypasses Stomach Breakdown",
+          "detail": "IV drips bypass digestion completely so vitamins enter your bloodstream at full power for instant results."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "NAD+ Power Cell Delivery",
+          "detail": "NAD+ cannot be absorbed well in stomach pills. IV drips are the only proven way to get real NAD+ into your cells."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Does an IV drip hurt?",
+        "reality": "No. Our experienced registered nurses use tiny needles and gentle techniques so you barely feel a pinch. You can relax, read, or watch TV during your drip."
+      },
+      {
+        "myth": "Aren't oral vitamin pills enough?",
+        "reality": "No. Your stomach filters out up to 80% of oral vitamins. IV drips give you 100% absorption directly into your bloodstream for instant energy."
+      },
+      {
+        "myth": "Is doctor-guided IV therapy safe?",
+        "reality": "Yes! Every drip is prescribed by a licensed doctor and administered by trained registered nurses following strict medical safety rules."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "Instant Effect"
+        },
+        {
+          "icon": "fa-tint",
+          "label": "Full Hydration"
+        },
+        {
+          "icon": "fa-star",
+          "label": "100% Absorption"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Doctor Checked"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Vitamin Absorption",
+          "without": "Only 10%–30% in stomach",
+          "with": "100% direct vascular absorption"
+        },
+        {
+          "metric": "How Fast It Works",
+          "without": "Takes hours or days",
+          "with": "Immediate while sitting in drip suite"
+        },
+        {
+          "metric": "NAD+ Delivery",
+          "without": "Wasted in stomach acid",
+          "with": "100% active cellular delivery"
+        },
+        {
+          "metric": "Rehydration Speed",
+          "without": "Slow drinking water",
+          "with": "Instant cellular rehydration"
+        },
+        {
+          "metric": "Medical Oversight",
+          "without": "Unverified store pills",
+          "with": "Licensed doctor & RN care"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Peak Vitality Drip Stack",
+          "tag": "Most Popular",
+          "compounds": "Myers' Cocktail + Glutathione Push",
+          "description": "Our top IV drip pairing Myers' vitamins for energy with Glutathione for deep liver detox and glowing skin."
+        },
+        {
+          "name": "Total Anti-Aging Longevity Drip",
+          "tag": "Cell Reset",
+          "compounds": "NAD+ + Vitamin C + Glutathione",
+          "description": "Doctor NAD+ drip paired with high-dose antioxidants to repair cells and reverse brain fog."
+        },
+        {
+          "name": "Athletic Rebound Stack",
+          "tag": "Fast Recovery",
+          "compounds": "Athletic Recovery IV + B12 Injection",
+          "description": "Designed to flush out muscle soreness fast with pure amino acids, electrolytes, and B12."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's consultation before getting an IV drip?",
+        "answer": "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor to make sure your drip is perfectly customized and safe."
+      },
+      {
+        "question": "What does the doctor-guided IV program include?",
+        "answer": "Your program includes a medical consultation, custom compounded IV vitamins prepared fresh, comfortable seating in our luxury medical suite, and professional administration by registered nurses."
+      },
+      {
+        "question": "How long does an IV drip session take?",
+        "answer": "Most standard IV vitamin drips take 30 to 45 minutes. Special high-dose NAD+ anti-aging drips take a bit longer (2 to 3 hours) so your body absorbs every drop comfortably."
+      },
+      {
+        "question": "How often should I get IV vitamin therapy?",
+        "answer": "Most wellness patients visit once or twice a month for high energy and immune health. Active athletes or those recovering from illness often get weekly drips."
+      },
+      {
+        "question": "Is IV therapy safe?",
+        "answer": "100% yes. All infusions are prescribed by licensed doctors, mixed in accredited pharmacies, and administered by trained registered nurses following strict medical safety rules."
+      },
+      {
+        "question": "How do I get started with IV therapy?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our medical team will prepare your custom drip!"
+      }
+    ]
+  },
+  {
+    "id": "peptides",
+    "type": "core",
+    "tabLabel": "Peptide Therapy",
+    "href": "peptides.html",
+    "title": "Heal Faster & Feel Like Yourself Again",
+    "lead": "Supercharge your body's natural healing power to fix joint pain, recover fast, and feel full of life.",
+    "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
+    "icon": "fa-vial",
+    "delay": "-2s",
+    "features": [
+      "Fast joint, tendon & muscle recovery",
+      "Deeper, restful night sleep",
+      "Supercharge gut & immune health",
+      "100% doctor-checked for your safety"
+    ],
+    "image": "assets/images/photos/peptide-therapy.jpg",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Peptide Therapy — OVI Wellness",
+    "pageDescription": "Doctor-guided peptide therapy in St. Petersburg, FL. BPC-157, TB-500, and Ipamorelin protocols prescribed by licensed medical providers.",
+    "heroHeadline": "Accelerate Healing &<br><span class=\"text-primary\">Cellular Recovery</span>",
+    "heroSubheadline": "Prescription Peptide protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Healing Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your biggest daily struggle?",
+        "sub": "Pick what you want to fix first.",
+        "options": [
+          {
+            "value": "pain",
+            "icon": "fa-crutch",
+            "title": "Joint & Muscle Pain",
+            "desc": "Sore joints, slow injury healing, or morning stiffness."
+          },
+          {
+            "value": "performance",
+            "icon": "fa-stopwatch",
+            "title": "Slow Workout Recovery",
+            "desc": "Stuck on progress, slow to bounce back after exercise."
+          },
+          {
+            "value": "energy",
+            "icon": "fa-battery-quarter",
+            "title": "Fatigue & Low Energy",
+            "desc": "Tired all day, poor sleep, or brain fog."
+          },
+          {
+            "value": "body",
+            "icon": "fa-fire",
+            "title": "Stubborn Belly Fat",
+            "desc": "Holding extra weight despite eating clean and exercising."
+          }
+        ]
+      },
+      "step2": {
+        "question": "How long have you felt this way?",
+        "sub": "Helps our doctor choose your starting plan.",
+        "options": [
+          {
+            "value": "short",
+            "icon": "fa-calendar",
+            "title": "Under 3 Months",
+            "desc": "Recent issue or new workout injury."
+          },
+          {
+            "value": "medium",
+            "icon": "fa-calendar-alt",
+            "title": "3–12 Months",
+            "desc": "Has been bothering me for several months."
+          },
+          {
+            "value": "long",
+            "icon": "fa-calendar-check",
+            "title": "1+ Years",
+            "desc": "Long-term joint pain or chronic fatigue."
+          }
+        ]
+      },
+      "step3": {
+        "question": "What is your main goal right now?",
+        "sub": "Helps set a clear timeline for your results.",
+        "options": [
+          {
+            "value": "train",
+            "icon": "fa-dumbbell",
+            "title": "Get Back to Workouts",
+            "desc": "Move without pain and exercise with full strength."
+          },
+          {
+            "value": "muscle",
+            "icon": "fa-chart-line",
+            "title": "Build Lean Muscle",
+            "desc": "Gain functional strength and recover faster."
+          },
+          {
+            "value": "feel",
+            "icon": "fa-brain",
+            "title": "Wake Up Energized",
+            "desc": "Enjoy deep sleep, clear focus, and high energy."
+          },
+          {
+            "value": "fat",
+            "icon": "fa-weight",
+            "title": "Burn Body Fat",
+            "desc": "Shed stubborn fat while keeping strong muscle."
+          }
+        ]
+      },
+      "protocols": {
+        "pain": {
+          "tag": "Recommended Joint Repair Plan",
+          "name": "The Total Joint & Tissue Reset",
+          "peptides": "Prescription BPC-157 + TB-500 Protocol",
+          "icon": "fa-shield-alt",
+          "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
+          "goalModifiers": {
+            "train": "Designed to get you back to active workouts without pain holding you back.",
+            "muscle": "Accelerates cellular tissue repair so you rebuild muscle stronger than before.",
+            "feel": "Calms joint inflammation so you wake up refreshed and move comfortably.",
+            "fat": "Helps your body heal so you can stay active and burn extra calories."
+          },
+          "social": "Over 60 local patients completed this recovery plan in the last 90 days."
+        },
+        "performance": {
+          "tag": "Strength & Growth Plan",
+          "name": "Peak Performance & Growth Stack",
+          "peptides": "Prescription Ipamorelin + Tesamorelin",
+          "icon": "fa-dumbbell",
+          "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
+          "goalModifiers": {
+            "train": "Helps you push past plateaus and recover in half the time.",
+            "muscle": "Supports natural muscle building and protein absorption.",
+            "feel": "Promotes deep, restorative sleep so you wake up with high energy.",
+            "fat": "Targets stubborn belly fat while protecting your lean muscle."
+          },
+          "social": "88 patients are currently running this doctor-prescribed stack."
+        },
+        "energy": {
+          "tag": "Cellular Energy Plan",
+          "name": "Total Body Energy & Focus Reset",
+          "peptides": "NAD+ & Cellular Booster Protocol",
+          "icon": "fa-bolt",
+          "desc": "Recharges your cellular engines so you clear brain fog, fight fatigue, and feel energized all day.",
+          "goalModifiers": {
+            "train": "Increases cellular endurance so workouts feel lighter.",
+            "muscle": "Improves cellular recovery after tough training sessions.",
+            "feel": "Built specifically to turn off constant tiredness and restore mental clarity.",
+            "fat": "Boosts daily metabolic engine to burn fat steadily."
+          },
+          "social": "44 local patients started this energy plan in the last 60 days."
+        },
+        "body": {
+          "tag": "Fat Burn & Recomp Plan",
+          "name": "Lean Muscle & Fat Burn Reset",
+          "peptides": "Tesamorelin + Ipamorelin Protocol",
+          "icon": "fa-fire",
+          "desc": "Targets deep belly fat that diets miss, while protecting your lean, strong muscle.",
+          "goalModifiers": {
+            "train": "Improves endurance and stamina for longer workouts.",
+            "muscle": "Burns fat tissue while preserving lean muscle mass.",
+            "feel": "Improves overall body confidence, sleep, and daytime focus.",
+            "fat": "Designed specifically for stubborn fat that won't move with diet alone."
+          },
+          "social": "73 patients completed this fat burn protocol recently."
+        }
+      },
+      "timelineMap": {
+        "short": "6–8 weeks (Fast Recovery Plan)",
+        "medium": "8–12 weeks (Standard Doctor Plan)",
+        "long": "12–16 weeks (Full Reset Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Peptide Care?",
+      "intro": "Our peptide treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health and bloodwork first so you get the best plan for your body.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Joint & Muscle Pain",
+          "detail": "Adults dealing with joint stiffness, slow injury healing, or tendon pain."
+        },
+        {
+          "label": "Tired & Slow Recovery",
+          "detail": "Anyone taking days to recover from exercise or feeling constantly worn out."
+        },
+        {
+          "label": "Tried OTC Supplements",
+          "detail": "People who took store vitamins or joint pills without getting real relief."
+        },
+        {
+          "label": "Want Muscle & Deep Sleep",
+          "detail": "Active men and women ready to burn fat, sleep deeply, and heal faster."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for safe, pharmacy-grade doctor treatments with regular check-ins."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed peptide options tailored to your body after a medical consultation.",
+      "items": [
+        {
+          "icon": "fa-running",
+          "name": "BPC-157 Protocol",
+          "tag": "Joint Repair",
+          "description": "Targeted prescription peptide that tells your cells to repair joints, tendons, gut lining, and torn muscle tissue."
+        },
+        {
+          "icon": "fa-kit-medical",
+          "name": "TB-500 Protocol",
+          "tag": "Tissue Healing",
+          "description": "Works alongside BPC-157 to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
+        },
+        {
+          "icon": "fa-dumbbell",
+          "name": "Ipamorelin Protocol",
+          "tag": "Growth & Sleep",
+          "description": "Natural growth secretagogue that improves deep sleep, speeds up muscle recovery, and keeps bones strong."
+        },
+        {
+          "icon": "fa-bolt-lightning",
+          "name": "Tesamorelin Protocol",
+          "tag": "Belly Fat Burn",
+          "description": "Targeted prescription peptide engineered to burn stubborn belly fat while protecting lean muscle mass."
+        },
+        {
+          "icon": "fa-battery-full",
+          "name": "NAD+ Therapy",
+          "tag": "Cellular Energy",
+          "description": "Recharges your cellular batteries to clear brain fog, boost daily energy, and fight systemic fatigue."
+        },
+        {
+          "icon": "fa-flask",
+          "name": "Doctor Blood Check",
+          "tag": "Safety First",
+          "description": "Simple lab work so your doctor can check your baseline health and build your exact starting dose safely."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
+      "body": "Think of your cells as engines. Peptides are natural signals your body already understands. Store vitamins pass right through your gut. Our doctor-prescribed bio-identical peptides deliver direct molecular signals to your cells, telling them to rebuild, repair, and energize naturally.",
+      "bullets": [
+        "Prescribed by real licensed medical doctors",
+        "100% pharmacy-grade bio-identical compounds",
+        "Safe, targeted action without synthetic fillers"
+      ],
+      "stats": [
+        {
+          "value": "Fast",
+          "label": "Notice joint relief in weeks"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "100%",
+          "label": "Pharmacy-grade quality"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-vial",
+          "title": "Compounded & Doctor Verified",
+          "detail": "Every dose is compounded in accredited pharmacies and prescribed by licensed healthcare providers."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Targeted Cellular Action",
+          "detail": "Peptides send precise repair signals directly to damaged cells without disturbing other body systems."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Are peptides just anabolic steroids?",
+        "reality": "No. Peptides are natural amino acid signals—the exact same signals your body already produces. They do not shut down your hormones, cause liver stress, or act like steroids."
+      },
+      {
+        "myth": "Do I have to do this forever?",
+        "reality": "No. Most peptide plans run for 8 to 16 weeks to reset your tissue and cellular health. Once healed, many patients maintain their results with simple lifestyle care."
+      },
+      {
+        "myth": "Is doctor-guided peptide therapy safe and legal?",
+        "reality": "Yes. All treatments we prescribe are legal, pharmacy-grade medications prescribed by licensed medical doctors following strict Florida medical standards."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-bolt",
+          "label": "Fast Recovery"
+        },
+        {
+          "icon": "fa-fire",
+          "label": "Fat Burn"
+        },
+        {
+          "icon": "fa-brain",
+          "label": "Clear Focus"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Doctor Checked"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "Recovery Speed",
+          "without": "5–7 days of pain",
+          "with": "2–3 days fast recovery"
+        },
+        {
+          "metric": "Joint Comfort",
+          "without": "Stiff & sore",
+          "with": "Flexible & pain-free"
+        },
+        {
+          "metric": "Daily Energy",
+          "without": "Tired & brain fog",
+          "with": "High all-day energy"
+        },
+        {
+          "metric": "Sleep Quality",
+          "without": "Restless & tossing",
+          "with": "Deep, restorative sleep"
+        },
+        {
+          "metric": "Medical Safety",
+          "without": "Unregulated web pills",
+          "with": "Doctor-prescribed & lab checked"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Joint & Tissue Repair Stack",
+          "tag": "Most Popular",
+          "compounds": "BPC-157 + TB-500 Protocol",
+          "description": "Combines twin repair peptides for fast joint relief, ligament repair, and tendon healing."
+        },
+        {
+          "name": "Growth & Lean Muscle Stack",
+          "tag": "Strength Boost",
+          "compounds": "Tesamorelin + Ipamorelin Protocol",
+          "description": "Designed for active adults looking to burn stubborn belly fat, gain lean muscle, and sleep deeply."
+        },
+        {
+          "name": "Total Bioenergetic Reset",
+          "tag": "Full Vitality",
+          "compounds": "NAD+ + Cellular Recovery Stack",
+          "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's prescription for peptide therapy?",
+        "answer": "Yes. All clinical peptide protocols are prescription medications. You will consult with our licensed medical doctor who evaluates your health and orders bloodwork before prescribing your custom plan."
+      },
+      {
+        "question": "What does the doctor-guided peptide program include?",
+        "answer": "Your program includes direct medical consultations with a board-certified doctor, baseline blood testing, custom pharmacy-grade peptides, and ongoing check-ins to make sure you get optimal results safely."
+      },
+      {
+        "question": "How are peptide treatments administered?",
+        "answer": "Most peptide protocols use tiny, virtually painless subcutaneous injections using micro-needles (done at home or in clinic). Some peptides are also available as oral capsules or nasal sprays based on doctor recommendations."
+      },
+      {
+        "question": "How fast will I see results from peptide therapy?",
+        "answer": "Joint repair peptides like BPC-157 often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
+      },
+      {
+        "question": "Can I combine peptides with TRT or hormone therapy?",
+        "answer": "Yes! In fact, peptides work wonderfully alongside doctor-guided TRT or hormone therapy to boost cellular repair, speed up fat loss, and keep your energy high."
+      },
+      {
+        "question": "How do I get started with peptide therapy?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your health, order any necessary bloodwork, and start your custom healing plan."
+      }
+    ]
+  },
+  {
+    "id": "regenerative-medicine",
+    "type": "additional",
+    "tabLabel": "Regenerative Medicine",
+    "href": "regenerative-medicine.html",
+    "title": "Fix Body Pain & Rebuild Cells Naturally",
+    "lead": "Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.",
+    "description": "We use your body's own natural power to heal damaged joints, revive skin, and restore thick, healthy hair—100% doctor-prescribed without invasive surgery.",
+    "icon": "fa-heartbeat",
+    "delay": "-3s",
+    "features": [
+      "Relieve stubborn joint aches & stiffness",
+      "Natural hair & skin restoration",
+      "Restore intimate health & confidence",
+      "100% doctor-checked for your safety"
+    ],
+    "image": "assets/images/photos/IV.jpg",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
+    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, Exosomes, P-Shot, O-Shot, and hair restoration supervised by licensed medical doctors.",
+    "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
+    "heroSubheadline": "Prescription PRP & Exosome regenerative protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Healing Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your main concern right now?",
+        "sub": "Pick what you want to fix first.",
+        "options": [
+          {
+            "value": "joint",
+            "icon": "fa-bone",
+            "title": "Joint Pain & Stiffness",
+            "desc": "Sore knees, shoulders, or chronic joint pain."
+          },
+          {
+            "value": "hair",
+            "icon": "fa-cut",
+            "title": "Hair Thinning",
+            "desc": "Want to restore scalp hair density naturally."
+          },
+          {
+            "value": "intimacy",
+            "icon": "fa-heart",
+            "title": "Intimacy & Sexual Health",
+            "desc": "P-Shot or O-Shot for natural drive and sensitivity."
+          }
+        ]
+      },
+      "step2": {
+        "question": "How long have you noticed this issue?",
+        "sub": "Helps our doctor choose your starting plan.",
+        "options": [
+          {
+            "value": "mild",
+            "icon": "fa-thermometer-empty",
+            "title": "Just Started (Mild)",
+            "desc": "Recent pain or early hair thinning."
+          },
+          {
+            "value": "severe",
+            "icon": "fa-thermometer-full",
+            "title": "Long-Term (Severe)",
+            "desc": "Ongoing pain or noticeable hair loss for months."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Have you tried PRP or regenerative treatments before?",
+        "sub": "Helps our doctor guide your care.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "First Time",
+            "desc": "I have never tried regenerative care before."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Yes, I Have",
+            "desc": "I have tried PRP or joint shots in the past."
+          }
+        ]
+      },
+      "protocols": {
+        "joint": {
+          "tag": "Recommended Joint Repair Plan",
+          "name": "Total Joint & Cellular Repair Plan",
+          "peptides": "Prescription PRP + Exosome Therapy",
+          "icon": "fa-bone",
+          "desc": "Concentrates your body's natural healing factors to soothe joint inflammation and rebuild damaged tissue naturally.",
+          "goalModifiers": {
+            "no": "Our doctor will conduct a quick knee or shoulder evaluation to set your starting dose.",
+            "yes": "Our doctor will adjust your cellular density for maximum long-term relief."
+          },
+          "social": "Over 50 local patients are currently using this joint recovery plan."
+        },
+        "hair": {
+          "tag": "Hair & Scalp Plan",
+          "name": "Natural Scalp & Hair Restoration",
+          "peptides": "Prescription PRP + Scalp Exosome Therapy",
+          "icon": "fa-cut",
+          "desc": "Wakes up dormant hair follicles using natural growth signals to bring back thicker, fuller hair.",
+          "goalModifiers": {
+            "no": "First-time plan designed to activate sleeping hair roots over simple sessions.",
+            "yes": "Booster plan tailored to maintain high follicle density and thickness."
+          },
+          "social": "82 patients saw visible hair density improvements with this plan."
+        },
+        "intimacy": {
+          "tag": "Intimacy & Confidence Plan",
+          "name": "Cellular Intimacy Reset (P-Shot / O-Shot)",
+          "peptides": "Natural PRP + Growth Factor Booster",
+          "icon": "fa-heart",
+          "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence for men and women.",
+          "goalModifiers": {
+            "no": "Our doctor will guide you through a comfortable, simple starting treatment.",
+            "yes": "Enhanced booster protocol designed to sustain long-term vitality."
+          },
+          "social": "69 local patients completed this intimacy treatment recently."
+        }
+      },
+      "timelineMap": {
+        "mild": "4–6 weeks (Fast Track Plan)",
+        "severe": "8–12 weeks (Standard Doctor Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Regenerative Care?",
+      "intro": "Our regenerative treatments use your body's own biological strength, supervised by licensed medical doctors. We check your health first to make sure you get safe, targeted care.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Joint Pain & Arthritis",
+          "detail": "Adults dealing with joint pain, knee or shoulder stiffness, or sports injuries."
+        },
+        {
+          "label": "Hair Thinning",
+          "detail": "Men and women looking for natural, non-surgical hair restoration."
+        },
+        {
+          "label": "Intimate Wellness",
+          "detail": "Men and women wanting enhanced drive, sensitivity, and stamina with the P-Shot or O-Shot."
+        },
+        {
+          "label": "Want Surgery Avoided",
+          "detail": "Anyone seeking natural healing without risky surgery or synthetic pills."
+        },
+        {
+          "label": "Ready for Doctor Care",
+          "detail": "Looking for safe, doctor-administered treatments in a comfortable clinic."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed regenerative treatments tailored to your body after a medical evaluation.",
+      "items": [
+        {
+          "icon": "fa-dna",
+          "name": "Exosome Cellular Therapy",
+          "tag": "Most Advanced",
+          "description": "Advanced cellular signals that tell damaged cells to repair, reduce joint swelling, and rebuild healthy tissue fast."
+        },
+        {
+          "icon": "fa-tint",
+          "name": "Platelet-Rich Plasma (PRP)",
+          "tag": "Natural Healing",
+          "description": "Concentrates your own blood's natural growth factors to rebuild joints, revive hair, and smooth skin."
+        },
+        {
+          "icon": "fa-mars",
+          "name": "P-Shot (Men's Intimacy)",
+          "tag": "For Men",
+          "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "O-Shot (Women's Intimacy)",
+          "tag": "For Women",
+          "description": "Natural PRP treatment for women to enhance intimacy, sensation, arousal, and bladder control."
+        },
+        {
+          "icon": "fa-leaf",
+          "name": "Hair Restoration Therapy",
+          "tag": "Thicker Hair",
+          "description": "PRP and exosome scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth."
+        },
+        {
+          "icon": "fa-heartbeat",
+          "name": "Joint & Knee Recovery",
+          "tag": "Pain Relief",
+          "description": "Targeted PRP and exosome injections for knees, shoulders, and hips—so you can move without pain."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Pain Pills Fail</span>",
+      "body": "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (Exosomes), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
+      "bullets": [
+        "Prescribed & performed by licensed medical doctors",
+        "100% natural compounds matching your body",
+        "Non-surgical, quick in-office treatments"
+      ],
+      "stats": [
+        {
+          "value": "Natural",
+          "label": "Uses your body's own growth factors"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "0%",
+          "label": "Synthetic pain drugs needed"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Natural PRP Healing",
+          "detail": "PRP uses a quick sample of your blood to concentrate your body's own healing power with zero rejection risk."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Exosome Cell Messaging",
+          "detail": "Exosomes deliver natural molecular messages that tell damaged cells exactly how to rebuild."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Is PRP or regenerative therapy painful?",
+        "reality": "No. Our doctors apply gentle topical numbing before any treatment so you feel comfortable. Most patients return to normal daily activities the very same day."
+      },
+      {
+        "myth": "Are exosomes stem cells?",
+        "reality": "No. Exosomes are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
+      },
+      {
+        "myth": "Is doctor-guided regenerative medicine safe?",
+        "reality": "Yes. All treatments use natural, bio-compatible compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-dna",
+          "label": "Cellular Healing"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Natural Safety"
+        },
+        {
+          "icon": "fa-bolt",
+          "label": "Quick Relief"
+        },
+        {
+          "icon": "fa-heart",
+          "label": "Long-Term Results"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "How It Works",
+          "without": "Numbs pain temporarily",
+          "with": "Rebuilds damaged tissue at source"
+        },
+        {
+          "metric": "Treatment Type",
+          "without": "Synthetic pain drugs / surgery",
+          "with": "Natural PRP & Exosomes"
+        },
+        {
+          "metric": "Recovery Time",
+          "without": "Weeks of downtime / surgery",
+          "with": "Back to normal same day"
+        },
+        {
+          "metric": "Safety Profile",
+          "without": "High risk & side effects",
+          "with": "100% natural bio-compatible"
+        },
+        {
+          "metric": "Long-Term Relief",
+          "without": "Wears off quickly",
+          "with": "Lasting natural cellular repair"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Complete Joint Repair Plan",
+          "tag": "Most Popular",
+          "compounds": "PRP + Exosome Protocol",
+          "description": "Our top joint protocol combining natural PRP growth factors with exosome cell signals for fast pain relief."
+        },
+        {
+          "name": "Intimacy Restoration Package",
+          "tag": "Sexual Wellness",
+          "compounds": "P-Shot or O-Shot + Doctor Review",
+          "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence for men and women."
+        },
+        {
+          "name": "Natural Hair Restoration Plan",
+          "tag": "Thicker Scalp",
+          "compounds": "PRP + Scalp Exosome Therapy",
+          "description": "Dual-action scalp treatment designed to awaken sleeping hair roots and boost natural hair density."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's consultation for regenerative medicine?",
+        "answer": "Yes. All PRP, exosome, and intimacy treatments require a medical consultation. You will talk with our licensed medical doctor who evaluates your joint, hair, or intimacy health before creating your custom plan."
+      },
+      {
+        "question": "What does the doctor-guided regenerative program include?",
+        "answer": "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or exosome treatment, topical numbing for comfort, and follow-up progress check-ins."
+      },
+      {
+        "question": "Are PRP and exosome injections painful?",
+        "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
+      },
+      {
+        "question": "How many sessions do I need to see results?",
+        "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot and O-Shot) often deliver noticeable improvements after just one treatment!"
+      },
+      {
+        "question": "How do exosomes differ from stem cell treatments?",
+        "answer": "Exosomes are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing."
+      },
+      {
+        "question": "How do I get started with regenerative medicine?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your goals and start your personalized recovery plan."
+      }
+    ]
+  },
+  {
+    "id": "sexual-wellness",
+    "type": "additional",
+    "tabLabel": "Sexual Wellness",
+    "href": "sexual-wellness.html",
+    "title": "Bring Back Passion, Drive & Intimacy",
+    "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
+    "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot & O-Shot) and custom hormone balancing to bring back your passion and performance.",
+    "icon": "fa-heart",
+    "delay": "-4s",
+    "features": [
+      "Bring back natural drive & stamina",
+      "P-Shot for men & O-Shot for women",
+      "100% doctor-prescribed & discreet",
+      "100% doctor-checked for your safety"
+    ],
+    "image": "assets/images/photos/team-group.avif",
+    "ctaText": "Book Your Doctor Consultation",
+    "pageTitle": "Doctor-Guided Sexual Wellness — OVI Wellness",
+    "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, O-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
+    "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
+    "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols medically supervised by Board-Certified Doctors in St. Petersburg, FL.",
+    "heroCTA": "Book Your Doctor Call Today",
+    "quiz": {
+      "badge": "Quick 1-Minute Assessment",
+      "headline": "Find Your Best Intimacy Plan",
+      "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
+      "step1": {
+        "question": "What is your main goal right now?",
+        "sub": "Pick what you want to improve first.",
+        "options": [
+          {
+            "value": "men",
+            "icon": "fa-mars",
+            "title": "Men's Performance & Drive",
+            "desc": "Want stronger erections, stamina, and youthful energy."
+          },
+          {
+            "value": "women",
+            "icon": "fa-venus",
+            "title": "Women's Sensation & Mood",
+            "desc": "Want higher desire, better lubrication, and arousal."
+          },
+          {
+            "value": "balance",
+            "icon": "fa-scale-balanced",
+            "title": "Total Couples Balance",
+            "desc": "Hormone and drive optimization for both partners."
+          }
+        ]
+      },
+      "step2": {
+        "question": "How long have you noticed lower drive or performance?",
+        "sub": "Helps our doctor choose your starting plan.",
+        "options": [
+          {
+            "value": "months",
+            "icon": "fa-calendar",
+            "title": "A Few Months",
+            "desc": "Recent decline due to stress or age."
+          },
+          {
+            "value": "years",
+            "icon": "fa-calendar-alt",
+            "title": "A Few Years",
+            "desc": "Long-term low drive or intimacy frustration."
+          }
+        ]
+      },
+      "step3": {
+        "question": "Have you tried intimacy treatments before?",
+        "sub": "Helps our doctor guide your care.",
+        "options": [
+          {
+            "value": "no",
+            "icon": "fa-times",
+            "title": "First Time",
+            "desc": "I have never tried clinical intimacy care before."
+          },
+          {
+            "value": "yes",
+            "icon": "fa-check",
+            "title": "Yes, I Have",
+            "desc": "I have tried pills or supplements without long success."
+          }
+        ]
+      },
+      "protocols": {
+        "men": {
+          "tag": "Recommended Men's Plan",
+          "name": "The Male Peak Performance Plan (P-Shot + TRT)",
+          "peptides": "Prescription P-Shot + Hormone Support",
+          "icon": "fa-mars",
+          "desc": "Combines natural PRP growth factors with doctor hormone balancing to restore strong blood flow, stamina, and confidence.",
+          "goalModifiers": {
+            "no": "First-time plan starting with a comfortable doctor evaluation and blood panel.",
+            "yes": "Advanced protocol designed to bypass weak OTC pills and deliver real clinical results."
+          },
+          "social": "Over 80 local male patients achieved outstanding results with this plan."
+        },
+        "women": {
+          "tag": "Recommended Women's Plan",
+          "name": "The Female Intimacy Reset (O-Shot + HRT)",
+          "peptides": "Prescription O-Shot + Bio-Identical HRT",
+          "icon": "fa-venus",
+          "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using your body's own natural growth factors.",
+          "goalModifiers": {
+            "no": "Gentle starting plan supervised by compassionate medical doctors.",
+            "yes": "Targeted booster protocol for deep cellular arousal and lasting satisfaction."
+          },
+          "social": "74 female patients restored their intimate confidence with this protocol."
+        },
+        "balance": {
+          "tag": "Couples Reset Plan",
+          "name": "Total Passion & Hormonal Synergy Stack",
+          "peptides": "Prescription PT-141 / Kisspeptin + Hormone Panels",
+          "icon": "fa-heart",
+          "desc": "Comprehensive intimacy stack designed to trigger natural brain desire signals and boost physical energy.",
+          "goalModifiers": {
+            "no": "Full baseline health check to align both partner's energy and passion levels.",
+            "yes": "High-potency therapy built to revive deep intimacy and stamina."
+          },
+          "social": "Over 65 couples have renewed their spark with this doctor-guided plan."
+        }
+      },
+      "timelineMap": {
+        "months": "4–6 weeks (Fast Track Plan)",
+        "years": "8–12 weeks (Full Reset Plan)"
+      }
+    },
+    "eligibility": {
+      "badge": "Who Is This For?",
+      "headline": "Are You a Candidate for Intimacy Care?",
+      "intro": "Our sexual wellness treatments are safe, effective prescription plans supervised by licensed medical doctors. We evaluate your health in a private, respectful clinic setting.",
+      "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
+      "ctaText": "Call Us Now to Check Candidacy",
+      "items": [
+        {
+          "label": "Low Drive & Desire",
+          "detail": "Men and women feeling a decline in natural intimacy, passion, or energy."
+        },
+        {
+          "label": "Erectile & Stamina Issues",
+          "detail": "Men struggling with blood flow, maintaining firmness, or performance anxiety."
+        },
+        {
+          "label": "Dryness & Low Sensation",
+          "detail": "Women experiencing low arousal, discomfort, or reduced intimacy sensitivity."
+        },
+        {
+          "label": "Failed Blue Pills / OTC",
+          "detail": "Anyone tired of over-the-counter supplements or pills that cause bad side effects."
+        },
+        {
+          "label": "Ready for Private MD Care",
+          "detail": "Looking for safe, discreet doctor-administered treatments in a private office."
+        }
+      ]
+    },
+    "protocols": {
+      "badge": "Prescription Options",
+      "sectionHeadline": "Simple Doctor-Guided Treatments",
+      "sectionSubheadline": "Doctor-prescribed intimacy options tailored to your body in a private medical clinic.",
+      "items": [
+        {
+          "icon": "fa-mars",
+          "name": "P-Shot (Priapus Shot)",
+          "tag": "For Men",
+          "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence."
+        },
+        {
+          "icon": "fa-venus",
+          "name": "O-Shot (Orgasm Shot)",
+          "tag": "For Women",
+          "description": "Natural PRP treatment for women that restores nerve sensitivity, natural lubrication, and intense arousal."
+        },
+        {
+          "icon": "fa-syringe",
+          "name": "Doctor TRT for Men",
+          "tag": "Stamina Boost",
+          "description": "Physician-guided testosterone balancing to rebuild daily energy, muscle strength, and intimate stamina."
+        },
+        {
+          "icon": "fa-heart",
+          "name": "Bio-Identical HRT for Women",
+          "tag": "Hormone Reset",
+          "description": "Natural bio-identical estrogen and progesterone balancing to fix mood slumps, night sweats, and low drive."
+        },
+        {
+          "icon": "fa-brain",
+          "name": "PT-141 Desire Therapy",
+          "tag": "Brain Signal",
+          "description": "FDA-studied peptide treatment that acts directly on central brain pathways to trigger natural desire."
+        },
+        {
+          "icon": "fa-vial",
+          "name": "Doctor Blood Check",
+          "tag": "Safety First",
+          "description": "Simple lab work to check your exact hormone markers and ensure safe, effective treatment."
+        }
+      ]
+    },
+    "science": {
+      "badge": "How It Works",
+      "headline": "Why It Works When<br><span class=\"text-primary\">Blue Pills Fail</span>",
+      "body": "Pills only temporarily force blood flow and often cause headaches or high blood pressure. Our doctor-guided treatments repair underlying tissues and balance natural hormones. Using natural growth factors (PRP) and brain desire signals (PT-141), we rebuild long-term stamina, sensitivity, and natural drive.",
+      "bullets": [
+        "Prescribed & administered by licensed medical doctors",
+        "100% natural bio-identical compounds with zero synthetic fillers",
+        "Private, respectful, and discreet medical care"
+      ],
+      "stats": [
+        {
+          "value": "Discreet",
+          "label": "Private 1-on-1 doctor care"
+        },
+        {
+          "value": "Safe",
+          "label": "Doctor supervised & lab checked"
+        },
+        {
+          "value": "Natural",
+          "label": "Uses your body's growth factors"
+        },
+        {
+          "icon": "fa-user-md",
+          "label": "Rx Doctor Certified"
+        }
+      ],
+      "cards": [
+        {
+          "icon": "fa-microscope",
+          "title": "Natural PRP Tissue Repair",
+          "detail": "The P-Shot and O-Shot use concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
+        },
+        {
+          "icon": "fa-bullseye",
+          "title": "Natural Brain Desire Signaling",
+          "detail": "Peptides like PT-141 work on central brain receptors to ignite natural passion without cardiovascular stress."
+        }
+      ]
+    },
+    "myths": [
+      {
+        "myth": "Are intimacy injections painful?",
+        "reality": "No. Our doctors apply strong, prescription topical numbing before any procedure. Most patients report feeling only mild pressure and resume normal daily activities immediately."
+      },
+      {
+        "myth": "Do intimacy treatments only work for men?",
+        "reality": "Not at all! Women suffer from hormonal and tissue changes too. The O-Shot and bio-identical HRT restore lubrication, sensation, and arousal for women naturally."
+      },
+      {
+        "myth": "Is doctor-guided intimacy care safe?",
+        "reality": "Yes. All treatments use natural growth factors or FDA-studied compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+      }
+    ],
+    "comparison": {
+      "headline": "Doctor-Guided Care vs. Doing It Alone",
+      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "ctaText": "Call Our Clinic Today",
+      "mobileStats": [
+        {
+          "icon": "fa-user-md",
+          "label": "Doctor Guided"
+        },
+        {
+          "icon": "fa-heart",
+          "label": "High Drive"
+        },
+        {
+          "icon": "fa-shield-alt",
+          "label": "Safe & Natural"
+        },
+        {
+          "icon": "fa-clock",
+          "label": "Lasting Results"
+        }
+      ],
+      "rows": [
+        {
+          "metric": "How It Works",
+          "without": "Temporary pill mask",
+          "with": "Rebuilds tissue & balances hormones"
+        },
+        {
+          "metric": "Side Effect Risk",
+          "without": "Headaches & blood pressure spikes",
+          "with": "100% safe & bio-compatible"
+        },
+        {
+          "metric": "Sensory Feeling",
+          "without": "Unchanged or numb",
+          "with": "Restored nerve sensitivity & passion"
+        },
+        {
+          "metric": "Medical Oversight",
+          "without": "Gas station pills / web orders",
+          "with": "Licensed MD consultation & labs"
+        },
+        {
+          "metric": "Long-Term Outcome",
+          "without": "Wears off in hours",
+          "with": "Long-lasting natural performance"
+        }
+      ],
+      "stacks": [
+        {
+          "name": "Men's Peak Intimacy Stack",
+          "tag": "Most Popular",
+          "compounds": "P-Shot + Doctor TRT Protocol",
+          "description": "Our top male protocol combining the P-Shot for blood flow with TRT for stamina and energy."
+        },
+        {
+          "name": "Women's Vitality & Sensation Stack",
+          "tag": "For Women",
+          "compounds": "O-Shot + Bio-Identical HRT",
+          "description": "Complete female intimacy reset restoring nerve sensitivity, lubrication, and emotional balance."
+        },
+        {
+          "name": "Couples Passion & Desire Booster",
+          "tag": "Desire Reset",
+          "compounds": "PT-141 + Hormone Check",
+          "description": "Central brain desire peptide therapy designed to ignite spontaneous passion and stamina."
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "question": "Do I need a doctor's consultation for sexual wellness treatments?",
+        "answer": "Yes. All P-Shot, O-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
+      },
+      {
+        "question": "What does the doctor-guided intimacy program include?",
+        "answer": "Your program includes a private 1-on-1 consultation with a board-certified doctor, baseline bloodwork, your customized in-office treatment with prescription numbing, and ongoing follow-up check-ins."
+      },
+      {
+        "question": "Are P-Shot and O-Shot treatments painful?",
+        "answer": "Not at all! We apply strong medical-grade numbing cream before every treatment. Most patients feel only slight pressure and go right back to work or normal activities the same day."
+      },
+      {
+        "question": "How fast will I notice results from intimacy therapy?",
+        "answer": "Many patients notice improved sensitivity, blood flow, and desire within 2 to 4 weeks. Full tissue regeneration and peak results build over 8 to 12 weeks."
+      },
+      {
+        "question": "Are these treatments private and confidential?",
+        "answer": "100% yes. Your privacy is our top priority. All consultations and treatments take place in private rooms in our discreet St. Petersburg clinic."
+      },
+      {
+        "question": "How do I get started with sexual wellness care?",
+        "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will answer all your questions in complete confidence and start your plan."
+      }
+    ]
+  }
+]

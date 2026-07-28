@@ -1,0 +1,353 @@
+{
+  "id": "advanced-labs",
+  "type": "additional",
+  "tabLabel": "Laboratorios Avanzados",
+  "href": "advanced-labs.html",
+  "title": "Descubra Lo Que Sus Análisis de Sangre Regulares Pasan Por Alto",
+  "lead": "Deje de adivinar por qué se siente cansado, hinchado o agotado con paneles médicos completos y simples.",
+  "description": "Los análisis de sangre estándar del médico solo verifican números básicos. Nuestros análisis de laboratorio avanzados examinan profundamente sus hormonas, vitaminas, marcadores genéticos (MTHFR) y metales pesados para que nuestros médicos puedan darle respuestas exactas.",
+  "icon": "fa-flask",
+  "delay": "-3s",
+  "features": [
+    "Paneles completos de hormona y energía en sangre",
+    "Niveles de vitaminas y micronutrientes verificados",
+    "Análisis del gen MTHFR y detección de metales pesados",
+    "100% revisado por médicos con plan personalizado"
+  ],
+  "image": "assets/images/photos/team-group.avif",
+  "ctaText": "Reserve su Consulta Médica",
+  "pageTitle": "Laboratorios Diagnósticos Avanzados Guiados por Médicos — OVI Wellness",
+  "pageDescription": "Análisis de laboratorio diagnóstico avanzado guiado por médicos en St. Petersburg, FL. Paneles hormonales, pruebas de MTHFR, micronutrientes y detección de metales pesados.",
+  "heroHeadline": "Descubra Sus Números<br><span class=\"text-primary\">Reales de Salud</span>",
+  "heroSubheadline": "Paneles de Laboratorio Médico Avanzado revisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Panel de Laboratorio",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le recomienden el análisis de sangre adecuado.",
+    "step1": {
+      "question": "¿Cuál es su principal razón para hacerse análisis de sangre?",
+      "sub": "Elija lo que desea verificar primero.",
+      "options": [
+        {
+          "value": "hormone",
+          "icon": "fa-syringe",
+          "title": "Hormonas y Energía",
+          "desc": "Quiero verificar testosterona, tiroides y resistencia diaria."
+        },
+        {
+          "value": "vitamins",
+          "icon": "fa-apple-alt",
+          "title": "Deficiencias de Vitaminas y Nutrientes",
+          "desc": "Cansancio, inmunidad débil o adelgazamiento del cabello."
+        },
+        {
+          "value": "genetics",
+          "icon": "fa-dna",
+          "title": "MTHFR y Metales Pesados",
+          "desc": "Quiero verificar marcadores genéticos, moho o toxicidad de metales pesados."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Cuándo fue su último análisis de sangre completo?",
+      "sub": "Ayuda a nuestro médico a elegir la profundidad de su panel.",
+      "options": [
+        {
+          "value": "recent",
+          "icon": "fa-calendar",
+          "title": "En los últimos 6 meses",
+          "desc": "Tengo resultados básicos recientes de laboratorio."
+        },
+        {
+          "value": "old",
+          "icon": "fa-calendar-alt",
+          "title": "Hace más de un año / Nunca",
+          "desc": "Necesito un análisis de laboratorio basal completo."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Tiene síntomas inexplicables como fatiga o niebla mental?",
+      "sub": "Ayuda a nuestro médico a identificar causas raíz ocultas.",
+      "options": [
+        {
+          "value": "yes",
+          "icon": "fa-triangle-exclamation",
+          "title": "Sí, Los Tengo",
+          "desc": "Las pruebas normales del médico resultaron 'bien' pero aún me siento mal."
+        },
+        {
+          "value": "no",
+          "icon": "fa-circle-check",
+          "title": "No, Solo Preventivo",
+          "desc": "Me siento bien pero quiero datos de longevidad y salud máxima."
+        }
+      ]
+    },
+    "protocols": {
+      "hormone": {
+        "tag": "Panel de Energía Recomendado",
+        "name": "Panel Total de Hormona y Vitalidad",
+        "peptides": "Análisis Completo de Testosterona + Tiroides + Cortisol",
+        "icon": "fa-syringe",
+        "desc": "Mide la testosterona total y libre, la función tiroidea, el cortisol y los marcadores de energía para identificar por qué se siente cansado.",
+        "goalModifiers": {
+          "yes": "Dirigido a encontrar caídas hormonales ocultas que las pruebas básicas de atención primaria pasan completamente por alto.",
+          "no": "Excelente verificación basal para mantener sus hormonas equilibradas a medida que envejece."
+        },
+        "social": "Más de 120 pacientes locales desbloquearon alta energía con este panel de laboratorio médico."
+      },
+      "vitamins": {
+        "tag": "Panel de Nutrientes e Inmunidad",
+        "name": "Auditoría Completa de Micronutrientes y Antioxidantes",
+        "peptides": "Prueba Intracelular de Vitaminas y Minerales",
+        "icon": "fa-apple-alt",
+        "desc": "Verifica los niveles exactos de vitamina B12, D3, magnesio y antioxidantes dentro de sus células para que tome solo lo que necesita.",
+        "goalModifiers": {
+          "yes": "Encuentra brechas vitamínicas celulares que causan niebla mental, lentitud y recuperación lenta.",
+          "no": "Ayuda a construir un plan diario de vitaminas limpio y personalizado adaptado estrictamente a su cuerpo."
+        },
+        "social": "89 pacientes optimizaron su salud con esta auditoría intracelular."
+      },
+      "genetics": {
+        "tag": "Panel Profundo de Salud y Detox",
+        "name": "Panel de Gen MTHFR y Metales Tóxicos",
+        "peptides": "Metilación de ADN + Análisis de Plomo/Mercurio/Arsénico",
+        "icon": "fa-dna",
+        "desc": "Analiza sus variantes del gen MTHFR y prueba metales pesados tóxicos que interrumpen su cerebro, humor y salud cardíaca.",
+        "goalModifiers": {
+          "yes": "Descubre obstáculos genéticos o tóxicos ocultos que impiden que los tratamientos tradicionales funcionen.",
+          "no": "Prueba avanzada de longevidad para garantizar la protección cerebral, cardíaca y hepática a largo plazo."
+        },
+        "social": "73 pacientes descubrieron información genética oculta con este panel."
+      }
+    },
+    "timelineMap": {
+      "recent": "3–5 días (Revisión Rápida de Resultados)",
+      "old": "5–7 días (Auditoría Basal Completa)"
+    }
+  },
+  "eligibility": {
+    "badge": "¿Para Quién Es?",
+    "headline": "¿Es Usted Candidato para Laboratorios Avanzados?",
+    "intro": "Nuestros paneles de diagnóstico van mucho más allá de los análisis de sangre anuales estándar. Supervisados por médicos licenciados, descubrimos las causas raíz ocultas para que obtenga respuestas claras y prácticas.",
+    "note": "¿Preguntas sobre análisis de laboratorio? Nuestro equipo médico le guiará durante su consulta.",
+    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "items": [
+      {
+        "label": "Le Dijeron que Sus Análisis Son 'Normales'",
+        "detail": "Adultos que se sienten exhaustos o hinchados a pesar de que los médicos de atención primaria dicen que los análisis están bien."
+      },
+      {
+        "label": "Cansado Todo el Día",
+        "detail": "Cualquiera que luche con niebla mental, caídas a mitad del día, bajo impulso o mal sueño."
+      },
+      {
+        "label": "Riesgo Familiar de Corazón y Genes",
+        "detail": "Personas que quieren pruebas del gen MTHFR, ApoB o verificaciones avanzadas de riesgo cardíaco."
+      },
+      {
+        "label": "Quiere Atención Basada en Datos",
+        "detail": "Cualquiera que comience TRT, pérdida de peso o péptidos que necesite números de inicio precisos."
+      },
+      {
+        "label": "Listo para Revisión Médica",
+        "detail": "Buscando una revisión médica uno a uno de cada marcador con un plan personalizado."
+      }
+    ]
+  },
+  "protocols": {
+    "badge": "Opciones bajo Receta",
+    "sectionHeadline": "Análisis de Laboratorio Simples Guiados por Médicos",
+    "sectionSubheadline": "Paneles de laboratorio ordenados por médicos y extraídos cómodamente en nuestra clínica o laboratorio local.",
+    "items": [
+      {
+        "icon": "fa-syringe",
+        "name": "Panel Hormonal Completo",
+        "tag": "Núcleo Hormonal",
+        "description": "Analiza testosterona total y libre, estrógeno, tiroides (T3/T4), cortisol y DHEA para restaurar la energía máxima."
+      },
+      {
+        "icon": "fa-dna",
+        "name": "Prueba de Variante del Gen MTHFR",
+        "tag": "Genética",
+        "description": "Identifica variantes del gen C677T y A1298C para optimizar la metilación, el humor y el uso de folato de su cuerpo."
+      },
+      {
+        "icon": "fa-apple-alt",
+        "name": "Prueba Intracelular de Micronutrientes",
+        "tag": "Vitaminas",
+        "description": "Mide vitaminas, minerales y antioxidantes directamente dentro de sus células sanguíneas para una verdadera precisión."
+      },
+      {
+        "icon": "fa-industry",
+        "name": "Análisis de Metales Pesados Tóxicos",
+        "tag": "Control de Detox",
+        "description": "Analiza mercurio, plomo y arsénico que se acumulan con el tiempo y desencadenan fatiga y niebla mental."
+      },
+      {
+        "icon": "fa-heartbeat",
+        "name": "Panel Avanzado Cardíaco y de Lípidos",
+        "tag": "Cardiovascular",
+        "description": "Va más allá del colesterol básico para analizar ApoB, Lp(a) y hs-CRP para una verdadera seguridad cardíaca."
+      },
+      {
+        "icon": "fa-user-md",
+        "name": "Revisión Médica Uno a Uno",
+        "tag": "Consulta Médica",
+        "description": "Cada extracción de laboratorio incluye una consulta detallada uno a uno con nuestro médico para explicar sus números."
+      }
+    ]
+  },
+  "science": {
+    "badge": "Cómo Funciona",
+    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">los Laboratorios Estándar Fallan</span>",
+    "body": "Los análisis de sangre estándar solo verifican señales de enfermedades, no una salud óptima. Su rango 'normal' incluye poblaciones enfermas o envejecidas. Nuestros paneles médicos avanzados prueban rangos óptimos estrechos y niveles celulares, revelando los desequilibrios ocultos que las pruebas de atención primaria pasan por alto.",
+    "bullets": [
+      "Ordenado y revisado por médicos licenciados",
+      "Prueba rangos óptimos de vitalidad, no solo 'normal de enfermedad'",
+      "Incluye consulta médica uno a uno clara y plan de acción"
+    ],
+    "stats": [
+      {
+        "value": "Profundo",
+        "label": "Prueba rangos óptimos, no promedios básicos"
+      },
+      {
+        "value": "Seguro",
+        "label": "Revisado por médicos y verificado en laboratorio"
+      },
+      {
+        "value": "1-a-1",
+        "label": "Consulta médica personalizada"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Certificado por Médico con Receta"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-microscope",
+        "title": "Precisión Intracelular",
+        "detail": "Medimos los niveles de nutrientes dentro de sus células donde realmente funcionan, en lugar de solo flotar en el suero."
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Plan Médico Práctico",
+        "detail": "No solo obtiene una pila de números confusos: nuestro médico le da un plan de tratamiento simple paso a paso."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "Mi médico dijo que mis análisis de sangre son normales, ¿por qué me siento mal?",
+      "reality": "Los laboratorios estándar usan promedios poblacionales amplios para detectar enfermedades. Puede estar en el rango 'normal' y aún tener baja energía u hormonas subóptimas. Nosotros probamos rangos de salud óptima."
+    },
+    {
+      "myth": "¿Necesito ayunar antes de que me extraigan sangre?",
+      "reality": "Para la mayoría de los paneles completos de hormonas y lípidos, sí—un simple ayuno nocturno de 8 a 12 horas (el agua está bien) le da a nuestro médico la lectura de salud más limpia y precisa."
+    },
+    {
+      "myth": "¿Es cubierta o simple la prueba de laboratorio guiada por médicos?",
+      "reality": "¡Sí! Hacemos que las pruebas de laboratorio sean fáciles y fluidas. Puede extraerse sangre aquí mismo en nuestra cómoda clínica de St. Petersburg o enviamos una orden a un Quest o LabCorp local conveniente cerca de usted."
+    }
+  ],
+  "comparison": {
+    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "mobileStats": [
+      {
+        "icon": "fa-flask",
+        "label": "Laboratorios Profundos"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Revisado por Médico"
+      },
+      {
+        "icon": "fa-bullseye",
+        "label": "Objetivo Exacto"
+      },
+      {
+        "icon": "fa-shield-alt",
+        "label": "100% Seguro"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Profundidad del Laboratorio",
+        "without": "Verificación básica de 5 marcadores",
+        "with": "Auditoría completa de biomarcadores integrales"
+      },
+      {
+        "metric": "Rangos de Referencia",
+        "without": "Normal amplio de 'población enferma'",
+        "with": "Rango estrecho de salud y energía óptima"
+      },
+      {
+        "metric": "Análisis Genético y Tóxico",
+        "without": "Nunca verificado",
+        "with": "MTHFR, metales pesados y ApoB verificados"
+      },
+      {
+        "metric": "Revisión Médica",
+        "without": "Correo electrónico automático del portal",
+        "with": "Consulta médica detallada uno a uno"
+      },
+      {
+        "metric": "Plan de Tratamiento",
+        "without": "No se da plan de acción",
+        "with": "Protocolo médico personalizado prescrito"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Panel Completo de Vitalidad y Hormonas",
+        "tag": "Más Popular",
+        "compounds": "Hormonas Completas + Tiroides + Metabólico",
+        "description": "Nuestra auditoría de laboratorio fundamental que verifica todos los principales marcadores de hormonas, tiroides y azúcar en sangre para máxima energía."
+      },
+      {
+        "name": "Auditoría de ADN MTHFR y Metilación",
+        "tag": "Genética",
+        "compounds": "Genes MTHFR + Homocisteína + Folato",
+        "description": "Descubre obstáculos genéticos de metilación para corregir fatiga, niebla mental y cambios de humor."
+      },
+      {
+        "name": "Auditoría Cardíaca y de Longevidad Corporal Total",
+        "tag": "Verificación Completa",
+        "compounds": "ApoB + Metales Pesados + Micronutrientes",
+        "description": "Prueba profunda integral para seguridad cardíaca, cargas de metales tóxicos y vitaminas intracelulares."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una orden médica para las pruebas de laboratorio avanzadas?",
+      "answer": "¡Nuestro médico licenciado proporciona la orden de laboratorio requerida! Se consultará con nuestro equipo médico, que ordena su panel personalizado basado en sus objetivos de salud y síntomas específicos."
+    },
+    {
+      "question": "¿Qué incluye el programa de laboratorio guiado por médicos?",
+      "answer": "Su programa incluye la orden de laboratorio del médico, su extracción de sangre en nuestra clínica o en un socio de laboratorio local, un análisis de laboratorio completo y una consulta médica detallada uno a uno para explicar sus resultados."
+    },
+    {
+      "question": "¿Dónde voy a extraerme sangre?",
+      "answer": "¡Puede extraerse sangre aquí mismo en nuestra cómoda clínica médica de St. Petersburg, o podemos enviar una orden a un Quest o LabCorp local conveniente cerca de usted!"
+    },
+    {
+      "question": "¿Cuánto tiempo tarda en obtener mis resultados de laboratorio?",
+      "answer": "La mayoría de los resultados rutinarios de hormonas y metabolismo regresan dentro de 3 a 5 días hábiles. Los paneles especializados genéticos o de metales pesados típicamente tardan de 7 a 10 días."
+    },
+    {
+      "question": "¿El médico explicará mis números y creará un plan de tratamiento?",
+      "answer": "¡100% sí! No se quedará adivinando. Nuestro médico le guiará a través de cada marcador en español simple y diseñará un plan de tratamiento personalizado (TRT, pérdida de peso, péptidos o vitaminas) adaptado a su cuerpo."
+    },
+    {
+      "question": "¿Cómo empiezo con las pruebas de laboratorio avanzadas?",
+      "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. ¡Nuestro médico ordenará su panel de laboratorio personalizado hoy!"
+    }
+  ]
+}

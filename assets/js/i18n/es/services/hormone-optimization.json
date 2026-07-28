@@ -1,0 +1,395 @@
+{
+  "id": "hormone-optimization",
+  "type": "core",
+  "tabLabel": "Optimización Hormonal",
+  "href": "hormone-optimization.html",
+  "title": "Siéntase Joven, Fuerte y Lleno de Energía Nuevamente",
+  "lead": "¿Cansado de sentirse agotado? Nuestros médicos licenciados equilibran sus hormonas para que pueda prosperar cada día.",
+  "description": "Cuando sus hormonas bajan, se siente cansado, aumenta de peso y pierde concentración. Nuestros médicos realizan análisis de sangre sencillos y crean un plan a su medida para devolverle su fuerza y vitalidad.",
+  "icon": "fa-syringe",
+  "delay": "0s",
+  "features": [
+    "Recupere alta energía diaria y concentración",
+    "Desarrolle músculo magro y queme grasa corporal",
+    "Disfrute de un sueño profundo y mejor estado de ánimo",
+    "100% verificado por médicos para su seguridad"
+  ],
+  "image": "assets/images/photos/trt-therapy.jpg",
+  "ctaText": "Reservar Consulta Médica",
+  "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Terapia de hormonas bioidénticas y protocolos de TRT guiados por médicos licenciados en St. Petersburg, FL.",
+  "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Energía y Fuerza</span>",
+  "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo receta médica supervisada por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve Su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Plan Hormonal",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "step1": {
+      "question": "¿Cuál es su mayor lucha diaria?",
+      "sub": "Elija lo que desea solucionar primero.",
+      "options": [
+        {
+          "value": "energy",
+          "icon": "fa-battery-quarter",
+          "title": "Baja Energía y Niebla Mental",
+          "desc": "Sentirse cansado todo el día con caídas de energía a mitad del día."
+        },
+        {
+          "value": "libido",
+          "icon": "fa-fire",
+          "title": "Bajo Impulso y Pasión",
+          "desc": "Desea recuperar la intimidad, el impulso y la confianza."
+        },
+        {
+          "value": "muscle",
+          "icon": "fa-dumbbell",
+          "title": "Peso Rebelde y Pérdida Muscular",
+          "desc": "Dificultad para ganar músculo o perder grasa abdominal."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Cuánto tiempo lleva sintiéndose así?",
+      "sub": "Ayuda a nuestro médico a elegir su plan de inicio.",
+      "options": [
+        {
+          "value": "months",
+          "icon": "fa-calendar",
+          "title": "Unos Pocos Meses",
+          "desc": "Recientemente empecé a sentirme cansado o débil."
+        },
+        {
+          "value": "years",
+          "icon": "fa-calendar-alt",
+          "title": "Unos Cuantos Años",
+          "desc": "Llevo mucho tiempo sintiéndome con baja energía."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Se ha realizado análisis hormonales recientemente?",
+      "sub": "Guía a nuestro médico para solicitar sus análisis de sangre.",
+      "options": [
+        {
+          "value": "yes",
+          "icon": "fa-vial",
+          "title": "Sí, me los he hecho",
+          "desc": "Me hice análisis de sangre en los últimos 6 meses."
+        },
+        {
+          "value": "no",
+          "icon": "fa-times",
+          "title": "Aún No",
+          "desc": "Necesito que el médico solicite mi análisis de laboratorio."
+        }
+      ]
+    },
+    "protocols": {
+      "energy": {
+        "tag": "Plan de Energía Recomendado",
+        "name": "Restablecimiento de Vitalidad y Energía Total",
+        "peptides": "Terapia Bioidéntica Recetada por Médicos",
+        "icon": "fa-battery-quarter",
+        "desc": "Un plan sencillo guiado por médicos que equilibra las hormonas energéticas de su cuerpo para que despierte renovado.",
+        "goalModifiers": {
+          "yes": "Nuestro médico revisará sus análisis de inmediato para crear su dosis de tratamiento personalizada.",
+          "no": "Solicitaremos un análisis de sangre básico rápido para verificar sus niveles antes de comenzar."
+        },
+        "social": "Más de 90 pacientes locales utilizan actualmente este plan guiado por médicos."
+      },
+      "libido": {
+        "tag": "Plan de Intimidad y Confianza",
+        "name": "Plan de Máxima Pasión e Impulso",
+        "peptides": "Terapia de Vitalidad y Hormonas Bajo Receta",
+        "icon": "fa-fire",
+        "desc": "Terapia médica dirigida para recuperar la energía íntima, el estado de ánimo y la resistencia diaria.",
+        "goalModifiers": {
+          "yes": "Revisaremos sus análisis recientes para iniciar su plan rápidamente.",
+          "no": "Nuestro médico solicitará una revisión sanguínea sencilla para precisar sus necesidades exactas."
+        },
+        "social": "73 pacientes iniciaron este plan guiado por médicos en los últimos 90 días."
+      },
+      "muscle": {
+        "tag": "Plan de Fuerza y Músculo Magro",
+        "name": "Restablecimiento de Cuerpo Fuerte y Quema de Grasa",
+        "peptides": "TRT y Soporte de Crecimiento Bioidéntico",
+        "icon": "fa-dumbbell",
+        "desc": "Le ayuda a quemar grasa abdominal rebelde, desarrollar músculo magro y recuperarse rápido tras los entrenamientos.",
+        "goalModifiers": {
+          "yes": "Sus análisis recientes ayudarán a nuestro médico a establecer su dosis inicial óptima de forma segura.",
+          "no": "Nuestro médico realizará sus análisis de sangre sencillos para verificar sus marcadores de testosterona y energía."
+        },
+        "social": "Más de 100 pacientes locales se encuentran actualmente en este protocolo de fuerza."
+      }
+    },
+    "timelineMap": {
+      "months": "8–12 semanas (Plan Médico Estándar)",
+      "years": "12–16 semanas (Plan de Restablecimiento Completo)"
+    }
+  },
+  "eligibility": {
+    "badge": "Elegibilidad de Tratamiento",
+    "headline": "¿Es Usted Candidato para la Atención Hormonal?",
+    "subheadline": "Nuestros tratamientos hormonales son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Revisamos sus análisis de sangre primero para darle la dosis exacta para su cuerpo.",
+    "items": [
+      {
+        "label": "Sentirse Agotado",
+        "detail": "Adultos que luchan con fatiga diaria, niebla mental, bajo impulso o peso rebelde."
+      },
+      {
+        "label": "Niveles Hormonales Bajos",
+        "detail": "Cualquier persona con baja testosterona, tiroides o hormonas energéticas confirmadas por análisis de sangre."
+      },
+      {
+        "label": "Suplementos Sin Éxito",
+        "detail": "Personas que probaron vitaminas de venta libre o ejercicios sin obtener resultados reales."
+      },
+      {
+        "label": "Desea Músculo y Energía",
+        "detail": "Hombres y mujeres listos para quemar grasa, mantener músculo fuerte y sentirse jóvenes nuevamente."
+      },
+      {
+        "label": "Listo para Atención Médica",
+        "detail": "Buscando un plan seguro prescrito por médicos con chequeos sanguíneos periódicos."
+      }
+    ],
+    "callout": {
+      "title": "¿Preguntas sobre su elegibilidad?",
+      "text": "Nuestro equipo médico le guiará durante su consulta."
+    }
+  },
+  "protocols": {
+    "badge": "Prescription Options",
+    "sectionHeadline": "Simple Doctor-Guided Treatments",
+    "sectionSubheadline": "Doctor-prescribed treatments tailored to your body after a medical blood check.",
+    "items": [
+      {
+        "icon": "fa-syringe",
+        "name": "Testosterone Therapy (TRT)",
+        "tag": "Most Popular",
+        "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+      },
+      {
+        "icon": "fa-venus",
+        "name": "Women's Bio-Identical HRT",
+        "tag": "For Women",
+        "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+      },
+      {
+        "icon": "fa-vial",
+        "name": "Peptide Support Boosters",
+        "tag": "Cell Recovery",
+        "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+      },
+      {
+        "icon": "fa-heart",
+        "name": "Sexual Wellness Therapy",
+        "tag": "Vitality Boost",
+        "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+      },
+      {
+        "icon": "fa-shield-alt",
+        "name": "Thyroid & Adrenal Balance",
+        "tag": "Energy Core",
+        "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+      },
+      {
+        "icon": "fa-flask",
+        "name": "Doctor Blood Check",
+        "tag": "Safety First",
+        "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+      }
+    ]
+  },
+  "science": {
+    "badge": "How It Works",
+    "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
+    "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+    "bullets": [
+      "Prescribed by real licensed medical doctors",
+      "100% natural bio-identical matching your body",
+      "Regular blood checks to ensure complete safety"
+    ],
+    "stats": [
+      {
+        "value": "9 out of 10",
+        "label": "Feel higher energy in 6 weeks"
+      },
+      {
+        "value": "Safe",
+        "label": "Doctor supervised & lab checked"
+      },
+      {
+        "value": "Simple",
+        "label": "Tailored to your bloodwork"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Rx Doctor Certified"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-vial",
+        "title": "Based On Your Bloodwork",
+        "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+      },
+      {
+        "icon": "fa-shield-alt",
+        "title": "Natural Bio-Identical Match",
+        "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "Are these synthetic steroids?",
+      "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+    },
+    {
+      "myth": "Do I have to stay on this forever?",
+      "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+    },
+    {
+      "myth": "Is doctor-guided hormone care safe?",
+      "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+    }
+  ],
+  "comparison": {
+    "headline": "Doctor-Guided Care vs. Doing It Alone",
+    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "ctaText": "Call Our Clinic Today",
+    "mobileStats": [
+      {
+        "icon": "fa-bolt",
+        "label": "High Energy"
+      },
+      {
+        "icon": "fa-brain",
+        "label": "Clear Focus"
+      },
+      {
+        "icon": "fa-dumbbell",
+        "label": "Lean Muscle"
+      },
+      {
+        "icon": "fa-moon",
+        "label": "Deep Sleep"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Daily Energy",
+        "without": "Tired all day & crashes",
+        "with": "High, steady energy all day"
+      },
+      {
+        "metric": "Muscle & Body Fat",
+        "without": "Gains fat, loses muscle",
+        "with": "Burns fat & keeps strong muscle"
+      },
+      {
+        "metric": "Mental Clarity",
+        "without": "Brain fog & slow focus",
+        "with": "Sharp, clear thinking"
+      },
+      {
+        "metric": "Sleep Quality",
+        "without": "Wakes up tired",
+        "with": "Deep, restorative sleep"
+      },
+      {
+        "metric": "Medical Safety",
+        "without": "Unmonitored / OTC pills",
+        "with": "Doctor-prescribed & blood checked"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Male Performance Plan",
+        "tag": "Most Popular",
+        "compounds": "TRT + Recovery Peptide Stack",
+        "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+      },
+      {
+        "name": "Women's Balance Plan",
+        "tag": "For Women",
+        "compounds": "Estrogen + Progesterone + Low-Dose T",
+        "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+      },
+      {
+        "name": "Complete Longevity Reset Plan",
+        "tag": "Full Audit",
+        "compounds": "Full Hormone Panel + Thyroid Support",
+        "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una receta médica para la terapia hormonal?",
+      "answer": "Sí. Todas las terapias hormonales en nuestra clínica requieren evaluación médica, análisis de sangre y una receta emitida por un médico licenciado."
+    },
+    {
+      "question": "¿Qué incluye el programa hormonal guiado por médicos?",
+      "answer": "Incluye consultas médicas, análisis periódicos de biomarcadores y medicamentos personalizados de grado farmacéutico."
+    },
+    {
+      "question": "¿Qué tan rápido sentiré resultados con la terapia hormonal?",
+      "answer": "Muchos pacientes notan mayor claridad mental y mejor sueño en 2 a 3 semanas. Los cambios en composición corporal suelen ser visibles entre el segundo y tercer mes."
+    },
+    {
+      "question": "¿Es segura la terapia hormonal tanto para hombres como para mujeres?",
+      "answer": "Sí. Diseñamos protocolos específicos según el sexo y la fisiología individual, monitoreando continuamente sus niveles en sangre."
+    }
+  ],
+  "treatments": [
+    {
+      "title": "Terapia de Testosterona (TRT)",
+      "badge": "Más Popular",
+      "desc": "Tratamiento de testosterona calibrado por médicos para hombres con baja energía, niebla mental o pérdida muscular. Rutina semanal sencilla bajo supervisión médica.",
+      "linkText": "Explorar Programa TRT"
+    },
+    {
+      "title": "TRH Bioidéntica para Mujeres",
+      "badge": "Para Mujeres",
+      "desc": "Equilibrio natural de estrógenos y progesterona bioidéntica para mujeres que manejan cambios de humor, sudores nocturnos o baja energía.",
+      "linkText": "Explorar TRH Femenina"
+    },
+    {
+      "title": "Impulsores de Péptidos",
+      "badge": "Recuperación Celular",
+      "desc": "Impulsores de péptidos especiales combinados con su plan para acelerar la recuperación, apoyar la salud articular y mejorar la reparación celular.",
+      "linkText": "Explorar Péptidos"
+    },
+    {
+      "title": "Terapia de Bienestar Sexual",
+      "badge": "Aumento de Vitalidad",
+      "desc": "Tratamientos bajo receta diseñados para restaurar el impulso saludable, el flujo sanguíneo y la confianza íntima para hombres y mujeres.",
+      "linkText": "Explorar Salud Íntima"
+    },
+    {
+      "title": "Equilibrio Tiroideo y Adrenal",
+      "badge": "Núcleo de Energía",
+      "desc": "Soporte tiroideo y adrenal completo para corregir caídas de energía a mitad del día y mantener fuerte el motor energético de su cuerpo.",
+      "linkText": "Explorar Cuidado Tiroideo"
+    },
+    {
+      "title": "Chequeo Médico de Sangre",
+      "badge": "Seguridad Primero",
+      "desc": "Análisis de laboratorio sencillos para que su médico verifique sus niveles hormonales exactos y personalice su dosis inicial de forma segura.",
+      "linkText": "Ordenar Análisis de Sangre"
+    }
+  ],
+  "disclosures": {
+    "title": "Supervisión Clínica y Seguridad Médica",
+    "text": "En Optimal Vitality Institute operamos bajo los estándares más estrictos de seguridad médica y cumplimiento de licencias en el estado de Florida. Todos los tratamientos son prescriptos y monitoreados por profesionales de la salud licenciados tras una evaluación diagnóstica rigurosa.",
+    "collaborationTitle": "Colaboración Médica",
+    "collaborationText": "Cada protocolo es supervisado por nuestro Director Médico Principal. Nuestros profesionales licenciados operan bajo acuerdos colaborativos activos, garantizando una revisión multidisciplinaria de sus marcadores de salud.",
+    "diagnosticTitle": "Mandato Diagnóstico",
+    "diagnosticText": "Ninguna terapia hormonal o de péptidos se entrega sin análisis de laboratorio previos exhaustivos, revisión de historial médico y una relación médico-paciente activa.",
+    "trademarkTitle": "Deslinde de Marcas Registradas y Medicamentos con Receta",
+    "trademarkText": "Los medicamentos GLP-1 (incluyendo Semaglutida y Tirzepatida) son fármacos bajo receta que requieren consulta con un profesional médico licenciado. Ozempic®, Wegovy®, Mounjaro® y Zepbound® son marcas registradas de sus respectivos dueños (Novo Nordisk y Eli Lilly). Optimal Vitality Institute es una práctica médica independiente no afiliada a dichas empresas."
+  }
+}

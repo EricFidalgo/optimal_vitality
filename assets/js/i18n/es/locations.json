@@ -1,0 +1,54 @@
+{
+  "stPete": {
+    "name": "Optimal Vitality Institute — St. Petersburg",
+    "description": "Clínica de TRT dirigida por médicos, pérdida de peso médica (Semaglutida/Tirzepatida), estética avanzada y terapia de péptidos en St. Petersburg, Florida.",
+    "url": "https://oviwellness.com/st-pete.html",
+    "areaServed": [
+      "St. Petersburg",
+      "Tampa",
+      "Clearwater",
+      "Condado de Pinellas",
+      "Condado de Hillsborough"
+    ],
+    "heroHeadline": "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
+    "heroSubheadline": "Pierda peso no deseado, siéntase 10 años más joven y recupere su energía diaria. Guiado por médicos licenciados de Florida con análisis de sangre sencillos y tratamientos comprobados.",
+    "heroCTA": "Reservar Consulta",
+    "advantageHeadline": "Médicos Reales. Seguridad Real. Resultados Reales.",
+    "advantageText": "Cuidar su cuerpo debe ser sencillo y seguro. Nuestra clínica en St. Petersburg está dirigida por médicos licenciados. Revisamos sus análisis de sangre primero, creamos un plan personalizado y lo guiamos en cada paso. Todos los tratamientos cumplen con los estándares de la junta médica de Florida y la certificación LegitScript.",
+    "advantageImage": "assets/images/photos/peptide-therapy.jpg",
+    "advantageBullets": [
+      "Médicos Licenciados en Florida",
+      "Seguro y Certificado por LegitScript",
+      "Análisis de Sangre Previos al Tratamiento",
+      "Compuestos de Grado Farmacéutico"
+    ],
+    "treatmentsHeadline": "Programas Sencillos Respaldados por Médicos",
+    "treatmentsSubheadline": "Elija el programa que se ajuste a sus metas. Cada plan incluye atención médica directa y revisiones de progreso."
+  },
+  "tampa": {
+    "name": "Optimal Vitality Institute — Clínica Tampa",
+    "description": "Clínica de TRT dirigida por médicos, pérdida de peso médica, péptidos y estética en la bahía de Tampa, con oficina física en St. Petersburg.",
+    "url": "https://oviwellness.com/tampa.html",
+    "areaServed": [
+      "Tampa",
+      "St. Petersburg",
+      "Clearwater",
+      "Condado de Hillsborough",
+      "Condado de Pinellas"
+    ],
+    "heroHeadline": "OVI Wellness <br><span class='text-primary'>Clínica Tampa</span>",
+    "heroSubheadline": "Pérdida de peso fácil, TRT personalizada y tratamientos antienvejecimiento para pacientes de Tampa. Visite nuestra clínica en St. Pete o consulte a su médico en línea.",
+    "heroCTA": "Reservar Consulta",
+    "advantageHeadline": "Atención Médica de Primer Nivel para Pacientes de Tampa",
+    "advantageText": "¿Vive en Tampa? Nuestra oficina médica está a solo unos minutos cruzando el puente en St. Pete. Hágase sus análisis de sangre en persona, conozca a su médico o reciba atención por telesalud desde su hogar.",
+    "advantageImage": "assets/images/photos/peptide-therapy.jpg",
+    "advantageBullets": [
+      "Médicos Licenciados en Florida",
+      "Normas Certificadas por LegitScript",
+      "Consultas Presenciales y Por Telesalud",
+      "Medicamentos Seguros Cumpliendo la FDA"
+    ],
+    "treatmentsHeadline": "Nuestros Programas Más Populares en Tampa",
+    "treatmentsSubheadline": "Elija su protocolo. Comience con una rápida consulta médica y un panel de sangre personalizado."
+  }
+}

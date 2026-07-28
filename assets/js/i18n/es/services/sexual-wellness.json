@@ -1,0 +1,353 @@
+{
+  "id": "sexual-wellness",
+  "type": "additional",
+  "tabLabel": "Bienestar Sexual",
+  "href": "sexual-wellness.html",
+  "title": "Recupere la Pasión, el Impulso y la Intimidad",
+  "lead": "Siéntase seguro, fuerte y profundamente conectado de nuevo con atención íntima guiada por médicos.",
+  "description": "La edad y el estrés pueden reducir el impulso y el rendimiento físico. Nuestros médicos licenciados usan PRP natural (P-Shot y O-Shot) y equilibrio hormonal personalizado para recuperar su pasión y rendimiento.",
+  "icon": "fa-heart",
+  "delay": "-4s",
+  "features": [
+    "Recupere el impulso y la resistencia naturales",
+    "P-Shot para hombres y O-Shot para mujeres",
+    "100% prescrito por médicos y discreto",
+    "100% verificado por médicos para su seguridad"
+  ],
+  "image": "assets/images/photos/team-group.avif",
+  "ctaText": "Reserve su Consulta Médica",
+  "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
+  "pageDescription": "Protocolos de bienestar sexual guiados por médicos en St. Petersburg, FL. P-Shot, O-Shot, PT-141 y equilibrio hormonal supervisados por proveedores médicos licenciados.",
+  "heroHeadline": "Recupere Su<br><span class=\"text-primary\">Impulso Íntimo</span>",
+  "heroSubheadline": "Protocolos de Bienestar Sexual e Intimidad bajo receta médica supervisados por Médicos Certificados en St. Petersburg, FL.",
+  "heroCTA": "Reserve su Cita Médica Hoy",
+  "quiz": {
+    "badge": "Evaluación Rápida de 1 Minuto",
+    "headline": "Encuentre Su Mejor Plan de Intimidad",
+    "subheadline": "Responda 3 preguntas rápidas para que nuestros médicos le ayuden a elegir el plan adecuado.",
+    "step1": {
+      "question": "¿Cuál es su principal objetivo ahora mismo?",
+      "sub": "Elija lo que desea mejorar primero.",
+      "options": [
+        {
+          "value": "men",
+          "icon": "fa-mars",
+          "title": "Rendimiento e Impulso Masculino",
+          "desc": "Quiero erecciones más fuertes, resistencia y energía juvenil."
+        },
+        {
+          "value": "women",
+          "icon": "fa-venus",
+          "title": "Sensación y Humor Femenino",
+          "desc": "Quiero mayor deseo, mejor lubricación y excitación."
+        },
+        {
+          "value": "balance",
+          "icon": "fa-scale-balanced",
+          "title": "Equilibrio Total de Pareja",
+          "desc": "Optimización de hormonas e impulso para ambos compañeros."
+        }
+      ]
+    },
+    "step2": {
+      "question": "¿Cuánto tiempo ha notado menor impulso o rendimiento?",
+      "sub": "Ayuda a nuestro médico a elegir su plan inicial.",
+      "options": [
+        {
+          "value": "months",
+          "icon": "fa-calendar",
+          "title": "Unos Pocos Meses",
+          "desc": "Declive reciente debido al estrés o la edad."
+        },
+        {
+          "value": "years",
+          "icon": "fa-calendar-alt",
+          "title": "Varios Años",
+          "desc": "Bajo impulso a largo plazo o frustración íntima."
+        }
+      ]
+    },
+    "step3": {
+      "question": "¿Ha probado tratamientos de intimidad antes?",
+      "sub": "Ayuda a nuestro médico a orientar su atención.",
+      "options": [
+        {
+          "value": "no",
+          "icon": "fa-times",
+          "title": "Primera Vez",
+          "desc": "Nunca he probado atención clínica de intimidad antes."
+        },
+        {
+          "value": "yes",
+          "icon": "fa-check",
+          "title": "Sí, Lo He Intentado",
+          "desc": "He probado pastillas o suplementos sin éxito duradero."
+        }
+      ]
+    },
+    "protocols": {
+      "men": {
+        "tag": "Plan Recomendado para Hombres",
+        "name": "El Plan de Máximo Rendimiento Masculino (P-Shot + TRT)",
+        "peptides": "Prescripción de P-Shot + Soporte Hormonal",
+        "icon": "fa-mars",
+        "desc": "Combina factores de crecimiento naturales de PRP con equilibrio hormonal médico para restaurar el fuerte flujo sanguíneo, la resistencia y la confianza.",
+        "goalModifiers": {
+          "no": "Plan inicial con una evaluación médica cómoda y panel de sangre.",
+          "yes": "Protocolo avanzado diseñado para superar las pastillas OTC débiles y ofrecer resultados clínicos reales."
+        },
+        "social": "Más de 80 pacientes masculinos locales lograron resultados sobresalientes con este plan."
+      },
+      "women": {
+        "tag": "Plan Recomendado para Mujeres",
+        "name": "El Restablecimiento de Intimidad Femenina (O-Shot + TRH)",
+        "peptides": "Prescripción de O-Shot + TRH Bioidéntica",
+        "icon": "fa-venus",
+        "desc": "Restaura la lubricación natural, la sensibilidad nerviosa y el deseo íntimo usando los propios factores de crecimiento naturales de su cuerpo.",
+        "goalModifiers": {
+          "no": "Plan inicial suave supervisado por médicos compasivos.",
+          "yes": "Protocolo de refuerzo dirigido para excitación celular profunda y satisfacción duradera."
+        },
+        "social": "74 pacientes femeninas restauraron su confianza íntima con este protocolo."
+      },
+      "balance": {
+        "tag": "Plan de Restablecimiento de Pareja",
+        "name": "Pila Total de Pasión y Sinergia Hormonal",
+        "peptides": "Prescripción de PT-141 / Kisspeptina + Paneles Hormonales",
+        "icon": "fa-heart",
+        "desc": "Pila de intimidad integral diseñada para desencadenar señales naturales de deseo cerebral y aumentar la energía física.",
+        "goalModifiers": {
+          "no": "Control completo de salud basal para alinear los niveles de energía y pasión de ambos compañeros.",
+          "yes": "Terapia de alta potencia construida para revivir la intimidad profunda y la resistencia."
+        },
+        "social": "Más de 65 parejas han renovado su chispa con este plan guiado por médicos."
+      }
+    },
+    "timelineMap": {
+      "months": "4–6 semanas (Plan de Seguimiento Rápido)",
+      "years": "8–12 semanas (Plan de Restablecimiento Completo)"
+    }
+  },
+  "eligibility": {
+    "badge": "¿Para Quién Es?",
+    "headline": "¿Es Usted Candidato para Atención de Bienestar Íntimo?",
+    "intro": "Nuestros tratamientos de bienestar sexual son planes seguros y efectivos bajo receta médica supervisados por médicos licenciados. Evaluamos su salud en un ambiente clínico privado y respetuoso.",
+    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su consulta.",
+    "ctaText": "Llámenos Ahora para Verificar Elegibilidad",
+    "items": [
+      {
+        "label": "Bajo Impulso y Deseo",
+        "detail": "Hombres y mujeres que sienten un declive en la intimidad natural, la pasión o la energía."
+      },
+      {
+        "label": "Problemas de Erección y Resistencia",
+        "detail": "Hombres con dificultades en el flujo sanguíneo, mantener la firmeza o ansiedad de rendimiento."
+      },
+      {
+        "label": "Sequedad y Baja Sensación",
+        "detail": "Mujeres que experimentan baja excitación, incomodidad o sensibilidad íntima reducida."
+      },
+      {
+        "label": "Pastillas Azules / OTC Sin Éxito",
+        "detail": "Cualquiera cansado de suplementos de venta libre o pastillas que causan malos efectos secundarios."
+      },
+      {
+        "label": "Listo para Atención Médica Privada",
+        "detail": "Buscando tratamientos seguros y discretos administrados por médicos en un consultorio privado."
+      }
+    ]
+  },
+  "protocols": {
+    "badge": "Opciones bajo Receta",
+    "sectionHeadline": "Tratamientos Sencillos Guiados por Médicos",
+    "sectionSubheadline": "Opciones de intimidad prescritas por médicos adaptadas a su cuerpo en una clínica médica privada.",
+    "items": [
+      {
+        "icon": "fa-mars",
+        "name": "P-Shot (Inyección Priapus)",
+        "tag": "Para Hombres",
+        "description": "Tratamiento de PRP natural para hombres para mejorar el flujo sanguíneo, la firmeza, la salud del tejido y la confianza íntima."
+      },
+      {
+        "icon": "fa-venus",
+        "name": "O-Shot (Inyección de Orgasmo)",
+        "tag": "Para Mujeres",
+        "description": "Tratamiento de PRP natural para mujeres que restaura la sensibilidad nerviosa, la lubricación natural y la excitación intensa."
+      },
+      {
+        "icon": "fa-syringe",
+        "name": "TRT Médico para Hombres",
+        "tag": "Potenciador de Resistencia",
+        "description": "Equilibrio de testosterona guiado por médicos para reconstruir la energía diaria, la fuerza muscular y la resistencia íntima."
+      },
+      {
+        "icon": "fa-heart",
+        "name": "TRH Bioidéntica para Mujeres",
+        "tag": "Restablecimiento Hormonal",
+        "description": "Equilibrio natural de estrógenos y progesterona bioidéntica para corregir cambios de humor, sudores nocturnos y bajo impulso."
+      },
+      {
+        "icon": "fa-brain",
+        "name": "Terapia de Deseo PT-141",
+        "tag": "Señal Cerebral",
+        "description": "Tratamiento de péptido estudiado por la FDA que actúa directamente sobre las vías centrales del cerebro para desencadenar el deseo natural."
+      },
+      {
+        "icon": "fa-vial",
+        "name": "Chequeo Médico de Sangre",
+        "tag": "Seguridad Primero",
+        "description": "Análisis de laboratorio simple para verificar sus marcadores hormonales exactos y garantizar un tratamiento seguro y efectivo."
+      }
+    ]
+  },
+  "science": {
+    "badge": "Cómo Funciona",
+    "headline": "Por Qué Funciona Cuando<br><span class=\"text-primary\">las Pastillas Azules Fallan</span>",
+    "body": "Las pastillas solo fuerzan temporalmente el flujo sanguíneo y a menudo causan dolores de cabeza o presión arterial alta. Nuestros tratamientos guiados por médicos reparan los tejidos subyacentes y equilibran las hormonas naturales. Usando factores de crecimiento naturales (PRP) y señales de deseo cerebral (PT-141), reconstruimos la resistencia, sensibilidad e impulso natural a largo plazo.",
+    "bullets": [
+      "Prescrito y administrado por médicos licenciados",
+      "100% compuestos bioidénticos naturales sin rellenos sintéticos",
+      "Atención médica privada, respetuosa y discreta"
+    ],
+    "stats": [
+      {
+        "value": "Discreto",
+        "label": "Atención médica privada uno a uno"
+      },
+      {
+        "value": "Seguro",
+        "label": "Supervisado por médicos y analizado en laboratorio"
+      },
+      {
+        "value": "Natural",
+        "label": "Usa los factores de crecimiento de su cuerpo"
+      },
+      {
+        "icon": "fa-user-md",
+        "label": "Certificado por Médico con Receta"
+      }
+    ],
+    "cards": [
+      {
+        "icon": "fa-microscope",
+        "title": "Reparación Natural de Tejidos con PRP",
+        "detail": "El P-Shot y el O-Shot usan factores de crecimiento concentrados de su propia sangre para restaurar los vasos sanguíneos y la sensibilidad nerviosa."
+      },
+      {
+        "icon": "fa-bullseye",
+        "title": "Señalización Natural de Deseo Cerebral",
+        "detail": "Péptidos como PT-141 actúan sobre los receptores cerebrales centrales para encender la pasión natural sin estrés cardiovascular."
+      }
+    ]
+  },
+  "myths": [
+    {
+      "myth": "¿Son dolorosas las inyecciones de intimidad?",
+      "reality": "No. Nuestros médicos aplican una crema anestésica tópica fuerte de grado médico antes de cualquier procedimiento. La mayoría de los pacientes sienten solo una leve presión y regresan inmediatamente a las actividades normales."
+    },
+    {
+      "myth": "¿Los tratamientos de intimidad solo funcionan para hombres?",
+      "reality": "¡Para nada! Las mujeres también sufren cambios hormonales y tisulares. El O-Shot y la TRH bioidéntica restauran la lubricación, la sensación y la excitación para las mujeres de forma natural."
+    },
+    {
+      "myth": "¿Es segura la atención de intimidad guiada por médicos?",
+      "reality": "Sí. Todos los tratamientos usan factores de crecimiento naturales o compuestos estudiados por la FDA administrados directamente por médicos licenciados bajo estrictas pautas de salud de Florida."
+    }
+  ],
+  "comparison": {
+    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
+    "subheadline": "Vea por qué la supervisión médica le da resultados mejores, más seguros y más duraderos.",
+    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "mobileStats": [
+      {
+        "icon": "fa-user-md",
+        "label": "Guiado por Médico"
+      },
+      {
+        "icon": "fa-heart",
+        "label": "Alto Impulso"
+      },
+      {
+        "icon": "fa-shield-alt",
+        "label": "Seguro y Natural"
+      },
+      {
+        "icon": "fa-clock",
+        "label": "Resultados Duraderos"
+      }
+    ],
+    "rows": [
+      {
+        "metric": "Cómo Funciona",
+        "without": "Máscara temporal de pastilla",
+        "with": "Reconstruye tejidos y equilibra hormonas"
+      },
+      {
+        "metric": "Riesgo de Efectos Secundarios",
+        "without": "Dolores de cabeza y subidas de presión",
+        "with": "100% seguro y biocompatible"
+      },
+      {
+        "metric": "Sensación",
+        "without": "Sin cambios o entumecido",
+        "with": "Sensibilidad nerviosa y pasión restauradas"
+      },
+      {
+        "metric": "Supervisión Médica",
+        "without": "Pastillas de gasolinera / pedidos web",
+        "with": "Consulta y laboratorio de médico licenciado"
+      },
+      {
+        "metric": "Resultado a Largo Plazo",
+        "without": "Se desvanece en horas",
+        "with": "Rendimiento natural duradero"
+      }
+    ],
+    "stacks": [
+      {
+        "name": "Pila de Máxima Intimidad Masculina",
+        "tag": "Más Popular",
+        "compounds": "P-Shot + Protocolo de TRT Médico",
+        "description": "Nuestro mejor protocolo masculino combinando el P-Shot para el flujo sanguíneo con TRT para la resistencia y energía."
+      },
+      {
+        "name": "Pila de Vitalidad y Sensación Femenina",
+        "tag": "Para Mujeres",
+        "compounds": "O-Shot + TRH Bioidéntica",
+        "description": "Restablecimiento completo de intimidad femenina que restaura la sensibilidad nerviosa, la lubricación y el equilibrio emocional."
+      },
+      {
+        "name": "Potenciador de Pasión y Deseo de Pareja",
+        "tag": "Restablecimiento del Deseo",
+        "compounds": "PT-141 + Control Hormonal",
+        "description": "Terapia de péptido de deseo cerebral central diseñada para encender la pasión y resistencia espontáneas."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Necesito una consulta médica para los tratamientos de bienestar sexual?",
+      "answer": "Sí. Todos los tratamientos de P-Shot, O-Shot, PT-141 y hormonas requieren una consulta médica. Hablará privadamente con nuestro médico licenciado quien revisa su salud antes de prescribir un plan seguro y personalizado."
+    },
+    {
+      "question": "¿Qué incluye el programa de intimidad guiado por médicos?",
+      "answer": "Su programa incluye una consulta privada uno a uno con un médico certificado, análisis de sangre basal, su tratamiento personalizado en consultorio con anestesia bajo receta y seguimientos continuos."
+    },
+    {
+      "question": "¿Son dolorosos los tratamientos de P-Shot y O-Shot?",
+      "answer": "¡Para nada! Aplicamos crema anestésica de grado médico fuerte antes de cada tratamiento. La mayoría de los pacientes sienten solo una leve presión y vuelven directamente al trabajo o actividades normales el mismo día."
+    },
+    {
+      "question": "¿Qué tan rápido notaré resultados con la terapia de intimidad?",
+      "answer": "Muchos pacientes notan mejora en sensibilidad, flujo sanguíneo y deseo dentro de 2 a 4 semanas. La regeneración completa del tejido y los resultados máximos se desarrollan durante 8 a 12 semanas."
+    },
+    {
+      "question": "¿Son estos tratamientos privados y confidenciales?",
+      "answer": "100% sí. Su privacidad es nuestra máxima prioridad. Todas las consultas y tratamientos tienen lugar en habitaciones privadas en nuestra clínica discreta de St. Petersburg."
+    },
+    {
+      "question": "¿Cómo empiezo con la atención de bienestar sexual?",
+      "answer": "¡Empezar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Reserve su Consulta Médica' en línea. Nuestro médico responderá todas sus preguntas con total confidencialidad y comenzará su plan."
+    }
+  ]
+}

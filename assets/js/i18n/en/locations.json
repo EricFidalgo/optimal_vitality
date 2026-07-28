@@ -1,0 +1,170 @@
+{
+  "stPete": {
+    "name": "Optimal Vitality Institute — St. Petersburg",
+    "description": "Doctor-led TRT clinic, medical weight loss (Semaglutide/Tirzepatide), advanced aesthetics, and peptide therapy in St. Petersburg, Florida.",
+    "url": "https://oviwellness.com/st-pete.html",
+    "areaServed": [
+      "St. Petersburg",
+      "Tampa",
+      "Clearwater",
+      "Pinellas County",
+      "Hillsborough County"
+    ],
+    "heroHeadline": "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
+    "heroSubheadline": "Drop unwanted weight, feel 10 years younger, and get your daily energy back. Guided by licensed Florida doctors with simple blood tests and safe, proven treatments.",
+    "heroCTA": "Book Consultation",
+    "advantageHeadline": "Real Doctors. Real Safety. Real Results.",
+    "advantageText": "Taking care of your body should be simple and safe. Our clinic in St. Petersburg is run by licensed medical doctors. We check your blood work first, make a custom plan just for you, and guide you every step of the way. All treatments follow strict Florida medical board guidelines and LegitScript compliance standards.",
+    "advantageImage": "assets/images/photos/peptide-therapy.jpg",
+    "advantageBullets": [
+      "Licensed Florida Medical Doctors",
+      "LegitScript Compliant & Safe",
+      "Blood Tests Before Treatment",
+      "Pharmacy-Grade Compounds"
+    ],
+    "treatmentsHeadline": "Simple Doctor-Backed Programs",
+    "treatmentsSubheadline": "Choose the program that fits your goals. Every plan includes direct doctor care and progress check-ups.",
+    "treatmentsGrid": [
+      {
+        "title": "Hormone Optimization (TRT)",
+        "icon": "fa-syringe",
+        "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+        "link": "services/hormone-optimization.html",
+        "linkText": "Explore TRT Program"
+      },
+      {
+        "title": "Medical Weight Loss",
+        "icon": "fa-weight-scale",
+        "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+        "link": "services/glp-1therapies.html",
+        "linkText": "Explore Weight Loss"
+      },
+      {
+        "title": "Peptide Therapy",
+        "icon": "fa-vial",
+        "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
+        "link": "services/peptides.html",
+        "linkText": "Explore Peptides"
+      },
+      {
+        "title": "Regenerative Medicine",
+        "icon": "fa-heartbeat",
+        "desc": "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+        "link": "services/regenerative-medicine.html",
+        "linkText": "Explore Regeneration"
+      },
+      {
+        "title": "Sexual Wellness",
+        "icon": "fa-heart",
+        "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+        "link": "services/sexual-wellness.html",
+        "linkText": "Explore Sexual Wellness"
+      },
+      {
+        "title": "IV Nutrient Hydration",
+        "icon": "fa-tint",
+        "desc": "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+        "link": "services/iv-wellness.html",
+        "linkText": "Explore IV Drips"
+      },
+      {
+        "title": "Detoxification Protocols",
+        "icon": "fa-leaf",
+        "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
+        "link": "services/detox.html",
+        "linkText": "Explore Detox"
+      },
+      {
+        "title": "Advanced Diagnostic Labs",
+        "icon": "fa-flask",
+        "desc": "In-depth clinical panels including MTHFR, micronutrient profiles, heavy metals, and advanced cardiac biomarkers.",
+        "link": "services/advanced-labs.html",
+        "linkText": "Explore Labs"
+      }
+    ]
+  },
+  "tampa": {
+    "name": "Optimal Vitality Institute — Tampa Clinic",
+    "description": "Doctor-led TRT clinic, medical weight loss, peptides, and aesthetics serving Tampa Bay, with physical office located in St. Petersburg.",
+    "url": "https://oviwellness.com/tampa.html",
+    "areaServed": [
+      "Tampa",
+      "St. Petersburg",
+      "Clearwater",
+      "Hillsborough County",
+      "Pinellas County"
+    ],
+    "heroHeadline": "OVI Wellness <br><span class='text-primary'>Tampa Clinic</span>",
+    "heroSubheadline": "Easy weight loss, custom TRT, and anti-aging treatments for Tampa patients. Visit our physical clinic in nearby St. Pete or talk to your doctor online.",
+    "heroCTA": "Book Consultation",
+    "advantageHeadline": "Top Medical Care for Tampa Patients",
+    "advantageText": "Living in Tampa? Our physical medical office is just a quick drive across the bridge in St. Pete. Get your blood drawn in person, meet your doctor, or get telehealth care right from home. Licensed doctors, full blood work review, and 100% legal, certified protocols.",
+    "advantageImage": "assets/images/photos/peptide-therapy.jpg",
+    "advantageBullets": [
+      "Licensed Florida Medical Doctors",
+      "LegitScript Certified Standards",
+      "In-Person & Telehealth Visits",
+      "Safe, FDA-Compliant Medicine"
+    ],
+    "treatmentsHeadline": "Our Most Popular Tampa Programs",
+    "treatmentsSubheadline": "Choose your protocol. Start with a quick doctor consult and personalized blood panel.",
+    "treatmentsGrid": [
+      {
+        "title": "Hormone Optimization (TRT)",
+        "icon": "fa-syringe",
+        "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+        "link": "services/hormone-optimization.html",
+        "linkText": "Explore TRT Program"
+      },
+      {
+        "title": "Medical Weight Loss",
+        "icon": "fa-weight-scale",
+        "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+        "link": "services/glp-1therapies.html",
+        "linkText": "Explore Weight Loss"
+      },
+      {
+        "title": "Peptide Therapy",
+        "icon": "fa-vial",
+        "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (BPC-157, TB-500, Ipamorelin).",
+        "link": "services/peptides.html",
+        "linkText": "Explore Peptides"
+      },
+      {
+        "title": "Regenerative Medicine",
+        "icon": "fa-heartbeat",
+        "desc": "Harness exosome therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+        "link": "services/regenerative-medicine.html",
+        "linkText": "Explore Regeneration"
+      },
+      {
+        "title": "Sexual Wellness",
+        "icon": "fa-heart",
+        "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+        "link": "services/sexual-wellness.html",
+        "linkText": "Explore Sexual Wellness"
+      },
+      {
+        "title": "IV Nutrient Hydration",
+        "icon": "fa-tint",
+        "desc": "Deliver NAD+, Glutathione, and essential hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+        "link": "services/iv-wellness.html",
+        "linkText": "Explore IV Drips"
+      },
+      {
+        "title": "Detoxification Protocols",
+        "icon": "fa-leaf",
+        "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
+        "link": "services/detox.html",
+        "linkText": "Explore Detox"
+      },
+      {
+        "title": "Advanced Diagnostic Labs",
+        "icon": "fa-flask",
+        "desc": "In-depth clinical panels including MTHFR, micronutrient profiles, heavy metals, and advanced cardiac biomarkers.",
+        "link": "services/advanced-labs.html",
+        "linkText": "Explore Labs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "contact": {
+    "phone": "(727) 476-8966",
+    "fax": "(727) 475-8004",
+    "email": "info@oviwellness.com",
+    "socials": {
+      "instagram": {
+        "handle": "@oviwellness_",
+        "url": "https://instagram.com/oviwellness_"
+      },
+      "facebook": {
+        "handle": "@oviwellness_",
+        "url": "https://www.facebook.com/profile.php?id=61590423610288"
+      },
+      "tiktok": {
+        "handle": "@oviwellness_",
+        "url": "https://www.tiktok.com/@oviwellness_"
+      }
+    },
+    "address": {
+      "street": "5029 Central Ave,",
+      "city": "St. Petersburg",
+      "state": "FL",
+      "zip": "33710"
+    },
+    "hours": [
+      {
+        "days": "Mon - Fri",
+        "time": "9:00 AM - 5:00 PM"
+      },
+      {
+        "days": "Sat - Sun",
+        "time": "Closed"
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "label": "Treatments",
+      "href": "#",
+      "dropdown": [
+        {
+          "label": "Hormone Optimization",
+          "href": "hormone-optimization.html",
+          "icon": "fa-syringe"
+        },
+        {
+          "label": "Medical Weight Loss",
+          "href": "glp-1therapies.html",
+          "icon": "fa-weight-scale"
+        },
+        {
+          "label": "Peptide Therapy",
+          "href": "peptides.html",
+          "icon": "fa-vial"
+        },
+        {
+          "label": "Regenerative Medicine",
+          "href": "regenerative-medicine.html",
+          "icon": "fa-heartbeat"
+        },
+        {
+          "label": "Sexual Wellness",
+          "href": "sexual-wellness.html",
+          "icon": "fa-heart"
+        },
+        {
+          "label": "IV & Wellness",
+          "href": "iv-wellness.html",
+          "icon": "fa-tint"
+        },
+        {
+          "label": "Detox Protocols",
+          "href": "detox.html",
+          "icon": "fa-leaf"
+        },
+        {
+          "label": "Advanced Labs",
+          "href": "advanced-labs.html",
+          "icon": "fa-flask"
+        }
+      ]
+    },
+    {
+      "label": "Team",
+      "href": "team.html"
+    },
+    {
+      "label": "FAQs",
+      "href": "index.html#faqs"
+    },
+    {
+      "label": "The Science",
+      "href": "blog.html"
+    }
+  ],
+  "marquee": [
+    {
+      "label": "Doctor-Led Protocols",
+      "icon": "fa-user-md"
+    },
+    {
+      "label": "St. Petersburg, FL",
+      "icon": "fa-map-marker-alt"
+    },
+    {
+      "label": "Licensed Medical Clinic",
+      "icon": "fa-shield-alt"
+    },
+    {
+      "label": "HIPAA Compliant",
+      "icon": "fa-user-shield"
+    },
+    {
+      "label": "Tailored Protocols",
+      "icon": "fa-clipboard-user"
+    }
+  ],
+  "testimonials": [
+    {
+      "initials": "JT",
+      "name": "James T.",
+      "tag": "TRT PATIENT",
+      "quote": "The TRT program completely changed my life. Within two months, my brain fog lifted and my energy levels are back to where they were in my 20s. The medical team here is incredibly thorough and precise with the bloodwork."
+    },
+    {
+      "initials": "SM",
+      "name": "Sarah M.",
+      "tag": "METABOLIC OPTIMIZATION",
+      "quote": "I've struggled with weight loss for years. The metabolic protocol, combined with their nutritional guidance, helped me drop 35 pounds while keeping my muscle. It's the first time a clinic actually looked at my metabolic markers instead of just a scale."
+    },
+    {
+      "initials": "MR",
+      "name": "Michael R.",
+      "tag": "IV THERAPY MEMBER",
+      "quote": "The Drip Culture membership is my secret weapon. As a frequent traveler, the NAD+ and Glutathione IVs keep my immune system bulletproof and my energy perfectly balanced. The infusion suite is a fantastic experience."
+    },
+    {
+      "initials": "DL",
+      "name": "David L.",
+      "tag": "PEPTIDE THERAPY",
+      "quote": "The targeted protocols accelerated my recovery faster than anything else I've tried. They truly focus on precision and getting your body to operate efficiently. Highly recommend this clinic."
+    },
+    {
+      "initials": "EK",
+      "name": "Elena K.",
+      "tag": "LONGEVITY PROTOCOLS",
+      "quote": "A truly concierge medical experience. I feel ten years younger after consistently utilizing their aesthetic and wellness treatments. The staff is incredible."
+    },
+    {
+      "initials": "KT",
+      "name": "Kyle T.",
+      "tag": "TRT PATIENT",
+      "quote": "These peptides are truly the bomb. I feel like I'm 20 years old again."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does the TRT program include?",
+      "answer": "Our TRT program provides comprehensive, medically supervised hormone optimization. It includes ongoing physician consultations, extensive routine biomarker blood panels, and custom-dosed, pharmacy-grade bio-identical testosterone to ensure your levels remain precisely optimized."
+    },
+    {
+      "question": "How does the Metabolic Weight Loss program work?",
+      "answer": "We utilize advanced metabolic therapies like Semaglutide or Tirzepatide combined with lipotropic injectables. Your protocol is guided by metabolic lab markers and includes medical supervision, nutritional advising, and progress tracking to accelerate fat loss while preserving lean muscle."
+    },
+    {
+      "question": "How long does it take to see results?",
+      "answer": "Results depend entirely on the therapy. IV Therapy yields immediate improvements in hydration and energy. For TRT and Peptides, patients often notice enhanced mental clarity and sleep within weeks, while profound changes in body composition and tissue repair typically require 3 to 6 months of consistent adherence."
+    },
+    {
+      "question": "Are peptide therapies safe and how are they administered?",
+      "answer": "Yes, peptides are extremely well-tolerated because they are naturally occurring compounds within your body. We exclusively prescribe rigorously tested, pharmacy-grade peptides. Most are administered via a virtually painless subcutaneous injection using a micro-needle, though some protocols use topical or oral alternatives."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "header": {
+    "phoneCall": "Llámenos",
+    "bookConsultation": "Reservar Cita Médica",
+    "switchLanguage": "Idioma / Language"
+  },
+  "cta": {
+    "badge": "Supervisión Médica Garantizada",
+    "title": "¿Listo para Restaurar su Vitalidad y Recuperar su Energía?",
+    "description": "Dé el primer paso hacia su rendimiento físico óptimo y longevidad. Reserve su consulta médica hoy mismo.",
+    "button": "Reserve su Consulta Médica Ahora",
+    "guarantee": "100% Supervisado por Médicos Licenciados y Certificado LegitScript"
+  },
+  "disclosures": {
+    "medicalTitle": "Aviso Médico y Regulatorio",
+    "medicalText": "La información proporcionada en este sitio web es solo para fines educativos e informativos y no constituye asesoramiento médico. Los protocolos de tratamiento (TRT, Semaglutida, Tirzepatida y péptidos) se prescriben tras una evaluación médica completa, análisis de sangre y aprobación médica.",
+    "fdaTitle": "Declaración sobre la FDA y Farmacias de Formulación",
+    "fdaText": "Los medicamentos magistrales son formulaciones farmacéuticas personalizadas preparadas por farmacias autorizadas 503A o 503B según prescripción médica individual. Aunque no son aprobados en masa por la FDA, sus ingredientes activos se fabrican en instalaciones inspeccionadas por la FDA.",
+    "telehealthTitle": "Telesalud y Licencias Estatales",
+    "telehealthText": "Los servicios médicos son proporcionados por profesionales de la salud con licencia en el estado de Florida. Las consultas de telesalud están sujetas a regulaciones estatales y elegibilidad médica."
+  },
+  "footer": {
+    "tagline": "Optimización hormonal bioidéntica guiada por médicos, pérdida de peso médica y terapias de péptidos en St. Petersburg, FL.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactUs": "Contacto",
+    "hours": "Horario de Atención",
+    "rights": "Todos los derechos reservados. Optimal Vitality Institute.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "disclosures": "Avisos Médicos"
+  }
+}
