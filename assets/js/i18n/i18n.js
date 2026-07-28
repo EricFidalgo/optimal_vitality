@@ -230,6 +230,12 @@
       if (blogRes && blogRes.ok) {
         const blogData = await blogRes.json();
         if (blogData.posts) window.clinicData.blog = blogData.posts;
+        window.clinicData.blogPage = {
+          heroEyebrow:    blogData.heroEyebrow,
+          heroHeadline:   blogData.heroHeadline,
+          heroSubheadline:blogData.heroSubheadline,
+          ui:             blogData.ui
+        };
       }
 
       if (componentsRes && componentsRes.ok) {

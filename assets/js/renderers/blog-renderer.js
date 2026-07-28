@@ -3,43 +3,62 @@
  *
  * Handles the dynamic rendering of both the Blog Index page (blog.html)
  * and individual article pages (article.html).
+ * High cohesion: one job — render blog index & article details from JSON data.
+ * Low coupling: reads only from window.clinicData, updates only specified DOM elements.
  */
 (function () {
-  let blogData = [];
+  'use strict';
 
-  document.addEventListener("DOMContentLoaded", function () {
+  let blogData = [];
+  let blogPage = null;
+
+  function init() {
     blogData = window.clinicData?.blog || [];
-    
+    blogPage = window.clinicData?.blogPage || null;
+
     // Sort articles by date descending (newest first)
     blogData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Determine which page we are on based on an element or URL
+    // Determine which page we are on
     if (document.getElementById("blog-grid-container")) {
       renderBlogIndex();
     } else if (document.getElementById("article-content-container")) {
       renderArticlePage();
     }
-  });
+  }
 
   function getCategoryIcon(category) {
-    switch (category) {
-      case "Medical Weight Loss": return "fas fa-weight-hanging";
-      case "IV & Wellness": return "fas fa-vial";
-      case "Peptide Therapy": return "fas fa-dna";
-      case "Hormone Optimization": return "fas fa-heartbeat";
-      case "Advanced Diagnostics": return "fas fa-notes-medical";
-      case "Regenerative Medicine": return "fas fa-atom";
-      case "Detox & Recovery": return "fas fa-leaf";
-      default: return "fas fa-stethoscope";
-    }
+    if (!category) return "fas fa-stethoscope";
+    const cat = category.toLowerCase();
+    if (cat.includes("weight loss") || cat.includes("pérdida de peso")) return "fas fa-weight-hanging";
+    if (cat.includes("iv") || cat.includes("hidratación")) return "fas fa-vial";
+    if (cat.includes("peptide") || cat.includes("péptidos")) return "fas fa-dna";
+    if (cat.includes("hormone") || cat.includes("hormonal")) return "fas fa-heartbeat";
+    if (cat.includes("diagnostic") || cat.includes("laboratorio")) return "fas fa-notes-medical";
+    if (cat.includes("regenerative") || cat.includes("regenerativa")) return "fas fa-atom";
+    if (cat.includes("detox") || cat.includes("desintoxicación")) return "fas fa-leaf";
+    return "fas fa-stethoscope";
   }
 
   function renderBlogIndex() {
     const container = document.getElementById("blog-grid-container");
     if (!container) return;
 
+    const ui = blogPage?.ui || {};
+    const heroEyebrow    = blogPage?.heroEyebrow;
+    const heroHeadline   = blogPage?.heroHeadline;
+    const heroSubheadline= blogPage?.heroSubheadline;
+
+    // Update hero text if elements exist with data-i18n
+    setText('[data-i18n="blog.heroEyebrow"]',    heroEyebrow);
+    setHtml('[data-i18n="blog.heroHeadline"]',   heroHeadline);
+    setText('[data-i18n="blog.heroSubheadline"]', heroSubheadline);
+
+    const readArticleText = ui.readArticle || "Read Article";
+    const emptyBlogText   = ui.emptyBlog   || "Check back soon for new educational content.";
+
     if (blogData.length === 0) {
-      container.innerHTML = `<p class="text-center text-muted w-100 py-5">Check back soon for new educational content.</p>`;
+      container.innerHTML = `<p class="text-center text-muted w-100 py-5">${emptyBlogText}</p>`;
       fadeInPage();
       return;
     }
@@ -60,7 +79,7 @@
               <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: rgba(0,0,0,0.06) !important;">
                 <span class="text-muted small" style="font-size: 0.8rem;"><i class="far fa-calendar-alt me-1 text-muted"></i> ${article.date}</span>
                 <a href="article.html?id=${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
-                  Read Article <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
+                  ${readArticleText} <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
                 </a>
               </div>
             </div>
@@ -77,23 +96,43 @@
     const urlParams = new URLSearchParams(window.location.search);
     const articleId = urlParams.get("id");
 
+    const ui = blogPage?.ui || {};
+    const byText = ui.byAuthor || "By";
+
     const article = blogData.find((a) => a.id === articleId);
 
     if (!article) {
-      document.title = "Article Not Found — OVI Wellness";
+      const notFoundTitle = ui.articleNotFound || "Article Not Found";
+      const notFoundDesc  = ui.articleNotFoundDesc || "The clinical article you are looking for does not exist or has been moved.";
+      const returnBtnText = ui.returnToBlog || "Return to Blog";
+
+      document.title = `${notFoundTitle} — OVI Wellness`;
       const container = document.getElementById("article-content-container");
       if (container) {
         container.innerHTML = `
           <div class="text-center py-5 my-5">
-            <h1 class="display-5 fw-bold mb-3">Article Not Found</h1>
-            <p class="text-muted mb-4">The clinical article you are looking for does not exist or has been moved.</p>
-            <a href="blog.html" class="btn btn-primary px-4 py-2">Return to Blog</a>
+            <h1 class="display-5 fw-bold mb-3">${notFoundTitle}</h1>
+            <p class="text-muted mb-4">${notFoundDesc}</p>
+            <a href="blog.html" class="btn btn-primary px-4 py-2">${returnBtnText}</a>
           </div>
         `;
       }
       fadeInPage();
       return;
     }
+
+    // Update section titles via UI dictionary
+    if (ui.sections) {
+      setText('[data-i18n="article.consumerSafety"]',       ui.sections.consumerSafety);
+      setText('[data-i18n="article.candidacyRequirements"]', ui.sections.candidacyRequirements);
+      setText('[data-i18n="article.timelineExpectations"]',  ui.sections.timelineExpectations);
+      setText('[data-i18n="article.expectedResults"]',       ui.sections.expectedResults);
+      setText('[data-i18n="article.downtime"]',              ui.sections.downtime);
+      setText('[data-i18n="article.clinicalRisks"]',          ui.sections.clinicalRisks);
+    }
+    setText('[data-i18n="article.readyTitle"]',       ui.readyTitle);
+    setText('[data-i18n="article.readyDesc"]',        ui.readyDesc);
+    setText('[data-i18n="article.bookConsultation"]', ui.bookConsultation);
 
     // Update page meta
     document.title = `${article.title} — OVI Wellness`;
@@ -103,7 +142,7 @@
     // Populate standard text slots
     setSlot("articleCategory", article.category);
     setSlot("articleTitle", article.title);
-    setSlot("articleAuthor", `By ${article.author}`);
+    setSlot("articleAuthor", `${byText} ${article.author}`);
     setSlot("articleDate", article.date);
 
     // Populate content sections
@@ -120,7 +159,17 @@
     fadeInPage();
   }
 
-  // --- Helper Functions ---
+  // --- Helpers ---
+  function setText(selector, value) {
+    if (!value) return;
+    document.querySelectorAll(selector).forEach(el => { el.textContent = value; });
+  }
+
+  function setHtml(selector, value) {
+    if (!value) return;
+    document.querySelectorAll(selector).forEach(el => { el.innerHTML = value; });
+  }
+
   function setSlot(id, value) {
     const el = document.getElementById(id);
     if (el && value) {
@@ -135,7 +184,6 @@
     if (el && htmlValue) {
       el.innerHTML = htmlValue;
     } else if (el && !htmlValue) {
-      // If the content is missing, hide its container (the parent section) if possible
       const parentSection = el.closest(".article-section");
       if (parentSection) {
         parentSection.style.display = "none";
@@ -159,4 +207,10 @@
       }
     }, 60);
   }
+
+  // Listen for i18nLoaded event (when locale JSON finished loading over network)
+  document.addEventListener("i18nLoaded", init);
+
+  // Fallback: run on DOMContentLoaded if clinicData is already loaded
+  document.addEventListener("DOMContentLoaded", init);
 })();

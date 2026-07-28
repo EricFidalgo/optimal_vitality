@@ -1,7 +1,27 @@
 {
   "pageTitle": "Clinical Insights & Longevity Science — OVI Wellness",
-  "heroHeadline": "Evidence-Based <span class=\"text-primary\">Longevity & Medical Insights</span>",
-  "heroSubheadline": "Explore physician-authored articles on TRT, peptide signaling, metabolic weight loss, and cellular revitalization.",
+  "heroEyebrow": "Medical Journal & Clinical Protocols",
+  "heroHeadline": "Clinical Insights",
+  "heroSubheadline": "Deep dives into emerging therapies, metabolic science, and regenerative protocols from our medical team.",
+  "ui": {
+    "readArticle": "Read Article",
+    "byAuthor": "By",
+    "emptyBlog": "Check back soon for new educational content.",
+    "articleNotFound": "Article Not Found",
+    "articleNotFoundDesc": "The clinical article you are looking for does not exist or has been moved.",
+    "returnToBlog": "Return to Blog",
+    "readyTitle": "Ready to optimize your health?",
+    "readyDesc": "Schedule a comprehensive clinical consultation to discuss if this therapy is right for you.",
+    "bookConsultation": "Book Consultation",
+    "sections": {
+      "consumerSafety": "Consumer Safety",
+      "candidacyRequirements": "Candidacy Requirements",
+      "timelineExpectations": "Timeline Expectations",
+      "expectedResults": "Expected Results",
+      "downtime": "Potential Downtime",
+      "clinicalRisks": "Clinical Risks"
+    }
+  },
   "posts": [
     {
       "id": "what-is-retatrutide",
