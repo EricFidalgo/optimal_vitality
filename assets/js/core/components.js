@@ -673,20 +673,33 @@
     }
 
     // -------------------------------------------------------------------------
-    // INIT — render components before anything else fires
+    // INIT — render components only after i18n/clinicData is ready
     // -------------------------------------------------------------------------
-    document.addEventListener("DOMContentLoaded", function () {
+    // renderNavbar() and renderFooter() depend on window.clinicData.contact,
+    // which is populated asynchronously by i18n.js fetching global.json.
+    // DOMContentLoaded fires before that fetch completes, so we must wait for
+    // the i18nLoaded event instead.  The once-flag prevents double execution
+    // if clinicData is already populated by the time this script runs.
+    var _componentsRendered = false;
+    function initComponents() {
+        if (_componentsRendered) return;
+        _componentsRendered = true;
         renderNavbar();
         renderFooter();
         renderDisclosures();
         injectLocalSchema();
         initNavbarBehavior();
         initConsultationModal();
-        // injectContactInfo runs after componentsLoaded so dynamically
-        // loaded component HTML is already in the DOM before we query it.
-        // On pages with no data-include-component, componentsLoaded still
-        // fires from component-loader.js, so this single listener covers both.
         injectContactInfo();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // If clinicData is already populated (i18nLoaded already fired), run now.
+        if (window.clinicData && window.clinicData.contact) {
+            initComponents();
+        }
+        // Always register the i18nLoaded listener as a safety net.
+        document.addEventListener("i18nLoaded", initComponents);
     });
 
     document.addEventListener("componentsLoaded", function() {
