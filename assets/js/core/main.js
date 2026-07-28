@@ -897,9 +897,23 @@ function initMain() {
         }
     }
 
-    // Run all renders when i18n locale data is ready; the guard inside
-    // renderDynamicContent ensures it only executes once per page load.
-    document.addEventListener('i18nLoaded', renderDynamicContent);
+    // i18nLoaded fires as soon as locale JSON finishes fetching — which happens
+    // BEFORE componentsLoaded triggers initMain(). So by the time we get here
+    // the event has already fired and a bare addEventListener would miss it.
+    // Fix: run eagerly if clinicData is already populated (event was missed),
+    // AND register the listener as a safety net for the rare case where JSON
+    // loads slowly and the event fires after initMain().
+    // A once-flag prevents any double execution either way.
+    var _dynamicRendered = false;
+    function renderDynamicContentOnce() {
+        if (_dynamicRendered) return;
+        _dynamicRendered = true;
+        renderDynamicContent();
+    }
+    if (window.clinicData && window.clinicData.services) {
+        renderDynamicContentOnce();
+    }
+    document.addEventListener('i18nLoaded', renderDynamicContentOnce);
 
     // =========================================================================
     // 2. UI LOGIC
