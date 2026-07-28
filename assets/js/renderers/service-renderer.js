@@ -294,7 +294,7 @@
   }
 
   function buildScienceStats(stats) {
-    const row = document.getElementById("science-bento-row");
+    const row = document.getElementById("science-stats-row");
     if (!row || !stats) return;
     const statsHTML = stats
       .map((s) => {
@@ -310,7 +310,7 @@
         </div>`;
       })
       .join("");
-    row.innerHTML += statsHTML;
+    row.innerHTML = statsHTML;
   }
 
   function buildScienceCards(cards) {
@@ -333,7 +333,7 @@
       </div>`
       )
       .join("");
-    row.innerHTML += cardsHTML;
+    row.innerHTML = cardsHTML;
   }
 
   // ─── 12. Build Myths ──────────────────────────────────────────────────────

@@ -502,6 +502,8 @@ function initMain() {
         const tabsContainer = document.getElementById('therapy-tabs');
         const contentContainer = document.getElementById('therapy-tabs-content');
         if (tabsContainer && contentContainer && data.services) {
+            tabsContainer.innerHTML = '';
+            contentContainer.innerHTML = '';
             const coreServices = data.services.filter(s => s.type === 'core');
             coreServices.forEach((therapy, index) => {
                 const isActive = index === 0 ? 'active' : '';
@@ -714,6 +716,8 @@ function initMain() {
         if (testimonialsList) {
             // Mobile: Build a hidden source container, then hand off to initInfiniteTrack
             if (mobileInner && mobileIndicators) {
+                mobileInner.innerHTML = '';
+                mobileIndicators.innerHTML = '';
                 // Populate the mobile track directly using the card builder
                 const SETS = 20;
                 const originals = testimonialsList;
@@ -792,6 +796,8 @@ function initMain() {
 
             // Desktop: 2 testimonials per carousel slide
             if (desktopInner && desktopIndicators) {
+                desktopInner.innerHTML = '';
+                desktopIndicators.innerHTML = '';
                 let slideIndex = 0;
                 for (let i = 0; i < testimonialsList.length; i += 2) {
                     const isActive = slideIndex === 0 ? 'active' : '';
