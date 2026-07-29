@@ -58,18 +58,18 @@ collections:
                 widget: "text"
                 hint: "1-2 sentence preview displayed on the main blog page."
 
-              # Article Content Sections
-              - label: "Article Content Sections"
+              # Article Content Sections (All Optional - Leave blank to omit from the article)
+              - label: "Article Content Sections (Optional)"
                 name: "content"
                 widget: "object"
                 fields:
-                  - { label: "Clinical Overview", name: "overview", widget: "markdown", hint: "Main introduction and overview." }
-                  - { label: "Consumer Safety", name: "consumerSafety", widget: "markdown", hint: "Safety considerations." }
-                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", hint: "Who is a good candidate." }
-                  - { label: "Timeline Expectations", name: "timelineExpectations", widget: "markdown", hint: "Expected timeline and milestones." }
-                  - { label: "Potential Downtime", name: "downtime", widget: "markdown", hint: "Physical recovery or downtime." }
-                  - { label: "Expected Results", name: "expectedResults", widget: "markdown", hint: "Clinical outcomes and trial results." }
-                  - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", hint: "Known side effects and risks." }
+                  - { label: "Clinical Overview", name: "overview", widget: "markdown", required: false, hint: "Main introduction and overview." }
+                  - { label: "Consumer Safety", name: "consumerSafety", widget: "markdown", required: false, hint: "Safety considerations. Leave blank to hide this section on the site." }
+                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", required: false, hint: "Who is a good candidate. Leave blank to hide this section on the site." }
+                  - { label: "Timeline Expectations", name: "timelineExpectations", widget: "markdown", required: false, hint: "Expected timeline. Leave blank to hide this section on the site." }
+                  - { label: "Potential Downtime", name: "downtime", widget: "markdown", required: false, hint: "Physical recovery or downtime. Leave blank to hide this section on the site." }
+                  - { label: "Expected Results", name: "expectedResults", widget: "markdown", required: false, hint: "Clinical outcomes. Leave blank to hide this section on the site." }
+                  - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", required: false, hint: "Known side effects and risks. Leave blank to hide this section on the site." }
 
       # ───────────────────────────────────────────────────────────────────────
       # 🇪🇸 SPANISH BLOG POSTS
@@ -112,15 +112,15 @@ collections:
                 name: "excerpt"
                 widget: "text"
 
-              # Article Content Sections
-              - label: "Secciones del Artículo"
+              # Article Content Sections (Opcionales)
+              - label: "Secciones del Artículo (Opcionales)"
                 name: "content"
                 widget: "object"
                 fields:
-                  - { label: "Resumen Clínico / Clinical Overview", name: "overview", widget: "markdown" }
-                  - { label: "Seguridad del Consumidor / Consumer Safety", name: "consumerSafety", widget: "markdown" }
-                  - { label: "Requisitos de Candidatura / Candidacy Requirements", name: "candidacyRequirements", widget: "markdown" }
-                  - { label: "Expectativas de Tiempo / Timeline", name: "timelineExpectations", widget: "markdown" }
-                  - { label: "Tiempo de Inactividad / Downtime", name: "downtime", widget: "markdown" }
-                  - { label: "Resultados Esperados / Expected Results", name: "expectedResults", widget: "markdown" }
-                  - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "markdown" }
+                  - { label: "Resumen Clínico / Clinical Overview", name: "overview", widget: "markdown", required: false }
+                  - { label: "Seguridad del Consumidor / Consumer Safety", name: "consumerSafety", widget: "markdown", required: false }
+                  - { label: "Requisitos de Candidatura / Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", required: false }
+                  - { label: "Expectativas de Tiempo / Timeline", name: "timelineExpectations", widget: "markdown", required: false }
+                  - { label: "Tiempo de Inactividad / Downtime", name: "downtime", widget: "markdown", required: false }
+                  - { label: "Resultados Esperados / Expected Results", name: "expectedResults", widget: "markdown", required: false }
+                  - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "markdown", required: false }
