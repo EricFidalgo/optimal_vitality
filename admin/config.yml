@@ -1,0 +1,187 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Files are committed directly to the repository — no media uploads needed
+media_folder: "assets/images/blog"
+public_folder: "/assets/images/blog"
+
+# Prevents Decap from creating a new editorial workflow; saves go live immediately
+publish_mode: simple
+
+collections:
+
+  # ─── ENGLISH BLOG POSTS ───────────────────────────────────────────────────
+  - name: "blog_en"
+    label: "Blog Posts (English)"
+    label_singular: "Blog Post (English)"
+
+    # Single-file collection: all posts live inside the "posts" array of one JSON file
+    files:
+      - name: "blog_en_posts"
+        label: "English Posts"
+        file: "assets/js/i18n/en/blog.json"
+        fields:
+
+          # ── Page-level metadata ──
+          - { label: "Page Title (Browser Tab)", name: "pageTitle", widget: "string" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "SEO Title", name: "title", widget: "string" }
+              - { label: "SEO Meta Description", name: "description", widget: "text" }
+
+          # ── Hero section strings ──
+          - { label: "Hero Eyebrow Text", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "string" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
+
+          # ── UI strings ──
+          - label: "UI Labels"
+            name: "ui"
+            widget: "object"
+            fields:
+              - { label: "Read Article Button", name: "readArticle", widget: "string" }
+              - { label: "By Author Prefix", name: "byAuthor", widget: "string" }
+              - { label: "Empty Blog Message", name: "emptyBlog", widget: "string" }
+              - { label: "Article Not Found Title", name: "articleNotFound", widget: "string" }
+              - { label: "Article Not Found Description", name: "articleNotFoundDesc", widget: "text" }
+              - { label: "Return to Blog Button", name: "returnToBlog", widget: "string" }
+              - { label: "CTA Title", name: "readyTitle", widget: "string" }
+              - { label: "CTA Description", name: "readyDesc", widget: "text" }
+              - { label: "Book Consultation Button", name: "bookConsultation", widget: "string" }
+              - label: "Section Headings"
+                name: "sections"
+                widget: "object"
+                fields:
+                  - { label: "Consumer Safety", name: "consumerSafety", widget: "string" }
+                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "string" }
+                  - { label: "Timeline & Expectations", name: "timelineExpectations", widget: "string" }
+                  - { label: "Expected Results", name: "expectedResults", widget: "string" }
+                  - { label: "Potential Downtime", name: "downtime", widget: "string" }
+                  - { label: "Clinical Risks", name: "clinicalRisks", widget: "string" }
+
+          # ── Blog posts array ──
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Post ID (URL Slug)"
+                name: "id"
+                widget: "string"
+                hint: "Lowercase, hyphenated. E.g. 'what-is-retatrutide'. Must match the Spanish version exactly."
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Medical Weight Loss"
+                  - "Peptide Therapy"
+                  - "Hormone Optimization"
+                  - "Advanced Diagnostics"
+                  - "Regenerative Medicine"
+                  - "Detox & Recovery"
+                  - "IV Therapy"
+              - { label: "Author", name: "author", widget: "string", hint: "E.g. Dr. Marcus Vance, MD" }
+              - { label: "Publish Date", name: "date", widget: "string", hint: "E.g. August 14, 2026" }
+              - { label: "Excerpt (Card Preview)", name: "excerpt", widget: "text", hint: "1-2 sentence summary shown on the blog card." }
+              - label: "Article Content"
+                name: "content"
+                widget: "object"
+                fields:
+                  - { label: "Clinical Overview", name: "overview", widget: "text" }
+                  - { label: "Consumer Safety", name: "consumerSafety", widget: "text" }
+                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "text" }
+                  - { label: "Timeline & Expectations", name: "timelineExpectations", widget: "text" }
+                  - { label: "Potential Downtime", name: "downtime", widget: "text" }
+                  - { label: "Expected Results", name: "expectedResults", widget: "text" }
+                  - { label: "Clinical Risks", name: "clinicalRisks", widget: "text" }
+
+  # ─── SPANISH BLOG POSTS ───────────────────────────────────────────────────
+  - name: "blog_es"
+    label: "Blog Posts (Spanish)"
+    label_singular: "Blog Post (Spanish)"
+
+    files:
+      - name: "blog_es_posts"
+        label: "Spanish Posts (Español)"
+        file: "assets/js/i18n/es/blog.json"
+        fields:
+
+          # ── Page-level metadata ──
+          - { label: "Page Title (Browser Tab)", name: "pageTitle", widget: "string" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "SEO Title", name: "title", widget: "string" }
+              - { label: "SEO Meta Description", name: "description", widget: "text" }
+
+          # ── Hero section strings ──
+          - { label: "Hero Eyebrow Text", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Headline", name: "heroHeadline", widget: "string" }
+          - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
+
+          # ── UI strings ──
+          - label: "UI Labels"
+            name: "ui"
+            widget: "object"
+            fields:
+              - { label: "Read Article Button", name: "readArticle", widget: "string" }
+              - { label: "By Author Prefix", name: "byAuthor", widget: "string" }
+              - { label: "Empty Blog Message", name: "emptyBlog", widget: "string" }
+              - { label: "Article Not Found Title", name: "articleNotFound", widget: "string" }
+              - { label: "Article Not Found Description", name: "articleNotFoundDesc", widget: "text" }
+              - { label: "Return to Blog Button", name: "returnToBlog", widget: "string" }
+              - { label: "CTA Title", name: "readyTitle", widget: "string" }
+              - { label: "CTA Description", name: "readyDesc", widget: "text" }
+              - { label: "Book Consultation Button", name: "bookConsultation", widget: "string" }
+              - label: "Section Headings"
+                name: "sections"
+                widget: "object"
+                fields:
+                  - { label: "Consumer Safety (ES)", name: "consumerSafety", widget: "string" }
+                  - { label: "Candidacy Requirements (ES)", name: "candidacyRequirements", widget: "string" }
+                  - { label: "Timeline & Expectations (ES)", name: "timelineExpectations", widget: "string" }
+                  - { label: "Expected Results (ES)", name: "expectedResults", widget: "string" }
+                  - { label: "Potential Downtime (ES)", name: "downtime", widget: "string" }
+                  - { label: "Clinical Risks (ES)", name: "clinicalRisks", widget: "string" }
+
+          # ── Blog posts array ──
+          - label: "Posts (Artículos)"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Post ID (URL Slug)"
+                name: "id"
+                widget: "string"
+                hint: "Must match the English version exactly. E.g. 'what-is-retatrutide'."
+              - { label: "Título / Title", name: "title", widget: "string" }
+              - label: "Categoría / Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Pérdida de Peso Médica"
+                  - "Terapia de Péptidos"
+                  - "Optimización Hormonal"
+                  - "Diagnósticos Avanzados"
+                  - "Medicina Regenerativa"
+                  - "Desintoxicación y Recuperación"
+                  - "Terapia IV"
+              - { label: "Autor / Author", name: "author", widget: "string" }
+              - { label: "Fecha / Date", name: "date", widget: "string", hint: "E.g. 14 de agosto de 2026" }
+              - { label: "Extracto / Excerpt", name: "excerpt", widget: "text" }
+              - label: "Contenido / Article Content"
+                name: "content"
+                widget: "object"
+                fields:
+                  - { label: "Resumen Clínico / Clinical Overview", name: "overview", widget: "text" }
+                  - { label: "Seguridad del Consumidor / Consumer Safety", name: "consumerSafety", widget: "text" }
+                  - { label: "Requisitos de Candidatura / Candidacy Requirements", name: "candidacyRequirements", widget: "text" }
+                  - { label: "Expectativas de Tiempo / Timeline", name: "timelineExpectations", widget: "text" }
+                  - { label: "Tiempo de Inactividad / Downtime", name: "downtime", widget: "text" }
+                  - { label: "Resultados Esperados / Expected Results", name: "expectedResults", widget: "text" }
+                  - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "text" }
