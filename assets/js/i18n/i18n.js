@@ -206,6 +206,8 @@
     ["Book Your Consultation Now", "Reservar Consulta"],
     ["Book Your Consultation", "Reservar Consulta"],
     ["Secure Your Consultation", "Reservar Consulta"],
+    ["Board-Certified Medical Directors", "Proveedores Médicos Certificados"],
+    ["Board-Certified Medical Providers", "Proveedores Médicos Certificados"],
     ["Book Doctor Call", "Reservar Cita"]
   ];
 
