@@ -53,27 +53,40 @@
         background: transparent !important;
       }
 
-      /* Master Folder Header ("7 blog posts") Clickable Style */
+      /* TOP BAR LAYOUT: Contains both action buttons side-by-side */
+      div[class*="TopBarContainer"] {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-bottom: 12px !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+      }
+
+      /* MASTER FOLDER TOGGLE BUTTON ("X blog posts") */
       div[class*="ExpandButtonContainer"] {
+        background-color: #ffffff !important;
+        color: #051411 !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 0.9rem !important;
+        padding: 8px 16px !important;
         cursor: pointer !important;
         user-select: none !important;
-        font-weight: 700 !important;
-        font-family: 'Urbanist', sans-serif !important;
-        font-size: 1.05rem !important;
-        color: #051411 !important;
         display: inline-flex !important;
         align-items: center !important;
         gap: 8px !important;
-        padding: 6px 12px !important;
-        border-radius: 8px !important;
-        transition: background 0.15s ease, color 0.15s ease !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+        transition: all 0.15s ease !important;
       }
       div[class*="ExpandButtonContainer"]:hover {
-        background: #e2e8f0 !important;
+        background-color: #f1f5f9 !important;
+        border-color: #b89146 !important;
         color: #b89146 !important;
       }
 
-      /* Arrow Icon Styling in Master Header */
+      /* Arrow Icon inside Master Folder Button */
       div[class*="ExpandButtonContainer"] button {
         background: transparent !important;
         border: none !important;
@@ -84,8 +97,27 @@
       }
       div[class*="ExpandButtonContainer"] svg {
         color: #b89146 !important;
-        width: 20px !important;
-        height: 20px !important;
+        width: 18px !important;
+        height: 18px !important;
+      }
+
+      /* ADD BLOG POSTS BUTTON (+ Add) */
+      button[class*="AddButton"] {
+        background-color: #051411 !important;
+        color: #e6c381 !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        padding: 8px 18px !important;
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 0.9rem !important;
+        cursor: pointer !important;
+        box-shadow: 0 2px 6px rgba(5, 20, 17, 0.12) !important;
+        transition: all 0.15s ease !important;
+      }
+      button[class*="AddButton"]:hover {
+        background-color: #0c2722 !important;
+        color: #ffffff !important;
       }
 
       /* 1. LIST CONTAINER: Reverse flex direction so NEW posts appear AT THE TOP! */
@@ -136,23 +168,6 @@
         color: #b89146 !important;
       }
 
-      /* Add Blog Posts Button (+ Add) */
-      button[class*="AddButton"] {
-        background-color: #051411 !important;
-        color: #e6c381 !important;
-        border: none !important;
-        border-radius: 8px !important;
-        font-weight: 600 !important;
-        padding: 8px 18px !important;
-        font-family: 'Urbanist', sans-serif !important;
-        cursor: pointer !important;
-        box-shadow: 0 2px 6px rgba(5, 20, 17, 0.12) !important;
-      }
-      button[class*="AddButton"]:hover {
-        background-color: #0c2722 !important;
-        color: #ffffff !important;
-      }
-
       /* Input Fields inside Card Body */
       div[class*="ControlContainer"] input,
       div[class*="ControlContainer"] textarea {
@@ -179,7 +194,7 @@
 
     <script>
       document.addEventListener("click", function(e) {
-        // --- 1. Master Folder Collapse ("7 blog posts" Header) ---
+        // --- 1. Master Folder Collapse Button ("X blog posts") ---
         const masterHeader = e.target.closest('[class*="ExpandButtonContainer"]');
         if (masterHeader) {
           const isExpandBtn = e.target.closest('button[data-testid="expand-button"], button[class*="ExpandButton"]');
