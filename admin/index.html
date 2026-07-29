@@ -239,9 +239,11 @@
             if (!postsData) return null;
 
             const posts = postsData.toJS ? postsData.toJS() : postsData;
+            // Reverse posts in preview so August 14th appears at the VERY BOTTOM!
+            const previewPosts = posts.slice().reverse();
 
             return h('div', { style: { padding: '40px 24px', fontFamily: 'Urbanist, Inter, sans-serif', background: '#ffffff', color: '#2c3036', minHeight: '100vh' } },
-              posts.map(function(post, index) {
+              previewPosts.map(function(post, index) {
                 if (!post) return null;
 
                 const sectionElements = [];
