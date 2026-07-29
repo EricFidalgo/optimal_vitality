@@ -53,7 +53,7 @@
         background: transparent !important;
       }
 
-      /* TOP BAR LAYOUT: Contains both action buttons side-by-side */
+      /* TOP BAR LAYOUT */
       div[class*="TopBarContainer"] {
         display: flex !important;
         align-items: center !important;
@@ -62,61 +62,43 @@
         border-bottom: 1px solid #e2e8f0 !important;
       }
 
-      /* MASTER FOLDER TOGGLE BUTTON ("X blog posts") */
+      /* MASTER FOLDER COUNT ("X blog posts") — Clean Normal Text (No Button Box) */
       div[class*="ExpandButtonContainer"] {
-        background-color: #ffffff !important;
-        color: #051411 !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 8px !important;
-        font-weight: 600 !important;
-        font-family: 'Urbanist', sans-serif !important;
-        font-size: 0.9rem !important;
-        padding: 8px 16px !important;
-        cursor: pointer !important;
-        user-select: none !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 8px !important;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
-        transition: all 0.15s ease !important;
-      }
-      div[class*="ExpandButtonContainer"]:hover {
-        background-color: #f1f5f9 !important;
-        border-color: #b89146 !important;
-        color: #b89146 !important;
-      }
-
-      /* Arrow Icon inside Master Folder Button */
-      div[class*="ExpandButtonContainer"] button {
         background: transparent !important;
         border: none !important;
-        cursor: pointer !important;
+        box-shadow: none !important;
+        color: #475569 !important;
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 0.95rem !important;
         padding: 0 !important;
-        display: flex !important;
-        align-items: center !important;
+        cursor: default !important;
       }
-      div[class*="ExpandButtonContainer"] svg {
-        color: #b89146 !important;
-        width: 18px !important;
-        height: 18px !important;
+      div[class*="ExpandButtonContainer"]:hover {
+        background: transparent !important;
+        color: #475569 !important;
+      }
+      div[class*="ExpandButtonContainer"] button {
+        display: none !important;
       }
 
-      /* ADD BLOG POSTS BUTTON (+ Add) */
+      /* ADD BLOG POSTS BUTTON — Normal Clean Dark Button */
       button[class*="AddButton"] {
-        background-color: #051411 !important;
-        color: #e6c381 !important;
-        border: none !important;
+        background-color: #0f172a !important;
+        color: #ffffff !important;
+        border: 1px solid #0f172a !important;
         border-radius: 8px !important;
         font-weight: 600 !important;
-        padding: 8px 18px !important;
-        font-family: 'Urbanist', sans-serif !important;
-        font-size: 0.9rem !important;
+        padding: 8px 16px !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 0.88rem !important;
         cursor: pointer !important;
-        box-shadow: 0 2px 6px rgba(5, 20, 17, 0.12) !important;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
         transition: all 0.15s ease !important;
       }
       button[class*="AddButton"]:hover {
-        background-color: #0c2722 !important;
+        background-color: #334155 !important;
+        border-color: #334155 !important;
         color: #ffffff !important;
       }
 
@@ -124,7 +106,7 @@
       div[class*="TopBarContainer"] + div {
         display: flex !important;
         flex-direction: column-reverse !important;
-        gap: 12px !important;
+        gap: 10px !important;
         margin-top: 14px !important;
       }
 
@@ -132,11 +114,11 @@
       div[class*="ListItem-listControlItem"] {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
-        border-radius: 12px !important;
+        border-radius: 10px !important;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
         overflow: hidden !important;
         margin: 0 !important;
-        transition: border-color 0.2s ease !important;
+        transition: border-color 0.15s ease !important;
       }
       div[class*="ListItem-listControlItem"]:hover {
         border-color: #cbd5e1 !important;
@@ -146,26 +128,26 @@
       div[class*="TopBar-StyledListItemTopBar"] {
         background: #f8fafc !important;
         border-bottom: 1px solid #f1f5f9 !important;
-        padding: 10px 16px !important;
+        padding: 8px 14px !important;
         display: flex !important;
         align-items: center !important;
         gap: 8px !important;
       }
 
-      /* Post Title Summary Bar — Clickable Card Title */
+      /* Post Title Summary Bar — NO BROWN COLOR ON HOVER */
       div[class*="NestedObjectLabel"] {
         cursor: pointer !important;
-        padding: 14px 18px !important;
+        padding: 12px 16px !important;
         font-weight: 600 !important;
         font-size: 0.95rem !important;
         color: #0f172a !important;
         background: #ffffff !important;
         user-select: none !important;
-        transition: color 0.15s ease, background 0.15s ease !important;
+        transition: background 0.15s ease !important;
       }
       div[class*="NestedObjectLabel"]:hover {
-        background: #fafafa !important;
-        color: #b89146 !important;
+        background: #f8fafc !important;
+        color: #0f172a !important; /* Clean dark text, no brown */
       }
 
       /* Input Fields inside Card Body */
@@ -194,23 +176,11 @@
 
     <script>
       document.addEventListener("click", function(e) {
-        // 1. Master Folder Button ("X blog posts") -> Collapse/Expand the entire folder list
-        const masterHeader = e.target.closest('[class*="ExpandButtonContainer"]');
-        if (masterHeader) {
-          const isButton = e.target.closest('button[data-testid="expand-button"], button[class*="ExpandButton"]');
-          if (!isButton) {
-            const masterBtn = masterHeader.querySelector('button[data-testid="expand-button"], button[class*="ExpandButton"]');
-            if (masterBtn) masterBtn.click();
-          }
-          return;
-        }
-
-        // 2. Individual Post Title Bar ("📝 Cellular Detoxification...") -> Collapse/Expand THAT specific post card ONLY
+        // Individual Post Title Bar ("📝 Cellular Detoxification...") -> Collapse/Expand THAT specific post card ONLY
         const titleLabel = e.target.closest('[class*="NestedObjectLabel"]');
         if (titleLabel) {
           const itemCard = titleLabel.closest('[class*="ListItem-listControlItem"]');
           if (itemCard) {
-            // Find top bar expand button of THIS specific post card
             const topBar = itemCard.querySelector('[class*="TopBar-StyledListItemTopBar"]');
             if (topBar) {
               const cardBtn = topBar.querySelector('button[class*="TopBarButton"], button[data-testid="expand-button"]');
