@@ -28,7 +28,7 @@ collections:
           - label: "Articles / Blog Posts"
             name: "posts"
             widget: "list"
-            summary: "📰 {{fields.title}} [{{fields.category}} — {{fields.date}}]"
+            summary: "{{fields.title}} [{{fields.category}} — {{fields.date}}]"
             fields:
               - label: "Title"
                 name: "title"
@@ -76,7 +76,7 @@ collections:
                   - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", hint: "Known side effects and risks." }
 
           # ── Technical Page Settings (Collapsed by default) ──
-          - label: "⚙️ Page Header & UI Settings (Advanced)"
+          - label: "Page Header & UI Settings (Advanced)"
             name: "ui_settings"
             widget: "object"
             collapsed: true
@@ -103,7 +103,7 @@ collections:
           - label: "Artículos / Blog Posts (Español)"
             name: "posts"
             widget: "list"
-            summary: "📰 {{fields.title}} [{{fields.category}} — {{fields.date}}]"
+            summary: "{{fields.title}} [{{fields.category}} — {{fields.date}}]"
             fields:
               - label: "Título / Title"
                 name: "title"
@@ -148,7 +148,7 @@ collections:
                   - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "markdown" }
 
           # ── Technical Page Settings (Collapsed by default) ──
-          - label: "⚙️ Configuración de Página (Avanzado)"
+          - label: "Configuración de Página (Avanzado)"
             name: "ui_settings"
             widget: "object"
             collapsed: true
