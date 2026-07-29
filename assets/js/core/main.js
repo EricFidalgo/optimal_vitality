@@ -902,11 +902,13 @@ function initMain() {
         const hoursData = contactData.hours || data.hours;
 
         if (addressData) {
-            const addr = `${addressData.street}, ${addressData.city}, ${addressData.state} ${addressData.zip}`;
-            const query = encodeURIComponent(addr);
+            const mapUrl = addressData.mapUrl || "https://maps.app.goo.gl/SFCiAXwWWKjuANvf8";
+            const cleanStreet = (addressData.street || "").replace(/,+$/, "");
+            const cleanCity = (addressData.city || "").replace(/,+$/, "");
+            const mapQuery = encodeURIComponent(`OVI Wellness, ${cleanStreet}, ${cleanCity}, ${addressData.state} ${addressData.zip}`);
             
             if (locationAddress) {
-                locationAddress.innerHTML = `<a href="https://www.google.com/maps/dir/?api=1&destination=${query}" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none hover-gold">${addressData.street}<br>${addressData.city}, ${addressData.state} ${addressData.zip}</a>`;
+                locationAddress.innerHTML = `<a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none hover-gold">${cleanStreet}<br>${cleanCity}, ${addressData.state} ${addressData.zip}</a>`;
             }
 
             if (locationHours && hoursData) {
@@ -925,11 +927,11 @@ function initMain() {
             }
 
             if (getDirectionsBtn) {
-                getDirectionsBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${query}`;
+                getDirectionsBtn.href = mapUrl;
             }
 
             if (googleMapIframe) {
-                googleMapIframe.src = `https://maps.google.com/maps?q=${query}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+                googleMapIframe.src = addressData.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.2797!2d-82.704386!3d27.771276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e326912c3f67%3A0x62e28e7652a7247!2sOVI%20Wellness!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
             }
         }
     }

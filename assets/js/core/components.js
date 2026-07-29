@@ -142,8 +142,8 @@
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">${clinicInfoTitle}</h4>
                                 <p class="mb-3">
-                                    <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.address.street}, ${c.address.city}, ${c.address.state} ${c.address.zip}`)}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none">
-                                        <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${c.address.street}<br><span class="ms-4 ps-2">${c.address.city}, ${c.address.state} ${c.address.zip}</span>
+                                    <a href="${c.address.mapUrl || 'https://maps.app.goo.gl/SFCiAXwWWKjuANvf8'}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none">
+                                        <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${(c.address.street || '').replace(/,+$/, '')}<br><span class="ms-4 ps-2">${(c.address.city || '').replace(/,+$/, '')}, ${c.address.state} ${c.address.zip}</span>
                                     </a>
                                 </p>
                                 <p class="mb-3">
