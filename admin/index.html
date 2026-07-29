@@ -194,29 +194,27 @@
 
     <script>
       document.addEventListener("click", function(e) {
-        // --- 1. Master Folder Collapse Button ("X blog posts") ---
+        // 1. Master Folder Button ("X blog posts") -> Collapse/Expand the entire folder list
         const masterHeader = e.target.closest('[class*="ExpandButtonContainer"]');
         if (masterHeader) {
-          const isExpandBtn = e.target.closest('button[data-testid="expand-button"], button[class*="ExpandButton"]');
-          if (!isExpandBtn) {
-            const expandBtn = masterHeader.querySelector('button[data-testid="expand-button"], button[class*="ExpandButton"]');
-            if (expandBtn) {
-              expandBtn.click();
-            }
+          const isButton = e.target.closest('button[data-testid="expand-button"], button[class*="ExpandButton"]');
+          if (!isButton) {
+            const masterBtn = masterHeader.querySelector('button[data-testid="expand-button"], button[class*="ExpandButton"]');
+            if (masterBtn) masterBtn.click();
           }
+          return;
         }
 
-        // --- 2. Individual Post Title Summary Bar ---
-        const titleLabel = e.target.closest('[class*="NestedObjectLabel"], [class*="TopBar-StyledListItemTopBar"]');
+        // 2. Individual Post Title Bar ("📝 Cellular Detoxification...") -> Collapse/Expand THAT specific post card ONLY
+        const titleLabel = e.target.closest('[class*="NestedObjectLabel"]');
         if (titleLabel) {
-          const isControl = e.target.closest('button, input, textarea, select, [class*="DragIconContainer"]');
-          if (!isControl) {
-            const itemCard = titleLabel.closest('[class*="ListItem-listControlItem"]');
-            if (itemCard) {
-              const expandBtn = itemCard.querySelector('button[data-testid="expand-button"], button[class*="TopBarButton"]');
-              if (expandBtn && e.target !== expandBtn && !expandBtn.contains(e.target)) {
-                expandBtn.click();
-              }
+          const itemCard = titleLabel.closest('[class*="ListItem-listControlItem"]');
+          if (itemCard) {
+            // Find top bar expand button of THIS specific post card
+            const topBar = itemCard.querySelector('[class*="TopBar-StyledListItemTopBar"]');
+            if (topBar) {
+              const cardBtn = topBar.querySelector('button[class*="TopBarButton"], button[data-testid="expand-button"]');
+              if (cardBtn) cardBtn.click();
             }
           }
         }

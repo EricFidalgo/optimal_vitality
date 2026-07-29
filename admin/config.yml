@@ -10,17 +10,15 @@ public_folder: "/assets/images/blog"
 publish_mode: simple
 
 collections:
-
-  # ───────────────────────────────────────────────────────────────────────────
-  # ENGLISH BLOG POSTS
-  # ───────────────────────────────────────────────────────────────────────────
-  - name: "blog_en"
-    label: "English Blog Posts"
-    label_singular: "English Blog Post"
-
+  - name: "blog_manager"
+    label: "Blog Manager"
     files:
+
+      # ───────────────────────────────────────────────────────────────────────
+      # 🇬🇧 ENGLISH BLOG POSTS
+      # ───────────────────────────────────────────────────────────────────────
       - name: "blog_en_posts"
-        label: "Manage English Articles"
+        label: "🇬🇧 English Blog Posts"
         file: "assets/js/i18n/en/blog.json"
         fields:
           - label: "Blog Posts"
@@ -60,7 +58,7 @@ collections:
                 widget: "text"
                 hint: "1-2 sentence preview displayed on the main blog page."
 
-              # Article Sections
+              # Article Content Sections
               - label: "Article Content Sections"
                 name: "content"
                 widget: "object"
@@ -73,16 +71,11 @@ collections:
                   - { label: "Expected Results", name: "expectedResults", widget: "markdown", hint: "Clinical outcomes and trial results." }
                   - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", hint: "Known side effects and risks." }
 
-  # ───────────────────────────────────────────────────────────────────────────
-  # SPANISH BLOG POSTS
-  # ───────────────────────────────────────────────────────────────────────────
-  - name: "blog_es"
-    label: "Spanish Blog Posts (Español)"
-    label_singular: "Spanish Blog Post (Español)"
-
-    files:
+      # ───────────────────────────────────────────────────────────────────────
+      # 🇪🇸 SPANISH BLOG POSTS
+      # ───────────────────────────────────────────────────────────────────────
       - name: "blog_es_posts"
-        label: "Administrar Artículos en Español"
+        label: "🇪🇸 Spanish Blog Posts (Español)"
         file: "assets/js/i18n/es/blog.json"
         fields:
           - label: "Artículos / Blog Posts"
@@ -119,7 +112,7 @@ collections:
                 name: "excerpt"
                 widget: "text"
 
-              # Article Sections
+              # Article Content Sections
               - label: "Secciones del Artículo"
                 name: "content"
                 widget: "object"
