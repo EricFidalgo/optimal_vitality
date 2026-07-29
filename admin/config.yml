@@ -58,7 +58,7 @@ collections:
                 widget: "text"
                 hint: "1-2 sentence preview displayed on the main blog page."
 
-              # Article Content Sections (All Optional - Leave blank to omit from the article)
+              # Article Content Sections (All Optional - Leave blank to hide a section on the website)
               - label: "Article Content Sections (Optional)"
                 name: "content"
                 widget: "object"
