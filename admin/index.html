@@ -43,7 +43,7 @@
         background-color: #a37f3b !important;
       }
 
-      /* REMOVE ALL NESTED DOUBLE BORDERS & GRAY BACKGROUNDS */
+      /* REMOVE ALL NESTED DOUBLE BORDERS & DUPLICATE BOX SHADOWS */
       div[class*="ControlContainer"],
       div[class*="ObjectControl"],
       div[class*="ListControl"],
@@ -51,87 +51,74 @@
         border: none !important;
         box-shadow: none !important;
         background: transparent !important;
-        padding: 0 !important;
-        margin: 0 !important;
       }
 
-      /* Clean Outer Container */
-      div[class*="ControlPane"] {
-        padding: 24px !important;
-        max-width: 900px !important;
-        margin: 0 auto !important;
-      }
-
-      /* LIST CONTAINER: Reverse flex order so new posts appear AT THE TOP! */
-      div[class*="ListControl-list"] {
+      /* 1. LIST CONTAINER: Reverse flex direction so NEW posts appear AT THE TOP! */
+      div[class*="TopBarContainer"] + div {
         display: flex !important;
         flex-direction: column-reverse !important;
         gap: 12px !important;
-        margin-top: 16px !important;
+        margin-top: 14px !important;
       }
 
-      /* SINGLE CLEAN CARD FOR EACH BLOG POST */
-      div[class*="ListControl-list"] > div {
+      /* 2. SINGLE CLEAN CARD FOR EACH BLOG POST */
+      div[class*="ListItem-listControlItem"] {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
         border-radius: 12px !important;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
         overflow: hidden !important;
-        transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+        margin: 0 !important;
+        transition: border-color 0.2s ease !important;
       }
-      div[class*="ListControl-list"] > div:hover {
+      div[class*="ListItem-listControlItem"]:hover {
         border-color: #cbd5e1 !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
       }
 
-      /* CARD HEADER BAR (Summary Header) */
-      div[class*="TopBar"],
-      div[class*="ListItemHeader"] {
+      /* 3. CARD HEADER BAR & SUMMARY TITLE */
+      div[class*="TopBar-StyledListItemTopBar"] {
+        background: #f8fafc !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+        padding: 10px 16px !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+      }
+
+      /* Post Title Summary Bar — Clickable Card Title */
+      div[class*="NestedObjectLabel"] {
         cursor: pointer !important;
+        padding: 14px 18px !important;
+        font-weight: 600 !important;
+        font-size: 0.95rem !important;
+        color: #0f172a !important;
         background: #ffffff !important;
-        padding: 16px 20px !important;
-        display: flex !items-center !important;
         user-select: none !important;
-        border-bottom: 1px solid transparent !important;
+        transition: color 0.15s ease, background 0.15s ease !important;
       }
-
-      /* Expanded Card Header Border */
-      div[class*="TopBar-open"],
-      div[class*="ListItemHeader-open"] {
-        border-bottom-color: #f1f5f9 !important;
+      div[class*="NestedObjectLabel"]:hover {
         background: #fafafa !important;
-      }
-
-      /* Arrow Icon Styling */
-      svg[class*="direction"],
-      button[class*="Expand"] {
-        color: #64748b !important;
-        transition: transform 0.2s ease, color 0.2s ease !important;
-      }
-      div[class*="ListControl-list"] > div:hover svg[class*="direction"] {
         color: #b89146 !important;
       }
 
-      /* Clean "+ Add blog posts" Button at Top */
-      button[class*="AddButton"],
-      button[class*="ListControl-addButton"] {
+      /* Add Blog Posts Button (+ Add) */
+      button[class*="AddButton"] {
         background-color: #051411 !important;
         color: #e6c381 !important;
         border: none !important;
         border-radius: 8px !important;
         font-weight: 600 !important;
-        padding: 10px 20px !important;
+        padding: 8px 18px !important;
         font-family: 'Urbanist', sans-serif !important;
         cursor: pointer !important;
-        box-shadow: 0 2px 6px rgba(5, 20, 17, 0.15) !important;
+        box-shadow: 0 2px 6px rgba(5, 20, 17, 0.12) !important;
       }
-      button[class*="AddButton"]:hover,
-      button[class*="ListControl-addButton"]:hover {
+      button[class*="AddButton"]:hover {
         background-color: #0c2722 !important;
         color: #ffffff !important;
       }
 
-      /* Form Fields Inside Expanded Cards */
+      /* Input Fields inside Card Body */
       div[class*="ControlContainer"] input,
       div[class*="ControlContainer"] textarea {
         background: #ffffff !important;
@@ -156,16 +143,19 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // Capture phase click handler: makes clicking ANYWHERE on a post header card open/close it
+      // Capture phase click handler: clicking ANYWHERE on a post summary label opens/closes it
       document.addEventListener("click", function(e) {
-        const topBar = e.target.closest('div[class*="TopBar"], div[class*="ListItemHeader"]');
-        if (topBar) {
-          // Ignore clicks on form inputs, delete button, or drag handles
-          const isControl = e.target.closest('button[class*="Delete"], button[class*="Remove"], input, textarea, select, [class*="DragHandle"]');
+        const titleLabel = e.target.closest('[class*="NestedObjectLabel"], [class*="TopBar-StyledListItemTopBar"]');
+        if (titleLabel) {
+          // Ignore clicks on buttons (delete, drag, etc) or form inputs
+          const isControl = e.target.closest('button, input, textarea, select, [class*="DragIconContainer"]');
           if (!isControl) {
-            const toggle = topBar.querySelector('button[class*="Expand"], svg[class*="direction"], [class*="Icon"]');
-            if (toggle && !toggle.contains(e.target) && e.target !== toggle) {
-              toggle.click();
+            const itemCard = titleLabel.closest('[class*="ListItem-listControlItem"]');
+            if (itemCard) {
+              const expandBtn = itemCard.querySelector('button[data-testid="expand-button"], button[class*="TopBarButton"]');
+              if (expandBtn && e.target !== expandBtn && !expandBtn.contains(e.target)) {
+                expandBtn.click();
+              }
             }
           }
         }
