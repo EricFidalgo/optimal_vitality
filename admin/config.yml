@@ -24,7 +24,7 @@ collections:
           - label: "Blog Posts"
             name: "posts"
             widget: "list"
-            summary: "📝 {{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
+            summary: "{{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
             fields:
               - label: "Article Title"
                 name: "title"
@@ -33,7 +33,7 @@ collections:
               - label: "URL Link ID (Slug)"
                 name: "id"
                 widget: "string"
-                hint: "Unique URL slug (e.g. 'what-is-retatrutide'). Must match the Spanish version!"
+                hint: "Unique URL slug (e.g. 'what-is-retatrutide'). IMPORTANT: Also add a post with this exact ID in Spanish Blog Posts!"
               - label: "Category"
                 name: "category"
                 widget: "select"
@@ -81,7 +81,7 @@ collections:
           - label: "Artículos / Blog Posts"
             name: "posts"
             widget: "list"
-            summary: "📝 {{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
+            summary: "{{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
             fields:
               - label: "Título / Title"
                 name: "title"
