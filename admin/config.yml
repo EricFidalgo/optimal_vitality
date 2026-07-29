@@ -58,18 +58,20 @@ collections:
                 widget: "text"
                 hint: "1-2 sentence preview displayed on the main blog page."
 
-              # Article Content Sections (All Optional - Leave blank to hide a section on the website)
-              - label: "Article Content Sections (Optional)"
+              # Article Content Sections (Dynamic List — Add, edit, remove, or re-order any section!)
+              - label: "Article Content Sections"
                 name: "content"
-                widget: "object"
+                widget: "list"
+                summary: "{{fields.title}}"
                 fields:
-                  - { label: "Clinical Overview", name: "overview", widget: "markdown", required: false, hint: "Main introduction and overview." }
-                  - { label: "Consumer Safety", name: "consumerSafety", widget: "markdown", required: false, hint: "Safety considerations. Leave blank to hide this section on the site." }
-                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", required: false, hint: "Who is a good candidate. Leave blank to hide this section on the site." }
-                  - { label: "Timeline Expectations", name: "timelineExpectations", widget: "markdown", required: false, hint: "Expected timeline. Leave blank to hide this section on the site." }
-                  - { label: "Potential Downtime", name: "downtime", widget: "markdown", required: false, hint: "Physical recovery or downtime. Leave blank to hide this section on the site." }
-                  - { label: "Expected Results", name: "expectedResults", widget: "markdown", required: false, hint: "Clinical outcomes. Leave blank to hide this section on the site." }
-                  - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", required: false, hint: "Known side effects and risks. Leave blank to hide this section on the site." }
+                  - label: "Section Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Headline for this section (e.g. 'Overview', 'Consumer Safety', 'Candidacy Requirements')."
+                  - label: "Section Text Content"
+                    name: "body"
+                    widget: "text"
+                    hint: "The text for this section."
 
       # ───────────────────────────────────────────────────────────────────────
       # 🇪🇸 SPANISH BLOG POSTS
@@ -112,15 +114,16 @@ collections:
                 name: "excerpt"
                 widget: "text"
 
-              # Article Content Sections (Opcionales)
-              - label: "Secciones del Artículo (Opcionales)"
+              # Article Content Sections (Lista Dinámica / Dynamic Sections)
+              - label: "Secciones del Artículo"
                 name: "content"
-                widget: "object"
+                widget: "list"
+                summary: "{{fields.title}}"
                 fields:
-                  - { label: "Resumen Clínico / Clinical Overview", name: "overview", widget: "markdown", required: false }
-                  - { label: "Seguridad del Consumidor / Consumer Safety", name: "consumerSafety", widget: "markdown", required: false }
-                  - { label: "Requisitos de Candidatura / Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", required: false }
-                  - { label: "Expectativas de Tiempo / Timeline", name: "timelineExpectations", widget: "markdown", required: false }
-                  - { label: "Tiempo de Inactividad / Downtime", name: "downtime", widget: "markdown", required: false }
-                  - { label: "Resultados Esperados / Expected Results", name: "expectedResults", widget: "markdown", required: false }
-                  - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "markdown", required: false }
+                  - label: "Título de la Sección / Section Title"
+                    name: "title"
+                    widget: "string"
+                    hint: "Ej. 'Visión general', 'Seguridad del Consumidor', 'Resultados Esperados'."
+                  - label: "Texto de la Sección / Section Text"
+                    name: "body"
+                    widget: "text"

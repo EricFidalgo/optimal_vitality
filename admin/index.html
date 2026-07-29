@@ -82,7 +82,7 @@
         display: none !important;
       }
 
-      /* ADD BLOG POSTS BUTTON */
+      /* ADD BUTTONS */
       button[class*="AddButton"] {
         background-color: #0f172a !important;
         color: #ffffff !important;
@@ -190,7 +190,7 @@
         }
       }, true);
 
-      // 2. Custom Preview Renderer Matching article.html Layout
+      // 2. Custom Preview Renderer Matching article.html Layout & Dynamic Content Sections
       if (window.CMS && window.createClass && window.h) {
         const BlogPreview = createClass({
           render: function() {
@@ -203,7 +203,32 @@
             return h('div', { style: { padding: '40px 24px', fontFamily: 'Urbanist, Inter, sans-serif', background: '#ffffff', color: '#2c3036', minHeight: '100vh' } },
               posts.map(function(post, index) {
                 if (!post) return null;
-                const content = post.content || {};
+
+                const sectionElements = [];
+                if (Array.isArray(post.content)) {
+                  post.content.forEach(function(sec, secIdx) {
+                    if (!sec) return;
+                    const secTitle = sec.title || '';
+                    const secBody  = sec.body  || sec.text || '';
+
+                    if (secIdx === 0) {
+                      // Lead Overview Paragraph
+                      sectionElements.push(
+                        h('div', { key: secIdx, style: { marginBottom: '28px' } },
+                          h('p', { style: { fontSize: '1.15rem', lineHeight: '1.85', color: '#2c3036', fontWeight: '500' } }, secBody)
+                        )
+                      );
+                    } else {
+                      // Standard Section with <h3> Title & Bottom Border Line
+                      sectionElements.push(
+                        h('div', { key: secIdx, style: { marginBottom: '28px' } },
+                          secTitle ? h('h3', { style: { fontFamily: 'Urbanist, sans-serif', fontWeight: '700', fontSize: '1.25rem', color: '#051411', marginTop: '2.5rem', marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '2px solid rgba(5, 20, 17, 0.15)' } }, secTitle) : null,
+                          h('p', { style: { fontSize: '1.1rem', lineHeight: '1.85', color: '#2c3036', marginBottom: '1.5rem' } }, secBody)
+                        )
+                      );
+                    }
+                  });
+                }
 
                 return h('div', { key: index, style: { maxWidth: '720px', margin: '0 auto 60px auto' } },
                   
@@ -218,16 +243,8 @@
                     (post.author || 'Author') + '  •  ' + (post.date || 'Date')
                   ),
 
-                  // Clinical Overview (Lead Paragraph)
-                  content.overview ? h('p', { style: { fontSize: '1.15rem', lineHeight: '1.85', color: '#2c3036', fontWeight: '500', marginBottom: '28px' } }, content.overview) : null,
-
-                  // Article Sections matching article.html <h3> layout
-                  createArticleSection('Consumer Safety', content.consumerSafety),
-                  createArticleSection('Candidacy Requirements', content.candidacyRequirements),
-                  createArticleSection('Timeline Expectations', content.timelineExpectations),
-                  createArticleSection('Expected Results', content.expectedResults),
-                  createArticleSection('Potential Downtime', content.downtime),
-                  createArticleSection('Clinical Risks', content.clinicalRisks),
+                  // Dynamic Sections Array
+                  sectionElements,
 
                   // Gradient HR Divider between articles
                   h('hr', { style: { border: '0', height: '2px', background: 'linear-gradient(90deg, rgba(230, 195, 129, 0.15) 0%, rgba(5, 20, 17, 0.25) 50%, rgba(230, 195, 129, 0.15) 100%)', margin: '3.5rem 0 1rem 0', opacity: '1' } })
@@ -236,14 +253,6 @@
             );
           }
         });
-
-        function createArticleSection(title, text) {
-          if (!text) return null;
-          return h('div', { style: { marginBottom: '28px' } },
-            h('h3', { style: { fontFamily: 'Urbanist, sans-serif', fontWeight: '700', fontSize: '1.25rem', color: '#051411', marginTop: '2.5rem', marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '2px solid rgba(5, 20, 17, 0.15)' } }, title),
-            h('p', { style: { fontSize: '1.1rem', lineHeight: '1.85', color: '#2c3036', marginBottom: '1.5rem' } }, text)
-          );
-        }
 
         CMS.registerPreviewTemplate("blog_en_posts", BlogPreview);
         CMS.registerPreviewTemplate("blog_es_posts", BlogPreview);
