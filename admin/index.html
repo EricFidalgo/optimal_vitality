@@ -62,7 +62,7 @@
         border-bottom: 1px solid #e2e8f0 !important;
       }
 
-      /* MASTER FOLDER COUNT ("X blog posts") — Clean Normal Text (No Button Box) */
+      /* MASTER FOLDER COUNT ("X blog posts") */
       div[class*="ExpandButtonContainer"] {
         background: transparent !important;
         border: none !important;
@@ -82,7 +82,7 @@
         display: none !important;
       }
 
-      /* ADD BLOG POSTS BUTTON — Normal Clean Dark Button */
+      /* ADD BLOG POSTS BUTTON */
       button[class*="AddButton"] {
         background-color: #0f172a !important;
         color: #ffffff !important;
@@ -190,7 +190,7 @@
         }
       }, true);
 
-      // 2. Custom High-End Preview Component Renderer for the Right-Hand Pane
+      // 2. Custom Preview Renderer Matching article.html Layout
       if (window.CMS && window.createClass && window.h) {
         const BlogPreview = createClass({
           render: function() {
@@ -200,46 +200,48 @@
 
             const posts = postsData.toJS ? postsData.toJS() : postsData;
 
-            return h('div', { style: { padding: '24px', fontFamily: 'Inter, system-ui, sans-serif', background: '#f8fafc', minHeight: '100vh' } },
+            return h('div', { style: { padding: '40px 24px', fontFamily: 'Urbanist, Inter, sans-serif', background: '#ffffff', color: '#2c3036', minHeight: '100vh' } },
               posts.map(function(post, index) {
                 if (!post) return null;
                 const content = post.content || {};
 
-                return h('div', { key: index, style: { background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '28px', marginBottom: '28px', boxShadow: '0 4px 16px rgba(0,0,0,0.04)' } },
+                return h('div', { key: index, style: { maxWidth: '720px', margin: '0 auto 60px auto' } },
                   
                   // Category Badge
-                  h('div', { style: { display: 'inline-block', background: 'rgba(5,20,17,0.06)', color: '#051411', border: '1px solid rgba(5,20,17,0.15)', fontSize: '11px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', padding: '4px 12px', borderRadius: '4px', marginBottom: '12px' } }, post.category || 'Category'),
+                  h('div', { style: { display: 'inline-block', background: 'rgba(230, 195, 129, 0.15)', color: '#b89146', border: '1px solid rgba(230, 195, 129, 0.3)', fontSize: '0.8rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1.5px', padding: '6px 14px', borderRadius: '4px', marginBottom: '16px' } }, post.category || 'Category'),
                   
                   // Article Title
-                  h('h2', { style: { fontFamily: 'Urbanist, sans-serif', fontSize: '24px', fontWeight: '700', color: '#051411', marginTop: '4px', marginBottom: '10px', lineHeight: '1.3' } }, post.title || 'Untitled Article'),
+                  h('h1', { style: { fontFamily: 'Urbanist, sans-serif', fontSize: '2.2rem', fontWeight: '700', color: '#051411', textTransform: 'uppercase', marginBottom: '16px', lineHeight: '1.25' } }, post.title || 'Untitled Article'),
                   
                   // Author & Date Meta Line
-                  h('div', { style: { fontSize: '13px', color: '#64748b', marginBottom: '16px', paddingBottom: '14px', borderBottom: '1px solid #f1f5f9' } }, 
-                    'By ' + (post.author || 'Author') + '  •  ' + (post.date || 'Date') + '  •  Slug: /' + (post.id || '')
+                  h('div', { style: { fontSize: '0.95rem', color: '#64748b', marginBottom: '32px' } }, 
+                    (post.author || 'Author') + '  •  ' + (post.date || 'Date')
                   ),
 
-                  // Excerpt Box
-                  post.excerpt ? h('div', { style: { fontStyle: 'italic', color: '#334155', marginBottom: '24px', fontSize: '14px', background: '#f8fafc', padding: '14px 18px', borderRadius: '8px', borderLeft: '4px solid #b89146' } }, post.excerpt) : null,
+                  // Clinical Overview (Lead Paragraph)
+                  content.overview ? h('p', { style: { fontSize: '1.15rem', lineHeight: '1.85', color: '#2c3036', fontWeight: '500', marginBottom: '28px' } }, content.overview) : null,
 
-                  // Separated Content Sections
-                  createSection('Clinical Overview', content.overview),
-                  createSection('Consumer Safety', content.consumerSafety),
-                  createSection('Candidacy Requirements', content.candidacyRequirements),
-                  createSection('Timeline Expectations', content.timelineExpectations),
-                  createSection('Potential Downtime', content.downtime),
-                  createSection('Expected Results', content.expectedResults),
-                  createSection('Clinical Risks', content.clinicalRisks)
+                  // Article Sections matching article.html <h3> layout
+                  createArticleSection('Consumer Safety', content.consumerSafety),
+                  createArticleSection('Candidacy Requirements', content.candidacyRequirements),
+                  createArticleSection('Timeline Expectations', content.timelineExpectations),
+                  createArticleSection('Expected Results', content.expectedResults),
+                  createArticleSection('Potential Downtime', content.downtime),
+                  createArticleSection('Clinical Risks', content.clinicalRisks),
+
+                  // Gradient HR Divider between articles
+                  h('hr', { style: { border: '0', height: '2px', background: 'linear-gradient(90deg, rgba(230, 195, 129, 0.15) 0%, rgba(5, 20, 17, 0.25) 50%, rgba(230, 195, 129, 0.15) 100%)', margin: '3.5rem 0 1rem 0', opacity: '1' } })
                 );
               })
             );
           }
         });
 
-        function createSection(title, text) {
+        function createArticleSection(title, text) {
           if (!text) return null;
-          return h('div', { style: { background: '#ffffff', border: '1px solid #e2e8f0', borderLeft: '4px solid #051411', borderRadius: '10px', padding: '16px 20px', marginBottom: '16px', boxShadow: '0 1px 3px rgba(0,0,0,0.02)' } },
-            h('div', { style: { fontFamily: 'Urbanist, sans-serif', fontWeight: '700', fontSize: '13px', color: '#b89146', textTransform: 'uppercase', letterSpacing: '0.8px', marginBottom: '8px' } }, title),
-            h('div', { style: { fontSize: '14px', color: '#334155', lineHeight: '1.65' } }, text)
+          return h('div', { style: { marginBottom: '28px' } },
+            h('h3', { style: { fontFamily: 'Urbanist, sans-serif', fontWeight: '700', fontSize: '1.25rem', color: '#051411', marginTop: '2.5rem', marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '2px solid rgba(5, 20, 17, 0.15)' } }, title),
+            h('p', { style: { fontSize: '1.1rem', lineHeight: '1.85', color: '#2c3036', marginBottom: '1.5rem' } }, text)
           );
         }
 
