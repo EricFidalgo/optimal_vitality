@@ -53,15 +53,14 @@
         background: transparent !important;
       }
 
-      /* CONTROL CONTAINER: Normal flex column */
-      div[class*="ControlContainer"] {
+      /* 1. MAIN POSTS FIELD WRAPPER: Normal column layout so TopBarContainer stays AT THE VERY TOP */
+      div[id^="posts-field-"] {
         display: flex !important;
         flex-direction: column !important;
       }
 
-      /* TOP BAR CONTAINER ("X blog posts" + "Add blog posts"): ABSOLUTELY LOCKED AT VERY TOP (order: -9999) */
+      /* 2. TOP BAR CONTAINER ("7 blog posts" + "Add blog posts"): Always Child 1 at the top */
       div[class*="TopBarContainer"] {
-        order: -9999 !important;
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
@@ -112,23 +111,25 @@
         color: #ffffff !important;
       }
 
-      /* 1. OUTER MAIN BLOG POSTS CARDS LIST: Placed after TopBarContainer, cards reversed */
-      div[id^="posts-field-"] {
-        order: 9999 !important;
+      /* 3. POST CARDS WRAPPER (Child 2 of posts-field): Reverses cards so NEW posts go to the TOP */
+      div[id^="posts-field-"] > div:nth-child(2) {
         display: flex !important;
         flex-direction: column-reverse !important;
         gap: 10px !important;
       }
 
-      /* 2. INNER ARTICLE CONTENT SECTIONS LIST: Placed after TopBarContainer, sections in normal top-to-bottom order */
+      /* 4. INNER CONTENT SECTIONS WRAPPER: Normal top-to-bottom layout for section cards */
       div[id^="content-field-"] {
-        order: 9999 !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      div[id^="content-field-"] > div:nth-child(2) {
         display: flex !important;
         flex-direction: column !important;
         gap: 10px !important;
       }
 
-      /* 3. SINGLE CLEAN CARD FOR EACH BLOG POST & EACH SECTION ITEM */
+      /* 5. SINGLE CLEAN CARD FOR EACH BLOG POST & EACH SECTION ITEM */
       div[class*="ListItem-listControlItem"] {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
@@ -142,7 +143,7 @@
         border-color: #cbd5e1 !important;
       }
 
-      /* 4. CARD HEADER BAR & SUMMARY TITLE */
+      /* 6. CARD HEADER BAR & SUMMARY TITLE */
       div[class*="TopBar-StyledListItemTopBar"] {
         background: #f8fafc !important;
         border-bottom: 1px solid #f1f5f9 !important;
@@ -168,7 +169,7 @@
         color: #0f172a !important;
       }
 
-      /* 5. CATEGORY SELECTOR & INPUT FIELDS — REMOVE RECTANGLE INSIDE RECTANGLE */
+      /* 7. CATEGORY SELECTOR & INPUT FIELDS — REMOVE RECTANGLE INSIDE RECTANGLE */
       div[class*="ControlContainer"] input,
       div[class*="ControlContainer"] textarea,
       select {
