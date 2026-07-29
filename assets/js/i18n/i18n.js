@@ -201,6 +201,7 @@
     ["Meet the Doctors & View Credentials", "Conozca a los Médicos y Vea Credenciales"],
     ["Meet the Doctors &amp; View Credentials", "Conozca a los Médicos y Vea Credenciales"],
     ["Book Executive VIP", "Reservar Plan VIP Ejecutivo"],
+    ["Book Executive Plan", "Reservar Plan Ejecutivo"],
     ["Book Optimal Plan", "Reservar Plan Óptimo"],
     ["Book Essential Plan", "Reservar Plan Esencial"],
     ["Book Your Consultation Now", "Reservar Consulta"],

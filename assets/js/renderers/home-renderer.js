@@ -102,9 +102,15 @@
         var liColor   = meta.featured ? 'text-white-50' : 'text-muted';
         var spanAttr  = meta.featured ? ' class="text-white"' : '';
         var mtClass   = meta.featured ? ' mt-2' : '';
-        var features  = plan.features.map(function(f) {
-          return '<li class="d-flex align-items-start gap-3 ' + liColor + '" style="font-size:0.95rem;"><i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i><span' + spanAttr + '>' + f + '</span></li>';
+        var features = plan.features.map(function(f) {
+          var badgeClass = meta.featured ? 'check-badge-featured' : (plan.id === 'vip' ? 'check-badge-vip' : 'check-badge-standard');
+          var textStyle  = meta.featured ? 'color: #ffffff !important; font-weight: 500;' : 'color: #1e2d17 !important; font-weight: 500;';
+          return '<li class="d-flex align-items-start gap-3" style="font-size:0.95rem; line-height:1.55;">' +
+                   '<div class="plan-check-badge ' + badgeClass + ' flex-shrink-0"><i class="fas fa-check"></i></div>' +
+                   '<span style="' + textStyle + '">' + f + '</span>' +
+                 '</li>';
         }).join('');
+
         desktopGrid.insertAdjacentHTML('beforeend',
           '<div class="col-lg-4 col-md-6">' +
             '<div class="' + meta.cardClass + '"' + styleAttr + '>' +
@@ -130,13 +136,16 @@
         var titleColor = meta.featured ? 'text-white' : '';
         var titleStyle = meta.featured ? '' : ' style="color:var(--secondary-color);"';
         var descColor = meta.featured ? 'text-white-50' : 'text-muted';
-        var liColor   = meta.featured ? 'text-white-50' : 'text-muted';
-        var spanAttr  = meta.featured ? ' class="text-white"' : '';
         var showClass = meta.collapseDefault ? 'collapse show' : 'collapse';
         var expanded  = meta.collapseDefault ? 'true' : 'false';
         var collapsedClass = meta.collapseDefault ? '' : 'collapsed';
         var features  = plan.features.map(function(f) {
-          return '<li class="d-flex align-items-start gap-2 ' + liColor + ' small"><i class="fas fa-check-circle text-primary mt-1 flex-shrink-0"></i><span' + spanAttr + '>' + f + '</span></li>';
+          var badgeClass = meta.featured ? 'check-badge-featured' : (plan.id === 'vip' ? 'check-badge-vip' : 'check-badge-standard');
+          var textStyle  = meta.featured ? 'color: #ffffff !important; font-weight: 500;' : 'color: #1e2d17 !important; font-weight: 500;';
+          return '<li class="d-flex align-items-start gap-3 small mb-2">' +
+                   '<div class="plan-check-badge ' + badgeClass + ' flex-shrink-0" style="width:22px;height:22px;font-size:0.65rem;"><i class="fas fa-check"></i></div>' +
+                   '<span style="' + textStyle + '">' + f + '</span>' +
+                 '</li>';
         }).join('');
         mobileAccord.insertAdjacentHTML('beforeend',
           '<div class="' + meta.mobileItemClass + '"' + itemStyleAttr + '>' +

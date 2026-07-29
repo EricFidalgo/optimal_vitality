@@ -4276,12 +4276,54 @@ body.modal-open,
 }
 
 .membership-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(30, 45, 23, 0.1) !important;
+  transform: translateY(-8px) scale(1.01) !important;
+  box-shadow: 0 20px 40px rgba(30, 45, 23, 0.12) !important;
 }
 
-.featured-membership {
-  box-shadow: none !important;
+.membership-card.featured-membership {
+  box-shadow: 0 16px 40px rgba(28, 56, 56, 0.25) !important;
+}
+
+.membership-card.featured-membership:hover {
+  box-shadow: 0 24px 50px rgba(28, 56, 56, 0.4) !important;
+  border-color: rgba(230, 195, 129, 0.8) !important;
+}
+
+/* Captivating Plan Checkmark Badges */
+.plan-check-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 900;
+  margin-top: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.membership-card:hover .plan-check-badge,
+.accordion-item:hover .plan-check-badge {
+  transform: scale(1.15);
+}
+
+.check-badge-featured {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #d4af37 100%) !important;
+  color: var(--secondary-color) !important;
+  box-shadow: 0 3px 10px rgba(230, 195, 129, 0.4) !important;
+}
+
+.check-badge-standard {
+  background: rgba(30, 45, 23, 0.1) !important;
+  color: var(--secondary-color) !important;
+}
+
+.check-badge-vip {
+  background: linear-gradient(135deg, rgba(230, 195, 129, 0.3) 0%, rgba(196, 159, 87, 0.2) 100%) !important;
+  color: #725215 !important;
+  border: 1px solid rgba(230, 195, 129, 0.5) !important;
 }
 
 /* Mobile Plan Accordion (< 992px) */
