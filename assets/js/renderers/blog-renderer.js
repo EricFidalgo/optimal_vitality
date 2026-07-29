@@ -155,15 +155,6 @@
       return;
     }
 
-    // Update section titles via UI dictionary
-    if (ui.sections) {
-      setText('[data-i18n="article.consumerSafety"]',       ui.sections.consumerSafety);
-      setText('[data-i18n="article.candidacyRequirements"]', ui.sections.candidacyRequirements);
-      setText('[data-i18n="article.timelineExpectations"]',  ui.sections.timelineExpectations);
-      setText('[data-i18n="article.expectedResults"]',       ui.sections.expectedResults);
-      setText('[data-i18n="article.downtime"]',              ui.sections.downtime);
-      setText('[data-i18n="article.clinicalRisks"]',          ui.sections.clinicalRisks);
-    }
     setText('[data-i18n="article.readyTitle"]',       ui.readyTitle);
     setText('[data-i18n="article.readyDesc"]',        ui.readyDesc);
     setText('[data-i18n="article.bookConsultation"]', ui.bookConsultation);
@@ -179,15 +170,23 @@
     setSlot("articleAuthor", `${byText} ${article.author}`);
     setSlot("articleDate", article.date);
 
-    // Populate content sections
-    if (article.content) {
-      setHtmlSlot("contentOverview", article.content.overview);
-      setHtmlSlot("contentSafety", article.content.consumerSafety);
-      setHtmlSlot("contentCandidacy", article.content.candidacyRequirements);
-      setHtmlSlot("contentTimeline", article.content.timelineExpectations);
-      setHtmlSlot("contentDowntime", article.content.downtime);
-      setHtmlSlot("contentResults", article.content.expectedResults);
-      setHtmlSlot("contentRisks", article.content.clinicalRisks);
+    // Dynamically render content sections from the array
+    const sectionsContainer = document.getElementById("article-sections-container");
+    if (sectionsContainer && Array.isArray(article.content)) {
+      let sectionsHtml = "";
+      article.content.forEach((section, index) => {
+        if (index === 0) {
+          // First item renders as the lead overview paragraph (no heading)
+          sectionsHtml += `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p></div>`;
+        } else {
+          sectionsHtml += `
+            <div class="article-section">
+              <h3>${section.title}</h3>
+              <p>${section.body}</p>
+            </div>`;
+        }
+      });
+      sectionsContainer.innerHTML = sectionsHtml;
     }
 
     fadeInPage();

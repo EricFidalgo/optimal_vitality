@@ -34,15 +34,36 @@
       "author": "David Chen, RN",
       "date": "August 14, 2026",
       "excerpt": "The clinical science of heavy metal binding, glutathione optimization, and systemic cellular clearance.",
-      "content": {
-        "overview": "Cellular detoxification focuses on optimizing Phase I and Phase II liver detoxification pathways while neutralizing heavy metals and environmental toxins stored in adipose and neural tissue. Utilizing targeted intravenous glutathione, liposomal binders, and targeted amino acids, this protocol supports systemic toxin clearance and restores mitochondrial ATP production.",
-        "consumerSafety": "Detoxification protocols must be carefully titrated based on baseline renal and hepatic function. Overly aggressive detox can mobilize toxins faster than organs of elimination can process them. Physician oversight ensures safe clearance without electrolyte imbalances or Herxheimer reactions.",
-        "candidacyRequirements": "Recommended for patients presenting with systemic inflammation, chronic fatigue syndrome, brain fog, high heavy metal burden, or those undergoing comprehensive lifestyle optimization.",
-        "timelineExpectations": "Protocols typically run for 4 to 8 weeks, consisting of weekly IV infusions alongside daily oral binding agents. Incremental cognitive clarity and energy improvements are noted by week 3.",
-        "downtime": "Zero downtime. Infusions are completed in-clinic in 45-60 minutes, allowing patients to resume full normal activity immediately.",
-        "expectedResults": "Reduced systemic inflammation, improved mental sharpness, enhanced hepatic fat metabolism, and restored cellular energy production.",
-        "clinicalRisks": "Mild transient fatigue, mild headache, or lightheadedness as toxins are mobilized, all of which are managed through adequate hydration and binder titration."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "Cellular detoxification focuses on optimizing Phase I and Phase II liver detoxification pathways while neutralizing heavy metals and environmental toxins stored in adipose and neural tissue. Utilizing targeted intravenous glutathione, liposomal binders, and targeted amino acids, this protocol supports systemic toxin clearance and restores mitochondrial ATP production."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "Detoxification protocols must be carefully titrated based on baseline renal and hepatic function. Overly aggressive detox can mobilize toxins faster than organs of elimination can process them. Physician oversight ensures safe clearance without electrolyte imbalances or Herxheimer reactions."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Recommended for patients presenting with systemic inflammation, chronic fatigue syndrome, brain fog, high heavy metal burden, or those undergoing comprehensive lifestyle optimization."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Protocols typically run for 4 to 8 weeks, consisting of weekly IV infusions alongside daily oral binding agents. Incremental cognitive clarity and energy improvements are noted by week 3."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "Zero downtime. Infusions are completed in-clinic in 45-60 minutes, allowing patients to resume full normal activity immediately."
+        },
+        {
+          "title": "Expected Results",
+          "body": "Reduced systemic inflammation, improved mental sharpness, enhanced hepatic fat metabolism, and restored cellular energy production."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "Mild transient fatigue, mild headache, or lightheadedness as toxins are mobilized, all of which are managed through adequate hydration and binder titration."
+        }
+      ]
     },
     {
       "id": "regenerative-PRP-protocols",
@@ -51,15 +72,36 @@
       "author": "Sarah Jenkins, FNP-C",
       "date": "August 09, 2026",
       "excerpt": "Understanding extracellular vesicle signaling and how non-surgical regenerative protocols support cellular healing.",
-      "content": {
-        "overview": "PRP therapy represents the next generation of regenerative medicine. PRP are bio-identical extracellular vesicles secreted by stem cells that carry microRNA, growth factors, and signaling proteins. When targeted to inflamed joints, tendons, or damaged tissues, PRP act as cellular messengers that suppress chronic inflammation and stimulate local tissue remodeling.",
-        "consumerSafety": "PRP preparations must be sourced from strictly accredited, FDA-compliant tissue banks that undergo rigorous donor screening, sterility testing, and nucleic acid testing to guarantee pure, sterile products free from cellular debris or infectious agents.",
-        "candidacyRequirements": "Ideal for individuals suffering from chronic joint pain, tendonitis, ligament sprains, osteoarthritis, or those recovering from orthopedic procedures who wish to accelerate healing without surgery.",
-        "timelineExpectations": "Initial biological signaling and anti-inflammatory action begin within days. Progressive tissue regeneration and reduced pain manifest over 4 to 12 weeks post-procedure.",
-        "downtime": "Minimal physical downtime. Patients are advised to refrain from high-impact physical activity or heavy resistance training for 48 to 72 hours post-injection.",
-        "expectedResults": "Significant reduction in joint discomfort, improved mobility and range of motion, and accelerated repair of micro-damaged connective tissue.",
-        "clinicalRisks": "Localized swelling, mild soreness, or transient stiffness at the injection site for 24-48 hours. Systemic infection or allergic reaction risks are extremely rare under sterile clinical protocols."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "PRP therapy represents the next generation of regenerative medicine. PRP are bio-identical extracellular vesicles secreted by stem cells that carry microRNA, growth factors, and signaling proteins. When targeted to inflamed joints, tendons, or damaged tissues, PRP act as cellular messengers that suppress chronic inflammation and stimulate local tissue remodeling."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "PRP preparations must be sourced from strictly accredited, FDA-compliant tissue banks that undergo rigorous donor screening, sterility testing, and nucleic acid testing to guarantee pure, sterile products free from cellular debris or infectious agents."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Ideal for individuals suffering from chronic joint pain, tendonitis, ligament sprains, osteoarthritis, or those recovering from orthopedic procedures who wish to accelerate healing without surgery."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Initial biological signaling and anti-inflammatory action begin within days. Progressive tissue regeneration and reduced pain manifest over 4 to 12 weeks post-procedure."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "Minimal physical downtime. Patients are advised to refrain from high-impact physical activity or heavy resistance training for 48 to 72 hours post-injection."
+        },
+        {
+          "title": "Expected Results",
+          "body": "Significant reduction in joint discomfort, improved mobility and range of motion, and accelerated repair of micro-damaged connective tissue."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "Localized swelling, mild soreness, or transient stiffness at the injection site for 24-48 hours. Systemic infection or allergic reaction risks are extremely rare under sterile clinical protocols."
+        }
+      ]
     },
     {
       "id": "glp-1-side-effects",
@@ -68,15 +110,36 @@
       "author": "Sarah Jenkins, FNP-C",
       "date": "August 02, 2026",
       "excerpt": "How to manage, mitigate, and prevent common gastrointestinal side effects during GLP-1 and GIP receptor agonist therapies.",
-      "content": {
-        "overview": "GLP-1 receptor agonists (such as semaglutide and tirzepatide) have revolutionized the treatment of obesity and metabolic syndrome. By mimicking gut hormones, they delay gastric emptying and signal fullness to the brain. However, this slowed digestion can trigger gastrointestinal side effects. Understanding how to manage these symptoms ensures a comfortable, successful weight loss journey.",
-        "consumerSafety": "GLP-1 medications are powerful metabolic drugs and must be taken under strict clinical supervision. Safe usage requires careful dose titration, routine metabolic panels, pancreatic enzyme screening, and checking for personal or family histories of specific thyroid conditions. Buying unverified online compounds without medical oversight is highly unsafe.",
-        "candidacyRequirements": "Candidates are individuals with a BMI of 30 or greater, or 27 or greater with obesity-related conditions (such as hypertension or high cholesterol), who are committed to long-term metabolic therapy. This treatment is contraindicated for patients with a personal or family history of medullary thyroid carcinoma or MEN 2.",
-        "timelineExpectations": "Side effects are most common during the initial dose escalation phases. Most patients experience mild, transient symptoms that resolve within 1 to 2 weeks of starting a new dose level. A typical clinical titration pathway spans 16 to 20 weeks to reach the optimal maintenance dose.",
-        "downtime": "There is zero physical downtime. The injection is administered subcutaneously once a week. Patients can immediately return to work and light activities, though resting on injection day can help if mild fatigue or nausea occurs.",
-        "expectedResults": "By successfully managing side effects, patients can expect steady weight loss averaging 15% to 20% of total body weight over 40 to 52 weeks, alongside significant improvements in blood pressure, waist circumference, and glycemic control.",
-        "clinicalRisks": "Common clinical risks include nausea, vomiting, diarrhea, constipation, acid reflux, and fatigue. While generally mild, serious but rare risks include pancreatitis, acute gallbladder disease, severe dehydration due to vomiting, or hypoglycemia when combined with other diabetic medications."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "GLP-1 receptor agonists (such as semaglutide and tirzepatide) have revolutionized the treatment of obesity and metabolic syndrome. By mimicking gut hormones, they delay gastric emptying and signal fullness to the brain. However, this slowed digestion can trigger gastrointestinal side effects. Understanding how to manage these symptoms ensures a comfortable, successful weight loss journey."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "GLP-1 medications are powerful metabolic drugs and must be taken under strict clinical supervision. Safe usage requires careful dose titration, routine metabolic panels, pancreatic enzyme screening, and checking for personal or family histories of specific thyroid conditions. Buying unverified online compounds without medical oversight is highly unsafe."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Candidates are individuals with a BMI of 30 or greater, or 27 or greater with obesity-related conditions (such as hypertension or high cholesterol), who are committed to long-term metabolic therapy. This treatment is contraindicated for patients with a personal or family history of medullary thyroid carcinoma or MEN 2."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Side effects are most common during the initial dose escalation phases. Most patients experience mild, transient symptoms that resolve within 1 to 2 weeks of starting a new dose level. A typical clinical titration pathway spans 16 to 20 weeks to reach the optimal maintenance dose."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "There is zero physical downtime. The injection is administered subcutaneously once a week. Patients can immediately return to work and light activities, though resting on injection day can help if mild fatigue or nausea occurs."
+        },
+        {
+          "title": "Expected Results",
+          "body": "By successfully managing side effects, patients can expect steady weight loss averaging 15% to 20% of total body weight over 40 to 52 weeks, alongside significant improvements in blood pressure, waist circumference, and glycemic control."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "Common clinical risks include nausea, vomiting, diarrhea, constipation, acid reflux, and fatigue. While generally mild, serious but rare risks include pancreatitis, acute gallbladder disease, severe dehydration due to vomiting, or hypoglycemia when combined with other diabetic medications."
+        }
+      ]
     },
     {
       "id": "precision-biomarker-testing",
@@ -85,15 +148,36 @@
       "author": "Dr. Marcus Vance, MD",
       "date": "July 22, 2026",
       "excerpt": "How comprehensive metabolic, endocrine, and inflammatory panels uncover root causes of dysfunction before disease manifests.",
-      "content": {
-        "overview": "Standard annual lab panels typically test for overt disease rather than functional optimization. Precision biomarker panels evaluate over 80 specific biomarkers—including advanced lipid sub-fractions, inflammatory markers like hs-CRP, fasting insulin, hormone cascades, and micronutrient levels. This granular data allows clinicians to identify metabolic bottlenecks and cellular decline years before symptoms present.",
-        "consumerSafety": "Comprehensive blood panels are completely non-invasive, requiring only a routine fasting venipuncture. Safety involves ensuring proper clinical interpretation by experienced medical providers who analyze biomarker interactions rather than viewing lab values in isolation.",
-        "candidacyRequirements": "Recommended for any individual seeking proactive longevity, metabolic optimization, or those suffering from unexplained fatigue, weight resistance, or cognitive sluggishness despite 'normal' standard lab results.",
-        "timelineExpectations": "Lab collection takes less than 15 minutes. Comprehensive diagnostic results and detailed physician-led consultation protocols are completed within 7 to 10 business days.",
-        "downtime": "Zero downtime. Routine blood draw with brief pressure applied to the venipuncture site.",
-        "expectedResults": "A baseline biological map of your metabolic, hormonal, and cardiovascular health, leading to a customized clinical treatment plan engineered specifically for your genetics and biochemistry.",
-        "clinicalRisks": "Minimal risks limited to minor localized bruising or temporary tenderness at the blood draw site."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "Standard annual lab panels typically test for overt disease rather than functional optimization. Precision biomarker panels evaluate over 80 specific biomarkers—including advanced lipid sub-fractions, inflammatory markers like hs-CRP, fasting insulin, hormone cascades, and micronutrient levels. This granular data allows clinicians to identify metabolic bottlenecks and cellular decline years before symptoms present."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "Comprehensive blood panels are completely non-invasive, requiring only a routine fasting venipuncture. Safety involves ensuring proper clinical interpretation by experienced medical providers who analyze biomarker interactions rather than viewing lab values in isolation."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Recommended for any individual seeking proactive longevity, metabolic optimization, or those suffering from unexplained fatigue, weight resistance, or cognitive sluggishness despite 'normal' standard lab results."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Lab collection takes less than 15 minutes. Comprehensive diagnostic results and detailed physician-led consultation protocols are completed within 7 to 10 business days."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "Zero downtime. Routine blood draw with brief pressure applied to the venipuncture site."
+        },
+        {
+          "title": "Expected Results",
+          "body": "A baseline biological map of your metabolic, hormonal, and cardiovascular health, leading to a customized clinical treatment plan engineered specifically for your genetics and biochemistry."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "Minimal risks limited to minor localized bruising or temporary tenderness at the blood draw site."
+        }
+      ]
     },
     {
       "id": "trt-myths",
@@ -102,15 +186,36 @@
       "author": "Dr. Marcus Vance, MD",
       "date": "July 15, 2026",
       "excerpt": "Separating clinical fact from internet fiction regarding Testosterone Replacement Therapy and cardiovascular health.",
-      "content": {
-        "overview": "Testosterone Replacement Therapy (TRT) is one of the most misunderstood modalities in modern medicine. Often conflated with the abuse of anabolic steroids, clinical TRT is fundamentally about restoring a man's physiological baseline to optimal levels. When administered correctly, it is designed to assist in alleviating the symptoms of hypogonadism—including lethargy, muscle wasting, depression, and erectile dysfunction—while supporting systemic health.",
-        "consumerSafety": "Modern clinical TRT is extremely safe when guided by precision lab work. The 'cookie-cutter' approach of prescribing identical testosterone doses to every patient is obsolete and unsafe. Safety requires continuous monitoring of complete blood counts (hematocrit), prostate-specific antigen (PSA), estradiol, and cardiovascular markers to ensure the protocol remains entirely therapeutic and never supra-physiological.",
-        "candidacyRequirements": "Candidacy is strictly determined by comprehensive serology (bloodwork) and clinical symptoms. A patient must demonstrate two separate fasting morning total testosterone levels below optimal ranges (often < 500 ng/dL, depending on age and free testosterone levels), coupled with clinical symptoms of androgen deficiency. It is not prescribed simply for athletic enhancement.",
-        "timelineExpectations": "The psychological and metabolic benefits of TRT follow a predictable timeline. Libido, mood, and sleep improvements are typically noted within 3 to 4 weeks. Changes in body composition, increased bone mineral density, and maximum erectile function improvements often require 3 to 6 months of consistent therapy to fully materialize.",
-        "downtime": "TRT involves zero downtime. Therapy is seamlessly integrated into the patient's routine via twice-weekly micro-injections, daily compounded creams, or pellet insertions. Regular exercise and a clean diet are strongly encouraged immediately upon starting.",
-        "expectedResults": "Patients can expect a profound return of vitality. This includes enhanced cognitive drive, stabilized mood, accelerated recovery from exercise, increased lean muscle mass, reduction in visceral body fat, and restored sexual function. It is essentially a restoration of the physiological resilience associated with a man's late 20s.",
-        "clinicalRisks": "The primary clinical risks involve secondary polycythemia (thickening of the blood due to increased red blood cell production), which is easily managed via dose adjustment or therapeutic phlebotomy. Other risks include potential exacerbation of sleep apnea, mild testicular atrophy (preventable with concurrent HCG therapy), and fluctuations in estrogen levels."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "Testosterone Replacement Therapy (TRT) is one of the most misunderstood modalities in modern medicine. Often conflated with the abuse of anabolic steroids, clinical TRT is fundamentally about restoring a man's physiological baseline to optimal levels. When administered correctly, it is designed to assist in alleviating the symptoms of hypogonadism—including lethargy, muscle wasting, depression, and erectile dysfunction—while supporting systemic health."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "Modern clinical TRT is extremely safe when guided by precision lab work. The 'cookie-cutter' approach of prescribing identical testosterone doses to every patient is obsolete and unsafe. Safety requires continuous monitoring of complete blood counts (hematocrit), prostate-specific antigen (PSA), estradiol, and cardiovascular markers to ensure the protocol remains entirely therapeutic and never supra-physiological."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Candidacy is strictly determined by comprehensive serology (bloodwork) and clinical symptoms. A patient must demonstrate two separate fasting morning total testosterone levels below optimal ranges (often < 500 ng/dL, depending on age and free testosterone levels), coupled with clinical symptoms of androgen deficiency. It is not prescribed simply for athletic enhancement."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "The psychological and metabolic benefits of TRT follow a predictable timeline. Libido, mood, and sleep improvements are typically noted within 3 to 4 weeks. Changes in body composition, increased bone mineral density, and maximum erectile function improvements often require 3 to 6 months of consistent therapy to fully materialize."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "TRT involves zero downtime. Therapy is seamlessly integrated into the patient's routine via twice-weekly micro-injections, daily compounded creams, or pellet insertions. Regular exercise and a clean diet are strongly encouraged immediately upon starting."
+        },
+        {
+          "title": "Expected Results",
+          "body": "Patients can expect a profound return of vitality. This includes enhanced cognitive drive, stabilized mood, accelerated recovery from exercise, increased lean muscle mass, reduction in visceral body fat, and restored sexual function. It is essentially a restoration of the physiological resilience associated with a man's late 20s."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "The primary clinical risks involve secondary polycythemia (thickening of the blood due to increased red blood cell production), which is easily managed via dose adjustment or therapeutic phlebotomy. Other risks include potential exacerbation of sleep apnea, mild testicular atrophy (preventable with concurrent HCG therapy), and fluctuations in estrogen levels."
+        }
+      ]
     },
     {
       "id": "benefits-of-peptide-therapy",
@@ -119,15 +224,36 @@
       "author": "Sarah Jenkins, FNP-C",
       "date": "July 02, 2026",
       "excerpt": "How targeted amino acid sequences are revolutionizing regenerative medicine, immune modulation, and tissue repair.",
-      "content": {
-        "overview": "Peptides are short chains of amino acids that act as precise signaling molecules within the body. Unlike broad-spectrum pharmaceuticals, peptide therapy provides highly targeted instructions to cells—prompting them to release growth hormones, reduce inflammation, or accelerate tissue repair. By utilizing bio-identical structures, we can essentially 're-program' cellular function back to a more youthful state.",
-        "consumerSafety": "The safety profile of clinical-grade, pharmacy-compounded peptides is excellent due to their bio-identical nature—they mimic molecules your body already produces. The greatest safety risk to consumers is the illicit market of 'research chemical' peptides, which frequently contain dangerous impurities, endotoxins, and incorrect dosing. We exclusively utilize strictly regulated, FDA-outsourcing facilities (503B) for our compounding.",
-        "candidacyRequirements": "Candidacy depends entirely on the specific peptide protocol. For example, Peptide options is ideal for individuals recovering from soft tissue injuries or joint pain, while CJC-1295/Peptide options is suited for patients seeking body recomposition, improved sleep, and natural growth hormone optimization. Comprehensive bloodwork is required to match the correct peptide sequence to the physiological deficit.",
-        "timelineExpectations": "Peptides are not immediate pharmaceutical fixes; they are regenerative therapies. Most protocols require daily subcutaneous injections or oral administration for 8 to 12 weeks to achieve steady-state cellular signaling. Noticeable improvements in sleep and recovery often occur by week 3, while structural changes (tissue repair, fat loss) manifest closer to week 8.",
-        "downtime": "There is zero downtime. Subcutaneous injections utilize a tiny, painless insulin syringe. Patients continue their daily lives and exercise routines without interruption.",
-        "expectedResults": "Results are highly peptide-specific. Growth hormone secretagogues (CJC/Peptide options) yield enhanced deep sleep, improved lean muscle retention, and accelerated recovery. Supportive peptides (Peptide options/Peptide options) demonstrate clinical utility in assisting with joint health and supporting the recovery of tendons, ligaments, and gut lining.",
-        "clinicalRisks": "Risks are generally minimal when clinically supervised. Injection site reactions (mild redness or itching) are the most common complaint. Depending on the sequence, minor water retention or slight increases in blood sugar can occur, which is why physician monitoring and cycling (e.g., 3 months on, 1 month off) are critical components of a safe protocol."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "Peptides are short chains of amino acids that act as precise signaling molecules within the body. Unlike broad-spectrum pharmaceuticals, peptide therapy provides highly targeted instructions to cells—prompting them to release growth hormones, reduce inflammation, or accelerate tissue repair. By utilizing bio-identical structures, we can essentially 're-program' cellular function back to a more youthful state."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "The safety profile of clinical-grade, pharmacy-compounded peptides is excellent due to their bio-identical nature—they mimic molecules your body already produces. The greatest safety risk to consumers is the illicit market of 'research chemical' peptides, which frequently contain dangerous impurities, endotoxins, and incorrect dosing. We exclusively utilize strictly regulated, FDA-outsourcing facilities (503B) for our compounding."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Candidacy depends entirely on the specific peptide protocol. For example, Peptide options is ideal for individuals recovering from soft tissue injuries or joint pain, while CJC-1295/Peptide options is suited for patients seeking body recomposition, improved sleep, and natural growth hormone optimization. Comprehensive bloodwork is required to match the correct peptide sequence to the physiological deficit."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Peptides are not immediate pharmaceutical fixes; they are regenerative therapies. Most protocols require daily subcutaneous injections or oral administration for 8 to 12 weeks to achieve steady-state cellular signaling. Noticeable improvements in sleep and recovery often occur by week 3, while structural changes (tissue repair, fat loss) manifest closer to week 8."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "There is zero downtime. Subcutaneous injections utilize a tiny, painless insulin syringe. Patients continue their daily lives and exercise routines without interruption."
+        },
+        {
+          "title": "Expected Results",
+          "body": "Results are highly peptide-specific. Growth hormone secretagogues (CJC/Peptide options) yield enhanced deep sleep, improved lean muscle retention, and accelerated recovery. Supportive peptides (Peptide options/Peptide options) demonstrate clinical utility in assisting with joint health and supporting the recovery of tendons, ligaments, and gut lining."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "Risks are generally minimal when clinically supervised. Injection site reactions (mild redness or itching) are the most common complaint. Depending on the sequence, minor water retention or slight increases in blood sugar can occur, which is why physician monitoring and cycling (e.g., 3 months on, 1 month off) are critical components of a safe protocol."
+        }
+      ]
     },
     {
       "id": "what-is-retatrutide",
@@ -136,15 +262,36 @@
       "author": "Dr. Marcus Vance, MD",
       "date": "June 04, 2026",
       "excerpt": "A comprehensive clinical overview of Retatrutide, its triple-agonist mechanism, and what it means for the future of body recomposition.",
-      "content": {
-        "overview": "Retatrutide represents a paradigm shift in medical weight management. Unlike previous generations of therapies that targeted one or two receptors (like semaglutide or tirzepatide), retatrutide is a 'triple G' agonist. It targets GLP-1, GIP, and Glucagon receptors simultaneously. This synergistic approach not only suppresses appetite and improves insulin sensitivity but significantly increases basal metabolic rate and hepatic fat clearance.",
-        "consumerSafety": "Retatrutide is currently undergoing late-stage clinical trials and is not yet FDA-approved for general weight loss. As a compounding pharmacy-sourced peptide in certain clinical settings, its use must be strictly monitored. Safety protocols require comprehensive baseline metabolic panels, cardiovascular screening, and monthly physician check-ins to monitor for potential pancreatic or thyroid complications.",
-        "candidacyRequirements": "Ideal candidates are individuals with a BMI > 30, or > 27 with obesity-related comorbidities (such as type 2 diabetes, hypertension, or severe dyslipidemia) who have plateaued on dual-agonists like tirzepatide. This therapy is contraindicated for patients with a personal or family history of medullary thyroid carcinoma or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2).",
-        "timelineExpectations": "Titration is gradual to mitigate gastrointestinal distress. Patients typically start at a micro-dose of 1mg weekly for four weeks, escalating slowly over 6-8 months. Peak metabolic optimization and significant weight reduction are generally observed between months 6 and 11.",
-        "downtime": "There is zero physical downtime. Patients administer the subcutaneous injection once weekly. However, mild fatigue or nausea may occur within 24-48 hours post-injection during the initial dose escalation phases.",
-        "expectedResults": "Phase 2 clinical data suggests unprecedented efficacy, with patients achieving an average of 24.2% body weight loss over 48 weeks. Beyond weight loss, profound improvements in lipid profiles, insulin sensitivity, and liver fat reduction (often exceeding 80% clearance) are standard clinical expectations.",
-        "clinicalRisks": "The most common adverse events are gastrointestinal: nausea, diarrhea, vomiting, and constipation, which are generally dose-dependent and transient. More severe, albeit rare, risks include pancreatitis, gallbladder disease, hypoglycemia (if combined with other anti-diabetic agents), and potential heart rate elevation."
-      }
+      "content": [
+        {
+          "title": "Overview",
+          "body": "Retatrutide represents a paradigm shift in medical weight management. Unlike previous generations of therapies that targeted one or two receptors (like semaglutide or tirzepatide), retatrutide is a 'triple G' agonist. It targets GLP-1, GIP, and Glucagon receptors simultaneously. This synergistic approach not only suppresses appetite and improves insulin sensitivity but significantly increases basal metabolic rate and hepatic fat clearance."
+        },
+        {
+          "title": "Consumer Safety",
+          "body": "Retatrutide is currently undergoing late-stage clinical trials and is not yet FDA-approved for general weight loss. As a compounding pharmacy-sourced peptide in certain clinical settings, its use must be strictly monitored. Safety protocols require comprehensive baseline metabolic panels, cardiovascular screening, and monthly physician check-ins to monitor for potential pancreatic or thyroid complications."
+        },
+        {
+          "title": "Candidacy Requirements",
+          "body": "Ideal candidates are individuals with a BMI > 30, or > 27 with obesity-related comorbidities (such as type 2 diabetes, hypertension, or severe dyslipidemia) who have plateaued on dual-agonists like tirzepatide. This therapy is contraindicated for patients with a personal or family history of medullary thyroid carcinoma or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)."
+        },
+        {
+          "title": "Timeline Expectations",
+          "body": "Titration is gradual to mitigate gastrointestinal distress. Patients typically start at a micro-dose of 1mg weekly for four weeks, escalating slowly over 6-8 months. Peak metabolic optimization and significant weight reduction are generally observed between months 6 and 11."
+        },
+        {
+          "title": "Potential Downtime",
+          "body": "There is zero physical downtime. Patients administer the subcutaneous injection once weekly. However, mild fatigue or nausea may occur within 24-48 hours post-injection during the initial dose escalation phases."
+        },
+        {
+          "title": "Expected Results",
+          "body": "Phase 2 clinical data suggests unprecedented efficacy, with patients achieving an average of 24.2% body weight loss over 48 weeks. Beyond weight loss, profound improvements in lipid profiles, insulin sensitivity, and liver fat reduction (often exceeding 80% clearance) are standard clinical expectations."
+        },
+        {
+          "title": "Clinical Risks",
+          "body": "The most common adverse events are gastrointestinal: nausea, diarrhea, vomiting, and constipation, which are generally dose-dependent and transient. More severe, albeit rare, risks include pancreatitis, gallbladder disease, hypoglycemia (if combined with other anti-diabetic agents), and potential heart rate elevation."
+        }
+      ]
     }
   ]
 }
