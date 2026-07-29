@@ -44,7 +44,7 @@
                 ${marqueeHTML}
                 <div class="container navbar-container">
                     <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
-                        <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                        <img src="${prefix}assets/images/icons/logo.svg" alt="OVI Wellness Logo" class="logo-img">
                     </a>
 
                     <div class="collapse navbar-collapse d-none d-lg-flex align-items-center" id="navbarNav">
@@ -60,7 +60,7 @@
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                         <div class="offcanvas-header border-bottom border-secondary bg-transparent">
                             <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
-                                <img src="${prefix}assets/images/icons/logo.svg" alt="Optimal Vitality Institute Logo" class="logo-img">
+                                <img src="${prefix}assets/images/icons/logo.svg" alt="OVI Wellness Logo" class="logo-img">
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
@@ -111,7 +111,7 @@
           ? 'Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.<br><br><strong>Aviso de Medicamentos Compuestos:</strong> Algunas opciones de tratamiento pueden incluir un medicamento compuesto preparado para un paciente individual por una farmacia con licencia cuando un prescriptor con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas de ese paciente. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad antes de su comercialización. Su disponibilidad está sujeta a la elegibilidad clínica, la ley aplicable y la dispensación de la farmacia.'
           : 'All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.<br><br><strong>Compounded Medication Disclosure:</strong> Some treatment options may involve a compounded medication prepared for an individual patient by a licensed pharmacy when a licensed prescriber determines that an FDA-approved product does not meet that patient’s clinical needs. Compounded medications are not FDA-approved, and FDA does not review them for safety, effectiveness, or quality before marketing. Availability is subject to clinical eligibility, applicable law, and pharmacy fulfillment.';
 
-        const copyrightText = isEs ? '&copy; 2026 Optimal Vitality Institute. Todos los derechos reservados.' : '&copy; 2026 Optimal Vitality Institute. All rights reserved.';
+        const copyrightText = isEs ? '&copy; 2026 OVI Wellness. Todos los derechos reservados.' : '&copy; 2026 OVI Wellness. All rights reserved.';
 
         const legalPrivacy    = isEs ? 'Política de Privacidad' : 'Privacy Policy';
         const legalTerms      = isEs ? 'Términos y Condiciones' : 'Terms & Conditions';
@@ -501,7 +501,7 @@
                         <i class="fas fa-check"></i>
                       </div>
                       <h4 class="text-white font-family-bebas text-uppercase mb-3">Offer Secured!</h4>
-                      <p class="text-white-50 small mb-4" style="line-height: 1.6;">Thank you for reaching out to the Optimal Vitality Institute. We've received your request for a <span class="text-white" id="success-chosen-service">consultation</span> and your welcome offer.</p>
+                      <p class="text-white-50 small mb-4" style="line-height: 1.6;">Thank you for reaching out to OVI Wellness. We've received your request for a <span class="text-white" id="success-chosen-service">consultation</span> and your welcome offer.</p>
                       <p class="text-primary fw-semibold mb-0" style="font-size: 0.85rem;"><i class="fas fa-sms me-2"></i> Our clinical team will text or call you shortly to schedule.</p>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
