@@ -53,6 +53,41 @@
         background: transparent !important;
       }
 
+      /* Master Folder Header ("7 blog posts") Clickable Style */
+      div[class*="ExpandButtonContainer"] {
+        cursor: pointer !important;
+        user-select: none !important;
+        font-weight: 700 !important;
+        font-family: 'Urbanist', sans-serif !important;
+        font-size: 1.05rem !important;
+        color: #051411 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 6px 12px !important;
+        border-radius: 8px !important;
+        transition: background 0.15s ease, color 0.15s ease !important;
+      }
+      div[class*="ExpandButtonContainer"]:hover {
+        background: #e2e8f0 !important;
+        color: #b89146 !important;
+      }
+
+      /* Arrow Icon Styling in Master Header */
+      div[class*="ExpandButtonContainer"] button {
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+      div[class*="ExpandButtonContainer"] svg {
+        color: #b89146 !important;
+        width: 20px !important;
+        height: 20px !important;
+      }
+
       /* 1. LIST CONTAINER: Reverse flex direction so NEW posts appear AT THE TOP! */
       div[class*="TopBarContainer"] + div {
         display: flex !important;
@@ -143,11 +178,22 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // Capture phase click handler: clicking ANYWHERE on a post summary label opens/closes it
       document.addEventListener("click", function(e) {
+        // --- 1. Master Folder Collapse ("7 blog posts" Header) ---
+        const masterHeader = e.target.closest('[class*="ExpandButtonContainer"]');
+        if (masterHeader) {
+          const isExpandBtn = e.target.closest('button[data-testid="expand-button"], button[class*="ExpandButton"]');
+          if (!isExpandBtn) {
+            const expandBtn = masterHeader.querySelector('button[data-testid="expand-button"], button[class*="ExpandButton"]');
+            if (expandBtn) {
+              expandBtn.click();
+            }
+          }
+        }
+
+        // --- 2. Individual Post Title Summary Bar ---
         const titleLabel = e.target.closest('[class*="NestedObjectLabel"], [class*="TopBar-StyledListItemTopBar"]');
         if (titleLabel) {
-          // Ignore clicks on buttons (delete, drag, etc) or form inputs
           const isControl = e.target.closest('button, input, textarea, select, [class*="DragIconContainer"]');
           if (!isControl) {
             const itemCard = titleLabel.closest('[class*="ListItem-listControlItem"]');
