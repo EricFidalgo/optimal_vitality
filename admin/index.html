@@ -53,13 +53,21 @@
         background: transparent !important;
       }
 
-      /* TOP BAR LAYOUT */
+      /* Ensure ControlContainer parent uses normal flex column */
+      div[class*="ControlContainer"] {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      /* TOP BAR CONTAINER ("7 blog posts" + "Add blog posts"): ALWAYS AT VERY TOP (order: -1) */
       div[class*="TopBarContainer"] {
+        order: -1 !important;
         display: flex !important;
         align-items: center !important;
         justify-content: space-between !important;
         padding-bottom: 12px !important;
         border-bottom: 1px solid #e2e8f0 !important;
+        width: 100% !important;
       }
 
       /* MASTER FOLDER COUNT ("X blog posts") */
@@ -102,9 +110,9 @@
         color: #ffffff !important;
       }
 
-      /* 1. OUTER MAIN BLOG POSTS LIST: Reverse flex direction so NEW posts appear AT THE TOP! */
-      div[class*="ControlPaneContainer"] > div[class*="ControlContainer"] > div[class*="TopBarContainer"] + div,
+      /* 1. OUTER MAIN BLOG POSTS CARDS CONTAINER: Reverse flex direction so NEW posts appear AT THE TOP! */
       div[id^="posts-field-"] {
+        order: 1 !important;
         display: flex !important;
         flex-direction: column-reverse !important;
         gap: 10px !important;
@@ -112,8 +120,8 @@
       }
 
       /* 2. INNER ARTICLE CONTENT SECTIONS LIST: Keep in normal TOP-TO-BOTTOM order! */
-      div[class*="ListItem-listControlItem"] div[class*="TopBarContainer"] + div,
       div[id^="content-field-"] {
+        order: 1 !important;
         display: flex !important;
         flex-direction: column !important;
         gap: 10px !important;
