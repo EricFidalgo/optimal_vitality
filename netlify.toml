@@ -4,12 +4,9 @@
   # No build step needed — site is plain HTML
   publish = "."
 
-# Enable Netlify Identity + Git Gateway (required for Decap CMS authentication)
-[[plugins]]
-  package = "@netlify/plugin-identity"
-
 # Redirect /admin to the CMS panel
 [[redirects]]
   from = "/admin"
   to = "/admin/index.html"
   status = 200
+
