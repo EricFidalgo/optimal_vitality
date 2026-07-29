@@ -12,32 +12,30 @@ publish_mode: simple
 collections:
 
   # ───────────────────────────────────────────────────────────────────────────
-  # ENGLISH BLOG CONTENT
+  # ENGLISH BLOG POSTS
   # ───────────────────────────────────────────────────────────────────────────
   - name: "blog_en"
-    label: "English Blog"
-    label_singular: "English Blog"
+    label: "English Blog Posts"
+    label_singular: "English Blog Post"
 
     files:
       - name: "blog_en_posts"
-        label: "Blog Posts & Page Copy (English)"
+        label: "Manage English Articles"
         file: "assets/js/i18n/en/blog.json"
         fields:
-
-          # ── Blog posts array (Listed First for Maximum Simplicity) ──
-          - label: "Articles / Blog Posts"
+          - label: "Blog Posts"
             name: "posts"
             widget: "list"
-            summary: "{{fields.title}} [{{fields.category}} — {{fields.date}}]"
+            summary: "📝 {{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
             fields:
-              - label: "Title"
+              - label: "Article Title"
                 name: "title"
                 widget: "string"
                 hint: "The main headline of your article."
-              - label: "Post ID (URL Link)"
+              - label: "URL Link ID (Slug)"
                 name: "id"
                 widget: "string"
-                hint: "Unique URL slug (e.g. 'what-is-retatrutide'). Must match between English & Spanish versions!"
+                hint: "Unique URL slug (e.g. 'what-is-retatrutide'). Must match the Spanish version!"
               - label: "Category"
                 name: "category"
                 widget: "select"
@@ -49,7 +47,7 @@ collections:
                   - "Regenerative Medicine"
                   - "Detox & Recovery"
                   - "IV Therapy"
-              - label: "Author Name & Title"
+              - label: "Author Name"
                 name: "author"
                 widget: "string"
                 hint: "E.g. Dr. Marcus Vance, MD"
@@ -57,53 +55,40 @@ collections:
                 name: "date"
                 widget: "string"
                 hint: "E.g. August 14, 2026"
-              - label: "Card Preview Summary"
+              - label: "Card Summary Preview"
                 name: "excerpt"
                 widget: "text"
-                hint: "Short 1-2 sentence preview displayed on the main blog page grid."
+                hint: "1-2 sentence preview displayed on the main blog page."
 
               # Article Sections
               - label: "Article Content Sections"
                 name: "content"
                 widget: "object"
                 fields:
-                  - { label: "Clinical Overview", name: "overview", widget: "markdown", hint: "Main introduction and overview of the protocol." }
-                  - { label: "Consumer Safety", name: "consumerSafety", widget: "markdown", hint: "Safety considerations and clinical oversight." }
-                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", hint: "Who is a good candidate for this therapy." }
-                  - { label: "Timeline Expectations", name: "timelineExpectations", widget: "markdown", hint: "What results to expect over time." }
-                  - { label: "Potential Downtime", name: "downtime", widget: "markdown", hint: "Physical recovery or downtime required." }
-                  - { label: "Expected Results", name: "expectedResults", widget: "markdown", hint: "Clinical trial data and expected outcomes." }
+                  - { label: "Clinical Overview", name: "overview", widget: "markdown", hint: "Main introduction and overview." }
+                  - { label: "Consumer Safety", name: "consumerSafety", widget: "markdown", hint: "Safety considerations." }
+                  - { label: "Candidacy Requirements", name: "candidacyRequirements", widget: "markdown", hint: "Who is a good candidate." }
+                  - { label: "Timeline Expectations", name: "timelineExpectations", widget: "markdown", hint: "Expected timeline and milestones." }
+                  - { label: "Potential Downtime", name: "downtime", widget: "markdown", hint: "Physical recovery or downtime." }
+                  - { label: "Expected Results", name: "expectedResults", widget: "markdown", hint: "Clinical outcomes and trial results." }
                   - { label: "Clinical Risks", name: "clinicalRisks", widget: "markdown", hint: "Known side effects and risks." }
 
-          # ── Technical Page Settings (Collapsed by default) ──
-          - label: "Page Header & UI Settings (Advanced)"
-            name: "ui_settings"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: "Hero Eyebrow Text", name: "heroEyebrow", widget: "string" }
-              - { label: "Hero Main Headline", name: "heroHeadline", widget: "string" }
-              - { label: "Hero Subheadline", name: "heroSubheadline", widget: "text" }
-              - { label: "Browser Tab Title", name: "pageTitle", widget: "string" }
-
   # ───────────────────────────────────────────────────────────────────────────
-  # SPANISH BLOG CONTENT
+  # SPANISH BLOG POSTS
   # ───────────────────────────────────────────────────────────────────────────
   - name: "blog_es"
-    label: "Spanish Blog (Español)"
-    label_singular: "Spanish Blog (Español)"
+    label: "Spanish Blog Posts (Español)"
+    label_singular: "Spanish Blog Post (Español)"
 
     files:
       - name: "blog_es_posts"
-        label: "Blog Posts & Page Copy (Spanish)"
+        label: "Administrar Artículos en Español"
         file: "assets/js/i18n/es/blog.json"
         fields:
-
-          # ── Blog posts array (Listed First) ──
-          - label: "Artículos / Blog Posts (Español)"
+          - label: "Artículos / Blog Posts"
             name: "posts"
             widget: "list"
-            summary: "{{fields.title}} [{{fields.category}} — {{fields.date}}]"
+            summary: "📝 {{fields.title}}  •  {{fields.category}}  •  {{fields.date}}"
             fields:
               - label: "Título / Title"
                 name: "title"
@@ -135,7 +120,7 @@ collections:
                 widget: "text"
 
               # Article Sections
-              - label: "Secciones del Artículo / Article Content"
+              - label: "Secciones del Artículo"
                 name: "content"
                 widget: "object"
                 fields:
@@ -146,14 +131,3 @@ collections:
                   - { label: "Tiempo de Inactividad / Downtime", name: "downtime", widget: "markdown" }
                   - { label: "Resultados Esperados / Expected Results", name: "expectedResults", widget: "markdown" }
                   - { label: "Riesgos Clínicos / Clinical Risks", name: "clinicalRisks", widget: "markdown" }
-
-          # ── Technical Page Settings (Collapsed by default) ──
-          - label: "Configuración de Página (Avanzado)"
-            name: "ui_settings"
-            widget: "object"
-            collapsed: true
-            fields:
-              - { label: "Texto Encabezado / Hero Eyebrow", name: "heroEyebrow", widget: "string" }
-              - { label: "Título Principal / Hero Headline", name: "heroHeadline", widget: "string" }
-              - { label: "Subtítulo / Hero Subheadline", name: "heroSubheadline", widget: "text" }
-              - { label: "Título Pestaña Navegador / Page Title", name: "pageTitle", widget: "string" }
