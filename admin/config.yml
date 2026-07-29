@@ -43,6 +43,7 @@ collections:
                   - "Hormone Optimization"
                   - "Advanced Diagnostics"
                   - "Regenerative Medicine"
+                  - "Sexual Wellness"
                   - "Detox & Recovery"
                   - "IV Therapy"
               - label: "Author Name"
@@ -58,7 +59,7 @@ collections:
                 widget: "text"
                 hint: "1-2 sentence preview displayed on the main blog page."
 
-              # Article Content Sections (Dynamic List — Add, edit, remove, or re-order any section!)
+              # Article Content Sections (Dynamic List)
               - label: "Article Content Sections"
                 name: "content"
                 widget: "list"
@@ -101,6 +102,7 @@ collections:
                   - "Optimización Hormonal"
                   - "Diagnósticos Avanzados"
                   - "Medicina Regenerativa"
+                  - "Bienestar Sexual"
                   - "Desintoxicación y Recuperación"
                   - "Terapia IV"
               - label: "Autor / Author"
@@ -114,7 +116,7 @@ collections:
                 name: "excerpt"
                 widget: "text"
 
-              # Article Content Sections (Lista Dinámica / Dynamic Sections)
+              # Article Content Sections (Lista Dinámica)
               - label: "Secciones del Artículo"
                 name: "content"
                 widget: "list"

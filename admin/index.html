@@ -102,15 +102,25 @@
         color: #ffffff !important;
       }
 
-      /* 1. LIST CONTAINER: Reverse flex direction so NEW posts appear AT THE TOP! */
-      div[class*="TopBarContainer"] + div {
+      /* 1. OUTER MAIN BLOG POSTS LIST: Reverse flex direction so NEW posts appear AT THE TOP! */
+      div[class*="ControlPaneContainer"] > div[class*="ControlContainer"] > div[class*="TopBarContainer"] + div,
+      div[id^="posts-field-"] {
         display: flex !important;
         flex-direction: column-reverse !important;
         gap: 10px !important;
         margin-top: 14px !important;
       }
 
-      /* 2. SINGLE CLEAN CARD FOR EACH BLOG POST */
+      /* 2. INNER ARTICLE CONTENT SECTIONS LIST: Keep in normal TOP-TO-BOTTOM order! */
+      div[class*="ListItem-listControlItem"] div[class*="TopBarContainer"] + div,
+      div[id^="content-field-"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        margin-top: 14px !important;
+      }
+
+      /* 3. SINGLE CLEAN CARD FOR EACH BLOG POST & EACH SECTION ITEM */
       div[class*="ListItem-listControlItem"] {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
@@ -124,7 +134,7 @@
         border-color: #cbd5e1 !important;
       }
 
-      /* 3. CARD HEADER BAR & SUMMARY TITLE */
+      /* 4. CARD HEADER BAR & SUMMARY TITLE */
       div[class*="TopBar-StyledListItemTopBar"] {
         background: #f8fafc !important;
         border-bottom: 1px solid #f1f5f9 !important;
@@ -150,9 +160,10 @@
         color: #0f172a !important;
       }
 
-      /* Input Fields inside Card Body */
+      /* 5. CATEGORY SELECTOR & INPUT FIELDS — REMOVE RECTANGLE INSIDE RECTANGLE */
       div[class*="ControlContainer"] input,
-      div[class*="ControlContainer"] textarea {
+      div[class*="ControlContainer"] textarea,
+      select {
         background: #ffffff !important;
         border: 1px solid #cbd5e1 !important;
         border-radius: 8px !important;
@@ -163,10 +174,30 @@
         box-sizing: border-box !important;
       }
       div[class*="ControlContainer"] input:focus,
-      div[class*="ControlContainer"] textarea:focus {
+      div[class*="ControlContainer"] textarea:focus,
+      select:focus {
         outline: none !important;
         border-color: #b89146 !important;
         box-shadow: 0 0 0 3px rgba(184, 145, 70, 0.15) !important;
+      }
+
+      /* React-Select Dropdown Container Cleanup */
+      div[class*="SelectContainer"],
+      div[class*="select__control"],
+      div[class*="-control"] {
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+      }
+
+      div[class*="-control"] {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+        min-height: 42px !important;
+      }
+      div[class*="-control"]:hover {
+        border-color: #b89146 !important;
       }
     </style>
   </head>
