@@ -25,39 +25,39 @@
         "id": "essential",
         "name": "Plan Esencial",
         "badge": "Inicial",
-        "description": "Ideal si desea aumentar su energía diaria y equilibrar sus hormonas con orientación médica.",
+        "description": "Optimización hormonal bioidéntica esencial y consultas médicas regulares para equilibrar sus niveles y restaurar su energía diaria.",
         "features": [
-          "<strong>Terapia Hormonal Personalizada</strong> para energía real y claridad mental",
-          "<strong>Chequeos Médicos y Análisis de Sangre Regulares</strong> para mantenerse seguro",
-          "<strong>Acceso Directo a su Médico</strong> cuando tenga preguntas"
+          "<strong>Terapia Hormonal Bioidéntica Personalizada</strong> para equilibrar sus niveles y restaurar su energía",
+          "<strong>Consultas y Visitas Médicas</strong> (Presenciales y Telesalud)",
+          "<strong>Monitoreo de Análisis de Sangre Diagnósticos</strong> para su seguridad"
         ],
         "cta": "Reservar Plan Esencial"
-      },
-      {
-        "id": "vip",
-        "name": "VIP Ejecutivo",
-        "badge": "VIP Concierge",
-        "description": "Atención médica concierge ampliada con acceso prioritario y línea directa con el médico 24/7.",
-        "features": [
-          "<strong>Todo lo del Plan Esencial</strong> incluido",
-          "<strong>Línea de Llamada y Texto Directo con el Médico 24/7</strong> cuando necesite ayuda",
-          "<strong>Monitoreo Avanzado de Panel de Laboratorio</strong> y ajustes de dosis personalizados",
-          "<strong>Entrega Prioritaria de Recetas</strong> y coordinación de atención dedicada"
-        ],
-        "cta": "Reservar VIP Ejecutivo"
       },
       {
         "id": "optimal",
         "name": "Plan Óptimo",
         "badge": "Más Popular",
-        "description": "Nuestra opción de membresía más completa, que combina seguimiento clínico continuo con acceso a servicios elegibles de bienestar y control de peso. Los servicios son individualizados y están sujetos a evaluación médica.",
+        "description": "Membresía Nivel 2 que combina el cuidado hormonal esencial con su elección de 1 servicio mensual adicional.",
         "features": [
-          "<strong>Todo lo del Plan VIP Ejecutivo</strong> incluido",
-          "<strong>Una sesión mensual de hidratación IV incluida, cuando sea médicamente apropiado.</strong> La formulación y elegibilidad se determinan tras una evaluación clínica.",
-          "<strong>Pérdida de Peso Médica y Anti-Aging</strong> (GLP-1 disponible)",
-          "<strong>Inyecciones de Vitaminas Personalizadas</strong> y atención de máximo rendimiento"
+          "<strong>Todo lo incluido en el Plan Esencial</strong>",
+          "<strong>Elección de 1 Servicio Mensual Adicional:</strong> 2 sesiones de Hidratación IV al mes O 1 terapia de Péptidos a elegir",
+          "<strong>Opciones de Pérdida de Peso y Control Metabólico</strong> (GLP-1 disponible)",
+          "<strong>Inyecciones de Vitaminas y Atención de Alto Rendimiento</strong>"
         ],
         "cta": "Reservar Plan Óptimo"
+      },
+      {
+        "id": "vip",
+        "name": "Plan VIP Ejecutivo",
+        "badge": "VIP Concierge",
+        "description": "El programa médico concierge definitivo que ofrece atención óptima completa, contacto prioritario con el médico e inyecciones IV y péptidos incluidos.",
+        "features": [
+          "<strong>Todo lo incluido en el Plan Óptimo</strong>",
+          "<strong>Contacto Prioritario con el Médico</strong> (Línea directa 24/7 de llamadas y mensajes)",
+          "<strong>Terapia de Hidratación IV y Protocolos Avanzados de Péptidos Incluidos</strong>",
+          "<strong>Entrega Prioritaria de Recetas y Coordinación de Atención Dedicada</strong>"
+        ],
+        "cta": "Reservar VIP Ejecutivo"
       }
     ]
   },

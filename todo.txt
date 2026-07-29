@@ -1,7 +1,4 @@
-optimal is tier 2. 
-- essential is hormones + visits
-- optimal is essential + one extra service e.g. 2 IV's per month or 1 peptide to choose from
-- Exec is everything in optimal, priority physician contact, and IV's + peptides
+[x] optimal is tier 2 (essential = hormones + visits; optimal = essential + 1 extra service (2 IVs or 1 peptide choice); Exec = everything in optimal + priority physician contact + IVs + peptides)
 * Click here to see how memberhsip works
 
 [x] delete privacy policy & HIPAA notice intro callout divs

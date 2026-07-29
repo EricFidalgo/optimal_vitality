@@ -25,39 +25,39 @@
         "id": "essential",
         "name": "Essential Plan",
         "badge": "Starter",
-        "description": "Great if you want to boost your daily energy and balance your hormones with doctor guidance.",
+        "description": "Essential bio-identical hormone optimization and regular doctor visits to balance your levels and restore daily energy.",
         "features": [
-          "<strong>Custom Hormone Therapy</strong> for real energy and mental clarity",
-          "<strong>Regular Doctor Check-ups &amp; Blood Tests</strong> so you stay safe",
-          "<strong>Direct Access to Your Doctor</strong> whenever you have questions"
+          "<strong>Custom Bio-Identical Hormone Therapy</strong> to balance your levels &amp; restore energy",
+          "<strong>Doctor Visits &amp; Consultations</strong> (In-person &amp; Telehealth)",
+          "<strong>Routine Diagnostic Blood Work Monitoring</strong> for optimal safety"
         ],
         "cta": "Book Essential Plan"
-      },
-      {
-        "id": "vip",
-        "name": "VIP Executive",
-        "badge": "VIP Concierge",
-        "description": "Expanded concierge medical care with priority access &amp; 24/7 direct doctor line.",
-        "features": [
-          "<strong>Everything in Essential Plan</strong> included",
-          "<strong>24/7 Direct Doctor Call &amp; Text Line</strong> whenever you need help",
-          "<strong>Advanced Lab Panel Monitoring</strong> &amp; custom dose adjustments",
-          "<strong>Priority Prescription Delivery</strong> &amp; dedicated care coordination"
-        ],
-        "cta": "Book Executive VIP"
       },
       {
         "id": "optimal",
         "name": "Optimal Plan",
         "badge": "Most Popular",
-        "description": "Our most comprehensive membership option, combining ongoing clinical follow-up with access to eligible wellness and weight-management services. Services are individualized and subject to medical evaluation.",
+        "description": "Tier 2 membership combining full essential hormone care with your choice of 1 extra monthly wellness service.",
         "features": [
-          "<strong>Everything in VIP Executive Plan</strong> included",
-          "<strong>One included monthly IV hydration session, when medically appropriate.</strong> Formulation and eligibility are determined after clinical screening.",
-          "<strong>Medical Weight Loss &amp; Anti-Aging</strong> options (GLP-1 available)",
-          "<strong>Custom Vitamin Injections</strong> &amp; peak performance care"
+          "<strong>Everything in Essential Plan</strong> included",
+          "<strong>Choice of 1 Extra Monthly Service:</strong> 2 IV Hydration sessions per month OR 1 Targeted Peptide therapy to choose from",
+          "<strong>Metabolic &amp; Weight Loss Options</strong> (GLP-1 available)",
+          "<strong>Vitamin Injections &amp; Performance Care</strong>"
         ],
         "cta": "Book Optimal Plan"
+      },
+      {
+        "id": "vip",
+        "name": "VIP Executive Plan",
+        "badge": "VIP Concierge",
+        "description": "The ultimate concierge medical program offering complete optimal care, priority physician contact, and included IVs &amp; peptides.",
+        "features": [
+          "<strong>Everything in Optimal Plan</strong> included",
+          "<strong>Priority Physician Contact</strong> (24/7 direct call &amp; text line)",
+          "<strong>Included IV Hydration Therapy &amp; Advanced Peptide Protocols</strong>",
+          "<strong>Priority Prescription Delivery &amp; Dedicated Care Coordination</strong>"
+        ],
+        "cta": "Book Executive VIP"
       }
     ]
   },
