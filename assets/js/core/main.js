@@ -14,6 +14,10 @@ function initMain() {
         if (!url || url === '#' || url.startsWith('http://') || url.startsWith('https://')) {
             return url;
         }
+        // Absolute paths (e.g. "/" or "/#faqs") already resolve from any depth
+        if (url.startsWith('/')) {
+            return url;
+        }
         const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
         const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "iv-wellness", "peptides", "detox", "advanced-labs"];
         const baseName = url.replace('.html', '').split('#')[0];
@@ -23,12 +27,9 @@ function initMain() {
             if (serviceIds.includes(baseName)) {
                 return url; // service stubs are in the same folder
             }
-            return '../' + url; // root pages like index.html or team.html
+            return '../' + url; // root pages like team or blog
         } else {
-            // We are at root (index.html)
-            if (url.startsWith('index.html')) {
-                return url;
-            }
+            // We are at root
             if (serviceIds.includes(baseName)) {
                 return 'services/' + url;
             }

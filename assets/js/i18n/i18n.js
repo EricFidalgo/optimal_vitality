@@ -314,25 +314,27 @@
 
       function updateSeoTags() {
         const path = window.location.pathname;
+        // Normalize so "/blog", "/blog/" and "/blog.html" all resolve to "blog"
+        const page = path.replace(/\.html$/, "").replace(/\/+$/, "").split("/").pop() || "index";
         let title, desc;
         if (path.includes("/services/")) {
            return; // Service renderer handles its own SEO dynamically
-        } else if (path.includes("/blog.html") || path.includes("/article.html")) {
+        } else if (page === "blog" || page === "article") {
            title = window.clinicData.blogPage?.seo?.title;
            desc = window.clinicData.blogPage?.seo?.description;
-        } else if (path.includes("/team.html")) {
+        } else if (page === "team") {
            title = window.clinicData.teamPage?.seo?.title;
            desc = window.clinicData.teamPage?.seo?.description;
-        } else if (path.includes("/legal.html")) {
+        } else if (page === "legal") {
            title = window.clinicData.pages?.legal?.seo?.title;
            desc = window.clinicData.pages?.legal?.seo?.description;
-        } else if (path.includes("/404.html")) {
+        } else if (page === "404") {
            title = window.clinicData.pages?.notFound?.seo?.title;
            desc = window.clinicData.pages?.notFound?.seo?.description;
-        } else if (path.includes("/st-pete.html")) {
+        } else if (page === "st-pete") {
            title = window.clinicData.locations?.stPete?.seo?.title;
            desc = window.clinicData.locations?.stPete?.seo?.description;
-        } else if (path.includes("/tampa.html")) {
+        } else if (page === "tampa") {
            title = window.clinicData.locations?.tampa?.seo?.title;
            desc = window.clinicData.locations?.tampa?.seo?.description;
         } else {

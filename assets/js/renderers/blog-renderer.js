@@ -104,7 +104,7 @@
               <p class="card-text text-muted mb-4 small" style="line-height: 1.6; font-size: 0.88rem;">${article.excerpt}</p>
               <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: rgba(0,0,0,0.06) !important;">
                 <span class="text-muted small" style="font-size: 0.8rem;"><i class="far fa-calendar-alt me-1 text-muted"></i> ${article.date}</span>
-                <a href="article.html?id=${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
+                <a href="article?id=${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
                   ${readArticleText} <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
                 </a>
               </div>
@@ -144,7 +144,7 @@
             <div class="container text-center py-5">
               <h1 class="display-4 fw-bold mb-3 text-uppercase" style="color: var(--secondary-color); font-size: 2.5rem;">${notFoundTitle}</h1>
               <p class="text-muted mb-4 lead mx-auto" style="max-width: 550px;">${notFoundDesc}</p>
-              <a href="blog.html" class="btn cta-btn btn-lg rounded-pill px-4 py-3">
+              <a href="blog" class="btn cta-btn btn-lg rounded-pill px-4 py-3">
                 <i class="fas fa-arrow-left me-2"></i>${returnBtnText}
               </a>
             </div>

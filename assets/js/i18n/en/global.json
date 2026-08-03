@@ -43,57 +43,57 @@
       "dropdown": [
         {
           "label": "Hormone Optimization",
-          "href": "hormone-optimization.html",
+          "href": "hormone-optimization",
           "icon": "fa-syringe"
         },
         {
           "label": "Medical Weight Loss",
-          "href": "glp-1therapies.html",
+          "href": "glp-1therapies",
           "icon": "fa-weight-scale"
         },
         {
           "label": "Peptide Therapy",
-          "href": "peptides.html",
+          "href": "peptides",
           "icon": "fa-vial"
         },
         {
           "label": "Regenerative Medicine",
-          "href": "regenerative-medicine.html",
+          "href": "regenerative-medicine",
           "icon": "fa-heartbeat"
         },
         {
           "label": "Sexual Wellness",
-          "href": "sexual-wellness.html",
+          "href": "sexual-wellness",
           "icon": "fa-heart"
         },
         {
           "label": "IV & Wellness",
-          "href": "iv-wellness.html",
+          "href": "iv-wellness",
           "icon": "fa-tint"
         },
         {
           "label": "Detox Protocols",
-          "href": "detox.html",
+          "href": "detox",
           "icon": "fa-leaf"
         },
         {
           "label": "Advanced Labs",
-          "href": "advanced-labs.html",
+          "href": "advanced-labs",
           "icon": "fa-flask"
         }
       ]
     },
     {
       "label": "Team",
-      "href": "team.html"
+      "href": "team"
     },
     {
       "label": "FAQs",
-      "href": "index.html#faqs"
+      "href": "/#faqs"
     },
     {
       "label": "The Science",
-      "href": "blog.html"
+      "href": "blog"
     }
   ],
   "marquee": [

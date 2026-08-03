@@ -43,57 +43,57 @@
       "dropdown": [
         {
           "label": "Optimización Hormonal",
-          "href": "hormone-optimization.html",
+          "href": "hormone-optimization",
           "icon": "fa-syringe"
         },
         {
           "label": "Pérdida de Peso Médica",
-          "href": "glp-1therapies.html",
+          "href": "glp-1therapies",
           "icon": "fa-weight-scale"
         },
         {
           "label": "Terapia de Péptidos",
-          "href": "peptides.html",
+          "href": "peptides",
           "icon": "fa-vial"
         },
         {
           "label": "Medicina Regenerativa",
-          "href": "regenerative-medicine.html",
+          "href": "regenerative-medicine",
           "icon": "fa-heartbeat"
         },
         {
           "label": "Bienestar Sexual",
-          "href": "sexual-wellness.html",
+          "href": "sexual-wellness",
           "icon": "fa-heart"
         },
         {
           "label": "IV y Bienestar",
-          "href": "iv-wellness.html",
+          "href": "iv-wellness",
           "icon": "fa-tint"
         },
         {
           "label": "Protocolos de Desintoxicación",
-          "href": "detox.html",
+          "href": "detox",
           "icon": "fa-leaf"
         },
         {
           "label": "Laboratorios Avanzados",
-          "href": "advanced-labs.html",
+          "href": "advanced-labs",
           "icon": "fa-flask"
         }
       ]
     },
     {
       "label": "Equipo",
-      "href": "team.html"
+      "href": "team"
     },
     {
       "label": "Preguntas Frecuentes",
-      "href": "index.html#faqs"
+      "href": "/#faqs"
     },
     {
       "label": "La Ciencia",
-      "href": "blog.html"
+      "href": "blog"
     }
   ],
   "marquee": [

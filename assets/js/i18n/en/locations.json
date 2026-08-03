@@ -33,56 +33,56 @@
         "title": "Hormone Optimization (TRT)",
         "icon": "fa-syringe",
         "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
-        "link": "services/hormone-optimization.html",
+        "link": "services/hormone-optimization",
         "linkText": "Explore TRT Program"
       },
       {
         "title": "Medical Weight Loss",
         "icon": "fa-weight-scale",
         "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
-        "link": "services/glp-1therapies.html",
+        "link": "services/glp-1therapies",
         "linkText": "Explore Weight Loss"
       },
       {
         "title": "Peptide Therapy",
         "icon": "fa-vial",
         "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (Peptide options, Peptide options, Peptide options).",
-        "link": "services/peptides.html",
+        "link": "services/peptides",
         "linkText": "Explore Peptides"
       },
       {
         "title": "Regenerative Medicine",
         "icon": "fa-heartbeat",
         "desc": "Harness PRP therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
-        "link": "services/regenerative-medicine.html",
+        "link": "services/regenerative-medicine",
         "linkText": "Explore Regeneration"
       },
       {
         "title": "Sexual Wellness",
         "icon": "fa-heart",
         "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
-        "link": "services/sexual-wellness.html",
+        "link": "services/sexual-wellness",
         "linkText": "Explore Sexual Wellness"
       },
       {
         "title": "IV Nutrient Hydration",
         "icon": "fa-tint",
         "desc": "Deliver Glutathione, essential vitamins, and targeted hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
-        "link": "services/iv-wellness.html",
+        "link": "services/iv-wellness",
         "linkText": "Explore IV Drips"
       },
       {
         "title": "Detoxification Protocols",
         "icon": "fa-leaf",
         "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
-        "link": "services/detox.html",
+        "link": "services/detox",
         "linkText": "Explore Detox"
       },
       {
         "title": "Advanced Diagnostic Labs",
         "icon": "fa-flask",
         "desc": "In-depth clinical panels including MTHFR, micronutrient profiles, heavy metals, and advanced cardiac biomarkers.",
-        "link": "services/advanced-labs.html",
+        "link": "services/advanced-labs",
         "linkText": "Explore Labs"
       }
     ]
@@ -121,56 +121,56 @@
         "title": "Hormone Optimization (TRT)",
         "icon": "fa-syringe",
         "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
-        "link": "services/hormone-optimization.html",
+        "link": "services/hormone-optimization",
         "linkText": "Explore TRT Program"
       },
       {
         "title": "Medical Weight Loss",
         "icon": "fa-weight-scale",
         "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
-        "link": "services/glp-1therapies.html",
+        "link": "services/glp-1therapies",
         "linkText": "Explore Weight Loss"
       },
       {
         "title": "Peptide Therapy",
         "icon": "fa-vial",
         "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (Peptide options, Peptide options, Peptide options).",
-        "link": "services/peptides.html",
+        "link": "services/peptides",
         "linkText": "Explore Peptides"
       },
       {
         "title": "Regenerative Medicine",
         "icon": "fa-heartbeat",
         "desc": "Harness PRP therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
-        "link": "services/regenerative-medicine.html",
+        "link": "services/regenerative-medicine",
         "linkText": "Explore Regeneration"
       },
       {
         "title": "Sexual Wellness",
         "icon": "fa-heart",
         "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
-        "link": "services/sexual-wellness.html",
+        "link": "services/sexual-wellness",
         "linkText": "Explore Sexual Wellness"
       },
       {
         "title": "IV Nutrient Hydration",
         "icon": "fa-tint",
         "desc": "Deliver Glutathione, essential vitamins, and targeted hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
-        "link": "services/iv-wellness.html",
+        "link": "services/iv-wellness",
         "linkText": "Explore IV Drips"
       },
       {
         "title": "Detoxification Protocols",
         "icon": "fa-leaf",
         "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
-        "link": "services/detox.html",
+        "link": "services/detox",
         "linkText": "Explore Detox"
       },
       {
         "title": "Advanced Diagnostic Labs",
         "icon": "fa-flask",
         "desc": "In-depth clinical panels including MTHFR, micronutrient profiles, heavy metals, and advanced cardiac biomarkers.",
-        "link": "services/advanced-labs.html",
+        "link": "services/advanced-labs",
         "linkText": "Explore Labs"
       }
     ]

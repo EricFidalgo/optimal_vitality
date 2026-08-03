@@ -43,7 +43,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex flex-column p-0" aria-label="Main Navigation">
                 ${marqueeHTML}
                 <div class="container navbar-container">
-                    <a class="navbar-brand d-flex align-items-center" href="${prefix}index.html">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
                         <img src="${prefix}assets/images/icons/logo.svg" alt="OVI Wellness Logo" class="logo-img">
                     </a>
 
@@ -59,7 +59,7 @@
 
                     <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                         <div class="offcanvas-header border-bottom border-secondary bg-transparent">
-                            <a class="navbar-brand d-flex align-items-center m-0" href="${prefix}index.html">
+                            <a class="navbar-brand d-flex align-items-center m-0" href="/">
                                 <img src="${prefix}assets/images/icons/logo.svg" alt="OVI Wellness Logo" class="logo-img">
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -68,10 +68,10 @@
                             <div class="navbar-nav w-100 flex-grow-1 position-relative d-flex flex-column" id="mobile-navbar-links" style="overflow: hidden; height: 100%;">
                                 <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%;">
                                     <div class="p-0 m-0 w-100 mt-3">
-                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#treatments">Treatments</a></div>
-                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team.html">Team</a></div>
-                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}index.html#faqs">FAQs</a></div>
-                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog.html">The Science</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="/#treatments">Treatments</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team">Team</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="/#faqs">FAQs</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog">The Science</a></div>
                                     </div>
                                     <div class="mt-auto pb-4 pt-3 w-100">
                                         <a href="#consultation" class="btn cta-btn w-100">${(window.OVI_I18N?.currentLang === 'es') ? 'Reservar Consulta' : 'Book Your Consultation'}</a>
@@ -179,8 +179,8 @@
                         <p class="mb-1 text-white-50"><small>${isEs ? 'Con licencia en el Estado de Florida' : 'Licensed in the State of Florida'}</small></p>
                         <p class="mb-3 text-white-50"><small>${copyrightText}</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
-                            <a href="${prefix}legal.html#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
-                            <a href="${prefix}legal.html#hipaa" class="text-white-50 text-decoration-none hover-white">${legalHipaa}</a>
+                            <a href="${prefix}legal#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
+                            <a href="${prefix}legal#hipaa" class="text-white-50 text-decoration-none hover-white">${legalHipaa}</a>
                         </div>
                     </div>
                 </div>
@@ -235,10 +235,12 @@
     // -------------------------------------------------------------------------
     function injectLocalSchema() {
         const path = window.location.pathname.toLowerCase();
+        // Matches "/st-pete", "/st-pete/" and "/st-pete.html" alike
+        const page = path.replace(/\.html$/, "").replace(/\/+$/, "").split("/").pop();
         let schemaKey = null;
-        if (path.endsWith("/st-pete.html") || path.endsWith("/st-pete")) {
+        if (page === "st-pete") {
             schemaKey = "stPete";
-        } else if (path.endsWith("/tampa.html") || path.endsWith("/tampa")) {
+        } else if (page === "tampa") {
             schemaKey = "tampa";
         }
 
@@ -483,7 +485,7 @@
                     <div class="form-check mb-3 text-start">
                       <input class="form-check-input" type="checkbox" id="smsOptIn" name="sms_consent" value="Yes">
                       <label class="form-check-label text-white-50" for="smsOptIn" style="font-size: 0.72rem; line-height: 1.4;">
-                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal.html#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
+                        I agree to receive automated messages, updates, or text alerts regarding my inquiry from OVI Wellness at the number provided above. Consent is not a condition of purchase. Message/data rates apply. Message frequency varies. View our <a href="${prefix}legal#privacy" target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none">Privacy Policy</a>.
                       </label>
                       <div class="text-danger small d-none mt-1" id="step3-error">You must accept the SMS consent disclosure to continue.</div>
                     </div>

@@ -33,56 +33,56 @@
         "title": "Optimización Hormonal (TRT)",
         "icon": "fa-syringe",
         "desc": "Recupere su energía física y enfoque. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores de diagnóstico bajo supervisión médica. Los resultados individuales varían.",
-        "link": "services/hormone-optimization.html",
+        "link": "services/hormone-optimization",
         "linkText": "Explorar Programa TRT"
       },
       {
         "title": "Pérdida de Peso Médica",
         "icon": "fa-weight-scale",
         "desc": "Reduzca la grasa visceral mientras preserva activamente el músculo magro. Protocolos premium de Semaglutida y Tirzepatida calibrados para su metabolismo. Los resultados individuales varían.",
-        "link": "services/glp-1therapies.html",
+        "link": "services/glp-1therapies",
         "linkText": "Explorar Pérdida de Peso"
       },
       {
         "title": "Terapia de Péptidos",
         "icon": "fa-vial",
         "desc": "Apoye la curación de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de calidad farmacéutica (Opciones de péptidos, opciones de péptidos). Los resultados individuales varían.",
-        "link": "services/peptides.html",
+        "link": "services/peptides",
         "linkText": "Explorar Péptidos"
       },
       {
         "title": "Medicina Regenerativa",
         "icon": "fa-heartbeat",
         "desc": "Aproveche las terapias de PRP, plasma rico en plaquetas autólogo y factores de crecimiento clínico para la reparación celular, folicular y articular. Los resultados individuales varían.",
-        "link": "services/regenerative-medicine.html",
+        "link": "services/regenerative-medicine",
         "linkText": "Explorar Regeneración"
       },
       {
         "title": "Salud Sexual",
         "icon": "fa-heart",
         "desc": "Terapia dirigida para apoyar la capacidad de respuesta física, el deseo íntimo y la vitalidad general utilizando un equilibrio hormonal preciso e individual. Los resultados individuales varían.",
-        "link": "services/sexual-wellness.html",
+        "link": "services/sexual-wellness",
         "linkText": "Explorar Salud Sexual"
       },
       {
         "title": "Hidratación de Nutrientes IV",
         "icon": "fa-tint",
         "desc": "Proporcione glutatión, vitaminas esenciales e hidratación dirigida directamente al torrente sanguíneo para apoyar la absorción y la revitalización celular.",
-        "link": "services/iv-wellness.html",
+        "link": "services/iv-wellness",
         "linkText": "Explorar Sueros IV"
       },
       {
         "title": "Protocolos de Desintoxicación",
         "icon": "fa-leaf",
         "desc": "Protocolos de limpieza integrales para apoyar la salud sistémica y la función intestinal óptima.",
-        "link": "services/detox.html",
+        "link": "services/detox",
         "linkText": "Explorar Desintoxicación"
       },
       {
         "title": "Laboratorios de Diagnóstico Avanzados",
         "icon": "fa-flask",
         "desc": "Paneles clínicos profundos que incluyen MTHFR, perfiles de micronutrientes, metales pesados y biomarcadores cardíacos avanzados.",
-        "link": "services/advanced-labs.html",
+        "link": "services/advanced-labs",
         "linkText": "Explorar Laboratorios"
       }
     ]
@@ -121,56 +121,56 @@
         "title": "Optimización Hormonal (TRT)",
         "icon": "fa-syringe",
         "desc": "Recupere su energía física y enfoque. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores de diagnóstico bajo supervisión médica. Los resultados individuales varían.",
-        "link": "services/hormone-optimization.html",
+        "link": "services/hormone-optimization",
         "linkText": "Explorar Programa TRT"
       },
       {
         "title": "Pérdida de Peso Médica",
         "icon": "fa-weight-scale",
         "desc": "Reduzca la grasa visceral mientras preserva activamente el músculo magro. Protocolos premium de Semaglutida y Tirzepatida calibrados para su metabolismo. Los resultados individuales varían.",
-        "link": "services/glp-1therapies.html",
+        "link": "services/glp-1therapies",
         "linkText": "Explorar Pérdida de Peso"
       },
       {
         "title": "Terapia de Péptidos",
         "icon": "fa-vial",
         "desc": "Apoye la curación de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de calidad farmacéutica (Opciones de péptidos, opciones de péptidos). Los resultados individuales varían.",
-        "link": "services/peptides.html",
+        "link": "services/peptides",
         "linkText": "Explorar Péptidos"
       },
       {
         "title": "Medicina Regenerativa",
         "icon": "fa-heartbeat",
         "desc": "Aproveche las terapias de PRP, plasma rico en plaquetas autólogo y factores de crecimiento clínico para la reparación celular, folicular y articular. Los resultados individuales varían.",
-        "link": "services/regenerative-medicine.html",
+        "link": "services/regenerative-medicine",
         "linkText": "Explorar Regeneración"
       },
       {
         "title": "Salud Sexual",
         "icon": "fa-heart",
         "desc": "Terapia dirigida para apoyar la capacidad de respuesta física, el deseo íntimo y la vitalidad general utilizando un equilibrio hormonal preciso e individual. Los resultados individuales varían.",
-        "link": "services/sexual-wellness.html",
+        "link": "services/sexual-wellness",
         "linkText": "Explorar Salud Sexual"
       },
       {
         "title": "Hidratación de Nutrientes IV",
         "icon": "fa-tint",
         "desc": "Proporcione glutatión, vitaminas esenciales e hidratación dirigida directamente al torrente sanguíneo para apoyar la absorción y la revitalización celular.",
-        "link": "services/iv-wellness.html",
+        "link": "services/iv-wellness",
         "linkText": "Explorar Sueros IV"
       },
       {
         "title": "Protocolos de Desintoxicación",
         "icon": "fa-leaf",
         "desc": "Protocolos de limpieza integrales para apoyar la salud sistémica y la función intestinal óptima.",
-        "link": "services/detox.html",
+        "link": "services/detox",
         "linkText": "Explorar Desintoxicación"
       },
       {
         "title": "Laboratorios de Diagnóstico Avanzados",
         "icon": "fa-flask",
         "desc": "Paneles clínicos profundos que incluyen MTHFR, perfiles de micronutrientes, metales pesados y biomarcadores cardíacos avanzados.",
-        "link": "services/advanced-labs.html",
+        "link": "services/advanced-labs",
         "linkText": "Explorar Laboratorios"
       }
     ]
