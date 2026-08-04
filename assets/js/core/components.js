@@ -3,28 +3,31 @@
 // This eliminates duplicated HTML across all pages.
 
 (function () {
-    "use strict";
+  "use strict";
 
-    const isSubpage = (typeof OVI_SERVICE_ID !== 'undefined');
-    const prefix = isSubpage ? '../' : '';
+  const isSubpage = typeof OVI_SERVICE_ID !== "undefined";
+  const prefix = isSubpage ? "../" : "";
 
-    // -------------------------------------------------------------------------
-    // NAVBAR
-    // -------------------------------------------------------------------------
-    function renderNavbar() {
-        const root = document.getElementById("navbar-root");
-        if (!root) return;
+  // -------------------------------------------------------------------------
+  // NAVBAR
+  // -------------------------------------------------------------------------
+  function renderNavbar() {
+    const root = document.getElementById("navbar-root");
+    if (!root) return;
 
-        const c = window.clinicData?.contact;
+    const c = window.clinicData?.contact;
 
-        let marqueeHTML = '';
-        if (window.clinicData?.marquee) {
-            const singlePass = clinicData.marquee.map(item => 
-                `<span><i class="fas ${item.icon}"></i> ${item.label}</span><span>•</span>`
-            ).join('');
-            const repeatedContent = singlePass + singlePass + singlePass;
-            
-            marqueeHTML = `
+    let marqueeHTML = "";
+    if (window.clinicData?.marquee) {
+      const singlePass = clinicData.marquee
+        .map(
+          (item) =>
+            `<span><i class="fas ${item.icon}"></i> ${item.label}</span><span>•</span>`,
+        )
+        .join("");
+      const repeatedContent = singlePass + singlePass + singlePass;
+
+      marqueeHTML = `
                 <!-- Top Announcement Marquee Bar -->
                 <div class="top-marquee-bar">
                     <div class="marquee-track">
@@ -37,9 +40,9 @@
                     </div>
                 </div>
             `;
-        }
+    }
 
-        root.innerHTML = `
+    root.innerHTML = `
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex flex-column p-0" aria-label="Main Navigation">
                 ${marqueeHTML}
                 <div class="container navbar-container">
@@ -49,7 +52,7 @@
 
                     <div class="collapse navbar-collapse d-none d-lg-flex align-items-center" id="navbarNav">
                         <ul class="navbar-nav ms-auto align-items-center" id="main-navbar-links"></ul>
-                        ${window.OVI_I18N ? window.OVI_I18N.renderDropdown('ms-lg-3 me-lg-2') : ''}
+                        ${window.OVI_I18N ? window.OVI_I18N.renderDropdown("ms-lg-3 me-lg-2") : ""}
                         <a href="#consultation" class="btn cta-btn ms-lg-2">Book Your Consultation</a>
                     </div>
 
@@ -74,7 +77,7 @@
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog">The Science</a></div>
                                     </div>
                                     <div class="mt-auto pb-4 pt-3 w-100">
-                                        <a href="#consultation" class="btn cta-btn w-100">${(window.OVI_I18N?.currentLang === 'es') ? 'Reservar Consulta' : 'Book Your Consultation'}</a>
+                                        <a href="#consultation" class="btn cta-btn w-100">${window.OVI_I18N?.currentLang === "es" ? "Reservar Consulta" : "Book Your Consultation"}</a>
                                     </div>
                                 </div>
                             </div>
@@ -84,46 +87,62 @@
                 </div>
             </nav>
         `;
+  }
+
+  // -------------------------------------------------------------------------
+  // FOOTER + MOBILE STICKY CTA
+  // -------------------------------------------------------------------------
+  function renderFooter() {
+    const root = document.getElementById("footer-root");
+    if (!root) return;
+
+    const c = window.clinicData?.contact;
+    if (!c) {
+      console.error("Clinic contact data is missing!");
+      return;
     }
 
-    // -------------------------------------------------------------------------
-    // FOOTER + MOBILE STICKY CTA
-    // -------------------------------------------------------------------------
-    function renderFooter() {
-        const root = document.getElementById("footer-root");
-        if (!root) return;
+    const isEs = window.OVI_I18N?.currentLang === "es";
+    const ctaBtnText = isEs ? "Reservar Consulta" : "Secure Your Consultation";
+    const readyTitle = isEs
+      ? "¿Listo para Transformar su Salud?"
+      : "Ready to Transform Your Health?";
+    const readyDesc = isEs
+      ? "Dé el primer paso hacia su revitalización. Reserve su consulta para que nuestros expertos diseñen su protocolo personalizado."
+      : "Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.";
+    const ourServicesTitle = isEs ? "Nuestros Servicios" : "Our Services";
+    const clinicInfoTitle = isEs
+      ? "Información de la Clínica"
+      : "Clinic Information";
 
-        const c = window.clinicData?.contact;
-        if (!c) {
-            console.error("Clinic contact data is missing!");
-            return;
-        }
+    const disclaimerTitle = isEs ? "Aviso Médico:" : "Medical Disclaimer:";
+    const disclaimerText = isEs
+      ? "Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.<br><br><strong>Aviso de Medicamentos Compuestos:</strong> Algunas opciones de tratamiento pueden incluir un medicamento compuesto preparado para un paciente individual por una farmacia con licencia cuando un prescriptor con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas de ese paciente. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad antes de su comercialización. Su disponibilidad está sujeta a la elegibilidad clínica, la ley aplicable y la dispensación de la farmacia."
+      : "All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.<br><br><strong>Compounded Medication Disclosure:</strong> Some treatment options may involve a compounded medication prepared for an individual patient by a licensed pharmacy when a licensed prescriber determines that an FDA-approved product does not meet that patient’s clinical needs. Compounded medications are not FDA-approved, and FDA does not review them for safety, effectiveness, or quality before marketing. Availability is subject to clinical eligibility, applicable law, and pharmacy fulfillment.";
 
-        const isEs = (window.OVI_I18N?.currentLang === 'es');
-        const ctaBtnText = isEs ? 'Reservar Consulta' : 'Secure Your Consultation';
-        const readyTitle = isEs ? '¿Listo para Transformar su Salud?' : 'Ready to Transform Your Health?';
-        const readyDesc  = isEs ? 'Dé el primer paso hacia su revitalización. Reserve su consulta para que nuestros expertos diseñen su protocolo personalizado.' : 'Take the first step towards a revitalized you. Book your consultation to have our medical experts design your personalized protocol.';
-        const ourServicesTitle = isEs ? 'Nuestros Servicios' : 'Our Services';
-        const clinicInfoTitle  = isEs ? 'Información de la Clínica' : 'Clinic Information';
+    const copyrightText = isEs
+      ? "&copy; 2026 OVI Wellness. Todos los derechos reservados."
+      : "&copy; 2026 OVI Wellness. All rights reserved.";
 
-        const disclaimerTitle = isEs ? 'Aviso Médico:' : 'Medical Disclaimer:';
-        const disclaimerText  = isEs 
-          ? 'Todo el contenido proporcionado en este sitio web —incluidos texto, gráficos, imágenes, testimonios y otros materiales— es solo para fines informativos y educativos y no constituye asesoramiento médico, diagnóstico o tratamiento. El acceso o revisión de esta información no crea una relación clínico-paciente.<br><br>Los tratamientos con receta y los planes de atención personalizados se administran estrictamente tras una evaluación directa y exhaustiva por parte de un proveedor de atención médica licenciado. No ignore el asesoramiento médico profesional ni demore en buscar tratamiento a causa de algo que haya leído en este sitio. Consulte siempre a un médico calificado sobre cualquier condición o tratamiento médico.<br><br><strong>Aviso de Medicamentos Compuestos:</strong> Algunas opciones de tratamiento pueden incluir un medicamento compuesto preparado para un paciente individual por una farmacia con licencia cuando un prescriptor con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas de ese paciente. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad antes de su comercialización. Su disponibilidad está sujeta a la elegibilidad clínica, la ley aplicable y la dispensación de la farmacia.'
-          : 'All content provided on this website—including text, graphics, images, testimonials, and other materials—is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. Accessing or reviewing this information does not create a clinician-patient relationship.<br><br>Prescription treatments and personalized care plans are provided strictly following a direct, thorough evaluation and diagnostic review by a licensed healthcare provider. Do not disregard professional medical advice, delay seeking treatment, or make decisions regarding your health based solely on the contents of this site. Always consult a qualified physician or healthcare professional regarding any medical condition, treatment, or health opinion expressed herein.<br><br><strong>Compounded Medication Disclosure:</strong> Some treatment options may involve a compounded medication prepared for an individual patient by a licensed pharmacy when a licensed prescriber determines that an FDA-approved product does not meet that patient’s clinical needs. Compounded medications are not FDA-approved, and FDA does not review them for safety, effectiveness, or quality before marketing. Availability is subject to clinical eligibility, applicable law, and pharmacy fulfillment.';
+    const legalPrivacy = isEs ? "Política de Privacidad" : "Privacy Policy";
+    const legalTerms = isEs ? "Términos y Condiciones" : "Terms & Conditions";
+    const legalHipaa = isEs ? "Aviso de HIPAA" : "HIPAA Notice";
+    const legalMedical = isEs ? "Aviso Médico" : "Medical Disclaimer";
+    const legalSms = isEs
+      ? "Divulgación de Consentimiento SMS"
+      : "SMS Consent Disclosure";
+    const legalTelehealth = isEs
+      ? "Divulgación de Telesalud"
+      : "Telehealth Disclosure";
+    const legalFinancing = isEs
+      ? "Divulgación de Financiamiento"
+      : "Financing Disclosure";
+    const legalForm = isEs
+      ? "Descargo de Consentimiento de Formulario"
+      : "Form Consent Disclaimer";
+    const legalResults = isEs ? "Descargo de Resultados" : "Results Disclaimer";
 
-        const copyrightText = isEs ? '&copy; 2026 OVI Wellness. Todos los derechos reservados.' : '&copy; 2026 OVI Wellness. All rights reserved.';
-
-        const legalPrivacy    = isEs ? 'Política de Privacidad' : 'Privacy Policy';
-        const legalTerms      = isEs ? 'Términos y Condiciones' : 'Terms & Conditions';
-        const legalHipaa      = isEs ? 'Aviso de HIPAA' : 'HIPAA Notice';
-        const legalMedical    = isEs ? 'Aviso Médico' : 'Medical Disclaimer';
-        const legalSms        = isEs ? 'Divulgación de Consentimiento SMS' : 'SMS Consent Disclosure';
-        const legalTelehealth = isEs ? 'Divulgación de Telesalud' : 'Telehealth Disclosure';
-        const legalFinancing  = isEs ? 'Divulgación de Financiamiento' : 'Financing Disclosure';
-        const legalForm       = isEs ? 'Descargo de Consentimiento de Formulario' : 'Form Consent Disclaimer';
-        const legalResults    = isEs ? 'Descargo de Resultados' : 'Results Disclaimer';
-
-        root.innerHTML = `
+    root.innerHTML = `
             <footer class="footer py-5 text-center text-md-start" id="consultation">
                 <div class="container py-4">
                     <div class="row align-items-stretch g-4">
@@ -142,28 +161,32 @@
                             <div class="bg-dark bg-opacity-25 p-4 rounded border border-secondary text-start mx-auto shadow-sm h-100" style="max-width: 400px;">
                                 <h4 class="text-primary mb-4 font-family-bebas">${clinicInfoTitle}</h4>
                                 <p class="mb-3">
-                                    <a href="${c.address.mapUrl || 'https://maps.app.goo.gl/SFCiAXwWWKjuANvf8'}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none">
-                                        <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${(c.address.street || '').replace(/,+$/, '')}<br><span class="ms-4 ps-2">${(c.address.city || '').replace(/,+$/, '')}, ${c.address.state} ${c.address.zip}</span>
+                                    <a href="${c.address.mapUrl || "https://maps.app.goo.gl/SFCiAXwWWKjuANvf8"}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none">
+                                        <i class="fas fa-map-marker-alt text-primary me-3 w-15px text-center"></i> ${(c.address.street || "").replace(/,+$/, "")}<br><span class="ms-4 ps-2">${(c.address.city || "").replace(/,+$/, "")}, ${c.address.state} ${c.address.zip}</span>
                                     </a>
                                 </p>
                                 <p class="mb-3">
-                                    <a href="tel:${c.phone.replace(/\D/g, '')}" class="footer-text-soft text-decoration-none">
+                                    <a href="tel:${c.phone.replace(/\D/g, "")}" class="footer-text-soft text-decoration-none">
                                         <i class="fas fa-phone-alt text-primary me-3 w-15px text-center"></i> ${c.phone}
                                     </a>
                                 </p>
-                                ${c.fax ? `
+                                ${
+                                  c.fax
+                                    ? `
                                 <p class="mb-3">
                                     <span class="footer-text-soft text-decoration-none">
                                         <i class="fas fa-fax text-primary me-3 w-15px text-center"></i> ${c.fax}
                                     </span>
-                                </p>` : ''}
+                                </p>`
+                                    : ""
+                                }
                                 <p class="mb-3">
                                     <a href="mailto:${c.email}" class="footer-text-soft text-decoration-none">
                                         <i class="fas fa-envelope text-primary me-3 w-15px text-center"></i> ${c.email}
                                     </a>
                                 </p>
                                 <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
-                                ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ''}
+                                ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ""}
                                 <hr class="border-secondary my-4">
                                 <p class="footer-text-soft mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>${c.hours[0].days}:</strong> ${c.hours[0].time}</p>
                                 <p class="footer-text-soft mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>${c.hours[1].days}:</strong> ${c.hours[1].time}</p>
@@ -176,7 +199,7 @@
                             <strong>${disclaimerTitle}</strong> ${disclaimerText}
                         </p>
                         <p class="mb-1 text-white-50"><small><strong>Optimal Vitality Institute, LLC d/b/a OVI Wellness</strong></small></p>
-                        <p class="mb-1 text-white-50"><small>${isEs ? 'Con licencia en el Estado de Florida' : 'Licensed in the State of Florida'}</small></p>
+                        <p class="mb-1 text-white-50"><small>${isEs ? "Con licencia en el Estado de Florida" : "Licensed in the State of Florida"}</small></p>
                         <p class="mb-3 text-white-50"><small>${copyrightText}</small></p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center mb-0 text-white-50" style="font-size: 0.75rem; gap: 8px 12px;">
                             <a href="${prefix}legal#privacy" class="text-white-50 text-decoration-none hover-white">${legalPrivacy}</a> &bull;
@@ -192,200 +215,241 @@
                 </a>
             </div>
         `;
-    }
- 
-    // -------------------------------------------------------------------------
-    // CLINICAL DISCLOSURES
-    // -------------------------------------------------------------------------
-    function populateDisclosures() {
-        const data = window.clinicData?.i18nComponents?.disclosures;
-        if (!data) return;
-        const setEl = (selector, text) => {
-            const el = document.querySelector(selector);
-            if (el && text) el.innerHTML = text;
-        };
-        setEl('[data-i18n="disclosures.title"]', data.title);
-        setEl('[data-i18n="disclosures.intro"]', data.intro);
-        setEl('[data-i18n="disclosures.physicianTitle"]', data.physicianTitle);
-        setEl('[data-i18n="disclosures.physicianText"]', data.physicianText);
-        setEl('[data-i18n="disclosures.diagnosticTitle"]', data.diagnosticTitle);
-        setEl('[data-i18n="disclosures.diagnosticText"]', data.diagnosticText);
-        setEl('[data-i18n="disclosures.disclaimerTitle"]', data.disclaimerTitle);
-        setEl('[data-i18n="disclosures.disclaimerText"]', data.disclaimerText);
-    }
+  }
 
-    function renderDisclosures() {
-        const root = document.getElementById("disclosures-root");
-        if (!root) return;
+  // -------------------------------------------------------------------------
+  // CLINICAL DISCLOSURES
+  // -------------------------------------------------------------------------
+  function populateDisclosures() {
+    const data = window.clinicData?.i18nComponents?.disclosures;
+    if (!data) return;
+    const setEl = (selector, text) => {
+      const el = document.querySelector(selector);
+      if (el && text) el.innerHTML = text;
+    };
+    setEl('[data-i18n="disclosures.title"]', data.title);
+    setEl('[data-i18n="disclosures.intro"]', data.intro);
+    setEl('[data-i18n="disclosures.physicianTitle"]', data.physicianTitle);
+    setEl('[data-i18n="disclosures.physicianText"]', data.physicianText);
+    setEl('[data-i18n="disclosures.diagnosticTitle"]', data.diagnosticTitle);
+    setEl('[data-i18n="disclosures.diagnosticText"]', data.diagnosticText);
+    setEl('[data-i18n="disclosures.disclaimerTitle"]', data.disclaimerTitle);
+    setEl('[data-i18n="disclosures.disclaimerText"]', data.disclaimerText);
+  }
 
-        fetch(`${prefix}assets/components/disclosures.html`)
-            .then(res => {
-                if (!res.ok) throw new Error("Failed to load disclosures component");
-                return res.text();
-            })
-            .then(html => {
-                root.innerHTML = html;
-                populateDisclosures();
-            })
-            .catch(err => console.error(err));
-    }
+  function renderDisclosures() {
+    const root = document.getElementById("disclosures-root");
+    if (!root) return;
 
-    // -------------------------------------------------------------------------
-    // LOCAL SCHEMA INJECTION (DRY)
-    // -------------------------------------------------------------------------
-    function injectLocalSchema() {
-        const path = window.location.pathname.toLowerCase();
-        // Matches "/st-pete", "/st-pete/" and "/st-pete.html" alike
-        const page = path.replace(/\.html$/, "").replace(/\/+$/, "").split("/").pop();
-        let schemaKey = null;
-        if (page === "st-pete") {
-            schemaKey = "stPete";
-        } else if (page === "tampa") {
-            schemaKey = "tampa";
-        }
-
-        const loc = window.clinicData?.locations?.[schemaKey];
-        const c = window.clinicData?.contact;
-
-        if (schemaKey && loc && c) {
-            
-            // Build the full schema by merging base clinic properties with page-specific ones
-            const fullSchema = {
-                "@context": "https://schema.org",
-                "@type": "MedicalClinic",
-                "name": loc.name,
-                "alternateName": "OVI Wellness",
-                "description": loc.description,
-                "url": loc.url,
-                "telephone": c.phone,
-                "image": "https://oviwellness.com/assets/images/photos/team-group.avif",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": c.address.street,
-                    "addressLocality": c.address.city,
-                    "addressRegion": c.address.state,
-                    "postalCode": c.address.zip,
-                    "addressCountry": "US"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 27.7725,
-                    "longitude": -82.6347
-                },
-                "areaServed": loc.areaServed,
-                "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                        "Monday",
-                        "Tuesday",
-                        "Wednesday",
-                        "Thursday",
-                        "Friday"
-                    ],
-                    "opens": "08:00",
-                    "closes": "18:00"
-                },
-                "priceRange": "$$",
-                "medicalSpecialty": "Endocrinology"
-            };
-
-            const script = document.createElement("script");
-            script.type = "application/ld+json";
-            script.text = JSON.stringify(fullSchema);
-            document.head.appendChild(script);
-        }
-    }
-
-    function initNavbarBehavior() {
-        // Mobile Menu Auto-Close on nav link click
-        const offcanvasElement = document.getElementById('mobileMenu');
-        let offcanvasInstance = null;
-        if (offcanvasElement && typeof bootstrap !== 'undefined') {
-            offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
-        }
-        document.querySelectorAll('a.nav-link, a.cta-btn, .hormone-cta a, .navbar-brand').forEach(link => {
-            link.addEventListener('click', function (event) {
-                if (this.getAttribute('href') === '#') { event.preventDefault(); return; }
-                if (this.hash !== '' && offcanvasElement && offcanvasElement.classList.contains('show') && offcanvasInstance) {
-                    offcanvasInstance.hide();
-                }
-            });
-        });
-
-        // Auto-close mobile menu when clicking any link inside it (using event delegation to survive dynamic innerHTML updates)
-        if (offcanvasElement && offcanvasInstance) {
-            offcanvasElement.addEventListener('click', function (e) {
-                const link = e.target.closest('a');
-                if (!link) return;
-                if (link.classList.contains('mobile-drill-open') || link.classList.contains('mobile-drill-back')) {
-                    return; // Don't close when navigating drill-down menus
-                }
-                if (link.getAttribute('href') === '#') { return; }
-                offcanvasInstance.hide();
-            });
-        }
-
-        // Navbar Scroll Effect
-        const navbar = document.querySelector('.navbar');
-        if (navbar) {
-            function handleNavbarScroll() {
-                navbar.classList.toggle('scrolled-nav', (window.scrollY || document.documentElement.scrollTop) > 50);
-            }
-            window.addEventListener('scroll', handleNavbarScroll);
-            handleNavbarScroll();
-        }
-    }
-
-    // -------------------------------------------------------------------------
-    // DYNAMIC CONTACT INJECTION
-    // -------------------------------------------------------------------------
-    function injectContactInfo() {
-        const c = window.clinicData?.contact;
-        if (!c) return;
-
-        document.querySelectorAll('[data-global-contact="phone"]').forEach(el => {
-            el.innerHTML = `<i class="fas fa-phone-alt me-2"></i> ${c.phone}`;
-            if (el.tagName === 'A') el.href = "tel:" + c.phone.replace(/\D/g, '');
-        });
-
-        const isEs = (window.OVI_I18N?.currentLang === 'es');
-        document.querySelectorAll('[data-global-contact="email"]').forEach(el => {
-            const label = isEs ? 'Enviar Correo al Equipo Clínico' : 'Email Clinical Team';
-            // Preserve icon if already in innerHTML (e.g. cta.html has <i> before the slot)
-            const icon = el.querySelector('i');
-            if (icon) {
-                el.innerHTML = '';
-                el.appendChild(icon);
-                el.innerHTML += ` ${label}`;
-            } else {
-                el.innerHTML = `<i class="fas fa-envelope me-2"></i> ${label}`;
-            }
-            if (el.tagName === 'A') el.href = "mailto:" + c.email;
-        });
-
-        // Resolve data-i18n location.* labels injected by location.html component
-        const loc = window.clinicData?.location;
-        if (loc) {
-            document.querySelectorAll('[data-i18n="location.sectionTitle"]').forEach(el => { el.textContent = loc.sectionTitle || ''; });
-            document.querySelectorAll('[data-i18n="location.clinicName"]').forEach(el => { el.textContent = loc.clinicName || ''; });
-            document.querySelectorAll('[data-i18n="location.labelAddress"]').forEach(el => { el.textContent = loc.labelAddress || ''; });
-            document.querySelectorAll('[data-i18n="location.labelHours"]').forEach(el => { el.textContent = loc.labelHours || ''; });
-            document.querySelectorAll('[data-i18n="location.labelContact"]').forEach(el => { el.textContent = loc.labelContact || ''; });
-            document.querySelectorAll('[data-i18n="location.getDirections"]').forEach(el => { el.textContent = loc.getDirections || ''; });
-        }
-
+    fetch(`${prefix}assets/components/disclosures.html`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load disclosures component");
+        return res.text();
+      })
+      .then((html) => {
+        root.innerHTML = html;
         populateDisclosures();
+      })
+      .catch((err) => console.error(err));
+  }
+
+  // -------------------------------------------------------------------------
+  // LOCAL SCHEMA INJECTION (DRY)
+  // -------------------------------------------------------------------------
+  function injectLocalSchema() {
+    const path = window.location.pathname.toLowerCase();
+    // Matches "/st-pete", "/st-pete/" and "/st-pete.html" alike
+    const page = path
+      .replace(/\.html$/, "")
+      .replace(/\/+$/, "")
+      .split("/")
+      .pop();
+    let schemaKey = null;
+    if (page === "st-pete") {
+      schemaKey = "stPete";
+    } else if (page === "tampa") {
+      schemaKey = "tampa";
     }
 
+    const loc = window.clinicData?.locations?.[schemaKey];
+    const c = window.clinicData?.contact;
 
-    // -------------------------------------------------------------------------
-    // DYNAMIC CONSULTATION MODAL & MULTI-STEP LOGIC
-    // -------------------------------------------------------------------------
-    function initConsultationModal() {
-        // 1. Create and inject modal container to document body if it doesn't exist
-        if (document.getElementById('consultationModal')) return;
+    if (schemaKey && loc && c) {
+      // Build the full schema by merging base clinic properties with page-specific ones
+      const fullSchema = {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        name: loc.name,
+        alternateName: "OVI Wellness",
+        description: loc.description,
+        url: loc.url,
+        telephone: c.phone,
+        image: "https://oviwellness.com/assets/images/photos/team-group.jpg",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: c.address.street,
+          addressLocality: c.address.city,
+          addressRegion: c.address.state,
+          postalCode: c.address.zip,
+          addressCountry: "US",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 27.7725,
+          longitude: -82.6347,
+        },
+        areaServed: loc.areaServed,
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "18:00",
+        },
+        priceRange: "$$",
+        medicalSpecialty: "Endocrinology",
+      };
 
-        const modalHTML = `
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.text = JSON.stringify(fullSchema);
+      document.head.appendChild(script);
+    }
+  }
+
+  function initNavbarBehavior() {
+    // Mobile Menu Auto-Close on nav link click
+    const offcanvasElement = document.getElementById("mobileMenu");
+    let offcanvasInstance = null;
+    if (offcanvasElement && typeof bootstrap !== "undefined") {
+      offcanvasInstance =
+        bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+    }
+    document
+      .querySelectorAll("a.nav-link, a.cta-btn, .hormone-cta a, .navbar-brand")
+      .forEach((link) => {
+        link.addEventListener("click", function (event) {
+          if (this.getAttribute("href") === "#") {
+            event.preventDefault();
+            return;
+          }
+          if (
+            this.hash !== "" &&
+            offcanvasElement &&
+            offcanvasElement.classList.contains("show") &&
+            offcanvasInstance
+          ) {
+            offcanvasInstance.hide();
+          }
+        });
+      });
+
+    // Auto-close mobile menu when clicking any link inside it (using event delegation to survive dynamic innerHTML updates)
+    if (offcanvasElement && offcanvasInstance) {
+      offcanvasElement.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (!link) return;
+        if (
+          link.classList.contains("mobile-drill-open") ||
+          link.classList.contains("mobile-drill-back")
+        ) {
+          return; // Don't close when navigating drill-down menus
+        }
+        if (link.getAttribute("href") === "#") {
+          return;
+        }
+        offcanvasInstance.hide();
+      });
+    }
+
+    // Navbar Scroll Effect
+    const navbar = document.querySelector(".navbar");
+    if (navbar) {
+      function handleNavbarScroll() {
+        navbar.classList.toggle(
+          "scrolled-nav",
+          (window.scrollY || document.documentElement.scrollTop) > 50,
+        );
+      }
+      window.addEventListener("scroll", handleNavbarScroll);
+      handleNavbarScroll();
+    }
+  }
+
+  // -------------------------------------------------------------------------
+  // DYNAMIC CONTACT INJECTION
+  // -------------------------------------------------------------------------
+  function injectContactInfo() {
+    const c = window.clinicData?.contact;
+    if (!c) return;
+
+    document.querySelectorAll('[data-global-contact="phone"]').forEach((el) => {
+      el.innerHTML = `<i class="fas fa-phone-alt me-2"></i> ${c.phone}`;
+      if (el.tagName === "A") el.href = "tel:" + c.phone.replace(/\D/g, "");
+    });
+
+    const isEs = window.OVI_I18N?.currentLang === "es";
+    document.querySelectorAll('[data-global-contact="email"]').forEach((el) => {
+      const label = isEs
+        ? "Enviar Correo al Equipo Clínico"
+        : "Email Clinical Team";
+      // Preserve icon if already in innerHTML (e.g. cta.html has <i> before the slot)
+      const icon = el.querySelector("i");
+      if (icon) {
+        el.innerHTML = "";
+        el.appendChild(icon);
+        el.innerHTML += ` ${label}`;
+      } else {
+        el.innerHTML = `<i class="fas fa-envelope me-2"></i> ${label}`;
+      }
+      if (el.tagName === "A") el.href = "mailto:" + c.email;
+    });
+
+    // Resolve data-i18n location.* labels injected by location.html component
+    const loc = window.clinicData?.location;
+    if (loc) {
+      document
+        .querySelectorAll('[data-i18n="location.sectionTitle"]')
+        .forEach((el) => {
+          el.textContent = loc.sectionTitle || "";
+        });
+      document
+        .querySelectorAll('[data-i18n="location.clinicName"]')
+        .forEach((el) => {
+          el.textContent = loc.clinicName || "";
+        });
+      document
+        .querySelectorAll('[data-i18n="location.labelAddress"]')
+        .forEach((el) => {
+          el.textContent = loc.labelAddress || "";
+        });
+      document
+        .querySelectorAll('[data-i18n="location.labelHours"]')
+        .forEach((el) => {
+          el.textContent = loc.labelHours || "";
+        });
+      document
+        .querySelectorAll('[data-i18n="location.labelContact"]')
+        .forEach((el) => {
+          el.textContent = loc.labelContact || "";
+        });
+      document
+        .querySelectorAll('[data-i18n="location.getDirections"]')
+        .forEach((el) => {
+          el.textContent = loc.getDirections || "";
+        });
+    }
+
+    populateDisclosures();
+  }
+
+  // -------------------------------------------------------------------------
+  // DYNAMIC CONSULTATION MODAL & MULTI-STEP LOGIC
+  // -------------------------------------------------------------------------
+  function initConsultationModal() {
+    // 1. Create and inject modal container to document body if it doesn't exist
+    if (document.getElementById("consultationModal")) return;
+
+    const modalHTML = `
         <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true" data-bs-backdrop="static">
           <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
@@ -517,199 +581,221 @@
         </div>
         `;
 
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = modalHTML;
-        const modalElement = tempDiv.firstElementChild;
-        document.body.appendChild(modalElement);
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = modalHTML;
+    const modalElement = tempDiv.firstElementChild;
+    document.body.appendChild(modalElement);
 
-        const bootstrapModal = new bootstrap.Modal(modalElement);
+    const bootstrapModal = new bootstrap.Modal(modalElement);
 
-        // Intercept clicks to any #consultation button and open external booking link
-        const BOOKING_URL = 'https://www.optimantra.com/optimus/patient/patientaccess/prospects?pid=a2poUjdvMUpIY0I1S3ZSY2ZUaFRjZz09';
-        document.addEventListener('click', function (e) {
-            const targetLink = e.target.closest('a[href="#consultation"]');
-            if (targetLink) {
-                e.preventDefault();
-                window.open(BOOKING_URL, '_blank', 'noopener,noreferrer');
-            }
-        });
-
-        const form = document.getElementById('consultationForm');
-        const steps = form.querySelectorAll('.modal-step');
-        const dots = document.querySelectorAll('.step-dot');
-        const inputInterest = document.getElementById('input-treatment-interest');
-        const interestCards = form.querySelectorAll('.interest-card');
-
-        let currentStep = 1;
-
-        function showStep(stepNum) {
-            steps.forEach(step => {
-                if (step.getAttribute('data-step') === String(stepNum)) {
-                    step.classList.add('active');
-                } else {
-                    step.classList.remove('active');
-                }
-            });
-
-            dots.forEach(dot => {
-                const dotStep = parseInt(dot.getAttribute('data-step'));
-                if (dotStep === stepNum) {
-                    dot.classList.add('active');
-                    dot.classList.remove('completed');
-                } else if (dotStep < stepNum) {
-                    dot.classList.remove('active');
-                    dot.classList.add('completed');
-                } else {
-                    dot.classList.remove('active', 'completed');
-                }
-            });
-
-            currentStep = stepNum;
-        }
-
-        function resetForm() {
-            form.reset();
-            currentStep = 1;
-            interestCards.forEach(card => card.classList.remove('selected'));
-            inputInterest.value = '';
-            
-            document.getElementById('step1-error').classList.add('d-none');
-            document.getElementById('step2-error').classList.add('d-none');
-            document.getElementById('step3-error').classList.add('d-none');
-            
-            showStep(1);
-            
-            const submitBtn = document.getElementById('submitFormBtn');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Secure Offer & Book';
-        }
-
-        interestCards.forEach(card => {
-            card.addEventListener('click', function () {
-                this.classList.toggle('selected');
-                
-                const selectedCards = Array.from(interestCards).filter(c => c.classList.contains('selected'));
-                const selectedValues = selectedCards.map(c => c.getAttribute('data-interest'));
-                inputInterest.value = selectedValues.join(', ');
-                
-                if (selectedValues.length > 0) {
-                    document.getElementById('step1-error').classList.add('d-none');
-                } else {
-                    inputInterest.value = '';
-                }
-            });
-        });
-
-        document.getElementById('next-to-step2').addEventListener('click', function () {
-            if (!inputInterest.value) {
-                document.getElementById('step1-error').classList.remove('d-none');
-                return;
-            }
-            showStep(2);
-        });
-
-        document.getElementById('next-to-step3').addEventListener('click', function () {
-            const name = document.getElementById('leadName');
-            const email = document.getElementById('leadEmail');
-            const phone = document.getElementById('leadPhone');
-            const step2Error = document.getElementById('step2-error');
-
-            let isValid = true;
-            if (!name.value.trim()) isValid = false;
-            if (!email.value.trim() || !email.value.includes('@')) isValid = false;
-            if (!phone.value.trim() || phone.value.replace(/\D/g, '').length < 10) isValid = false;
-
-            if (!isValid) {
-                step2Error.classList.remove('d-none');
-                return;
-            }
-
-            step2Error.classList.add('d-none');
-            showStep(3);
-        });
-
-        document.getElementById('prev-to-step1').addEventListener('click', () => showStep(1));
-        document.getElementById('prev-to-step2').addEventListener('click', () => showStep(2));
-
-        form.addEventListener('submit', async function (e) {
-            e.preventDefault();
-
-            // SMS opt-in is optional now, so no need to require it
-            step3Error.classList.add('d-none');
-
-            const submitBtn = document.getElementById('submitFormBtn');
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Securing...';
-
-            const formData = new FormData(form);
-            
-
-            const selectedVal = inputInterest.value;
-            const successText = selectedVal.includes(',') 
-                ? `consultation for: ${selectedVal}`
-                : `${selectedVal} consultation`;
-            document.getElementById('success-chosen-service').innerText = successText;
-
-            try {
-                console.warn("Form submission: HIPAA-capable CRM endpoint not yet configured. Data captured locally only.");
-                console.log("Form data:", Object.fromEntries(formData.entries()));
-
-                steps.forEach(step => step.classList.remove('active'));
-                const successStep = form.querySelector('.modal-step[data-step="success"]');
-                successStep.classList.add('active');
-                dots.forEach(dot => dot.classList.add('completed'));
-            } catch (err) {
-                console.error("Submission error:", err);
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Secure Offer & Book';
-                const errorMsg = form.querySelector('#step3-error') || document.createElement('div');
-                
-                const leadName = document.getElementById('leadName')?.value || 'Patient';
-                const leadPhone = document.getElementById('leadPhone')?.value || '';
-                const service = inputInterest.value || 'General Consultation';
-                const subject = encodeURIComponent(`Inquiry from ${leadName}`);
-                const body = encodeURIComponent(`Name: ${leadName}\nPhone: ${leadPhone}\nService: ${service}\n\nI am interested in booking a consultation.`);
-                
-                errorMsg.innerHTML = `Something went wrong. Please try again or <a href="mailto:info@oviwellness.com?subject=${subject}&body=${body}" class="text-primary fw-bold text-decoration-underline" style="color:var(--primary-color) !important;">email us directly</a>.`;
-                errorMsg.className = 'text-danger small mt-2 text-center';
-                errorMsg.id = 'submit-error-msg';
-                if (!form.querySelector('#submit-error-msg')) submitBtn.after(errorMsg);
-            }
-        });
-    }
-
-    // -------------------------------------------------------------------------
-    // INIT — render components only after i18n/clinicData is ready
-    // -------------------------------------------------------------------------
-    // renderNavbar() and renderFooter() depend on window.clinicData.contact,
-    // which is populated asynchronously by i18n.js fetching global.json.
-    // DOMContentLoaded fires before that fetch completes, so we must wait for
-    // the i18nLoaded event instead.  The once-flag prevents double execution
-    // if clinicData is already populated by the time this script runs.
-    var _componentsRendered = false;
-    function initComponents() {
-        if (_componentsRendered) return;
-        _componentsRendered = true;
-        renderNavbar();
-        renderFooter();
-        renderDisclosures();
-        injectLocalSchema();
-        initNavbarBehavior();
-        initConsultationModal();
-        injectContactInfo();
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        // If clinicData is already populated (i18nLoaded already fired), run now.
-        if (window.clinicData && window.clinicData.contact) {
-            initComponents();
-        }
-        // Always register the i18nLoaded listener as a safety net.
-        document.addEventListener("i18nLoaded", initComponents);
+    // Intercept clicks to any #consultation button and open external booking link
+    const BOOKING_URL =
+      "https://www.optimantra.com/optimus/patient/patientaccess/prospects?pid=a2poUjdvMUpIY0I1S3ZSY2ZUaFRjZz09";
+    document.addEventListener("click", function (e) {
+      const targetLink = e.target.closest('a[href="#consultation"]');
+      if (targetLink) {
+        e.preventDefault();
+        window.open(BOOKING_URL, "_blank", "noopener,noreferrer");
+      }
     });
 
-    document.addEventListener("componentsLoaded", function() {
-        // Re-run after components inject new DOM nodes that may contain contact slots.
-        injectContactInfo();
+    const form = document.getElementById("consultationForm");
+    const steps = form.querySelectorAll(".modal-step");
+    const dots = document.querySelectorAll(".step-dot");
+    const inputInterest = document.getElementById("input-treatment-interest");
+    const interestCards = form.querySelectorAll(".interest-card");
+
+    let currentStep = 1;
+
+    function showStep(stepNum) {
+      steps.forEach((step) => {
+        if (step.getAttribute("data-step") === String(stepNum)) {
+          step.classList.add("active");
+        } else {
+          step.classList.remove("active");
+        }
+      });
+
+      dots.forEach((dot) => {
+        const dotStep = parseInt(dot.getAttribute("data-step"));
+        if (dotStep === stepNum) {
+          dot.classList.add("active");
+          dot.classList.remove("completed");
+        } else if (dotStep < stepNum) {
+          dot.classList.remove("active");
+          dot.classList.add("completed");
+        } else {
+          dot.classList.remove("active", "completed");
+        }
+      });
+
+      currentStep = stepNum;
+    }
+
+    function resetForm() {
+      form.reset();
+      currentStep = 1;
+      interestCards.forEach((card) => card.classList.remove("selected"));
+      inputInterest.value = "";
+
+      document.getElementById("step1-error").classList.add("d-none");
+      document.getElementById("step2-error").classList.add("d-none");
+      document.getElementById("step3-error").classList.add("d-none");
+
+      showStep(1);
+
+      const submitBtn = document.getElementById("submitFormBtn");
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = "Secure Offer & Book";
+    }
+
+    interestCards.forEach((card) => {
+      card.addEventListener("click", function () {
+        this.classList.toggle("selected");
+
+        const selectedCards = Array.from(interestCards).filter((c) =>
+          c.classList.contains("selected"),
+        );
+        const selectedValues = selectedCards.map((c) =>
+          c.getAttribute("data-interest"),
+        );
+        inputInterest.value = selectedValues.join(", ");
+
+        if (selectedValues.length > 0) {
+          document.getElementById("step1-error").classList.add("d-none");
+        } else {
+          inputInterest.value = "";
+        }
+      });
     });
+
+    document
+      .getElementById("next-to-step2")
+      .addEventListener("click", function () {
+        if (!inputInterest.value) {
+          document.getElementById("step1-error").classList.remove("d-none");
+          return;
+        }
+        showStep(2);
+      });
+
+    document
+      .getElementById("next-to-step3")
+      .addEventListener("click", function () {
+        const name = document.getElementById("leadName");
+        const email = document.getElementById("leadEmail");
+        const phone = document.getElementById("leadPhone");
+        const step2Error = document.getElementById("step2-error");
+
+        let isValid = true;
+        if (!name.value.trim()) isValid = false;
+        if (!email.value.trim() || !email.value.includes("@")) isValid = false;
+        if (!phone.value.trim() || phone.value.replace(/\D/g, "").length < 10)
+          isValid = false;
+
+        if (!isValid) {
+          step2Error.classList.remove("d-none");
+          return;
+        }
+
+        step2Error.classList.add("d-none");
+        showStep(3);
+      });
+
+    document
+      .getElementById("prev-to-step1")
+      .addEventListener("click", () => showStep(1));
+    document
+      .getElementById("prev-to-step2")
+      .addEventListener("click", () => showStep(2));
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      // SMS opt-in is optional now, so no need to require it
+      step3Error.classList.add("d-none");
+
+      const submitBtn = document.getElementById("submitFormBtn");
+      submitBtn.disabled = true;
+      submitBtn.innerHTML =
+        '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Securing...';
+
+      const formData = new FormData(form);
+
+      const selectedVal = inputInterest.value;
+      const successText = selectedVal.includes(",")
+        ? `consultation for: ${selectedVal}`
+        : `${selectedVal} consultation`;
+      document.getElementById("success-chosen-service").innerText = successText;
+
+      try {
+        console.warn(
+          "Form submission: HIPAA-capable CRM endpoint not yet configured. Data captured locally only.",
+        );
+        console.log("Form data:", Object.fromEntries(formData.entries()));
+
+        steps.forEach((step) => step.classList.remove("active"));
+        const successStep = form.querySelector(
+          '.modal-step[data-step="success"]',
+        );
+        successStep.classList.add("active");
+        dots.forEach((dot) => dot.classList.add("completed"));
+      } catch (err) {
+        console.error("Submission error:", err);
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = "Secure Offer & Book";
+        const errorMsg =
+          form.querySelector("#step3-error") || document.createElement("div");
+
+        const leadName =
+          document.getElementById("leadName")?.value || "Patient";
+        const leadPhone = document.getElementById("leadPhone")?.value || "";
+        const service = inputInterest.value || "General Consultation";
+        const subject = encodeURIComponent(`Inquiry from ${leadName}`);
+        const body = encodeURIComponent(
+          `Name: ${leadName}\nPhone: ${leadPhone}\nService: ${service}\n\nI am interested in booking a consultation.`,
+        );
+
+        errorMsg.innerHTML = `Something went wrong. Please try again or <a href="mailto:info@oviwellness.com?subject=${subject}&body=${body}" class="text-primary fw-bold text-decoration-underline" style="color:var(--primary-color) !important;">email us directly</a>.`;
+        errorMsg.className = "text-danger small mt-2 text-center";
+        errorMsg.id = "submit-error-msg";
+        if (!form.querySelector("#submit-error-msg")) submitBtn.after(errorMsg);
+      }
+    });
+  }
+
+  // -------------------------------------------------------------------------
+  // INIT — render components only after i18n/clinicData is ready
+  // -------------------------------------------------------------------------
+  // renderNavbar() and renderFooter() depend on window.clinicData.contact,
+  // which is populated asynchronously by i18n.js fetching global.json.
+  // DOMContentLoaded fires before that fetch completes, so we must wait for
+  // the i18nLoaded event instead.  The once-flag prevents double execution
+  // if clinicData is already populated by the time this script runs.
+  var _componentsRendered = false;
+  function initComponents() {
+    if (_componentsRendered) return;
+    _componentsRendered = true;
+    renderNavbar();
+    renderFooter();
+    renderDisclosures();
+    injectLocalSchema();
+    initNavbarBehavior();
+    initConsultationModal();
+    injectContactInfo();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // If clinicData is already populated (i18nLoaded already fired), run now.
+    if (window.clinicData && window.clinicData.contact) {
+      initComponents();
+    }
+    // Always register the i18nLoaded listener as a safety net.
+    document.addEventListener("i18nLoaded", initComponents);
+  });
+
+  document.addEventListener("componentsLoaded", function () {
+    // Re-run after components inject new DOM nodes that may contain contact slots.
+    injectContactInfo();
+  });
 })();
