@@ -280,9 +280,9 @@
                   // Article Title
                   h('h1', { style: { fontFamily: 'Urbanist, sans-serif', fontSize: '2.2rem', fontWeight: '700', color: '#051411', textTransform: 'uppercase', marginBottom: '16px', lineHeight: '1.25' } }, post.title || 'Untitled Article'),
                   
-                  // Author & Date Meta Line
-                  h('div', { style: { fontSize: '0.95rem', color: '#64748b', marginBottom: '32px' } }, 
-                    (post.author || 'Author') + '  •  ' + (post.date || 'Date')
+                  // Date Meta Line
+                  h('div', { style: { fontSize: '0.95rem', color: '#64748b', marginBottom: '32px' } },
+                    post.date || 'Date'
                   ),
 
                   // Dynamic Sections Array

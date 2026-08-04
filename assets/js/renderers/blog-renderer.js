@@ -123,7 +123,6 @@
     const articleId = urlParams.get("id");
 
     const ui = blogPage?.ui || {};
-    const byText = ui.byAuthor || "By";
 
     // If no articleId is specified, fallback to the first article in the dataset
     let article = blogData.find((a) => a.id === articleId);
@@ -167,7 +166,6 @@
     // Populate standard text slots
     setSlot("articleCategory", article.category);
     setSlot("articleTitle", article.title);
-    setSlot("articleAuthor", `${byText} ${article.author}`);
     setSlot("articleDate", article.date);
 
     // Dynamically render content sections from the array

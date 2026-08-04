@@ -9,7 +9,6 @@
   "heroSubheadline": "Análisis profundos de terapias emergentes, ciencia metabólica y protocolos regenerativos por parte de nuestro equipo médico.",
   "ui": {
     "readArticle": "Leer Artículo",
-    "byAuthor": "Por",
     "emptyBlog": "Vuelva pronto para ver nuevo contenido educativo.",
     "articleNotFound": "Artículo no encontrado",
     "articleNotFoundDesc": "El artículo clínico que busca no existe o ha sido movido.",
@@ -30,7 +29,6 @@
       "id": "cellular-detox-protocols",
       "title": "Desintoxicación Celular: Apoyo a la Eliminación Hepática y Sistémica",
       "category": "Desintoxicación y Recuperación",
-      "author": "David Chen, RN",
       "date": "14 de agosto de 2026",
       "excerpt": "La ciencia clínica de la unión de metales pesados, la optimización del glutatión y la eliminación celular sistémica.",
       "content": [
@@ -68,7 +66,6 @@
       "id": "regenerative-PRP-protocols",
       "title": "Protocolos Regenerativos de PRP para la Reparación de Articulaciones y Tejidos Blandos",
       "category": "Medicina Regenerativa",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "09 de agosto de 2026",
       "excerpt": "Comprendiendo la señalización de vesículas extracelulares y cómo los protocolos regenerativos no quirúrgicos apoyan la curación celular.",
       "content": [
@@ -106,7 +103,6 @@
       "id": "glp-1-side-effects",
       "title": "Navegando los Efectos Secundarios del GLP-1: Una Guía para Pacientes",
       "category": "Pérdida de Peso Médica",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "02 de agosto de 2026",
       "excerpt": "Cómo manejar, mitigar y prevenir los efectos secundarios gastrointestinales comunes durante las terapias con agonistas de los receptores GLP-1 y GIP.",
       "content": [
@@ -144,7 +140,6 @@
       "id": "precision-biomarker-testing",
       "title": "Por Qué los Análisis de Sangre Estándar No Muestran el Panorama Completo: El Enfoque de Biomarcadores de Precisión",
       "category": "Diagnósticos Avanzados",
-      "author": "Dr. Marcus Vance, MD",
       "date": "22 de julio de 2026",
       "excerpt": "Cómo los paneles metabólicos, endocrinos e inflamatorios completos revelan las causas fundamentales de la disfunción antes de que se manifieste la enfermedad.",
       "content": [
@@ -182,7 +177,6 @@
       "id": "trt-myths",
       "title": "Desmintiendo Mitos de la TRT: Lo que los hombres deben saber",
       "category": "Optimización Hormonal",
-      "author": "Dr. Marcus Vance, MD",
       "date": "15 de julio de 2026",
       "excerpt": "Separando los hechos clínicos de la ficción en internet sobre la Terapia de Reemplazo de Testosterona y la salud cardiovascular.",
       "content": [
@@ -220,7 +214,6 @@
       "id": "benefits-of-peptide-therapy",
       "title": "Los Beneficios Clínicos de la Terapia de Péptidos",
       "category": "Terapia de Péptidos",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "02 de julio de 2026",
       "excerpt": "Cómo las secuencias de aminoácidos dirigidas están revolucionando la medicina regenerativa, la modulación inmunológica y la reparación de tejidos.",
       "content": [
@@ -258,7 +251,6 @@
       "id": "what-is-retatrutide",
       "title": "¿Qué es la Retatrutida? La próxima evolución en la medicina metabólica",
       "category": "Pérdida de Peso Médica",
-      "author": "Dr. Marcus Vance, MD",
       "date": "04 de junio de 2026",
       "excerpt": "Una descripción clínica integral de la Retatrutida, su mecanismo de triple agonista y lo que significa para el futuro de la recomposición corporal.",
       "content": [

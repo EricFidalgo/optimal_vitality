@@ -9,7 +9,6 @@
   "heroSubheadline": "Deep dives into emerging therapies, metabolic science, and regenerative protocols from our medical team.",
   "ui": {
     "readArticle": "Read Article",
-    "byAuthor": "By",
     "emptyBlog": "Check back soon for new educational content.",
     "articleNotFound": "Article Not Found",
     "articleNotFoundDesc": "The clinical article you are looking for does not exist or has been moved.",
@@ -31,7 +30,6 @@
       "id": "cellular-detox-protocols",
       "title": "Cellular Detoxification: Supporting Hepatic and Systemic Clearance",
       "category": "Detox & Recovery",
-      "author": "David Chen, RN",
       "date": "August 14, 2026",
       "excerpt": "The clinical science of heavy metal binding, glutathione optimization, and systemic cellular clearance.",
       "content": [
@@ -69,7 +67,6 @@
       "id": "regenerative-PRP-protocols",
       "title": "Regenerative PRP Protocols for Joint and Soft Tissue Repair",
       "category": "Regenerative Medicine",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "August 09, 2026",
       "excerpt": "Understanding extracellular vesicle signaling and how non-surgical regenerative protocols support cellular healing.",
       "content": [
@@ -107,7 +104,6 @@
       "id": "glp-1-side-effects",
       "title": "Navigating GLP-1 Side Effects: A Patient's Guide",
       "category": "Medical Weight Loss",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "August 02, 2026",
       "excerpt": "How to manage, mitigate, and prevent common gastrointestinal side effects during GLP-1 and GIP receptor agonist therapies.",
       "content": [
@@ -145,7 +141,6 @@
       "id": "precision-biomarker-testing",
       "title": "Why Standard Bloodwork Misses the Full Picture: The Precision Biomarker Approach",
       "category": "Advanced Diagnostics",
-      "author": "Dr. Marcus Vance, MD",
       "date": "July 22, 2026",
       "excerpt": "How comprehensive metabolic, endocrine, and inflammatory panels uncover root causes of dysfunction before disease manifests.",
       "content": [
@@ -183,7 +178,6 @@
       "id": "trt-myths",
       "title": "Debunking TRT Myths: What Men Need to Know",
       "category": "Hormone Optimization",
-      "author": "Dr. Marcus Vance, MD",
       "date": "July 15, 2026",
       "excerpt": "Separating clinical fact from internet fiction regarding Testosterone Replacement Therapy and cardiovascular health.",
       "content": [
@@ -221,7 +215,6 @@
       "id": "benefits-of-peptide-therapy",
       "title": "The Clinical Benefits of Peptide Therapy",
       "category": "Peptide Therapy",
-      "author": "Sarah Jenkins, FNP-C",
       "date": "July 02, 2026",
       "excerpt": "How targeted amino acid sequences are revolutionizing regenerative medicine, immune modulation, and tissue repair.",
       "content": [
@@ -259,7 +252,6 @@
       "id": "what-is-retatrutide",
       "title": "What is Retatrutide? The Next Evolution in Metabolic Medicine",
       "category": "Medical Weight Loss",
-      "author": "Dr. Marcus Vance, MD",
       "date": "June 04, 2026",
       "excerpt": "A comprehensive clinical overview of Retatrutide, its triple-agonist mechanism, and what it means for the future of body recomposition.",
       "content": [
