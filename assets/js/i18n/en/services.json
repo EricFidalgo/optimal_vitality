@@ -865,9 +865,9 @@
         },
         {
           "icon": "fa-dna",
-          "name": "Retatrutide Protocol",
-          "tag": "Next Generation",
-          "description": "Triple-action option for stubborn weight that hasn't responded to previous diets. Available upon medical evaluation."
+          "name": "Advanced Evaluation Protocol",
+          "tag": "Targeted Care",
+          "description": "Clinical option for patients under specialized monitoring, determined through comprehensive medical evaluation."
         },
         {
           "icon": "fa-leaf",
@@ -992,10 +992,10 @@
           "description": "Proven GLP-1 prescription paired with simple daily meal guidance. Perfect for your first doctor-guided weight loss journey."
         },
         {
-          "name": "Complete Health & Fat Loss Plan",
-          "tag": "Full Reset",
-          "compounds": "Retatrutide + Doctor Labs",
-          "description": "Advanced triple-action treatment guided by complete doctor health panels for maximum results."
+          "name": "Advanced Management Protocol",
+          "tag": "Strict Monitoring",
+          "compounds": "Prescription Medication + Doctor Labs",
+          "description": "Specialized care through regular clinical evaluation and laboratory studies."
         }
       ]
     },

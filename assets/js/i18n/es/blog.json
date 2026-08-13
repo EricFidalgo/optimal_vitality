@@ -246,43 +246,6 @@
           "body": "Los riesgos son generalmente mínimos cuando se supervisan clínicamente. Las reacciones en el lugar de la inyección (enrojecimiento leve o picazón) son la queja más común. Dependiendo de la secuencia, puede ocurrir una retención de agua menor o aumentos leves en el nivel de azúcar en la sangre, por lo que el monitoreo por parte de un proveedor de atención médica con licencia y los ciclos (por ejemplo, 3 meses de uso, 1 mes de descanso) son componentes críticos de un protocolo seguro."
         }
       ]
-    },
-    {
-      "id": "what-is-retatrutide",
-      "title": "¿Qué es la Retatrutida? La próxima evolución en la medicina metabólica",
-      "category": "Pérdida de Peso Médica",
-      "date": "04 de junio de 2026",
-      "excerpt": "Una descripción clínica integral de la Retatrutida, su mecanismo de triple agonista y lo que significa para el futuro de la recomposición corporal.",
-      "content": [
-        {
-          "title": "Visión general",
-          "body": "La retatrutida representa un cambio de paradigma en el manejo médico del peso. A diferencia de las generaciones anteriores de terapias que se dirigían a uno o dos receptores (como la semaglutida o la tirzepatida), la retatrutida es un agonista 'triple G'. Se dirige a los receptores GLP-1, GIP y glucagón simultáneamente. Este enfoque sinérgico no solo suprime el apetito y mejora la sensibilidad a la insulina, sino que aumenta significativamente la tasa metabólica basal y la eliminación de grasa hepática."
-        },
-        {
-          "title": "Seguridad del Consumidor",
-          "body": "La retatrutida se encuentra actualmente en ensayos clínicos de última fase y aún no está aprobada por la FDA para la pérdida de peso general. Como un péptido de farmacia de formulación magistral en ciertos entornos clínicos, su uso debe ser estrictamente monitorizado. Los protocolos de seguridad requieren paneles metabólicos de referencia completos, exámenes cardiovasculares y controles mensuales con un proveedor de atención médica con licencia para monitorizar posibles complicaciones pancreáticas o tiroideas."
-        },
-        {
-          "title": "Requisitos de Candidatura",
-          "body": "Los candidatos ideales son personas con un IMC > 30, o > 27 con comorbilidades relacionadas con la obesidad (como diabetes tipo 2, hipertensión o dislipidemia grave) que se han estancado con agonistas duales como la tirzepatida. Esta terapia está contraindicada para pacientes con antecedentes personales o familiares de carcinoma medular de tiroides o síndrome de neoplasia endocrina múltiple tipo 2 (MEN 2)."
-        },
-        {
-          "title": "Expectativas de Tiempo",
-          "body": "La titulación es gradual para mitigar el malestar gastrointestinal. Los pacientes generalmente comienzan con una microdosis de 1 mg semanal durante cuatro semanas, aumentando lentamente durante 6 a 8 meses. La optimización metabólica máxima y la reducción de peso significativa se observan generalmente entre los meses 6 y 11."
-        },
-        {
-          "title": "Tiempo de Inactividad Potencial",
-          "body": "Hay cero tiempo de inactividad físico. Los pacientes se administran la inyección subcutánea una vez a la semana. Sin embargo, puede ocurrir fatiga leve o náuseas dentro de las 24 a 48 horas posteriores a la inyección durante las fases iniciales de aumento de la dosis."
-        },
-        {
-          "title": "Resultados Esperados",
-          "body": "Los datos clínicos de la fase 2 sugieren una eficacia sin precedentes, y los pacientes logran una pérdida de peso corporal promedio del 24.2% durante 48 semanas. Más allá de la pérdida de peso, se esperan profundas mejoras en los perfiles de lípidos, la sensibilidad a la insulina y la reducción de grasa hepática (que a menudo supera el 80% de eliminación) como expectativas clínicas estándar. Los resultados individuales varían."
-        },
-        {
-          "title": "Riesgos Clínicos",
-          "body": "Los eventos adversos más comunes son gastrointestinales: náuseas, diarrea, vómitos y estreñimiento, que generalmente dependen de la dosis y son transitorios. Los riesgos más graves, aunque poco frecuentes, incluyen pancreatitis, enfermedad de la vesícula biliar, hipoglucemia (si se combina con otros agentes antidiabéticos) y posible elevación de la frecuencia cardíaca."
-        }
-      ]
     }
   ]
 }

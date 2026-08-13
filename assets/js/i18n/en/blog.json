@@ -247,43 +247,6 @@
           "body": "Risks are generally minimal when clinically supervised. Injection site reactions (mild redness or itching) are the most common complaint. Depending on the sequence, minor water retention or slight increases in blood sugar can occur, which is why physician monitoring and cycling (e.g., 3 months on, 1 month off) are critical components of a safe protocol."
         }
       ]
-    },
-    {
-      "id": "what-is-retatrutide",
-      "title": "What is Retatrutide? The Next Evolution in Metabolic Medicine",
-      "category": "Medical Weight Loss",
-      "date": "June 04, 2026",
-      "excerpt": "A comprehensive clinical overview of Retatrutide, its triple-agonist mechanism, and what it means for the future of body recomposition.",
-      "content": [
-        {
-          "title": "Overview",
-          "body": "Retatrutide represents a paradigm shift in medical weight management. Unlike previous generations of therapies that targeted one or two receptors (like semaglutide or tirzepatide), retatrutide is a 'triple G' agonist. It targets GLP-1, GIP, and Glucagon receptors simultaneously. This synergistic approach not only suppresses appetite and improves insulin sensitivity but significantly increases basal metabolic rate and hepatic fat clearance."
-        },
-        {
-          "title": "Consumer Safety",
-          "body": "Retatrutide is currently undergoing late-stage clinical trials and is not yet FDA-approved for general weight loss. As a compounding pharmacy-sourced peptide in certain clinical settings, its use must be strictly monitored. Safety protocols require comprehensive baseline metabolic panels, cardiovascular screening, and monthly physician check-ins to monitor for potential pancreatic or thyroid complications."
-        },
-        {
-          "title": "Candidacy Requirements",
-          "body": "Ideal candidates are individuals with a BMI > 30, or > 27 with obesity-related comorbidities (such as type 2 diabetes, hypertension, or severe dyslipidemia) who have plateaued on dual-agonists like tirzepatide. This therapy is contraindicated for patients with a personal or family history of medullary thyroid carcinoma or Multiple Endocrine Neoplasia syndrome type 2 (MEN 2)."
-        },
-        {
-          "title": "Timeline Expectations",
-          "body": "Titration is gradual to mitigate gastrointestinal distress. Patients typically start at a micro-dose of 1mg weekly for four weeks, escalating slowly over 6-8 months. Peak metabolic optimization and significant weight reduction are generally observed between months 6 and 11."
-        },
-        {
-          "title": "Potential Downtime",
-          "body": "There is zero physical downtime. Patients administer the subcutaneous injection once weekly. However, mild fatigue or nausea may occur within 24-48 hours post-injection during the initial dose escalation phases."
-        },
-        {
-          "title": "Expected Results",
-          "body": "Phase 2 clinical data suggests unprecedented efficacy, with patients achieving an average of 24.2% body weight loss over 48 weeks. Beyond weight loss, profound improvements in lipid profiles, insulin sensitivity, and liver fat reduction (often exceeding 80% clearance) are standard clinical expectations."
-        },
-        {
-          "title": "Clinical Risks",
-          "body": "The most common adverse events are gastrointestinal: nausea, diarrhea, vomiting, and constipation, which are generally dose-dependent and transient. More severe, albeit rare, risks include pancreatitis, gallbladder disease, hypoglycemia (if combined with other anti-diabetic agents), and potential heart rate elevation."
-        }
-      ]
     }
   ]
 }
