@@ -16,6 +16,38 @@
   },
   "team": [
     {
+      "name": "Dr. Micah Craig, M.D.",
+      "credentials": "M.D.",
+      "role": "Medical Director",
+      "bio": "Internal Medicine physician and Medical Director specializing in regenerative medicine, longevity science, and medical aesthetics, dedicated to evidence-based, whole-person care.",
+      "bioFull": [
+        "Dr. Micah Craig’s journey into medicine began at age five, walking hospital corridors alongside his father, a devoted physician. Those early moments ignited a lifelong calling rooted in healing and human connection. Throughout his undergraduate years, he spent summers on medical mission trips across Africa and Central America — experiences that grounded his commitment to compassionate, service-driven care. After earning his degree, he deepened his scientific foundation with a Master’s in Biochemistry before entering medical school with a clear vision: practice medicine that is both evidence-based and deeply personal.",
+        "During his Internal Medicine residency in Denver, Dr. Craig served on the frontlines of the COVID-19 pandemic, navigating the ICU in one of the most demanding periods in modern medicine. That experience sharpened his clinical instincts and revealed the limitations of reactive care — and drove him toward a different approach. He immersed himself in regenerative medicine, longevity science, and aesthetic therapies, pursuing advanced training in ozone therapy, IV therapy, peptide protocols, HBOT, GLP-1 weight management, and medical aesthetics. In 2024, he founded RAVE: Regenerative Aesthetics & Vitality Experts — a clinic built to fuse internal wellness with aesthetic medicine under one integrated roof.",
+        "Now serving as Medical Director at OVI Wellness, Dr. Craig brings that same philosophy to our clinic community. He provides medical oversight across all clinical services — from ozone and IV hydration therapy to exosome treatments, peptide protocols, and regenerative aesthetics — ensuring every protocol meets the highest standards of patient-centered, evidence-based care."
+      ],
+      "philosophy": "Real transformation happens when you treat the whole person — inside and out. True healing combines rigorous evidence-based science with deep human connection and personalized preventive care.",
+      "associations": [
+        "Doctor of Medicine (M.D.) — Internal Medicine Residency, Denver, CO",
+        "Board Certified — Internal Medicine (M.D.)",
+        "Master of Science in Biochemistry"
+      ],
+      "expertise": [
+        "Medical Leadership & Oversight",
+        "Regenerative Medicine*",
+        "Longevity Science",
+        "Internal Medicine",
+        "Medical Aesthetics",
+        "Ozone Therapy",
+        "IV Therapy",
+        "Peptide Therapy*",
+        "GLP-1 Weight Management",
+        "Hyperbaric Oxygen Therapy (HBOT)",
+        "Hormone Optimization"
+      ],
+      "expertiseNote": "*Where clinically appropriate and consistent with applicable laws and regulations.",
+      "image": "assets/images/photos/team/craig.jpg"
+    },
+    {
       "name": "Sean Worix, PA-C",
       "credentials": "PA-C",
       "role": "Physician Assistant",
@@ -26,6 +58,11 @@
         "At OVI Wellness, Sean is committed to delivering personalized, compassionate care built on scientific evidence, transparency, and long-term partnerships—empowering every patient to optimize not only how they feel today, but how they age for decades to come."
       ],
       "philosophy": "True health optimization isn't about chasing laboratory values—it's about restoring function, improving quality of life, and helping patients perform at their highest potential through personalized, evidence-based medicine.",
+      "associations": [
+        "Master of Science in Physician Assistant Studies (MSPAS) — South University (Summa Cum Laude)",
+        "B.S. in Exercise Physiology — West Virginia University (Summa Cum Laude)",
+        "National Commission on Certification of Physician Assistants (NCCPA)"
+      ],
       "expertise": [
         "Men's Health",
         "Testosterone Replacement Therapy (TRT)",

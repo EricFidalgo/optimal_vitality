@@ -16,6 +16,38 @@
   },
   "team": [
     {
+      "name": "Dr. Micah Craig, M.D.",
+      "credentials": "M.D.",
+      "role": "Director Médico",
+      "bio": "Médico especialista en Medicina Interna y Director Médico especializado en medicina regenerativa, ciencia de la longevidad y estética médica, dedicado a una atención integral basada en la evidencia.",
+      "bioFull": [
+        "El camino del Dr. Micah Craig en la medicina comenzó a los cinco años, caminando por los pasillos del hospital junto a su padre, un dedicado médico. Esos primeros momentos encendieron una vocación de por vida basada en la curación y la conexión humana. Durante sus años universitarios, pasó los veranos en misiones médicas por África y Centroamérica, experiencias que cimentaron su compromiso con una atención compasiva y orientada al servicio. Tras obtener su título, profundizó su formación científica con una Maestría en Bioquímica antes de ingresar a la escuela de medicina con una visión clara: ejercer una medicina basada en la evidencia y profundamente personalizada.",
+        "Durante su residencia en Medicina Interna en Denver, el Dr. Craig estuvo en la primera línea de la pandemia de COVID-19 en la UCI durante uno de los períodos más exigentes de la medicina moderna. Esa experiencia agudizó sus instintos clínicos y reveló las limitaciones de la atención reactiva, impulsándolo hacia un enfoque preventivo e integrador. Se especializó en medicina regenerativa, ciencia de la longevidad y terapias estéticas, realizando formación avanzada en ozonoterapia, terapia intravenosa, protocolos de péptidos, HBOT, control de peso con GLP-1 y estética médica. En 2024, fundó RAVE: Regenerative Aesthetics & Vitality Experts, una clínica diseñada para fusionar el bienestar interno con la medicina estética.",
+        "Como Director Médico en OVI Wellness, el Dr. Craig aporta esa misma filosofía a nuestra comunidad clínica. Proporciona supervisión médica en todos los servicios clínicos (desde ozonoterapia y terapia de hidratación intravenosa hasta tratamientos con exosomas, protocolos de péptidos y estética regenerativa), asegurando que cada protocolo cumpla con los más altos estándares de atención basada en la evidencia y centrada en el paciente."
+      ],
+      "philosophy": "La verdadera transformación ocurre cuando se trata a la persona de manera integral: por dentro y por fuera. La auténtica curación combina una ciencia rigurosa basada en la evidencia con una profunda conexión humana y una atención preventiva personalizada.",
+      "associations": [
+        "Doctor en Medicina (M.D.) — Residencia en Medicina Interna, Denver, CO",
+        "Certificado por el Consejo — Medicina Interna (M.D.)",
+        "Maestría en Ciencias en Bioquímica"
+      ],
+      "expertise": [
+        "Liderazgo y Supervisión Médica",
+        "Medicina Regenerativa*",
+        "Ciencia de la Longevidad",
+        "Medicina Interna",
+        "Estética Médica",
+        "Ozonoterapia",
+        "Terapia Intravenosa (IV)",
+        "Terapia de Péptidos*",
+        "Control de Peso GLP-1",
+        "Oxigenoterapia Hiperbárica (HBOT)",
+        "Optimización Hormonal"
+      ],
+      "expertiseNote": "*Cuando sea clínicamente apropiado y conforme a las leyes y regulaciones aplicables.",
+      "image": "assets/images/photos/team/craig.jpg"
+    },
+    {
       "name": "Sean Worix, PA-C",
       "credentials": "PA-C",
       "role": "Asistente Médico",
@@ -26,6 +58,11 @@
         "En OVI Wellness, Sean está comprometido a brindar una atención personalizada y compasiva basada en la evidencia científica, la transparencia y las relaciones a largo plazo, empoderando a cada paciente para optimizar no solo cómo se siente hoy, sino cómo envejecerá durante las próximas décadas."
       ],
       "philosophy": "La verdadera optimización de la salud no se trata de perseguir valores de laboratorio, sino de restaurar la función, mejorar la calidad de vida y ayudar a los pacientes a rendir al máximo de su potencial mediante una medicina personalizada y basada en la evidencia.",
+      "associations": [
+        "Maestría en Ciencias en Estudios de Asistente Médico (MSPAS) — South University (Summa Cum Laude)",
+        "Licenciatura en Fisiología del Ejercicio — West Virginia University (Summa Cum Laude)",
+        "Comisión Nacional de Certificación de Asistentes Médicos (NCCPA)"
+      ],
       "expertise": [
         "Salud Masculina",
         "Terapia de Reemplazo de Testosterona (TRT)",

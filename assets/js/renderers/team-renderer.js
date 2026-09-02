@@ -112,7 +112,16 @@
                   <div class="col-md-7 border-start-md ps-md-4">
                     <div class="mb-4">
                       <h6 class="text-uppercase fw-bold text-muted mb-2" style="font-size:0.7rem;letter-spacing:1px;">${labels.professionalBio}</h6>
-                      <p class="text-muted lh-lg mb-0" style="font-size:0.95rem;">${member.bio}</p>
+                      ${
+                        Array.isArray(member.bioFull)
+                          ? member.bioFull
+                              .map(
+                                (p) =>
+                                  `<p class="text-muted lh-lg mb-3" style="font-size:0.95rem;">${p}</p>`,
+                              )
+                              .join("")
+                          : `<p class="text-muted lh-lg mb-0" style="font-size:0.95rem;">${member.bioFull || member.bio}</p>`
+                      }
                     </div>
                     ${
                       member.philosophy
