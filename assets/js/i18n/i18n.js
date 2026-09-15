@@ -270,7 +270,8 @@
           heroHeadline:          teamData.heroHeadline,
           heroHeadlineHighlight: teamData.heroHeadlineHighlight,
           heroSubheadline:       teamData.heroSubheadline,
-          ui:                    teamData.ui
+          ui:                    teamData.ui,
+          seo:                   teamData.seo
         };
       }
 

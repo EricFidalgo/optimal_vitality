@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Conozca a Nuestro Equipo Médico — OVI Wellness",
+  "pageTitle": "Conozca a Nuestro Equipo — OVI Wellness",
   "seo": {
-    "title": "Nuestro Equipo Médico — OVI Wellness",
-    "description": "Conozca a los expertos médicos detrás de su atención en OVI Wellness. Proveedores de atención médica con licencia y especialistas altamente acreditados."
+    "title": "Nuestro Equipo — OVI Wellness",
+    "description": "Conozca a los expertos médicos y al dedicado equipo detrás de su atención en OVI Wellness. Líderes en rendimiento humano y atención personalizada."
   },
-  "heroHeadline": "Conozca a Nuestros",
-  "heroHeadlineHighlight": "Expertos Médicos",
-  "heroSubheadline": "Un equipo dedicado de proveedores de atención médica con licencia comprometidos a proporcionar atención médica individualizada.",
+  "heroHeadline": "Conozca a Nuestro",
+  "heroHeadlineHighlight": "Equipo y Especialistas",
+  "heroSubheadline": "Un equipo dedicado de profesionales médicos y de atención comprometidos a optimizar su vitalidad y brindarle una experiencia excepcional.",
   "ui": {
     "viewProfile": "Ver Perfil Completo",
     "professionalAssociations": "Asociaciones Profesionales",
@@ -77,6 +77,71 @@
       ],
       "expertiseNote": "*Cuando sea clínicamente apropiado y conforme a las leyes y regulaciones aplicables.",
       "image": "assets/images/photos/team/worix.jpg"
+    },
+    {
+      "name": "Kaylyn Busciglio, MA",
+      "credentials": "MA",
+      "role": "Asistente Médica",
+      "bio": "Dedicada Asistente Médica que brinda apoyo clínico atento, evaluación de signos vitales y admisión diagnóstica en OVI Wellness.",
+      "bioFull": [
+        "Kaylyn Busciglio aporta un enfoque cálido, compasivo y detallista a la atención del paciente como Asistente Médica en OVI Wellness. Trabajando en estrecha colaboración con nuestro director médico y el equipo clínico, Kaylyn se dedica a crear un entorno reconfortante y cómodo donde los pacientes se sientan respaldados en cada etapa de su consulta.",
+        "Con formación práctica especializada en admisión de pacientes, evaluación de signos vitales y atención clínica, Kaylyn desempeña un papel fundamental asegurando que cada paciente esté preparado y monitorizado durante su visita.",
+        "Su trato cercano, precisión clínica y dedicación genuina al bienestar del paciente garantizan que cada persona que visita OVI Wellness reciba el más alto estándar de atención individualizada."
+      ],
+      "philosophy": "La atención compasiva es el corazón de la curación. Mi prioridad es asegurar que cada paciente se sienta cómodo, informado y verdaderamente cuidado durante cada tratamiento.",
+      "associations": [
+        "Asistente Médica (MA)",
+        "Atención Clínica y Admisión Diagnóstica"
+      ],
+      "expertise": [
+        "Atención Clínica del Paciente",
+        "Signos Vitales y Evaluación Diagnóstica"
+      ],
+      "image": "assets/images/photos/team/kaylyn.jpg"
+    },
+    {
+      "name": "Neha Parikh",
+      "role": "Gerente de Oficina",
+      "bio": "Dedicada Gerente de Oficina que supervisa las operaciones de la clínica, la coordinación de la atención y la programación de servicios en OVI Wellness, comprometida a garantizar que cada paciente reciba una atención atenta, fluida y personalizada.",
+      "bioFull": [
+        "Como Gerente de Oficina en OVI Wellness, Neha Parikh es la piedra angular de las operaciones diarias de nuestra clínica y de la experiencia del paciente. Con una genuina pasión por la hospitalidad, la excelencia organizativa y el servicio centrado en las personas, se asegura de que cada paciente se sienta bienvenido, respaldado y valorado desde el primer momento en que contacta con nuestra práctica.",
+        "Neha coordina la programación de citas, la logística de las visitas y la administración de la clínica con meticulosa atención al detalle. Trabajando en estrecha colaboración con el Dr. Craig y nuestros proveedores clínicos, une la excelencia médica con un servicio de conserjería personalizado, garantizando que su trayectoria hacia el bienestar sea cómoda y adaptada a sus necesidades.",
+        "Su dedicación a una comunicación excepcional y la calidez en el trato al paciente la convierten en una guía indispensable para pacientes nuevos y recurrentes mientras avanzan en sus protocolos personalizados."
+      ],
+      "philosophy": "La atención excepcional comienza antes de entrar a la sala de tratamiento. Mi objetivo es asegurar que cada paciente se sienta escuchado, valorado y completamente apoyado en cada paso de su camino hacia la vitalidad.",
+      "philosophyTitle": "Filosofía de Servicio",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Experiencia del Paciente y Hospitalidad",
+        "Operaciones Clínicas y Flujo de Trabajo",
+        "Coordinación de Atención Personalizada",
+        "Relaciones y Apoyo al Paciente",
+        "Logística y Programación de Citas",
+        "Soporte de Programas de Bienestar"
+      ],
+      "image": "assets/images/photos/team/neha.jpg"
+    },
+    {
+      "name": "Erica Valdes",
+      "role": "Marketing",
+      "bio": "Lidera el marketing, la estrategia de marca, la divulgación y la comunicación en OVI Wellness, conectando a las personas con la ciencia transformadora de la medicina de longevidad personalizada.",
+      "bioFull": [
+        "Erica Valdes lidera la estrategia de marketing y la comunicación de marca en OVI Wellness, conectando a personas que buscan optimizar su bienestar con nuestro equipo médico de primer nivel y sus terapias innovadoras.",
+        "Con amplia experiencia en narrativa de marca en el sector salud, crecimiento digital, educación al paciente y alianzas comunitarias, Erica diseña campañas auténticas que destacan la ciencia transformadora detrás de nuestros protocolos regenerativos. Su objetivo es hacer que los conceptos avanzados de optimización de la salud sean accesibles, claros e inspiradores.",
+        "Trabajando en estrecha colaboración con el liderazgo clínico y operativo, Erica asegura que la misión de OVI Wellness —brindar medicina de longevidad individualizada y guiada por médicos— inspire a pacientes en toda Florida y más allá."
+      ],
+      "philosophy": "Empoderar a las personas para que tomen el control de su salud comienza con la educación, la claridad y la confianza. Nuestra misión es compartir el potencial transformador del bienestar personalizado para que más personas vivan con vitalidad.",
+      "philosophyTitle": "Filosofía de Marca",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Estrategia y Crecimiento de Marca",
+        "Educación y Divulgación al Paciente",
+        "Marketing Digital y Medios",
+        "Alianzas Comunitarias",
+        "Comunicación en Salud",
+        "Experiencia del Paciente"
+      ],
+      "image": "assets/images/photos/team/erica.jpg"
     }
   ]
 }

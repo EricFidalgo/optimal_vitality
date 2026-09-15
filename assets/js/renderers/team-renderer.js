@@ -59,9 +59,14 @@
               .join("")
           : "";
 
+        const associationsHeading = member.associationsTitle || labels.professionalAssociations;
+        const philosophyHeading = member.philosophyTitle || labels.philosophyOfCare;
+        const expertiseHeading = member.expertiseTitle || labels.clinicalExpertise;
+        const gridColClass = teamData.length === 4 ? "col-xl-3 col-lg-6 col-md-6 mb-4" : "col-lg-4 col-md-6 mb-4";
+
         return `
         <!-- Provider Grid Card -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="${gridColClass}">
           <div class="card h-100 border-0 shadow-sm provider-card rounded-4 overflow-hidden bg-white d-flex flex-column">
             <div class="position-relative overflow-hidden">
               <img src="${member.image}" alt="${member.name}" class="pfp-1x1" onerror="this.src='assets/images/photos/team-group.jpg'">
@@ -101,7 +106,7 @@
                       modalAssociationsHtml
                         ? `
                       <div class="mt-4 pt-3 border-top text-start">
-                        <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size:0.75rem;letter-spacing:1px;">${labels.professionalAssociations}</h6>
+                        <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size:0.75rem;letter-spacing:1px;">${associationsHeading}</h6>
                         <ul class="list-unstyled mb-0">${modalAssociationsHtml}</ul>
                       </div>`
                         : ""
@@ -127,7 +132,7 @@
                       member.philosophy
                         ? `
                       <div class="mb-4 p-4 bg-light rounded-4" style="border-left:3px solid var(--primary-color) !important;">
-                        <h6 class="text-uppercase fw-bold text-primary mb-2" style="font-size:0.7rem;letter-spacing:1px;">${labels.philosophyOfCare}</h6>
+                        <h6 class="text-uppercase fw-bold text-primary mb-2" style="font-size:0.7rem;letter-spacing:1px;">${philosophyHeading}</h6>
                         <p class="fst-italic text-secondary mb-0" style="font-size:0.95rem;">"${member.philosophy}"</p>
                       </div>`
                         : ""
@@ -136,8 +141,9 @@
                       modalExpertiseHtml
                         ? `
                       <div class="mb-4">
-                        <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size:0.75rem;letter-spacing:1px;">${labels.clinicalExpertise}</h6>
+                        <h6 class="text-uppercase fw-bold text-dark mb-3" style="font-size:0.75rem;letter-spacing:1px;">${expertiseHeading}</h6>
                         <div class="d-flex flex-wrap">${modalExpertiseHtml}</div>
+                        ${member.expertiseNote ? `<div class="text-muted small mt-2 fst-italic" style="font-size:0.8rem;">${member.expertiseNote}</div>` : ""}
                       </div>`
                         : ""
                     }
