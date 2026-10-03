@@ -420,6 +420,26 @@ function initMain() {
                                 <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${resolveUrl(link.href)}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
                             </div>
                         `;
+
+                        // Add Hours block directly under FAQs in mobile menu
+                        if (link.href && link.href.includes('#faqs')) {
+                            const hoursTitle = isEs ? 'Horario de Atención' : 'Hours of Operation';
+                            const hoursDays = isEs ? 'Lunes – Jueves' : 'Monday – Thursday';
+                            const hoursClosed = isEs ? 'Viernes – Domingo: Cerrado' : 'Friday – Sunday: Closed';
+                            mainLinks += `
+                                <div class="mobile-menu-hours py-2 px-3 mx-auto my-3 rounded-3 text-center" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(230, 195, 129, 0.25); max-width: 290px;">
+                                    <div class="d-flex align-items-center justify-content-center gap-2 mb-1" style="color: var(--primary-color, #e6c381); font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 700;">
+                                        <i class="fas fa-clock"></i> <span>${hoursTitle}</span>
+                                    </div>
+                                    <div class="text-white fw-bold" style="font-size: 0.95rem; letter-spacing: 0.5px;">
+                                        ${hoursDays}: 9:00 AM – 7:00 PM
+                                    </div>
+                                    <div class="text-white-50 small mt-1" style="font-size: 0.8rem;">
+                                        ${hoursClosed}
+                                    </div>
+                                </div>
+                            `;
+                        }
                     }
                 });
 
@@ -454,7 +474,7 @@ function initMain() {
                 `;
 
                 mobileNav.innerHTML = `
-                    <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%;">
+                    <div class="mobile-nav-main w-100 d-flex flex-column flex-grow-1" style="transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); height: 100%; overflow-y: auto;">
                         <div class="p-0 m-0 w-100 mt-3">${mainLinks}</div>
                         <div class="mt-auto pb-4 pt-3 w-100">
                             <a href="#consultation" class="btn cta-btn w-100">${ctaText}</a>

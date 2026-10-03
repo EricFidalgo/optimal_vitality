@@ -74,6 +74,17 @@
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="/#treatments">Treatments</a></div>
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}team">Team</a></div>
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="/#faqs">FAQs</a></div>
+                                        <div class="mobile-menu-hours py-2 px-3 mx-auto my-3 rounded-3 text-center" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(230, 195, 129, 0.25); max-width: 290px;">
+                                            <div class="d-flex align-items-center justify-content-center gap-2 mb-1" style="color: var(--primary-color, #e6c381); font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 700;">
+                                                <i class="fas fa-clock"></i> <span>${window.OVI_I18N?.currentLang === "es" ? "Horario de Atención" : "Hours of Operation"}</span>
+                                            </div>
+                                            <div class="text-white fw-bold" style="font-size: 0.95rem; letter-spacing: 0.5px;">
+                                                ${window.OVI_I18N?.currentLang === "es" ? "Lunes – Jueves" : "Monday – Thursday"}: 9:00 AM – 7:00 PM
+                                            </div>
+                                            <div class="text-white-50 small mt-1" style="font-size: 0.8rem;">
+                                                ${window.OVI_I18N?.currentLang === "es" ? "Viernes – Domingo: Cerrado" : "Friday – Sunday: Closed"}
+                                            </div>
+                                        </div>
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog">The Science</a></div>
                                     </div>
                                     <div class="mt-auto pb-4 pt-3 w-100">
@@ -301,9 +312,9 @@
         areaServed: loc.areaServed,
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "08:00",
-          closes: "18:00",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          opens: "09:00",
+          closes: "19:00",
         },
         priceRange: "$$",
         medicalSpecialty: "Endocrinology",

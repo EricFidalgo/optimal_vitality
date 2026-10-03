@@ -27,11 +27,11 @@
     },
     "hours": [
       {
-        "days": "Mon - Fri",
-        "time": "9:00 AM - 5:00 PM"
+        "days": "Monday - Thursday",
+        "time": "9:00 AM - 7:00 PM"
       },
       {
-        "days": "Sat - Sun",
+        "days": "Friday - Sunday",
         "time": "Closed"
       }
     ]
