@@ -16,27 +16,6 @@
   },
   "team": [
     {
-      "name": "Virgil Valdes",
-      "role": "Fundador y Principal",
-      "bio": "Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas de atención médica y la gestión clínica para fortalecer a los profesionales médicos y elevar la atención al paciente.",
-      "bioFull": [
-        "Virgil Valdes es el Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas existentes de atención médica y los programas de bienestar.",
-        "Su trayectoria abarca operaciones de atención médica, gestión de consultorios y marketing, construyendo una estructura sólida alrededor de los médicos y clínicos con licencia para que puedan enfocarse plenamente en la atención al paciente. En OVI, supervisa los sistemas y las bases operativas diarias de la clínica."
-      ],
-      "philosophy": "Una buena atención médica depende de buenos sistemas. Mi labor siempre se ha centrado en fortalecer esos sistemas para que los profesionales médicos puedan ayudar a las personas a vivir vidas más saludables.",
-      "philosophyTitle": "Filosofía del Fundador",
-      "expertiseTitle": "Áreas de Enfoque",
-      "expertise": [
-        "Operaciones de Atención Médica",
-        "Gestión de Prácticas Clínicas",
-        "Marketing en Salud",
-        "Sistemas e Infraestructura",
-        "Desarrollo de Programas de Bienestar",
-        "Estrategia Operativa Clínica"
-      ],
-      "image": "assets/images/photos/team/virgil.jpg"
-    },
-    {
       "name": "Dr. Micah Craig, M.D.",
       "credentials": "M.D.",
       "role": "Director Médico",
@@ -163,6 +142,27 @@
         "Experiencia del Paciente"
       ],
       "image": "assets/images/photos/team/erica.jpg"
+    },
+    {
+      "name": "Virgil Valdes",
+      "role": "Fundador y Principal",
+      "bio": "Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas de atención médica y la gestión clínica para fortalecer a los profesionales médicos y elevar la atención al paciente.",
+      "bioFull": [
+        "Virgil Valdes es el Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas existentes de atención médica y los programas de bienestar.",
+        "Su trayectoria abarca operaciones de atención médica, gestión de consultorios y marketing, construyendo una estructura sólida alrededor de los médicos y clínicos con licencia para que puedan enfocarse plenamente en la atención al paciente. En OVI, supervisa los sistemas y las bases operativas diarias de la clínica."
+      ],
+      "philosophy": "Una buena atención médica depende de buenos sistemas. Mi labor siempre se ha centrado en fortalecer esos sistemas para que los profesionales médicos puedan ayudar a las personas a vivir vidas más saludables.",
+      "philosophyTitle": "Filosofía del Fundador",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Operaciones de Atención Médica",
+        "Gestión de Prácticas Clínicas",
+        "Marketing en Salud",
+        "Sistemas e Infraestructura",
+        "Desarrollo de Programas de Bienestar",
+        "Estrategia Operativa Clínica"
+      ],
+      "image": "assets/images/photos/team/virgil.jpg"
     }
   ]
 }
