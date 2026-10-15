@@ -376,7 +376,9 @@ function initMain() {
                             </li>
                         `;
                     }
-                    return `<li class="nav-item"><a class="nav-link" href="${resolveUrl(link.href)}">${link.label}</a></li>`;
+                    const isExternal = link.href && (link.href.startsWith('http://') || link.href.startsWith('https://'));
+                    const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
+                    return `<li class="nav-item"><a class="nav-link" href="${resolveUrl(link.href)}" ${targetAttr}>${link.label}</a></li>`;
                 }).join('');
 
             }
@@ -415,9 +417,11 @@ function initMain() {
                             </div>
                         `;
                     } else {
+                        const isExternal = link.href && (link.href.startsWith('http://') || link.href.startsWith('https://'));
+                        const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
                         mainLinks += `
                             <div class="w-100 mb-3">
-                                <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${resolveUrl(link.href)}" style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
+                                <a class="d-block p-2 text-decoration-none text-white fw-bold text-center" href="${resolveUrl(link.href)}" ${targetAttr} style="font-size: 1.3rem; letter-spacing: 1px;">${link.label}</a>
                             </div>
                         `;
 

@@ -86,6 +86,7 @@
                                             </div>
                                         </div>
                                         <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="${prefix}blog">The Science</a></div>
+                                        <div class="w-100 mb-3"><a class="d-block p-2 text-decoration-none text-white fw-bold text-center" style="font-size: 1.3rem; letter-spacing: 1px;" href="https://go.carecredit.com/consumer/home?sitecode=h2mdo9bg10" target="_blank" rel="noopener noreferrer">Care Credit</a></div>
                                     </div>
                                     <div class="mt-auto pb-4 pt-3 w-100">
                                         <a href="#consultation" class="btn cta-btn w-100">${window.OVI_I18N?.currentLang === "es" ? "Reservar Consulta" : "Book Your Consultation"}</a>
