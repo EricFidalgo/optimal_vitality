@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Conozca a Nuestro Equipo Médico — OVI Wellness",
+  "pageTitle": "Conozca a Nuestro Equipo — OVI Wellness",
   "seo": {
-    "title": "Nuestro Equipo Médico — OVI Wellness",
-    "description": "Conozca a los expertos médicos detrás de su atención en OVI Wellness. Proveedores de atención médica con licencia y especialistas altamente acreditados."
+    "title": "Nuestro Equipo — OVI Wellness",
+    "description": "Conozca a los expertos médicos y al dedicado equipo detrás de su atención en OVI Wellness. Líderes en rendimiento humano y atención personalizada."
   },
-  "heroHeadline": "Conozca a Nuestros",
-  "heroHeadlineHighlight": "Expertos Médicos",
-  "heroSubheadline": "Un equipo dedicado de proveedores de atención médica con licencia comprometidos a proporcionar atención médica individualizada.",
+  "heroHeadline": "Conozca a Nuestro",
+  "heroHeadlineHighlight": "Equipo y Especialistas",
+  "heroSubheadline": "Un equipo dedicado de profesionales médicos y de atención comprometidos a optimizar su vitalidad y brindarle una experiencia excepcional.",
   "ui": {
     "viewProfile": "Ver Perfil Completo",
     "professionalAssociations": "Asociaciones Profesionales",
@@ -15,6 +15,38 @@
     "clinicalExpertise": "Experiencia Clínica"
   },
   "team": [
+    {
+      "name": "Dr. Micah Craig, M.D.",
+      "credentials": "M.D.",
+      "role": "Director Médico",
+      "bio": "Médico especialista en Medicina Interna y Director Médico especializado en medicina regenerativa, ciencia de la longevidad y estética médica, dedicado a una atención integral basada en la evidencia.",
+      "bioFull": [
+        "El camino del Dr. Micah Craig en la medicina comenzó a los cinco años, caminando por los pasillos del hospital junto a su padre, un dedicado médico. Esos primeros momentos encendieron una vocación de por vida basada en la curación y la conexión humana. Durante sus años universitarios, pasó los veranos en misiones médicas por África y Centroamérica, experiencias que cimentaron su compromiso con una atención compasiva y orientada al servicio. Tras obtener su título, profundizó su formación científica con una Maestría en Bioquímica antes de ingresar a la escuela de medicina con una visión clara: ejercer una medicina basada en la evidencia y profundamente personalizada.",
+        "Durante su residencia en Medicina Interna en Denver, el Dr. Craig estuvo en la primera línea de la pandemia de COVID-19 en la UCI durante uno de los períodos más exigentes de la medicina moderna. Esa experiencia agudizó sus instintos clínicos y reveló las limitaciones de la atención reactiva, impulsándolo hacia un enfoque preventivo e integrador. Se especializó en medicina regenerativa, ciencia de la longevidad y terapias estéticas, realizando formación avanzada en ozonoterapia, terapia intravenosa, protocolos de péptidos, HBOT, control de peso con GLP-1 y estética médica. En 2024, fundó RAVE: Regenerative Aesthetics & Vitality Experts, una clínica diseñada para fusionar el bienestar interno con la medicina estética.",
+        "Como Director Médico en OVI Wellness, el Dr. Craig aporta esa misma filosofía a nuestra comunidad clínica. Proporciona supervisión médica en todos los servicios clínicos (desde ozonoterapia y terapia de hidratación intravenosa hasta tratamientos con exosomas, protocolos de péptidos y estética regenerativa), asegurando que cada protocolo cumpla con los más altos estándares de atención basada en la evidencia y centrada en el paciente."
+      ],
+      "philosophy": "La verdadera transformación ocurre cuando se trata a la persona de manera integral: por dentro y por fuera. La auténtica curación combina una ciencia rigurosa basada en la evidencia con una profunda conexión humana y una atención preventiva personalizada.",
+      "associations": [
+        "Doctor en Medicina (M.D.) — Residencia en Medicina Interna, Denver, CO",
+        "Certificado por el Consejo — Medicina Interna (M.D.)",
+        "Maestría en Ciencias en Bioquímica"
+      ],
+      "expertise": [
+        "Liderazgo y Supervisión Médica",
+        "Medicina Regenerativa*",
+        "Ciencia de la Longevidad",
+        "Medicina Interna",
+        "Estética Médica",
+        "Ozonoterapia",
+        "Terapia Intravenosa (IV)",
+        "Terapia de Péptidos*",
+        "Control de Peso GLP-1",
+        "Oxigenoterapia Hiperbárica (HBOT)",
+        "Optimización Hormonal"
+      ],
+      "expertiseNote": "*Cuando sea clínicamente apropiado y conforme a las leyes y regulaciones aplicables.",
+      "image": "assets/images/photos/team/craig.jpg"
+    },
     {
       "name": "Sean Worix, PA-C",
       "credentials": "PA-C",
@@ -26,6 +58,11 @@
         "En OVI Wellness, Sean está comprometido a brindar una atención personalizada y compasiva basada en la evidencia científica, la transparencia y las relaciones a largo plazo, empoderando a cada paciente para optimizar no solo cómo se siente hoy, sino cómo envejecerá durante las próximas décadas."
       ],
       "philosophy": "La verdadera optimización de la salud no se trata de perseguir valores de laboratorio, sino de restaurar la función, mejorar la calidad de vida y ayudar a los pacientes a rendir al máximo de su potencial mediante una medicina personalizada y basada en la evidencia.",
+      "associations": [
+        "Maestría en Ciencias en Estudios de Asistente Médico (MSPAS) — South University (Summa Cum Laude)",
+        "Licenciatura en Fisiología del Ejercicio — West Virginia University (Summa Cum Laude)",
+        "Comisión Nacional de Certificación de Asistentes Médicos (NCCPA)"
+      ],
       "expertise": [
         "Salud Masculina",
         "Terapia de Reemplazo de Testosterona (TRT)",
@@ -40,6 +77,92 @@
       ],
       "expertiseNote": "*Cuando sea clínicamente apropiado y conforme a las leyes y regulaciones aplicables.",
       "image": "assets/images/photos/team/worix.jpg"
+    },
+    {
+      "name": "Kaylyn Busciglio, MA",
+      "credentials": "MA",
+      "role": "Asistente Médica",
+      "bio": "Dedicada Asistente Médica que brinda apoyo clínico atento, evaluación de signos vitales y admisión diagnóstica en OVI Wellness.",
+      "bioFull": [
+        "Kaylyn Busciglio aporta un enfoque cálido, compasivo y detallista a la atención del paciente como Asistente Médica en OVI Wellness. Trabajando en estrecha colaboración con nuestro director médico y el equipo clínico, Kaylyn se dedica a crear un entorno reconfortante y cómodo donde los pacientes se sientan respaldados en cada etapa de su consulta.",
+        "Con formación práctica especializada en admisión de pacientes, evaluación de signos vitales y atención clínica, Kaylyn desempeña un papel fundamental asegurando que cada paciente esté preparado y monitorizado durante su visita.",
+        "Su trato cercano, precisión clínica y dedicación genuina al bienestar del paciente garantizan que cada persona que visita OVI Wellness reciba el más alto estándar de atención individualizada."
+      ],
+      "philosophy": "La atención compasiva es el corazón de la curación. Mi prioridad es asegurar que cada paciente se sienta cómodo, informado y verdaderamente cuidado durante cada tratamiento.",
+      "associations": [
+        "Asistente Médica (MA)",
+        "Atención Clínica y Admisión Diagnóstica"
+      ],
+      "expertise": [
+        "Atención Clínica del Paciente",
+        "Signos Vitales y Evaluación Diagnóstica"
+      ],
+      "image": "assets/images/photos/team/kaylyn.jpg"
+    },
+    {
+      "name": "Neha Parikh",
+      "role": "Gerente de Oficina",
+      "bio": "Dedicada Gerente de Oficina que supervisa las operaciones de la clínica, la coordinación de la atención y la programación de servicios en OVI Wellness, comprometida a garantizar que cada paciente reciba una atención atenta, fluida y personalizada.",
+      "bioFull": [
+        "Como Gerente de Oficina en OVI Wellness, Neha Parikh es la piedra angular de las operaciones diarias de nuestra clínica y de la experiencia del paciente. Con una genuina pasión por la hospitalidad, la excelencia organizativa y el servicio centrado en las personas, se asegura de que cada paciente se sienta bienvenido, respaldado y valorado desde el primer momento en que contacta con nuestra práctica.",
+        "Neha coordina la programación de citas, la logística de las visitas y la administración de la clínica con meticulosa atención al detalle. Trabajando en estrecha colaboración con el Dr. Craig y nuestros proveedores clínicos, une la excelencia médica con un servicio de conserjería personalizado, garantizando que su trayectoria hacia el bienestar sea cómoda y adaptada a sus necesidades.",
+        "Su dedicación a una comunicación excepcional y la calidez en el trato al paciente la convierten en una guía indispensable para pacientes nuevos y recurrentes mientras avanzan en sus protocolos personalizados."
+      ],
+      "philosophy": "La atención excepcional comienza antes de entrar a la sala de tratamiento. Mi objetivo es asegurar que cada paciente se sienta escuchado, valorado y completamente apoyado en cada paso de su camino hacia la vitalidad.",
+      "philosophyTitle": "Filosofía de Servicio",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Experiencia del Paciente y Hospitalidad",
+        "Operaciones Clínicas y Flujo de Trabajo",
+        "Coordinación de Atención Personalizada",
+        "Relaciones y Apoyo al Paciente",
+        "Logística y Programación de Citas",
+        "Soporte de Programas de Bienestar"
+      ],
+      "image": "assets/images/photos/team/neha.jpg"
+    },
+    {
+      "name": "Erica Valdes",
+      "role": "Marketing",
+      "bio": "Lidera el marketing, la estrategia de marca, la divulgación y la comunicación en OVI Wellness, conectando a las personas con la ciencia transformadora de la medicina de longevidad personalizada.",
+      "bioFull": [
+        "Erica Valdes lidera la estrategia de marketing y la comunicación de marca en OVI Wellness, conectando a personas que buscan optimizar su bienestar con nuestro equipo médico de primer nivel y sus terapias innovadoras.",
+        "Con amplia experiencia en narrativa de marca en el sector salud, crecimiento digital, educación al paciente y alianzas comunitarias, Erica diseña campañas auténticas que destacan la ciencia transformadora detrás de nuestros protocolos regenerativos. Su objetivo es hacer que los conceptos avanzados de optimización de la salud sean accesibles, claros e inspiradores.",
+        "Trabajando en estrecha colaboración con el liderazgo clínico y operativo, Erica asegura que la misión de OVI Wellness —brindar medicina de longevidad individualizada y guiada por médicos— inspire a pacientes en toda Florida y más allá."
+      ],
+      "philosophy": "Empoderar a las personas para que tomen el control de su salud comienza con la educación, la claridad y la confianza. Nuestra misión es compartir el potencial transformador del bienestar personalizado para que más personas vivan con vitalidad.",
+      "philosophyTitle": "Filosofía de Marca",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Estrategia y Crecimiento de Marca",
+        "Educación y Divulgación al Paciente",
+        "Marketing Digital y Medios",
+        "Alianzas Comunitarias",
+        "Comunicación en Salud",
+        "Experiencia del Paciente"
+      ],
+      "image": "assets/images/photos/team/erica.jpg"
+    },
+    {
+      "name": "Virgil Valdes",
+      "role": "Fundador y Principal",
+      "bio": "Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas de atención médica y la gestión clínica para fortalecer a los profesionales médicos y elevar la atención al paciente.",
+      "bioFull": [
+        "Virgil Valdes es el Fundador y Director Principal de Optimal Vitality Institute, LLC, enfocado en mejorar los sistemas existentes de atención médica y los programas de bienestar.",
+        "Su trayectoria abarca operaciones de atención médica, gestión de consultorios y marketing, construyendo una estructura sólida alrededor de los médicos y clínicos con licencia para que puedan enfocarse plenamente en la atención al paciente. En OVI, supervisa los sistemas y las bases operativas diarias de la clínica."
+      ],
+      "philosophy": "Una buena atención médica depende de buenos sistemas. Mi labor siempre se ha centrado en fortalecer esos sistemas para que los profesionales médicos puedan ayudar a las personas a vivir vidas más saludables.",
+      "philosophyTitle": "Filosofía del Fundador",
+      "expertiseTitle": "Áreas de Enfoque",
+      "expertise": [
+        "Operaciones de Atención Médica",
+        "Gestión de Prácticas Clínicas",
+        "Marketing en Salud",
+        "Sistemas e Infraestructura",
+        "Desarrollo de Programas de Bienestar",
+        "Estrategia Operativa Clínica"
+      ],
+      "image": "assets/images/photos/team/virgil.jpg"
     }
   ]
 }

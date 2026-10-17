@@ -270,8 +270,60 @@
     const desktop = document.getElementById("protocols-desktop");
     const mobileTrack = document.getElementById("protocols-mobile-track");
     const mobileIndicators = document.getElementById("protocols-mobile-indicators");
+    const isEs = (window.OVI_I18N?.currentLang === 'es');
+    const hasSpecialty = items.some((item) => item.price && item.biomarkers);
 
-    const cardInner = (item) => {
+    const cardInner = (item, index) => {
+      if (item.price && item.biomarkers) {
+        const highlightsHtml = item.highlights
+          ? `<div class="biomarker-chip-preview mb-3">
+              ${item.highlights.map(h => `<span class="biomarker-chip highlight"><i class="fas fa-check text-primary me-1" style="font-size:0.65rem;"></i>${h}</span>`).join('')}
+            </div>`
+          : '';
+
+        const methodBadge = item.method
+          ? `<span class="badge bg-light text-muted border px-2 py-1 small mb-2"><i class="fas fa-microscope text-primary me-1"></i>${item.method}</span>`
+          : '';
+
+        const viewBioLabel = isEs ? `Ver los ${item.biomarkers.length} biomarcadores` : `View All Biomarkers (${item.biomarkers.length})`;
+        const bookLabel = isEs ? 'Consultar con el Médico' : 'Request This Panel';
+
+        return `
+        <div class="specialty-lab-card h-100 d-flex flex-column">
+          <div class="specialty-card-header">
+            <div>
+              <div class="text-primary fw-bold text-uppercase small mb-1" style="letter-spacing: 1.5px; font-size: 0.75rem;">${item.tag || 'Diagnostic Panel'}</div>
+              <h3 class="specialty-card-title mb-1">${item.name}</h3>
+              ${methodBadge}
+            </div>
+            <div class="specialty-price-box">
+              <span class="specialty-price-amount">${item.price}</span>
+              <span class="specialty-price-label">${isEs ? 'Precio Paciente' : 'Patient Price'}</span>
+            </div>
+          </div>
+          <p class="specialty-card-desc flex-grow-1">${item.description}</p>
+          <div class="mt-auto">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="biomarker-count-pill"><i class="fas fa-dna"></i> ${item.biomarkers.length} ${isEs ? 'Biomarcadores Evaluados' : 'Biomarkers Tested'}</span>
+              <span class="small text-muted">${isEs ? 'Revisión Médica Incluida' : 'Doctor-Reviewed'}</span>
+            </div>
+            ${highlightsHtml}
+            <div class="row g-2 mt-2">
+              <div class="col-sm-7">
+                <button type="button" class="btn btn-outline-dark btn-sm rounded-pill w-100 fw-semibold py-2" data-bs-toggle="modal" data-bs-target="#biomarkersModal-${index}">
+                  <i class="fas fa-list-check text-primary me-1"></i> ${viewBioLabel}
+                </button>
+              </div>
+              <div class="col-sm-5">
+                <a href="#consultation" class="btn btn-primary cta-btn btn-sm rounded-pill w-100 fw-semibold py-2 d-flex align-items-center justify-content-center">
+                  ${bookLabel}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }
+
       const badge = item.tag
         ? `<h6 class="text-primary fw-bold text-uppercase mb-3" style="font-size: 0.75rem; letter-spacing: 2px;">${item.tag}</h6>`
         : "";
@@ -284,16 +336,104 @@
         </div>`;
     };
 
+    const colClass = hasSpecialty ? "col-lg-6 mb-4" : "col-md-6 col-lg-4";
+
     if (desktop) {
       desktop.innerHTML = items
-        .map((item) => `<div class="col-md-6 col-lg-4">${cardInner(item)}</div>`)
+        .map((item, index) => `<div class="${colClass}">${cardInner(item, index)}</div>`)
+        .join("");
+    }
+
+    if (hasSpecialty) {
+      let modalsContainer = document.getElementById("protocols-modals");
+      if (!modalsContainer) {
+        modalsContainer = document.createElement("div");
+        modalsContainer.id = "protocols-modals";
+        document.body.appendChild(modalsContainer);
+      }
+
+      modalsContainer.innerHTML = items
+        .filter((item) => item.biomarkers && item.biomarkers.length > 0)
+        .map((item) => {
+          const originalIndex = items.indexOf(item);
+          const searchPlaceholder = isEs ? "Filtrar biomarcadores..." : "Search biomarkers (e.g., Candida, Zonulin, ApoB)...";
+          const modalPills = item.biomarkers
+            .map((b) => `<span class="biomarker-modal-pill" data-name="${b.toLowerCase()}"><i class="fas fa-check-circle"></i>${b}</span>`)
+            .join("");
+
+          return `
+          <div class="modal fade" id="biomarkersModal-${originalIndex}" tabindex="-1" aria-labelledby="bioLabel-${originalIndex}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+              <div class="modal-content biomarker-modal-content">
+                <div class="modal-header biomarker-modal-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="text-warning small text-uppercase fw-bold letter-spacing-1">${item.tag || "Specialty Diagnostic"}</div>
+                    <h4 class="modal-title h5 fw-bold text-white mb-0" id="bioLabel-${originalIndex}">${item.name}</h4>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-warning text-dark fs-6 px-3 py-2 rounded-pill fw-bold">${item.price}</span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="modal-body biomarker-modal-body">
+                  <div class="p-3 rounded-4 mb-3" style="background: rgba(230, 195, 129, 0.08); border: 1px solid rgba(230, 195, 129, 0.25);">
+                    <div class="small text-muted mb-1 fw-bold text-uppercase" style="letter-spacing: 0.5px;"><i class="fas fa-microscope text-primary me-1"></i> ${isEs ? "Metodología Clínica" : "Testing Methodology"}</div>
+                    <p class="small text-dark mb-0">${item.description}</p>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center mb-2 px-1">
+                    <span class="fw-bold text-dark small"><i class="fas fa-dna text-primary me-1"></i> ${isEs ? "Directorio Completo de Biomarcadores" : "Full Biomarker Directory"} (<span id="bio-count-${originalIndex}">${item.biomarkers.length}</span>)</span>
+                    <span class="badge bg-light text-muted border">${item.method || "Clinical Lab"}</span>
+                  </div>
+
+                  <div class="input-group mb-3 shadow-xs">
+                    <span class="input-group-text bg-white border-end-0 rounded-start-pill"><i class="fas fa-search text-muted"></i></span>
+                    <input type="text" class="form-control border-start-0 rounded-end-pill py-2 biomarker-search-input" placeholder="${searchPlaceholder}" oninput="window.filterBiomarkers(${originalIndex}, this.value)">
+                  </div>
+
+                  <div class="biomarker-modal-list" id="bio-list-${originalIndex}">
+                    ${modalPills}
+                  </div>
+                </div>
+                <div class="modal-footer bg-light d-flex justify-content-between align-items-center py-3 px-4">
+                  <div class="small text-muted">
+                    <i class="fas fa-user-md text-primary me-1"></i> ${isEs ? "Todos los paneles incluyen revisión con un médico con licencia." : "All panels include 1-on-1 review with a licensed clinician."}
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3" data-bs-dismiss="modal">${isEs ? "Cerrar" : "Close"}</button>
+                    <a href="#consultation" class="btn btn-primary cta-btn btn-sm rounded-pill px-4" data-bs-dismiss="modal">${isEs ? "Reservar Consulta" : "Book Consultation"}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`;
+        })
         .join("");
     }
 
     if (typeof window.initMobileTrack === "function") {
-      window.initMobileTrack("protocols-desktop", "protocols-mobile-track", "protocols-mobile-indicators", true);
+      window.initMobileTrack("protocols-desktop", "protocols-mobile-track", "protocols-mobile-indicators", hasSpecialty ? false : true);
     }
   }
+
+  window.filterBiomarkers = function (index, query) {
+    const list = document.getElementById("bio-list-" + index);
+    const countEl = document.getElementById("bio-count-" + index);
+    if (!list) return;
+    const q = (query || "").toLowerCase().trim();
+    const pills = list.querySelectorAll(".biomarker-modal-pill");
+    let visible = 0;
+    pills.forEach((p) => {
+      const name = p.getAttribute("data-name") || "";
+      if (!q || name.includes(q)) {
+        p.style.display = "";
+        visible++;
+      } else {
+        p.style.display = "none";
+      }
+    });
+    if (countEl) countEl.textContent = visible;
+  };
 
   // ─── 11. Build science section ────────────────────────────────────────────
   function buildScienceBullets(bullets) {

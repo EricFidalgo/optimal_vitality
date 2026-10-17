@@ -1,353 +1,951 @@
-{
-  "id": "advanced-labs",
-  "type": "additional",
-  "tabLabel": "Advanced Labs",
-  "href": "advanced-labs",
-  "title": "Expanded Laboratory Testing Based on Clinical Need",
-  "lead": "Stop guessing why you feel tired, bloated, or worn out with simple, complete doctor lab panels.",
-  "description": "Standard doctor blood tests only check basic numbers. Our advanced lab tests look deep into your hormones, vitamins, gene markers (MTHFR), and heavy metals so our doctors can give you exact answers.",
-  "icon": "fa-flask",
-  "delay": "-3s",
-  "features": [
-    "Complete hormone & energy blood panels",
-    "Vitamin & micronutrient levels checked",
-    "MTHFR gene & heavy metal screening",
-    "100% doctor-reviewed with custom plan"
-  ],
-  "image": "assets/images/photos/team-group.jpg",
-  "ctaText": "Book Your Doctor Consultation",
-  "pageTitle": "Doctor-Guided Advanced Diagnostic Labs — OVI Wellness",
-  "pageDescription": "Doctor-guided advanced diagnostic lab testing in St. Petersburg, FL. Hormone panels, MTHFR testing, micronutrients, and heavy metal screening.",
-  "heroHeadline": "Uncover Your Real<br><span class=\"text-primary\">Health Numbers</span>",
-  "heroSubheadline": "Advanced Doctor Lab Panels medically reviewed by Board-Certified Doctors in St. Petersburg, FL.",
-  "heroCTA": "Book Your Doctor Call Today",
-  "quiz": {
-    "badge": "Quick 1-Minute Assessment",
-    "headline": "Find Your Best Lab Panel",
-    "subheadline": "Answer 3 quick questions so our doctors can recommend the right blood test for you.",
-    "step1": {
-      "question": "What is your main reason for getting bloodwork?",
-      "sub": "Pick what you want to check first.",
-      "options": [
-        {
-          "value": "hormone",
-          "icon": "fa-syringe",
-          "title": "Hormones & Energy",
-          "desc": "Want to check testosterone, thyroid, and daily stamina."
-        },
-        {
-          "value": "vitamins",
-          "icon": "fa-apple-alt",
-          "title": "Vitamin & Nutrient Deficiencies",
-          "desc": "Feeling tired, weak immunity, or hair thinning."
-        },
-        {
-          "value": "genetics",
-          "icon": "fa-dna",
-          "title": "MTHFR & Heavy Metals",
-          "desc": "Want to check gene markers, mold, or heavy metal toxicity."
-        }
-      ]
-    },
-    "step2": {
-      "question": "When was your last comprehensive blood test?",
-      "sub": "Helps our doctor choose your panel depth.",
-      "options": [
-        {
-          "value": "recent",
-          "icon": "fa-calendar",
-          "title": "In the last 6 months",
-          "desc": "I have basic recent lab results."
-        },
-        {
-          "value": "old",
-          "icon": "fa-calendar-alt",
-          "title": "Over a year ago / Never",
-          "desc": "I need a complete baseline lab test."
-        }
-      ]
-    },
-    "step3": {
-      "question": "Do you have unexplained symptoms like fatigue or brain fog?",
-      "sub": "Helps our doctor target hidden root causes.",
-      "options": [
-        {
-          "value": "yes",
-          "icon": "fa-triangle-exclamation",
-          "title": "Yes, I Do",
-          "desc": "Normal doctor tests came back 'fine' but I still feel bad."
-        },
-        {
-          "value": "no",
-          "icon": "fa-circle-check",
-          "title": "No, Just Preventative",
-          "desc": "I feel okay but want peak longevity and health data."
-        }
-      ]
-    },
-    "protocols": {
-      "hormone": {
-        "tag": "Recommended Energy Panel",
-        "name": "Total Hormone & Vitality Panel",
-        "peptides": "Full Testosterone + Thyroid + Cortisol Analysis",
-        "icon": "fa-syringe",
-        "desc": "Measures total and free testosterone, thyroid function, cortisol, and energy markers to pinpoint why you feel tired.",
-        "goalModifiers": {
-          "yes": "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
-          "no": "Great baseline check to keep your hormones balanced as you age."
-        },
-        "social": "Over 120 local patients unlocked high energy with this doctor lab panel."
-      },
-      "vitamins": {
-        "tag": "Nutrient & Immunity Panel",
-        "name": "Complete Micronutrient & Antioxidant Audit",
-        "peptides": "Intracellular Vitamin & Mineral Testing",
-        "icon": "fa-apple-alt",
-        "desc": "Checks exact vitamin B12, D3, magnesium, and antioxidant levels inside your cells so you take only what you need.",
-        "goalModifiers": {
-          "yes": "Finds cellular vitamin gaps that cause brain fog, sluggishness, and slow recovery.",
-          "no": "Helps build a clean, custom daily vitamin plan tailored strictly to your body."
-        },
-        "social": "89 patients optimized their health with this intracellular audit."
-      },
-      "genetics": {
-        "tag": "Deep Health & Detox Panel",
-        "name": "MTHFR Gene & Toxic Metal Panel",
-        "peptides": "DNA Methylation + Lead/Mercury/Arsenic Screen",
-        "icon": "fa-dna",
-        "desc": "Scans your MTHFR gene variants and tests for toxic heavy metals that disrupt your brain, mood, and heart health.",
-        "goalModifiers": {
-          "yes": "Uncovers hidden genetic or toxic obstacles that prevent traditional treatments from working.",
-          "no": "Advanced longevity test to ensure long-term brain, heart, and liver protection."
-        },
-        "social": "73 patients discovered hidden genetic insights with this panel."
-      }
-    },
-    "timelineMap": {
-      "recent": "3–5 days (Fast Results Review)",
-      "old": "5–7 days (Full Baseline Audit)"
-    }
-  },
-  "eligibility": {
-    "badge": "Who Is This For?",
-    "headline": "Are You a Candidate for Advanced Labs?",
-    "intro": "Our diagnostic panels go far beyond standard annual bloodwork. Supervised by licensed medical doctors, we uncover hidden root causes so you get clear, actionable answers.",
-    "note": "Questions about lab testing? Our medical team will guide you during your consultation.",
-    "ctaText": "Call Us Now to Check Candidacy",
-    "items": [
-      {
-        "label": "Told Your Labs Are 'Normal'",
-        "detail": "Adults who feel exhausted or bloated despite primary care doctors saying labs are fine."
-      },
-      {
-        "label": "Tired All Day",
-        "detail": "Anyone struggling with brain fog, midday crashes, low drive, or poor sleep."
-      },
-      {
-        "label": "Family Heart & Gene Risk",
-        "detail": "People wanting MTHFR gene testing, ApoB, or advanced cardiac risk checks."
-      },
-      {
-        "label": "Want Data-Driven Care",
-        "detail": "Anyone starting TRT, weight loss, or peptides who needs accurate starting numbers."
-      },
-      {
-        "label": "Ready for Doctor Review",
-        "detail": "Looking for a 1-on-1 doctor review of every marker with a personalized plan."
-      }
-    ]
-  },
-  "protocols": {
-    "badge": "Prescription Options",
-    "sectionHeadline": "Simple Doctor-Guided Treatments",
-    "sectionSubheadline": "Comprehensive doctor-ordered lab panels drawn conveniently in our clinic or local lab.",
-    "items": [
-      {
-        "icon": "fa-syringe",
-        "name": "Complete Hormone Panel",
-        "tag": "Hormone Core",
-        "description": "Tests total & free testosterone, estrogen, thyroid (T3/T4), cortisol, and DHEA to restore peak energy."
-      },
-      {
-        "icon": "fa-dna",
-        "name": "MTHFR Gene Variant Test",
-        "tag": "Genetics",
-        "description": "MTHFR testing may be considered in specific clinical contexts following evaluation."
-      },
-      {
-        "icon": "fa-apple-alt",
-        "name": "Micronutrient Intracellular Test",
-        "tag": "Vitamins",
-        "description": "Measures vitamins, minerals, and antioxidants directly inside your blood cells for true accuracy."
-      },
-      {
-        "icon": "fa-industry",
-        "name": "Toxic Heavy Metal Screen",
-        "tag": "Detox Check",
-        "description": "Screens for mercury, lead, and arsenic that accumulate over time and trigger fatigue and brain fog."
-      },
-      {
-        "icon": "fa-heartbeat",
-        "name": "Advanced Heart & Lipid Panel",
-        "tag": "Cardiovascular",
-        "description": "Goes beyond basic cholesterol to analyze ApoB, Lp(a), and hs-CRP for real heart safety."
-      },
-      {
-        "icon": "fa-user-md",
-        "name": "1-on-1 Doctor Review",
-        "tag": "Doctor Consult",
-        "description": "Every lab draw includes a detailed 1-on-1 consultation with our doctor to explain your numbers."
-      }
-    ]
-  },
-  "science": {
-    "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
-    "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
-    "bullets": [
-      "Ordered & reviewed by licensed medical doctors",
-      "Tests optimal vitality ranges—not just 'disease normal'",
-      "Includes clear 1-on-1 doctor consultation & action plan"
-    ],
-    "stats": [
-      {
-        "value": "Deep",
-        "label": "Tests optimal ranges, not basic averages"
-      },
-      {
-        "value": "Safe",
-        "label": "Doctor reviewed & lab verified"
-      },
-      {
-        "value": "1-on-1",
-        "label": "Personalized MD consultation"
-      },
-      {
-        "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
-      }
-    ],
-    "cards": [
-      {
-        "icon": "fa-microscope",
-        "title": "Intracellular Precision",
-        "detail": "We measure nutrient levels inside your cells where they actually work, rather than just floating in serum."
-      },
-      {
-        "icon": "fa-bullseye",
-        "title": "Actionable Doctor Plan",
-        "detail": "You don't just get a stack of confusing numbers—our doctor gives you a simple, step-by-step treatment plan."
-      }
-    ]
-  },
-  "myths": [
-    {
-      "myth": "My doctor said my bloodwork is normal, so why do I feel bad?",
-      "reality": "Standard labs use wide population averages to spot disease. You can be in the 'normal' range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
-    },
-    {
-      "myth": "Do I need to fast before getting my blood drawn?",
-      "reality": "For most comprehensive hormone and lipid panels, yes—a simple 8 to 12 hour overnight fast (water is okay) gives our doctor the cleanest, most accurate health reading."
-    },
-    {
-      "myth": "Is doctor-guided lab testing covered or simple?",
-      "reality": "Yes! We make lab testing easy and seamless. You can get drawn right at our St. Petersburg clinic or at a local lab, followed by a full doctor consult."
-    }
-  ],
-  "comparison": {
-    "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
-    "ctaText": "Call Our Clinic Today",
-    "mobileStats": [
-      {
-        "icon": "fa-flask",
-        "label": "Deep Labs"
-      },
-      {
-        "icon": "fa-user-md",
-        "label": "Doctor Reviewed"
-      },
-      {
-        "icon": "fa-bullseye",
-        "label": "Exact Target"
-      },
-      {
-        "icon": "fa-shield-alt",
-        "label": "100% Safe"
-      }
-    ],
-    "rows": [
-      {
-        "metric": "Lab Depth",
-        "without": "Basic 5-marker check",
-        "with": "Full comprehensive biomarker audit"
-      },
-      {
-        "metric": "Reference Ranges",
-        "without": "Wide 'sick population' normal",
-        "with": "Tight optimal health & energy range"
-      },
-      {
-        "metric": "Genetic & Toxic Screening",
-        "without": "Never checked",
-        "with": "MTHFR, heavy metals & ApoB checked"
-      },
-      {
-        "metric": "Doctor Review",
-        "without": "Automated portal email",
-        "with": "Detailed 1-on-1 MD consultation"
-      },
-      {
-        "metric": "Treatment Plan",
-        "without": "No action plan given",
-        "with": "Custom doctor protocol prescribed"
-      }
-    ],
-    "stacks": [
-      {
-        "name": "Complete Vitality & Hormone Panel",
-        "tag": "Most Popular",
-        "compounds": "Full Hormones + Thyroid + Metabolic",
-        "description": "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy."
-      },
-      {
-        "name": "MTHFR & Methylation DNA Audit",
-        "tag": "Genetics",
-        "compounds": "MTHFR Genes + Homocysteine + Folate",
-        "description": "Uncovers genetic methylation roadblocks to fix fatigue, brain fog, and mood slumps."
-      },
-      {
-        "name": "Total Body Longevity & Cardiac Audit",
-        "tag": "Complete Check",
-        "compounds": "ApoB + Heavy Metals + Micronutrients",
-        "description": "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins."
-      }
-    ]
-  },
-  "faqs": [
-    {
-      "question": "Do I need a doctor's order to get advanced lab testing?",
-      "answer": "Our licensed medical doctor provides the required lab order! You will consult with our medical team, who orders your custom panel based on your specific health goals and symptoms."
-    },
-    {
-      "question": "What does the doctor-guided lab program include?",
-      "answer": "Your program includes the physician lab order, your blood draw at our clinic or a local lab partner, a complete lab analysis, and a detailed 1-on-1 doctor consultation to explain your results."
-    },
-    {
-      "question": "Where do I go to get my blood drawn?",
-      "answer": "You can get your blood drawn right here at our comfortable St. Petersburg medical clinic, or we can send an order to a convenient local Quest or LabCorp near you!"
-    },
-    {
-      "question": "How long does it take to get my lab results back?",
-      "answer": "Most routine hormone and metabolic lab results return within 3 to 5 business days. Specialized genetic or heavy metal panels typically take 7 to 10 days."
-    },
-    {
-      "question": "Will the doctor explain my numbers and create a treatment plan?",
-      "answer": "100% yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
-    },
-    {
-      "question": "How do I get started with advanced lab testing?",
-      "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order your custom lab panel today!"
-    }
-  ]
+﻿{
+    "id":  "advanced-labs",
+    "type":  "core",
+    "tabLabel":  "Specialty Labs",
+    "href":  "advanced-labs",
+    "title":  "OVI Labs \u0026 Specialty Labs",
+    "lead":  "Doctor-ordered clinical diagnostic panels, metagenomic gut mapping, epigenetic longevity testing, and full functional blood chemistry.",
+    "description":  "Stop guessing why you feel fatigued, bloated, or sub-optimal. Our specialized diagnostic panels combine metagenomic stool sequencing, mycotoxin mold screening, epigenetic biological age clocks, and complete Quest Diagnostics blood chemistry - fully interpreted by licensed doctors.",
+    "icon":  "fa-flask",
+    "delay":  "-6s",
+    "features":  [
+                     "GI Gut Map Stool Test ($699) - Shotgun Metagenomic Sequencing",
+                     "MycoToxin Urine Analysis Panel ($399) - 16 Mold Toxins Screen",
+                     "TruAge + TruHealth Epigenetic Age Clocks ($799)",
+                     "Comprehensive Quest Hormone ($99), Full Functional ($499) \u0026 Infectious Disease ($599) Panels"
+                 ],
+    "image":  "assets/images/photos/team-group.jpg",
+    "ctaText":  "Book Your Doctor Consultation",
+    "pageTitle":  "OVI Labs \u0026 Specialty Labs - Doctor-Guided Diagnostic Testing | OVI Wellness",
+    "pageDescription":  "Specialty lab testing at OVI Wellness in St. Petersburg, FL. GI Gut Map, MycoToxin mold panel, TruAge biological age, and Quest functional blood panels.",
+    "heroHeadline":  "OVI Labs \u0026\u003cbr\u003e\u003cspan class=\"text-primary\"\u003eSpecialty Labs\u003c/span\u003e",
+    "heroSubheadline":  "Doctor-ordered clinical diagnostic panels, epigenetic longevity testing, and functional medicine biomarkers in St. Petersburg, FL.",
+    "heroCTA":  "Book Your Doctor Call Today",
+    "quiz":  {
+                 "badge":  "Quick 1-Minute Assessment",
+                 "headline":  "Find Your Best Lab Panel",
+                 "subheadline":  "Answer 3 quick questions so our doctors can recommend the right blood test for you.",
+                 "step1":  {
+                               "question":  "What is your main reason for getting bloodwork?",
+                               "sub":  "Pick what you want to check first.",
+                               "options":  [
+                                               {
+                                                   "value":  "hormone",
+                                                   "icon":  "fa-syringe",
+                                                   "title":  "Hormones \u0026 Energy",
+                                                   "desc":  "Want to check testosterone, thyroid, and daily stamina."
+                                               },
+                                               {
+                                                   "value":  "vitamins",
+                                                   "icon":  "fa-apple-alt",
+                                                   "title":  "Vitamin \u0026 Nutrient Deficiencies",
+                                                   "desc":  "Feeling tired, weak immunity, or hair thinning."
+                                               },
+                                               {
+                                                   "value":  "genetics",
+                                                   "icon":  "fa-dna",
+                                                   "title":  "MTHFR \u0026 Heavy Metals",
+                                                   "desc":  "Want to check gene markers, mold, or heavy metal toxicity."
+                                               }
+                                           ]
+                           },
+                 "step2":  {
+                               "question":  "When was your last comprehensive blood test?",
+                               "sub":  "Helps our doctor choose your panel depth.",
+                               "options":  [
+                                               {
+                                                   "value":  "recent",
+                                                   "icon":  "fa-calendar",
+                                                   "title":  "In the last 6 months",
+                                                   "desc":  "I have basic recent lab results."
+                                               },
+                                               {
+                                                   "value":  "old",
+                                                   "icon":  "fa-calendar-alt",
+                                                   "title":  "Over a year ago / Never",
+                                                   "desc":  "I need a complete baseline lab test."
+                                               }
+                                           ]
+                           },
+                 "step3":  {
+                               "question":  "Do you have unexplained symptoms like fatigue or brain fog?",
+                               "sub":  "Helps our doctor target hidden root causes.",
+                               "options":  [
+                                               {
+                                                   "value":  "yes",
+                                                   "icon":  "fa-triangle-exclamation",
+                                                   "title":  "Yes, I Do",
+                                                   "desc":  "Normal doctor tests came back \u0027fine\u0027 but I still feel bad."
+                                               },
+                                               {
+                                                   "value":  "no",
+                                                   "icon":  "fa-circle-check",
+                                                   "title":  "No, Just Preventative",
+                                                   "desc":  "I feel okay but want peak longevity and health data."
+                                               }
+                                           ]
+                           },
+                 "protocols":  {
+                                   "hormone":  {
+                                                   "tag":  "Recommended Energy Panel",
+                                                   "name":  "Total Hormone \u0026 Vitality Panel",
+                                                   "peptides":  "Full Testosterone + Thyroid + Cortisol Analysis",
+                                                   "icon":  "fa-syringe",
+                                                   "desc":  "Measures total and free testosterone, thyroid function, cortisol, and energy markers to pinpoint why you feel tired.",
+                                                   "goalModifiers":  {
+                                                                         "yes":  "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
+                                                                         "no":  "Great baseline check to keep your hormones balanced as you age."
+                                                                     },
+                                                   "social":  "Over 120 local patients unlocked high energy with this doctor lab panel."
+                                               },
+                                   "vitamins":  {
+                                                    "tag":  "Nutrient \u0026 Immunity Panel",
+                                                    "name":  "Complete Micronutrient \u0026 Antioxidant Audit",
+                                                    "peptides":  "Intracellular Vitamin \u0026 Mineral Testing",
+                                                    "icon":  "fa-apple-alt",
+                                                    "desc":  "Checks exact vitamin B12, D3, magnesium, and antioxidant levels inside your cells so you take only what you need.",
+                                                    "goalModifiers":  {
+                                                                          "yes":  "Finds cellular vitamin gaps that cause brain fog, sluggishness, and slow recovery.",
+                                                                          "no":  "Helps build a clean, custom daily vitamin plan tailored strictly to your body."
+                                                                      },
+                                                    "social":  "89 patients optimized their health with this intracellular audit."
+                                                },
+                                   "genetics":  {
+                                                    "tag":  "Deep Health \u0026 Detox Panel",
+                                                    "name":  "MTHFR Gene \u0026 Toxic Metal Panel",
+                                                    "peptides":  "DNA Methylation + Lead/Mercury/Arsenic Screen",
+                                                    "icon":  "fa-dna",
+                                                    "desc":  "Scans your MTHFR gene variants and tests for toxic heavy metals that disrupt your brain, mood, and heart health.",
+                                                    "goalModifiers":  {
+                                                                          "yes":  "Uncovers hidden genetic or toxic obstacles that prevent traditional treatments from working.",
+                                                                          "no":  "Advanced longevity test to ensure long-term brain, heart, and liver protection."
+                                                                      },
+                                                    "social":  "73 patients discovered hidden genetic insights with this panel."
+                                                }
+                               },
+                 "timelineMap":  {
+                                     "recent":  "3–5 days (Fast Results Review)",
+                                     "old":  "5–7 days (Full Baseline Audit)"
+                                 }
+             },
+    "eligibility":  {
+                        "badge":  "Who Is This For?",
+                        "headline":  "Are You a Candidate for Advanced Labs?",
+                        "intro":  "Our diagnostic panels go far beyond standard annual bloodwork. Supervised by licensed medical doctors, we uncover hidden root causes so you get clear, actionable answers.",
+                        "note":  "Questions about lab testing? Our medical team will guide you during your consultation.",
+                        "ctaText":  "Call Us Now to Check Candidacy",
+                        "items":  [
+                                      {
+                                          "label":  "Told Your Labs Are \u0027Normal\u0027",
+                                          "detail":  "Adults who feel exhausted or bloated despite primary care doctors saying labs are fine."
+                                      },
+                                      {
+                                          "label":  "Tired All Day",
+                                          "detail":  "Anyone struggling with brain fog, midday crashes, low drive, or poor sleep."
+                                      },
+                                      {
+                                          "label":  "Family Heart \u0026 Gene Risk",
+                                          "detail":  "People wanting MTHFR gene testing, ApoB, or advanced cardiac risk checks."
+                                      },
+                                      {
+                                          "label":  "Want Data-Driven Care",
+                                          "detail":  "Anyone starting TRT, weight loss, or peptides who needs accurate starting numbers."
+                                      },
+                                      {
+                                          "label":  "Ready for Doctor Review",
+                                          "detail":  "Looking for a 1-on-1 doctor review of every marker with a personalized plan."
+                                      }
+                                  ]
+                    },
+    "protocols":  {
+                      "badge":  "Clinical Diagnostic Menu",
+                      "sectionHeadline":  "OVI Labs \u0026 Specialty Labs",
+                      "sectionSubheadline":  "Doctor-ordered clinical diagnostic panels, epigenetic longevity testing, and functional medicine biomarkers.",
+                      "items":  {
+                                    "value":  [
+                                                  {
+                                                      "icon":  "fa-dna",
+                                                      "name":  "GI Gut Map Stool Test",
+                                                      "tag":  "Microbiome \u0026 Gut Genomics",
+                                                      "price":  "$699",
+                                                      "method":  "Shotgun Metagenomic PCR (28,000+ Species)",
+                                                      "description":  "The Gut IQ Profile is a comprehensive stool analysis providing a broad view of overall gut health by combining PCR and genomic sequencing technologies. Metagenomic sequencing analyzes the genetic material of entire microbial communities in a stool sample. This technique, known as shotgun sequencing, randomly and unbiasedly sequences all genetic material, covering over 28,000 microbial species. Unlike targeted approaches, it offers a comprehensive view, revealing previously unknown or unculturable microorganisms. From a simple stool sample, it provides detailed information on the microbiome and biochemical markers related to digestion, inflammation, and intestinal permeability.",
+                                                      "highlights":  [
+                                                                         "Akkermansia muciniphila",
+                                                                         "Faecalibacterium prausnitzii",
+                                                                         "Helicobacter pylori \u0026 Virulence",
+                                                                         "Clostridium difficile Toxins A/B",
+                                                                         "Zonulin \u0026 Gut Permeability",
+                                                                         "Calprotectin \u0026 Inflammation",
+                                                                         "Candida albicans \u0026 Fungal Screen",
+                                                                         "Short Chain Fatty Acids (Butyrate)"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "Klebsiella pneumoniae",
+                                                                         "Taenia spp.",
+                                                                         "Butyrate",
+                                                                         "Pancreatic Elastase 1",
+                                                                         "Enterobius vermicularis",
+                                                                         "Faecalibacterium prausnitzii",
+                                                                         "Akkermansia muciniphila",
+                                                                         "Cryptosporidium spp.",
+                                                                         "Giardia",
+                                                                         "Lactobacillus spp.",
+                                                                         "Bifidobacterium spp.",
+                                                                         "Beta-Glucuronidase",
+                                                                         "Trichuris trichiura",
+                                                                         "Dientamoeba fragilis",
+                                                                         "Ascaris lumbricoides",
+                                                                         "Helicobacter pylori",
+                                                                         "Necator americanus",
+                                                                         "Geotrichum spp.",
+                                                                         "Enterotoxigenic E. coli",
+                                                                         "H. pylori antibiotic resistance genes",
+                                                                         "H. pylori virulence factor vird",
+                                                                         "Campylobacter spp.",
+                                                                         "Clostridium difficile toxin a",
+                                                                         "Clostridium difficile toxin b",
+                                                                         "Salmonella spp.",
+                                                                         "Shiga-like toxin E. coli stx1",
+                                                                         "Shiga-like toxin E. coli stx2",
+                                                                         "Steatocrit",
+                                                                         "Staphylococcus aureus",
+                                                                         "Streptococcus spp.",
+                                                                         "Proteus mirabilis",
+                                                                         "Firmicutes/bacteroidetes ratio",
+                                                                         "Firmicutes",
+                                                                         "Blastocystis hominis",
+                                                                         "Bacteroidetes",
+                                                                         "Secretory IgA",
+                                                                         "Norovirus GI/GII",
+                                                                         "Entamoeba histolytica",
+                                                                         "Adenovirus 40/41",
+                                                                         "H. pylori virulence factor oipa",
+                                                                         "H. pylori virulence factor virb",
+                                                                         "Rhodotorula spp.",
+                                                                         "Citrobacter freundii",
+                                                                         "Pseudomonas aeruginosa",
+                                                                         "Enterococcus faecium",
+                                                                         "Enterococcus faecalis",
+                                                                         "Bacteroides fragilis",
+                                                                         "H. pylori virulence factor vaca",
+                                                                         "H. pylori virulence factor icea",
+                                                                         "H. pylori virulence factor dupa",
+                                                                         "H. pylori virulence factor caga",
+                                                                         "H. pylori virulence factor baba",
+                                                                         "Zonulin",
+                                                                         "Acetate",
+                                                                         "Propionate",
+                                                                         "Valerate",
+                                                                         "Mucus",
+                                                                         "Rotavirus A",
+                                                                         "Acinetobacter junii",
+                                                                         "Actinobacteria",
+                                                                         "Mycoplasma hominis",
+                                                                         "Proteobacteria",
+                                                                         "Streptococcus salivarius",
+                                                                         "Yersinia spp.",
+                                                                         "Vibrio spp.",
+                                                                         "Aeromonas spp.",
+                                                                         "Enterobacter cloacae",
+                                                                         "Streptococcus agalactiae",
+                                                                         "Pediococcus acidilactici",
+                                                                         "Escherichia coli",
+                                                                         "Calprotectin, Stool",
+                                                                         "Prevotella/Bacteroides Ratio",
+                                                                         "Occult Blood, Stool",
+                                                                         "pH, Stool",
+                                                                         "Streptococcus thermophilus",
+                                                                         "Bifidobacterium longum",
+                                                                         "Cyclospora cayetanensis",
+                                                                         "Desulfovibrio piger",
+                                                                         "Methanobrevibacter smithii",
+                                                                         "Oxalobacter formigenes",
+                                                                         "Candida albicans",
+                                                                         "Abiotrophia defectiva",
+                                                                         "Acinetobacter baumannii",
+                                                                         "Acinetobacter haemolyticus",
+                                                                         "Aging Factors (Oxidative Stress)",
+                                                                         "Ammonia Production",
+                                                                         "Ancylostoma spp.",
+                                                                         "Astrovirus",
+                                                                         "Bacteroides caccae",
+                                                                         "Bacteroides thetaiotaomicron",
+                                                                         "Bacteroides uniformis",
+                                                                         "Beneficial Short Chain Fatty Acids",
+                                                                         "Bifidobacterium adolescentis",
+                                                                         "Bifidobacterium animalis",
+                                                                         "Bifidobacterium bifidum",
+                                                                         "Bifidobacterium breve",
+                                                                         "Bifidobacterium pseudolongum",
+                                                                         "Bilophila wadsworthia",
+                                                                         "Blastocystis hominis subtype 1",
+                                                                         "Blastocystis hominis subtype 2",
+                                                                         "Blastocystis hominis subtype 3",
+                                                                         "Blastocystis hominis subtype 4",
+                                                                         "Blastocystis hominis subtype 5",
+                                                                         "Blastocystis hominis subtype 6",
+                                                                         "Blastocystis hominis subtype 7",
+                                                                         "Blastocystis hominis subtype 8",
+                                                                         "Blastocystis hominis subtype 9",
+                                                                         "Branched Chain Amino Acid Production",
+                                                                         "Candida dubliniensis",
+                                                                         "Candida famata",
+                                                                         "Candida glabrata",
+                                                                         "Candida guilliermondii",
+                                                                         "Candida intermedia",
+                                                                         "Candida kefyr",
+                                                                         "Candida krusei",
+                                                                         "Candida lambica",
+                                                                         "Candida lipolytica",
+                                                                         "Candida lusitaniae",
+                                                                         "Candida parapsilosis",
+                                                                         "Candida tropicalis",
+                                                                         "Carbohydrate Metabolism",
+                                                                         "Citrobacter koseri",
+                                                                         "Citrobacter youngae",
+                                                                         "Clostridium butyricum",
+                                                                         "Clostridium difficile, Hypervirulent",
+                                                                         "Colon Cancer Risk",
+                                                                         "Corynebacterium urealyticum",
+                                                                         "Crohn\u0027s Disease Risk",
+                                                                         "Enteroaggregative E.coli",
+                                                                         "Enterococcus casseliflavus",
+                                                                         "Enterococcus gallinarum",
+                                                                         "Enterocytozoon spp.",
+                                                                         "Enteropathogenic E. coli",
+                                                                         "Euryarchaeota",
+                                                                         "Fatty Liver Risk",
+                                                                         "Fusobacterium nucleatum",
+                                                                         "Fusobacterium nucleatum/Faecalibacterium prausnitzii Ratio",
+                                                                         "Fusobacterium ulcerans",
+                                                                         "Gram-Positive/Gram-Negative Ratio",
+                                                                         "Histamine Production",
+                                                                         "Hymenolepis spp.",
+                                                                         "Indolepropionic Acid (IPA) Production",
+                                                                         "Iron \u0026 Other Ion Metabolism",
+                                                                         "Klebsiella oxytoca",
+                                                                         "Lactobacillus acidophilus",
+                                                                         "Lactobacillus crispatus",
+                                                                         "Lactobacillus delbrueckii",
+                                                                         "Lactobacillus fermentum",
+                                                                         "Lactobacillus gasseri",
+                                                                         "Lactobacillus helveticus",
+                                                                         "Lactobacillus johnsonii",
+                                                                         "Lactobacillus paracasei",
+                                                                         "Lactobacillus plantarum",
+                                                                         "Lactobacillus reuteri",
+                                                                         "Lactobacillus rhamnosus",
+                                                                         "Lactobacillus salivarius",
+                                                                         "Lactococcus lactis",
+                                                                         "Lipid Metabolism",
+                                                                         "Lipopolysaccharides (LPS) Production",
+                                                                         "Morganella morganii",
+                                                                         "Pediococcus pentosaceus",
+                                                                         "Phocaeicola vulgatus",
+                                                                         "Prevotella amnii",
+                                                                         "Prevotella bivia",
+                                                                         "Prevotella melaninogenica",
+                                                                         "Protein \u0026 Other Energy Metabolism",
+                                                                         "Proteobacteria/Actinobacteria Ratio",
+                                                                         "Providencia rettgeri",
+                                                                         "Pseudoflavonifractor capillosus",
+                                                                         "Roseburia hominis",
+                                                                         "Roseburia intestinalis",
+                                                                         "Roseburia inulinivorans",
+                                                                         "Saccharomyces cerevisiae",
+                                                                         "Sapovirus",
+                                                                         "Shannon Diversity Index",
+                                                                         "Simpson Diversity Index",
+                                                                         "Stool Color",
+                                                                         "Stool Form",
+                                                                         "Streptococcus anginosus",
+                                                                         "Streptococcus dysgalactiae",
+                                                                         "Streptococcus mutans",
+                                                                         "Streptococcus pyogenes",
+                                                                         "Streptococcus suis",
+                                                                         "Strongyloides spp.",
+                                                                         "Sulfate Production",
+                                                                         "Transglutaminase IgA",
+                                                                         "Trimethylamine (TMA) Production",
+                                                                         "Type 2 Diabetes Risk",
+                                                                         "Ulcerative Colitis Risk",
+                                                                         "Veillonella parvula",
+                                                                         "Verrucomicrobia"
+                                                                     ]
+                                                  },
+                                                  {
+                                                      "icon":  "fa-biohazard",
+                                                      "name":  "MycoToxin Urine Analysis Panel",
+                                                      "tag":  "Environmental Toxicity \u0026 Mold",
+                                                      "price":  "$399",
+                                                      "method":  "Urine Metabolite Mass Spectrometry",
+                                                      "description":  "The MycoToxin Panel tests for 16 of the most common mycotoxins emitted by 300 varieties of molds providing insights into potential mold toxicity, chronic fatigue, immune suppression, and environmental exposures.",
+                                                      "highlights":  [
+                                                                         "Ochratoxin A",
+                                                                         "Aflatoxin B1, B2, G1, G2",
+                                                                         "Gliotoxin Derivative",
+                                                                         "Zearalenone",
+                                                                         "Satratoxin G \u0026 H",
+                                                                         "Verrucarin A \u0026 J"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "Ochratoxin A",
+                                                                         "Roridin E",
+                                                                         "Verrucarin A",
+                                                                         "Zearalenone",
+                                                                         "Aflatoxin B1",
+                                                                         "Aflatoxin B2",
+                                                                         "Aflatoxin G1",
+                                                                         "Aflatoxin G2",
+                                                                         "Isosatratoxin F",
+                                                                         "Roridin A",
+                                                                         "Roridin H",
+                                                                         "Roridin L-2",
+                                                                         "Satratoxin G",
+                                                                         "Satratoxin H",
+                                                                         "Verrucarin J",
+                                                                         "Gliotoxin Derivative"
+                                                                     ]
+                                                  },
+                                                  {
+                                                      "icon":  "fa-hourglass-half",
+                                                      "name":  "TruAge + TruHealth Epigenetic Panel",
+                                                      "tag":  "Biological Age \u0026 Epigenetic Longevity",
+                                                      "price":  "$799",
+                                                      "method":  "Single Blood Draw • DNA Methylation Sequencing",
+                                                      "description":  "The Combination Kit brings together TruAge and TruHealth from a single blood collection, pairing insights into biological aging with epigenetic indicators of health. TruAge assesses biological age, pace of aging, and aging across 11 organ systems through OMICmAge, DunedinPACE, and SYMPHONYAge. TruHealth adds context through markers related to metabolic health, inflammation, immune function, nutrition, hormones, and environmental exposures. Together, they provide a comprehensive foundation for establishing a baseline and tracking changes over time.",
+                                                      "highlights":  [
+                                                                         "OMICmAge (Biological Age)",
+                                                                         "DunedinPACE (Pace of Aging)",
+                                                                         "SYMPHONYAge (11 Organ Systems)",
+                                                                         "Average Telomere Length",
+                                                                         "Insulin-like Growth Factor 1 (IGF-1)",
+                                                                         "Interleukin-6 \u0026 C-Reactive Protein",
+                                                                         "Omega-3 \u0026 EPA Fatty Acids",
+                                                                         "Environmental Exposures (PFAS)"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "Average Telomere Length",
+                                                                         "2-Hydroxyfluorene Sulfate (Epigenetic)",
+                                                                         "4-Hydroxyphenylacetylglutamine (Epigenetic)",
+                                                                         "Adiponectin (Epigenetic)",
+                                                                         "Albumin (Epigenetic)",
+                                                                         "Alcohol Consumption Risk",
+                                                                         "Alkaline Phosphatase (Epigenetic)",
+                                                                         "Allantoin (Epigenetic)",
+                                                                         "Vitamin E (Epigenetic)",
+                                                                         "Androsterone Sulfate (Epigenetic)",
+                                                                         "Apolipoprotein A1 (Epigenetic)",
+                                                                         "Blood Urea Nitrogen (Epigenetic)",
+                                                                         "C-Reactive Protein (Epigenetic)",
+                                                                         "Creatinine (Epigenetic)",
+                                                                         "Cystathionine (Epigenetic)",
+                                                                         "Cystatin C (Epigenetic)",
+                                                                         "DHEA Sulfate (Epigenetic)",
+                                                                         "Dimethylarginine (Epigenetic)",
+                                                                         "DunedinPACE: Pace of Aging",
+                                                                         "Eicosapentaenoic Acid (Epigenetic)",
+                                                                         "Erythritol (Epigenetic)",
+                                                                         "Glucose (Epigenetic)",
+                                                                         "Glutamine (Epigenetic)",
+                                                                         "Glycine (Epigenetic)",
+                                                                         "Glycoprotein Acetyls (Epigenetic)",
+                                                                         "Hemoglobin A1c (Epigenetic)",
+                                                                         "HDL Particle Size (Epigenetic)",
+                                                                         "HDL Cholesterol (Epigenetic)",
+                                                                         "Insulin-like Growth Factor 1 (Epigenetic)",
+                                                                         "Interleukin-6 (Epigenetic)",
+                                                                         "Insulin-like Growth Factor-Binding Protein 2 (Epigenetic)",
+                                                                         "Kynurenine (Epigenetic)",
+                                                                         "LDL Cholesterol (Epigenetic)",
+                                                                         "Leptin (Epigenetic)",
+                                                                         "Lymphocyte Count (Epigenetic)",
+                                                                         "Methionine Sulfone (Epigenetic)",
+                                                                         "Neutrophils % (Epigenetic)",
+                                                                         "Nicotinamide Riboside (Epigenetic)",
+                                                                         "Omega-3 (Epigenetic)",
+                                                                         "OMICmAge: Biological Age",
+                                                                         "Palmitoylcarnitine (Epigenetic)",
+                                                                         "Perfluorooctanesulfonate (Epigenetic)",
+                                                                         "Perfluorooctanoate (Epigenetic)",
+                                                                         "Phenylacetylglutamine (Epigenetic)",
+                                                                         "Quinolinate (Epigenetic)",
+                                                                         "Vitamin A (Epigenetic)",
+                                                                         "S-(3-hydroxypropyl)mercapturic Acid (HPMA) (Epigenetic)",
+                                                                         "Serum Amyloid A-1 Protein (Epigenetic)",
+                                                                         "Serum Paraoxonase/Arylesterase 1 (PON1) (Epigenetic)",
+                                                                         "Saturated Fatty Acids (Epigenetic)",
+                                                                         "Smoking Risk",
+                                                                         "Sphingomyelins (Epigenetic)",
+                                                                         "SYMPHONYAge: Blood Age",
+                                                                         "SYMPHONYAge: Brain Age",
+                                                                         "SYMPHONYAge: Heart Age",
+                                                                         "SYMPHONYAge: Inflammation Age",
+                                                                         "SYMPHONYAge: Kidney Age",
+                                                                         "SYMPHONYAge: Liver Age",
+                                                                         "SYMPHONYAge: Lung Age",
+                                                                         "SYMPHONYAge: Metabolic Age",
+                                                                         "SYMPHONYAge: Musculoskeletal Age",
+                                                                         "Choline (Epigenetic)",
+                                                                         "Triglycerides (Epigenetic)",
+                                                                         "Uric Acid (Epigenetic)",
+                                                                         "SYMPHONYAge: Hormone Age",
+                                                                         "SYMPHONYAge: Immune Age",
+                                                                         "Vanillactic Acid (Epigenetic)",
+                                                                         "Vanillylmandelic Acid (Epigenetic)",
+                                                                         "VLDL Particle Size (Epigenetic)",
+                                                                         "White Blood Cell Count (Epigenetic)"
+                                                                     ]
+                                                  },
+                                                  {
+                                                      "icon":  "fa-vial",
+                                                      "name":  "OVI Hormone Panel (via Quest Labs)",
+                                                      "tag":  "Endocrine \u0026 Metabolic Baseline",
+                                                      "price":  "$99",
+                                                      "method":  "Venous Blood Draw via Quest Diagnostics",
+                                                      "description":  "Essential clinical baseline panel testing comprehensive testosterone levels (total, free, bioavailable), estradiol, sex hormone binding globulin, prostate health (PSA), full metabolic function, liver and kidney chemistry, and complete blood counts.",
+                                                      "highlights":  [
+                                                                         "Testosterone (Total, Free \u0026 Bioavailable)",
+                                                                         "Estradiol \u0026 SHBG",
+                                                                         "PSA (Total, Free \u0026 % Free)",
+                                                                         "Comprehensive Metabolic Panel (CMP)",
+                                                                         "Complete Blood Count (CBC with Differential)",
+                                                                         "Lipid Panel (HDL, LDL, Triglycerides)"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "Alanine Aminotransferase (ALT)",
+                                                                         "Albumin",
+                                                                         "Albumin/Globulin Ratio",
+                                                                         "Alkaline Phosphatase (ALP)",
+                                                                         "Aspartate Aminotransferase (AST)",
+                                                                         "BUN/Creatinine Ratio",
+                                                                         "Band Neutrophils",
+                                                                         "Band Neutrophils (%)",
+                                                                         "Basophils",
+                                                                         "Basophils (%)",
+                                                                         "Blasts",
+                                                                         "Blasts (%)",
+                                                                         "Blood Urea Nitrogen",
+                                                                         "Calcium",
+                                                                         "Carbon Dioxide",
+                                                                         "Chloride",
+                                                                         "Creatinine",
+                                                                         "Eosinophils",
+                                                                         "Eosinophils (%)",
+                                                                         "Estimated Glomerular Filtration Rate",
+                                                                         "Estradiol",
+                                                                         "Globulin (Calculated)",
+                                                                         "Glucose (Blood)",
+                                                                         "HDL Cholesterol",
+                                                                         "Hematocrit",
+                                                                         "Hemoglobin (HGB)",
+                                                                         "LDL Cholesterol (by calculation)",
+                                                                         "Lymphocytes",
+                                                                         "Lymphocytes (%)",
+                                                                         "Mean Corpuscular Hemoglobin (MCH)",
+                                                                         "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+                                                                         "Mean Corpuscular Volume",
+                                                                         "Mean Platelet Volume (MPV)",
+                                                                         "Metamyelocytes",
+                                                                         "Metamyelocytes (%)",
+                                                                         "Monocytes",
+                                                                         "Monocytes (%)",
+                                                                         "Myelocytes",
+                                                                         "Myelocytes (%)",
+                                                                         "Neutrophils",
+                                                                         "Neutrophils (%)",
+                                                                         "Non-HDL Cholesterol",
+                                                                         "Nucleated RBC",
+                                                                         "Nucleated RBC (%)",
+                                                                         "Platelet Count",
+                                                                         "Potassium",
+                                                                         "Promyelocytes",
+                                                                         "Promyelocytes (%)",
+                                                                         "Prostate-specific antigen (PSA), % Free",
+                                                                         "Prostate-specific antigen (PSA), Free",
+                                                                         "Prostate-specific antigen (PSA), Total",
+                                                                         "Protein, Total",
+                                                                         "Reactive Lymphocytes",
+                                                                         "Red Blood Cell Count (RBC)",
+                                                                         "Red Cell Distribution Width (RDW)",
+                                                                         "Sex Hormone Binding Globulin (SHBG)",
+                                                                         "Sodium",
+                                                                         "Testosterone, Bioavailable",
+                                                                         "Testosterone, Free",
+                                                                         "Testosterone, Total",
+                                                                         "Total Bilirubin",
+                                                                         "Total Cholesterol",
+                                                                         "Total Cholesterol / HDL Ratio",
+                                                                         "Triglycerides",
+                                                                         "White Blood Cell Count (WBC)"
+                                                                     ]
+                                                  },
+                                                  {
+                                                      "icon":  "fa-heart-pulse",
+                                                      "name":  "OVI Full Functional Panel",
+                                                      "tag":  "Advanced Functional \u0026 Cardiovascular Longevity",
+                                                      "price":  "$499",
+                                                      "method":  "Comprehensive Diagnostic Draw via Quest Labs",
+                                                      "description":  "Our most complete clinical blood evaluation for optimizing healthspan. Pairs full hormone and thyroid profiles with advanced cardiovascular markers (ApoB, Lipoprotein(a), Homocysteine, hs-CRP), heavy metal toxicity (Lead, Mercury, Arsenic), vitamin levels (B12, D, Ferritin), and autoimmune antibodies.",
+                                                      "highlights":  [
+                                                                         "Apolipoprotein B (ApoB) \u0026 Lipoprotein(a)",
+                                                                         "Heavy Metals: Lead, Mercury \u0026 Arsenic",
+                                                                         "Thyroid Panel (TSH, Total T3, Total T4, Free T4 Index)",
+                                                                         "hs-CRP \u0026 Homocysteine Cardiovascular Risk",
+                                                                         "Vitamin B12, Folate \u0026 25-OH Vitamin D",
+                                                                         "Antinuclear Antibodies Screen (IFA)",
+                                                                         "Ferritin, Iron Saturation \u0026 TIBC",
+                                                                         "Full Hormone, Lipid \u0026 Metabolic Panels"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "ABO Group",
+                                                                         "Alanine Aminotransferase (ALT)",
+                                                                         "Albumin",
+                                                                         "Albumin/Globulin Ratio",
+                                                                         "Alkaline Phosphatase (ALP)",
+                                                                         "Antinuclear Antibodies Screen (IFA)",
+                                                                         "Apolipoprotein B",
+                                                                         "Arsenic, Blood",
+                                                                         "Aspartate Aminotransferase (AST)",
+                                                                         "BUN/Creatinine Ratio",
+                                                                         "Band Neutrophils",
+                                                                         "Band Neutrophils (%)",
+                                                                         "Basophils",
+                                                                         "Basophils (%)",
+                                                                         "Blasts",
+                                                                         "Blasts (%)",
+                                                                         "Blood Urea Nitrogen",
+                                                                         "C-Reactive Protein",
+                                                                         "Calcium",
+                                                                         "Carbon Dioxide",
+                                                                         "Chloride",
+                                                                         "Creatinine",
+                                                                         "Eosinophils",
+                                                                         "Eosinophils (%)",
+                                                                         "Estimated Glomerular Filtration Rate",
+                                                                         "Ferritin",
+                                                                         "Folate",
+                                                                         "Free T4 Index (T7)",
+                                                                         "Globulin (Calculated)",
+                                                                         "Glucose (Blood)",
+                                                                         "HDL Cholesterol",
+                                                                         "Hematocrit",
+                                                                         "Hemoglobin (HGB)",
+                                                                         "Hemoglobin A1c",
+                                                                         "Homocysteine",
+                                                                         "Iron % Saturation",
+                                                                         "Iron, Total",
+                                                                         "LDL Cholesterol (by calculation)",
+                                                                         "Lead (Venous)",
+                                                                         "Lipoprotein (a)",
+                                                                         "Lymphocytes",
+                                                                         "Lymphocytes (%)",
+                                                                         "Magnesium",
+                                                                         "Mean Corpuscular Hemoglobin (MCH)",
+                                                                         "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+                                                                         "Mean Corpuscular Volume",
+                                                                         "Mean Platelet Volume (MPV)",
+                                                                         "Mercury, Blood",
+                                                                         "Metamyelocytes",
+                                                                         "Metamyelocytes (%)",
+                                                                         "Monocytes",
+                                                                         "Monocytes (%)",
+                                                                         "Myelocytes",
+                                                                         "Myelocytes (%)",
+                                                                         "Neutrophils",
+                                                                         "Neutrophils (%)",
+                                                                         "Non-HDL Cholesterol",
+                                                                         "Nucleated RBC",
+                                                                         "Nucleated RBC (%)",
+                                                                         "Platelet Count",
+                                                                         "Potassium",
+                                                                         "Promyelocytes",
+                                                                         "Promyelocytes (%)",
+                                                                         "Prostate-specific antigen (PSA), % Free",
+                                                                         "Prostate-specific antigen (PSA), Free",
+                                                                         "Prostate-specific antigen (PSA), Total",
+                                                                         "Protein, Total",
+                                                                         "Reactive Lymphocytes",
+                                                                         "Red Blood Cell Count (RBC)",
+                                                                         "Red Cell Distribution Width (RDW)",
+                                                                         "Rh Type",
+                                                                         "Sex Hormone Binding Globulin (SHBG)",
+                                                                         "Sodium",
+                                                                         "T3, Total",
+                                                                         "T4 (Thyroxine), Total",
+                                                                         "Testosterone, Bioavailable",
+                                                                         "Testosterone, Free",
+                                                                         "Testosterone, Total",
+                                                                         "Thyroid-Stimulating Hormone",
+                                                                         "Total Bilirubin",
+                                                                         "Total Cholesterol",
+                                                                         "Total Cholesterol / HDL Ratio",
+                                                                         "Total Iron Binding Capacity (TIBC)",
+                                                                         "Triglycerides",
+                                                                         "Vitamin B12 (Cobalamin)",
+                                                                         "Vitamin D, 25-OH, Total",
+                                                                         "White Blood Cell Count (WBC)"
+                                                                     ]
+                                                  },
+                                                  {
+                                                      "icon":  "fa-shield-virus",
+                                                      "name":  "OVI Infectious Disease Panel",
+                                                      "tag":  "Pathogen, Lyme \u0026 Viral Immunoblot",
+                                                      "price":  "$599",
+                                                      "method":  "Immunoblot \u0026 Serology Screen via Quest Labs",
+                                                      "description":  "Deep-level screening for stealth and chronic infections. Evaluates 14 specific Lyme disease immunoblot bands (IgG and IgM), chronic viral reactivations (EBV, CMV, HSV 1 \u0026 2), fungal antibodies (Candida albicans IgA/IgG/IgM), blood parasites, and viral status.",
+                                                      "highlights":  [
+                                                                         "Lyme Disease Immunoblot (14 IgG \u0026 IgM Bands)",
+                                                                         "Epstein-Barr Virus (EBNA \u0026 VCA IgG/IgM)",
+                                                                         "Cytomegalovirus (CMV IgG/IgM)",
+                                                                         "Candida albicans (IgA, IgG, IgM)",
+                                                                         "Herpes Simplex Virus 1 \u0026 2 (IgG)",
+                                                                         "Blood Parasite \u0026 Toxoplasma Screen",
+                                                                         "Hepatitis A, B, C \u0026 HIV 1+2 Markers",
+                                                                         "Complete Metabolic \u0026 CBC Baseline"
+                                                                     ],
+                                                      "biomarkers":  [
+                                                                         "Lyme Disease Bands",
+                                                                         "18 KD (IgG) Band",
+                                                                         "23 KD (IgG) Band",
+                                                                         "23 KD (IgM) Band",
+                                                                         "28 KD (IgG) Band",
+                                                                         "30 KD (IgG) Band",
+                                                                         "39 KD (IgG) Band",
+                                                                         "39 KD (IgM) Band",
+                                                                         "41 KD (IgG) Band",
+                                                                         "41 KD (IgM) Band",
+                                                                         "45 KD (IgG) Band",
+                                                                         "58 KD (IgG) Band",
+                                                                         "66 KD (IgG) Band",
+                                                                         "93 KD (IgG) Band",
+                                                                         "Lyme Disease Antibodies (IgG), Immunoblot",
+                                                                         "Lyme Disease Antibodies (IgM), Immunoblot",
+                                                                         "Candida albicans IgA",
+                                                                         "Candida albicans IgG",
+                                                                         "Candida albicans IgM",
+                                                                         "Cytomegalovirus antibody (igg)",
+                                                                         "Cytomegalovirus antibody (igm)",
+                                                                         "Epstein-barr virus nuclear antigen (ebna) antibody (igg)",
+                                                                         "Epstein-barr virus viral capsid antigen (vca) antibody (igg)",
+                                                                         "Epstein-barr virus viral capsid antigen (vca) antibody (igm)",
+                                                                         "HIV 1+2 Ab+HIV1 p24 Ag",
+                                                                         "Hepatitis A IgM",
+                                                                         "Hepatitis B Core Antibody IgM",
+                                                                         "Hepatitis B Surface Antigen",
+                                                                         "Hepatitis C Virus Ab",
+                                                                         "Herpes Simplex Virus 1 (IgG), Type-Specific Antibody",
+                                                                         "Herpes Simplex Virus 2 (IgG), Type-Specific Antibody",
+                                                                         "Toxoplasma Antibody (IgG)",
+                                                                         "Parasite, Blood",
+                                                                         "RPR (Reagin Ab)",
+                                                                         "SARS-CoV-2 Ab",
+                                                                         "Alanine Aminotransferase (ALT)",
+                                                                         "Albumin",
+                                                                         "Albumin/Globulin Ratio",
+                                                                         "Alkaline Phosphatase (ALP)",
+                                                                         "Aspartate Aminotransferase (AST)",
+                                                                         "BUN/Creatinine Ratio",
+                                                                         "Band Neutrophils",
+                                                                         "Band Neutrophils (%)",
+                                                                         "Basophils",
+                                                                         "Basophils (%)",
+                                                                         "Blasts",
+                                                                         "Blasts (%)",
+                                                                         "Blood Urea Nitrogen",
+                                                                         "Calcium",
+                                                                         "Carbon Dioxide",
+                                                                         "Chloride",
+                                                                         "Creatinine",
+                                                                         "Eosinophils",
+                                                                         "Eosinophils (%)",
+                                                                         "Estimated Glomerular Filtration Rate",
+                                                                         "Globulin (Calculated)",
+                                                                         "Glucose (Blood)",
+                                                                         "Hematocrit",
+                                                                         "Hemoglobin (HGB)",
+                                                                         "Lymphocytes",
+                                                                         "Lymphocytes (%)",
+                                                                         "Mean Corpuscular Hemoglobin (MCH)",
+                                                                         "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+                                                                         "Mean Corpuscular Volume",
+                                                                         "Mean Platelet Volume (MPV)",
+                                                                         "Metamyelocytes",
+                                                                         "Metamyelocytes (%)",
+                                                                         "Monocytes",
+                                                                         "Monocytes (%)",
+                                                                         "Myelocytes",
+                                                                         "Myelocytes (%)",
+                                                                         "Neutrophils",
+                                                                         "Neutrophils (%)",
+                                                                         "Nucleated RBC",
+                                                                         "Nucleated RBC (%)",
+                                                                         "Platelet Count",
+                                                                         "Potassium",
+                                                                         "Promyelocytes",
+                                                                         "Promyelocytes (%)",
+                                                                         "Protein, Total",
+                                                                         "Reactive Lymphocytes",
+                                                                         "Red Blood Cell Count (RBC)",
+                                                                         "Red Cell Distribution Width (RDW)",
+                                                                         "Sodium",
+                                                                         "Total Bilirubin",
+                                                                         "White Blood Cell Count (WBC)"
+                                                                     ]
+                                                  }
+                                              ],
+                                    "Count":  6
+                                }
+                  },
+    "science":  {
+                    "badge":  "How It Works",
+                    "headline":  "Why It Works When\u003cbr\u003e\u003cspan class=\"text-primary\"\u003eStandard Labs Fail\u003c/span\u003e",
+                    "body":  "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+                    "bullets":  [
+                                    "Ordered \u0026 reviewed by licensed medical doctors",
+                                    "Tests optimal vitality ranges—not just \u0027disease normal\u0027",
+                                    "Includes clear 1-on-1 doctor consultation \u0026 action plan"
+                                ],
+                    "stats":  [
+                                  {
+                                      "value":  "Deep",
+                                      "label":  "Tests optimal ranges, not basic averages"
+                                  },
+                                  {
+                                      "value":  "Safe",
+                                      "label":  "Doctor reviewed \u0026 lab verified"
+                                  },
+                                  {
+                                      "value":  "1-on-1",
+                                      "label":  "Personalized MD consultation"
+                                  },
+                                  {
+                                      "icon":  "fa-user-md",
+                                      "label":  "Rx Doctor Certified"
+                                  }
+                              ],
+                    "cards":  [
+                                  {
+                                      "icon":  "fa-microscope",
+                                      "title":  "Intracellular Precision",
+                                      "detail":  "We measure nutrient levels inside your cells where they actually work, rather than just floating in serum."
+                                  },
+                                  {
+                                      "icon":  "fa-bullseye",
+                                      "title":  "Actionable Doctor Plan",
+                                      "detail":  "You don\u0027t just get a stack of confusing numbers—our doctor gives you a simple, step-by-step treatment plan."
+                                  }
+                              ]
+                },
+    "myths":  [
+                  {
+                      "myth":  "My doctor said my bloodwork is normal, so why do I feel bad?",
+                      "reality":  "Standard labs use wide population averages to spot disease. You can be in the \u0027normal\u0027 range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
+                  },
+                  {
+                      "myth":  "Do I need to fast before getting my blood drawn?",
+                      "reality":  "For most comprehensive hormone and lipid panels, yes—a simple 8 to 12 hour overnight fast (water is okay) gives our doctor the cleanest, most accurate health reading."
+                  },
+                  {
+                      "myth":  "Is doctor-guided lab testing covered or simple?",
+                      "reality":  "Yes! We make lab testing easy and seamless. You can get drawn right at our St. Petersburg clinic or at a local lab, followed by a full doctor consult."
+                  }
+              ],
+    "comparison":  {
+                       "headline":  "Doctor-Guided Care vs. Doing It Alone",
+                       "subheadline":  "See why doctor supervision gets you better, safer, and longer-lasting results.",
+                       "ctaText":  "Call Our Clinic Today",
+                       "mobileStats":  [
+                                           {
+                                               "icon":  "fa-flask",
+                                               "label":  "Deep Labs"
+                                           },
+                                           {
+                                               "icon":  "fa-user-md",
+                                               "label":  "Doctor Reviewed"
+                                           },
+                                           {
+                                               "icon":  "fa-bullseye",
+                                               "label":  "Exact Target"
+                                           },
+                                           {
+                                               "icon":  "fa-shield-alt",
+                                               "label":  "100% Safe"
+                                           }
+                                       ],
+                       "rows":  [
+                                    {
+                                        "metric":  "Lab Depth",
+                                        "without":  "Basic 5-marker check",
+                                        "with":  "Full comprehensive biomarker audit"
+                                    },
+                                    {
+                                        "metric":  "Reference Ranges",
+                                        "without":  "Wide \u0027sick population\u0027 normal",
+                                        "with":  "Tight optimal health \u0026 energy range"
+                                    },
+                                    {
+                                        "metric":  "Genetic \u0026 Toxic Screening",
+                                        "without":  "Never checked",
+                                        "with":  "MTHFR, heavy metals \u0026 ApoB checked"
+                                    },
+                                    {
+                                        "metric":  "Doctor Review",
+                                        "without":  "Automated portal email",
+                                        "with":  "Detailed 1-on-1 MD consultation"
+                                    },
+                                    {
+                                        "metric":  "Treatment Plan",
+                                        "without":  "No action plan given",
+                                        "with":  "Custom doctor protocol prescribed"
+                                    }
+                                ],
+                       "stacks":  [
+                                      {
+                                          "name":  "Complete Vitality \u0026 Hormone Panel",
+                                          "tag":  "Most Popular",
+                                          "compounds":  "Full Hormones + Thyroid + Metabolic",
+                                          "description":  "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy."
+                                      },
+                                      {
+                                          "name":  "MTHFR \u0026 Methylation DNA Audit",
+                                          "tag":  "Genetics",
+                                          "compounds":  "MTHFR Genes + Homocysteine + Folate",
+                                          "description":  "Uncovers genetic methylation roadblocks to fix fatigue, brain fog, and mood slumps."
+                                      },
+                                      {
+                                          "name":  "Total Body Longevity \u0026 Cardiac Audit",
+                                          "tag":  "Complete Check",
+                                          "compounds":  "ApoB + Heavy Metals + Micronutrients",
+                                          "description":  "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins."
+                                      }
+                                  ]
+                   },
+    "faqs":  [
+                 {
+                     "question":  "Do I need a doctor\u0027s order to get advanced lab testing?",
+                     "answer":  "Our licensed medical doctor provides the required lab order! You will consult with our medical team, who orders your custom panel based on your specific health goals and symptoms."
+                 },
+                 {
+                     "question":  "What does the doctor-guided lab program include?",
+                     "answer":  "Your program includes the physician lab order, your blood draw at our clinic or a local lab partner, a complete lab analysis, and a detailed 1-on-1 doctor consultation to explain your results."
+                 },
+                 {
+                     "question":  "Where do I go to get my blood drawn?",
+                     "answer":  "You can get your blood drawn right here at our comfortable St. Petersburg medical clinic, or we can send an order to a convenient local Quest or LabCorp near you!"
+                 },
+                 {
+                     "question":  "How long does it take to get my lab results back?",
+                     "answer":  "Most routine hormone and metabolic lab results return within 3 to 5 business days. Specialized genetic or heavy metal panels typically take 7 to 10 days."
+                 },
+                 {
+                     "question":  "Will the doctor explain my numbers and create a treatment plan?",
+                     "answer":  "100% yes! You won\u0027t be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
+                 },
+                 {
+                     "question":  "How do I get started with advanced lab testing?",
+                     "answer":  "Getting started is simple! Call our clinic today at (727) 476-8966 or click \u0027Book Your Doctor Consultation\u0027 online. Our doctor will order your custom lab panel today!"
+                 }
+             ]
 }
