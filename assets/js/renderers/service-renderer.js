@@ -267,7 +267,8 @@
 
   // ─── 10. Build protocols grid ──────────────────────────────────────────────
   function buildProtocols(items) {
-    if (!items) return;
+    if (items && !Array.isArray(items)) items = items.value; // tolerate PowerShell-wrapped arrays
+    if (!Array.isArray(items)) return;
     const desktop = document.getElementById("protocols-desktop");
     const mobileTrack = document.getElementById("protocols-mobile-track");
     const mobileIndicators = document.getElementById("protocols-mobile-indicators");
