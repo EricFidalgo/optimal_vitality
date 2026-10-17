@@ -947,5 +947,115 @@
                      "question":  "How do I get started with advanced lab testing?",
                      "answer":  "Getting started is simple! Call our clinic today at (727) 476-8966 or click \u0027Book Your Doctor Consultation\u0027 online. Our doctor will order your custom lab panel today!"
                  }
-             ]
+             ],
+    "labsGuide":  {
+        "buttonLabel": "View Advanced Lab Testing Guide",
+        "eyebrow": "OVI Wellness | Advanced Lab Testing",
+        "title": "Better Insights. Smarter Wellness. Personalized Care.",
+        "intro": [
+            "At OVI Wellness, we believe understanding your health starts with understanding what’s happening inside your body. Our comprehensive lab testing options provide valuable insights into hormone levels, gut health, biological aging, metabolic function, and more.",
+            "Whether you’re looking to optimize your wellness or investigate specific health concerns, our testing options help you and your provider make informed decisions about your health."
+        ],
+        "evaluatesLabel": "What It Evaluates:",
+        "whyLabel": "Why Choose This Test?",
+        "tests": [
+            {
+                "name": "GI Gut Map Stool Test",
+                "price": "$699",
+                "subtitle": "Gut Health & Microbiome Analysis",
+                "intro": "Your gut plays an important role in digestion, immune function, and overall wellness. Our advanced Gut Map Test provides an in-depth look at your gut microbiome using comprehensive stool analysis technology.",
+                "evaluates": [
+                    "Beneficial and potentially harmful gut bacteria",
+                    "Digestive function and nutrient absorption markers",
+                    "Gut inflammation and intestinal permeability markers",
+                    "Parasites, yeast, and other microorganisms",
+                    "Microbiome diversity and bacterial balance"
+                ],
+                "why": "Gain a deeper understanding of your digestive health and identify potential imbalances that may help guide a personalized wellness plan."
+            },
+            {
+                "name": "Mycotoxin Urine Analysis Panel",
+                "price": "$399",
+                "subtitle": "Mold Toxin Exposure Assessment",
+                "intro": "Concerned about possible mold exposure? Our Mycotoxin Panel screens for 16 mycotoxins associated with various types of mold.",
+                "evaluates": [
+                    "Selected mold-related toxins",
+                    "Ochratoxins and aflatoxins",
+                    "Trichothecene mycotoxins",
+                    "Zearalenone and other fungal toxins"
+                ],
+                "why": "This specialized urine test provides information about selected mycotoxins that may be present in your body, offering additional context for a provider-guided evaluation of potential exposure."
+            },
+            {
+                "name": "TruAge + TruHealth",
+                "price": "$799",
+                "subtitle": "Biological Age & Longevity Testing",
+                "intro": "Your chronological age only tells part of your story. TruAge + TruHealth combines advanced epigenetic testing with biological aging assessments to explore how your body is aging at a cellular and organ-system level.",
+                "evaluates": [
+                    "Estimated biological age and pace of aging",
+                    "Aging patterns across 11 organ systems",
+                    "Metabolic health and inflammation indicators",
+                    "Immune function and hormonal health markers",
+                    "Nutrition-related and environmental exposure indicators"
+                ],
+                "why": "Discover insights into your biological aging profile, establish a baseline, and track changes in selected health and aging markers over time."
+            },
+            {
+                "name": "OVI Hormone Panel",
+                "price": "$99",
+                "subtitle": "Hormone & General Health Assessment",
+                "intro": "Hormones influence many important functions throughout the body. Our OVI Hormone Panel evaluates key hormone levels alongside important general health markers.",
+                "evaluates": [
+                    "Total, free, and bioavailable testosterone",
+                    "Estradiol and sex hormone-binding globulin (SHBG)",
+                    "Cholesterol and cardiovascular health markers",
+                    "Liver and kidney function",
+                    "Blood counts and metabolic indicators",
+                    "Prostate-specific antigen (PSA)"
+                ],
+                "why": "Get a clearer picture of key hormone levels and important health markers to support informed discussions about hormonal wellness and potential treatment options."
+            },
+            {
+                "name": "OVI Full Functional Panel",
+                "price": "$499",
+                "subtitle": "Comprehensive Health Assessment",
+                "intro": "Take a more comprehensive approach to understanding your health. Our Full Functional Panel evaluates a broad range of biomarkers related to metabolic, cardiovascular, thyroid, nutritional, and hormonal health.",
+                "evaluates": [
+                    "Hormone levels and thyroid function",
+                    "Cholesterol and cardiovascular risk markers",
+                    "Blood sugar and metabolic health",
+                    "Inflammation and immune-related markers",
+                    "Vitamin and mineral levels",
+                    "Liver and kidney function",
+                    "Selected heavy metals and environmental exposures"
+                ],
+                "why": "Ideal for individuals seeking a broad health assessment, this panel provides detailed laboratory information to help guide personalized wellness recommendations and ongoing health monitoring."
+            },
+            {
+                "name": "OVI Infectious Disease Panel",
+                "price": "$599",
+                "subtitle": "Comprehensive Infectious Disease Screening",
+                "intro": "Our Infectious Disease Panel evaluates laboratory markers associated with a range of viral, bacterial, and other infections, along with general health indicators.",
+                "evaluates": [
+                    "Lyme disease antibodies",
+                    "Epstein-Barr virus (EBV) and cytomegalovirus (CMV) antibodies",
+                    "Hepatitis A, B, and C markers",
+                    "HIV screening",
+                    "Herpes simplex virus (HSV-1 and HSV-2) antibodies",
+                    "Candida-related antibodies and additional infectious markers",
+                    "Blood counts and liver and kidney function"
+                ],
+                "why": "This panel provides a broad set of laboratory results that may assist your healthcare provider in evaluating suspected infections and determining whether additional testing is appropriate."
+            }
+        ],
+        "closing": {
+            "title": "Your Health Deserves a Personalized Approach",
+            "body": "At OVI Wellness, advanced testing is more than numbers on a lab report. It’s about gaining meaningful insights and using that information to guide your wellness journey.",
+            "ready": "Ready to learn more about your health?",
+            "explore": "Explore our advanced laboratory testing options and schedule your appointment with OVI Wellness.",
+            "cta": "Book Your Lab Testing Consultation"
+        },
+        "disclaimer": "Testing recommendations, interpretation, and follow-up care are determined by your healthcare provider. Laboratory results alone do not establish a diagnosis. Certain specialized assessments have limitations and may not be appropriate for every patient.",
+        "close": "Close"
+    }
 }

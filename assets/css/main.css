@@ -4685,3 +4685,14 @@ body.modal-open,
   color: var(--secondary-color, #0d2b24);
 }
 
+
+/* Labs guide popup */
+.labs-guide-body { padding: 24px 28px; color: #2b3a35; line-height: 1.6; }
+.labs-guide-test { padding: 20px 0; border-top: 1px solid rgba(230, 195, 129, 0.35); }
+.labs-guide-test-title { font-size: 1.2rem; font-weight: 700; margin: 0; color: #0d2b24; }
+.labs-guide-subtitle { font-weight: 600; color: #8a6d2f; margin-bottom: 0.5rem; }
+.labs-guide-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #0d2b24; margin: 1rem 0 0.4rem; }
+.labs-guide-list { padding-left: 1.2rem; margin-bottom: 0; }
+.labs-guide-closing { padding: 24px 0 8px; border-top: 1px solid rgba(230, 195, 129, 0.35); }
+.labs-guide-disclaimer { font-size: 0.8rem; color: #6b7873; margin: 20px 0 0; }
+@media (max-width: 575.98px) { .labs-guide-body { padding: 18px; } }

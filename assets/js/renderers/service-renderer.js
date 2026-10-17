@@ -103,6 +103,7 @@
       setSlot("protocolsHeadline", s.protocols.sectionHeadline);
       setSlot("protocolsSubheadline", s.protocols.sectionSubheadline);
       buildProtocols(s.protocols.items);
+      if (s.labsGuide) buildLabsGuide(s.labsGuide);
     } else {
       hide("protocols");
     }
@@ -414,6 +415,73 @@
     if (typeof window.initMobileTrack === "function") {
       window.initMobileTrack("protocols-desktop", "protocols-mobile-track", "protocols-mobile-indicators", hasSpecialty ? false : true);
     }
+  }
+
+  // ─── 10b. Build labs guide popup (button + modal) ─────────────────────────
+  function buildLabsGuide(g) {
+    const sub = document.querySelector('[data-slot="protocolsSubheadline"]');
+    if (sub && !document.getElementById("labs-guide-btn")) {
+      sub.insertAdjacentHTML(
+        "afterend",
+        `<button type="button" id="labs-guide-btn" class="btn btn-primary cta-btn rounded-pill px-4 mt-2" data-bs-toggle="modal" data-bs-target="#labs-guide-modal"><i class="fas fa-flask me-2"></i>${g.buttonLabel}</button>`
+      );
+    }
+
+    const tests = g.tests
+      .map(
+        (t, i) => `
+        <section class="labs-guide-test">
+          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap mb-2">
+            <h3 class="labs-guide-test-title">${i + 1}. ${t.name}</h3>
+            <span class="badge bg-warning text-dark fs-6 px-3 py-2 rounded-pill fw-bold">${t.price}</span>
+          </div>
+          <p class="labs-guide-subtitle">${t.subtitle}</p>
+          <p>${t.intro}</p>
+          <h4 class="labs-guide-label">${g.evaluatesLabel}</h4>
+          <ul class="labs-guide-list">${t.evaluates.map((e) => `<li>${e}</li>`).join("")}</ul>
+          <h4 class="labs-guide-label">${g.whyLabel}</h4>
+          <p class="mb-0">${t.why}</p>
+        </section>`
+      )
+      .join("");
+
+    const html = `
+      <div class="modal fade" id="labs-guide-modal" tabindex="-1" aria-labelledby="labs-guide-title" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content biomarker-modal-content">
+            <div class="modal-header biomarker-modal-header">
+              <div>
+                <div class="small text-uppercase fw-bold" style="letter-spacing: 1px; color: #e6c381;">${g.eyebrow}</div>
+                <h2 class="h4 text-white mb-0 mt-1" id="labs-guide-title">${g.title}</h2>
+              </div>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="${g.close}"></button>
+            </div>
+            <div class="modal-body labs-guide-body">
+              ${g.intro.map((p) => `<p>${p}</p>`).join("")}
+              ${tests}
+              <section class="labs-guide-closing text-center">
+                <h3 class="labs-guide-test-title">${g.closing.title}</h3>
+                <p>${g.closing.body}</p>
+                <p class="fw-bold mb-1">${g.closing.ready}</p>
+                <p>${g.closing.explore}</p>
+                <a href="#consultation" class="btn btn-primary cta-btn rounded-pill px-4" data-bs-dismiss="modal">${g.closing.cta}</a>
+              </section>
+              <p class="labs-guide-disclaimer">${g.disclaimer}</p>
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill px-3" data-bs-dismiss="modal">${g.close}</button>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    let container = document.getElementById("labs-guide-modal-root");
+    if (!container) {
+      container = document.createElement("div");
+      container.id = "labs-guide-modal-root";
+      document.body.appendChild(container);
+    }
+    container.innerHTML = html;
   }
 
   window.filterBiomarkers = function (index, query) {

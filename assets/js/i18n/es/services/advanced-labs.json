@@ -946,5 +946,115 @@
                      "question":  "¿Cómo empiezo con las pruebas de laboratorio?",
                      "answer":  "¡Llámenos hoy o reserve en línea! Nuestro equipo médico ordenará su panel de laboratorio después de una evaluación inicial."
                  }
-             ]
+             ],
+    "labsGuide":  {
+        "buttonLabel": "Ver la Guía de Pruebas de Laboratorio Avanzadas",
+        "eyebrow": "OVI Wellness | Pruebas de Laboratorio Avanzadas",
+        "title": "Mejores Conocimientos. Bienestar Más Inteligente. Atención Personalizada.",
+        "intro": [
+            "En OVI Wellness, creemos que entender su salud comienza por entender lo que sucede dentro de su cuerpo. Nuestras opciones integrales de pruebas de laboratorio ofrecen información valiosa sobre los niveles hormonales, la salud intestinal, el envejecimiento biológico, la función metabólica y más.",
+            "Ya sea que desee optimizar su bienestar o investigar inquietudes de salud específicas, nuestras opciones de pruebas ayudan a usted y a su proveedor a tomar decisiones informadas sobre su salud."
+        ],
+        "evaluatesLabel": "Qué Evalúa:",
+        "whyLabel": "¿Por Qué Elegir Esta Prueba?",
+        "tests": [
+            {
+                "name": "Prueba de Heces GI Gut Map",
+                "price": "$699",
+                "subtitle": "Análisis de Salud Intestinal y Microbioma",
+                "intro": "Su intestino desempeña un papel importante en la digestión, la función inmunológica y el bienestar general. Nuestra prueba avanzada Gut Map ofrece una mirada profunda a su microbioma intestinal mediante tecnología integral de análisis de heces.",
+                "evaluates": [
+                    "Bacterias intestinales beneficiosas y potencialmente dañinas",
+                    "Función digestiva y marcadores de absorción de nutrientes",
+                    "Marcadores de inflamación intestinal y permeabilidad intestinal",
+                    "Parásitos, levaduras y otros microorganismos",
+                    "Diversidad del microbioma y equilibrio bacteriano"
+                ],
+                "why": "Obtenga una comprensión más profunda de su salud digestiva e identifique posibles desequilibrios que podrían ayudar a orientar un plan de bienestar personalizado."
+            },
+            {
+                "name": "Panel de Micotoxinas en Orina",
+                "price": "$399",
+                "subtitle": "Evaluación de Exposición a Toxinas de Moho",
+                "intro": "¿Le preocupa una posible exposición al moho? Nuestro Panel de Micotoxinas analiza 16 micotoxinas asociadas con diversos tipos de moho.",
+                "evaluates": [
+                    "Toxinas seleccionadas relacionadas con el moho",
+                    "Ocratoxinas y aflatoxinas",
+                    "Micotoxinas tricotecenas",
+                    "Zearalenona y otras toxinas fúngicas"
+                ],
+                "why": "Esta prueba de orina especializada ofrece información sobre micotoxinas seleccionadas que pueden estar presentes en su cuerpo, aportando contexto adicional para una evaluación de posible exposición guiada por un proveedor."
+            },
+            {
+                "name": "TruAge + TruHealth",
+                "price": "$799",
+                "subtitle": "Pruebas de Edad Biológica y Longevidad",
+                "intro": "Su edad cronológica solo cuenta una parte de su historia. TruAge + TruHealth combina pruebas epigenéticas avanzadas con evaluaciones del envejecimiento biológico para explorar cómo envejece su cuerpo a nivel celular y de sistemas de órganos.",
+                "evaluates": [
+                    "Edad biológica estimada y ritmo de envejecimiento",
+                    "Patrones de envejecimiento en 11 sistemas de órganos",
+                    "Indicadores de salud metabólica e inflamación",
+                    "Marcadores de función inmunológica y salud hormonal",
+                    "Indicadores nutricionales y de exposición ambiental"
+                ],
+                "why": "Descubra información sobre su perfil de envejecimiento biológico, establezca una línea de base y dé seguimiento a los cambios en marcadores seleccionados de salud y envejecimiento a lo largo del tiempo."
+            },
+            {
+                "name": "Panel Hormonal OVI",
+                "price": "$99",
+                "subtitle": "Evaluación Hormonal y de Salud General",
+                "intro": "Las hormonas influyen en muchas funciones importantes en todo el cuerpo. Nuestro Panel Hormonal OVI evalúa los niveles hormonales clave junto con importantes marcadores de salud general.",
+                "evaluates": [
+                    "Testosterona total, libre y biodisponible",
+                    "Estradiol y globulina fijadora de hormonas sexuales (SHBG)",
+                    "Colesterol y marcadores de salud cardiovascular",
+                    "Función hepática y renal",
+                    "Conteos sanguíneos e indicadores metabólicos",
+                    "Antígeno prostático específico (PSA)"
+                ],
+                "why": "Obtenga una imagen más clara de los niveles hormonales clave y de importantes marcadores de salud para apoyar conversaciones informadas sobre el bienestar hormonal y posibles opciones de tratamiento."
+            },
+            {
+                "name": "Panel Funcional Completo OVI",
+                "price": "$499",
+                "subtitle": "Evaluación Integral de Salud",
+                "intro": "Adopte un enfoque más integral para entender su salud. Nuestro Panel Funcional Completo evalúa una amplia gama de biomarcadores relacionados con la salud metabólica, cardiovascular, tiroidea, nutricional y hormonal.",
+                "evaluates": [
+                    "Niveles hormonales y función tiroidea",
+                    "Colesterol y marcadores de riesgo cardiovascular",
+                    "Azúcar en sangre y salud metabólica",
+                    "Marcadores de inflamación e inmunidad",
+                    "Niveles de vitaminas y minerales",
+                    "Función hepática y renal",
+                    "Metales pesados y exposiciones ambientales seleccionados"
+                ],
+                "why": "Ideal para personas que buscan una evaluación amplia de su salud, este panel ofrece información de laboratorio detallada para orientar recomendaciones de bienestar personalizadas y el monitoreo continuo de la salud."
+            },
+            {
+                "name": "Panel de Enfermedades Infecciosas OVI",
+                "price": "$599",
+                "subtitle": "Detección Integral de Enfermedades Infecciosas",
+                "intro": "Nuestro Panel de Enfermedades Infecciosas evalúa marcadores de laboratorio asociados con una variedad de infecciones virales, bacterianas y de otro tipo, junto con indicadores generales de salud.",
+                "evaluates": [
+                    "Anticuerpos contra la enfermedad de Lyme",
+                    "Anticuerpos contra el virus de Epstein-Barr (EBV) y el citomegalovirus (CMV)",
+                    "Marcadores de hepatitis A, B y C",
+                    "Detección de VIH",
+                    "Anticuerpos contra el virus del herpes simple (HSV-1 y HSV-2)",
+                    "Anticuerpos relacionados con Candida y otros marcadores infecciosos",
+                    "Conteos sanguíneos y función hepática y renal"
+                ],
+                "why": "Este panel ofrece un amplio conjunto de resultados de laboratorio que pueden ayudar a su proveedor de salud a evaluar infecciones sospechadas y determinar si es apropiado realizar pruebas adicionales."
+            }
+        ],
+        "closing": {
+            "title": "Su Salud Merece un Enfoque Personalizado",
+            "body": "En OVI Wellness, las pruebas avanzadas son más que números en un informe de laboratorio. Se trata de obtener información significativa y usarla para guiar su camino hacia el bienestar.",
+            "ready": "¿Listo para saber más sobre su salud?",
+            "explore": "Explore nuestras opciones de pruebas de laboratorio avanzadas y programe su cita con OVI Wellness.",
+            "cta": "Reserve Su Consulta de Pruebas de Laboratorio"
+        },
+        "disclaimer": "Las recomendaciones de pruebas, la interpretación y la atención de seguimiento son determinadas por su proveedor de salud. Los resultados de laboratorio por sí solos no establecen un diagnóstico. Ciertas evaluaciones especializadas tienen limitaciones y pueden no ser apropiadas para todos los pacientes.",
+        "close": "Cerrar"
+    }
 }
