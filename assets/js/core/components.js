@@ -2,6 +2,14 @@
 // Injects shared structural components (navbar, footer, mobile CTA) into every page.
 // This eliminates duplicated HTML across all pages.
 
+// Google Tag Manager | Mack Media Group — loads site-wide; do not remove.
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N75755JZ');
+// End Google Tag Manager
+
 (function () {
   "use strict";
 
@@ -785,6 +793,16 @@
   // the i18nLoaded event instead.  The once-flag prevents double execution
   // if clinicData is already populated by the time this script runs.
   var _componentsRendered = false;
+
+  // CallRail - MMG. Loaded last so the number swap sees the phone numbers
+  // rendered into the navbar, footer and contact slots above.
+  function loadCallRail() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cdn.callrail.com/companies/171158122/f1c2da7205062a31fcc8/12/swap.js";
+    document.body.appendChild(script);
+  }
+
   function initComponents() {
     if (_componentsRendered) return;
     _componentsRendered = true;
@@ -795,6 +813,7 @@
     initNavbarBehavior();
     initConsultationModal();
     injectContactInfo();
+    loadCallRail();
   }
 
   document.addEventListener("DOMContentLoaded", function () {
