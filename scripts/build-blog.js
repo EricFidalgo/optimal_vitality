@@ -339,6 +339,9 @@ function buildPage(template, post, tocLabel) {
   html = replaceOnce(html, /(<span id="articleDate">)(<\/span>)/, (m, open, close) => open + esc(en.date) + close, "#articleDate");
   html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en, tocLabel) + close, "#article-sections-container");
 
+  // The old-address redirect only belongs on the legacy /article page, not on generated post pages.
+  html = replaceOnce(html, /[ \t]*<!-- legacy-redirect:start -->[\s\S]*?<!-- legacy-redirect:end -->\r?\n?/, "", "legacy-redirect block");
+
   // The page lives one folder down (blog/<slug>.html): re-root the template's asset paths, and tell the
   // shared scripts (components.js, main.js, i18n.js) to do the same.
   html = html.replace(/\b(href|src)="assets\//g, '$1="../assets/');

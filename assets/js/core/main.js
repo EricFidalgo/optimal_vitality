@@ -73,14 +73,17 @@ function initMain() {
 
     // =========================================================================
     // INFINITE MOBILE SWIPE TRACK ENGINE
-    // Clones desktop source children 20x into a horizontal scroll track,
-    // then silently teleports the scroll position back to the center when the
-    // user reaches either edge — creating an effectively infinite loop.
+    // Copies the desktop source children into a horizontal swipe track (only where
+    // the swipe track is actually shown). Infinite tracks start as ONE real set of
+    // cards; the extra copies that make the loop endless are added on the first
+    // touch/scroll/keypress (3 sets in total, copies marked aria-hidden), and the
+    // scroll position is silently moved back to the middle set when the user
+    // leaves it. Crawlers therefore see each card once, not twenty times.
     // =========================================================================
     /**
      * Initializes a mobile swipe track by cloning desktop source elements.
-     * Supports either infinite scroll snapping loop (cloning 20x + silent teleportation)
-     * or standard scroll behavior (cloning 1x).
+     * Supports either an infinite scroll snapping loop (lazy: see above)
+     * or standard scroll behavior (one copy).
      */
     function initMobileTrack(desktopId, trackId, dotsId = null, isInfinite = false, initialIndex = 0) {
         window.initMobileTrack = initMobileTrack;
@@ -89,6 +92,27 @@ function initMain() {
         const mobileDots = dotsId ? document.getElementById(dotsId) : null;
 
         if (!desktopContainer || !mobileTrack) return;
+
+        // Build the swipe copy only where it is shown. On wider screens it is hidden, so skip it
+        // (no duplicate cards in the page) and build it if the window is later narrowed.
+        if (mobileTrack.getClientRects().length === 0) {
+            if (!mobileTrack.dataset.awaitingBuild) {
+                mobileTrack.dataset.awaitingBuild = '1';
+                let resizeTimer;
+                const onResize = () => {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(() => {
+                        if (mobileTrack.getClientRects().length > 0) {
+                            window.removeEventListener('resize', onResize);
+                            delete mobileTrack.dataset.awaitingBuild;
+                            initMobileTrack(desktopId, trackId, dotsId, isInfinite, initialIndex);
+                        }
+                    }, 120);
+                };
+                window.addEventListener('resize', onResize, { passive: true });
+            }
+            return;
+        }
 
         const originals = Array.from(desktopContainer.children);
         const numOriginals = originals.length;
@@ -116,26 +140,29 @@ function initMain() {
             }
         }
 
-        // 2. Clone items into the track
-        const SETS = actualInfinite ? 20 : 1;
+        // 2. Copy the items into the track (one real set; loop copies are added lazily below)
+        const makeItem = (item, index, isLoopCopy) => {
+            const el = document.createElement('div');
+            el.className = 'native-scroll-item';
+            el.setAttribute('data-original-index', index);
+            if (isLoopCopy) {
+                el.setAttribute('data-loop-copy', 'true');
+                el.setAttribute('aria-hidden', 'true');
+            }
+            el.innerHTML = item.className.match(/\bcol-/) ? item.innerHTML : '';
+            if (!el.innerHTML) el.appendChild(item.cloneNode(true));
+            return el;
+        };
+
         mobileTrack.innerHTML = '';
         mobileTrack.style.opacity = '0';
         mobileTrack.style.transition = 'opacity 0.2s ease-in';
 
-        for (let i = 0; i < SETS; i++) {
-            originals.forEach((item, index) => {
-                const clone = document.createElement('div');
-                clone.className = 'native-scroll-item';
-                clone.setAttribute('data-original-index', index);
-                clone.innerHTML = item.className.match(/\bcol-/) ? item.innerHTML : '';
-                if (!clone.innerHTML) clone.appendChild(item.cloneNode(true));
-                mobileTrack.appendChild(clone);
-            });
-        }
+        originals.forEach((item, index) => mobileTrack.appendChild(makeItem(item, index, false)));
 
         // 3. Force start all the way to the left (scrollLeft = 0)
         setTimeout(() => {
-            const items = mobileTrack.querySelectorAll('.native-scroll-item');
+            let items = mobileTrack.querySelectorAll('.native-scroll-item');
             const dots = mobileDots ? mobileDots.querySelectorAll('button') : [];
 
             // Reset scroll position flush to left
@@ -203,23 +230,57 @@ function initMain() {
             }, { passive: true });
 
             if (actualInfinite) {
+                const LOOP_SETS = 3;
+                const middleSet = Math.floor(LOOP_SETS / 2);
+                let expanded = false;
+                const screenLeft = (el) => el.getBoundingClientRect().left - mobileTrack.getBoundingClientRect().left;
+
+                // Until the loop copies exist there is no card to the left, so give the first card a left margin that
+                // centers it, exactly where the snap would put it. Nothing then moves when the copies are added.
+                if (items[0]) {
+                    const padLeft = parseFloat(getComputedStyle(mobileTrack).paddingLeft) || 0;
+                    const centerMargin = Math.max(0, (mobileTrack.clientWidth - items[0].offsetWidth) / 2 - padLeft);
+                    items[0].style.marginLeft = centerMargin + 'px';
+                }
+
+                // First interaction: add the loop copies around the real set and keep the view exactly where it is.
+                const expandForLoop = () => {
+                    if (expanded) return;
+                    expanded = true;
+                    const anchor = mobileTrack.querySelector('.native-scroll-item.active') || items[0];
+                    const screenBefore = screenLeft(anchor);
+                    if (items[0]) items[0].style.marginLeft = '';
+                    const makeSet = () => {
+                        const frag = document.createDocumentFragment();
+                        originals.forEach((item, index) => frag.appendChild(makeItem(item, index, true)));
+                        return frag;
+                    };
+                    for (let i = 0; i < middleSet; i++) mobileTrack.insertBefore(makeSet(), mobileTrack.firstChild);
+                    for (let i = 0; i < LOOP_SETS - middleSet - 1; i++) mobileTrack.appendChild(makeSet());
+                    // The original set is now the middle one and stays the "real" content.
+                    items = mobileTrack.querySelectorAll('.native-scroll-item');
+                    mobileTrack.style.scrollBehavior = 'auto';
+                    mobileTrack.scrollLeft += screenLeft(anchor) - screenBefore;
+                    setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
+                };
+                ['pointerdown', 'touchstart', 'wheel', 'keydown', 'focusin'].forEach((evt) =>
+                    mobileTrack.addEventListener(evt, expandForLoop, { once: true, passive: true }));
+
+                // When scrolling settles outside the middle set, jump to the identical card in the middle set.
                 let scrollTimeout;
                 mobileTrack.addEventListener('scroll', () => {
                     clearTimeout(scrollTimeout);
                     scrollTimeout = setTimeout(() => {
-                        const currentScroll = mobileTrack.scrollLeft;
-                        const maxScroll = mobileTrack.scrollWidth - mobileTrack.clientWidth;
-                        if (currentScroll < maxScroll * 0.15 || currentScroll > maxScroll * 0.85) {
-                            const activeDot = mobileDots ? mobileDots.querySelector('.active') : null;
-                            if (activeDot) {
-                                const activeIdx = parseInt(activeDot.getAttribute('data-index'));
-                                const middleStartIndex = Math.floor(SETS / 2) * numOriginals;
-                                const targetItem = items[middleStartIndex + activeIdx];
-                                mobileTrack.style.scrollBehavior = 'auto';
-                                mobileTrack.scrollLeft = targetItem.offsetLeft;
-                                setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
-                            }
-                        }
+                        if (!expanded) return;
+                        const activeIndex = Array.prototype.findIndex.call(items, (it) => it.classList.contains('active'));
+                        if (activeIndex < 0 || Math.floor(activeIndex / numOriginals) === middleSet) return;
+                        const activeItem = items[activeIndex];
+                        const target = items[middleSet * numOriginals + (activeIndex % numOriginals)];
+                        if (!target) return;
+                        const screenBefore = screenLeft(activeItem);
+                        mobileTrack.style.scrollBehavior = 'auto';
+                        mobileTrack.scrollLeft += screenLeft(target) - screenBefore;
+                        setTimeout(() => { mobileTrack.style.scrollBehavior = 'smooth'; }, 50);
                     }, 150);
                 });
 

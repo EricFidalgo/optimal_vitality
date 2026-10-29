@@ -65,11 +65,6 @@
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://oviwellness.com/article</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
   <!-- blog-posts:start -->
   <url>
     <loc>https://oviwellness.com/blog/low-testosterone-symptoms-in-men-when-to-get-tested</loc>
