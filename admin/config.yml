@@ -1,0 +1,80 @@
+# Blog editor configuration (Sveltia CMS). Open https://oviwellness.com/admin/
+# Sign in with a GitHub token that has write access to this repo - see docs/BLOG.md.
+
+backend:
+  name: github
+  repo: EricFidalgo/optimal_vitality
+  branch: main
+
+site_url: https://oviwellness.com
+display_url: https://oviwellness.com
+locale: en
+
+media_folder: assets/images/blog
+public_folder: /assets/images/blog
+
+collections:
+  - name: blog
+    label: Blog posts
+    label_singular: Blog post
+    folder: content/blog
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - name: published
+        label: Published
+        widget: boolean
+        default: false
+        hint: "Off = draft. Nothing goes on the website until this is on."
+      - name: date
+        label: Publish date
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+        picker_utc: true
+      - name: title
+        label: Title (English)
+        widget: string
+        hint: "The web address is made from the title when the post is first created, so get it right before the first save."
+      - name: category
+        label: Category (English)
+        widget: string
+        hint: "For example: Hormone Optimization, Detox & Recovery, Peptides"
+      - name: excerpt
+        label: Short summary (English)
+        widget: text
+        hint: "Shown on the blog page and in Google results. Aim for about 150 characters."
+      - name: content
+        label: Sections (English)
+        label_singular: Section
+        widget: list
+        summary: "{{fields.title}}"
+        hint: "The first section is the opening paragraph and its title is not shown. Separate paragraphs with a blank line."
+        fields:
+          - { name: title, label: Section heading, widget: string, required: false }
+          - { name: body, label: Text, widget: text }
+      - name: es
+        label: Spanish version
+        widget: object
+        required: false
+        collapsed: true
+        hint: "Leave empty and the Spanish site shows the English text for this post."
+        fields:
+          - { name: title, label: Title (Spanish), widget: string, required: false }
+          - { name: category, label: Category (Spanish), widget: string, required: false }
+          - { name: excerpt, label: Short summary (Spanish), widget: text, required: false }
+          - name: content
+            label: Sections (Spanish)
+            label_singular: Section
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            hint: "Same number of sections as English, in the same order."
+            fields:
+              - { name: title, label: Section heading, widget: string, required: false }
+              - { name: body, label: Text, widget: text, required: false }

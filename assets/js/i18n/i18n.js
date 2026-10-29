@@ -320,7 +320,7 @@
         let title, desc;
         if (path.includes("/services/")) {
            return; // Service renderer handles its own SEO dynamically
-        } else if (page === "blog" || page === "article") {
+        } else if (page === "blog" || page === "article" || page.startsWith("article-")) {
            title = window.clinicData.blogPage?.seo?.title;
            desc = window.clinicData.blogPage?.seo?.description;
         } else if (page === "team") {

@@ -104,7 +104,7 @@
               <p class="card-text text-muted mb-4 small" style="line-height: 1.6; font-size: 0.88rem;">${article.excerpt}</p>
               <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: rgba(0,0,0,0.06) !important;">
                 <span class="text-muted small" style="font-size: 0.8rem;"><i class="far fa-calendar-alt me-1 text-muted"></i> ${article.date}</span>
-                <a href="article?id=${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
+                <a href="article-${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
                   ${readArticleText} <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
                 </a>
               </div>
@@ -120,7 +120,8 @@
 
   function renderArticlePage() {
     const urlParams = new URLSearchParams(window.location.search);
-    const articleId = urlParams.get("id");
+    // Generated post pages (article-<slug>.html) carry their id on <body>; the legacy article?id=... URL uses the query string.
+    const articleId = urlParams.get("id") || document.body.dataset.articleId || null;
 
     const ui = blogPage?.ui || {};
 
@@ -162,6 +163,12 @@
     document.title = `${article.title} — OVI Wellness`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute("content", article.excerpt);
+
+    // Old article?id=... links point search engines at the post's own page.
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical && !document.body.dataset.articleId) {
+      canonical.setAttribute("href", `https://oviwellness.com/article-${article.id}`);
+    }
 
     // Populate standard text slots
     setSlot("articleCategory", article.category);

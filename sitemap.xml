@@ -70,6 +70,44 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <!-- blog-posts:start -->
+  <url>
+    <loc>https://oviwellness.com/article-cellular-detox-protocols</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://oviwellness.com/article-regenerative-PRP-protocols</loc>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://oviwellness.com/article-glp-1-side-effects</loc>
+    <lastmod>2026-08-02</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://oviwellness.com/article-precision-biomarker-testing</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://oviwellness.com/article-trt-myths</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://oviwellness.com/article-benefits-of-peptide-therapy</loc>
+    <lastmod>2026-07-02</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- blog-posts:end -->
   <url>
     <loc>https://oviwellness.com/legal</loc>
     <priority>0.3</priority>
