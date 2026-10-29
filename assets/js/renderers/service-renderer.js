@@ -51,6 +51,7 @@
     // --- Hero ---
     setSlot("heroBadge", s.heroBadge);
     setSlot("heroHeadline", s.heroHeadline);
+    setSlot("heroTitle", s.heroTitle);
     setSlot("heroSubheadline", s.heroSubheadline);
     setSlot("heroCTA", s.heroCTA || "Book Your Doctor Call Today");
 

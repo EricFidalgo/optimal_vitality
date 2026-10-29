@@ -20,6 +20,7 @@
     "pageTitle": "OVI Labs y Laboratorios Especializados - Pruebas Diagnosticas | OVI Wellness",
     "pageDescription": "Pruebas de laboratorio especializadas en OVI Wellness, St. Petersburg, FL. GI Gut Map, micotoxinas, edad biologica TruAge y paneles funcionales Quest.",
     "heroHeadline": "OVI Labs y<br><span class=\"text-primary\">Laboratorios Especializados</span>",
+    "heroTitle": "Pruebas de Laboratorio Avanzadas en St. Petersburg, FL",
     "heroSubheadline": "Paneles diagnosticos guiados por medicos, longevidad epigenetica y medicina funcional en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
@@ -1078,6 +1079,7 @@
     "pageTitle": "Protocolos clínicos guiados por médicos — OVI Wellness",
     "pageDescription": "Protocolos clínicos supervisados médicamente en St. Petersburg, FL. Evaluaciones para exposición a micotoxinas y apoyo de la salud digestiva.",
     "heroHeadline": "Apoye su salud<br><span class=\"text-primary\">digestiva y bienestar</span>",
+    "heroTitle": "Desintoxicación de Moho e Intestino en St. Petersburg, FL",
     "heroSubheadline": "Protocolos clínicos revisados por proveedores de atención médica con licencia en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
@@ -1413,7 +1415,7 @@
     "tabLabel": "Manejo de Peso GLP-1",
     "href": "glp-1therapies",
     "title": "Manejo Médico del Peso con Opciones de Tratamiento Guiadas por Médicos",
-    "lead": "Médicos certificados guían su plan para apoyar sus objetivos de composición corporal, saciedad y niveles de energía.",
+    "lead": "Un médico certificado guía su plan para apoyar sus objetivos de composición corporal, saciedad y niveles de energía.",
     "description": "Para pacientes elegibles, los medicamentos recetados para el control de peso pueden reducir el apetito y apoyar el manejo del peso cuando se combinan con nutrición, actividad física y monitoreo clínico continuo. Los resultados individuales varían.",
     "icon": "fa-weight-scale",
     "delay": "-1s",
@@ -1428,6 +1430,7 @@
     "pageTitle": "Manejo Médico del Peso GLP-1 Guiado por Médicos — OVI Wellness",
     "pageDescription": "Protocolos de manejo médico del peso en St. Petersburg, FL. Medicamentos aprobados por la FDA pueden ser recetados cuando estén indicados, bajo supervisión clínica.",
     "heroHeadline": "Optimización<br><span class=\"text-primary\">Metabólica</span> Redefinida",
+    "heroTitle": "Control Médico de Peso con GLP-1 en St. Petersburg, FL",
     "heroSubheadline": "Protocolos de manejo de peso supervisados por proveedores de atención médica con licencia en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación clínica",
     "quiz": {
@@ -1741,6 +1744,7 @@
     "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
     "pageDescription": "Terapia hormonal bioidéntica y protocolos de TRT en St. Petersburg, FL. Supervisado médicamente por proveedores de atención médica con licencia.",
     "heroHeadline": "Apoyo para su<br><span class=\"text-primary\">Energía y Bienestar</span>",
+    "heroTitle": "TRT y Terapia Hormonal en St. Petersburg, FL",
     "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo supervisión clínica en St. Petersburg, FL.",
     "heroCTA": "Programe su llamada médica hoy",
     "quiz": {
@@ -2094,7 +2098,8 @@
     "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
     "pageDescription": "Terapia de vitaminas IV guiada por médicos en St. Petersburg, FL. Prescrita y supervisada por proveedores de atención médica con licencia.",
     "heroHeadline": "Hidratación y<br><span class=\"text-primary\">Soporte Celular</span>",
-    "heroSubheadline": "Terapias IV prescritas y supervisadas médicamente por médicos certificados en St. Petersburg, FL.",
+    "heroTitle": "Terapia IV en St. Petersburg, FL",
+    "heroSubheadline": "Terapias IV prescritas y supervisadas médicamente por un médico certificado en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
       "badge": "Evaluación rápida",
@@ -2447,6 +2452,7 @@
     "pageTitle": "Terapia con Péptidos Guiada por Médicos — OVI Wellness",
     "pageDescription": "Consulta sobre terapia con péptidos en St. Petersburg, FL. Prescrita por proveedores de atención médica con licencia tras evaluación médica.",
     "heroHeadline": "Apoyo a la<br><span class=\"text-primary\">Recuperación Celular</span>",
+    "heroTitle": "Terapia con Péptidos en St. Petersburg, FL",
     "heroSubheadline": "Protocolos de péptidos prescritos bajo supervisión clínica en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
@@ -2845,6 +2851,7 @@
     "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
     "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. Terapias PRP y enfoques para el bienestar supervisados por proveedores médicos con licencia.",
     "heroHeadline": "Apoyo<br><span class=\"text-primary\">Regenerativo</span> Clínico",
+    "heroTitle": "Medicina Regenerativa con PRP en St. Petersburg, FL",
     "heroSubheadline": "Protocolos regenerativos prescritos bajo supervisión clínica en St. Petersburg, FL.",
     "heroCTA": "Programe su llamada médica hoy",
     "quiz": {
@@ -3198,6 +3205,7 @@
     "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
     "pageDescription": "Protocolos de bienestar sexual prescritos por médicos en St. Petersburg, FL. Terapias hormonales y de apoyo vascular guiadas por proveedores de atención médica con licencia.",
     "heroHeadline": "Apoyo a su<br><span class=\"text-primary\">Bienestar Íntimo</span>",
+    "heroTitle": "Tratamiento de Salud Sexual en St. Petersburg, FL",
     "heroSubheadline": "Atención médica integral evaluada y prescrita por médicos en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación clínica",
     "quiz": {

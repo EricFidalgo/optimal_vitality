@@ -725,6 +725,40 @@ hr {
   color: var(--primary-color);
 }
 
+/* Hero pattern (home + service pages): the slogan is a <p> (the large display line) and the
+   page's single H1 comes right after it as a smaller, clearly visible service + city subtitle.
+   Code order is the visual order. .hero-display copies the look the slogan had as an <h1>. */
+.hero p.hero-display {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  color: var(--bg-white);
+  max-width: none;
+  margin: 0 0 12px;
+  padding: 0;
+  text-shadow: none;
+}
+
+.hero p.hero-display span {
+  color: var(--primary-color);
+}
+
+.hero h1.hero-subtitle {
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: 0.3px;
+  color: var(--bg-white);
+  max-width: 760px;
+  margin: 0 auto 1.25rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-wrap: balance;
+}
+
 .hero p {
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: var(--bg-white);
@@ -2179,6 +2213,16 @@ hr {
     font-size: 1.1rem;
     line-height: 1.5;
     padding: 0 15px;
+  }
+  .hero p.hero-display {
+    font-size: clamp(2.7rem, 10.5vw, 3.2rem);
+    line-height: 1.05;
+    padding: 0;
+  }
+  .hero h1.hero-subtitle {
+    font-size: 1.15rem;
+    padding: 0 15px;
+    margin-bottom: 1rem;
   }
 
   .navbar.fixed-top .navbar-container {
