@@ -98,3 +98,11 @@ node scripts/build-blog.js
 
 Generated files (`blog/*.html`, the `posts` list in `assets/js/i18n/*/blog.json`, and the
 blog block in `sitemap.xml`) are overwritten by the build. Edit `content/blog/*.json` instead.
+
+## Page titles and descriptions (SEO)
+
+Static `<title>`, meta description and share-card tags for the home, team and service pages are written
+from the English data files by `node scripts/sync-seo.js` (`npm run sync:seo`; `npm run check:seo` only
+checks). Edit the text in `assets/js/i18n/en/services.json` (and the matching per-service file),
+`pages/home.json` or `team.json`, not in the HTML. The GitHub Action runs the sync on every push that
+changes those files, so the HTML a crawler downloads always matches the page after JavaScript runs.

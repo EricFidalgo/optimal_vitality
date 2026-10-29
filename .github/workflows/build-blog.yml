@@ -11,6 +11,10 @@ on:
       - "article.html"
       - "package.json"
       - "package-lock.json"
+      - "scripts/sync-seo.js"
+      - "assets/js/i18n/en/services.json"
+      - "assets/js/i18n/en/pages/home.json"
+      - "assets/js/i18n/en/team.json"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +40,9 @@ jobs:
 
       - name: Build blog pages
         run: node scripts/build-blog.js
+
+      - name: Sync page titles and descriptions
+        run: node scripts/sync-seo.js
 
       - name: Commit generated files
         run: |

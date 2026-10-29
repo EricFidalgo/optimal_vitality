@@ -9,7 +9,9 @@
     "import:post": "node scripts/import-post.js",
     "test-site:up": "node scripts/test-site.js up",
     "test-site:down": "node scripts/test-site.js down",
-    "test-site:status": "node scripts/test-site.js status"
+    "test-site:status": "node scripts/test-site.js status",
+    "sync:seo": "node scripts/sync-seo.js",
+    "check:seo": "node scripts/sync-seo.js --check"
   },
   "dependencies": {
     "marked": "18.1.2"
