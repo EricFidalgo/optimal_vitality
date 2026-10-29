@@ -180,6 +180,8 @@
     const sectionsContainer = document.getElementById("article-sections-container");
     if (sectionsContainer && Array.isArray(article.content)) {
       let sectionsHtml = article.image ? figureHtml(article.image, article.imageAlt, true) : "";
+      sectionsHtml += tocHtml(article, ui.tableOfContents || "Table of Contents");
+      const ids = sectionIds(article.content);
       article.content.forEach((section, index) => {
         const sectionImage = section.image ? figureHtml(section.image, section.imageAlt) : "";
         if (index === 0) {
@@ -188,7 +190,7 @@
         } else {
           sectionsHtml += `
             <div class="article-section">
-              <h3>${section.title}</h3>
+              <h3 id="${escapeHtml(ids[index])}">${section.title}</h3>
               ${section.body}${sectionImage}
             </div>`;
         }
@@ -204,7 +206,41 @@
     return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  // Keep this markup identical to figure() in scripts/build-blog.js (the prerendered page).
+  // Keep figureHtml, sectionIds and tocHtml identical to the same helpers in scripts/build-blog.js (the prerendered page).
+  const RESERVED_IDS = ["consultation", "faqs", "home", "navbar-root", "footer-root", "lower-content"];
+
+  function headingSlug(t) {
+    return (
+      String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") ||
+      "section"
+    );
+  }
+
+  function sectionIds(content) {
+    const used = new Set(RESERVED_IDS);
+    return content.map((s) => {
+      const base = headingSlug(s.title);
+      let id = base;
+      for (let n = 2; used.has(id); n++) id = base + "-" + n;
+      used.add(id);
+      return id;
+    });
+  }
+
+  function tocHtml(article, label) {
+    if (!article.toc) return "";
+    const ids = sectionIds(article.content);
+    const items = article.content
+      .map((s, i) => ({ s, id: ids[i], i }))
+      .filter(({ s, i }) => i > 0 && s.title && !/^(disclaimer|sources|descargo|fuentes)\b/i.test(s.title.trim()));
+    if (items.length < 2) return "";
+    return (
+      `<nav class="article-toc" aria-label="${escapeHtml(label)}"><p class="article-toc-title">${escapeHtml(label)}</p><ol>` +
+      items.map(({ s, id }) => `<li><a href="#${escapeHtml(id)}">${escapeHtml(s.title)}</a></li>`).join("") +
+      "</ol></nav>"
+    );
+  }
+
   function figureHtml(src, alt, eager) {
     return `<figure class="article-figure"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}"${eager ? "" : ' loading="lazy"'}></figure>`;
   }

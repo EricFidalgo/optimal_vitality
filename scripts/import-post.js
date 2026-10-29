@@ -18,7 +18,8 @@
  *   - Title comes from the first "# " heading.
  *   - Each "## " heading starts a section; text before the first one becomes the opening section.
  *   - "Sources:" and "Disclaimer:" paragraphs become their own sections.
- *   - Removes the Google Docs table of contents, "[END ARTICLE]" and everything after it,
+ *   - Replaces the Google Docs table of contents with an automatic one (show_toc),
+ *     removes "[END ARTICLE]" and everything after it,
  *     [button ...] placeholders, embedded images and tracking parameters on links.
  *   - Tidies tables (empty header rows, stray asterisks).
  *   - Lists anything that still needs a human (placeholders, odd headings, missing fields).
@@ -83,11 +84,14 @@ let lines = text.split("\n").map((l) => (l.trim() === "" ? "" : l.replace(/\s+$/
 lines = lines.filter((l) => !/^#\s+\**Tab \d+\**\s*$/i.test(l));
 
 // Table of contents: the heading plus the run of links to #heading=... anchors that follows it.
+// The post page builds its own contents list from the section headings, so the Doc's copy is dropped
+// and "show_toc" is switched on instead.
+let hadToc = false;
 {
   const out = [];
   let skipping = false;
   for (const l of lines) {
-    if (/^#{1,6}\s+\**table of contents\**\s*$/i.test(l)) { skipping = true; continue; }
+    if (/^#{1,6}\s+\**table of contents\**\s*$/i.test(l)) { skipping = true; hadToc = true; continue; }
     if (skipping) {
       if (l === "" || /^\[\**.*?\**\]\(https:\/\/docs\.google\.com\/[^)]*#heading=[^)]*\)\s*$/.test(l)) continue;
       skipping = false;
@@ -148,6 +152,22 @@ lines = lines.map((l) => {
     } else {
       out.push(l);
     }
+  }
+  lines = out;
+}
+
+// Lists: Docs indents top-level list items by two spaces. Markdown reads an item indented to the
+// level of the previous item's text as a nested list, so remove the shared indent from each list block.
+{
+  const itemRe = /^(\s*)([-*+]|\d+[.)])\s/;
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (!itemRe.test(lines[i])) { out.push(lines[i]); continue; }
+    const block = [];
+    while (i < lines.length && (itemRe.test(lines[i]) || (lines[i] !== "" && /^\s+\S/.test(lines[i])))) block.push(lines[i++]);
+    i--;
+    const indent = Math.min(...block.filter((l) => itemRe.test(l)).map((l) => itemRe.exec(l)[1].length));
+    for (const l of block) out.push(l.replace(new RegExp("^ {0," + indent + "}"), ""));
   }
   lines = out;
 }
@@ -253,10 +273,12 @@ const post = {
   title,
   category: opts.category || "",
   excerpt,
+  ...(hadToc ? { show_toc: true } : {}),
   content,
 };
 fs.writeFileSync(out, JSON.stringify(post, null, 2) + "\n");
 
+if (hadToc) warn("The Doc had a table of contents: the post builds its own from the section headings (Show table of contents is on).");
 if (!opts.category) warn("No category set. Pass --category or fill it in the editor.");
 warn("Excerpt was made from the opening paragraph. Check it, and add an SEO title and meta description in the editor.");
 warn("No featured image and no Spanish version yet.");

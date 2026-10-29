@@ -23,7 +23,8 @@
       "expectedResults": "Expected Results",
       "downtime": "Potential Downtime",
       "clinicalRisks": "Clinical Risks"
-    }
+    },
+    "tableOfContents": "Table of Contents"
   },
   "posts": [
     {

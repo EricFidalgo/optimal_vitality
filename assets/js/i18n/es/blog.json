@@ -22,7 +22,8 @@
       "timelineExpectations": "Expectativas de Tiempo",
       "expectedResults": "Resultados Esperados",
       "clinicalRisks": "Riesgos Clínicos"
-    }
+    },
+    "tableOfContents": "Tabla de contenido"
   },
   "posts": [
     {

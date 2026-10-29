@@ -49,6 +49,11 @@ collections:
         label: Short summary (English)
         widget: text
         hint: "Shown on the blog page and in Google results. Aim for about 150 characters."
+      - name: show_toc
+        label: Show table of contents
+        widget: boolean
+        default: false
+        hint: "Adds a clickable list of the section headings at the top of the post (not the opening section, Disclaimer or Sources)."
       - name: seo_title
         label: SEO title (English)
         widget: string

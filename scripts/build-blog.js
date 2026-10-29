@@ -180,6 +180,10 @@ function loadPosts() {
       excerpt: esReady && hasText(es.excerpt) ? es.excerpt.trim() : enPost.excerpt,
       content: esReady ? cleanContent(es.content) : enPost.content,
     };
+    if (src.show_toc === true) {
+      enPost.toc = true;
+      esPost.toc = true;
+    }
     // Spanish SEO values fall back to the English ones; the image is shared.
     addSeo(esPost, esReady ? es : src);
     if (!esPost.seoTitle && enPost.seoTitle) esPost.seoTitle = enPost.seoTitle;
@@ -228,25 +232,60 @@ function replaceOnce(html, regex, replacement, what) {
   return html.replace(regex, typeof replacement === "function" ? replacement : () => replacement);
 }
 
-// Keep this markup identical to what blog-renderer.js builds in the browser.
+// Keep this markup (and the helpers below) identical to what blog-renderer.js builds in the browser.
+const RESERVED_IDS = new Set(["consultation", "faqs", "home", "navbar-root", "footer-root", "lower-content"]);
+
+function headingSlug(t) {
+  return (
+    String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") ||
+    "section"
+  );
+}
+
+function sectionIds(content) {
+  const used = new Set(RESERVED_IDS);
+  return content.map((s) => {
+    const base = headingSlug(s.title);
+    let id = base;
+    for (let n = 2; used.has(id); n++) id = base + "-" + n;
+    used.add(id);
+    return id;
+  });
+}
+
+function tocHtml(post, label) {
+  if (!post.toc) return "";
+  const ids = sectionIds(post.content);
+  const items = post.content
+    .map((s, i) => ({ s, id: ids[i], i }))
+    .filter(({ s, i }) => i > 0 && s.title && !/^(disclaimer|sources|descargo|fuentes)\b/i.test(s.title.trim()));
+  if (items.length < 2) return "";
+  return (
+    `<nav class="article-toc" aria-label="${esc(label)}"><p class="article-toc-title">${esc(label)}</p><ol>` +
+    items.map(({ s, id }) => `<li><a href="#${esc(id)}">${esc(s.title)}</a></li>`).join("") +
+    "</ol></nav>"
+  );
+}
+
 function figure(src, alt, eager) {
   return `<figure class="article-figure"><img src="${esc(src)}" alt="${esc(alt || "")}"${eager ? "" : ' loading="lazy"'}></figure>`;
 }
 
-function renderSections(post) {
+function renderSections(post, tocLabel) {
   const featured = post.image ? figure(post.image, post.imageAlt, true) : "";
+  const ids = sectionIds(post.content);
   const body = post.content
     .map((section, index) => {
       const img = section.image ? figure(section.image, section.imageAlt) : "";
       return index === 0
         ? `<div class="article-section">${section.body}${img}</div>`
-        : `<div class="article-section"><h3>${esc(section.title)}</h3>${section.body}${img}</div>`;
+        : `<div class="article-section"><h3 id="${esc(ids[index])}">${esc(section.title)}</h3>${section.body}${img}</div>`;
     })
     .join("");
-  return featured + body;
+  return featured + tocHtml(post, tocLabel) + body;
 }
 
-function buildPage(template, post) {
+function buildPage(template, post, tocLabel) {
   const en = post.en;
   const url = `${SITE}/article-${post.id}`;
   const title = en.seoTitle || `${en.title} — OVI Wellness`;
@@ -293,7 +332,7 @@ function buildPage(template, post) {
   html = replaceOnce(html, /(<span id="articleCategory"[^>]*>)(<\/span>)/, (m, open, close) => open + esc(en.category) + close, "#articleCategory");
   html = replaceOnce(html, /(<h1 id="articleTitle"[^>]*>)(<\/h1>)/, (m, open, close) => open + esc(en.title) + close, "#articleTitle");
   html = replaceOnce(html, /(<span id="articleDate">)(<\/span>)/, (m, open, close) => open + esc(en.date) + close, "#articleDate");
-  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en) + close, "#article-sections-container");
+  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en, tocLabel) + close, "#article-sections-container");
 
   // The prerendered text is for crawlers and first paint; blog-renderer.js still takes over in the browser (and for Spanish).
   return html.replace(/<!DOCTYPE html>/i, `<!DOCTYPE html>\n${GENERATED_MARK} from content/blog/${post.id}.json - edit that file, not this one. -->`);
@@ -303,13 +342,15 @@ function buildPages(posts) {
   const templateFile = path.join(ROOT, "article.html");
   if (!fs.existsSync(templateFile)) fail("article.html (the page template) is missing");
   const template = fs.readFileSync(templateFile, "utf8");
+  const enUi = readJson(path.join(ROOT, "assets", "js", "i18n", "en", "blog.json")).ui || {};
+  const tocLabel = enUi.tableOfContents || "Table of Contents";
 
   const wanted = new Set();
   const changed = [];
   for (const post of posts) {
     const name = `article-${post.id}.html`;
     wanted.add(name);
-    if (writeIfChanged(path.join(ROOT, name), buildPage(template, post))) changed.push(name);
+    if (writeIfChanged(path.join(ROOT, name), buildPage(template, post, tocLabel))) changed.push(name);
   }
 
   // Remove pages for posts that were deleted or set back to draft (only files this script generated).
