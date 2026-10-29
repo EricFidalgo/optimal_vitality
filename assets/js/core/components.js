@@ -342,7 +342,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // -------------------------------------------------------------------------
   // SITE SCHEMA (JSON-LD)
   // One shared MedicalClinic entity (@id) plus the two providers on the home and team pages,
-  // and a FAQPage built from the FAQs the page itself shows (home + service pages).
+  // and a FAQPage built from the FAQs the page itself shows (home + service pages). Service pages also get a
+  // WebSite, MedicalWebPage, Service and BreadcrumbList plus the clinic, so each page names who offers the service.
   // Location pages (/tampa, /st-pete) keep their own schema from injectLocalSchema().
   // -------------------------------------------------------------------------
   const SITE_URL = "https://oviwellness.com";
@@ -494,6 +495,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
 
+  // Service pages: the page, the service it describes, a breadcrumb and the site, next to the clinic and FAQPage.
+  // Everything here repeats what the page itself says (title, description, service name); no ratings, prices or drug data.
+  function servicePageNodes(svc, clinic) {
+    const link = document.querySelector('link[rel="canonical"]');
+    const pageUrl = (link && link.href) || SITE_URL + window.location.pathname.replace(/\.html$/, "");
+    const lang = window.OVI_I18N && window.OVI_I18N.currentLang === "es" ? "es" : "en";
+    const name = svc.tabLabel || plainText(svc.title);
+    const websiteId = SITE_URL + "/#website";
+    const webPageId = pageUrl + "#webpage";
+    const serviceId = pageUrl + "#service";
+    const breadcrumbId = pageUrl + "#breadcrumb";
+    return [
+      { "@type": "WebSite", "@id": websiteId, name: "OVI Wellness", url: SITE_URL + "/", publisher: { "@id": CLINIC_ID } },
+      {
+        "@type": "MedicalWebPage",
+        "@id": webPageId,
+        url: pageUrl,
+        name: svc.pageTitle,
+        description: svc.pageDescription,
+        inLanguage: lang,
+        isPartOf: { "@id": websiteId },
+        about: { "@id": serviceId },
+        breadcrumb: { "@id": breadcrumbId },
+        publisher: { "@id": CLINIC_ID },
+      },
+      {
+        "@type": "Service",
+        "@id": serviceId,
+        name,
+        serviceType: name,
+        url: pageUrl,
+        description: svc.pageDescription,
+        provider: { "@id": CLINIC_ID },
+        areaServed: clinic.areaServed,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": breadcrumbId,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: lang === "es" ? "Inicio" : "Home", item: SITE_URL + "/" },
+          { "@type": "ListItem", position: 2, name, item: pageUrl },
+        ],
+      },
+    ];
+  }
+
   function injectSiteSchema() {
     const data = window.clinicData;
     if (!data || !data.contact || document.getElementById("ovi-site-schema")) return;
@@ -513,9 +560,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       if (doctors.length) clinic.employee = doctors.map((d) => ({ "@id": d["@id"] }));
       graph.push(clinic, ...doctors);
     }
-    if ((isHome || isService) && isCanonicalPage()) {
-      const svc = isService ? (data.services || []).find((s) => s.id === OVI_SERVICE_ID) : null;
-      const faq = faqSchema(isService ? (svc && svc.faqs) || data.faqs : data.faqs);
+    if (isService && isCanonicalPage()) {
+      const svc = (data.services || []).find((s) => s.id === OVI_SERVICE_ID);
+      if (svc) {
+        const clinic = clinicEntity(data);
+        graph.push(clinic, ...servicePageNodes(svc, clinic));
+      }
+      const faq = faqSchema((svc && svc.faqs) || data.faqs);
+      if (faq) graph.push(faq);
+    } else if (isHome && isCanonicalPage()) {
+      const faq = faqSchema(data.faqs);
       if (faq) graph.push(faq);
     }
     if (!graph.length) return;
