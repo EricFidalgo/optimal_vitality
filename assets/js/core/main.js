@@ -22,6 +22,11 @@ function initMain() {
         const serviceIds = ["hormone-optimization", "glp-1therapies", "regenerative-medicine", "sexual-wellness", "iv-wellness", "peptides", "detox", "advanced-labs"];
         const baseName = url.replace('.html', '').split('#')[0];
 
+        if (typeof OVI_BLOG_PAGE !== 'undefined') {
+            // We are inside blog/ (a generated post page): everything else is one level up
+            return '../' + (serviceIds.includes(baseName) ? 'services/' : '') + url;
+        }
+
         if (isSubpage) {
             // We are inside services/
             if (serviceIds.includes(baseName)) {

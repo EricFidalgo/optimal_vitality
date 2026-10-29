@@ -13,7 +13,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 (function () {
   "use strict";
 
-  const isSubpage = typeof OVI_SERVICE_ID !== "undefined";
+  // Service pages (services/) and generated blog post pages (blog/) sit one folder below the site root.
+  const isSubpage = typeof OVI_SERVICE_ID !== "undefined" || typeof OVI_BLOG_PAGE !== "undefined";
   const prefix = isSubpage ? "../" : "";
 
   // -------------------------------------------------------------------------
@@ -285,7 +286,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .split("/")
       .pop();
     let schemaKey = null;
-    if (page === "st-pete") {
+    if (path.includes("/blog/")) {
+      // A blog post whose address happens to match a location name is not a location page.
+    } else if (page === "st-pete") {
       schemaKey = "stPete";
     } else if (page === "tampa") {
       schemaKey = "tampa";

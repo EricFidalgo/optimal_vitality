@@ -105,7 +105,7 @@
               <p class="card-text text-muted mb-4 small" style="line-height: 1.6; font-size: 0.88rem;">${article.excerpt}</p>
               <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: rgba(0,0,0,0.06) !important;">
                 <span class="text-muted small" style="font-size: 0.8rem;"><i class="far fa-calendar-alt me-1 text-muted"></i> ${article.date}</span>
-                <a href="article-${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
+                <a href="blog/${article.id}" class="fw-semibold text-decoration-none small stretched-link d-flex align-items-center group" style="color: var(--secondary-color);">
                   ${readArticleText} <i class="fas fa-arrow-right ms-2 transition-transform group-hover-translate-x" style="color: var(--primary-color);"></i>
                 </a>
               </div>
@@ -145,7 +145,7 @@
             <div class="container text-center py-5">
               <h1 class="display-4 fw-bold mb-3 text-uppercase" style="color: var(--secondary-color); font-size: 2.5rem;">${notFoundTitle}</h1>
               <p class="text-muted mb-4 lead mx-auto" style="max-width: 550px;">${notFoundDesc}</p>
-              <a href="blog" class="btn cta-btn btn-lg rounded-pill px-4 py-3">
+              <a href="/blog" class="btn cta-btn btn-lg rounded-pill px-4 py-3">
                 <i class="fas fa-arrow-left me-2"></i>${returnBtnText}
               </a>
             </div>
@@ -168,7 +168,7 @@
     // Old article?id=... links point search engines at the post's own page.
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical && !document.body.dataset.articleId) {
-      canonical.setAttribute("href", `https://oviwellness.com/article-${article.id}`);
+      canonical.setAttribute("href", `https://oviwellness.com/blog/${article.id}`);
     }
 
     // Populate standard text slots
@@ -186,12 +186,12 @@
         const sectionImage = section.image ? figureHtml(section.image, section.imageAlt) : "";
         if (index === 0) {
           // First item is the lead overview (no heading). Section text arrives as ready-made HTML from the build.
-          sectionsHtml += `<div class="article-section">${section.body}${sectionImage}</div>`;
+          sectionsHtml += `<div class="article-section">${sectionImage}${section.body}</div>`;
         } else {
           sectionsHtml += `
-            <div class="article-section">
-              <h3 id="${escapeHtml(ids[index])}">${section.title}</h3>
-              ${section.body}${sectionImage}
+            <div class="article-section${sectionClass(section.title)}">
+              ${sectionImage}<h3 id="${escapeHtml(ids[index])}">${section.title}</h3>
+              ${section.body}
             </div>`;
         }
       });
@@ -225,6 +225,10 @@
       used.add(id);
       return id;
     });
+  }
+
+  function sectionClass(title) {
+    return /^(sources|fuentes|references|referencias)\b/i.test(String(title).trim()) ? " article-sources" : "";
   }
 
   function tocHtml(article, label) {

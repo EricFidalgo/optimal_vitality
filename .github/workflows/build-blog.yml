@@ -1,7 +1,7 @@
 name: Build blog
 
 # When a post in content/blog changes on main, regenerate the blog data, the
-# per-post pages (article-<slug>.html) and the sitemap, and commit the result.
+# per-post pages (blog/<slug>.html) and the sitemap, and commit the result.
 on:
   push:
     branches: [main]

@@ -56,10 +56,10 @@
     }
   };
 
-  // Helper to resolve base path depending on whether page is inside services/ or root
+  // Helper to resolve base path depending on whether page is inside services/, blog/ or root
   function getBasePath() {
     const path = window.location.pathname;
-    if (path.includes("/services/")) {
+    if (path.includes("/services/") || path.includes("/blog/")) {
       return "../assets/js/i18n/";
     }
     return "assets/js/i18n/";
@@ -320,7 +320,7 @@
         let title, desc;
         if (path.includes("/services/")) {
            return; // Service renderer handles its own SEO dynamically
-        } else if (page === "blog" || page === "article" || page.startsWith("article-")) {
+        } else if (page === "blog" || page === "article" || path.includes("/blog/")) {
            title = window.clinicData.blogPage?.seo?.title;
            desc = window.clinicData.blogPage?.seo?.description;
         } else if (page === "team") {

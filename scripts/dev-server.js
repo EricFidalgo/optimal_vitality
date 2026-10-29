@@ -9,6 +9,9 @@
  *   - case-sensitive:  /Blog is a 404, because GitHub Pages is case-sensitive even though
  *                      Windows files are not (this catches broken links before they go live)
  *
+ *   - auto-rebuild:    runs the blog build at start and whenever a file in content/blog (or
+ *                      article.html) changes, so editor saves show up after a refresh
+ *
  * Usage:  node scripts/dev-server.js          (then open http://localhost:8123/)
  *         PORT=3000 node scripts/dev-server.js
  * No dependencies. Listens on this computer only.
@@ -16,6 +19,7 @@
 "use strict";
 
 const http = require("http");
+const { spawn } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
@@ -112,7 +116,55 @@ const server = http.createServer((req, res) => {
   res.end("404 Not Found");
 });
 
+// -- auto-rebuild ------------------------------------------------------------
+
+let building = false;
+let rebuildAgain = false;
+let timer = null;
+
+function rebuild(reason) {
+  if (building) {
+    rebuildAgain = true;
+    return;
+  }
+  building = true;
+  const started = Date.now();
+  const child = spawn(process.execPath, [path.join(__dirname, "build-blog.js")], { cwd: ROOT });
+  let out = "";
+  child.stdout.on("data", (d) => (out += d));
+  child.stderr.on("data", (d) => (out += d));
+  child.on("close", (code) => {
+    building = false;
+    const lines = out.trim().split("\n").map((l) => "  " + l).join("\n");
+    console.log(`${code === 0 ? "Rebuilt" : "BUILD FAILED"} blog (${reason}, ${Date.now() - started} ms)${code === 0 ? "" : "\n" + lines}`);
+    if (code === 0 && /updated: (?!nothing)/.test(out)) console.log(lines);
+    if (rebuildAgain) {
+      rebuildAgain = false;
+      rebuild("changes during build");
+    }
+  });
+}
+
+function scheduleRebuild(reason) {
+  clearTimeout(timer);
+  timer = setTimeout(() => rebuild(reason), 400);
+}
+
+function watch(target, filter) {
+  try {
+    fs.watch(path.join(ROOT, target), { recursive: true }, (evt, file) => {
+      if (filter && file && !filter(String(file))) return;
+      scheduleRebuild(`${target} changed`);
+    });
+  } catch (e) {
+    console.log(`(could not watch ${target}: ${e.message})`);
+  }
+}
+
 server.listen(PORT, "127.0.0.1", () => {
   console.log(`Preview running at http://localhost:${PORT}/  (like GitHub Pages: clean URLs, 404 page, case-sensitive)`);
-  console.log("Press Ctrl+C to stop.");
+  console.log("Blog rebuilds automatically when content/blog changes. Press Ctrl+C to stop.");
+  rebuild("startup");
+  watch("content/blog", (f) => f.endsWith(".json"));
+  fs.watchFile(path.join(ROOT, "article.html"), { interval: 700 }, () => scheduleRebuild("article.html changed"));
 });

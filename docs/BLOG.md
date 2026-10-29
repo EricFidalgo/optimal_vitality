@@ -40,13 +40,13 @@ for questions inside a section. Don't format whole sentences as headings.
 ## Writing a post in the editor
 
 - **Published** off = draft. Nothing appears on the site until it is on.
-- **Title** also becomes the web address (`/article-<slug>`) when the post is first created.
+- **Title** also becomes the web address (`/blog/<slug>`) when the post is first created.
   Changing the title later does not change the address.
 - **Sections:** the first section is the opening text and its heading is not shown. Section text
   supports bold, links, bullet and numbered lists, tables and sub-headings (Markdown). Pasting
   from Google Docs keeps most formatting.
 - **Images:** the **Featured image** shows at the top of the post, on the blog page card and
-  in social shares. Each section can also have an image, shown after that section's text.
+  in social shares. Each section can also have an image, shown above that section's heading.
   Always fill in the image description (alt text). Resize and compress images first
   (about 1200 px wide, under 200 KB). Spanish uses the same images; only the descriptions
   are translated.
@@ -59,7 +59,7 @@ for questions inside a section. Don't format whole sentences as headings.
 
 Saving commits to `main`. A GitHub Action (`.github/workflows/build-blog.yml`) then runs
 `scripts/build-blog.js`, which converts the section text to HTML, updates the blog data, creates
-the post's own page (`article-<slug>.html`) and updates `sitemap.xml`, and commits those files.
+the post's own page (`blog/<slug>.html`) and updates `sitemap.xml`, and commits those files.
 GitHub Pages publishes the result, usually within a few minutes.
 
 ## Previewing locally (like the live site)
@@ -69,8 +69,8 @@ npm run dev
 ```
 
 Open http://localhost:8123/. This behaves like GitHub Pages: clean addresses (`/blog`,
-`/article-trt-myths`), the real 404 page, and case-sensitive paths. Run `node scripts/build-blog.js`
-first if you changed a post file, then refresh. To test the editor without GitHub, open
+`/blog/trt-myths`), the real 404 page, and case-sensitive paths. The preview rebuilds on its own whenever a post file in `content/blog` is saved (including saves
+from the editor in local mode), so just refresh. To test the editor without GitHub, open
 `/admin/` in Chrome or Edge and choose **Work with Local Repository**.
 
 ## Running the build locally
@@ -80,5 +80,5 @@ npm ci
 node scripts/build-blog.js
 ```
 
-Generated files (`article-*.html`, the `posts` list in `assets/js/i18n/*/blog.json`, and the
+Generated files (`blog/*.html`, the `posts` list in `assets/js/i18n/*/blog.json`, and the
 blog block in `sitemap.xml`) are overwritten by the build. Edit `content/blog/*.json` instead.

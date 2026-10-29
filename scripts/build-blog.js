@@ -5,7 +5,7 @@
  * Builds the blog from the one-file-per-post source in content/blog/*.json:
  *   1. Rewrites the `posts` list in assets/js/i18n/{en,es}/blog.json
  *      (the blog index and article renderer read from these).
- *   2. Generates a real HTML page per published post: article-<slug>.html
+ *   2. Generates a real HTML page per published post: blog/<slug>.html (address /blog/<slug>)
  *      (so search engines and link previews see the content without running JS).
  *   3. Updates the blog post URLs in sitemap.xml between the
  *      <!-- blog-posts:start --> and <!-- blog-posts:end --> markers.
@@ -79,10 +79,10 @@ async function loadMarkdown() {
     fail('the "marked" package is not installed. Run "npm ci" in the project folder first.');
   }
 
-  // Legacy and absolute links to this site become site-relative; /article?id=x becomes /article-x.
+  // Legacy and absolute links to this site become site-relative; /article?id=x becomes /blog/x.
   function rewriteHref(href) {
     let h = String(href || "");
-    h = h.replace(/^https?:\/\/(www\.)?oviwellness\.com\/article\?id=([^&#]+)/i, "/article-$2");
+    h = h.replace(/^https?:\/\/(www\.)?oviwellness\.com\/article\?id=([^&#]+)/i, "/blog/$2");
     h = h.replace(/^https?:\/\/(www\.)?oviwellness\.com(?=\/|$)/i, "") || "/";
     return h;
   }
@@ -253,6 +253,11 @@ function sectionIds(content) {
   });
 }
 
+// A "Sources" section is styled smaller (see .article-sources in article.html).
+function sectionClass(title) {
+  return /^(sources|fuentes|references|referencias)\b/i.test(String(title).trim()) ? " article-sources" : "";
+}
+
 function tocHtml(post, label) {
   if (!post.toc) return "";
   const ids = sectionIds(post.content);
@@ -278,8 +283,8 @@ function renderSections(post, tocLabel) {
     .map((section, index) => {
       const img = section.image ? figure(section.image, section.imageAlt) : "";
       return index === 0
-        ? `<div class="article-section">${section.body}${img}</div>`
-        : `<div class="article-section"><h3 id="${esc(ids[index])}">${esc(section.title)}</h3>${section.body}${img}</div>`;
+        ? `<div class="article-section">${img}${section.body}</div>`
+        : `<div class="article-section${sectionClass(section.title)}">${img}<h3 id="${esc(ids[index])}">${esc(section.title)}</h3>${section.body}</div>`;
     })
     .join("");
   return featured + tocHtml(post, tocLabel) + body;
@@ -287,7 +292,7 @@ function renderSections(post, tocLabel) {
 
 function buildPage(template, post, tocLabel) {
   const en = post.en;
-  const url = `${SITE}/article-${post.id}`;
+  const url = `${SITE}/blog/${post.id}`;
   const title = en.seoTitle || `${en.title} — OVI Wellness`;
   const desc = en.metaDescription || en.excerpt;
   const image = en.image ? absoluteUrl(en.image) : null;
@@ -334,6 +339,11 @@ function buildPage(template, post, tocLabel) {
   html = replaceOnce(html, /(<span id="articleDate">)(<\/span>)/, (m, open, close) => open + esc(en.date) + close, "#articleDate");
   html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en, tocLabel) + close, "#article-sections-container");
 
+  // The page lives one folder down (blog/<slug>.html): re-root the template's asset paths, and tell the
+  // shared scripts (components.js, main.js, i18n.js) to do the same.
+  html = html.replace(/\b(href|src)="assets\//g, '$1="../assets/');
+  html = replaceOnce(html, /<script src="\.\.\/assets\/js\/i18n\/i18n\.js/, (m) => `<script>const OVI_BLOG_PAGE = true;</script>\n    ${m}`, "i18n.js script tag");
+
   // The prerendered text is for crawlers and first paint; blog-renderer.js still takes over in the browser (and for Spanish).
   return html.replace(/<!DOCTYPE html>/i, `<!DOCTYPE html>\n${GENERATED_MARK} from content/blog/${post.id}.json - edit that file, not this one. -->`);
 }
@@ -345,24 +355,33 @@ function buildPages(posts) {
   const enUi = readJson(path.join(ROOT, "assets", "js", "i18n", "en", "blog.json")).ui || {};
   const tocLabel = enUi.tableOfContents || "Table of Contents";
 
+  const blogDir = path.join(ROOT, "blog");
   const wanted = new Set();
   const changed = [];
   for (const post of posts) {
-    const name = `article-${post.id}.html`;
-    wanted.add(name);
-    if (writeIfChanged(path.join(ROOT, name), buildPage(template, post, tocLabel))) changed.push(name);
+    const rel = `blog/${post.id}.html`;
+    wanted.add(rel);
+    fs.mkdirSync(blogDir, { recursive: true });
+    if (writeIfChanged(path.join(ROOT, rel), buildPage(template, post, tocLabel))) changed.push(rel);
   }
 
-  // Remove pages for posts that were deleted or set back to draft (only files this script generated).
+  // Remove pages for posts that were deleted or set back to draft (only files this script generated),
+  // and pages from the earlier article-<slug>.html address style.
   const removed = [];
-  for (const f of fs.readdirSync(ROOT)) {
-    if (!/^article-.+\.html$/.test(f) || wanted.has(f)) continue;
-    const full = path.join(ROOT, f);
-    if (fs.readFileSync(full, "utf8").includes(GENERATED_MARK)) {
-      fs.unlinkSync(full);
-      removed.push(f);
+  const sweep = (dir, prefix, re) => {
+    if (!fs.existsSync(dir)) return;
+    for (const f of fs.readdirSync(dir)) {
+      const rel = prefix + f;
+      if (!re.test(f) || wanted.has(rel)) continue;
+      const full = path.join(dir, f);
+      if (fs.readFileSync(full, "utf8").includes(GENERATED_MARK)) {
+        fs.unlinkSync(full);
+        removed.push(rel);
+      }
     }
-  }
+  };
+  sweep(blogDir, "blog/", /\.html$/);
+  sweep(ROOT, "", /^article-.+\.html$/);
   return { changed, removed };
 }
 
@@ -380,7 +399,7 @@ function buildSitemap(posts) {
   const entries = posts
     .map(
       (p) =>
-        `  <url>\n    <loc>${SITE}/article-${p.id}</loc>\n    <lastmod>${p.iso}</lastmod>\n    <priority>0.6</priority>\n    <changefreq>monthly</changefreq>\n  </url>`
+        `  <url>\n    <loc>${SITE}/blog/${p.id}</loc>\n    <lastmod>${p.iso}</lastmod>\n    <priority>0.6</priority>\n    <changefreq>monthly</changefreq>\n  </url>`
     )
     .join("\n");
   const next = xml.slice(0, a + start.length) + (entries ? "\n" + entries + "\n  " : "\n  ") + xml.slice(b);
@@ -396,9 +415,20 @@ function buildSitemap(posts) {
   const pages = buildPages(posts);
   const sitemapChanged = buildSitemap(posts);
 
+  // Large images slow the page down; say so instead of failing.
+  const heavy = new Set();
+  for (const post of posts) {
+    const imgs = [post.en.image, ...post.en.content.map((s) => s.image)].filter(Boolean);
+    for (const img of imgs) {
+      const file = path.join(ROOT, img.replace(/^\//, ""));
+      if (fs.existsSync(file) && fs.statSync(file).size > 500 * 1024) heavy.add(`${img} (${(fs.statSync(file).size / 1048576).toFixed(1)} MB)`);
+    }
+  }
+
   const spanishPending = posts.filter((p) => !p.spanishReady).map((p) => p.id);
   console.log(`build-blog: ${posts.length} published post(s)`);
   console.log(`  updated: ${[...jsonChanged, ...pages.changed, ...sitemapChanged].join(", ") || "nothing (already up to date)"}`);
   if (pages.removed.length) console.log(`  removed: ${pages.removed.join(", ")}`);
+  if (heavy.size) console.log(`  note: large image(s), compress to under about 200 KB for fast pages: ${[...heavy].join(", ")}`);
   if (spanishPending.length) console.log(`  note: no Spanish yet (English shown on /es): ${spanishPending.join(", ")}`);
 })();

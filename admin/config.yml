@@ -83,7 +83,7 @@ collections:
         fields:
           - { name: title, label: Section heading, widget: string, required: false }
           - { name: body, label: Text, widget: markdown, hint: "Use the toolbar for bold, links, bullet and numbered lists, tables and sub-headings. Pasting from Google Docs keeps most formatting." }
-          - { name: image, label: Image after this section, widget: image, required: false }
+          - { name: image, label: Image above this section, widget: image, required: false }
           - { name: image_alt, label: Image description, widget: string, required: false }
       - name: es
         label: Spanish version
