@@ -18,6 +18,13 @@ touch these by hand: use the editor at **https://oviwellness.com/admin/**.
   Changing the title later does not change the address.
 - **Sections:** the first section is the opening paragraph (its heading is not shown).
   Separate paragraphs inside a section with a blank line.
+- **Images:** the **Featured image** shows at the top of the post, on the blog page card and
+  in social shares. Each section can also have an image, shown after that section's text.
+  Always fill in the image description (alt text). Resize and compress images first
+  (about 1200 px wide, under 200 KB). Spanish uses the same images; only the descriptions
+  are translated.
+- **SEO:** the optional SEO title and meta description override the defaults
+  (post title + " — OVI Wellness", and the short summary).
 - **Spanish:** fill in the Spanish version with the same sections in the same order.
   If it is left empty, the Spanish site shows the English text for that post.
 

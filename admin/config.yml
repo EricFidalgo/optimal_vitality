@@ -49,6 +49,26 @@ collections:
         label: Short summary (English)
         widget: text
         hint: "Shown on the blog page and in Google results. Aim for about 150 characters."
+      - name: seo_title
+        label: SEO title (English)
+        widget: string
+        required: false
+        hint: "The title Google shows. Leave blank to use the post title + - OVI Wellness. Aim for under 60 characters."
+      - name: meta_description
+        label: Meta description (English)
+        widget: text
+        required: false
+        hint: "The description Google shows. Leave blank to use the short summary. Aim for under 155 characters."
+      - name: featured_image
+        label: Featured image
+        widget: image
+        required: false
+        hint: "Shown at the top of the post, on the blog page card, and when the post is shared. 1200 x 630 pixels works best. Keep the file under about 200 KB."
+      - name: featured_image_alt
+        label: Featured image description (English)
+        widget: string
+        required: false
+        hint: "Short description of what the image shows, for accessibility and Google Images."
       - name: content
         label: Sections (English)
         label_singular: Section
@@ -58,6 +78,8 @@ collections:
         fields:
           - { name: title, label: Section heading, widget: string, required: false }
           - { name: body, label: Text, widget: text }
+          - { name: image, label: Image after this section, widget: image, required: false }
+          - { name: image_alt, label: Image description, widget: string, required: false }
       - name: es
         label: Spanish version
         widget: object
@@ -68,6 +90,9 @@ collections:
           - { name: title, label: Title (Spanish), widget: string, required: false }
           - { name: category, label: Category (Spanish), widget: string, required: false }
           - { name: excerpt, label: Short summary (Spanish), widget: text, required: false }
+          - { name: seo_title, label: SEO title (Spanish), widget: string, required: false }
+          - { name: meta_description, label: Meta description (Spanish), widget: text, required: false }
+          - { name: featured_image_alt, label: Featured image description (Spanish), widget: string, required: false }
           - name: content
             label: Sections (Spanish)
             label_singular: Section
@@ -78,3 +103,4 @@ collections:
             fields:
               - { name: title, label: Section heading, widget: string, required: false }
               - { name: body, label: Text, widget: text, required: false }
+              - { name: image_alt, label: Image description (Spanish), widget: string, required: false, hint: "The image itself is taken from the English section in the same position." }

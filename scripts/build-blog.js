@@ -76,14 +76,29 @@ function paragraphs(body) {
 }
 
 function cleanContent(sections) {
-  return (Array.isArray(sections) ? sections : []).map((s) => ({
-    title: s.title || "",
-    body: paragraphs(s.body),
-  }));
+  return (Array.isArray(sections) ? sections : []).map((s) => {
+    const out = { title: s.title || "", body: paragraphs(s.body) };
+    if (hasText(s.image)) out.image = s.image.trim();
+    // Kept even without an image: a Spanish section has a description but takes its image from English.
+    if (hasText(s.image_alt)) out.imageAlt = s.image_alt.trim();
+    return out;
+  });
 }
 
 function hasText(v) {
   return typeof v === "string" && v.trim() !== "";
+}
+
+// Optional SEO fields from the editor. Only set on the post when filled in.
+function addSeo(post, src) {
+  if (hasText(src.seo_title)) post.seoTitle = src.seo_title.trim();
+  if (hasText(src.meta_description)) post.metaDescription = src.meta_description.trim();
+  if (hasText(src.featured_image)) post.image = src.featured_image.trim();
+  if (hasText(src.featured_image_alt)) post.imageAlt = src.featured_image_alt.trim();
+}
+
+function absoluteUrl(p) {
+  return /^https?:\/\//.test(p) ? p : SITE + (p.startsWith("/") ? "" : "/") + p;
 }
 
 // -- load posts -------------------------------------------------------------
@@ -109,6 +124,7 @@ function loadPosts() {
       excerpt: (src.excerpt || "").trim(),
       content: cleanContent(src.content),
     };
+    addSeo(enPost, src);
 
     // Spanish falls back to the English text until a Spanish version is filled in.
     const es = src.es || {};
@@ -121,6 +137,26 @@ function loadPosts() {
       excerpt: esReady && hasText(es.excerpt) ? es.excerpt.trim() : enPost.excerpt,
       content: esReady ? cleanContent(es.content) : enPost.content,
     };
+    // Spanish SEO values fall back to the English ones; the image is shared.
+    addSeo(esPost, esReady ? es : src);
+    if (!esPost.seoTitle && enPost.seoTitle) esPost.seoTitle = enPost.seoTitle;
+    if (!esPost.metaDescription && enPost.metaDescription) esPost.metaDescription = enPost.metaDescription;
+    if (enPost.image) {
+      esPost.image = enPost.image;
+      if (!esPost.imageAlt && enPost.imageAlt) esPost.imageAlt = enPost.imageAlt;
+    }
+    // Section images come from the English section in the same position; Spanish only adds the description.
+    esPost.content.forEach((sec, i) => {
+      const enSec = enPost.content[i];
+      if (enSec && enSec.image && !sec.image) {
+        sec.image = enSec.image;
+        if (!sec.imageAlt && enSec.imageAlt) sec.imageAlt = enSec.imageAlt;
+      }
+    });
+    // A description with no image is meaningless; drop it so blog.json stays clean.
+    for (const post of [enPost, esPost]) {
+      for (const sec of post.content) if (!sec.image) delete sec.imageAlt;
+    }
 
     posts.push({ id, iso: src.date, en: enPost, es: esPost, spanishReady: esReady });
   }
@@ -149,21 +185,30 @@ function replaceOnce(html, regex, replacement, what) {
   return html.replace(regex, typeof replacement === "function" ? replacement : () => replacement);
 }
 
-function renderSections(content) {
-  return content
-    .map((section, index) =>
-      index === 0
-        ? `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p></div>`
-        : `<div class="article-section"><h3>${esc(section.title)}</h3><p>${section.body}</p></div>`
-    )
+// Keep this markup identical to what blog-renderer.js builds in the browser.
+function figure(src, alt, eager) {
+  return `<figure class="article-figure"><img src="${esc(src)}" alt="${esc(alt || "")}"${eager ? "" : ' loading="lazy"'}></figure>`;
+}
+
+function renderSections(post) {
+  const featured = post.image ? figure(post.image, post.imageAlt, true) : "";
+  const body = post.content
+    .map((section, index) => {
+      const img = section.image ? figure(section.image, section.imageAlt) : "";
+      return index === 0
+        ? `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p>${img}</div>`
+        : `<div class="article-section"><h3>${esc(section.title)}</h3><p>${section.body}</p>${img}</div>`;
+    })
     .join("");
+  return featured + body;
 }
 
 function buildPage(template, post) {
   const en = post.en;
   const url = `${SITE}/article-${post.id}`;
-  const title = `${en.title} — OVI Wellness`;
-  const desc = en.excerpt;
+  const title = en.seoTitle || `${en.title} — OVI Wellness`;
+  const desc = en.metaDescription || en.excerpt;
+  const image = en.image ? absoluteUrl(en.image) : null;
   let html = template;
 
   html = replaceOnce(html, /<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`, "<title>");
@@ -176,6 +221,13 @@ function buildPage(template, post) {
   html = replaceOnce(html, /<meta property="twitter:url" content="[^"]*">/, `<meta property="twitter:url" content="${url}">`, "twitter:url");
   html = replaceOnce(html, /<meta property="twitter:title" content="[^"]*">/, `<meta property="twitter:title" content="${esc(title)}">`, "twitter:title");
   html = replaceOnce(html, /<meta property="twitter:description" content="[^"]*">/, `<meta property="twitter:description" content="${esc(desc)}">`, "twitter:description");
+  if (image) {
+    html = replaceOnce(html, /<meta property="twitter:card" content="[^"]*">/, `<meta property="twitter:card" content="summary_large_image">`, "twitter:card");
+    html = replaceOnce(html, /<meta property="og:description" content="[^"]*">/, (m) => `${m}
+    <meta property="og:image" content="${esc(image)}">`, "og:description (image)");
+    html = replaceOnce(html, /<meta property="twitter:description" content="[^"]*">/, (m) => `${m}
+    <meta property="twitter:image" content="${esc(image)}">`, "twitter:description (image)");
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -184,6 +236,7 @@ function buildPage(template, post) {
     description: desc,
     datePublished: post.iso,
     mainEntityOfPage: url,
+    ...(image ? { image } : {}),
     publisher: { "@type": "Organization", name: "OVI Wellness", url: SITE },
   };
   html = replaceOnce(
@@ -197,7 +250,7 @@ function buildPage(template, post) {
   html = replaceOnce(html, /(<span id="articleCategory"[^>]*>)(<\/span>)/, (m, open, close) => open + esc(en.category) + close, "#articleCategory");
   html = replaceOnce(html, /(<h1 id="articleTitle"[^>]*>)(<\/h1>)/, (m, open, close) => open + esc(en.title) + close, "#articleTitle");
   html = replaceOnce(html, /(<span id="articleDate">)(<\/span>)/, (m, open, close) => open + esc(en.date) + close, "#articleDate");
-  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en.content) + close, "#article-sections-container");
+  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en) + close, "#article-sections-container");
 
   // The prerendered text is for crawlers and first paint; blog-renderer.js still takes over in the browser (and for Spanish).
   return html.replace(/<!DOCTYPE html>/i, `<!DOCTYPE html>\n${GENERATED_MARK} from content/blog/${post.id}.json - edit that file, not this one. -->`);

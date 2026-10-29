@@ -94,6 +94,7 @@
       gridHtml += `
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card h-100 border-0 shadow-sm hover-lift ovi-card" style="border-radius: 14px; border-top: 3px solid var(--primary-color) !important; background: #ffffff;">
+            ${article.image ? `<img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.imageAlt)}" loading="lazy" class="card-img-top" style="aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px 12px 0 0;">` : ""}
             <div class="card-body d-flex flex-column p-4">
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <span class="badge py-2 px-3 fw-semibold" style="font-size: 0.725rem; letter-spacing: 0.5px; text-transform: uppercase; background-color: rgba(5, 20, 17, 0.05); color: var(--secondary-color); border: 1px solid rgba(5, 20, 17, 0.12); border-radius: 4px;">
@@ -160,9 +161,9 @@
     setText('[data-i18n="article.bookConsultation"]', ui.bookConsultation);
 
     // Update page meta
-    document.title = `${article.title} — OVI Wellness`;
+    document.title = article.seoTitle || `${article.title} — OVI Wellness`;
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", article.excerpt);
+    if (metaDesc) metaDesc.setAttribute("content", article.metaDescription || article.excerpt);
 
     // Old article?id=... links point search engines at the post's own page.
     const canonical = document.querySelector('link[rel="canonical"]');
@@ -178,16 +179,17 @@
     // Dynamically render content sections from the array
     const sectionsContainer = document.getElementById("article-sections-container");
     if (sectionsContainer && Array.isArray(article.content)) {
-      let sectionsHtml = "";
+      let sectionsHtml = article.image ? figureHtml(article.image, article.imageAlt, true) : "";
       article.content.forEach((section, index) => {
+        const sectionImage = section.image ? figureHtml(section.image, section.imageAlt) : "";
         if (index === 0) {
           // First item renders as the lead overview paragraph (no heading)
-          sectionsHtml += `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p></div>`;
+          sectionsHtml += `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p>${sectionImage}</div>`;
         } else {
           sectionsHtml += `
             <div class="article-section">
               <h3>${section.title}</h3>
-              <p>${section.body}</p>
+              <p>${section.body}</p>${sectionImage}
             </div>`;
         }
       });
@@ -198,6 +200,15 @@
   }
 
   // --- Helpers ---
+  function escapeHtml(s) {
+    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  // Keep this markup identical to figure() in scripts/build-blog.js (the prerendered page).
+  function figureHtml(src, alt, eager) {
+    return `<figure class="article-figure"><img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}"${eager ? "" : ' loading="lazy"'}></figure>`;
+  }
+
   function setText(selector, value) {
     if (!value) return;
     document.querySelectorAll(selector).forEach(el => { el.textContent = value; });
