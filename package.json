@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "node scripts/dev-server.js",
     "build:blog": "node scripts/build-blog.js",
-    "import:post": "node scripts/import-post.js"
+    "import:post": "node scripts/import-post.js",
+    "test-site:up": "node scripts/test-site.js up",
+    "test-site:down": "node scripts/test-site.js down",
+    "test-site:status": "node scripts/test-site.js status"
   },
   "dependencies": {
     "marked": "18.1.2"

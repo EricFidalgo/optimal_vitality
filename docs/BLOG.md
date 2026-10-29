@@ -73,6 +73,22 @@ Open http://localhost:8123/. This behaves like GitHub Pages: clean addresses (`/
 from the editor in local mode), so just refresh. To test the editor without GitHub, open
 `/admin/` in Chrome or Edge and choose **Work with Local Repository**.
 
+## Testing on real GitHub Pages (throwaway copy)
+
+For things the local preview can't show: how Pages serves addresses, the build Action, the editor
+with a real login. Needs the GitHub CLI (`gh`) signed in.
+
+```
+npm run test-site:up        # publish your current files (even uncommitted) to https://<you>.github.io, ~2-3 min
+npm run test-site:status
+npm run test-site:down      # unpublish: Pages off, repo private
+```
+
+`down --delete` removes the repo entirely (`node scripts/test-site.js down --delete`; needs
+`gh auth refresh -h github.com -s delete_repo` once). The copy never includes `CNAME`, blocks search
+engines, points the editor at the test repo, skips new untracked files over 1 MB, and the script only
+touches a repo whose description starts with "TEST COPY". It still runs your Tag Manager and CallRail tags.
+
 ## Running the build locally
 
 ```
