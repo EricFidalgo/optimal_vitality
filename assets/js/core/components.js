@@ -339,6 +339,194 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
 
+  // -------------------------------------------------------------------------
+  // SITE SCHEMA (JSON-LD)
+  // One shared MedicalClinic entity (@id) plus the two providers on the home and team pages,
+  // and a FAQPage built from the FAQs the page itself shows (home + service pages).
+  // Location pages (/tampa, /st-pete) keep their own schema from injectLocalSchema().
+  // -------------------------------------------------------------------------
+  const SITE_URL = "https://oviwellness.com";
+  const CLINIC_ID = SITE_URL + "/#clinic";
+
+  function plainText(html) {
+    const el = document.createElement("div");
+    el.innerHTML = html == null ? "" : String(html);
+    return (el.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  // "Monday - Thursday" + "9:00 AM - 7:00 PM" (English or Spanish) -> OpeningHoursSpecification
+  function openingHoursFrom(hours) {
+    const DAYS = [
+      ["Monday", "lunes"], ["Tuesday", "martes"], ["Wednesday", "miercoles"], ["Thursday", "jueves"],
+      ["Friday", "viernes"], ["Saturday", "sabado"], ["Sunday", "domingo"],
+    ];
+    const fold = (s) => String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    const dayIndex = (name) => DAYS.findIndex(([en, es]) => fold(name) === fold(en) || fold(name) === es);
+    const to24 = (t) => {
+      const m = /(\d{1,2}):(\d{2})\s*(AM|PM)/i.exec(t);
+      if (!m) return null;
+      let h = parseInt(m[1], 10) % 12;
+      if (m[3].toUpperCase() === "PM") h += 12;
+      return String(h).padStart(2, "0") + ":" + m[2];
+    };
+    const specs = [];
+    (hours || []).forEach((row) => {
+      if (!row || /closed|cerrado/i.test(row.time || "")) return;
+      const parts = String(row.days || "").split(/\s*[-–]\s*/);
+      const a = dayIndex(parts[0]);
+      const z = parts.length > 1 ? dayIndex(parts[1]) : a;
+      const [opens, closes] = String(row.time || "").split(/\s*[-–]\s*/).map(to24);
+      if (a < 0 || z < a || !opens || !closes) return;
+      specs.push({
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: DAYS.slice(a, z + 1).map(([en]) => en),
+        opens,
+        closes,
+      });
+    });
+    return specs;
+  }
+
+  function clinicEntity(data) {
+    const c = data.contact;
+    const home = data.pages && data.pages.home && data.pages.home.seo;
+    const coords = /!2d(-?\d+\.\d+)!3d(-?\d+\.\d+)/.exec((c.address && c.address.mapEmbedUrl) || "");
+    const served = ((data.locations && data.locations.stPete && data.locations.stPete.areaServed) || []).map((name) => ({
+      "@type": /county|condado/i.test(name) ? "AdministrativeArea" : "City",
+      name,
+    }));
+    const sameAs = Object.values(c.socials || {}).map((s) => s && s.url).filter(Boolean);
+    const entity = {
+      "@type": "MedicalClinic",
+      "@id": CLINIC_ID,
+      name: "OVI Wellness",
+      url: SITE_URL + "/",
+      telephone: c.phone,
+      email: c.email,
+      image: SITE_URL + "/assets/images/photos/team-group.jpg",
+      logo: SITE_URL + "/assets/images/icons/logo.svg",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: c.address.street,
+        addressLocality: c.address.city,
+        addressRegion: c.address.state,
+        postalCode: c.address.zip,
+        addressCountry: "US",
+      },
+      priceRange: "$$",
+      medicalSpecialty: "Endocrine",
+    };
+    if (home && home.description) entity.description = home.description;
+    if (coords) entity.geo = { "@type": "GeoCoordinates", latitude: parseFloat(coords[2]), longitude: parseFloat(coords[1]) };
+    if (c.address.mapUrl) entity.hasMap = c.address.mapUrl;
+    if (served.length) entity.areaServed = served;
+    const hours = openingHoursFrom(c.hours);
+    if (hours.length) entity.openingHoursSpecification = hours;
+    if (sameAs.length) entity.sameAs = sameAs;
+    return entity;
+  }
+
+  // Dr. Craig and Sean Worix, matched by their photo file name so the order in team.json does not matter.
+  // The type is Physician for both; Sean's job title and credential (PA-C) state what he actually is.
+  function physicianEntities(data) {
+    const team = data.team || [];
+    const people = [
+      { key: "craig", member: team.find((m) => /craig/i.test(m.image || "")) },
+      { key: "worix", member: team.find((m) => /worix/i.test(m.image || "")) },
+    ].filter((x) => x.member);
+    return people.map(({ key, member }) => {
+      const creds = (member.associations || []).reduce((out, a) => {
+        if (/nccpa/i.test(a)) {
+          out.push({
+            "@type": "EducationalOccupationalCredential",
+            credentialCategory: "certification",
+            name: member.credentials,
+            recognizedBy: { "@type": "Organization", name: a.replace(/\s*\(.*\)\s*$/, "") },
+          });
+        } else if (/board|consejo|certif/i.test(a)) {
+          out.push({ "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: a });
+        }
+        return out;
+      }, []);
+      const hasPrefix = /^dr\.?\s/i.test(member.name);
+      const name = member.name
+        .replace(/^dr\.?\s+/i, "")
+        .replace(new RegExp(",\\s*" + String(member.credentials || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "$"), "")
+        .trim();
+      const person = {
+        "@type": "Physician",
+        "@id": SITE_URL + "/team#" + key,
+        name,
+        jobTitle: member.role,
+        worksFor: { "@id": CLINIC_ID },
+        url: SITE_URL + "/team",
+      };
+      if (hasPrefix) person.honorificPrefix = "Dr.";
+      if (member.credentials) person.honorificSuffix = member.credentials;
+      if (member.bio) person.description = plainText(member.bio);
+      if (member.image) person.image = SITE_URL + "/" + member.image.replace(/^\//, "");
+      if (creds.length) person.hasCredential = creds;
+      return person;
+    });
+  }
+
+  // FAQPage from the FAQ list the page renders (same source, same text, tags stripped).
+  function faqSchema(faqs) {
+    const items = (faqs || [])
+      .map((f) => ({ q: plainText(f.question), a: plainText(f.answer) }))
+      .filter((x) => x.q && x.a);
+    if (!items.length) return null;
+    return {
+      "@type": "FAQPage",
+      mainEntity: items.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })),
+    };
+  }
+
+  // Duplicate pages (e.g. specialty-labs, canonical to advanced-labs) must not repeat FAQ markup.
+  function isCanonicalPage() {
+    const link = document.querySelector('link[rel="canonical"]');
+    if (!link) return true;
+    try {
+      const norm = (p) => p.replace(/\.html$/, "").replace(/\/+$/, "") || "/";
+      return norm(new URL(link.href).pathname) === norm(window.location.pathname);
+    } catch (e) {
+      return true;
+    }
+  }
+
+  function injectSiteSchema() {
+    const data = window.clinicData;
+    if (!data || !data.contact || document.getElementById("ovi-site-schema")) return;
+    const path = window.location.pathname.toLowerCase().replace(/\.html$/, "").replace(/\/+$/, "");
+    const page = path.split("/").pop();
+    if (path.includes("/blog/") || page === "st-pete" || page === "tampa") return;
+
+    const isHome = path === "" || page === "index";
+    const isTeam = page === "team";
+    const isService = typeof OVI_SERVICE_ID !== "undefined";
+    if (!isHome && !isTeam && !isService) return;
+
+    const graph = [];
+    if (isHome || isTeam) {
+      const clinic = clinicEntity(data);
+      const doctors = physicianEntities(data);
+      if (doctors.length) clinic.employee = doctors.map((d) => ({ "@id": d["@id"] }));
+      graph.push(clinic, ...doctors);
+    }
+    if ((isHome || isService) && isCanonicalPage()) {
+      const svc = isService ? (data.services || []).find((s) => s.id === OVI_SERVICE_ID) : null;
+      const faq = faqSchema(isService ? (svc && svc.faqs) || data.faqs : data.faqs);
+      if (faq) graph.push(faq);
+    }
+    if (!graph.length) return;
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "ovi-site-schema";
+    script.text = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c");
+    document.head.appendChild(script);
+  }
+
   function initNavbarBehavior() {
     // Mobile Menu Auto-Close on nav link click
     const offcanvasElement = document.getElementById("mobileMenu");
@@ -813,6 +1001,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     renderFooter();
     renderDisclosures();
     injectLocalSchema();
+    // Wait until every data file is loaded (the contact data arrives before the team/services/faqs data).
+    (window.oviI18nPromise || Promise.resolve()).then(injectSiteSchema);
     initNavbarBehavior();
     initConsultationModal();
     injectContactInfo();
