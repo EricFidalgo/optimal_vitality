@@ -183,13 +183,13 @@
       article.content.forEach((section, index) => {
         const sectionImage = section.image ? figureHtml(section.image, section.imageAlt) : "";
         if (index === 0) {
-          // First item renders as the lead overview paragraph (no heading)
-          sectionsHtml += `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p>${sectionImage}</div>`;
+          // First item is the lead overview (no heading). Section text arrives as ready-made HTML from the build.
+          sectionsHtml += `<div class="article-section">${section.body}${sectionImage}</div>`;
         } else {
           sectionsHtml += `
             <div class="article-section">
               <h3>${section.title}</h3>
-              <p>${section.body}</p>${sectionImage}
+              ${section.body}${sectionImage}
             </div>`;
         }
       });

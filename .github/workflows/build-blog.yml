@@ -9,6 +9,8 @@ on:
       - "content/blog/**"
       - "scripts/build-blog.js"
       - "article.html"
+      - "package.json"
+      - "package-lock.json"
   workflow_dispatch:
 
 permissions:
@@ -27,6 +29,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build blog pages
         run: node scripts/build-blog.js

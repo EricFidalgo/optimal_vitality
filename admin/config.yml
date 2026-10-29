@@ -74,10 +74,10 @@ collections:
         label_singular: Section
         widget: list
         summary: "{{fields.title}}"
-        hint: "The first section is the opening paragraph and its title is not shown. Separate paragraphs with a blank line."
+        hint: "The first section is the opening text and its title is not shown. Each later section gets a heading."
         fields:
           - { name: title, label: Section heading, widget: string, required: false }
-          - { name: body, label: Text, widget: text }
+          - { name: body, label: Text, widget: markdown, hint: "Use the toolbar for bold, links, bullet and numbered lists, tables and sub-headings. Pasting from Google Docs keeps most formatting." }
           - { name: image, label: Image after this section, widget: image, required: false }
           - { name: image_alt, label: Image description, widget: string, required: false }
       - name: es
@@ -102,5 +102,5 @@ collections:
             hint: "Same number of sections as English, in the same order."
             fields:
               - { name: title, label: Section heading, widget: string, required: false }
-              - { name: body, label: Text, widget: text, required: false }
+              - { name: body, label: Text, widget: markdown, required: false }
               - { name: image_alt, label: Image description (Spanish), widget: string, required: false, hint: "The image itself is taken from the English section in the same position." }

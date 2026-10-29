@@ -10,7 +10,10 @@
  *   3. Updates the blog post URLs in sitemap.xml between the
  *      <!-- blog-posts:start --> and <!-- blog-posts:end --> markers.
  *
- * Run locally:  node scripts/build-blog.js
+ * Section text is Markdown (lists, tables, links, bold, sub-headings) and is converted to HTML here,
+ * so blog.json and the generated pages both carry ready-to-show HTML.
+ *
+ * Run locally:  npm ci && node scripts/build-blog.js
  * Also run by .github/workflows/build-blog.yml whenever content/blog changes.
  * No dependencies. Safe to run repeatedly: output is deterministic.
  */
@@ -64,20 +67,60 @@ function formatDate(iso, lang) {
     : `${MONTHS_EN[month]} ${m[3]}, ${m[1]}`;
 }
 
-// Editors can separate paragraphs with a blank line. The renderer wraps a body in one <p>,
-// so extra paragraphs are joined with </p><p> to stay valid with the existing markup.
-function paragraphs(body) {
-  return String(body || "")
-    .trim()
-    .split(/\n\s*\n/)
-    .map((p) => p.replace(/\s*\n\s*/g, " ").trim())
-    .filter(Boolean)
-    .join("</p><p>");
+// -- Markdown ---------------------------------------------------------------
+
+let markdown = null;
+
+async function loadMarkdown() {
+  let Marked;
+  try {
+    ({ Marked } = await import("marked"));
+  } catch (e) {
+    fail('the "marked" package is not installed. Run "npm ci" in the project folder first.');
+  }
+
+  // Legacy and absolute links to this site become site-relative; /article?id=x becomes /article-x.
+  function rewriteHref(href) {
+    let h = String(href || "");
+    h = h.replace(/^https?:\/\/(www\.)?oviwellness\.com\/article\?id=([^&#]+)/i, "/article-$2");
+    h = h.replace(/^https?:\/\/(www\.)?oviwellness\.com(?=\/|$)/i, "") || "/";
+    return h;
+  }
+
+  markdown = new Marked({
+    gfm: true,
+    renderer: {
+      // Sections already have an <h3> heading, so headings written inside the text sit one level lower.
+      heading({ tokens, depth }) {
+        const level = Math.min(depth + 1, 6);
+        return `<h${level}>${this.parser.parseInline(tokens)}</h${level}>
+`;
+      },
+      link({ href, title, tokens }) {
+        const url = rewriteHref(href);
+        const external = /^https?:\/\//i.test(url);
+        return `<a href="${esc(url)}"${title ? ` title="${esc(title)}"` : ""}${external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${this.parser.parseInline(tokens)}</a>`;
+      },
+      image({ href, title, text }) {
+        return `<img src="${esc(href)}" alt="${esc(text)}"${title ? ` title="${esc(title)}"` : ""} loading="lazy">`;
+      },
+    },
+  });
+}
+
+// Section text (Markdown) -> HTML. The first section is the lead paragraph(s) at the top of the post.
+function renderBody(text, isLead) {
+  let html = markdown.parse(String(text || "").trim()).trim();
+  html = html
+    .replace(/<table>/g, '<div class="article-table table-responsive"><table class="table">')
+    .replace(/<\/table>/g, "</table></div>");
+  if (isLead) html = html.replace("<p>", '<p class="lead fw-normal text-dark">');
+  return html;
 }
 
 function cleanContent(sections) {
-  return (Array.isArray(sections) ? sections : []).map((s) => {
-    const out = { title: s.title || "", body: paragraphs(s.body) };
+  return (Array.isArray(sections) ? sections : []).map((s, i) => {
+    const out = { title: s.title || "", body: renderBody(s.body, i === 0) };
     if (hasText(s.image)) out.image = s.image.trim();
     // Kept even without an image: a Spanish section has a description but takes its image from English.
     if (hasText(s.image_alt)) out.imageAlt = s.image_alt.trim();
@@ -196,8 +239,8 @@ function renderSections(post) {
     .map((section, index) => {
       const img = section.image ? figure(section.image, section.imageAlt) : "";
       return index === 0
-        ? `<div class="article-section"><p class="lead fw-normal text-dark">${section.body}</p>${img}</div>`
-        : `<div class="article-section"><h3>${esc(section.title)}</h3><p>${section.body}</p>${img}</div>`;
+        ? `<div class="article-section">${section.body}${img}</div>`
+        : `<div class="article-section"><h3>${esc(section.title)}</h3>${section.body}${img}</div>`;
     })
     .join("");
   return featured + body;
@@ -305,13 +348,16 @@ function buildSitemap(posts) {
 
 // -- main -------------------------------------------------------------------
 
-const posts = loadPosts();
-const jsonChanged = buildBlogJson(posts);
-const pages = buildPages(posts);
-const sitemapChanged = buildSitemap(posts);
+(async () => {
+  await loadMarkdown();
+  const posts = loadPosts();
+  const jsonChanged = buildBlogJson(posts);
+  const pages = buildPages(posts);
+  const sitemapChanged = buildSitemap(posts);
 
-const spanishPending = posts.filter((p) => !p.spanishReady).map((p) => p.id);
-console.log(`build-blog: ${posts.length} published post(s)`);
-console.log(`  updated: ${[...jsonChanged, ...pages.changed, ...sitemapChanged].join(", ") || "nothing (already up to date)"}`);
-if (pages.removed.length) console.log(`  removed: ${pages.removed.join(", ")}`);
-if (spanishPending.length) console.log(`  note: no Spanish yet (English shown on /es): ${spanishPending.join(", ")}`);
+  const spanishPending = posts.filter((p) => !p.spanishReady).map((p) => p.id);
+  console.log(`build-blog: ${posts.length} published post(s)`);
+  console.log(`  updated: ${[...jsonChanged, ...pages.changed, ...sitemapChanged].join(", ") || "nothing (already up to date)"}`);
+  if (pages.removed.length) console.log(`  removed: ${pages.removed.join(", ")}`);
+  if (spanishPending.length) console.log(`  note: no Spanish yet (English shown on /es): ${spanishPending.join(", ")}`);
+})();
