@@ -4,350 +4,351 @@
   "tabLabel": "Medicina Regenerativa",
   "href": "regenerative-medicine",
   "title": "Consulta de PRP para Usos Musculoesqueléticos o Estéticos Seleccionados",
-  "lead": "No permita que la rigidez articular, la pérdida de cabello o la disminución en la intimidad le impidan vivir plenamente.",
-  "description": "Utilizamos el poder natural de su cuerpo para apoyar la salud articular, la apariencia de la piel y el cabello, bajo la supervisión de un proveedor de atención médica con licencia. La evidencia y los resultados varían según la indicación; el tratamiento no garantiza la regeneración permanente del tejido.",
+  "lead": "Evaluación clínica para apoyar el bienestar articular, la salud capilar y la confianza personal.",
+  "description": "Exploramos opciones que utilizan procesos naturales del cuerpo para apoyar articulaciones, piel y cabello, siempre bajo prescripción y supervisión médica. Los resultados individuales varían.",
   "icon": "fa-heartbeat",
   "delay": "-3s",
   "features": [
-    "Ayuda a aliviar las molestias y la rigidez articular",
-    "Apoyo para la restauración del cabello y la piel",
-    "Apoyo para la salud y confianza íntima",
-    "Evaluado por un proveedor de atención médica con licencia"
+    "Apoyo para molestias articulares persistentes",
+    "Opciones para el cuidado capilar y de la piel",
+    "Evaluación del bienestar íntimo",
+    "Supervisado por un proveedor de atención médica con licencia"
   ],
   "image": "",
   "ctaText": "Programe su evaluación clínica",
-  "pageTitle": "Medicina Regenerativa Guiada — OVI Wellness",
-  "pageDescription": "Medicina regenerativa en St. Petersburg, FL. Terapias de PRP, P-Shot y restauración capilar supervisadas por proveedores de atención médica con licencia. La evidencia y los resultados varían.",
-  "heroHeadline": "Regenere.<br><span class=\"text-primary\">Restaure.</span> Renueve.",
-  "heroSubheadline": "Protocolos regenerativos de PRP supervisados clínicamente por proveedores de atención médica con licencia en St. Petersburg, FL.",
-  "heroCTA": "Programe su evaluación clínica hoy",
+  "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. Terapias PRP y enfoques para el bienestar supervisados por proveedores médicos con licencia.",
+  "heroHeadline": "Apoyo<br><span class=\"text-primary\">Regenerativo</span> Clínico",
+  "heroTitle": "Medicina Regenerativa con PRP en St. Petersburg, FL",
+  "heroSubheadline": "Protocolos regenerativos prescritos bajo supervisión clínica en St. Petersburg, FL.",
+  "heroCTA": "Programe su llamada médica hoy",
   "quiz": {
-    "badge": "Evaluación rápida de 1 minuto",
-    "headline": "Encuentre su plan de apoyo",
-    "subheadline": "Responda 3 preguntas rápidas para que nuestro proveedor de atención médica con licencia pueda orientarle.",
+    "badge": "Evaluación rápida",
+    "headline": "Encuentre su plan clínico",
+    "subheadline": "Responda 3 preguntas para ayudar a guiar nuestra evaluación.",
     "step1": {
-      "question": "¿Cuál es su principal preocupación en este momento?",
-      "sub": "Elija el área que desea abordar primero.",
+      "question": "¿Cuál es su principal inquietud en este momento?",
+      "sub": "Seleccione el área prioritaria.",
       "options": [
         {
           "value": "joint",
           "icon": "fa-bone",
-          "title": "Dolor y rigidez articular",
-          "desc": "Molestias en rodillas, hombros o dolor articular continuo."
+          "title": "Molestias articulares",
+          "desc": "Inquietudes en rodillas, hombros o articulaciones."
         },
         {
           "value": "hair",
           "icon": "fa-cut",
-          "title": "Pérdida de cabello",
-          "desc": "Desea apoyar la densidad del cabello del cuero cabelludo."
+          "title": "Cuidado capilar",
+          "desc": "Interés en apoyar el bienestar del cuero cabelludo."
         },
         {
           "value": "intimacy",
           "icon": "fa-heart",
-          "title": "Intimidad y salud sexual",
-          "desc": "P-Shot para el apoyo del deseo y la sensibilidad."
+          "title": "Bienestar íntimo",
+          "desc": "Apoyo para la salud sexual y confianza."
         }
       ]
     },
     "step2": {
-      "question": "¿Desde cuándo nota este problema?",
-      "sub": "Ayuda en su evaluación clínica inicial.",
+      "question": "¿Durante cuánto tiempo ha notado este problema?",
+      "sub": "Ayuda a guiar su punto de partida clínico.",
       "options": [
         {
           "value": "mild",
           "icon": "fa-thermometer-empty",
           "title": "Reciente (Leve)",
-          "desc": "Molestias recientes o pérdida de cabello inicial."
+          "desc": "Molestia reciente o cambios iniciales."
         },
         {
           "value": "severe",
           "icon": "fa-thermometer-full",
-          "title": "A largo plazo (Severo)",
-          "desc": "Molestias continuas o pérdida de cabello notoria por meses."
+          "title": "Largo plazo (Persistente)",
+          "desc": "Molestia continua o cambios de larga duración."
         }
       ]
     },
     "step3": {
-      "question": "¿Ha probado PRP o tratamientos regenerativos antes?",
-      "sub": "Ayuda a guiar su atención médica.",
+      "question": "¿Ha probado terapias regenerativas como PRP anteriormente?",
+      "sub": "Ayuda a orientar su evaluación clínica.",
       "options": [
         {
           "value": "no",
           "icon": "fa-times",
           "title": "Primera vez",
-          "desc": "Nunca he probado terapias regenerativas."
+          "desc": "Nunca he probado este tipo de atención clínica."
         },
         {
           "value": "yes",
           "icon": "fa-check",
           "title": "Sí, lo he hecho",
-          "desc": "He probado PRP o inyecciones articulares en el pasado."
+          "desc": "He probado opciones como PRP en el pasado."
         }
       ]
     },
     "protocols": {
       "joint": {
-        "tag": "Plan de apoyo articular recomendado",
-        "name": "Plan de apoyo articular y celular",
-        "peptides": "Terapia de PRP",
+        "tag": "Plan articular recomendado",
+        "name": "Plan de apoyo celular y articular",
+        "peptides": "Terapias con PRP prescritas",
         "icon": "fa-bone",
-        "desc": "Concentra los factores de crecimiento de su propio cuerpo para apoyar la respuesta a la inflamación articular y el cuidado del tejido. El tratamiento no garantiza la regeneración permanente del tejido.",
+        "desc": "Evaluación clínica para el uso de terapias que buscan apoyar la recuperación de los tejidos articulares.",
         "goalModifiers": {
-          "no": "Nuestro proveedor de atención médica con licencia realizará una evaluación clínica de su rodilla u hombro.",
-          "yes": "Se ajustará el enfoque para buscar un alivio sostenido, los resultados individuales varían."
+          "no": "Nuestro médico realizará una evaluación inicial para determinar el enfoque adecuado.",
+          "yes": "Nuestro médico ajustará el protocolo clínico según su historial."
         },
-        "social": "Más de 50 pacientes locales participan en este plan de apoyo articular."
+        "social": "Pacientes locales evalúan opciones de bienestar articular."
       },
       "hair": {
-        "tag": "Plan para cabello y cuero cabelludo",
-        "name": "Apoyo para el cuero cabelludo y el cabello",
-        "peptides": "Terapia de PRP capilar",
+        "tag": "Plan capilar",
+        "name": "Apoyo al cuero cabelludo",
+        "peptides": "Terapia PRP guiada",
         "icon": "fa-cut",
-        "desc": "Utiliza señales naturales para apoyar los folículos pilosos y buscar un cabello de aspecto más denso.",
+        "desc": "Busca apoyar el entorno de los folículos pilosos a través de un enfoque clínico.",
         "goalModifiers": {
-          "no": "Plan inicial diseñado para estimular las raíces capilares en sesiones estructuradas.",
-          "yes": "Plan de refuerzo adaptado para apoyar la densidad capilar."
+          "no": "Evaluación inicial diseñada para pacientes nuevos en estas opciones.",
+          "yes": "Plan de mantenimiento ajustado según las respuestas previas."
         },
-        "social": "82 pacientes buscan mejoras en la densidad capilar con este plan."
+        "social": "Individuos buscan alternativas de apoyo capilar."
       },
       "intimacy": {
-        "tag": "Plan de intimidad y confianza",
-        "name": "Apoyo celular para la intimidad (P-Shot)",
-        "peptides": "PRP natural + Factores de crecimiento",
+        "tag": "Plan de intimidad",
+        "name": "Evaluación de bienestar íntimo",
+        "peptides": "Apoyo clínico con PRP",
         "icon": "fa-heart",
-        "desc": "Procedimiento clínico que busca apoyar el flujo sanguíneo, la sensibilidad y la confianza íntima.",
+        "desc": "Procedimiento guiado médicamente que evalúa el apoyo a la salud sexual.",
         "goalModifiers": {
-          "no": "Nuestro proveedor le guiará a través de un tratamiento inicial con enfoque en su comodidad.",
-          "yes": "Protocolo de refuerzo diseñado para apoyar la vitalidad a largo plazo."
+          "no": "Su médico lo guiará a través de las consideraciones iniciales.",
+          "yes": "Protocolo de seguimiento diseñado según evaluaciones previas."
         },
-        "social": "69 pacientes locales han completado este tratamiento recientemente."
+        "social": "Muchos pacientes consultan sobre opciones de bienestar íntimo."
       }
     },
     "timelineMap": {
-      "mild": "4–6 semanas (Plan inicial)",
-      "severe": "8–12 semanas (Plan clínico estándar)"
+      "mild": "4–6 semanas (Evaluación temprana)",
+      "severe": "8–12 semanas (Evaluación médica estándar)"
     }
   },
   "eligibility": {
     "badge": "¿Para quién es esto?",
-    "headline": "¿Es candidato para el cuidado regenerativo?",
-    "intro": "Nuestros tratamientos utilizan los procesos biológicos de su cuerpo, supervisados por proveedores de atención médica con licencia. Realizamos una evaluación clínica para determinar si es candidato de forma segura.",
-    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo le guiará durante su evaluación clínica.",
-    "ctaText": "Llámenos ahora para consultar su elegibilidad",
+    "headline": "¿Es usted candidato para evaluación regenerativa?",
+    "intro": "Estos tratamientos médicos son evaluados y supervisados por un proveedor de atención médica con licencia. Revisamos su salud para buscar el enfoque clínico adecuado. Los resultados individuales varían.",
+    "note": "¿Preguntas? Nuestro equipo médico le asistirá durante su consulta.",
+    "ctaText": "Llámenos para verificar opciones",
     "items": [
       {
         "label": "Molestias articulares",
-        "detail": "Adultos que experimentan molestias articulares, rigidez en rodillas u hombros."
+        "detail": "Adultos buscando evaluación de molestias en rodillas u hombros."
       },
       {
-        "label": "Pérdida de cabello",
-        "detail": "Hombres y mujeres que buscan opciones de apoyo capilar."
+        "label": "Cuidado capilar",
+        "detail": "Personas explorando enfoques no quirúrgicos para el cuero cabelludo."
       },
       {
         "label": "Bienestar íntimo",
-        "detail": "Pacientes que buscan apoyo para el deseo y la sensibilidad con atención clínica."
+        "detail": "Pacientes interesados en evaluar opciones guiadas médicamente."
       },
       {
-        "label": "Alternativa conservadora",
-        "detail": "Personas que buscan opciones antes de considerar intervenciones mayores."
+        "label": "Interés no quirúrgico",
+        "detail": "Personas buscando consultar alternativas a los procedimientos invasivos cuando sea apropiado."
       },
       {
-        "label": "Atención médica supervisada",
-        "detail": "Quienes buscan tratamientos supervisados en un entorno clínico."
+        "label": "Atención clínica",
+        "detail": "Buscando tratamientos administrados por profesionales en un entorno clínico."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones de tratamiento",
-    "sectionHeadline": "Tratamientos guiados por evaluación clínica",
-    "sectionSubheadline": "Opciones regenerativas adaptadas tras una evaluación clínica exhaustiva. Los resultados individuales varían.",
+    "badge": "Opciones de prescripción",
+    "sectionHeadline": "Tratamientos guiados por médicos",
+    "sectionSubheadline": "Terapias evaluadas según su perfil clínico.",
     "items": [
       {
         "icon": "fa-dna",
-        "name": "Terapia Celular con PRP",
-        "tag": "Avanzado",
-        "description": "Señales celulares que buscan apoyar la respuesta del cuerpo en las articulaciones y el tejido."
+        "name": "Terapia celular PRP",
+        "tag": "Enfoque clínico",
+        "description": "Uso de plasma rico en plaquetas para apoyar la función de los tejidos previa evaluación médica."
       },
       {
         "icon": "fa-tint",
         "name": "Plasma Rico en Plaquetas (PRP)",
-        "tag": "Apoyo Natural",
-        "description": "Concentra los factores de crecimiento de su sangre para apoyar el cuidado de articulaciones, cabello y piel."
+        "tag": "Apoyo del cuerpo",
+        "description": "Utiliza factores propios de su sangre para buscar apoyar procesos biológicos naturales."
       },
       {
         "icon": "fa-mars",
-        "name": "P-Shot (Intimidad masculina)",
+        "name": "Bienestar masculino",
         "tag": "Para hombres",
-        "description": "Tratamiento de PRP que busca apoyar el flujo sanguíneo, la sensibilidad y el bienestar íntimo."
+        "description": "Evaluación clínica de opciones con PRP para apoyar la salud sexual masculina."
       },
       {
         "icon": "fa-wand-magic-sparkles",
-        "name": "Biorrejuvenecimiento Facial con PRP",
-        "tag": "Cuidado de la piel",
-        "description": "Terapia facial con PRP para apoyar la elasticidad y apariencia de la piel usando factores propios."
+        "name": "Apoyo facial",
+        "tag": "Bienestar de la piel",
+        "description": "Uso de terapias para buscar apoyo a la elasticidad y aspecto general de la piel."
       },
       {
         "icon": "fa-leaf",
-        "name": "Terapia de Apoyo Capilar",
-        "tag": "Apoyo capilar",
-        "description": "Tratamientos de PRP para el cuero cabelludo que buscan estimular las raíces capilares."
+        "name": "Evaluación capilar",
+        "tag": "Para el cabello",
+        "description": "Consulta sobre terapias para folículos pilosos bajo supervisión médica."
       },
       {
         "icon": "fa-heartbeat",
-        "name": "Apoyo Articular",
-        "tag": "Alivio de molestias",
-        "description": "Inyecciones de PRP dirigidas para rodillas, hombros y caderas que buscan apoyar la movilidad."
+        "name": "Apoyo articular",
+        "tag": "Evaluación física",
+        "description": "Consulta clínica orientada al bienestar de las articulaciones mayores."
       }
     ]
   },
   "science": {
     "badge": "Cómo funciona",
-    "headline": "Enfoque clínico en la<br><span class=\"text-primary\">salud regenerativa</span>",
-    "body": "La medicina regenerativa busca apoyar la capacidad del cuerpo para responder. Mediante el uso de factores de crecimiento (PRP), nuestros proveedores de atención médica con licencia administran protocolos para apoyar el tejido articular y las raíces capilares. La evidencia y los resultados varían según la indicación; el tratamiento no garantiza la regeneración permanente del tejido.",
+    "headline": "Por qué es importante el<br><span class=\"text-primary\">criterio médico</span>",
+    "body": "El manejo clínico busca opciones adaptadas al paciente. Mediante el uso supervisado de PRP, los médicos pueden evaluar opciones para apoyar los tejidos subyacentes. Los resultados individuales varían.",
     "bullets": [
-      "Supervisado por proveedores de atención médica con licencia",
-      "Compuestos compatibles con la biología de su cuerpo",
-      "Tratamientos clínicos ambulatorios"
+      "Procedimientos realizados por proveedores de atención médica con licencia",
+      "Uso de compuestos derivados del propio cuerpo del paciente",
+      "Opciones discutidas dentro del marco clínico adecuado"
     ],
     "stats": [
       {
-        "value": "Biológico",
-        "label": "Utiliza factores de crecimiento propios"
+        "value": "Basado",
+        "label": "En su biología individual"
       },
       {
-        "value": "Supervisado",
-        "label": "Evaluación clínica constante"
+        "value": "Clínico",
+        "label": "Supervisado por médicos"
       },
       {
-        "value": "Conservador",
-        "label": "Enfoque en minimizar medicación sintética"
+        "value": "Evaluado",
+        "label": "Consultas personalizadas"
       },
       {
         "icon": "fa-user-md",
-        "label": "Proveedor con licencia"
+        "label": "Atención médica certificada"
       }
     ],
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Apoyo Regenerativo con PRP",
-        "detail": "El PRP utiliza una muestra de su sangre para concentrar factores de crecimiento, buscando apoyar el área tratada."
+        "title": "Evaluación PRP",
+        "detail": "El PRP requiere la toma de muestra de sangre del paciente, seguida de procesamiento en clínica."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Señalización Celular con PRP",
-        "detail": "El PRP facilita la comunicación celular natural para apoyar las respuestas de recuperación del cuerpo."
+        "title": "Señalización celular",
+        "detail": "Se buscan enfoques que puedan interactuar con los procesos de recuperación del cuerpo."
       }
     ]
   },
   "myths": [
     {
-      "myth": "¿Es dolorosa la terapia con PRP?",
-      "reality": "El nivel de comodidad y el tiempo de recuperación varían. Utilizamos opciones tópicas para apoyar la comodidad. Muchos pacientes retoman sus actividades regulares tras su evaluación clínica, aunque los resultados individuales varían."
+      "myth": "¿Son procedimientos dolorosos?",
+      "reality": "Nuestros médicos utilizan opciones como cremas tópicas según corresponda para buscar su comodidad."
     },
     {
-      "myth": "¿El PRP son células madre?",
-      "reality": "No. El PRP no son células madre. Consiste en mensajeros celulares para apoyar los procesos del cuerpo. La evidencia y los resultados varían según la indicación."
+      "myth": "¿Son células madre?",
+      "reality": "No. El PRP y terapias similares no son células madre; utilizan componentes sanguíneos (plaquetas)."
     },
     {
-      "myth": "¿Es segura la medicina regenerativa supervisada?",
-      "reality": "Todos los tratamientos son administrados por proveedores de atención médica con licencia bajo directrices de salud. Se requiere una evaluación clínica exhaustiva para determinar su idoneidad."
+      "myth": "¿Es segura esta práctica médica?",
+      "reality": "Las terapias son realizadas directamente por un proveedor de atención médica con licencia."
     }
   ],
   "comparison": {
-    "headline": "Atención Médica vs. Opciones Comunes",
-    "subheadline": "La supervisión de un proveedor de atención médica con licencia busca brindarle resultados informados, los resultados individuales varían.",
+    "headline": "Atención guiada por un proveedor de atención médica con licencia",
+    "subheadline": "Consulte sobre enfoques médicos para su bienestar.",
     "ctaText": "Llame a nuestra clínica hoy",
     "mobileStats": [
       {
         "icon": "fa-dna",
-        "label": "Apoyo celular"
+        "label": "Evaluación clínica"
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Enfoque biológico"
+        "label": "Supervisión médica"
       },
       {
         "icon": "fa-bolt",
-        "label": "Atención dirigida"
+        "label": "Apoyo dirigido"
       },
       {
         "icon": "fa-heart",
-        "label": "Enfoque a largo plazo"
+        "label": "Seguimiento"
       }
     ],
     "rows": [
       {
-        "metric": "Enfoque",
-        "without": "Manejo sintomático temporal",
-        "with": "Apoyo a la respuesta biológica"
+        "metric": "Enfoque clínico",
+        "without": "Soluciones convencionales superficiales",
+        "with": "Evaluación del tejido y función"
       },
       {
         "metric": "Tipo de tratamiento",
-        "without": "Medicamentos sintéticos / Cirugía",
-        "with": "Terapias con PRP"
+        "without": "Enfoques no específicos",
+        "with": "Opciones PRP prescritas"
       },
       {
-        "metric": "Recuperación",
-        "without": "Semanas de reposo posquirúrgico",
-        "with": "El tiempo de recuperación varía"
+        "metric": "Experiencia en clínica",
+        "without": "Variable",
+        "with": "Procedimientos en consultorio médico"
       },
       {
-        "metric": "Perfil",
-        "without": "Asociado a diversos efectos",
-        "with": "Uso de compuestos biocompatibles"
+        "metric": "Evaluación de seguridad",
+        "without": "Riesgos no discutidos",
+        "with": "Discusión médica previa"
       },
       {
-        "metric": "Enfoque de alivio",
-        "without": "Efectos limitados en el tiempo",
-        "with": "Busca apoyo sostenido, los resultados varían"
+        "metric": "Seguimiento",
+        "without": "Sin revisiones continuas",
+        "with": "Visitas clínicas periódicas"
       }
     ],
     "stacks": [
       {
-        "name": "Plan de Apoyo Articular",
-        "tag": "Consultado Frecuentemente",
-        "compounds": "Protocolo de PRP",
-        "description": "Nuestro protocolo articular que combina factores de crecimiento del PRP para buscar alivio de molestias."
+        "name": "Protocolo de evaluación articular",
+        "tag": "Más popular",
+        "compounds": "Consulta y PRP",
+        "description": "Opción clínica que evalúa el uso de terapias para molestias articulares."
       },
       {
-        "name": "Paquete de Bienestar Íntimo",
-        "tag": "Salud Sexual",
-        "compounds": "P-Shot + Evaluación Clínica",
-        "description": "Tratamiento de PRP dirigido a la intimidad para apoyar la sensación y la confianza."
+        "name": "Consulta de intimidad",
+        "tag": "Bienestar sexual",
+        "compounds": "Opciones prescritas guiadas",
+        "description": "Evaluación médica para explorar terapias de salud íntima."
       },
       {
-        "name": "Plan de Restauración Capilar",
-        "tag": "Salud del Cuero Cabelludo",
-        "compounds": "Terapia de PRP Capilar",
-        "description": "Tratamiento diseñado para estimular las raíces capilares y apoyar la densidad del cabello."
+        "name": "Plan de apoyo capilar",
+        "tag": "Salud capilar",
+        "compounds": "Evaluación del cuero cabelludo",
+        "description": "Consulta para discutir intervenciones no quirúrgicas para el cabello."
       }
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito una evaluación clínica para medicina regenerativa?",
-      "answer": "Sí. Todos los tratamientos con PRP requieren una evaluación clínica. Hablará con un proveedor de atención médica con licencia que evaluará su salud antes de estructurar un plan."
+      "question": "¿Necesito consultar con un médico?",
+      "answer": "Sí. Todos los procedimientos clínicos requieren una evaluación previa por un proveedor de atención médica con licencia."
     },
     {
-      "question": "¿Qué incluye el programa regenerativo?",
-      "answer": "Su programa incluye una evaluación clínica completa con un proveedor de atención médica con licencia, el tratamiento de PRP, medidas para el confort y seguimiento."
+      "question": "¿Qué incluye el programa médico?",
+      "answer": "Incluye evaluación clínica completa, el procedimiento en el consultorio si está indicado, y revisiones de progreso."
     },
     {
-      "question": "¿Son dolorosas las inyecciones de PRP?",
-      "answer": "El nivel de comodidad y el tiempo de recuperación varían. Aplicamos medidas de comodidad antes del procedimiento. Los resultados individuales varían y su proveedor discutirá sus expectativas durante la evaluación clínica."
+      "question": "¿Experimentaré dolor?",
+      "answer": "Nuestros profesionales toman medidas, como anestésicos tópicos, para buscar el mayor confort durante la visita."
     },
     {
-      "question": "¿Cuántas sesiones necesito para ver resultados?",
-      "answer": "Los protocolos articulares y capilares suelen estructurarse en varias sesiones. Los resultados individuales varían en todos los tratamientos según la evaluación clínica de cada paciente."
+      "question": "¿Cuántas sesiones se consideran usualmente?",
+      "answer": "Esto variará. Las opciones se discutirán basándose en su perfil clínico y los protocolos recomendados."
     },
     {
-      "question": "¿En qué difiere el PRP de los tratamientos con células madre?",
-      "answer": "El PRP contiene mensajeros naturales que apoyan la respuesta del cuerpo, ofreciendo una señalización celular que apoya el proceso biológico. La evidencia y los resultados varían según la indicación; el tratamiento no garantiza la regeneración permanente del tejido."
+      "question": "¿En qué se diferencia el PRP de los tratamientos con células madre?",
+      "answer": "El PRP utiliza factores de su propia sangre (plaquetas), no células madre con capacidad de replicación."
     },
     {
-      "question": "¿Cómo empiezo con la medicina regenerativa?",
-      "answer": "¡Comenzar es sencillo! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Programe su evaluación clínica'. Nuestro proveedor de atención médica con licencia realizará su evaluación clínica."
+      "question": "¿Cómo puedo programar una consulta?",
+      "answer": "¡Contáctenos hoy! Nuestro equipo programará su evaluación inicial con un profesional de la salud."
     }
   ]
 }

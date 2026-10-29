@@ -3,351 +3,352 @@
   "type": "core",
   "tabLabel": "Optimización Hormonal",
   "href": "hormone-optimization",
-  "title": "Evaluación y Tratamiento Individualizados para la Deficiencia Hormonal Clínicamente Significativa",
-  "lead": "¿Experimenta fatiga persistente? Un proveedor de atención médica con licencia evalúa sus síntomas, historial médico, hallazgos de exámenes y resultados de laboratorio para determinar si la terapia hormonal es apropiada.",
-  "description": "Cuando los niveles hormonales disminuyen, puede experimentar fatiga, aumento de peso y falta de concentración. Nuestros proveedores de atención médica con licencia realizan análisis de sangre y desarrollan un plan de tratamiento individualizado basándose en una evaluación clínica.",
+  "title": "Evaluación Individualizada y Tratamiento para Deficiencia Hormonal Clínicamente Significativa",
+  "lead": "Un médico con licencia evalúa síntomas, historial médico, hallazgos de exámenes y resultados de laboratorio para determinar si la terapia hormonal es apropiada.",
+  "description": "Cuando los niveles hormonales disminuyen, puede presentarse fatiga, cambios de peso y falta de concentración. Nuestros médicos realizan análisis de sangre y crean un plan para apoyar su bienestar general. Los resultados individuales varían.",
   "icon": "fa-syringe",
   "delay": "0s",
   "features": [
-    "Evaluación de la energía y concentración diaria",
-    "Los objetivos potenciales del tratamiento pueden incluir la mejora de los síntomas.",
-    "Apoyo clínico para los patrones de sueño y el estado de ánimo",
-    "Requiere monitoreo individualizado por un proveedor de atención médica con licencia"
+    "Evaluación clínica para el apoyo de la energía",
+    "Los objetivos del tratamiento pueden incluir mejora en síntomas",
+    "Apoyo para el bienestar y descanso",
+    "Supervisado por un proveedor de atención médica con licencia"
   ],
   "image": "assets/images/photos/trt-therapy.jpg",
   "ctaText": "Programe su evaluación clínica",
-  "pageTitle": "Optimización Hormonal Supervisada — OVI Wellness",
-  "pageDescription": "Protocolos de terapia hormonal y TRT supervisados clínicamente por proveedores de atención médica con licencia en St. Petersburg, FL.",
-  "heroHeadline": "Evaluación Clínica de su<br><span class=\"text-primary\">Energía y Vitalidad</span>",
-  "heroSubheadline": "Terapia hormonal con receta médica bajo la supervisión de un proveedor de atención médica con licencia en St. Petersburg, FL.",
-  "heroCTA": "Programe su evaluación clínica hoy",
+  "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Terapia hormonal bioidéntica y protocolos de TRT en St. Petersburg, FL. Supervisado médicamente por proveedores de atención médica con licencia.",
+  "heroHeadline": "Apoyo para su<br><span class=\"text-primary\">Energía y Bienestar</span>",
+  "heroTitle": "TRT y Terapia Hormonal en St. Petersburg, FL",
+  "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo supervisión clínica en St. Petersburg, FL.",
+  "heroCTA": "Programe su llamada médica hoy",
   "quiz": {
-    "badge": "Evaluación Inicial",
-    "headline": "Determine sus Opciones de Terapia Hormonal",
-    "subheadline": "Responda estas preguntas para que nuestro proveedor de atención médica con licencia pueda evaluar su caso clínico.",
+    "badge": "Evaluación rápida",
+    "headline": "Encuentre su plan clínico",
+    "subheadline": "Responda 3 preguntas para guiar nuestra evaluación.",
     "step1": {
-      "question": "¿Cuál es su principal inquietud de salud?",
-      "sub": "Seleccione el área que requiere evaluación clínica.",
+      "question": "¿Cuál es su mayor desafío diario?",
+      "sub": "Elija lo que desea evaluar primero.",
       "options": [
         {
           "value": "energy",
           "icon": "fa-battery-quarter",
-          "title": "Baja energía y dificultad de concentración",
-          "desc": "Fatiga persistente a lo largo del día y episodios de cansancio."
+          "title": "Fatiga y falta de concentración",
+          "desc": "Sensación de cansancio constante a lo largo del día."
         },
         {
           "value": "libido",
           "icon": "fa-fire",
-          "title": "Bajo deseo o libido",
-          "desc": "Evaluación clínica para abordar cambios en la intimidad y la motivación."
+          "title": "Disminución del deseo",
+          "desc": "Interés en evaluar la intimidad y el estado de ánimo."
         },
         {
           "value": "muscle",
           "icon": "fa-dumbbell",
-          "title": "Cambios en la composición corporal",
-          "desc": "Dificultades relacionadas con la masa muscular o retención de peso."
+          "title": "Cambios en la masa muscular",
+          "desc": "Dificultad relacionada con la composición corporal."
         }
       ]
     },
     "step2": {
-      "question": "¿Por cuánto tiempo ha experimentado estos síntomas?",
-      "sub": "Esta información ayuda a nuestra evaluación clínica.",
+      "question": "¿Durante cuánto tiempo ha experimentado estos síntomas?",
+      "sub": "Ayuda a entender el contexto clínico.",
       "options": [
         {
           "value": "months",
           "icon": "fa-calendar",
           "title": "Algunos meses",
-          "desc": "Comencé a notar estos cambios recientemente."
+          "desc": "He notado cambios recientemente."
         },
         {
           "value": "years",
           "icon": "fa-calendar-alt",
           "title": "Algunos años",
-          "desc": "He experimentado estos síntomas por un período prolongado."
+          "desc": "He experimentado estos síntomas por un largo tiempo."
         }
       ]
     },
     "step3": {
-      "question": "¿Se ha realizado análisis de niveles hormonales recientemente?",
-      "sub": "La terapia hormonal requiere evaluación clínica, historial médico y pruebas de laboratorio antes de la prescripción.",
+      "question": "¿Se ha realizado análisis hormonales recientemente?",
+      "sub": "Ayuda a nuestro médico a guiar las pruebas de laboratorio.",
       "options": [
         {
           "value": "yes",
           "icon": "fa-vial",
-          "title": "Sí, me los he realizado",
-          "desc": "Tengo resultados de laboratorio de los últimos 6 meses."
+          "title": "Sí, lo he hecho",
+          "desc": "Me hicieron análisis en los últimos 6 meses."
         },
         {
           "value": "no",
           "icon": "fa-times",
           "title": "Aún no",
-          "desc": "Necesito que el proveedor de atención médica con licencia ordene mis pruebas de laboratorio."
+          "desc": "Necesito que su médico ordene mis análisis de laboratorio."
         }
       ]
     },
     "protocols": {
       "energy": {
-        "tag": "Evaluación de Energía",
-        "name": "Protocolo de Evaluación de Vitalidad",
-        "peptides": "Terapia con receta médica",
+        "tag": "Plan de bienestar",
+        "name": "Evaluación integral de energía",
+        "peptides": "Terapia hormonal guiada",
         "icon": "fa-battery-quarter",
-        "desc": "Un plan clínico supervisado por un proveedor de atención médica con licencia que evalúa los desequilibrios hormonales relacionados con la energía.",
+        "desc": "Evaluación para identificar y tratar posibles desequilibrios hormonales.",
         "goalModifiers": {
-          "yes": "Nuestro proveedor de atención médica con licencia revisará sus laboratorios para determinar una dosis de tratamiento apropiada.",
-          "no": "Ordenaremos un análisis de sangre para evaluar sus niveles antes de iniciar cualquier tratamiento."
+          "yes": "Nuestro médico revisará sus laboratorios para estructurar una evaluación inicial.",
+          "no": "Ordenaremos análisis de sangre de referencia antes de iniciar un protocolo."
         },
-        "social": "Pacientes locales participan en este plan de evaluación clínica."
+        "social": "Varios pacientes han iniciado evaluaciones con este enfoque."
       },
       "libido": {
-        "tag": "Plan de Evaluación de Intimidad",
-        "name": "Manejo Clínico de Libido",
-        "peptides": "Terapia Hormonal con Receta",
+        "tag": "Plan de intimidad",
+        "name": "Evaluación de la salud sexual y estado de ánimo",
+        "peptides": "Terapia prescrita según necesidad",
         "icon": "fa-fire",
-        "desc": "Terapia médica enfocada en el manejo de los síntomas relacionados con la intimidad y el estado de ánimo.",
+        "desc": "Terapia dirigida por un médico para apoyar la energía íntima y el bienestar general.",
         "goalModifiers": {
-          "yes": "Evaluaremos sus análisis de laboratorio recientes para determinar el plan adecuado.",
-          "no": "Nuestro proveedor de atención médica con licencia ordenará análisis de sangre para identificar sus necesidades clínicas."
+          "yes": "Revisaremos sus laboratorios recientes como parte de la evaluación.",
+          "no": "Nuestro médico ordenará análisis para identificar sus necesidades exactas."
         },
-        "social": "Pacientes han iniciado este plan de evaluación clínica."
+        "social": "Pacientes han buscado apoyo para su bienestar íntimo a través de este enfoque."
       },
       "muscle": {
-        "tag": "Protocolo de Composición Corporal",
-        "name": "Manejo Clínico de Composición Corporal",
-        "peptides": "Soporte Médico TRT",
+        "tag": "Plan muscular",
+        "name": "Apoyo a la composición corporal",
+        "peptides": "TRT y apoyo bioidéntico guiado",
         "icon": "fa-dumbbell",
-        "desc": "Protocolo enfocado en la evaluación clínica para apoyar el manejo de la composición corporal.",
+        "desc": "Evaluación clínica para apoyar la masa magra y la recuperación.",
         "goalModifiers": {
-          "yes": "Sus análisis recientes ayudarán a nuestro proveedor de atención médica con licencia a determinar una dosis clínica.",
-          "no": "Nuestro proveedor de atención médica con licencia ordenará los laboratorios necesarios para evaluar la testosterona y otros marcadores."
+          "yes": "Sus laboratorios recientes ayudarán a establecer un punto de partida seguro.",
+          "no": "Realizaremos análisis de sangre para verificar marcadores clave."
         },
-        "social": "Pacientes locales participan en este protocolo de evaluación."
+        "social": "Muchos pacientes están evaluando su estado con este protocolo."
       }
     },
     "timelineMap": {
-      "months": "El cronograma de tratamiento depende de la evaluación clínica. Los resultados individuales varían.",
-      "years": "El cronograma de tratamiento se determina individualmente. Los resultados individuales varían."
+      "months": "8–12 semanas (Fase inicial de evaluación)",
+      "years": "12–16 semanas (Evaluación prolongada)"
     }
   },
   "eligibility": {
-    "badge": "¿Para quién es indicado?",
-    "headline": "¿Es candidato para el manejo hormonal?",
-    "intro": "Nuestros tratamientos requieren evaluación clínica, historial médico y análisis de laboratorio antes de la prescripción por un proveedor de atención médica con licencia. Requiere monitoreo individualizado.",
-    "note": "¿Preguntas sobre su elegibilidad? Nuestro equipo médico le guiará durante su evaluación clínica.",
-    "ctaText": "Programe su evaluación clínica",
+    "badge": "¿Para quién es esto?",
+    "headline": "¿Es usted candidato para evaluación hormonal?",
+    "intro": "Estos tratamientos requieren receta médica y son supervisados por un proveedor de atención médica con licencia. Evaluamos sus análisis de sangre primero para guiar las recomendaciones clínicas. Los resultados individuales varían.",
+    "note": "¿Preguntas sobre elegibilidad? Nuestro equipo lo guiará durante su evaluación.",
+    "ctaText": "Llámenos para verificar elegibilidad",
     "items": [
       {
-        "label": "Fatiga Persistente",
-        "detail": "Adultos que experimentan fatiga diaria, dificultad de concentración o bajo deseo."
+        "label": "Fatiga persistente",
+        "detail": "Adultos que experimentan fatiga diaria o dificultad de concentración."
       },
       {
-        "label": "Niveles Hormonales Bajos",
-        "detail": "Individuos con niveles hormonales confirmados por debajo del rango óptimo mediante análisis de sangre."
+        "label": "Niveles hormonales alterados",
+        "detail": "Personas con niveles evaluados de testosterona o marcadores metabólicos que justifican seguimiento."
       },
       {
-        "label": "Manejo Previo No Exitoso",
-        "detail": "Personas que buscan evaluación médica profesional para sus síntomas persistentes."
+        "label": "Enfoques previos",
+        "detail": "Personas que han intentado opciones convencionales sin resultados claros."
       },
       {
-        "label": "Soporte de Composición Corporal",
-        "detail": "Pacientes buscando evaluación clínica para el manejo de masa muscular y función general."
+        "label": "Objetivos de bienestar",
+        "detail": "Hombres y mujeres que buscan apoyar su composición corporal y bienestar general."
       },
       {
-        "label": "Dispuesto a Supervisión Médica",
-        "detail": "Personas que buscan un plan prescrito por un proveedor de atención médica con licencia, con monitoreo regular."
+        "label": "Listo para atención médica",
+        "detail": "Buscando un plan estructurado y monitoreado por un profesional."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones con Receta Médica",
-    "sectionHeadline": "Tratamientos Médicamente Supervisados",
-    "sectionSubheadline": "Tratamientos prescritos adaptados a sus necesidades tras una evaluación clínica y análisis de sangre.",
+    "badge": "Opciones de prescripción",
+    "sectionHeadline": "Tratamientos guiados por médicos",
+    "sectionSubheadline": "Opciones evaluadas clínicamente según sus análisis de sangre.",
     "items": [
       {
         "icon": "fa-syringe",
-        "name": "Terapia con Testosterona (TRT)",
-        "tag": "Evaluación Médica",
-        "description": "Tratamiento de testosterona calibrado para hombres tras evaluación clínica. Rutina bajo supervisión de un proveedor de atención médica con licencia."
+        "name": "Terapia de Testosterona (TRT)",
+        "tag": "Más popular",
+        "description": "Tratamiento de testosterona calibrado por un médico para hombres con síntomas clínicos de deficiencia."
       },
       {
         "icon": "fa-venus",
-        "name": "Terapia Hormonal para Mujeres",
-        "tag": "Para Mujeres",
-        "description": "Manejo médico hormonal para mujeres que buscan apoyo para los cambios de humor y la baja energía."
+        "name": "TRH Bioidéntica para Mujeres",
+        "tag": "Para mujeres",
+        "description": "Evaluación para el balance de estrógeno y progesterona en mujeres que experimentan cambios de estado de ánimo o energía."
       },
       {
         "icon": "fa-vial",
-        "name": "Protocolos de Apoyo",
-        "tag": "Evaluación Celular",
-        "description": "Opciones de apoyo integradas a su plan clínico bajo supervisión médica."
+        "name": "Apoyo de opciones prescritas",
+        "tag": "Apoyo adicional",
+        "description": "Opciones clínicas complementarias para apoyar la salud general según recomendación médica."
       },
       {
         "icon": "fa-heart",
-        "name": "Terapia de Bienestar Sexual",
-        "tag": "Manejo de Vitalidad",
-        "description": "Tratamientos prescritos para apoyar la salud sexual según se determine en la evaluación clínica."
+        "name": "Terapia de bienestar sexual",
+        "tag": "Vitalidad",
+        "description": "Tratamientos recetados diseñados para apoyar el bienestar íntimo y el flujo sanguíneo."
       },
       {
         "icon": "fa-shield-alt",
-        "name": "Manejo Tiroideo y Suprarrenal",
-        "tag": "Soporte Metabólico",
-        "description": "Soporte médico para la función tiroidea y suprarrenal basado en hallazgos clínicos."
+        "name": "Evaluación metabólica",
+        "tag": "Soporte",
+        "description": "Apoyo completo a la función metabólica y suprarrenal en el contexto clínico apropiado."
       },
       {
         "icon": "fa-flask",
-        "name": "Análisis de Laboratorio Médico",
-        "tag": "Monitoreo Clínico",
-        "description": "Pruebas de laboratorio necesarias para que el proveedor de atención médica con licencia evalúe los niveles hormonales de forma apropiada."
+        "name": "Monitoreo de laboratorios",
+        "tag": "Seguridad",
+        "description": "Pruebas simples para verificar marcadores hormonales de manera segura."
       }
     ]
   },
   "science": {
-    "badge": "Cómo Funciona",
-    "headline": "El Proceso de la<br><span class=\"text-primary\">Evaluación Hormonal Médica</span>",
-    "body": "El manejo hormonal aborda los desequilibrios identificados clínicamente. La terapia hormonal requiere una evaluación clínica, historial médico y pruebas de laboratorio antes de la prescripción. Los tratamientos prescritos buscan apoyar las deficiencias identificadas por su proveedor de atención médica con licencia.",
+    "badge": "Cómo funciona",
+    "headline": "Por qué es importante el<br><span class=\"text-primary\">apoyo clínico</span>",
+    "body": "Las hormonas desempeñan un papel fundamental en el cuerpo. A medida que envejecemos, los niveles pueden cambiar. Nuestro proveedor de atención médica con licencia puede recomendar tratamientos hormonales bioidénticos para abordar posibles desequilibrios identificados clínicamente. Los resultados individuales varían.",
     "bullets": [
-      "Prescrito por un proveedor de atención médica con licencia",
-      "Adaptado a las necesidades clínicas identificadas en las pruebas",
-      "Requiere monitoreo individualizado constante"
+      "Prescritos por proveedores de atención médica con licencia",
+      "Uso de opciones bioidénticas según indicación médica",
+      "Controles periódicos para monitorear seguridad y eficacia"
     ],
     "stats": [
       {
-        "value": "Monitoreado",
-        "label": "Requiere monitoreo individualizado"
+        "value": "Respuesta",
+        "label": "Puede apoyar la energía tras evaluación"
       },
       {
-        "value": "Clínico",
-        "label": "Supervisado por un proveedor de atención médica con licencia"
+        "value": "Monitoreado",
+        "label": "Supervisado por médicos"
       },
       {
         "value": "Adaptado",
-        "label": "Evaluado mediante análisis de sangre"
+        "label": "Basado en sus laboratorios"
       },
       {
         "icon": "fa-user-md",
-        "label": "Certificado por Receta Médica"
+        "label": "Atención médica certificada"
       }
     ],
     "cards": [
       {
         "icon": "fa-vial",
-        "title": "Basado en Análisis de Laboratorio",
-        "detail": "Las dosis se calculan a partir de sus pruebas de laboratorio específicas para proporcionar un tratamiento clínico enfocado."
+        "title": "Basado en laboratorios",
+        "detail": "Las dosis se calculan a partir de pruebas específicas para buscar un enfoque clínico adecuado."
       },
       {
         "icon": "fa-shield-alt",
-        "title": "Tratamiento Clínico",
-        "detail": "Utilizamos hormonas prescritas basándonos en la evaluación clínica de sus necesidades."
+        "title": "Hormonas Bioidénticas",
+        "detail": "Utilizamos opciones bioidénticas evaluadas por médicos para el manejo hormonal."
       }
     ]
   },
   "myths": [
     {
-      "myth": "¿Son estos tratamientos esteroides destinados al culturismo?",
-      "reality": "No. La terapia hormonal se enfoca en abordar deficiencias clínicas para la salud general, bajo la estricta supervisión de un proveedor de atención médica con licencia, y no utiliza dosis para fines no médicos."
+      "myth": "¿Son esteroides sintéticos?",
+      "reality": "No. Nuestro enfoque clínico evalúa el uso de hormonas bioidénticas, bajo supervisión, para buscar niveles saludables."
     },
     {
-      "myth": "¿Tengo que continuar con el tratamiento indefinidamente?",
-      "reality": "El tiempo de tratamiento se basa en la evaluación clínica. Si interrumpe el tratamiento, los niveles hormonales generalmente regresarán a los valores previos al tratamiento. Requiere monitoreo individualizado."
+      "myth": "¿Debo permanecer en esto de manera continua?",
+      "reality": "El seguimiento dependerá de su evaluación clínica y sus objetivos a largo plazo. Su médico monitoreará su estado continuamente."
     },
     {
-      "myth": "¿Es segura la atención hormonal supervisada?",
-      "reality": "Cualquier tratamiento médico conlleva riesgos. Requiere monitoreo individualizado. Cada tratamiento es recetado por un proveedor de atención médica con licencia y se monitorea mediante análisis de sangre regulares."
+      "myth": "¿Es segura la atención hormonal guiada?",
+      "reality": "Cada tratamiento es prescrito y monitoreado por un médico con controles de sangre regulares para apoyar su salud general."
     }
   ],
   "comparison": {
-    "headline": "Atención Médicamente Supervisada",
-    "subheadline": "La supervisión por un proveedor de atención médica con licencia proporciona un enfoque estructurado para la evaluación hormonal.",
-    "ctaText": "Comuníquese con nuestra clínica hoy",
+    "headline": "Atención guiada por un proveedor de atención médica con licencia",
+    "subheadline": "Descubra la importancia del monitoreo médico.",
+    "ctaText": "Llame a nuestra clínica hoy",
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "Evaluación de Energía"
+        "label": "Apoyo de energía"
       },
       {
         "icon": "fa-brain",
-        "label": "Evaluación de Concentración"
+        "label": "Evaluación cognitiva"
       },
       {
         "icon": "fa-dumbbell",
-        "label": "Composición Corporal"
+        "label": "Composición"
       },
       {
         "icon": "fa-moon",
-        "label": "Evaluación de Sueño"
+        "label": "Descanso"
       }
     ],
     "rows": [
       {
-        "metric": "Manejo de Energía",
-        "without": "Sin evaluación médica",
-        "with": "Protocolo guiado clínicamente"
+        "metric": "Nivel de energía",
+        "without": "Posible fatiga sin evaluación",
+        "with": "Apoyo clínico a la energía"
       },
       {
-        "metric": "Composición Corporal",
-        "without": "Sin supervisión",
-        "with": "Evaluación de composición corporal"
+        "metric": "Composición corporal",
+        "without": "Dificultades sin orientación",
+        "with": "Apoyo para el mantenimiento de masa magra"
       },
       {
-        "metric": "Claridad Mental",
-        "without": "Fatiga persistente",
-        "with": "Apoyo clínico para la concentración"
+        "metric": "Claridad mental",
+        "without": "Posible dificultad de concentración",
+        "with": "Abordaje clínico de síntomas"
       },
       {
-        "metric": "Monitoreo del Sueño",
-        "without": "Despertares no evaluados",
-        "with": "Manejo de síntomas del sueño"
+        "metric": "Calidad del descanso",
+        "without": "Desafíos en el descanso",
+        "with": "Monitoreo del bienestar general"
       },
       {
-        "metric": "Supervisión Médica",
-        "without": "Sin control",
-        "with": "Receta por proveedor de atención médica con licencia"
+        "metric": "Seguridad médica",
+        "without": "Falta de supervisión clínica",
+        "with": "Monitoreo prescrito por médico"
       }
     ],
     "stacks": [
       {
-        "name": "Plan de Evaluación Masculina",
-        "tag": "Evaluación Médica",
-        "compounds": "Protocolo TRT",
-        "description": "Protocolo de testosterona prescrito tras evaluación clínica para apoyar los niveles hormonales. Los resultados individuales varían."
+        "name": "Plan de bienestar masculino",
+        "tag": "Más popular",
+        "compounds": "TRT guiado",
+        "description": "Evaluación clínica de testosterona para apoyar el bienestar en hombres."
       },
       {
-        "name": "Plan de Evaluación Femenina",
-        "tag": "Para Mujeres",
-        "compounds": "Evaluación de Estrógeno y Progesterona",
-        "description": "Terapia hormonal enfocada en la evaluación clínica para apoyar los síntomas del desequilibrio hormonal."
+        "name": "Plan de equilibrio femenino",
+        "tag": "Para mujeres",
+        "compounds": "Opciones bioidénticas guiadas",
+        "description": "Terapia hormonal femenina enfocada en apoyar el bienestar y el estado de ánimo."
       },
       {
-        "name": "Plan de Evaluación General",
-        "tag": "Evaluación Integral",
-        "compounds": "Panel Hormonal y Soporte Tiroideo",
-        "description": "Evaluación clínica comprensiva guiada por análisis de sangre para el manejo de la salud a largo plazo."
+        "name": "Plan completo de evaluación clínica",
+        "tag": "Auditoría completa",
+        "compounds": "Panel completo",
+        "description": "Evaluación médica integral guiada por análisis sanguíneos detallados."
       }
     ]
   },
   "faqs": [
     {
       "question": "¿Necesito una receta médica para la terapia hormonal?",
-      "answer": "Sí. Todos los tratamientos hormonales son medicamentos recetados. La terapia hormonal requiere una evaluación clínica, historial médico y laboratorios antes de prescribir un plan por parte de un proveedor de atención médica con licencia."
+      "answer": "Sí. Todos los tratamientos de optimización hormonal requieren receta médica. Su médico evaluará su historial y resultados de laboratorio."
     },
     {
-      "question": "¿Qué incluye la evaluación hormonal supervisada?",
-      "answer": "Incluye consultas con nuestro proveedor de atención médica con licencia, análisis de sangre de referencia y seguimiento, hormonas recetadas según la evaluación, y monitoreo individualizado."
+      "question": "¿Qué incluye el programa?",
+      "answer": "Incluye consultas directas con un proveedor de atención médica con licencia, laboratorios de referencia y seguimiento continuo."
     },
     {
-      "question": "¿Cuándo podré notar los resultados de la terapia hormonal?",
-      "answer": "El tiempo y la naturaleza de las respuestas al tratamiento dependen de la fisiología única de cada paciente. Los resultados individuales varían y no hay cronogramas garantizados."
+      "question": "¿Qué tan rápido notaré algún cambio?",
+      "answer": "La evolución clínica varía entre pacientes. Su médico monitoreará su progreso a lo largo de las semanas para ajustar el plan según necesidad."
     },
     {
-      "question": "¿Es la terapia hormonal apropiada para hombres y mujeres?",
-      "answer": "Nuestros tratamientos se adaptan clínicamente tanto para hombres como para mujeres tras una evaluación. Un proveedor de atención médica con licencia evaluará sus resultados de laboratorio para determinar su protocolo."
+      "question": "¿Es la terapia hormonal para hombres y mujeres?",
+      "answer": "Sí. Nuestros médicos evalúan protocolos adaptados específicamente para hombres y mujeres tras un análisis clínico cuidadoso."
     },
     {
-      "question": "¿La terapia tiene efectos secundarios?",
-      "answer": "Requiere monitoreo individualizado. Como con cualquier terapia médica, existen riesgos y efectos secundarios potenciales. Su proveedor de atención médica con licencia monitoreará su protocolo estrictamente."
+      "question": "¿Existen riesgos o efectos adversos?",
+      "answer": "Todos los tratamientos médicos conllevan algunos riesgos, los cuales serán discutidos detalladamente con su médico antes de iniciar la terapia. Los resultados y posibles efectos varían individualmente."
     },
     {
-      "question": "¿Cómo inicio la evaluación para el manejo hormonal?",
-      "answer": "Llame a nuestra clínica al (727) 476-8966 o haga clic en 'Programe su evaluación clínica' en línea. Nuestro proveedor de atención médica con licencia ordenará pruebas de laboratorio y realizará una evaluación clínica para determinar los pasos a seguir."
+      "question": "¿Cómo puedo empezar?",
+      "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
     }
   ]
 }

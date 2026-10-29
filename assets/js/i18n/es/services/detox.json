@@ -1,353 +1,351 @@
 {
   "id": "detox",
   "type": "additional",
-  "tabLabel": "Protocolos de Desintoxicación",
+  "tabLabel": "Protocolos Clínicos",
   "href": "detox",
-  "title": "Evaluación de Síntomas Gastrointestinales Persistentes o Relacionados con la Exposición",
-  "lead": "Apoyo clínico para síntomas de exposición al moho, malestar gastrointestinal y fatiga para ayudar a recuperar su energía.",
-  "description": "Los síntomas como fatiga, hinchazón y quejas cognitivas tienen muchas causas posibles. Un médico puede evaluar si las pruebas dirigidas son apropiadas. Nuestros proveedores de atención médica con licencia utilizan pruebas de laboratorio y protocolos clínicos para apoyar su salud intestinal y nivel de energía. Los resultados individuales varían.",
+  "title": "Evaluación de síntomas gastrointestinales persistentes o relacionados con la exposición",
+  "lead": "Aborde las posibles causas subyacentes de la fatiga o el malestar gastrointestinal mediante una evaluación médica.",
+  "description": "Síntomas como fatiga, hinchazón y quejas cognitivas tienen muchas causas posibles. Un proveedor de atención médica con licencia puede evaluar si las pruebas dirigidas son apropiadas. Los resultados individuales varían.",
   "icon": "fa-leaf",
   "delay": "-2s",
   "features": [
-    "Pruebas de laboratorio para evaluar posibles exposiciones",
-    "Protocolos clínicos recetados por un médico",
-    "Apoyo para síntomas de hinchazón, niebla mental y fatiga",
-    "Supervisado por un médico para su bienestar"
+    "Evaluación clínica para exposición a mohos o alteraciones gastrointestinales",
+    "Protocolos supervisados por un proveedor de atención médica con licencia",
+    "Abordaje de la hinchazón y fatiga",
+    "Plan de atención individualizado"
   ],
   "image": "assets/images/photos/team-group.jpg",
-  "ctaText": "Programe su Consulta Médica",
-  "pageTitle": "Protocolos Clínicos y Evaluación Médica — OVI Wellness",
-  "pageDescription": "Protocolos clínicos supervisados por médicos en St. Petersburg, FL. Evaluación de exposición al moho, cuidado antifúngico y apoyo a la salud intestinal bajo la supervisión de proveedores de atención médica con licencia.",
-  "heroHeadline": "Apoyo para su Salud Intestinal y<br><span class=\"text-primary\">Energía Sistémica</span>",
-  "heroSubheadline": "Protocolos clínicos para problemas gastrointestinales y exposición al moho, supervisados por médicos certificados en St. Petersburg, FL.",
-  "heroCTA": "Programe su Evaluación Clínica Hoy",
+  "ctaText": "Programe su evaluación clínica",
+  "pageTitle": "Protocolos clínicos guiados por médicos — OVI Wellness",
+  "pageDescription": "Protocolos clínicos supervisados médicamente en St. Petersburg, FL. Evaluaciones para exposición a micotoxinas y apoyo de la salud digestiva.",
+  "heroHeadline": "Apoye su salud<br><span class=\"text-primary\">digestiva y bienestar</span>",
+  "heroTitle": "Desintoxicación de Moho e Intestino en St. Petersburg, FL",
+  "heroSubheadline": "Protocolos clínicos revisados por proveedores de atención médica con licencia en St. Petersburg, FL.",
+  "heroCTA": "Programe su evaluación hoy",
   "quiz": {
-    "badge": "Evaluación Inicial",
-    "headline": "Encuentre su Enfoque Clínico",
-    "subheadline": "Responda 3 breves preguntas para que nuestros médicos puedan guiar su plan.",
+    "badge": "Evaluación rápida",
+    "headline": "Encuentre su plan clínico",
+    "subheadline": "Responda 3 preguntas breves para guiar nuestra evaluación.",
     "step1": {
-      "question": "¿Cuál es su principal desafío de salud?",
+      "question": "¿Cuál es su principal inquietud de salud?",
       "sub": "Seleccione el área que desea abordar.",
       "options": [
         {
           "value": "mold",
           "icon": "fa-disease",
-          "title": "Posible Exposición al Moho y Fatiga",
-          "desc": "Sensación de niebla mental, fatiga o molestias tras exposición al moho."
+          "title": "Exposición a moho y fatiga",
+          "desc": "Fatiga o síntomas respiratorios posteriores a una posible exposición."
         },
         {
           "value": "gut",
           "icon": "fa-bug",
-          "title": "Hinchazón y Molestias Gastrointestinales",
-          "desc": "Hinchazón persistente, molestias estomacales o digestión lenta."
+          "title": "Malestar gastrointestinal",
+          "desc": "Molestias persistentes o alteraciones en la digestión."
         },
         {
           "value": "reset",
           "icon": "fa-arrows-rotate",
-          "title": "Evaluación General de Bienestar",
-          "desc": "Busca un enfoque clínico completo para apoyar los niveles de energía."
+          "title": "Apoyo sistémico",
+          "desc": "Desea una evaluación completa para apoyar su bienestar."
         }
       ]
     },
     "step2": {
-      "question": "¿Cuánto tiempo lleva experimentando estos síntomas?",
-      "sub": "Ayuda a nuestro médico a determinar el punto de partida.",
+      "question": "¿Durante cuánto tiempo ha experimentado estos síntomas?",
+      "sub": "Ayuda a nuestro equipo a entender el contexto clínico.",
       "options": [
         {
           "value": "months",
           "icon": "fa-calendar",
-          "title": "Algunos Meses",
-          "desc": "Fatiga reciente, hinchazón o molestias cutáneas."
+          "title": "Algunos meses",
+          "desc": "Síntomas recientes de fatiga o molestias."
         },
         {
           "value": "years",
           "icon": "fa-calendar-alt",
-          "title": "Algunos Años",
-          "desc": "Problemas digestivos continuos o fatiga persistente durante años."
+          "title": "Algunos años",
+          "desc": "Problemas digestivos o fatiga prolongada."
         }
       ]
     },
     "step3": {
-      "question": "¿Ha completado una evaluación clínica o prueba similar antes?",
-      "sub": "Ayuda a nuestro médico a guiar sus pruebas de laboratorio.",
+      "question": "¿Ha completado una evaluación clínica similar antes?",
+      "sub": "Ayuda a guiar su protocolo.",
       "options": [
         {
           "value": "no",
           "icon": "fa-times",
-          "title": "Primera Vez",
-          "desc": "Nunca he realizado una evaluación clínica de este tipo."
+          "title": "Primera vez",
+          "desc": "Nunca he realizado este tipo de evaluación clínica."
         },
         {
           "value": "yes",
           "icon": "fa-check",
           "title": "Sí, lo he hecho",
-          "desc": "He probado protocolos básicos o terapias previas."
+          "desc": "He probado enfoques previos para estos síntomas."
         }
       ]
     },
     "protocols": {
       "mold": {
-        "tag": "Plan Clínico Sugerido",
-        "name": "Evaluación y Cuidado para Micotoxinas",
-        "peptides": "Cuidado Antifúngico Recetado y Apoyo Celular",
+        "tag": "Protocolo recomendado",
+        "name": "Protocolo para posible exposición a moho",
+        "peptides": "Apoyo celular prescrito",
         "icon": "fa-disease",
-        "desc": "Un enfoque guiado por un médico que evalúa las toxinas del moho e incorpora terapias recetadas para apoyar su eliminación celular.",
+        "desc": "Plan guiado por un médico que puede incluir pruebas y apoyo dirigido para abordar síntomas relacionados.",
         "goalModifiers": {
-          "no": "Plan inicial con pruebas de laboratorio de orina para evaluar la posible presencia de micotoxinas.",
-          "yes": "Protocolo clínico dirigido para abordar residuos persistentes."
+          "no": "Plan inicial con pruebas de laboratorio para identificar posibles factores subyacentes.",
+          "yes": "Protocolo dirigido basado en una evaluación clínica detallada."
         },
-        "social": "Muchos pacientes locales han recibido apoyo clínico con este plan guiado por un médico. Los resultados individuales varían."
+        "social": "Pacientes han buscado apoyo clínico mediante este enfoque."
       },
       "gut": {
-        "tag": "Plan de Apoyo Intestinal",
-        "name": "Restauración y Apoyo Gastrointestinal",
-        "peptides": "Apoyo Antiparasitario Recetado y Protocolo Intestinal",
+        "tag": "Plan digestivo",
+        "name": "Apoyo gastrointestinal",
+        "peptides": "Protocolo de apoyo digestivo",
         "icon": "fa-bug",
-        "desc": "Aborda desequilibrios en la flora intestinal para ayudar a reducir la hinchazón y apoyar la digestión y energía.",
+        "desc": "Enfoque clínico para abordar posibles desequilibrios en la flora gastrointestinal y apoyar el bienestar digestivo.",
         "goalModifiers": {
-          "no": "Incluye pruebas de laboratorio para evaluar la flora intestinal y comenzar un cuidado adecuado.",
-          "yes": "Protocolo clínico avanzado para problemas intestinales persistentes."
+          "no": "Incluye pruebas de laboratorio para identificar áreas de enfoque.",
+          "yes": "Protocolo avanzado para brindar apoyo clínico a problemas persistentes."
         },
-        "social": "Muchos pacientes han logrado una digestión más cómoda con este protocolo. Los resultados individuales varían."
+        "social": "Pacientes han completado protocolos para el bienestar digestivo."
       },
       "reset": {
-        "tag": "Plan de Vitalidad",
-        "name": "Apoyo Sistémico y de Energía",
-        "peptides": "Panel de Laboratorio Completo y Apoyo Orgánico",
+        "tag": "Plan de bienestar",
+        "name": "Apoyo sistémico de bienestar",
+        "peptides": "Panel completo y apoyo funcional",
         "icon": "fa-arrows-rotate",
-        "desc": "Evaluación general que apoya el bienestar celular y ayuda a promover la vitalidad.",
+        "desc": "Un protocolo integral para apoyar el bienestar general y el estado nutricional.",
         "goalModifiers": {
-          "no": "Análisis de laboratorio inicial completo para evaluar marcadores de energía.",
-          "yes": "Cuidado clínico intensivo diseñado para el bienestar y la vitalidad a largo plazo."
+          "no": "Evaluación de referencia completa para ayudar a identificar áreas de mejora clínica.",
+          "yes": "Apoyo celular avanzado diseñado para el bienestar a largo plazo."
         },
-        "social": "Muchos pacientes han buscado renovar su energía con este plan. Los resultados individuales varían."
+        "social": "Muchos pacientes optan por este protocolo para su bienestar general."
       }
     },
     "timelineMap": {
-      "months": "6–8 semanas (Fase Inicial)",
-      "years": "8–12 semanas (Plan Completo)"
+      "months": "6–8 semanas (Fase inicial de evaluación)",
+      "years": "8–12 semanas (Protocolo integral)"
     }
   },
   "eligibility": {
-    "badge": "¿Para Quién es Esto?",
-    "headline": "¿Es Candidato para Nuestros Protocolos Clínicos?",
-    "intro": "Nuestros protocolos son planes de grado médico supervisados por proveedores de atención médica con licencia. Primero evaluamos sus marcadores de salud para que reciba el tratamiento adecuado para su cuerpo.",
-    "note": "¿Preguntas sobre su candidatura? Nuestro equipo médico le guiará durante su evaluación clínica.",
-    "ctaText": "Llame para su Evaluación Clínica",
+    "badge": "¿Para quién es esto?",
+    "headline": "¿Es usted candidato para estos protocolos?",
+    "intro": "Nuestros protocolos son supervisados por un proveedor de atención médica con licencia. Evaluamos su salud para proporcionarle un tratamiento adecuado. Los resultados individuales varían.",
+    "note": "¿Preguntas sobre elegibilidad? Nuestro equipo médico lo guiará durante su consulta.",
+    "ctaText": "Llámenos para programar una evaluación",
     "items": [
       {
-        "label": "Niebla Mental y Fatiga",
-        "detail": "Adultos que lidian con agotamiento persistente o falta de concentración."
+        "label": "Fatiga persistente",
+        "detail": "Adultos que experimentan molestias o agotamiento continuo."
       },
       {
-        "label": "Hinchazón sin Explicación",
-        "detail": "Personas con molestias estomacales, digestión irregular o reacciones alimentarias."
+        "label": "Molestias gastrointestinales",
+        "detail": "Personas que presentan malestar estomacal o digestión irregular."
       },
       {
-        "label": "Exposición Conocida al Moho",
-        "detail": "Personas que han estado en edificios con moho y experimentan malestar."
+        "label": "Posible exposición ambiental",
+        "detail": "Personas preocupadas por el bienestar después de una posible exposición al moho."
       },
       {
-        "label": "Protocolos Previos sin Éxito",
-        "detail": "Cualquiera que busque alternativas clínicas a los métodos no médicos."
+        "label": "Enfoques previos no concluyentes",
+        "detail": "Cualquier persona que busque una evaluación clínica tras probar enfoques convencionales sin éxito."
       },
       {
-        "label": "Listo para Cuidado Médico",
-        "detail": "Buscando pruebas de laboratorio recetadas por un médico y apoyo clínico dirigido."
+        "label": "Listo para atención clínica",
+        "detail": "Buscando pruebas de laboratorio seguras prescritas por médicos y atención médica dirigida."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones Recetadas",
-    "sectionHeadline": "Tratamientos Guiados por un Médico",
-    "sectionSubheadline": "Opciones clínicas recetadas y adaptadas a su cuerpo tras pruebas de laboratorio.",
+    "badge": "Opciones disponibles",
+    "sectionHeadline": "Tratamientos guiados por médicos",
+    "sectionSubheadline": "Opciones clínicas adaptadas a sus necesidades tras una evaluación médica.",
     "items": [
       {
         "icon": "fa-vial",
-        "name": "Análisis de Micotoxinas",
-        "tag": "Prueba de Laboratorio",
-        "description": "Un médico puede evaluar si las pruebas dirigidas son apropiadas para guiar su plan clínico personalizado."
+        "name": "Análisis clínico",
+        "tag": "Evaluación",
+        "description": "Pruebas de laboratorio para ayudar a identificar posibles toxinas o desequilibrios."
       },
       {
         "icon": "fa-leaf",
-        "name": "Terapia Antifúngica Recetada",
-        "tag": "Cuidado Dirigido",
-        "description": "Cuidado recetado para ayudar a procesar y eliminar residuos del cuerpo de manera médicamente supervisada."
+        "name": "Protocolo de apoyo dirigido",
+        "tag": "Apoyo",
+        "description": "Atención médica prescrita para apoyar los procesos naturales del cuerpo."
       },
       {
         "icon": "fa-bug",
-        "name": "Apoyo Antiparasitario y Flora Intestinal",
-        "tag": "Salud Intestinal",
-        "description": "Pruebas avanzadas junto con terapias recetadas por un médico para abordar desequilibrios bacterianos."
+        "name": "Apoyo para el microbioma",
+        "tag": "Salud digestiva",
+        "description": "Pruebas avanzadas combinadas con un protocolo médico para apoyar la flora intestinal."
       },
       {
         "icon": "fa-shield-alt",
-        "name": "Protocolo Celular Aglutinante",
-        "tag": "Apoyo Sistémico",
-        "description": "Aglutinantes recetados que ayudan al cuerpo en el procesamiento de residuos metabólicos y ambientales."
+        "name": "Protocolo de unión celular",
+        "tag": "Asistencia sistémica",
+        "description": "El médico puede prescribir tratamientos para apoyar las vías funcionales del organismo."
       },
       {
         "icon": "fa-heartbeat",
-        "name": "Apoyo Hepático y Linfático",
-        "tag": "Apoyo de Órganos",
-        "description": "Nutrientes y apoyo de glutatión para ayudar a los sistemas hepático y linfático en sus funciones naturales."
+        "name": "Apoyo funcional",
+        "tag": "Soporte de órganos",
+        "description": "Nutrientes y apoyo de glutatión para asistir la función sistémica."
       },
       {
         "icon": "fa-flask",
-        "name": "Evaluación Médica y Laboratorio",
-        "tag": "Supervisión Médica",
-        "description": "Análisis completos de sangre y orina para que su médico pueda monitorear su progreso."
+        "name": "Revisión médica",
+        "tag": "Supervisión",
+        "description": "Pruebas exhaustivas de sangre y orina para que su médico pueda monitorear su progreso."
       }
     ]
   },
   "science": {
-    "badge": "Cómo Funciona",
-    "headline": "Un Enfoque Médico y <span class=\"text-primary\">Clínico</span>",
-    "body": "Los métodos no médicos pueden no abordar los problemas subyacentes. Nuestros protocolos guiados por un médico utilizan evaluaciones clínicas para comprender sus síntomas. Un médico puede evaluar si las pruebas dirigidas son apropiadas. Luego, recetamos tratamientos que ayudan a su cuerpo a procesar residuos de forma supervisada.",
+    "badge": "Cómo funciona",
+    "headline": "Por qué es importante la<br><span class=\"text-primary\">evaluación clínica</span>",
+    "body": "Nuestros protocolos guiados por un proveedor de atención médica con licencia utilizan pruebas de laboratorio para identificar áreas clínicas específicas de atención. Los médicos pueden prescribir tratamientos dirigidos para apoyar el bienestar del cuerpo. Los resultados individuales varían.",
     "bullets": [
-      "Recetado y monitoreado por proveedores de atención médica con licencia",
-      "Basado en pruebas de laboratorio de orina y sangre",
-      "Apoya los procesos naturales del cuerpo bajo supervisión médica"
+      "Supervisado y monitoreado por un proveedor de atención médica con licencia",
+      "Basado en pruebas de laboratorio reales",
+      "Atención personalizada con seguimiento clínico"
     ],
     "stats": [
       {
         "value": "Dirigido",
-        "label": "Aborda problemas subyacentes"
+        "label": "Protocolos adaptados a sus pruebas"
       },
       {
         "value": "Supervisado",
-        "label": "Revisado por un médico"
+        "label": "Revisión médica continua"
       },
       {
-        "value": "0%",
-        "label": "Dietas extremas requeridas"
+        "value": "Personal",
+        "label": "Plan nutricional apoyado"
       },
       {
         "icon": "fa-user-md",
-        "label": "Certificado por un Médico"
+        "label": "Atención médica certificada"
       }
     ],
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Pruebas de Laboratorio",
-        "detail": "Un médico puede evaluar si las pruebas dirigidas son apropiadas para guiar su tratamiento."
+        "title": "Pruebas de laboratorio reales",
+        "detail": "Utilizamos paneles avanzados para evaluar marcadores antes de iniciar un protocolo clínico."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Tratamientos Recetados",
-        "detail": "Se utilizan opciones médicas para apoyar la eliminación de residuos corporales."
+        "title": "Opciones prescritas",
+        "detail": "Intervenciones recomendadas por un médico según su evaluación de necesidades clínicas."
       }
     ]
   },
   "myths": [
     {
-      "myth": "¿Tengo que hacer ayunos extremos?",
-      "reality": "No. Nuestros planes guiados por médicos utilizan medicamentos recetados y una alimentación adecuada para que mantenga una dieta regular durante el cuidado."
+      "myth": "¿Debo seguir una dieta extrema?",
+      "reality": "No. Nuestros planes médicos pueden incluir recomendaciones nutricionales equilibradas como parte de su atención integral."
     },
     {
-      "myth": "¿Es el proceso difícil para mi cuerpo?",
-      "reality": "Nuestros médicos personalizan su dosis inicial según sus análisis de laboratorio y monitorean regularmente para buscar que su experiencia sea manejable."
+      "myth": "¿Este tipo de protocolo es agresivo para mi cuerpo?",
+      "reality": "Su proveedor de atención médica con licencia adaptará el plan basándose en sus análisis y realizará seguimientos regulares."
     },
     {
-      "myth": "¿Son seguras estas terapias?",
-      "reality": "Todos los tratamientos utilizan medicamentos e ingredientes recetados directamente por proveedores de atención médica con licencia bajo estrictas pautas clínicas."
+      "myth": "¿Es segura la terapia guiada por médicos?",
+      "reality": "Todos los tratamientos son recetados y supervisados por un proveedor de atención médica con licencia según las pautas clínicas correspondientes."
     }
   ],
   "comparison": {
-    "headline": "Cuidado Guiado por un Médico vs. Métodos No Clínicos",
-    "subheadline": "Vea por qué la supervisión de un médico proporciona un enfoque más integral y monitoreado. Los resultados individuales varían.",
-    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "headline": "Atención guiada por un proveedor de atención médica con licencia",
+    "subheadline": "Descubra la importancia de la supervisión médica.",
+    "ctaText": "Llame a nuestra clínica hoy",
     "mobileStats": [
       {
         "icon": "fa-vial",
-        "label": "Laboratorios"
+        "label": "Basado en laboratorios"
       },
       {
         "icon": "fa-leaf",
-        "label": "Salud Intestinal"
+        "label": "Apoyo digestivo"
       },
       {
         "icon": "fa-brain",
-        "label": "Claridad"
+        "label": "Enfoque clínico"
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Supervisado"
+        "label": "Supervisión médica"
       }
     ],
     "rows": [
       {
-        "metric": "Método de Evaluación",
-        "without": "Suposiciones / Tés comerciales",
-        "with": "Evaluación clínica y laboratorios"
+        "metric": "Método de diagnóstico",
+        "without": "Soluciones genéricas",
+        "with": "Pruebas de laboratorio reales"
       },
       {
-        "metric": "Profundidad del Enfoque",
-        "without": "Pérdida temporal de agua",
-        "with": "Apoyo sistémico y celular"
+        "metric": "Profundidad del protocolo",
+        "without": "Planes superficiales",
+        "with": "Apoyo clínico profundo"
       },
       {
-        "metric": "Apoyo Cognitivo",
-        "without": "Temporal o nulo",
-        "with": "Enfoque en la claridad mental"
+        "metric": "Apoyo cognitivo",
+        "without": "Beneficio temporal",
+        "with": "Enfoque sistémico"
       },
       {
-        "metric": "Supervisión Médica",
-        "without": "Kits web no monitoreados",
-        "with": "Revisión por médicos con licencia"
+        "metric": "Supervisión médica",
+        "without": "Sin monitoreo",
+        "with": "Revisión por MD con licencia"
       },
       {
-        "metric": "Resultado a Largo Plazo",
-        "without": "Posible recurrencia rápida",
-        "with": "Apoyo para el bienestar sostenido. Los resultados individuales varían."
+        "metric": "Resultado clínico",
+        "without": "Respuestas temporales",
+        "with": "Apoyo a largo plazo guiado"
       }
     ],
     "stacks": [
       {
-        "name": "Plan Integral para Micotoxinas",
-        "tag": "Opción Común",
-        "compounds": "Apoyo Antifúngico y Aglutinante",
-        "description": "Nuestro protocolo que combina antifúngicos recetados con apoyo celular."
+        "name": "Protocolo de evaluación de exposición",
+        "tag": "Más popular",
+        "description": "Nuestro protocolo principal que combina apoyo clínico tras la evaluación de una posible exposición ambiental."
       },
       {
-        "name": "Restauración Intestinal y Antiparasitaria",
-        "tag": "Salud Intestinal",
-        "compounds": "Antiparasitario y Protocolo de Microbioma",
-        "description": "Aborda desequilibrios bacterianos para apoyar una digestión cómoda."
+        "name": "Apoyo gastrointestinal",
+        "tag": "Salud digestiva",
+        "description": "Enfoque clínico para abordar posibles desequilibrios bacterianos y apoyar la digestión."
       },
       {
-        "name": "Apoyo Sistémico Completo",
-        "tag": "Evaluación General",
-        "compounds": "Panel de Laboratorio y Apoyo Linfático",
-        "description": "Auditoría integral diseñada para evaluar fatiga y apoyar el bienestar general."
+        "name": "Evaluación sistémica integral",
+        "tag": "Apoyo total",
+        "description": "Auditoría corporal exhaustiva diseñada para investigar las posibles causas de fatiga y malestar."
       }
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito una evaluación clínica para estos protocolos?",
-      "answer": "Sí. Todos nuestros protocolos médicos requieren una evaluación clínica con un proveedor de atención médica con licencia. Nuestro equipo evaluará sus síntomas y puede ordenar pruebas de laboratorio dirigidas."
+      "question": "¿Necesito una consulta médica para estos protocolos?",
+      "answer": "Sí. Todos nuestros protocolos clínicos requieren una evaluación por parte de un proveedor de atención médica con licencia, quien revisará sus síntomas y ordenará las pruebas necesarias."
     },
     {
-      "question": "¿Qué incluye el programa médico?",
-      "answer": "Su programa incluye una evaluación clínica completa, posibles pruebas de laboratorio, tratamientos recetados personalizados, pautas alimenticias y seguimiento médico regular."
+      "question": "¿Qué incluye el programa guiado por médicos?",
+      "answer": "Su programa incluye una consulta médica completa, pruebas de laboratorio especializadas, recomendaciones clínicas y seguimientos periódicos."
     },
     {
-      "question": "¿Cómo sé si mis síntomas provienen de estas causas?",
-      "answer": "Los síntomas tienen muchas causas posibles. Un médico puede evaluar si las pruebas dirigidas son apropiadas, como paneles de micotoxinas en orina o pruebas intestinales, para guiar su plan de atención."
+      "question": "¿Cómo se identifican los posibles desequilibrios?",
+      "answer": "Ordenamos pruebas de laboratorio específicas (como paneles de orina o pruebas de heces) para ayudar a proporcionar claridad clínica sobre sus síntomas."
     },
     {
-      "question": "¿Experimentaré efectos secundarios durante el tratamiento?",
-      "answer": "Nuestros médicos inician su plan de manera conservadora y monitorean su progreso. Ajustamos sus dosis para buscar que el proceso sea lo más manejable posible, aunque los resultados individuales varían."
+      "question": "¿Experimentaré efectos adversos?",
+      "answer": "Cualquier tratamiento médico puede tener efectos, pero nuestros médicos inician su plan de manera conservadora y realizan un monitoreo clínico para mitigar riesgos. Los resultados individuales varían."
     },
     {
-      "question": "¿Cuánto tiempo toma un protocolo clínico?",
-      "answer": "La mayoría de los pacientes completan su fase principal en 6 a 12 semanas. Los resultados individuales y los plazos varían para las mejoras en la energía y digestión."
+      "question": "¿Cuánto dura un protocolo clínico de este tipo?",
+      "answer": "Muchos pacientes completan su fase principal en 6 a 12 semanas, con evaluación continua del progreso clínico."
     },
     {
-      "question": "¿Cómo comienzo con una evaluación clínica?",
-      "answer": "¡Comenzar es sencillo! Llame a nuestra clínica hoy mismo al (727) 476-8966 o haga clic en 'Programe su Consulta Médica' en línea. ¡Nuestro equipo puede guiar su evaluación clínica para empezar!"
+      "question": "¿Cómo empiezo con el protocolo clínico?",
+      "answer": "¡Llámenos hoy para programar una evaluación! Nuestro proveedor de atención médica iniciará su proceso de pruebas de laboratorio."
     }
   ]
 }

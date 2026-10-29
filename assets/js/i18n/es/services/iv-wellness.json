@@ -1,353 +1,354 @@
 {
   "id": "iv-wellness",
   "type": "additional",
-  "tabLabel": "IV y Bienestar",
+  "tabLabel": "Terapia IV y Bienestar",
   "href": "iv-wellness",
-  "title": "Terapia de Hidratación IV y Nutrientes",
-  "lead": "Evite las pastillas estomacales de acción lenta y reciba nutrientes directamente en su torrente sanguíneo. Los resultados individuales varían.",
-  "description": "Reciba vitaminas, antioxidantes y fluidos directamente en su torrente sanguíneo. La terapia IV puede proporcionar fluidos y nutrientes seleccionados directamente en el torrente sanguíneo. Los efectos clínicos y el tiempo de tratamiento varían según la formulación y el paciente. Los resultados individuales varían.",
+  "title": "Terapia de Hidratación y Nutrientes IV",
+  "lead": "Terapia intravenosa para apoyar la hidratación y proporcionar nutrientes seleccionados de manera directa.",
+  "description": "Obtenga vitaminas, antioxidantes e hidratación a través de terapia intravenosa. La terapia IV puede proporcionar líquidos y nutrientes seleccionados directamente en el torrente sanguíneo. Los efectos clínicos y el tiempo de tratamiento varían según la formulación y el paciente.",
   "icon": "fa-tint",
   "delay": "-5s",
   "features": [
-    "Apoyo para la energía y claridad mental",
-    "Apoyo nutricional",
-    "Administración intravenosa directa; esto no garantiza una absorción celular del 100% ni un beneficio clínico garantizado",
-    "La terapia IV tiene riesgos, incluyendo hematomas, infecciones y reacciones alérgicas. La administración es realizada por personal clínico capacitado."
+    "Apoyo al bienestar general y cognitivo",
+    "Soporte de nutrientes",
+    "Administración vascular directa",
+    "Ambiente clínico cómodo y monitoreado"
   ],
   "image": "",
-  "ctaText": "Programe Su Consulta Médica",
-  "pageTitle": "Terapia y Bienestar IV Supervisada por Médicos — OVI Wellness",
-  "pageDescription": "Terapia vitamínica IV y Cóctel de Myers supervisada por médicos en St. Petersburg, FL. Prescrita y supervisada por proveedores de atención médica con licencia.",
-  "heroHeadline": "Hidratación y<br><span class=\"text-primary\">Apoyo Celular</span>",
-  "heroSubheadline": "Infusiones IV prescritas y supervisadas médicamente por proveedores de atención médica con licencia en St. Petersburg, FL. Los resultados individuales varían.",
-  "heroCTA": "Programe Su Llamada Médica Hoy",
+  "ctaText": "Programe su evaluación clínica",
+  "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
+  "pageDescription": "Terapia de vitaminas IV guiada por médicos en St. Petersburg, FL. Prescrita y supervisada por proveedores de atención médica con licencia.",
+  "heroHeadline": "Hidratación y<br><span class=\"text-primary\">Soporte Celular</span>",
+  "heroTitle": "Terapia IV en St. Petersburg, FL",
+  "heroSubheadline": "Terapias IV prescritas y supervisadas médicamente por un médico certificado en St. Petersburg, FL.",
+  "heroCTA": "Programe su evaluación hoy",
   "quiz": {
-    "badge": "Evaluación Rápida de 1 Minuto",
-    "headline": "Encuentre Su Plan de Goteo IV Adecuado",
-    "subheadline": "Responda 3 preguntas breves para que nuestros proveedores de atención médica con licencia puedan ayudarle a elegir el plan adecuado.",
+    "badge": "Evaluación rápida",
+    "headline": "Encuentre su plan IV",
+    "subheadline": "Responda 3 preguntas para guiar nuestra evaluación.",
     "step1": {
-      "question": "¿Cuál es su principal objetivo hoy?",
-      "sub": "Elija en qué desea enfocarse primero.",
+      "question": "¿Cuál es su objetivo principal hoy?",
+      "sub": "Elija la opción que desea abordar.",
       "options": [
         {
           "value": "energy",
           "icon": "fa-bolt",
-          "title": "Energía y Claridad Mental",
-          "desc": "Busca apoyo para la niebla mental, el cansancio y las bajas de energía por la tarde."
+          "title": "Bienestar general",
+          "desc": "Busca apoyo para episodios de fatiga o falta de concentración."
         },
         {
           "value": "recovery",
           "icon": "fa-first-aid",
-          "title": "Recuperación Atlética",
-          "desc": "Apoyo para la recuperación después de entrenamientos intensos o estrés físico."
+          "title": "Recuperación física",
+          "desc": "Busca apoyo después del esfuerzo físico o estrés."
         },
         {
           "value": "immunity",
           "icon": "fa-shield-alt",
-          "title": "Apoyo Inmunológico",
-          "desc": "Apoyo cuando se siente agotado, viaja o desea defensa adicional. Los resultados individuales varían."
+          "title": "Apoyo inmunológico",
+          "desc": "Busca vitaminas de apoyo durante viajes o temporadas de estrés."
         }
       ]
     },
     "step2": {
-      "question": "¿Ha probado los goteos vitamínicos IV anteriormente?",
-      "sub": "Ayuda a nuestro proveedor de atención médica con licencia a guiar la dosis de su infusión.",
+      "question": "¿Ha probado terapias vitamínicas IV antes?",
+      "sub": "Ayuda a guiar la evaluación médica.",
       "options": [
         {
           "value": "first",
           "icon": "fa-star",
-          "title": "Primera Vez",
-          "desc": "Soy nuevo en la terapia vitamínica IV."
+          "title": "Primera vez",
+          "desc": "Soy nuevo en la terapia de vitaminas IV."
         },
         {
           "value": "regular",
           "icon": "fa-sync",
-          "title": "Sí, Lo He Hecho",
-          "desc": "Recibo goteos IV como parte de mi rutina."
+          "title": "Sí, lo he hecho",
+          "desc": "Recibo terapia IV como parte de mi rutina."
         }
       ]
     },
     "step3": {
-      "question": "¿Le gustaría un refuerzo antioxidante de Glutatión?",
-      "sub": "El glutatión es nuestra opción de antioxidante para el apoyo celular.",
+      "question": "¿Le interesa el apoyo con Glutatión?",
+      "sub": "El glutatión es un antioxidante que apoya la defensa celular.",
       "options": [
         {
           "value": "yes",
           "icon": "fa-brain",
-          "title": "Sí, Agregar Glutatión",
-          "desc": "Busca apoyo antioxidante y protección celular."
+          "title": "Sí, considerar glutatión",
+          "desc": "Interesado en apoyo antioxidante adicional."
         },
         {
           "value": "no",
           "icon": "fa-times",
-          "title": "Goteo Estándar",
-          "desc": "Solo necesito vitaminas, minerales y fluidos de hidratación estándar."
+          "title": "Terapia estándar",
+          "desc": "Solo vitaminas y minerales estándar."
         }
       ]
     },
     "protocols": {
       "energy": {
-        "tag": "Goteo de Energía Recomendado",
-        "name": "Apoyo de Energía y Claridad",
-        "peptides": "Cóctel de Myers con Receta + Complejo B + Glutatión",
+        "tag": "Plan recomendado",
+        "name": "Apoyo de bienestar",
+        "peptides": "Cóctel de Myers prescrito + Complejo B",
         "icon": "fa-bolt",
-        "desc": "Proporciona vitaminas y minerales mediante administración intravenosa directa. Los resultados individuales varían.",
+        "desc": "Proporciona vitaminas y minerales directamente al torrente sanguíneo como apoyo nutricional.",
         "goalModifiers": {
-          "yes": "Incluye dosis altas de Complejo B y Glutatión para apoyar la energía y la concentración mental.",
-          "no": "Contiene Complejo B, Vitamina C y electrolitos para apoyar la energía diaria."
+          "yes": "Puede incluir glutatión sujeto a evaluación médica.",
+          "no": "Opciones con Complejo B y electrolitos."
         },
-        "social": "Más de 89 pacientes locales recibieron este goteo de apoyo de energía en los últimos 30 días."
+        "social": "Muchos pacientes optan por este protocolo de apoyo general."
       },
       "recovery": {
-        "tag": "Goteo de Recuperación Atlética",
-        "name": "Recuperación y Glutatión",
-        "peptides": "Glutatión con Receta + Aminoácidos + Electrolitos",
+        "tag": "Recuperación atlética",
+        "name": "Apoyo para la recuperación",
+        "peptides": "Aminoácidos + Electrolitos",
         "icon": "fa-first-aid",
-        "desc": "Ayuda en la rehidratación y brinda apoyo antioxidante para la recuperación atlética. Los resultados individuales varían.",
+        "desc": "Rehidrata el cuerpo para apoyar la recuperación después de la actividad física.",
         "goalModifiers": {
-          "yes": "Agrega Glutatión para apoyar la reparación celular después de un entrenamiento intenso.",
-          "no": "Incluye Glutatión y aminoácidos para apoyar el alivio del dolor muscular."
+          "yes": "Evaluación para la inclusión de antioxidantes adicionales.",
+          "no": "Enfocado en aminoácidos y rehidratación clínica."
         },
-        "social": "114 atletas y pacientes activos locales eligen este goteo de recuperación."
+        "social": "Deportistas locales utilizan este enfoque."
       },
       "immunity": {
-        "tag": "Goteo de Apoyo Inmunológico",
-        "name": "Defensa Inmunológica",
-        "peptides": "Vitamina C en Dosis Altas + Zinc + Cóctel de Myers",
+        "tag": "Plan inmunológico",
+        "name": "Apoyo inmunológico",
+        "peptides": "Vitamina C + Zinc + Cóctel de Myers",
         "icon": "fa-shield-alt",
-        "desc": "Contiene minerales y Vitamina C para apoyar las defensas naturales del cuerpo. Los resultados individuales varían.",
+        "desc": "Proporciona minerales y vitamina C para apoyar los sistemas naturales del cuerpo.",
         "goalModifiers": {
-          "yes": "Combina apoyo inmunológico con Vitamina C para ayudar con el agotamiento por viajes.",
-          "no": "Administra Vitamina C y Zinc para apoyar su sistema inmunológico."
+          "yes": "Combinación enfocada en defensas y antioxidantes.",
+          "no": "Aporte de Vitamina C y Zinc para apoyo general."
         },
-        "social": "95 pacientes eligen este escudo inmunológico al sentirse agotados."
+        "social": "Opciones seleccionadas frecuentemente para el bienestar preventivo."
       }
     },
     "timelineMap": {
-      "first": "45 minutos (Administración intravenosa directa)",
-      "regular": "2–4 semanas (Plan de apoyo acumulativo)"
+      "first": "45 minutos (Administración clínica)",
+      "regular": "Plan de evaluación continua"
     }
   },
   "eligibility": {
-    "badge": "¿Para Quién Es Esto?",
-    "headline": "¿Es Usted Candidato para la Atención IV?",
-    "intro": "La terapia IV administra vitaminas y minerales directamente en la sangre. Supervisada por proveedores de atención médica con licencia, puede apoyar la hidratación y los niveles de energía. Los resultados individuales varían.",
-    "note": "¿Preguntas sobre la candidatura? Nuestro equipo médico lo guiará durante su evaluación clínica.",
-    "ctaText": "Llámenos Ahora para Verificar su Candidatura",
+    "badge": "¿Para quién es esto?",
+    "headline": "¿Es usted candidato para la terapia IV?",
+    "intro": "La terapia IV es supervisada por proveedores de atención médica con licencia. Evaluamos su estado para determinar si estas opciones son adecuadas para usted. Los resultados individuales varían.",
+    "note": "¿Preguntas sobre elegibilidad? Nuestro equipo lo guiará.",
+    "ctaText": "Llámenos para verificar elegibilidad",
     "items": [
       {
-        "label": "Cansancio y Niebla Mental",
-        "detail": "Adultos que buscan apoyo para los bajones de energía del mediodía, mañanas lentas o sueño deficiente."
+        "label": "Fatiga general",
+        "detail": "Adultos que experimentan cansancio persistente y buscan apoyo nutricional."
       },
       {
-        "label": "Atletas Activos",
-        "detail": "Personas que buscan apoyo para la recuperación muscular, hidratación y alivio del dolor después de los entrenamientos."
+        "label": "Recuperación física",
+        "detail": "Personas que buscan apoyo después del ejercicio."
       },
       {
-        "label": "Viajeros Frecuentes",
-        "detail": "Cualquier persona que busque apoyo durante el desfase horario o los viajes."
+        "label": "Viajeros",
+        "detail": "Personas afectadas por desfase horario o estrés del viaje."
       },
       {
-        "label": "Necesidad de Defensa Inmunológica",
-        "detail": "Cualquier persona que se sienta agotada o busque apoyo inmunológico."
+        "label": "Apoyo inmunológico",
+        "detail": "Interesados en suplementos vitamínicos directos."
       },
       {
-        "label": "Listo para Atención Médica",
-        "detail": "Buscando infusiones de vitaminas en una clínica cómoda."
+        "label": "Listo para atención clínica",
+        "detail": "Buscando infusiones seguras prescritas por médicos."
       }
     ]
   },
   "protocols": {
-    "badge": "Opciones de Prescripción",
-    "sectionHeadline": "Tratamientos Guiados por Médicos",
-    "sectionSubheadline": "Infusiones IV prescritas por médicos y adaptadas a su cuerpo en una suite médica. Los resultados individuales varían.",
+    "badge": "Opciones de prescripción",
+    "sectionHeadline": "Tratamientos guiados por médicos",
+    "sectionSubheadline": "Opciones evaluadas clínicamente en un entorno médico.",
     "items": [
       {
         "icon": "fa-shield-virus",
-        "name": "Infusión de Vitamina C en Dosis Altas",
+        "name": "Infusión de Vitamina C",
         "tag": "Apoyo Inmunológico",
-        "description": "Vitamina C en dosis altas prescrita por un proveedor de atención médica con licencia para apoyar la inmunidad, ayudar con el estrés oxidativo y la fatiga."
+        "description": "Vitamina C prescrita para apoyar el estado antioxidante general."
       },
       {
         "icon": "fa-star",
-        "name": "Refuerzo Detox de Glutatión",
-        "tag": "Antioxidante Principal",
-        "description": "Administración intravenosa del antioxidante para apoyar la función hepática y la salud de la piel."
+        "name": "Apoyo con Glutatión",
+        "tag": "Antioxidante",
+        "description": "Administración de este antioxidante para apoyar la función celular."
       },
       {
         "icon": "fa-tint",
-        "name": "Goteo de Cóctel de Myers",
-        "tag": "El Más Popular",
-        "description": "Goteo IV clínico que contiene Magnesio, Vitaminas B, Vitamina C y Calcio para apoyo energético."
+        "name": "Cóctel de Myers",
+        "tag": "Más popular",
+        "description": "Una infusión clínica común con Magnesio, Vitaminas B, Vitamina C y Calcio."
       },
       {
         "icon": "fa-dumbbell",
-        "name": "Goteo de Recuperación Atlética",
-        "tag": "Apoyo Muscular",
-        "description": "Aminoácidos y electrolitos dirigidos para apoyar el alivio del dolor muscular y rehidratar después del ejercicio."
+        "name": "Apoyo Atlético",
+        "tag": "Recuperación",
+        "description": "Aminoácidos y electrolitos destinados a apoyar la rehidratación."
       },
       {
         "icon": "fa-shield-alt",
-        "name": "Goteo de Fortalecimiento Inmunológico",
-        "tag": "Apoyo Inmunológico",
-        "description": "Vitamina C en dosis altas, Zinc y B12 para apoyar el sistema inmunológico antes de viajar o durante la temporada de frío."
+        "name": "Soporte preventivo",
+        "tag": "Nutrición",
+        "description": "Opciones de apoyo vitamínico evaluadas por médicos."
       },
       {
         "icon": "fa-syringe",
-        "name": "Inyecciones de Vitaminas",
-        "tag": "Refuerzo Rápido",
-        "description": "Inyecciones intramusculares de B12, D3 o de apoyo metabólico para energía en un tiempo más breve."
+        "name": "Inyecciones vitamínicas",
+        "tag": "Opción rápida",
+        "description": "Inyecciones intramusculares (B12, D3) prescritas según evaluación."
       }
     ]
   },
   "science": {
-    "badge": "Cómo Funciona",
-    "headline": "El Enfoque Intravenoso para<br><span class=\"text-primary\">Vitaminas y Minerales</span>",
-    "body": "Cuando traga píldoras de vitaminas, su estómago las descompone. La terapia IV administra vitaminas directamente en la sangre para apoyar la hidratación y energía. Los resultados individuales varían.",
+    "badge": "Cómo funciona",
+    "headline": "El papel de la<br><span class=\"text-primary\">Terapia Intravenosa</span>",
+    "body": "La terapia IV administra nutrientes directamente en la sangre, lo que puede aumentar la disponibilidad sistémica en comparación con la ingesta oral. Su proveedor de atención médica con licencia evaluará qué opciones pueden apoyar mejor sus necesidades clínicas. Los resultados individuales varían.",
     "bullets": [
-      "Administración intravenosa directa; esto no garantiza una absorción celular del 100% ni un beneficio clínico garantizado.",
-      "Preparado y prescrito por proveedores de atención médica con licencia.",
-      "Administrado por enfermeras registradas en una clínica relajante."
+      "Administración intravenosa directa; esto no garantiza un beneficio clínico absoluto.",
+      "Preparado y prescrito por un proveedor de atención médica con licencia",
+      "Administrado por enfermeras registradas en un entorno clínico"
     ],
     "stats": [
       {
-        "value": "Vascular",
-        "label": "Administración directa de vitaminas"
+        "value": "Directo",
+        "label": "Administración vascular"
       },
       {
         "value": "45m",
-        "label": "Tiempo promedio de sesión de goteo"
+        "label": "Tiempo promedio de sesión"
       },
       {
-        "value": "Clínico",
-        "label": "Supervisado por proveedores de atención médica con licencia y administrado por enfermeras registradas"
+        "value": "Monitoreado",
+        "label": "Supervisión clínica"
       },
       {
         "icon": "fa-user-md",
-        "label": "Prescrito por Proveedor con Licencia"
+        "label": "Atención médica certificada"
       }
     ],
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Evita la Descomposición Estomacal",
-        "detail": "Los goteos IV evitan la digestión para que las vitaminas ingresen a su torrente sanguíneo directamente."
+        "title": "Disponibilidad sistémica",
+        "detail": "Las infusiones intravenosas proporcionan nutrientes directamente al torrente sanguíneo."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Administración Vascular Directa",
-        "detail": "Los goteos intravenosos entregan nutrientes directamente en su torrente sanguíneo. Los resultados individuales varían."
+        "title": "Entrega vascular",
+        "detail": "La administración directa puede ofrecer una mayor absorción sistémica que las opciones orales."
       }
     ]
   },
   "myths": [
     {
-      "myth": "¿Duele un goteo IV?",
-      "reality": "Nuestras enfermeras registradas con experiencia utilizan técnicas para minimizar las molestias. Puede relajarse, leer o ver televisión durante su goteo."
+      "myth": "¿Es doloroso?",
+      "reality": "La administración es realizada por enfermeras registradas experimentadas utilizando técnicas suaves para su comodidad."
     },
     {
-      "myth": "¿No son suficientes las píldoras de vitaminas orales?",
-      "reality": "Su estómago puede filtrar una cantidad de vitaminas orales. Los goteos IV proporcionan una administración directa al torrente sanguíneo."
+      "myth": "¿No son suficientes las píldoras orales?",
+      "reality": "La absorción oral puede variar. La vía intravenosa ofrece disponibilidad directa para ciertos nutrientes cuando se considere clínicamente apropiado."
     },
     {
-      "myth": "¿Es segura la terapia IV guiada por médicos?",
-      "reality": "Cada goteo es prescrito por un proveedor de atención médica con licencia y administrado por enfermeras registradas capacitadas siguiendo estrictas pautas médicas. La terapia IV tiene riesgos, incluyendo hematomas, infecciones y reacciones alérgicas. La administración es realizada por personal clínico capacitado."
+      "myth": "¿Es segura la terapia IV?",
+      "reality": "Cada infusión es recetada por un proveedor de atención médica con licencia y administrada por enfermeras bajo supervisión."
     }
   ],
   "comparison": {
-    "headline": "Atención Guiada por Médicos vs. Hacerlo Solo",
-    "subheadline": "Vea por qué la supervisión de un proveedor de atención médica con licencia puede ofrecer un enfoque clínico para el bienestar.",
-    "ctaText": "Llame a Nuestra Clínica Hoy",
+    "headline": "Atención guiada por un proveedor de atención médica con licencia",
+    "subheadline": "La importancia de la supervisión médica en la terapia de nutrientes.",
+    "ctaText": "Llame a nuestra clínica hoy",
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "Apoyo de Energía"
+        "label": "Apoyo directo"
       },
       {
         "icon": "fa-tint",
-        "label": "Hidratación Directa"
+        "label": "Hidratación"
       },
       {
         "icon": "fa-star",
-        "label": "Administración IV"
+        "label": "Nutrición"
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Revisado por Proveedor"
+        "label": "Revisado por médicos"
       }
     ],
     "rows": [
       {
-        "metric": "Absorción de Vitaminas",
-        "without": "Disminuida en el estómago",
-        "with": "Administración vascular directa; esto no garantiza una absorción celular del 100% ni un beneficio clínico garantizado"
+        "metric": "Absorción",
+        "without": "Variable con opciones orales",
+        "with": "Disponibilidad sistémica directa"
       },
       {
-        "metric": "Tiempo de Acción",
-        "without": "Variable",
-        "with": "Administración durante la sesión de goteo"
+        "metric": "Respuesta",
+        "without": "Depende de la digestión",
+        "with": "Administración vascular continua"
       },
       {
-        "metric": "Administración de Antioxidantes",
-        "without": "Degradado por el ácido estomacal",
-        "with": "Administración celular directa"
+        "metric": "Antioxidantes",
+        "without": "Posible degradación",
+        "with": "Entrega clínica"
       },
       {
-        "metric": "Velocidad de Rehidratación",
-        "without": "Absorción de agua convencional",
-        "with": "Rehidratación directa"
+        "metric": "Rehidratación",
+        "without": "Toma de líquidos estándar",
+        "with": "Hidratación intravenosa"
       },
       {
-        "metric": "Supervisión Médica",
-        "without": "Suplementos de tienda",
-        "with": "Cuidado por proveedor con licencia y enfermera registrada"
+        "metric": "Supervisión",
+        "without": "Sin control",
+        "with": "Atención médica con licencia"
       }
     ],
     "stacks": [
       {
-        "name": "Pila de Goteo de Vitalidad",
-        "tag": "El Más Popular",
-        "compounds": "Cóctel de Myers + Glutatión",
-        "description": "Nuestra principal combinación de goteo IV que une las vitaminas de Myers con Glutatión para el apoyo antioxidante y hepático."
+        "name": "Protocolo de bienestar completo",
+        "tag": "Más popular",
+        "compounds": "Apoyo vitamínico y clínico",
+        "description": "Una infusión común para el bienestar general guiada por evaluación médica."
       },
       {
-        "name": "Goteo de Apoyo para la Longevidad",
-        "tag": "Apoyo Celular",
-        "compounds": "Vitamina C en Dosis Altas + Complejo B + Glutatión",
-        "description": "Goteo de vitaminas prescrito por un proveedor de atención médica con licencia combinado con antioxidantes para el apoyo celular. Los resultados individuales varían."
+        "name": "Apoyo sistémico",
+        "tag": "Bienestar general",
+        "compounds": "Antioxidantes y Complejo B",
+        "description": "Evalúa el soporte de la función celular mediante vitaminas esenciales."
       },
       {
-        "name": "Pila de Recuperación Atlética",
-        "tag": "Apoyo a la Recuperación",
-        "compounds": "IV de Recuperación Atlética + Inyección de B12",
-        "description": "Diseñado para ayudar en la recuperación del dolor muscular con aminoácidos, electrolitos y B12."
+        "name": "Protocolo de recuperación",
+        "tag": "Recuperación atlética",
+        "compounds": "Aminoácidos",
+        "description": "Opciones para apoyar la rehidratación posterior al esfuerzo."
       }
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito una consulta antes de recibir un goteo IV?",
-      "answer": "Sí. Todas las infusiones de vitaminas IV son tratamientos médicos prescritos. Completará una evaluación clínica con nuestro proveedor de atención médica con licencia para asegurarse de que su goteo sea adecuado."
+      "question": "¿Necesito una consulta médica antes de la terapia IV?",
+      "answer": "Sí. Todas las infusiones vitamínicas IV son tratamientos médicos recetados. Completará una revisión de salud con un médico."
     },
     {
       "question": "¿Qué incluye el programa IV guiado por médicos?",
-      "answer": "Su programa incluye una evaluación clínica, vitaminas IV preparadas, asientos cómodos en nuestra suite médica y administración profesional por parte de enfermeras registradas."
+      "answer": "Incluye una consulta médica, vitaminas prescritas en un entorno clínico y administración por enfermeras registradas."
     },
     {
-      "question": "¿Cuánto tiempo dura una sesión de goteo IV?",
-      "answer": "La mayoría de los goteos vitamínicos IV estándar toman de 30 a 45 minutos."
+      "question": "¿Cuánto dura una sesión?",
+      "answer": "La mayoría de los goteos IV toman de 30 a 45 minutos."
     },
     {
-      "question": "¿Con qué frecuencia debo recibir terapia vitamínica IV?",
-      "answer": "La frecuencia recomendada depende de sus objetivos de bienestar. Los pacientes a menudo visitan una o dos veces al mes para el apoyo de energía e inmunidad. Los resultados individuales varían."
+      "question": "¿Con qué frecuencia puedo recibir terapia IV?",
+      "answer": "La frecuencia dependerá de su evaluación clínica y objetivos individuales de bienestar."
     },
     {
-      "question": "¿Es segura la terapia IV?",
-      "answer": "Todas las infusiones son prescritas por proveedores de atención médica con licencia y administradas por enfermeras registradas capacitadas siguiendo estrictas pautas médicas. La terapia IV tiene riesgos, incluyendo hematomas, infecciones y reacciones alérgicas. La administración es realizada por personal clínico capacitado."
+      "question": "¿Existen riesgos?",
+      "answer": "Como cualquier procedimiento médico, existen algunos riesgos. Serán evaluados y discutidos con su médico para minimizar complicaciones."
     },
     {
-      "question": "¿Cómo empiezo con la terapia IV?",
-      "answer": "¡Comenzar es simple! Llame a nuestra clínica hoy al (727) 476-8966 o haga clic en 'Programe Su Consulta Médica' en línea. ¡Nuestro equipo preparará su evaluación clínica!"
+      "question": "¿Cómo puedo empezar?",
+      "answer": "¡Llámenos o reserve en línea! Nuestro equipo médico preparará su evaluación inicial."
     }
   ]
 }

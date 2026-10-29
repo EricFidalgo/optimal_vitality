@@ -150,7 +150,9 @@ async function up(id) {
     console.log(`Updating ${id.full}...`);
     if (info.isPrivate) must("gh", ["repo", "edit", id.full, "--visibility", "public", "--accept-visibility-change-consequences"]);
     must("git", ["remote", "add", "origin", `https://github.com/${id.full}.git`], { cwd: tmp });
-    must("git", ["push", "-q", "--force", "origin", "main"], { cwd: tmp });
+    // Push with the GitHub CLI's own credentials: a stored git credential may lack the "workflow" scope,
+    // which GitHub requires for any push that contains .github/workflows files (it fails with HTTP 403).
+    must("git", ["-c", "credential.helper=", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "--force", "origin", "main"], { cwd: tmp });
   }
 
   // 5. Turn on Pages (already on is fine) and wait for the build of this commit.
