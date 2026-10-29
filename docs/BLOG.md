@@ -62,6 +62,17 @@ Saving commits to `main`. A GitHub Action (`.github/workflows/build-blog.yml`) t
 the post's own page (`article-<slug>.html`) and updates `sitemap.xml`, and commits those files.
 GitHub Pages publishes the result, usually within a few minutes.
 
+## Previewing locally (like the live site)
+
+```
+npm run dev
+```
+
+Open http://localhost:8123/. This behaves like GitHub Pages: clean addresses (`/blog`,
+`/article-trt-myths`), the real 404 page, and case-sensitive paths. Run `node scripts/build-blog.js`
+first if you changed a post file, then refresh. To test the editor without GitHub, open
+`/admin/` in Chrome or Edge and choose **Work with Local Repository**.
+
 ## Running the build locally
 
 ```

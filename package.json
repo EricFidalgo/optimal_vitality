@@ -4,6 +4,7 @@
   "private": true,
   "description": "OVI Wellness website. Blog build tooling only; the site itself is static.",
   "scripts": {
+    "dev": "node scripts/dev-server.js",
     "build:blog": "node scripts/build-blog.js",
     "import:post": "node scripts/import-post.js"
   },
