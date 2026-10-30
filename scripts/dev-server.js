@@ -12,6 +12,9 @@
  *   - auto-rebuild:    runs the blog build at start and whenever a file in content/blog (or
  *                      article.html) changes, so editor saves show up after a refresh
  *
+ *   - slow files:      DEV_DELAY="locations.json=1500" sends that file's headers at once and its body 1.5 s later
+ *                      (comma-separated list), to reproduce timing races when data files finish in a different order
+ *
  * Usage:  node scripts/dev-server.js          (then open http://localhost:8123/)
  *         PORT=3000 node scripts/dev-server.js
  * No dependencies. Listens on this computer only.
@@ -25,6 +28,12 @@ const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
 const PORT = parseInt(process.env.PORT, 10) || 8123;
+// DEV_DELAY="locations.json=1500,team.json=800": artificial delay (ms) per file name, for race testing.
+const DELAYS = {};
+(process.env.DEV_DELAY || "").split(",").filter(Boolean).forEach((s) => {
+  const [name, ms] = s.split("=");
+  DELAYS[name.trim()] = parseInt(ms, 10) || 0;
+});
 
 const TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -103,6 +112,13 @@ const server = http.createServer((req, res) => {
       if (path.basename(file) === "index.html" && !pathname.endsWith("/") && !pathname.endsWith("index.html")) {
         res.writeHead(301, { Location: pathname + "/" });
         return res.end();
+      }
+      const delay = DELAYS[path.basename(file)];
+      if (delay) {
+        const type = TYPES[path.extname(file).toLowerCase()] || "application/octet-stream";
+        res.writeHead(200, { "Content-Type": type, "Cache-Control": "no-store" });
+        res.flushHeaders();
+        return setTimeout(() => fs.createReadStream(file).pipe(res), delay);
       }
       return send(res, 200, file);
     }

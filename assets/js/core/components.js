@@ -332,8 +332,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         medicalSpecialty: "Endocrinology",
       };
 
+      if (document.getElementById("ovi-local-schema")) return;
       const script = document.createElement("script");
       script.type = "application/ld+json";
+      script.id = "ovi-local-schema";
       script.text = JSON.stringify(fullSchema);
       document.head.appendChild(script);
     }
@@ -1054,7 +1056,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     renderNavbar();
     renderFooter();
     renderDisclosures();
-    injectLocalSchema();
+    // Wait until every data file is loaded: the contact data arrives before the locations data, so running
+    // this straight away could find no location data and silently skip the schema.
+    (window.oviI18nPromise || Promise.resolve()).then(injectLocalSchema);
     // Wait until every data file is loaded (the contact data arrives before the team/services/faqs data).
     (window.oviI18nPromise || Promise.resolve()).then(injectSiteSchema);
     initNavbarBehavior();
