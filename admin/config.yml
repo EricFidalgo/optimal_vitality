@@ -45,6 +45,20 @@ collections:
         label: Category (English)
         widget: string
         hint: "For example: Hormone Optimization, Detox & Recovery, Peptides"
+      - name: service
+        label: Related service
+        widget: select
+        required: false
+        options:
+          - { label: "Hormone Optimization", value: hormone-optimization }
+          - { label: "Medical Weight Loss (GLP-1)", value: glp-1therapies }
+          - { label: "Peptide Therapy", value: peptides }
+          - { label: "Regenerative Medicine", value: regenerative-medicine }
+          - { label: "Sexual Wellness", value: sexual-wellness }
+          - { label: "IV & Wellness", value: iv-wellness }
+          - { label: "Detox Protocols", value: detox }
+          - { label: "Specialty Labs", value: advanced-labs }
+        hint: "The service page this post links to, and which service pages list it under Related articles. Leave empty for general posts."
       - name: excerpt
         label: Short summary (English)
         widget: text

@@ -161,6 +161,8 @@
         : `Everything you need to know about our ${s.tabLabel || ""} protocols.`);
     setSlot("faqSubheadline", faqSub);
 
+    buildRelatedArticles(s.id);
+
     // Re-init Bootstrap carousels that were injected dynamically
     document.querySelectorAll(".carousel").forEach((el) => {
       if (window.bootstrap) new bootstrap.Carousel(el);
@@ -264,6 +266,42 @@
     }
 
 
+  }
+
+  // ─── Related articles: the newest posts tagged with this service; the section stays hidden when there are none ───
+  function buildRelatedArticles(serviceId) {
+    const section = document.getElementById("related-articles");
+    const list = document.getElementById("related-articles-list");
+    if (!section || !list) return;
+    const posts = ((window.clinicData && window.clinicData.blog) || []).filter((p) => p.service === serviceId).slice(0, 2);
+    if (!posts.length) {
+      section.style.display = "none";
+      return;
+    }
+    const ui = (window.clinicData && window.clinicData.blogPage && window.clinicData.blogPage.ui) || {};
+    const esc = (v) => String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    setSlot("relatedArticlesHeadline", ui.relatedArticles || "Related articles");
+    setSlot("relatedArticlesSubheadline", ui.relatedArticlesSub);
+    const col = posts.length === 1 ? "col-md-8 col-lg-6" : "col-md-6";
+    list.innerHTML = posts
+      .map(
+        (p) => `
+        <div class="${col}">
+          <div class="card h-100 border-0 shadow-sm hover-lift" style="border-radius: 14px; border-top: 3px solid var(--primary-color) !important; background: #ffffff;">
+            <div class="card-body d-flex flex-column p-4 text-start">
+              <span class="badge align-self-start py-2 px-3 mb-3 fw-semibold" style="font-size: 0.725rem; letter-spacing: 0.5px; text-transform: uppercase; background-color: rgba(5, 20, 17, 0.05); color: var(--secondary-color); border: 1px solid rgba(5, 20, 17, 0.12); border-radius: 4px;">${esc(p.category)}</span>
+              <h3 class="card-title h6 fw-bold mb-3 lh-base text-uppercase" style="color: var(--secondary-color); font-size: 1.05rem; letter-spacing: 0.3px;">${esc(p.title)}</h3>
+              <p class="card-text text-muted mb-4 small" style="line-height: 1.6;">${esc(p.excerpt)}</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="text-muted small">${esc(p.date)}</span>
+                <a href="/blog/${esc(p.id)}" class="fw-semibold text-decoration-none small stretched-link" style="color: var(--secondary-color);">${esc(ui.readArticle || "Read Article")} <i class="fas fa-arrow-right ms-1" style="color: var(--primary-color);"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>`
+      )
+      .join("");
+    section.style.display = "";
   }
 
   // ─── 10. Build protocols grid ──────────────────────────────────────────────

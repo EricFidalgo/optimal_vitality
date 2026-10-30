@@ -57,6 +57,13 @@
         .article-toc li { margin-bottom: 0.4rem; }
         .article-toc li:last-child { margin-bottom: 0; }
         .article-section h3[id] { scroll-margin-top: 110px; }
+        .article-related-service { margin: 2.5rem 0; padding: 1.25rem 1.5rem; border-left: 3px solid var(--primary-color); border-radius: 0 12px 12px 0; background: rgba(5, 20, 17, 0.04); }
+        .article-content .article-related-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--secondary-color); margin-bottom: 0.5rem; }
+        .article-content a.article-related-link { display: block; color: inherit; text-decoration: none; }
+        .article-related-name { display: block; font-size: 1.2rem; font-weight: 700; color: var(--secondary-color); }
+        .article-related-desc { display: block; margin: 0.35rem 0 0.75rem; font-size: 1rem; line-height: 1.6; color: #2c3036; }
+        .article-related-cta { display: inline-block; font-weight: 600; color: var(--secondary-color); text-decoration: underline; text-underline-offset: 3px; }
+        .article-related-link:hover .article-related-name { text-decoration: underline; }
         .article-figure { margin: 2rem 0; }
         .article-figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
         .article-section h3 { 
@@ -122,7 +129,7 @@
                         <div class="col-lg-8 article-content">
                             
                             <!-- Article sections injected dynamically by blog-renderer.js -->
-                            <div id="article-sections-container"><div class="article-section"><p class="lead fw-normal text-dark">PRP therapy represents the next generation of regenerative medicine. PRP are bio-identical extracellular vesicles secreted by stem cells that carry microRNA, growth factors, and signaling proteins. When targeted to inflamed joints, tendons, or damaged tissues, PRP act as cellular messengers that suppress chronic inflammation and stimulate local tissue remodeling.</p></div><div class="article-section"><h3 id="consumer-safety">Consumer Safety</h3><p>PRP preparations must be sourced from strictly accredited, FDA-compliant tissue banks that undergo rigorous donor screening, sterility testing, and nucleic acid testing to guarantee pure, sterile products free from cellular debris or infectious agents.</p></div><div class="article-section"><h3 id="candidacy-requirements">Candidacy Requirements</h3><p>Ideal for individuals suffering from chronic joint pain, tendonitis, ligament sprains, osteoarthritis, or those recovering from orthopedic procedures who wish to accelerate healing without surgery.</p></div><div class="article-section"><h3 id="timeline-expectations">Timeline Expectations</h3><p>Initial biological signaling and anti-inflammatory action begin within days. Progressive tissue regeneration and reduced pain manifest over 4 to 12 weeks post-procedure.</p></div><div class="article-section"><h3 id="potential-downtime">Potential Downtime</h3><p>Minimal physical downtime. Patients are advised to refrain from high-impact physical activity or heavy resistance training for 48 to 72 hours post-injection.</p></div><div class="article-section"><h3 id="expected-results">Expected Results</h3><p>Significant reduction in joint discomfort, improved mobility and range of motion, and accelerated repair of micro-damaged connective tissue.</p></div><div class="article-section"><h3 id="clinical-risks">Clinical Risks</h3><p>Localized swelling, mild soreness, or transient stiffness at the injection site for 24-48 hours. Systemic infection or allergic reaction risks are extremely rare under sterile clinical protocols.</p></div></div>
+                            <div id="article-sections-container"><div class="article-section"><p class="lead fw-normal text-dark">PRP therapy represents the next generation of regenerative medicine. PRP are bio-identical extracellular vesicles secreted by stem cells that carry microRNA, growth factors, and signaling proteins. When targeted to inflamed joints, tendons, or damaged tissues, PRP act as cellular messengers that suppress chronic inflammation and stimulate local tissue remodeling.</p></div><div class="article-section"><h3 id="consumer-safety">Consumer Safety</h3><p>PRP preparations must be sourced from strictly accredited, FDA-compliant tissue banks that undergo rigorous donor screening, sterility testing, and nucleic acid testing to guarantee pure, sterile products free from cellular debris or infectious agents.</p></div><div class="article-section"><h3 id="candidacy-requirements">Candidacy Requirements</h3><p>Ideal for individuals suffering from chronic joint pain, tendonitis, ligament sprains, osteoarthritis, or those recovering from orthopedic procedures who wish to accelerate healing without surgery.</p></div><div class="article-section"><h3 id="timeline-expectations">Timeline Expectations</h3><p>Initial biological signaling and anti-inflammatory action begin within days. Progressive tissue regeneration and reduced pain manifest over 4 to 12 weeks post-procedure.</p></div><div class="article-section"><h3 id="potential-downtime">Potential Downtime</h3><p>Minimal physical downtime. Patients are advised to refrain from high-impact physical activity or heavy resistance training for 48 to 72 hours post-injection.</p></div><div class="article-section"><h3 id="expected-results">Expected Results</h3><p>Significant reduction in joint discomfort, improved mobility and range of motion, and accelerated repair of micro-damaged connective tissue.</p></div><div class="article-section"><h3 id="clinical-risks">Clinical Risks</h3><p>Localized swelling, mild soreness, or transient stiffness at the injection site for 24-48 hours. Systemic infection or allergic reaction risks are extremely rare under sterile clinical protocols.</p></div><aside class="article-related-service" aria-label="Related service"><p class="article-related-label">Related service</p><a class="article-related-link" href="/services/regenerative-medicine"><span class="article-related-name">Regenerative Medicine</span><span class="article-related-desc">Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.</span><span class="article-related-cta">Learn more about Regenerative Medicine &rarr;</span></a></aside></div>
 
                             <hr class="my-5">
                             <div class="text-center">
@@ -146,10 +153,10 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
     <script>const OVI_BLOG_PAGE = true;</script>
-    <script src="../assets/js/i18n/i18n.js?v=1.7"></script>
+    <script src="../assets/js/i18n/i18n.js?v=1.8"></script>
 
     <script src="../assets/js/core/components.js?v=1.7"></script>
-    <script src="../assets/js/renderers/blog-renderer.js?v=1.1"></script>
+    <script src="../assets/js/renderers/blog-renderer.js?v=1.2"></script>
     <script src="../assets/js/core/main.js?v=1.5"></script>
     <script src="../assets/js/core/particles.js"></script>
 </body>

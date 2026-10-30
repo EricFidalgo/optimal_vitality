@@ -50,6 +50,11 @@ for questions inside a section. Don't format whole sentences as headings.
   Always fill in the image description (alt text). Resize and compress images first
   (about 1200 px wide, under 200 KB). Spanish uses the same images; only the descriptions
   are translated.
+- **Related service:** pick the service page the post belongs to. The post then shows a "Related service"
+  card linking to it (before any Disclaimer or Sources section), and that service page lists the newest
+  two posts for it under "Related articles". Leave it empty for general posts. A service with no tagged
+  post (today IV & Wellness and Sexual Wellness) simply shows no "Related articles" section. When importing
+  a Doc you can pass `--service hormone-optimization`.
 - **SEO:** the optional SEO title and meta description override the defaults
   (post title + " — OVI Wellness", and the short summary).
 - **Spanish:** fill in the Spanish version with the same sections in the same order.

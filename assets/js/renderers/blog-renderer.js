@@ -182,19 +182,23 @@
       let sectionsHtml = article.image ? figureHtml(article.image, article.imageAlt, true) : "";
       sectionsHtml += tocHtml(article, ui.tableOfContents || "Table of Contents");
       const ids = sectionIds(article.content);
+      const parts = [];
       article.content.forEach((section, index) => {
         const sectionImage = section.image ? figureHtml(section.image, section.imageAlt) : "";
         if (index === 0) {
           // First item is the lead overview (no heading). Section text arrives as ready-made HTML from the build.
-          sectionsHtml += `<div class="article-section">${sectionImage}${section.body}</div>`;
+          parts.push(`<div class="article-section">${sectionImage}${section.body}</div>`);
         } else {
-          sectionsHtml += `
+          parts.push(`
             <div class="article-section${sectionClass(section.title)}">
               ${sectionImage}<h3 id="${escapeHtml(ids[index])}">${section.title}</h3>
               ${section.body}
-            </div>`;
+            </div>`);
         }
       });
+      const related = relatedServiceHtml(article, ui);
+      if (related) parts.splice(relatedInsertIndex(article.content), 0, related);
+      sectionsHtml += parts.join("");
       sectionsContainer.innerHTML = sectionsHtml;
     }
 
@@ -229,6 +233,26 @@
 
   function sectionClass(title) {
     return /^(sources|fuentes|references|referencias)\b/i.test(String(title).trim()) ? " article-sources" : "";
+  }
+
+  // "Related service" card: before any Disclaimer / Sources section, otherwise at the end (same as build-blog.js).
+  function relatedInsertIndex(content) {
+    const i = content.findIndex((s, idx) => idx > 0 && /^(disclaimer|sources|descargo|fuentes|references|referencias)\b/i.test(String(s.title).trim()));
+    return i === -1 ? content.length : i;
+  }
+
+  function relatedServiceHtml(article, ui) {
+    const services = (window.clinicData && window.clinicData.services) || [];
+    const svc = article.service && services.find((s) => s.id === article.service);
+    if (!svc) return "";
+    const label = ui.relatedService || "Related service";
+    const learn = ui.learnMoreAbout || "Learn more about";
+    return (
+      `<aside class="article-related-service" aria-label="${escapeHtml(label)}"><p class="article-related-label">${escapeHtml(label)}</p>` +
+      `<a class="article-related-link" href="/services/${escapeHtml(article.service)}"><span class="article-related-name">${escapeHtml(svc.tabLabel)}</span>` +
+      `<span class="article-related-desc">${escapeHtml(svc.lead || "")}</span>` +
+      `<span class="article-related-cta">${escapeHtml(learn)} ${escapeHtml(svc.tabLabel)} &rarr;</span></a></aside>`
+    );
   }
 
   function tocHtml(article, label) {

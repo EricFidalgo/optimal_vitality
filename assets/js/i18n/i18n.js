@@ -245,7 +245,7 @@
         fetch(basePath + "services.json?v=1.6").catch(() => null),
         fetch(basePath + "team.json").catch(() => null),
         fetch(basePath + "locations.json").catch(() => null),
-        fetch(basePath + "blog.json").catch(() => null),
+        fetch(basePath + "blog.json?v=1.1").catch(() => null),
         fetch(basePath + "components.json").catch(() => null),
         fetch(basePath + "pages/home.json?v=1.5").catch(() => null),
         fetch(basePath + "pages/legal.json").catch(() => null),

@@ -11,6 +11,7 @@
  *   --slug <slug>        Web address / file name (default: made from the title)
  *   --date YYYY-MM-DD    Publish date (default: today)
  *   --category "<name>"  Category label (default: empty)
+ *   --service <id>       Related service page, e.g. hormone-optimization (default: none)
  *   --publish            Mark the post published (default: draft)
  *   --force              Overwrite an existing post with the same slug
  *
@@ -50,7 +51,7 @@ for (let i = 0; i < args.length; i++) {
   const a = args[i];
   if (a === "--publish") opts.publish = true;
   else if (a === "--force") opts.force = true;
-  else if (a === "--slug" || a === "--date" || a === "--category") opts[a.slice(2)] = args[++i];
+  else if (a === "--slug" || a === "--date" || a === "--category" || a === "--service") opts[a.slice(2)] = args[++i];
   else if (a.startsWith("--")) fail(`unknown option ${a}`);
   else file = a;
 }
@@ -272,6 +273,7 @@ const post = {
   date,
   title,
   category: opts.category || "",
+  ...(opts.service ? { service: opts.service } : {}),
   excerpt,
   ...(hadToc ? { show_toc: true } : {}),
   content,

@@ -144,10 +144,20 @@ function absoluteUrl(p) {
   return /^https?:\/\//.test(p) ? p : SITE + (p.startsWith("/") ? "" : "/") + p;
 }
 
+// Services the posts can point to (id -> name and short description, English), from the site's own data.
+function loadServices() {
+  const map = {};
+  for (const s of readJson(path.join(ROOT, "assets", "js", "i18n", "en", "services.json"))) {
+    map[s.id] = { tabLabel: s.tabLabel, lead: s.lead || "" };
+  }
+  return map;
+}
+
 // -- load posts -------------------------------------------------------------
 
 function loadPosts() {
   if (!fs.existsSync(CONTENT_DIR)) fail("content/blog does not exist");
+  const knownServices = loadServices();
   const posts = [];
   for (const file of fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".json")).sort()) {
     const id = file.replace(/\.json$/, "");
@@ -159,6 +169,10 @@ function loadPosts() {
     if (!formatDate(src.date, "en")) fail(`${file}: date must look like 2026-08-14 (got "${src.date}")`);
     if (!Array.isArray(src.content) || src.content.length === 0) fail(`${file}: needs at least one content section`);
 
+    if (hasText(src.service) && !knownServices[src.service.trim()]) {
+      fail(`${file}: service "${src.service}" is not a service page (use one of: ${Object.keys(knownServices).join(", ")})`);
+    }
+
     const enPost = {
       id,
       title: src.title.trim(),
@@ -167,6 +181,7 @@ function loadPosts() {
       excerpt: (src.excerpt || "").trim(),
       content: cleanContent(src.content),
     };
+    if (hasText(src.service)) enPost.service = src.service.trim();
     addSeo(enPost, src);
 
     // Spanish falls back to the English text until a Spanish version is filled in.
@@ -184,6 +199,7 @@ function loadPosts() {
       enPost.toc = true;
       esPost.toc = true;
     }
+    if (enPost.service) esPost.service = enPost.service;
     // Spanish SEO values fall back to the English ones; the image is shared.
     addSeo(esPost, esReady ? es : src);
     if (!esPost.seoTitle && enPost.seoTitle) esPost.seoTitle = enPost.seoTitle;
@@ -276,21 +292,40 @@ function figure(src, alt, eager) {
   return `<figure class="article-figure"><img src="${esc(src)}" alt="${esc(alt || "")}"${eager ? "" : ' loading="lazy"'}></figure>`;
 }
 
-function renderSections(post, tocLabel) {
+// The "Related service" card goes before any Disclaimer / Sources section, otherwise at the end.
+function relatedInsertIndex(content) {
+  const i = content.findIndex((s, idx) => idx > 0 && /^(disclaimer|sources|descargo|fuentes|references|referencias)\b/i.test(String(s.title).trim()));
+  return i === -1 ? content.length : i;
+}
+
+function relatedServiceHtml(post, ctx) {
+  const svc = post.service && ctx.services[post.service];
+  if (!svc) return "";
+  const ui = ctx.ui;
+  return (
+    `<aside class="article-related-service" aria-label="${esc(ui.relatedService)}"><p class="article-related-label">${esc(ui.relatedService)}</p>` +
+    `<a class="article-related-link" href="/services/${esc(post.service)}"><span class="article-related-name">${esc(svc.tabLabel)}</span>` +
+    `<span class="article-related-desc">${esc(svc.lead)}</span>` +
+    `<span class="article-related-cta">${esc(ui.learnMoreAbout)} ${esc(svc.tabLabel)} &rarr;</span></a></aside>`
+  );
+}
+
+function renderSections(post, tocLabel, ctx) {
   const featured = post.image ? figure(post.image, post.imageAlt, true) : "";
   const ids = sectionIds(post.content);
-  const body = post.content
+  const parts = post.content
     .map((section, index) => {
       const img = section.image ? figure(section.image, section.imageAlt) : "";
       return index === 0
         ? `<div class="article-section">${img}${section.body}</div>`
         : `<div class="article-section${sectionClass(section.title)}">${img}<h3 id="${esc(ids[index])}">${esc(section.title)}</h3>${section.body}</div>`;
-    })
-    .join("");
-  return featured + tocHtml(post, tocLabel) + body;
+    });
+  const related = relatedServiceHtml(post, ctx);
+  if (related) parts.splice(relatedInsertIndex(post.content), 0, related);
+  return featured + tocHtml(post, tocLabel) + parts.join("");
 }
 
-function buildPage(template, post, tocLabel) {
+function buildPage(template, post, tocLabel, ctx) {
   const en = post.en;
   const url = `${SITE}/blog/${post.id}`;
   const title = en.seoTitle || `${en.title} — OVI Wellness`;
@@ -337,7 +372,7 @@ function buildPage(template, post, tocLabel) {
   html = replaceOnce(html, /(<span id="articleCategory"[^>]*>)(<\/span>)/, (m, open, close) => open + esc(en.category) + close, "#articleCategory");
   html = replaceOnce(html, /(<h1 id="articleTitle"[^>]*>)(<\/h1>)/, (m, open, close) => open + esc(en.title) + close, "#articleTitle");
   html = replaceOnce(html, /(<span id="articleDate">)(<\/span>)/, (m, open, close) => open + esc(en.date) + close, "#articleDate");
-  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en, tocLabel) + close, "#article-sections-container");
+  html = replaceOnce(html, /(<div id="article-sections-container">)(<\/div>)/, (m, open, close) => open + renderSections(en, tocLabel, ctx) + close, "#article-sections-container");
 
   // The old-address redirect only belongs on the legacy /article page, not on generated post pages.
   html = replaceOnce(html, /[ \t]*<!-- legacy-redirect:start -->[\s\S]*?<!-- legacy-redirect:end -->\r?\n?/, "", "legacy-redirect block");
@@ -357,6 +392,13 @@ function buildPages(posts) {
   const template = fs.readFileSync(templateFile, "utf8");
   const enUi = readJson(path.join(ROOT, "assets", "js", "i18n", "en", "blog.json")).ui || {};
   const tocLabel = enUi.tableOfContents || "Table of Contents";
+  const ctx = {
+    services: loadServices(),
+    ui: {
+      relatedService: enUi.relatedService || "Related service",
+      learnMoreAbout: enUi.learnMoreAbout || "Learn more about",
+    },
+  };
 
   const blogDir = path.join(ROOT, "blog");
   const wanted = new Set();
@@ -365,7 +407,7 @@ function buildPages(posts) {
     const rel = `blog/${post.id}.html`;
     wanted.add(rel);
     fs.mkdirSync(blogDir, { recursive: true });
-    if (writeIfChanged(path.join(ROOT, rel), buildPage(template, post, tocLabel))) changed.push(rel);
+    if (writeIfChanged(path.join(ROOT, rel), buildPage(template, post, tocLabel, ctx))) changed.push(rel);
   }
 
   // Remove pages for posts that were deleted or set back to draft (only files this script generated),
