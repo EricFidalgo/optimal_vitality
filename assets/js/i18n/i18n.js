@@ -241,7 +241,7 @@
   async function loadLocaleData() {
     try {
       const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes, homePageRes, legalPageRes, notFoundPageRes] = await Promise.all([
-        fetch(basePath + "global.json").catch(() => null),
+        fetch(basePath + "global.json?v=1.1").catch(() => null),
         fetch(basePath + "services.json?v=1.7").catch(() => null),
         fetch(basePath + "team.json").catch(() => null),
         fetch(basePath + "locations.json").catch(() => null),

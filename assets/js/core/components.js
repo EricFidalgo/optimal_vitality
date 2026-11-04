@@ -499,6 +499,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   // Service pages: the page, the service it describes, a breadcrumb and the site, next to the clinic and FAQPage.
   // Everything here repeats what the page itself says (title, description, service name); no ratings, prices or drug data.
+  // A few service pages belong to their own Google Business Profile listing (own suite and map pin).
+  // Describe that place on the page's Service, so it matches the address the page shows.
+  function serviceChannel() {
+    const c = (window.clinicData && window.clinicData.contact) || {};
+    const page = window.location.pathname.toLowerCase().replace(/\.html$/, "").replace(/\/+$/, "").split("/").pop();
+    const over = (c.locationOverrides || {})[page];
+    if (!over || !c.address) return {};
+    const street = ((c.address.street || "").replace(/,+$/, "") + " " + (over.suite || "")).trim();
+    return {
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceLocation: {
+          "@type": "Place",
+          name: over.listingName,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: street,
+            addressLocality: c.address.city,
+            addressRegion: c.address.state,
+            postalCode: c.address.zip,
+            addressCountry: "US",
+          },
+          hasMap: over.mapUrl,
+        },
+      },
+    };
+  }
+
   function servicePageNodes(svc, clinic) {
     const link = document.querySelector('link[rel="canonical"]');
     const pageUrl = (link && link.href) || SITE_URL + window.location.pathname.replace(/\.html$/, "");
@@ -531,6 +559,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         description: svc.pageDescription,
         provider: { "@id": CLINIC_ID },
         areaServed: clinic.areaServed,
+        ...serviceChannel(),
       },
       {
         "@type": "BreadcrumbList",

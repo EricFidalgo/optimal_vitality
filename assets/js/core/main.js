@@ -993,8 +993,11 @@ function initMain() {
         const hoursData = contactData.hours || data.hours;
 
         if (addressData) {
-            const mapUrl = addressData.mapUrl || "https://maps.app.goo.gl/SFCiAXwWWKjuANvf8";
-            const cleanStreet = (addressData.street || "").replace(/,+$/, "");
+            // Some service pages belong to their own Google Business Profile listing (own suite, pin and map).
+            const pageSlug = window.location.pathname.replace(/\/+$/, "").split("/").pop().replace(/\.html$/, "");
+            const pageLocation = (contactData.locationOverrides || {})[pageSlug] || {};
+            const mapUrl = pageLocation.mapUrl || addressData.mapUrl || "https://maps.app.goo.gl/SFCiAXwWWKjuANvf8";
+            const cleanStreet = ((addressData.street || "").replace(/,+$/, "") + (pageLocation.suite ? " " + pageLocation.suite : "")).trim();
             const cleanCity = (addressData.city || "").replace(/,+$/, "");
             const mapQuery = encodeURIComponent(`OVI Wellness, ${cleanStreet}, ${cleanCity}, ${addressData.state} ${addressData.zip}`);
             
@@ -1022,7 +1025,7 @@ function initMain() {
             }
 
             if (googleMapIframe) {
-                googleMapIframe.src = addressData.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.2797!2d-82.704386!3d27.771276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e326912c3f67%3A0x62e28e7652a7247!2sOVI%20Wellness!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
+                googleMapIframe.src = pageLocation.mapEmbedUrl || addressData.mapEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.2797!2d-82.704386!3d27.771276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e326912c3f67%3A0x62e28e7652a7247!2sOVI%20Wellness!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus";
             }
         }
     }

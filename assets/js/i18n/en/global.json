@@ -34,7 +34,21 @@
         "days": "Friday - Sunday",
         "time": "Closed"
       }
-    ]
+    ],
+    "locationOverrides": {
+      "glp-1therapies": {
+        "suite": "Room 2",
+        "listingName": "Medical Weight Loss by OVI Wellness",
+        "mapUrl": "https://www.google.com/maps/place/Medical+Weight+Loss+by+OVI+Wellness/@27.7712759,-82.7018113,1095m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88c2e3b3e3975fdd:0x130905b8024c4174!8m2!3d27.7712759!4d-82.7018113!16s%2Fg%2F11p2d3c2q3!5m1!1e1",
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4739.176504426869!2d-82.7018113!3d27.7712759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e3b3e3975fdd%3A0x130905b8024c4174!2sMedical%20Weight%20Loss%20by%20OVI%20Wellness!5e1!3m2!1sen!2sus!4v1793822583193!5m2!1sen!2sus"
+      },
+      "peptides": {
+        "suite": "Room 1",
+        "listingName": "Peptide Therapy Clinic by OVI Wellness",
+        "mapUrl": "https://www.google.com/maps/place/Peptide+Therapy+Clinic+by+OVI+Wellness/@27.7712759,-82.7018113,1180m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88c2e3ac073d7c2d:0x325ed55c2abbb4c2!8m2!3d27.7712759!4d-82.7018113!16s%2Fg%2F11z_xb_60t!5m1!1e1",
+        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4739.176504426869!2d-82.7018113!3d27.7712759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e3ac073d7c2d%3A0x325ed55c2abbb4c2!2sPeptide%20Therapy%20Clinic%20by%20OVI%20Wellness!5e1!3m2!1sen!2sus!4v1793822643842!5m2!1sen!2sus"
+      }
+    }
   },
   "navigation": [
     {
