@@ -37,6 +37,15 @@ collections:
         time_format: false
         format: "YYYY-MM-DD"
         picker_utc: true
+      - name: updated
+        label: Last updated
+        widget: datetime
+        required: false
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+        picker_utc: true
+        hint: "Optional. Set it when you materially revise a published post; it shows search engines the post is current. Leave empty to use the publish date."
       - name: title
         label: Title (English)
         widget: string

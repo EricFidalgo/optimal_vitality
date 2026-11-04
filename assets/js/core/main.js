@@ -705,11 +705,11 @@ function initMain() {
         if (faqAccordion && data.faqs) {
             faqAccordion.innerHTML = data.faqs.map((faq, index) => `
                 <div class="accordion-item border-0 mb-3">
-                    <h2 class="accordion-header" id="heading${index}">
+                    <h3 class="accordion-header" id="heading${index}">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}">
                             ${faq.question}
                         </button>
-                    </h2>
+                    </h3>
                     <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">${faq.answer}</div>
                     </div>

@@ -55,6 +55,7 @@ for questions inside a section. Don't format whole sentences as headings.
   two posts for it under "Related articles". Leave it empty for general posts. A service with no tagged
   post (today IV & Wellness and Sexual Wellness) simply shows no "Related articles" section. When importing
   a Doc you can pass `--service hormone-optimization`.
+- **Last updated:** optional. Set it when you materially revise a published post; search engines then see the post as current (the page shows only the publish date). Empty = the publish date.
 - **SEO:** the optional SEO title and meta description override the defaults
   (post title + " — OVI Wellness", and the short summary).
 - **Spanish:** fill in the Spanish version with the same sections in the same order.

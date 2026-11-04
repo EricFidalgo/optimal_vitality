@@ -242,7 +242,7 @@
     try {
       const [globalRes, servicesRes, teamRes, locationsRes, blogRes, componentsRes, homePageRes, legalPageRes, notFoundPageRes] = await Promise.all([
         fetch(basePath + "global.json").catch(() => null),
-        fetch(basePath + "services.json?v=1.6").catch(() => null),
+        fetch(basePath + "services.json?v=1.7").catch(() => null),
         fetch(basePath + "team.json").catch(() => null),
         fetch(basePath + "locations.json").catch(() => null),
         fetch(basePath + "blog.json?v=1.1").catch(() => null),

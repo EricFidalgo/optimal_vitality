@@ -221,7 +221,10 @@ function loadPosts() {
       for (const sec of post.content) if (!sec.image) delete sec.imageAlt;
     }
 
-    posts.push({ id, iso: src.date, en: enPost, es: esPost, spanishReady: esReady });
+    if (src.updated && !/^\d{4}-\d{2}-\d{2}$/.test(String(src.updated))) fail(`content/blog/${file}: "updated" must look like YYYY-MM-DD`);
+    // Last updated defaults to the publish date and never goes before it.
+    const modified = src.updated && String(src.updated) > String(src.date) ? String(src.updated) : src.date;
+    posts.push({ id, iso: src.date, modified, en: enPost, es: esPost, spanishReady: esReady });
   }
   // Newest first; ties broken by id so output is stable.
   posts.sort((a, b) => (a.iso < b.iso ? 1 : a.iso > b.iso ? -1 : a.id.localeCompare(b.id)));
@@ -340,6 +343,9 @@ function buildPage(template, post, tocLabel, ctx) {
   html = replaceOnce(html, /<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${url}">`, "og:url");
   html = replaceOnce(html, /<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(title)}">`, "og:title");
   html = replaceOnce(html, /<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${esc(desc)}">`, "og:description");
+  html = replaceOnce(html, /<meta property="og:description" content="[^"]*">/, (m) => `${m}
+    <meta property="article:published_time" content="${post.iso}">
+    <meta property="article:modified_time" content="${post.modified}">`, "article dates");
   html = replaceOnce(html, /<meta property="twitter:url" content="[^"]*">/, `<meta property="twitter:url" content="${url}">`, "twitter:url");
   html = replaceOnce(html, /<meta property="twitter:title" content="[^"]*">/, `<meta property="twitter:title" content="${esc(title)}">`, "twitter:title");
   html = replaceOnce(html, /<meta property="twitter:description" content="[^"]*">/, `<meta property="twitter:description" content="${esc(desc)}">`, "twitter:description");
@@ -357,6 +363,7 @@ function buildPage(template, post, tocLabel, ctx) {
     headline: en.title,
     description: desc,
     datePublished: post.iso,
+    dateModified: post.modified,
     mainEntityOfPage: url,
     ...(image ? { image } : {}),
     publisher: { "@type": "Organization", name: "OVI Wellness", url: SITE },
