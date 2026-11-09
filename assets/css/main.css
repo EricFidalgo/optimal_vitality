@@ -4740,3 +4740,8 @@ body.modal-open,
 .labs-guide-closing { padding: 24px 0 8px; border-top: 1px solid rgba(230, 195, 129, 0.35); }
 .labs-guide-disclaimer { font-size: 0.8rem; color: #6b7873; margin: 20px 0 0; }
 @media (max-width: 575.98px) { .labs-guide-body { padding: 18px; } }
+
+/* Who provides the service: shown in the hero under the intro (service pages, and the home page for the medical director) */
+.hero .provider-line { font-size: 1rem; opacity: 0.9; }
+.hero .provider-line:empty { display: none; }
+.hero .provider-line a { color: #ffffff; text-decoration: underline; text-underline-offset: 3px; }

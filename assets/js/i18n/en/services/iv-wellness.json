@@ -4,7 +4,7 @@
   "tabLabel": "IV & Wellness",
   "href": "iv-wellness",
   "title": "IV Hydration and Nutrient Therapy",
-  "lead": "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
+  "lead": "Bypass slow stomach pills and get hydration and nutrient support delivered straight to your bloodstream.",
   "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. IV therapy can provide fluids and selected nutrients directly into the bloodstream. Clinical effects and treatment time vary by formulation and patient.",
   "icon": "fa-tint",
   "delay": "-5s",
@@ -16,10 +16,10 @@
   ],
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
-  "pageTitle": "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
-  "pageDescription": "Doctor-guided IV vitamin therapy and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
-  "heroHeadline": "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
-  "heroTitle": "IV Therapy in St. Petersburg, FL",
+  "pageTitle": "IV Therapy & Myers' Cocktail in St. Petersburg, FL | OVI Wellness",
+  "pageDescription": "Doctor-guided IV vitamin therapy in St. Petersburg, FL: Myers' Cocktail, glutathione and vitamin shots, with a medical screening first.",
+  "heroHeadline": "Hydration &<br><span class=\"text-primary\">Nutrient Support</span>",
+  "heroTitle": "IV Vitamin Therapy in St. Petersburg, FL",
   "heroSubheadline": "Prescription IV Drips, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
@@ -179,7 +179,7 @@
         "icon": "fa-tint",
         "name": "Myers' Cocktail Drip",
         "tag": "Most Popular",
-        "description": "The clinical gold standard IV drip—packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for instant energy."
+        "description": "The clinical gold standard IV drip, packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
       },
       {
         "icon": "fa-dumbbell",
@@ -197,14 +197,14 @@
         "icon": "fa-syringe",
         "name": "Doctor Vitamin Shots",
         "tag": "Quick Booster",
-        "description": "Quick B12, D3, or fat-burn intramuscular shots when you want instant energy without sitting for a full drip."
+        "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
       }
     ]
   },
   "science": {
     "badge": "How It Works",
     "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
-    "body": "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
+    "body": "When you swallow vitamin pills, your stomach breaks them down first. IV therapy delivers nutrients directly into your bloodstream, supporting hydration and nutrient levels.",
     "bullets": [
       "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
       "Compounded fresh & prescribed by licensed medical doctors",
@@ -232,12 +232,12 @@
       {
         "icon": "fa-microscope",
         "title": "Bypasses Stomach Breakdown",
-        "detail": "IV drips bypass digestion completely so vitamins enter your bloodstream at full power for instant results."
+        "detail": "IV drips bypass digestion so nutrients enter your bloodstream directly."
       },
       {
         "icon": "fa-bullseye",
         "title": "Direct Vascular Delivery",
-        "detail": "Intravenous drips deliver nutrients straight into your bloodstream at full power for instant cellular absorption."
+        "detail": "Intravenous drips deliver nutrients straight into your bloodstream for direct cellular delivery."
       }
     ]
   },
@@ -248,7 +248,7 @@
     },
     {
       "myth": "Aren't oral vitamin pills enough?",
-      "reality": "No. Your stomach filters out up to 80% of oral vitamins. IV drips give you 100% absorption directly into your bloodstream for instant energy."
+      "reality": "No. Oral vitamins must pass through digestion first, while IV drips deliver nutrients directly into your bloodstream for hydration and nutrient support."
     },
     {
       "myth": "Is doctor-guided IV therapy safe?",
@@ -262,7 +262,7 @@
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "Instant Effect"
+        "label": "Fast Delivery"
       },
       {
         "icon": "fa-tint",
@@ -296,7 +296,7 @@
       {
         "metric": "Rehydration Speed",
         "without": "Slow drinking water",
-        "with": "Instant cellular rehydration"
+        "with": "Direct hydration support"
       },
       {
         "metric": "Medical Oversight",

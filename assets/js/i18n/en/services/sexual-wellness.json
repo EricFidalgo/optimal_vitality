@@ -16,10 +16,10 @@
   ],
   "image": "assets/images/photos/team-group.jpg",
   "ctaText": "Book Your Doctor Consultation",
-  "pageTitle": "Doctor-Guided Sexual Wellness — OVI Wellness",
-  "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
+  "pageTitle": "P-Shot, PT-141 & Sexual Wellness in St. Petersburg | OVI Wellness",
+  "pageDescription": "Private, doctor-led sexual wellness care in St. Petersburg, FL: P-Shot (PRP), PT-141 and hormone balancing after a medical evaluation.",
   "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
-  "heroTitle": "Sexual Wellness Treatment in St. Petersburg, FL",
+  "heroTitle": "Sexual Wellness Treatments in St. Petersburg, FL",
   "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
@@ -167,7 +167,7 @@
         "icon": "fa-mars",
         "name": "P-Shot (Priapus Shot)",
         "tag": "For Men",
-        "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence."
+        "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
       },
       {
         "icon": "fa-venus",
@@ -191,7 +191,7 @@
         "icon": "fa-brain",
         "name": "PT-141 Desire Therapy",
         "tag": "Brain Signal",
-        "description": "FDA-studied peptide treatment that acts directly on central brain pathways to trigger natural desire."
+        "description": "PT-141 is FDA-approved for hypoactive sexual desire disorder in premenopausal women. Other uses are off-label and provided only when clinically appropriate under medical supervision."
       },
       {
         "icon": "fa-vial",
@@ -252,7 +252,7 @@
     },
     {
       "myth": "Is doctor-guided intimacy care safe?",
-      "reality": "Yes. All treatments use natural growth factors or FDA-studied compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+      "reality": "Yes. Treatments are provided by licensed medical professionals under strict Florida health guidelines, and off-label use is provided only when clinically appropriate."
     }
   ],
   "comparison": {

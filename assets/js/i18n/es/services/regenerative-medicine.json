@@ -16,10 +16,10 @@
   ],
   "image": "",
   "ctaText": "Programe su evaluación clínica",
-  "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. Terapias PRP y enfoques para el bienestar supervisados por proveedores médicos con licencia.",
+  "pageTitle": "PRP y Medicina Regenerativa en St. Petersburg, FL | OVI Wellness",
+  "pageDescription": "PRP dirigido por médicos para articulaciones, piel y restauración capilar en St. Petersburg, FL, además del P-Shot. Conozca cómo funciona el PRP y reserve una consulta.",
   "heroHeadline": "Apoyo<br><span class=\"text-primary\">Regenerativo</span> Clínico",
-  "heroTitle": "Medicina Regenerativa con PRP en St. Petersburg, FL",
+  "heroTitle": "PRP y Medicina Regenerativa en St. Petersburg, FL",
   "heroSubheadline": "Protocolos regenerativos prescritos bajo supervisión clínica en St. Petersburg, FL.",
   "heroCTA": "Programe su llamada médica hoy",
   "quiz": {
@@ -179,7 +179,7 @@
         "icon": "fa-mars",
         "name": "Bienestar masculino",
         "tag": "Para hombres",
-        "description": "Evaluación clínica de opciones con PRP para apoyar la salud sexual masculina."
+        "description": "Evaluación clínica de opciones con PRP para apoyar la salud sexual masculina. Los resultados varían y no están garantizados."
       },
       {
         "icon": "fa-wand-magic-sparkles",
@@ -344,7 +344,7 @@
     },
     {
       "question": "¿En qué se diferencia el PRP de los tratamientos con células madre?",
-      "answer": "El PRP utiliza factores de su propia sangre (plaquetas), no células madre con capacidad de replicación."
+      "answer": "El PRP utiliza factores de su propia sangre (plaquetas), no células madre con capacidad de replicación. Las terapias con células madre, MSC y exosomas no se ofrecen actualmente como servicios de rutina en OVI."
     },
     {
       "question": "¿Cómo puedo programar una consulta?",

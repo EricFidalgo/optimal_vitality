@@ -15,6 +15,7 @@
     setHTML('[data-i18n="hero.headline"]',    t.hero && t.hero.headline);
     setText('[data-i18n="hero.title"]',       t.hero && t.hero.title);
     setText('[data-i18n="hero.subheadline"]', t.hero && t.hero.subheadline);
+    setHTML('[data-i18n="hero.medicalDirector"]', t.hero && t.hero.medicalDirector);
     setText('[data-i18n="hero.cta"]',         t.hero && t.hero.cta);
     setText('[data-i18n="hero.exploreBtn"]',  t.hero && t.hero.exploreBtn);
 

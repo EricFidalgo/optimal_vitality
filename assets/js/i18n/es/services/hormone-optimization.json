@@ -16,8 +16,8 @@
   ],
   "image": "assets/images/photos/trt-therapy.jpg",
   "ctaText": "Programe su evaluación clínica",
-  "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
-  "pageDescription": "Terapia hormonal bioidéntica y protocolos de TRT en St. Petersburg, FL. Supervisado médicamente por proveedores de atención médica con licencia.",
+  "pageTitle": "TRT y Terapia Hormonal en St. Petersburg, FL | OVI Wellness",
+  "pageDescription": "TRT y terapia hormonal bioidéntica dirigida por médicos para hombres y mujeres en St. Petersburg, FL. Dosificación basada en laboratorios y seguimiento continuo. Reserve una consulta.",
   "heroHeadline": "Apoyo para su<br><span class=\"text-primary\">Energía y Bienestar</span>",
   "heroTitle": "TRT y Terapia Hormonal en St. Petersburg, FL",
   "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo supervisión clínica en St. Petersburg, FL.",
@@ -350,5 +350,6 @@
       "question": "¿Cómo puedo empezar?",
       "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
     }
-  ]
+  ],
+  "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
 }

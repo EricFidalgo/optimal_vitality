@@ -10,7 +10,7 @@
   "delay": "-1s",
   "features": [
     "Stop constant snack & food cravings",
-    "Burn stubborn fat while keeping muscle",
+    "Support fat loss while keeping muscle",
     "Licensed doctor supervision & care",
     "Simple weekly doctor-prescribed plan"
   ],
@@ -20,7 +20,7 @@
   "pageDescription": "Doctor-guided medical weight loss in St. Petersburg, FL with semaglutide or tirzepatide when appropriate. Labs, nutrition and monthly check-ins.",
   "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
   "heroTitle": "Medical Weight Loss With GLP-1s in St. Petersburg, FL",
-  "heroSubheadline": "Prescription Semaglutide & Tirzepatide weight loss protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
+  "heroSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
     "badge": "Quick 1-Minute Assessment",
@@ -143,7 +143,7 @@
   "protocols": {
     "badge": "Prescription Options",
     "sectionHeadline": "Simple Weekly Doctor Treatments",
-    "sectionSubheadline": "Doctor-prescribed weekly treatments tailored to your body after a medical consultation.",
+    "sectionSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), tailored to you after a medical consultation. Some medications may be compounded; compounded medications are not FDA-approved. Availability depends on clinical eligibility and pharmacy fulfillment.",
     "items": [
       {
         "icon": "fa-weight-scale",
@@ -165,9 +165,9 @@
       },
       {
         "icon": "fa-leaf",
-        "name": "Fat-Burn & B12 Injections",
+        "name": "B12 & Wellness Injections",
         "tag": "Energy Booster",
-        "description": "Quick vitamin shots to boost your daily energy, support your liver, and keep your body burning fat fast."
+        "description": "Quick vitamin shots to support your daily energy and liver health."
       },
       {
         "icon": "fa-chart-line",
@@ -310,5 +310,6 @@
       "question": "How do I get started?",
       "answer": "Simply call our clinic or book an appointment online! You will talk with a licensed doctor who will review your health, answer your questions, and start your custom plan."
     }
-  ]
+  ],
+  "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
 }

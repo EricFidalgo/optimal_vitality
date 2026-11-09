@@ -16,8 +16,8 @@
   ],
   "image": "assets/images/photos/trt-therapy.jpg",
   "ctaText": "Book Your Doctor Consultation",
-  "pageTitle": "Doctor-Guided Hormone Optimization — OVI Wellness",
-  "pageDescription": "Doctor-guided bio-identical hormone therapy and TRT protocols in St. Petersburg, FL. Medically supervised by licensed healthcare providers.",
+  "pageTitle": "TRT & Hormone Therapy in St. Petersburg, FL | OVI Wellness",
+  "pageDescription": "Doctor-led TRT and bioidentical hormone therapy for men and women in St. Petersburg, FL. Lab-based dosing, ongoing monitoring. Book a consult.",
   "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Energy & Strength</span>",
   "heroTitle": "TRT & Hormone Therapy in St. Petersburg, FL",
   "heroSubheadline": "Prescription TRT & Bio-Identical Hormone therapy, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
@@ -350,5 +350,6 @@
       "question": "How do I get started with hormone optimization?",
       "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order a quick blood test, review your results, and launch your personalized vitality plan."
     }
-  ]
+  ],
+  "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
 }

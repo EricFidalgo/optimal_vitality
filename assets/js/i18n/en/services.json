@@ -17,8 +17,8 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Specialty Labs & Diagnostic Testing — OVI Wellness",
-    "pageDescription": "Specialty lab testing at OVI Wellness in St. Petersburg, FL. GI Gut Map, MycoToxin mold panel, TruAge biological age, and Quest functional blood panels.",
+    "pageTitle": "Advanced Lab Testing in St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Specialty lab testing in St. Petersburg, FL: GI-MAP, mycotoxin, TruAge epigenetic age and Quest hormone and functional panels, reviewed by a doctor.",
     "heroHeadline": "OVI Labs &<br><span class=\"text-primary\">Specialty Labs</span>",
     "heroTitle": "Advanced Lab Testing in St. Petersburg, FL",
     "heroSubheadline": "Doctor-ordered clinical diagnostic panels, epigenetic longevity testing, and functional medicine biomarkers in St. Petersburg, FL.",
@@ -1076,10 +1076,10 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Doctor-Guided Detox & Cleansing Protocols — OVI Wellness",
-    "pageDescription": "Doctor-guided medical detox protocols in St. Petersburg, FL. Mycotoxin mold testing, antifungal care, and gut cleansing supervised by licensed medical providers.",
+    "pageTitle": "Mold & Gut Testing and Detox Care in St. Petersburg | OVI Wellness",
+    "pageDescription": "Doctor-guided gut and mold-related care in St. Petersburg, FL, starting with GI-MAP and mycotoxin testing and a personalized plan.",
     "heroHeadline": "Reset Your Gut &<br><span class=\"text-primary\">Systemic Energy</span>",
-    "heroTitle": "Mold & Gut Detox in St. Petersburg, FL",
+    "heroTitle": "Gut & Mold-Related Care in St. Petersburg, FL",
     "heroSubheadline": "Prescription Mold & Gut Detox protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
@@ -1424,7 +1424,7 @@
     "delay": "-1s",
     "features": [
       "Stop constant snack & food cravings",
-      "Burn stubborn fat while keeping muscle",
+      "Support fat loss while keeping muscle",
       "Licensed doctor supervision & care",
       "Simple weekly doctor-prescribed plan"
     ],
@@ -1434,7 +1434,7 @@
     "pageDescription": "Doctor-guided medical weight loss in St. Petersburg, FL with semaglutide or tirzepatide when appropriate. Labs, nutrition and monthly check-ins.",
     "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
     "heroTitle": "Medical Weight Loss With GLP-1s in St. Petersburg, FL",
-    "heroSubheadline": "Prescription Semaglutide & Tirzepatide weight loss protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
+    "heroSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
       "badge": "Quick 1-Minute Assessment",
@@ -1557,7 +1557,7 @@
     "protocols": {
       "badge": "Prescription Options",
       "sectionHeadline": "Simple Weekly Doctor Treatments",
-      "sectionSubheadline": "Doctor-prescribed weekly treatments tailored to your body after a medical consultation.",
+      "sectionSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), tailored to you after a medical consultation. Some medications may be compounded; compounded medications are not FDA-approved. Availability depends on clinical eligibility and pharmacy fulfillment.",
       "items": [
         {
           "icon": "fa-weight-scale",
@@ -1579,9 +1579,9 @@
         },
         {
           "icon": "fa-leaf",
-          "name": "Fat-Burn & B12 Injections",
+          "name": "B12 & Wellness Injections",
           "tag": "Energy Booster",
-          "description": "Quick vitamin shots to boost your daily energy, support your liver, and keep your body burning fat fast."
+          "description": "Quick vitamin shots to support your daily energy and liver health."
         },
         {
           "icon": "fa-chart-line",
@@ -1724,7 +1724,8 @@
         "question": "How do I get started?",
         "answer": "Simply call our clinic or book an appointment online! You will talk with a licensed doctor who will review your health, answer your questions, and start your custom plan."
       }
-    ]
+    ],
+    "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "hormone-optimization",
@@ -1744,8 +1745,8 @@
     ],
     "image": "assets/images/photos/trt-therapy.jpg",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Doctor-Guided Hormone Optimization — OVI Wellness",
-    "pageDescription": "Doctor-guided bio-identical hormone therapy and TRT protocols in St. Petersburg, FL. Medically supervised by licensed healthcare providers.",
+    "pageTitle": "TRT & Hormone Therapy in St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Doctor-led TRT and bioidentical hormone therapy for men and women in St. Petersburg, FL. Lab-based dosing, ongoing monitoring. Book a consult.",
     "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Energy & Strength</span>",
     "heroTitle": "TRT & Hormone Therapy in St. Petersburg, FL",
     "heroSubheadline": "Prescription TRT & Bio-Identical Hormone therapy, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
@@ -2078,7 +2079,8 @@
         "question": "How do I get started with hormone optimization?",
         "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order a quick blood test, review your results, and launch your personalized vitality plan."
       }
-    ]
+    ],
+    "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "iv-wellness",
@@ -2086,7 +2088,7 @@
     "tabLabel": "IV & Wellness",
     "href": "iv-wellness",
     "title": "IV Hydration and Nutrient Therapy",
-    "lead": "Bypass slow stomach pills and feel instant energy delivered straight to your cells.",
+    "lead": "Bypass slow stomach pills and get hydration and nutrient support delivered straight to your bloodstream.",
     "description": "Get pure vitamins, antioxidants, and super-hydration delivered straight to your bloodstream. IV therapy can provide fluids and selected nutrients directly into the bloodstream. Clinical effects and treatment time vary by formulation and patient.",
     "icon": "fa-tint",
     "delay": "-5s",
@@ -2098,10 +2100,10 @@
     ],
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Doctor-Guided IV Therapy & Wellness — OVI Wellness",
-    "pageDescription": "Doctor-guided IV vitamin therapy and Myers' Cocktail in St. Petersburg, FL. Prescribed and supervised by licensed medical providers.",
-    "heroHeadline": "Instant Hydration &<br><span class=\"text-primary\">Cellular Energy</span>",
-    "heroTitle": "IV Therapy in St. Petersburg, FL",
+    "pageTitle": "IV Therapy & Myers' Cocktail in St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Doctor-guided IV vitamin therapy in St. Petersburg, FL: Myers' Cocktail, glutathione and vitamin shots, with a medical screening first.",
+    "heroHeadline": "Hydration &<br><span class=\"text-primary\">Nutrient Support</span>",
+    "heroTitle": "IV Vitamin Therapy in St. Petersburg, FL",
     "heroSubheadline": "Prescription IV Drips, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
@@ -2261,7 +2263,7 @@
           "icon": "fa-tint",
           "name": "Myers' Cocktail Drip",
           "tag": "Most Popular",
-          "description": "The clinical gold standard IV drip—packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for instant energy."
+          "description": "The clinical gold standard IV drip, packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
         },
         {
           "icon": "fa-dumbbell",
@@ -2279,14 +2281,14 @@
           "icon": "fa-syringe",
           "name": "Doctor Vitamin Shots",
           "tag": "Quick Booster",
-          "description": "Quick B12, D3, or fat-burn intramuscular shots when you want instant energy without sitting for a full drip."
+          "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
         }
       ]
     },
     "science": {
       "badge": "How It Works",
       "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
-      "body": "When you swallow vitamin pills, your stomach breaks them down—leaving less than 20% for your cells. IV therapy delivers 100% pure vitamins straight into your blood. Your cells absorb them immediately, giving you instant hydration and peak energy.",
+      "body": "When you swallow vitamin pills, your stomach breaks them down first. IV therapy delivers nutrients directly into your bloodstream, supporting hydration and nutrient levels.",
       "bullets": [
         "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
         "Compounded fresh & prescribed by licensed medical doctors",
@@ -2314,12 +2316,12 @@
         {
           "icon": "fa-microscope",
           "title": "Bypasses Stomach Breakdown",
-          "detail": "IV drips bypass digestion completely so vitamins enter your bloodstream at full power for instant results."
+          "detail": "IV drips bypass digestion so nutrients enter your bloodstream directly."
         },
         {
           "icon": "fa-bullseye",
           "title": "Direct Vascular Delivery",
-          "detail": "Intravenous drips deliver nutrients straight into your bloodstream at full power for instant cellular absorption."
+          "detail": "Intravenous drips deliver nutrients straight into your bloodstream for direct cellular delivery."
         }
       ]
     },
@@ -2330,7 +2332,7 @@
       },
       {
         "myth": "Aren't oral vitamin pills enough?",
-        "reality": "No. Your stomach filters out up to 80% of oral vitamins. IV drips give you 100% absorption directly into your bloodstream for instant energy."
+        "reality": "No. Oral vitamins must pass through digestion first, while IV drips deliver nutrients directly into your bloodstream for hydration and nutrient support."
       },
       {
         "myth": "Is doctor-guided IV therapy safe?",
@@ -2344,7 +2346,7 @@
       "mobileStats": [
         {
           "icon": "fa-bolt",
-          "label": "Instant Effect"
+          "label": "Fast Delivery"
         },
         {
           "icon": "fa-tint",
@@ -2378,7 +2380,7 @@
         {
           "metric": "Rehydration Speed",
           "without": "Slow drinking water",
-          "with": "Instant cellular rehydration"
+          "with": "Direct hydration support"
         },
         {
           "metric": "Medical Oversight",
@@ -2440,7 +2442,7 @@
     "tabLabel": "Peptide Therapy",
     "href": "peptides",
     "title": "Peptide-Related Consultation",
-    "lead": "Supercharge your body's natural healing power to fix joint pain, recover fast, and feel full of life.",
+    "lead": "Clinical evaluation to support the body's natural processes related to joint well-being and cellular recovery.",
     "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
     "icon": "fa-vial",
     "delay": "-2s",
@@ -2487,7 +2489,7 @@
           {
             "value": "body",
             "icon": "fa-fire",
-            "title": "Stubborn Belly Fat",
+            "title": "Body Composition",
             "desc": "Holding extra weight despite eating clean and exercising."
           }
         ]
@@ -2541,8 +2543,8 @@
           {
             "value": "fat",
             "icon": "fa-weight",
-            "title": "Burn Body Fat",
-            "desc": "Shed stubborn fat while keeping strong muscle."
+            "title": "Support Fat Loss",
+            "desc": "Support fat loss while keeping strong muscle."
           }
         ]
       },
@@ -2550,7 +2552,7 @@
         "pain": {
           "tag": "Recommended Joint Repair Plan",
           "name": "The Total Joint & Tissue Reset",
-          "peptides": "Prescription Peptide options + Peptide options Protocol",
+          "peptides": "Options selected per clinical protocol",
           "icon": "fa-shield-alt",
           "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
           "goalModifiers": {
@@ -2564,14 +2566,14 @@
         "performance": {
           "tag": "Strength & Growth Plan",
           "name": "Peak Performance & Growth Stack",
-          "peptides": "Prescription Peptide options + Tesamorelin",
+          "peptides": "Clinical and metabolic options",
           "icon": "fa-dumbbell",
           "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
           "goalModifiers": {
             "train": "Helps you push past plateaus and recover in half the time.",
             "muscle": "Supports natural muscle building and protein absorption.",
             "feel": "Promotes deep, restorative sleep so you wake up with high energy.",
-            "fat": "Targets stubborn belly fat while protecting your lean muscle."
+            "fat": "Supports body-composition goals while protecting your lean muscle."
           },
           "social": "88 patients are currently running this doctor-prescribed stack."
         },
@@ -2590,16 +2592,16 @@
           "social": "44 local patients started this energy plan in the last 60 days."
         },
         "body": {
-          "tag": "Fat Burn & Recomp Plan",
-          "name": "Lean Muscle & Fat Burn Reset",
-          "peptides": "Tesamorelin + Peptide options Protocol",
+          "tag": "Body Composition Plan",
+          "name": "Lean Muscle & Body Composition Support",
+          "peptides": "Protocols selected after clinical evaluation",
           "icon": "fa-fire",
-          "desc": "Targets deep belly fat that diets miss, while protecting your lean, strong muscle.",
+          "desc": "Supports body-composition goals while protecting your lean, strong muscle.",
           "goalModifiers": {
             "train": "Improves endurance and stamina for longer workouts.",
-            "muscle": "Burns fat tissue while preserving lean muscle mass.",
+            "muscle": "Supports fat loss while preserving lean muscle mass.",
             "feel": "Improves overall body confidence, sleep, and daytime focus.",
-            "fat": "Designed specifically for stubborn fat that won't move with diet alone."
+            "fat": "Designed for body-composition goals alongside diet and exercise."
           },
           "social": "73 patients completed this fat burn protocol recently."
         }
@@ -2631,7 +2633,7 @@
         },
         {
           "label": "Want Muscle & Deep Sleep",
-          "detail": "Active men and women ready to burn fat, sleep deeply, and heal faster."
+          "detail": "Active men and women interested in support for body composition, sleep, and recovery."
         },
         {
           "label": "Ready for Doctor Care",
@@ -2646,33 +2648,33 @@
       "items": [
         {
           "icon": "fa-running",
-          "name": "Peptide options Protocol",
-          "tag": "Joint Repair",
-          "description": "Targeted prescription peptide that tells your cells to repair joints, tendons, gut lining, and torn muscle tissue."
+          "name": "Recovery & Tissue Support",
+          "tag": "Joint Support",
+          "description": "Supports joint comfort, tissue recovery, and training response when clinically appropriate."
         },
         {
           "icon": "fa-kit-medical",
-          "name": "Peptide options Protocol",
-          "tag": "Tissue Healing",
-          "description": "Works alongside Peptide options to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
+          "name": "Combination Options",
+          "tag": "Wellness",
+          "description": "Your provider may consider combined therapies based on your clinical needs."
         },
         {
           "icon": "fa-dumbbell",
-          "name": "Peptide options Protocol",
-          "tag": "Growth & Sleep",
-          "description": "Natural growth secretagogue that improves deep sleep, speeds up muscle recovery, and keeps bones strong."
+          "name": "Wellness & Recovery Support",
+          "tag": "Sleep & Recovery",
+          "description": "Additional options for recovery and vitality under medical supervision."
         },
         {
           "icon": "fa-bolt-lightning",
-          "name": "Tesamorelin Protocol",
-          "tag": "Belly Fat Burn",
-          "description": "Targeted prescription peptide engineered to burn stubborn belly fat while protecting lean muscle mass."
+          "name": "Body Composition Support",
+          "tag": "Body Composition",
+          "description": "Used alongside lifestyle measures to support body-composition goals."
         },
         {
           "icon": "fa-battery-full",
-          "name": "Glutathione Cellular Push",
-          "tag": "Antioxidant Shield",
-          "description": "Doctor-prescribed antioxidant push to cleanse cells, support liver function, and eliminate fatigue."
+          "name": "Antioxidant Support",
+          "tag": "Cellular Defense",
+          "description": "Medically guided antioxidant support to help cells and liver function."
         },
         {
           "icon": "fa-flask",
@@ -2789,20 +2791,20 @@
         {
           "name": "Joint & Tissue Repair Stack",
           "tag": "Most Popular",
-          "compounds": "Peptide options + Peptide options Protocol",
-          "description": "Combines twin repair peptides for fast joint relief, ligament repair, and tendon healing."
+          "compounds": "Options selected per clinical protocol",
+          "description": "Combines options for joint comfort and tissue recovery."
         },
         {
           "name": "Growth & Lean Muscle Stack",
           "tag": "Strength Boost",
-          "compounds": "Tesamorelin + Peptide options Protocol",
-          "description": "Designed for active adults looking to burn stubborn belly fat, gain lean muscle, and sleep deeply."
+          "compounds": "Metabolic options per clinical evaluation",
+          "description": "For active adults with body-composition goals who want lean-muscle support and better sleep, when clinically appropriate."
         },
         {
           "name": "Total Bioenergetic Reset",
           "tag": "Full Vitality",
-          "compounds": "Peptide options + Cellular Recovery Stack",
-          "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
+          "compounds": "Clinical and cellular support options",
+          "description": "Supports energy, focus and endurance under medical supervision."
         }
       ]
     },
@@ -2821,7 +2823,7 @@
       },
       {
         "question": "How fast will I see results from peptide therapy?",
-        "answer": "Joint repair peptides like Peptide options often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
+        "answer": "Timelines vary by person and by protocol. Your provider will monitor your progress over the first several weeks. Results vary."
       },
       {
         "question": "Can I combine peptides with TRT or hormone therapy?",
@@ -2831,7 +2833,8 @@
         "question": "How do I get started with peptide therapy?",
         "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your health, order any necessary bloodwork, and start your custom healing plan."
       }
-    ]
+    ],
+    "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "regenerative-medicine",
@@ -2851,10 +2854,10 @@
     ],
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
-    "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, P-Shot, and hair restoration supervised by licensed medical doctors.",
+    "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
     "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
-    "heroTitle": "PRP Regenerative Medicine in St. Petersburg, FL",
+    "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
     "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
@@ -3014,7 +3017,7 @@
           "icon": "fa-mars",
           "name": "P-Shot (Men's Intimacy)",
           "tag": "For Men",
-          "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance."
+          "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
         },
         {
           "icon": "fa-wand-magic-sparkles",
@@ -3083,7 +3086,7 @@
       },
       {
         "myth": "Are PRP stem cells?",
-        "reality": "No. PRP are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
+        "reality": "No. PRP is made from your own blood and is not a stem-cell product. It uses concentrated platelets and plasma to support your body's natural repair processes."
       },
       {
         "myth": "Is doctor-guided regenerative medicine safe?",
@@ -3170,7 +3173,7 @@
         "answer": "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or PRP treatment, topical numbing for comfort, and follow-up progress check-ins."
       },
       {
-        "question": "Are PRP and PRP injections painful?",
+        "question": "Are PRP injections painful?",
         "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
       },
       {
@@ -3178,8 +3181,8 @@
         "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
       },
       {
-        "question": "How do PRP differ from stem cell treatments?",
-        "answer": "PRP are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing."
+        "question": "How does PRP differ from stem cell treatments?",
+        "answer": "PRP (platelet-rich plasma) is prepared from your own blood and is not a stem-cell or exosome product. Stem-cell, MSC, and exosome therapies are not currently offered as routine services at OVI."
       },
       {
         "question": "How do I get started with regenerative medicine?",
@@ -3205,10 +3208,10 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Book Your Doctor Consultation",
-    "pageTitle": "Doctor-Guided Sexual Wellness — OVI Wellness",
-    "pageDescription": "Doctor-guided sexual wellness protocols in St. Petersburg, FL. P-Shot, PT-141, and hormone balancing supervised by licensed medical providers.",
+    "pageTitle": "P-Shot, PT-141 & Sexual Wellness in St. Petersburg | OVI Wellness",
+    "pageDescription": "Private, doctor-led sexual wellness care in St. Petersburg, FL: P-Shot (PRP), PT-141 and hormone balancing after a medical evaluation.",
     "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
-    "heroTitle": "Sexual Wellness Treatment in St. Petersburg, FL",
+    "heroTitle": "Sexual Wellness Treatments in St. Petersburg, FL",
     "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
@@ -3356,7 +3359,7 @@
           "icon": "fa-mars",
           "name": "P-Shot (Priapus Shot)",
           "tag": "For Men",
-          "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence."
+          "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
         },
         {
           "icon": "fa-venus",
@@ -3380,7 +3383,7 @@
           "icon": "fa-brain",
           "name": "PT-141 Desire Therapy",
           "tag": "Brain Signal",
-          "description": "FDA-studied peptide treatment that acts directly on central brain pathways to trigger natural desire."
+          "description": "PT-141 is FDA-approved for hypoactive sexual desire disorder in premenopausal women. Other uses are off-label and provided only when clinically appropriate under medical supervision."
         },
         {
           "icon": "fa-vial",
@@ -3441,7 +3444,7 @@
       },
       {
         "myth": "Is doctor-guided intimacy care safe?",
-        "reality": "Yes. All treatments use natural growth factors or FDA-studied compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+        "reality": "Yes. Treatments are provided by licensed medical professionals under strict Florida health guidelines, and off-label use is provided only when clinically appropriate."
       }
     ],
     "comparison": {
