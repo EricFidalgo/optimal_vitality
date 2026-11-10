@@ -6,11 +6,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://oviwellness.com/st-pete</loc>
-    <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://oviwellness.com/tampa</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
