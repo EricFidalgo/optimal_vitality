@@ -16,10 +16,10 @@
   ],
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
-  "pageTitle": "Doctor-Guided Regenerative Medicine — OVI Wellness",
-  "pageDescription": "Doctor-guided regenerative medicine in St. Petersburg, FL. PRP, P-Shot, and hair restoration supervised by licensed medical doctors.",
+  "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
+  "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
   "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
-  "heroTitle": "PRP Regenerative Medicine in St. Petersburg, FL",
+  "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
   "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
@@ -179,7 +179,7 @@
         "icon": "fa-mars",
         "name": "P-Shot (Men's Intimacy)",
         "tag": "For Men",
-        "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance."
+        "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
       },
       {
         "icon": "fa-wand-magic-sparkles",
@@ -248,7 +248,7 @@
     },
     {
       "myth": "Are PRP stem cells?",
-      "reality": "No. PRP are not stem cells. They are natural cellular messengers that carry clear healing instructions to help your body repair itself safely."
+      "reality": "No. PRP is made from your own blood and is not a stem-cell product. It uses concentrated platelets and plasma to support your body's natural repair processes."
     },
     {
       "myth": "Is doctor-guided regenerative medicine safe?",
@@ -335,7 +335,7 @@
       "answer": "Your program includes a full medical consultation with a board-certified doctor, your customized in-office PRP or PRP treatment, topical numbing for comfort, and follow-up progress check-ins."
     },
     {
-      "question": "Are PRP and PRP injections painful?",
+      "question": "Are PRP injections painful?",
       "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
     },
     {
@@ -343,8 +343,8 @@
       "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
     },
     {
-      "question": "How do PRP differ from stem cell treatments?",
-      "answer": "PRP are non-cellular natural messengers that carry healing instructions to your cells. They do not replicate or engraft, making them an extremely safe, pure cellular signal for fast healing."
+      "question": "How does PRP differ from stem cell treatments?",
+      "answer": "PRP (platelet-rich plasma) is prepared from your own blood and is not a stem-cell or exosome product. Stem-cell, MSC, and exosome therapies are not currently offered as routine services at OVI."
     },
     {
       "question": "How do I get started with regenerative medicine?",

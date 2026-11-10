@@ -4,7 +4,7 @@
   "tabLabel": "Peptide Therapy",
   "href": "peptides",
   "title": "Peptide-Related Consultation",
-  "lead": "Supercharge your body's natural healing power to fix joint pain, recover fast, and feel full of life.",
+  "lead": "Clinical evaluation to support the body's natural processes related to joint well-being and cellular recovery.",
   "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
   "icon": "fa-vial",
   "delay": "-2s",
@@ -51,7 +51,7 @@
         {
           "value": "body",
           "icon": "fa-fire",
-          "title": "Stubborn Belly Fat",
+          "title": "Body Composition",
           "desc": "Holding extra weight despite eating clean and exercising."
         }
       ]
@@ -105,8 +105,8 @@
         {
           "value": "fat",
           "icon": "fa-weight",
-          "title": "Burn Body Fat",
-          "desc": "Shed stubborn fat while keeping strong muscle."
+          "title": "Support Fat Loss",
+          "desc": "Support fat loss while keeping strong muscle."
         }
       ]
     },
@@ -114,7 +114,7 @@
       "pain": {
         "tag": "Recommended Joint Repair Plan",
         "name": "The Total Joint & Tissue Reset",
-        "peptides": "Prescription Peptide options + Peptide options Protocol",
+        "peptides": "Options selected per clinical protocol",
         "icon": "fa-shield-alt",
         "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
         "goalModifiers": {
@@ -128,14 +128,14 @@
       "performance": {
         "tag": "Strength & Growth Plan",
         "name": "Peak Performance & Growth Stack",
-        "peptides": "Prescription Peptide options + Tesamorelin",
+        "peptides": "Clinical and metabolic options",
         "icon": "fa-dumbbell",
         "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
         "goalModifiers": {
           "train": "Helps you push past plateaus and recover in half the time.",
           "muscle": "Supports natural muscle building and protein absorption.",
           "feel": "Promotes deep, restorative sleep so you wake up with high energy.",
-          "fat": "Targets stubborn belly fat while protecting your lean muscle."
+          "fat": "Supports body-composition goals while protecting your lean muscle."
         },
         "social": "88 patients are currently running this doctor-prescribed stack."
       },
@@ -154,16 +154,16 @@
         "social": "44 local patients started this energy plan in the last 60 days."
       },
       "body": {
-        "tag": "Fat Burn & Recomp Plan",
-        "name": "Lean Muscle & Fat Burn Reset",
-        "peptides": "Tesamorelin + Peptide options Protocol",
+        "tag": "Body Composition Plan",
+        "name": "Lean Muscle & Body Composition Support",
+        "peptides": "Protocols selected after clinical evaluation",
         "icon": "fa-fire",
-        "desc": "Targets deep belly fat that diets miss, while protecting your lean, strong muscle.",
+        "desc": "Supports body-composition goals while protecting your lean, strong muscle.",
         "goalModifiers": {
           "train": "Improves endurance and stamina for longer workouts.",
-          "muscle": "Burns fat tissue while preserving lean muscle mass.",
+          "muscle": "Supports fat loss while preserving lean muscle mass.",
           "feel": "Improves overall body confidence, sleep, and daytime focus.",
-          "fat": "Designed specifically for stubborn fat that won't move with diet alone."
+          "fat": "Designed for body-composition goals alongside diet and exercise."
         },
         "social": "73 patients completed this fat burn protocol recently."
       }
@@ -195,7 +195,7 @@
       },
       {
         "label": "Want Muscle & Deep Sleep",
-        "detail": "Active men and women ready to burn fat, sleep deeply, and heal faster."
+        "detail": "Active men and women interested in support for body composition, sleep, and recovery."
       },
       {
         "label": "Ready for Doctor Care",
@@ -210,33 +210,33 @@
     "items": [
       {
         "icon": "fa-running",
-        "name": "Peptide options Protocol",
-        "tag": "Joint Repair",
-        "description": "Targeted prescription peptide that tells your cells to repair joints, tendons, gut lining, and torn muscle tissue."
+        "name": "Recovery & Tissue Support",
+        "tag": "Joint Support",
+        "description": "Supports joint comfort, tissue recovery, and training response when clinically appropriate."
       },
       {
         "icon": "fa-kit-medical",
-        "name": "Peptide options Protocol",
-        "tag": "Tissue Healing",
-        "description": "Works alongside Peptide options to reduce chronic inflammation, improve joint flexibility, and speed up recovery."
+        "name": "Combination Options",
+        "tag": "Wellness",
+        "description": "Your provider may consider combined therapies based on your clinical needs."
       },
       {
         "icon": "fa-dumbbell",
-        "name": "Peptide options Protocol",
-        "tag": "Growth & Sleep",
-        "description": "Natural growth secretagogue that improves deep sleep, speeds up muscle recovery, and keeps bones strong."
+        "name": "Wellness & Recovery Support",
+        "tag": "Sleep & Recovery",
+        "description": "Additional options for recovery and vitality under medical supervision."
       },
       {
         "icon": "fa-bolt-lightning",
-        "name": "Tesamorelin Protocol",
-        "tag": "Belly Fat Burn",
-        "description": "Targeted prescription peptide engineered to burn stubborn belly fat while protecting lean muscle mass."
+        "name": "Body Composition Support",
+        "tag": "Body Composition",
+        "description": "Used alongside lifestyle measures to support body-composition goals."
       },
       {
         "icon": "fa-battery-full",
-        "name": "Glutathione Cellular Push",
-        "tag": "Antioxidant Shield",
-        "description": "Doctor-prescribed antioxidant push to cleanse cells, support liver function, and eliminate fatigue."
+        "name": "Antioxidant Support",
+        "tag": "Cellular Defense",
+        "description": "Medically guided antioxidant support to help cells and liver function."
       },
       {
         "icon": "fa-flask",
@@ -353,20 +353,20 @@
       {
         "name": "Joint & Tissue Repair Stack",
         "tag": "Most Popular",
-        "compounds": "Peptide options + Peptide options Protocol",
-        "description": "Combines twin repair peptides for fast joint relief, ligament repair, and tendon healing."
+        "compounds": "Options selected per clinical protocol",
+        "description": "Combines options for joint comfort and tissue recovery."
       },
       {
         "name": "Growth & Lean Muscle Stack",
         "tag": "Strength Boost",
-        "compounds": "Tesamorelin + Peptide options Protocol",
-        "description": "Designed for active adults looking to burn stubborn belly fat, gain lean muscle, and sleep deeply."
+        "compounds": "Metabolic options per clinical evaluation",
+        "description": "For active adults with body-composition goals who want lean-muscle support and better sleep, when clinically appropriate."
       },
       {
         "name": "Total Bioenergetic Reset",
         "tag": "Full Vitality",
-        "compounds": "Peptide options + Cellular Recovery Stack",
-        "description": "Recharges cellular power plants to eliminate chronic fatigue, restore focus, and boost endurance."
+        "compounds": "Clinical and cellular support options",
+        "description": "Supports energy, focus and endurance under medical supervision."
       }
     ]
   },
@@ -385,7 +385,7 @@
     },
     {
       "question": "How fast will I see results from peptide therapy?",
-      "answer": "Joint repair peptides like Peptide options often show noticeable pain relief within 2 to 4 weeks. Muscle recovery, sleep quality, and fat loss benefits build over 6 to 12 weeks."
+      "answer": "Timelines vary by person and by protocol. Your provider will monitor your progress over the first several weeks. Results vary."
     },
     {
       "question": "Can I combine peptides with TRT or hormone therapy?",
@@ -395,5 +395,6 @@
       "question": "How do I get started with peptide therapy?",
       "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your health, order any necessary bloodwork, and start your custom healing plan."
     }
-  ]
+  ],
+  "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
 }

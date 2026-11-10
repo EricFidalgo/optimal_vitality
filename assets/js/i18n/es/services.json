@@ -17,8 +17,8 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "OVI Labs y Laboratorios Especializados - Pruebas Diagnosticas | OVI Wellness",
-    "pageDescription": "Pruebas de laboratorio especializadas en OVI Wellness, St. Petersburg, FL. GI Gut Map, micotoxinas, edad biologica TruAge y paneles funcionales Quest.",
+    "pageTitle": "Pruebas de Laboratorio Avanzadas en St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Pruebas de laboratorio especializadas en St. Petersburg, FL: GI-MAP, micotoxinas, edad epigenética TruAge y paneles hormonales y funcionales de Quest, revisados por un médico.",
     "heroHeadline": "OVI Labs y<br><span class=\"text-primary\">Laboratorios Especializados</span>",
     "heroTitle": "Pruebas de Laboratorio Avanzadas en St. Petersburg, FL",
     "heroSubheadline": "Paneles diagnosticos guiados por medicos, longevidad epigenetica y medicina funcional en St. Petersburg, FL.",
@@ -1076,10 +1076,10 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "Protocolos clínicos guiados por médicos — OVI Wellness",
-    "pageDescription": "Protocolos clínicos supervisados médicamente en St. Petersburg, FL. Evaluaciones para exposición a micotoxinas y apoyo de la salud digestiva.",
+    "pageTitle": "Pruebas de Moho e Intestino en St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Atención guiada por médicos para el intestino y problemas relacionados con el moho en St. Petersburg, FL, a partir de pruebas GI-MAP y de micotoxinas y un plan personalizado.",
     "heroHeadline": "Apoye su salud<br><span class=\"text-primary\">digestiva y bienestar</span>",
-    "heroTitle": "Desintoxicación de Moho e Intestino en St. Petersburg, FL",
+    "heroTitle": "Atención de Intestino y Moho en St. Petersburg, FL",
     "heroSubheadline": "Protocolos clínicos revisados por proveedores de atención médica con licencia en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
@@ -1721,7 +1721,8 @@
         "question": "¿Cómo puedo programar una evaluación?",
         "answer": "Llámenos o reserve en línea. Un miembro de nuestro equipo programará su evaluación clínica con un proveedor de atención médica con licencia."
       }
-    ]
+    ],
+    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "hormone-optimization",
@@ -1741,8 +1742,8 @@
     ],
     "image": "assets/images/photos/trt-therapy.jpg",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "Optimización Hormonal Guiada por Médicos — OVI Wellness",
-    "pageDescription": "Terapia hormonal bioidéntica y protocolos de TRT en St. Petersburg, FL. Supervisado médicamente por proveedores de atención médica con licencia.",
+    "pageTitle": "TRT y Terapia Hormonal en St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "TRT y terapia hormonal bioidéntica dirigida por médicos para hombres y mujeres en St. Petersburg, FL. Dosificación basada en laboratorios y seguimiento continuo. Reserve una consulta.",
     "heroHeadline": "Apoyo para su<br><span class=\"text-primary\">Energía y Bienestar</span>",
     "heroTitle": "TRT y Terapia Hormonal en St. Petersburg, FL",
     "heroSubheadline": "Terapia de TRT y Hormonas Bioidénticas bajo supervisión clínica en St. Petersburg, FL.",
@@ -2075,7 +2076,8 @@
         "question": "¿Cómo puedo empezar?",
         "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
       }
-    ]
+    ],
+    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "iv-wellness",
@@ -2095,10 +2097,10 @@
     ],
     "image": "",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "Terapia IV y Bienestar Guiada por Médicos — OVI Wellness",
-    "pageDescription": "Terapia de vitaminas IV guiada por médicos en St. Petersburg, FL. Prescrita y supervisada por proveedores de atención médica con licencia.",
+    "pageTitle": "Terapia IV y Cóctel de Myers en St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "Terapia IV con vitaminas guiada por médicos en St. Petersburg, FL: cóctel de Myers, glutatión e inyecciones de vitaminas, con una evaluación médica previa.",
     "heroHeadline": "Hidratación y<br><span class=\"text-primary\">Soporte Celular</span>",
-    "heroTitle": "Terapia IV en St. Petersburg, FL",
+    "heroTitle": "Terapia IV con Vitaminas en St. Petersburg, FL",
     "heroSubheadline": "Terapias IV prescritas y supervisadas médicamente por un médico certificado en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación hoy",
     "quiz": {
@@ -2828,7 +2830,8 @@
         "question": "¿Cómo puedo empezar?",
         "answer": "Comuníquese con nosotros para programar su evaluación clínica y explorar opciones según sus necesidades."
       }
-    ]
+    ],
+    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
   },
   {
     "id": "regenerative-medicine",
@@ -2848,10 +2851,10 @@
     ],
     "image": "",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "Medicina Regenerativa Guiada por Médicos — OVI Wellness",
-    "pageDescription": "Medicina regenerativa guiada por médicos en St. Petersburg, FL. Terapias PRP y enfoques para el bienestar supervisados por proveedores médicos con licencia.",
+    "pageTitle": "PRP y Medicina Regenerativa en St. Petersburg, FL | OVI Wellness",
+    "pageDescription": "PRP dirigido por médicos para articulaciones, piel y restauración capilar en St. Petersburg, FL, además del P-Shot. Conozca cómo funciona el PRP y reserve una consulta.",
     "heroHeadline": "Apoyo<br><span class=\"text-primary\">Regenerativo</span> Clínico",
-    "heroTitle": "Medicina Regenerativa con PRP en St. Petersburg, FL",
+    "heroTitle": "PRP y Medicina Regenerativa en St. Petersburg, FL",
     "heroSubheadline": "Protocolos regenerativos prescritos bajo supervisión clínica en St. Petersburg, FL.",
     "heroCTA": "Programe su llamada médica hoy",
     "quiz": {
@@ -3011,7 +3014,7 @@
           "icon": "fa-mars",
           "name": "Bienestar masculino",
           "tag": "Para hombres",
-          "description": "Evaluación clínica de opciones con PRP para apoyar la salud sexual masculina."
+          "description": "Evaluación clínica de opciones con PRP para apoyar la salud sexual masculina. Los resultados varían y no están garantizados."
         },
         {
           "icon": "fa-wand-magic-sparkles",
@@ -3176,7 +3179,7 @@
       },
       {
         "question": "¿En qué se diferencia el PRP de los tratamientos con células madre?",
-        "answer": "El PRP utiliza factores de su propia sangre (plaquetas), no células madre con capacidad de replicación."
+        "answer": "El PRP utiliza factores de su propia sangre (plaquetas), no células madre con capacidad de replicación. Las terapias con células madre, MSC y exosomas no se ofrecen actualmente como servicios de rutina en OVI."
       },
       {
         "question": "¿Cómo puedo programar una consulta?",
@@ -3202,10 +3205,10 @@
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Programe su evaluación clínica",
-    "pageTitle": "Bienestar Sexual Guiado por Médicos — OVI Wellness",
-    "pageDescription": "Protocolos de bienestar sexual prescritos por médicos en St. Petersburg, FL. Terapias hormonales y de apoyo vascular guiadas por proveedores de atención médica con licencia.",
+    "pageTitle": "P-Shot, PT-141 y Bienestar Sexual en St. Petersburg | OVI Wellness",
+    "pageDescription": "Atención de bienestar sexual privada y dirigida por médicos en St. Petersburg, FL: P-Shot (PRP), PT-141 y equilibrio hormonal tras una evaluación médica.",
     "heroHeadline": "Apoyo a su<br><span class=\"text-primary\">Bienestar Íntimo</span>",
-    "heroTitle": "Tratamiento de Salud Sexual en St. Petersburg, FL",
+    "heroTitle": "Tratamientos de Bienestar Sexual en St. Petersburg, FL",
     "heroSubheadline": "Atención médica integral evaluada y prescrita por médicos en St. Petersburg, FL.",
     "heroCTA": "Programe su evaluación clínica",
     "quiz": {
@@ -3359,7 +3362,7 @@
           "icon": "fa-dna",
           "name": "Terapia PRP (Plasma Rico en Plaquetas)",
           "tag": "Medicina regenerativa",
-          "description": "Evaluación del uso de factores de su propia sangre para buscar apoyar los tejidos (ej. O-Shot, P-Shot) bajo criterio médico."
+          "description": "Evaluación del uso de factores de su propia sangre para buscar apoyar los tejidos (ej. O-Shot, P-Shot) bajo criterio médico. Los resultados varían y no están garantizados."
         },
         {
           "icon": "fa-mars-double",

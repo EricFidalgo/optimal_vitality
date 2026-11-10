@@ -310,5 +310,6 @@
       "question": "¿Cómo puedo programar una evaluación?",
       "answer": "Llámenos o reserve en línea. Un miembro de nuestro equipo programará su evaluación clínica con un proveedor de atención médica con licencia."
     }
-  ]
+  ],
+  "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
 }

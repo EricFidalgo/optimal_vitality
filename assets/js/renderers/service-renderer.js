@@ -53,6 +53,7 @@
     setSlot("heroHeadline", s.heroHeadline);
     setSlot("heroTitle", s.heroTitle);
     setSlot("heroSubheadline", s.heroSubheadline);
+    setSlot("providerLine", s.providerLine);
     setSlot("heroCTA", s.heroCTA || "Book Your Doctor Call Today");
 
     // --- Transformations ---
