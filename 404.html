@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // A trailing slash (/services/peptides/) has no matching folder on this host, so it lands here.
+        // Send it to the same address without the slash; the page there exists or shows this 404 again.
+        (function () {
+            var p = location.pathname;
+            if (p.length > 1 && p.charAt(p.length - 1) === '/') {
+                location.replace(p.slice(0, -1) + location.search + location.hash);
+            }
+        })();
+    </script>
     <title>404 — Page Not Found | OVI Wellness</title>
     <meta name="description" content="The page you are looking for does not exist. Return to OVI Wellness home page.">
     <link rel="canonical" href="https://oviwellness.com/404">
