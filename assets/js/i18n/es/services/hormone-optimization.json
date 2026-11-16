@@ -351,5 +351,9 @@
       "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
     }
   ],
-  "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
+  "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
+  "localArea": {
+    "headline": "TRT y Optimización Hormonal en St. Petersburg, FL",
+    "body": "<p>OVI Wellness es una clínica de TRT y optimización hormonal dirigida por médicos en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas. La atención comienza con un historial médico, una revisión de síntomas y análisis de laboratorio, y el tratamiento se considera solo cuando sus resultados y la evaluación de su proveedor lo respaldan. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+  }
 }
