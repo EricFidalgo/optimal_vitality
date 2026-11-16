@@ -149,6 +149,14 @@
     setSlot("ctaBookBtn", isEs ? "Reservar Consulta" : "Book Your Consultation");
     setSlot("ctaEmailBtn", isEs ? "Enviar Correo al Equipo Clínico" : "Email Clinical Team");
 
+    // --- Local area copy (where we are, who we serve); the section is hidden when a service has none ---
+    if (s.localArea && s.localArea.headline && s.localArea.body) {
+      setSlot("localHeadline", s.localArea.headline);
+      setSlot("localBody", s.localArea.body);
+    } else {
+      hide("localArea");
+    }
+
     // --- FAQs Title & Subheadline ---
     buildFAQs(s.faqs || window.clinicData?.faqs || []);
 

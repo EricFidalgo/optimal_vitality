@@ -1723,9 +1723,25 @@
       {
         "question": "How do I get started?",
         "answer": "Simply call our clinic or book an appointment online! You will talk with a licensed doctor who will review your health, answer your questions, and start your custom plan."
+      },
+      {
+        "question": "What is the difference between semaglutide and tirzepatide?",
+        "answer": "Both medications mimic gut hormones that help control appetite and blood sugar. Semaglutide acts on the GLP-1 receptor. Tirzepatide acts on both the GLP-1 and GIP receptors. Your provider chooses between them based on your health history, your goals and how you respond, and neither is right for everyone."
+      },
+      {
+        "question": "Are compounded GLP-1 medications FDA-approved?",
+        "answer": "No. Compounded medications are prepared by a licensed pharmacy for an individual patient and are not FDA-approved. FDA-approved versions are sold under brand names. Your provider will explain which options are available to you and how they differ in sourcing and cost."
+      },
+      {
+        "question": "Who qualifies for medical weight loss?",
+        "answer": "Eligibility is a clinical decision. FDA-approved weight-management labeling for these medications generally covers adults with a body mass index (BMI) of 30 or higher, or 27 or higher with a weight-related condition such as high blood pressure or type 2 diabetes. Your provider reviews your history, medications and labs before recommending any plan."
       }
     ],
-    "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
+    "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
+    "localArea": {
+      "headline": "Medical Weight Loss in St. Petersburg, FL",
+      "body": "<p>OVI Wellness provides physician-led weight loss care at <strong>5029 Central Ave, Room 2, St. Petersburg, FL 33710</strong>, in Pinellas County. Our weight loss clinic serves St. Petersburg, nearby Pinellas County communities and the wider Tampa Bay area for GLP-1 evaluations, lab work and follow-up visits.</p><p>Visits are by appointment. Call <a href=\"tel:+17274768966\">(727) 476-8966</a> or use the booking button on this page, and see the map below for directions.</p>"
+    }
   },
   {
     "id": "hormone-optimization",

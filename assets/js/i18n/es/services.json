@@ -1720,9 +1720,25 @@
       {
         "question": "¿Cómo puedo programar una evaluación?",
         "answer": "Llámenos o reserve en línea. Un miembro de nuestro equipo programará su evaluación clínica con un proveedor de atención médica con licencia."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre semaglutida y tirzepatida?",
+        "answer": "Ambos medicamentos imitan hormonas intestinales que ayudan a controlar el apetito y el azúcar en la sangre. La semaglutida actúa sobre el receptor de GLP-1. La tirzepatida actúa sobre los receptores de GLP-1 y de GIP. Su proveedor elige entre ellos según su historial de salud, sus metas y su respuesta, y ninguno es adecuado para todas las personas."
+      },
+      {
+        "question": "¿Los medicamentos GLP-1 compuestos están aprobados por la FDA?",
+        "answer": "No. Los medicamentos compuestos los prepara una farmacia con licencia para un paciente en particular y no están aprobados por la FDA. Las versiones aprobadas por la FDA se venden con nombres comerciales. Su proveedor le explicará qué opciones tiene disponibles y en qué se diferencian en origen y costo."
+      },
+      {
+        "question": "¿Quién califica para la pérdida de peso médica?",
+        "answer": "La elegibilidad es una decisión clínica. La información aprobada por la FDA para el manejo del peso con estos medicamentos generalmente incluye a adultos con un índice de masa corporal (IMC) de 30 o más, o de 27 o más con una condición relacionada con el peso, como presión arterial alta o diabetes tipo 2. Su proveedor revisa su historial, sus medicamentos y sus análisis antes de recomendar cualquier plan."
       }
     ],
-    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
+    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
+    "localArea": {
+      "headline": "Pérdida de Peso Médica en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece atención para la pérdida de peso dirigida por médicos en <strong>5029 Central Ave, Room 2, St. Petersburg, FL 33710</strong>, en el condado de Pinellas. Nuestra clínica atiende a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay para evaluaciones de GLP-1, análisis de laboratorio y consultas de seguimiento.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   },
   {
     "id": "hormone-optimization",
