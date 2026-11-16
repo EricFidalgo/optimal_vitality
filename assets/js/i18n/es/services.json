@@ -2446,8 +2446,16 @@
       {
         "question": "¿Cómo puedo empezar?",
         "answer": "¡Llámenos o reserve en línea! Nuestro equipo médico preparará su evaluación inicial."
+      },
+      {
+        "question": "¿La terapia IV con glutatión está aprobada por la FDA?",
+        "answer": "El glutatión que se administra por vía intravenosa o en inyección en clínicas de bienestar generalmente lo prepara una farmacia como medicamento compuesto, y los medicamentos compuestos no están aprobados por la FDA. La investigación sobre el glutatión intravenoso en adultos sanos es limitada, por lo que su proveedor revisa su historial, sus medicamentos y sus metas antes de recomendarlo y le explica qué esperar. Los resultados varían."
       }
-    ]
+    ],
+    "localArea": {
+      "headline": "Terapia IV en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece terapia IV e inyecciones de vitaminas en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas, después de una evaluación médica con un proveedor con licencia. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   },
   {
     "id": "peptides",

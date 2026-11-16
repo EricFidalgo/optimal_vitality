@@ -2449,8 +2449,16 @@
       {
         "question": "How do I get started with IV therapy?",
         "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our medical team will prepare your custom drip!"
+      },
+      {
+        "question": "Is glutathione IV therapy FDA-approved?",
+        "answer": "Glutathione given by IV or injection at wellness clinics is generally compounded by a pharmacy, and compounded drugs are not FDA-approved. Research on glutathione IVs in healthy adults is limited, so your provider reviews your history, medications and goals before recommending it and explains what to expect. Results vary."
       }
-    ]
+    ],
+    "localArea": {
+      "headline": "IV Therapy in St. Petersburg, FL",
+      "body": "<p>OVI Wellness offers IV therapy and vitamin injections at <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, in Pinellas County, after a medical screening with a licensed provider. We serve St. Petersburg, nearby Pinellas County communities and the wider Tampa Bay area.</p><p>Visits are by appointment. Call <a href=\"tel:+17274768966\">(727) 476-8966</a> or use the booking button on this page, and see the map below for directions.</p>"
+    }
   },
   {
     "id": "peptides",
