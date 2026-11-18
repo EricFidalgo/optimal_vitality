@@ -209,10 +209,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <p class="mb-0"><a href="${c.socials.instagram.url}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none"><i class="fab fa-instagram text-primary me-3 w-15px text-center"></i> ${c.socials.instagram.handle}</a></p>
                                 ${c?.socials?.facebook ? `<p class="mb-0 mt-2"><a href="${c.socials.facebook.url}" target="_blank" rel="noopener noreferrer" class="footer-text-soft text-decoration-none"><i class="fab fa-facebook-f text-primary me-3 w-15px text-center"></i> ${c.socials.facebook.handle}</a></p>` : ""}
                                 <hr class="border-secondary my-4">
-                                <p class="footer-text-soft mb-2"><i class="fas fa-clock text-primary me-3 w-15px text-center"></i> <strong>${c.hours[0].days}:</strong> ${c.hours[0].time}</p>
-                                <p class="footer-text-soft mb-0"><i class="fas fa-clock text-primary me-3 w-15px text-center opacity-0"></i> <strong>${c.hours[1].days}:</strong> ${c.hours[1].time}</p>
+                                <p class="footer-text-soft mb-2 d-flex align-items-start"><i class="fas fa-clock text-primary me-3 w-15px text-center mt-1 flex-shrink-0"></i> <span><strong>${c.hours[0].days}:</strong> <span class="text-nowrap">${c.hours[0].time}</span></span></p>
+                                <p class="footer-text-soft mb-0 d-flex align-items-start"><i class="fas fa-clock text-primary me-3 w-15px text-center mt-1 flex-shrink-0 opacity-0"></i> <span><strong>${c.hours[1].days}:</strong> <span class="text-nowrap">${c.hours[1].time}</span></span></p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="mt-5 text-center">
+                        <a href="https://stpetebeachvacationrentals.net/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://stpetebeachvacationrentals.net/wp-content/uploads/2026/03/Vibe-Checked-Badge.svg" alt="Vibe Checked" loading="lazy" style="max-width: 220px; height: auto;" />
+                        </a>
                     </div>
 
                     <div class="mt-5 pt-4 border-top border-secondary text-center">
