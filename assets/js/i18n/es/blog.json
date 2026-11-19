@@ -89,7 +89,9 @@
       "toc": true,
       "service": "regenerative-medicine",
       "seoTitle": "PRP for Hair Loss: Sessions, Results and Candidacy",
-      "metaDescription": "PRP for hair loss explained: how it works, how many sessions to expect, realistic results, and how PRP compares with exosomes. Learn before you start."
+      "metaDescription": "PRP for hair loss explained: how it works, how many sessions to expect, realistic results, and how PRP compares with exosomes. Learn before you start.",
+      "image": "/assets/images/blog/prp-hair-loss-man-checking-hairline.jpg",
+      "imageAlt": "Man checking his thinning hairline in a bathroom mirror"
     },
     {
       "id": "glutathione-injections-vs-iv",
@@ -154,7 +156,9 @@
       "toc": true,
       "service": "iv-wellness",
       "seoTitle": "Glutathione Injections vs. IV: Evidence & Safety",
-      "metaDescription": "Glutathione shots, IV drips and oral compared: what the research shows, the 2026 FDA compounding alert, and questions to ask a provider in Tampa Bay."
+      "metaDescription": "Glutathione shots, IV drips and oral compared: what the research shows, the 2026 FDA compounding alert, and questions to ask a provider in Tampa Bay.",
+      "image": "/assets/images/blog/glutathione-iv-therapy-drip-bag.jpg",
+      "imageAlt": "IV drip bag hanging from a metal pole in a clinic room"
     },
     {
       "id": "low-testosterone-symptoms-in-men-when-to-get-tested",
@@ -215,7 +219,9 @@
       "toc": true,
       "service": "hormone-optimization",
       "seoTitle": "Low Testosterone Symptoms in Men & When to Test",
-      "metaDescription": "Fatigue, low drive, lost muscle? Learn the signs of low testosterone in men, which labs to ask for, and when to get tested in St. Petersburg, FL."
+      "metaDescription": "Fatigue, low drive, lost muscle? Learn the signs of low testosterone in men, which labs to ask for, and when to get tested in St. Petersburg, FL.",
+      "image": "/assets/images/blog/mens-health-low-testosterone-man-with-bicycle.jpg",
+      "imageAlt": "Smiling grey-haired man standing with his bicycle on a city street"
     },
     {
       "id": "cellular-detox-protocols",
