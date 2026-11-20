@@ -1056,6 +1056,10 @@
       },
       "disclaimer": "Las recomendaciones de pruebas, la interpretación y la atención de seguimiento son determinadas por su proveedor de salud. Los resultados de laboratorio por sí solos no establecen un diagnóstico. Ciertas evaluaciones especializadas tienen limitaciones y pueden no ser apropiadas para todos los pacientes.",
       "close": "Cerrar"
+    },
+    "localArea": {
+      "headline": "Pruebas de Laboratorio Avanzadas en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece pruebas de laboratorio avanzadas y especializadas en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas. Un proveedor con licencia revisa sus resultados con usted y le explica lo que significan para sus metas de salud. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
     }
   },
   {
@@ -1407,7 +1411,11 @@
         "question": "¿Cómo empiezo con el protocolo clínico?",
         "answer": "¡Llámenos hoy para programar una evaluación! Nuestro proveedor de atención médica iniciará su proceso de pruebas de laboratorio."
       }
-    ]
+    ],
+    "localArea": {
+      "headline": "Pruebas de Moho e Intestino y Cuidado de Desintoxicación en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece pruebas de moho e intestino y cuidado de desintoxicación de apoyo en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas, comenzando con una evaluación médica. El cuidado de desintoxicación es un enfoque de bienestar de apoyo, los resultados varían y no es un tratamiento para ninguna enfermedad. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   },
   {
     "id": "glp-1therapies",
@@ -2859,7 +2867,11 @@
         "answer": "Comuníquese con nosotros para programar su evaluación clínica y explorar opciones según sus necesidades."
       }
     ],
-    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>"
+    "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
+    "localArea": {
+      "headline": "Terapia con Péptidos en St. Petersburg, FL",
+      "body": "<p>OVI Wellness es una clínica de terapia con péptidos dirigida por médicos en <strong>5029 Central Ave, Room 1, St. Petersburg, FL 33710</strong>, en el condado de Pinellas. La atención comienza con una consulta médica y una revisión de su historial y sus metas, con análisis de laboratorio cuando su proveedor lo recomienda, y el plan se elabora solo si la terapia con péptidos es adecuada para usted. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   },
   {
     "id": "regenerative-medicine",
@@ -3213,7 +3225,11 @@
         "question": "¿Cómo puedo programar una consulta?",
         "answer": "¡Contáctenos hoy! Nuestro equipo programará su evaluación inicial con un profesional de la salud."
       }
-    ]
+    ],
+    "localArea": {
+      "headline": "PRP y Medicina Regenerativa en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece servicios de medicina regenerativa, incluido el PRP (plasma rico en plaquetas) preparado con su propia sangre, en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas, después de una evaluación con un proveedor con licencia. Las terapias con células madre y exosomas no se ofrecen como servicios de rutina. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   },
   {
     "id": "sexual-wellness",
@@ -3567,6 +3583,10 @@
         "question": "¿Es todo confidencial?",
         "answer": "Absolutamente. Toda su información y consultas se manejan bajo estricta confidencialidad médica."
       }
-    ]
+    ],
+    "localArea": {
+      "headline": "Bienestar Sexual en St. Petersburg, FL",
+      "body": "<p>OVI Wellness ofrece atención de bienestar sexual para hombres y mujeres, dirigida por médicos, en <strong>5029 Central Ave, St. Petersburg, FL 33710</strong>, en el condado de Pinellas. Todo plan comienza con una consulta con un proveedor con licencia, y el tratamiento se considera solo cuando es clínicamente apropiado. Atendemos a St. Petersburg, comunidades cercanas del condado de Pinellas y el área más amplia de Tampa Bay.</p><p>Las visitas son con cita. Llame al <a href=\"tel:+17274768966\">(727) 476-8966</a> o use el botón de reservas de esta página, y consulte el mapa de abajo para llegar.</p>"
+    }
   }
 ]
