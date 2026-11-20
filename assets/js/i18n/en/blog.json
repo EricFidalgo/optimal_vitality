@@ -334,6 +334,10 @@
         {
           "title": "Clinical Risks",
           "body": "<p>Common clinical risks include nausea, vomiting, diarrhea, constipation, acid reflux, and fatigue. While generally mild, serious but rare risks include pancreatitis, acute gallbladder disease, severe dehydration due to vomiting, or hypoglycemia when combined with other diabetic medications.</p>"
+        },
+        {
+          "title": "Sources and Further Reading",
+          "body": "<p>This article is general education, not medical advice. For approved uses, dosing, warnings and side effects, see the manufacturers&#39; FDA-approved prescribing information:</p>\n<p><a href=\"https://www.novo-pi.com/wegovy.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Wegovy (semaglutide) prescribing information</a>, Novo Nordisk</p>\n<p><a href=\"https://pi.lilly.com/us/zepbound-uspi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Zepbound (tirzepatide) prescribing information</a>, Eli Lilly</p>\n<p><a href=\"https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss\" target=\"_blank\" rel=\"noopener noreferrer\">FDA&#39;s concerns with unapproved GLP-1 drugs used for weight loss</a>, U.S. Food and Drug Administration</p>\n<p>Ask your provider which medication, if any, is appropriate for you.</p>"
         }
       ],
       "service": "glp-1therapies"

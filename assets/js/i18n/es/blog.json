@@ -333,6 +333,10 @@
         {
           "title": "Riesgos Clínicos",
           "body": "<p>Los riesgos clínicos comunes incluyen náuseas, vómitos, diarrea, estreñimiento, reflujo ácido y fatiga. Si bien generalmente son leves, los riesgos graves pero poco frecuentes incluyen pancreatitis, enfermedad aguda de la vesícula biliar, deshidratación grave debido al vómito o hipoglucemia cuando se combina con otros medicamentos para la diabetes.</p>"
+        },
+        {
+          "title": "Fuentes y Lecturas Adicionales",
+          "body": "<p>Este artículo es información general, no consejo médico. Para conocer los usos aprobados, la dosificación, las advertencias y los efectos secundarios, consulte la información de prescripción aprobada por la FDA de los fabricantes (en inglés):</p>\n<p><a href=\"https://www.novo-pi.com/wegovy.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Información de prescripción de Wegovy (semaglutida)</a>, Novo Nordisk</p>\n<p><a href=\"https://pi.lilly.com/us/zepbound-uspi.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Información de prescripción de Zepbound (tirzepatida)</a>, Eli Lilly</p>\n<p><a href=\"https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss\" target=\"_blank\" rel=\"noopener noreferrer\">Preocupaciones de la FDA sobre los medicamentos GLP-1 no aprobados para bajar de peso</a>, Administración de Alimentos y Medicamentos de EE. UU. (en inglés)</p>\n<p>Pregunte a su proveedor qué medicamento, si alguno, es adecuado para usted.</p>"
         }
       ],
       "service": "glp-1therapies"
