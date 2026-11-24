@@ -33,6 +33,10 @@
     {
       "title": "Clinical Risks",
       "body": "Common clinical risks include nausea, vomiting, diarrhea, constipation, acid reflux, and fatigue. While generally mild, serious but rare risks include pancreatitis, acute gallbladder disease, severe dehydration due to vomiting, or hypoglycemia when combined with other diabetic medications."
+    },
+    {
+      "title": "Sources and Further Reading",
+      "body": "This article is general education, not medical advice. For approved uses, dosing, warnings and side effects, see the manufacturers' FDA-approved prescribing information:\n\n[Wegovy (semaglutide) prescribing information](https://www.novo-pi.com/wegovy.pdf), Novo Nordisk\n\n[Zepbound (tirzepatide) prescribing information](https://pi.lilly.com/us/zepbound-uspi.pdf), Eli Lilly\n\n[FDA's concerns with unapproved GLP-1 drugs used for weight loss](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss), U.S. Food and Drug Administration\n\nAsk your provider which medication, if any, is appropriate for you."
     }
   ],
   "es": {
@@ -67,6 +71,10 @@
       {
         "title": "Riesgos Clínicos",
         "body": "Los riesgos clínicos comunes incluyen náuseas, vómitos, diarrea, estreñimiento, reflujo ácido y fatiga. Si bien generalmente son leves, los riesgos graves pero poco frecuentes incluyen pancreatitis, enfermedad aguda de la vesícula biliar, deshidratación grave debido al vómito o hipoglucemia cuando se combina con otros medicamentos para la diabetes."
+      },
+      {
+        "title": "Fuentes y Lecturas Adicionales",
+        "body": "Este artículo es información general, no consejo médico. Para conocer los usos aprobados, la dosificación, las advertencias y los efectos secundarios, consulte la información de prescripción aprobada por la FDA de los fabricantes (en inglés):\n\n[Información de prescripción de Wegovy (semaglutida)](https://www.novo-pi.com/wegovy.pdf), Novo Nordisk\n\n[Información de prescripción de Zepbound (tirzepatida)](https://pi.lilly.com/us/zepbound-uspi.pdf), Eli Lilly\n\n[Preocupaciones de la FDA sobre los medicamentos GLP-1 no aprobados para bajar de peso](https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss), Administración de Alimentos y Medicamentos de EE. UU. (en inglés)\n\nPregunte a su proveedor qué medicamento, si alguno, es adecuado para usted."
       }
     ]
   }
