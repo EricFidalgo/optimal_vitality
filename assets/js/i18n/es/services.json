@@ -821,7 +821,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -1218,7 +1218,7 @@
         },
         {
           "label": "Listo para atención clínica",
-          "detail": "Buscando pruebas de laboratorio seguras prescritas por médicos y atención médica dirigida."
+          "detail": "Buscando pruebas de laboratorio prescritas por médicos y atención médica dirigida."
         }
       ]
     },
@@ -1289,7 +1289,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -1315,7 +1315,7 @@
         "reality": "Su proveedor de atención médica con licencia adaptará el plan basándose en sus análisis y realizará seguimientos regulares."
       },
       {
-        "myth": "¿Es segura la terapia guiada por médicos?",
+        "myth": "¿Cómo se supervisa la terapia guiada por médicos?",
         "reality": "Todos los tratamientos son recetados y supervisados por un proveedor de atención médica con licencia según las pautas clínicas correspondientes."
       }
     ],
@@ -1591,7 +1591,7 @@
         {
           "icon": "fa-chart-line",
           "name": "Monitoreo clínico",
-          "tag": "Seguridad",
+          "tag": "Laboratorios iniciales",
           "description": "Evaluaciones periódicas de laboratorio para monitorear el progreso clínico y la seguridad."
         },
         {
@@ -1600,7 +1600,8 @@
           "tag": "Hábitos",
           "description": "Sugerencias generales para apoyar la nutrición y el mantenimiento de la masa muscular."
         }
-      ]
+      ],
+      "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
     },
     "science": {
       "badge": "Cómo funciona",
@@ -1626,7 +1627,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -1681,7 +1682,7 @@
           "with": "Orientación en el marco de la terapia"
         },
         {
-          "metric": "Seguridad médica",
+          "metric": "Supervisión médica",
           "without": "Falta de supervisión",
           "with": "Prescrito y monitoreado por un MD"
         },
@@ -1868,7 +1869,7 @@
           "icon": "fa-dumbbell",
           "desc": "Evaluación clínica para apoyar la masa magra y la recuperación.",
           "goalModifiers": {
-            "yes": "Sus laboratorios recientes ayudarán a establecer un punto de partida seguro.",
+            "yes": "Sus laboratorios recientes ayudarán a su médico a decidir si el tratamiento es adecuado y a establecer un punto de partida.",
             "no": "Realizaremos análisis de sangre para verificar marcadores clave."
           },
           "social": "Muchos pacientes están evaluando su estado con este protocolo."
@@ -1946,10 +1947,11 @@
         {
           "icon": "fa-flask",
           "name": "Monitoreo de laboratorios",
-          "tag": "Seguridad",
-          "description": "Pruebas simples para verificar marcadores hormonales de manera segura."
+          "tag": "Laboratorios iniciales",
+          "description": "Pruebas simples para verificar marcadores hormonales y ayudar a decidir si el tratamiento es adecuado."
         }
-      ]
+      ],
+      "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
     },
     "science": {
       "badge": "Cómo funciona",
@@ -1958,7 +1960,7 @@
       "bullets": [
         "Prescritos por proveedores de atención médica con licencia",
         "Uso de opciones bioidénticas según indicación médica",
-        "Controles periódicos para monitorear seguridad y eficacia"
+        "Controles periódicos de laboratorio según lo determine su proveedor"
       ],
       "stats": [
         {
@@ -1975,7 +1977,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -2001,8 +2003,8 @@
         "reality": "El seguimiento dependerá de su evaluación clínica y sus objetivos a largo plazo. Su médico monitoreará su estado continuamente."
       },
       {
-        "myth": "¿Es segura la atención hormonal guiada?",
-        "reality": "Cada tratamiento es prescrito y monitoreado por un médico con controles de sangre regulares para apoyar su salud general."
+        "myth": "¿Cómo se monitorea la terapia hormonal?",
+        "reality": "Cada tratamiento es prescrito y monitoreado por un médico con controles de sangre regulares. Todas las terapias hormonales conllevan riesgos, que su proveedor analizará con usted. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad."
       }
     ],
     "comparison": {
@@ -2049,7 +2051,7 @@
           "with": "Monitoreo del bienestar general"
         },
         {
-          "metric": "Seguridad médica",
+          "metric": "Supervisión médica",
           "without": "Falta de supervisión clínica",
           "with": "Monitoreo prescrito por médico"
         }
@@ -2099,6 +2101,10 @@
       {
         "question": "¿Cómo puedo empezar?",
         "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
+      },
+      {
+        "question": "¿Las hormonas compuestas están aprobadas por la FDA?",
+        "answer": "Algunas terapias hormonales son productos aprobados por la FDA y otras son compuestas. Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente. Su proveedor le explicará qué opción se receta y los riesgos de cada una."
       }
     ],
     "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
@@ -2263,7 +2269,7 @@
         },
         {
           "label": "Listo para atención clínica",
-          "detail": "Buscando infusiones seguras prescritas por médicos."
+          "detail": "Buscando infusiones prescritas por médicos."
         }
       ]
     },
@@ -2308,7 +2314,8 @@
           "tag": "Opción rápida",
           "description": "Inyecciones intramusculares (B12, D3) prescritas según evaluación."
         }
-      ]
+      ],
+      "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
     },
     "science": {
       "badge": "Cómo funciona",
@@ -2334,7 +2341,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -2360,7 +2367,7 @@
         "reality": "La absorción oral puede variar. La vía intravenosa ofrece disponibilidad directa para ciertos nutrientes cuando se considere clínicamente apropiado."
       },
       {
-        "myth": "¿Es segura la terapia IV?",
+        "myth": "¿Cómo se supervisa la terapia IV?",
         "reality": "Cada infusión es recetada por un proveedor de atención médica con licencia y administrada por enfermeras bajo supervisión."
       }
     ],
@@ -2712,10 +2719,11 @@
         {
           "icon": "fa-flask",
           "name": "Evaluación de laboratorios",
-          "tag": "Seguridad clínica",
+          "tag": "Laboratorios iniciales",
           "description": "Pruebas diagnósticas para fundamentar las decisiones médicas."
         }
-      ]
+      ],
+      "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
     },
     "science": {
       "badge": "Cómo funciona",
@@ -2732,16 +2740,16 @@
           "label": "Apoyo evaluado caso por caso"
         },
         {
-          "value": "Seguro",
+          "value": "Monitoreado",
           "label": "Supervisión médica continua"
         },
         {
-          "value": "Calidad",
-          "label": "Compuestos de farmacia"
+          "value": "Farmacia",
+          "label": "Preparado por una farmacia con licencia"
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -2767,8 +2775,8 @@
         "reality": "Los planes médicos se estructuran por periodos definidos. Tras alcanzar sus metas, su médico evaluará opciones de mantenimiento."
       },
       {
-        "myth": "¿Es legal y segura la terapia?",
-        "reality": "Las opciones de tratamiento se discuten durante la consulta y se prescriben según las regulaciones médicas."
+        "myth": "¿Cómo se supervisa la terapia con péptidos?",
+        "reality": "La terapia con péptidos la receta un profesional clínico con licencia después de una evaluación y se monitorea con el tiempo. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad. Todos los tratamientos conllevan riesgos, que su proveedor analizará con usted."
       }
     ],
     "comparison": {
@@ -2815,7 +2823,7 @@
           "with": "Apoyo clínico evaluado"
         },
         {
-          "metric": "Seguridad",
+          "metric": "Supervisión médica",
           "without": "Riesgos de productos no regulados",
           "with": "Supervisión clínica continua"
         }
@@ -2860,11 +2868,15 @@
       },
       {
         "question": "¿Se pueden combinar con otras terapias?",
-        "answer": "Su médico evaluará posibles interacciones y podrá recomendar combinaciones seguras como parte de un plan integral."
+        "answer": "Su médico evaluará posibles interacciones y podrá recomendar combinaciones apropiadas como parte de un plan integral."
       },
       {
         "question": "¿Cómo puedo empezar?",
         "answer": "Comuníquese con nosotros para programar su evaluación clínica y explorar opciones según sus necesidades."
+      },
+      {
+        "question": "¿Los péptidos compuestos están aprobados por la FDA?",
+        "answer": "No. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente. Su proveedor le explicará las opciones disponibles y los riesgos de cada una."
       }
     ],
     "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
@@ -3100,7 +3112,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Atención médica certificada"
+          "label": "Supervisión de un proveedor con licencia"
         }
       ],
       "cards": [
@@ -3126,7 +3138,7 @@
         "reality": "No. El PRP y terapias similares no son células madre; utilizan componentes sanguíneos (plaquetas)."
       },
       {
-        "myth": "¿Es segura esta práctica médica?",
+        "myth": "¿Cómo se supervisa esta práctica médica?",
         "reality": "Las terapias son realizadas directamente por un proveedor de atención médica con licencia."
       }
     ],
@@ -3169,7 +3181,7 @@
           "with": "Procedimientos en consultorio médico"
         },
         {
-          "metric": "Evaluación de seguridad",
+          "metric": "Evaluación de riesgos",
           "without": "Riesgos no discutidos",
           "with": "Discusión médica previa"
         },
@@ -3432,7 +3444,8 @@
           "tag": "Evaluación médica",
           "description": "Sesiones confidenciales con proveedores de atención médica con licencia."
         }
-      ]
+      ],
+      "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
     },
     "science": {
       "badge": "Cómo funciona",
@@ -3480,7 +3493,7 @@
         "reality": "No. Realizamos una evaluación integral que puede incluir diferentes terapias regenerativas y hormonales."
       },
       {
-        "myth": "¿Son seguras las terapias PRP?",
+        "myth": "¿Cómo se realiza la terapia con PRP?",
         "reality": "El PRP utiliza su propio plasma y es realizado por profesionales médicos capacitados en un entorno clínico."
       },
       {
@@ -3503,7 +3516,7 @@
         },
         {
           "icon": "fa-shield-alt",
-          "label": "Seguro"
+          "label": "Supervisado médicamente"
         },
         {
           "icon": "fa-heartbeat",
@@ -3532,7 +3545,7 @@
           "with": "Seguimiento médico continuo"
         },
         {
-          "metric": "Seguridad",
+          "metric": "Evaluación de riesgos",
           "without": "Riesgos no evaluados",
           "with": "Revisión clínica completa"
         }
@@ -3569,7 +3582,7 @@
       },
       {
         "question": "¿Necesito pruebas de laboratorio?",
-        "answer": "Sí, para garantizar la seguridad clínica, requerimos pruebas de laboratorio recientes antes de prescribir terapias hormonales o protocolos avanzados."
+        "answer": "Sí, para respaldar la evaluación clínica, requerimos pruebas de laboratorio recientes antes de prescribir terapias hormonales o protocolos avanzados."
       },
       {
         "question": "¿Qué es la terapia PRP para la salud sexual?",

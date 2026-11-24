@@ -12,13 +12,13 @@
     "Bring back natural drive & stamina",
     "P-Shot for men & Bio-Identical HRT for women",
     "100% doctor-prescribed & discreet",
-    "100% doctor-checked for your safety"
+    "Supervised by licensed clinicians"
   ],
   "image": "assets/images/photos/team-group.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "P-Shot, PT-141 & Sexual Wellness in St. Petersburg | OVI Wellness",
   "pageDescription": "Private, doctor-led sexual wellness care in St. Petersburg, FL: P-Shot (PRP), PT-141 and hormone balancing after a medical evaluation.",
-  "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
+  "heroHeadline": "Sexual Wellness<br><span class=\"text-primary\">Under Physician Care</span>",
   "heroTitle": "Sexual Wellness Treatments in St. Petersburg, FL",
   "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -132,7 +132,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for Intimacy Care?",
-    "intro": "Our sexual wellness treatments are safe, effective prescription plans supervised by licensed medical doctors. We evaluate your health in a private, respectful clinic setting.",
+    "intro": "Sexual wellness treatments are prescription plans. A licensed provider evaluates your health in a private, respectful clinic setting and decides whether treatment is appropriate.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -154,7 +154,7 @@
       },
       {
         "label": "Ready for Private MD Care",
-        "detail": "Looking for safe, discreet doctor-administered treatments in a private office."
+        "detail": "Looking for discreet, doctor-administered treatments in a private office."
       }
     ]
   },
@@ -196,10 +196,11 @@
       {
         "icon": "fa-vial",
         "name": "Doctor Blood Check",
-        "tag": "Safety First",
-        "description": "Simple lab work to check your exact hormone markers and ensure safe, effective treatment."
+        "tag": "Baseline Labs",
+        "description": "Simple lab work to check your hormone markers and help your provider decide whether treatment is appropriate."
       }
-    ]
+    ],
+    "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
   },
   "science": {
     "badge": "How It Works",
@@ -207,7 +208,7 @@
     "body": "Pills only temporarily force blood flow and often cause headaches or high blood pressure. Our doctor-guided treatments repair underlying tissues and balance natural hormones. Using natural growth factors (PRP) and brain desire signals (PT-141), we rebuild long-term stamina, sensitivity, and natural drive.",
     "bullets": [
       "Prescribed & administered by licensed medical doctors",
-      "100% natural bio-identical compounds with zero synthetic fillers",
+      "Bio-identical options when clinically appropriate",
       "Private, respectful, and discreet medical care"
     ],
     "stats": [
@@ -216,8 +217,8 @@
         "label": "Private 1-on-1 doctor care"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "value": "Natural",
@@ -225,7 +226,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
@@ -237,7 +238,7 @@
       {
         "icon": "fa-bullseye",
         "title": "Natural Brain Desire Signaling",
-        "detail": "Peptides like PT-141 work on central brain receptors to ignite natural passion without cardiovascular stress."
+        "detail": "Peptides like PT-141 act on receptors in the brain involved in sexual desire. Your provider will review benefits and risks with you before recommending any treatment."
       }
     ]
   },
@@ -251,13 +252,13 @@
       "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
     },
     {
-      "myth": "Is doctor-guided intimacy care safe?",
-      "reality": "Yes. Treatments are provided by licensed medical professionals under strict Florida health guidelines, and off-label use is provided only when clinically appropriate."
+      "myth": "How is sexual wellness care supervised?",
+      "reality": "Treatments are prescribed by licensed medical professionals after an evaluation, and off-label use is provided only when clinically appropriate. All treatments carry risks, which your provider will discuss with you. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
@@ -270,7 +271,7 @@
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Safe & Natural"
+        "label": "Medically Supervised"
       },
       {
         "icon": "fa-clock",
@@ -286,7 +287,7 @@
       {
         "metric": "Side Effect Risk",
         "without": "Headaches & blood pressure spikes",
-        "with": "Discuss alternatives and risks & bio-compatible"
+        "with": "Risks and alternatives discussed with your provider"
       },
       {
         "metric": "Sensory Feeling",
@@ -328,7 +329,7 @@
   "faqs": [
     {
       "question": "Do I need a doctor's consultation for sexual wellness treatments?",
-      "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
+      "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor, who reviews your health before prescribing a custom plan if treatment is appropriate."
     },
     {
       "question": "What does the doctor-guided intimacy program include?",

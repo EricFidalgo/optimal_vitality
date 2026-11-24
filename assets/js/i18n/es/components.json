@@ -5,15 +5,15 @@
     "switchLanguage": "Language / Idioma"
   },
   "cta": {
-    "badge": "Supervisión médica",
+    "badge": "Atención dirigida por médicos",
     "title": "¿Listo para restaurar su vitalidad y recuperar su energía?",
     "description": "Dé el primer paso hacia un rendimiento físico máximo y longevidad. Programe su consulta médica hoy.",
     "button": "Programe su consulta clínica ahora",
-    "guarantee": "Supervisado por un médico y certificado por LegitScript"
+    "guarantee": "Atención supervisada por un médico"
   },
   "disclosures": {
-    "title": "Supervisión clínica y seguridad médica",
-    "intro": "En OVI Wellness, operamos bajo los estándares más estrictos de seguridad médica y cumplimiento absoluto con las regulaciones de licencias del estado de Florida. Todos los tratamientos son recetados y monitoreados por profesionales médicos con licencia completa después de una evaluación clínica rigurosa y basada en evidencia.",
+    "title": "Supervisión clínica y avisos médicos",
+    "intro": "En OVI Wellness, los tratamientos son recetados y monitoreados por profesionales médicos con licencia de acuerdo con las regulaciones de licencias de Florida, después de una evaluación clínica.",
     "physicianTitle": "Colaboración médica",
     "physicianText": "Cada protocolo es supervisado por nuestro Director Médico. Nuestros profesionales de nivel medio con licencia (NP y PA) practican bajo acuerdos de colaboración activos, asegurando una revisión multidisciplinaria de sus marcadores de salud.",
     "diagnosticTitle": "Requisito de diagnóstico",
@@ -23,7 +23,7 @@
     "medicalTitle": "Descargo de responsabilidad médica y aviso regulatorio",
     "medicalText": "La información proporcionada en este sitio web es solo para fines educativos e informativos y no constituye asesoramiento médico. Los protocolos de tratamiento, incluyendo TRT, Semaglutida, Tirzepatida y péptidos, se recetan después de una evaluación clínica exhaustiva, un panel de diagnóstico de sangre y la aprobación de un médico.",
     "fdaTitle": "Descargo de responsabilidad de la FDA y compuestos",
-    "fdaText": "Los medicamentos compuestos son formulaciones farmacéuticas personalizadas preparadas por farmacias de compuestos con licencia 503A o 503B en base a una receta específica para un paciente. Los medicamentos compuestos no están aprobados por la FDA, aunque sus ingredientes farmacéuticos activos (API) se fabrican en instalaciones inspeccionadas por la FDA.",
+    "fdaText": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente. Los medicamentos compuestos son preparados por farmacias de compuestos con licencia 503A o 503B en base a una receta específica para un paciente.",
     "telehealthTitle": "Telesalud y licencias estatales",
     "telehealthText": "Los servicios médicos son proporcionados por profesionales de la salud de Florida con licencia. Las consultas de telesalud están sujetas a las regulaciones estatales y la elegibilidad clínica."
   },

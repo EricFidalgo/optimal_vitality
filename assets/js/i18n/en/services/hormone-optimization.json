@@ -5,20 +5,20 @@
   "href": "hormone-optimization",
   "title": "Individualized Evaluation and Treatment for Clinically Significant Hormone Deficiency",
   "lead": "Tired of feeling worn out? A licensed clinician evaluates symptoms, medical history, examination findings, and laboratory results to determine whether hormone therapy is appropriate.",
-  "description": "When your hormones drop, you feel tired, gain weight, and lose focus. Our doctors run simple blood tests and create a custom plan to give you back your strength, focus, and drive.",
+  "description": "Symptoms such as fatigue, weight gain and low drive can have many causes, including low hormone levels. A licensed clinician evaluates your symptoms, history and lab results to decide whether hormone therapy is appropriate. Results vary.",
   "icon": "fa-syringe",
   "delay": "0s",
   "features": [
-    "Reclaim high daily energy & focus",
+    "Evaluation for fatigue & low energy",
     "Potential treatment goals may include improvement in symptoms.",
-    "Enjoy deep sleep & better mood",
-    "100% doctor-checked for your safety"
+    "Evaluation for sleep & mood concerns",
+    "Supervised by licensed clinicians"
   ],
   "image": "assets/images/photos/trt-therapy.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "TRT & Hormone Therapy in St. Petersburg, FL | OVI Wellness",
   "pageDescription": "Doctor-led TRT and bioidentical hormone therapy for men and women in St. Petersburg, FL. Lab-based dosing, ongoing monitoring. Book a consult.",
-  "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Energy & Strength</span>",
+  "heroHeadline": "Hormone Therapy<br><span class=\"text-primary\">Under Physician Care</span>",
   "heroTitle": "TRT & Hormone Therapy in St. Petersburg, FL",
   "heroSubheadline": "Prescription TRT & Bio-Identical Hormone therapy, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -92,7 +92,7 @@
         "name": "Total Vitality & Energy Reset",
         "peptides": "Doctor-Prescribed Bio-Identical Therapy",
         "icon": "fa-battery-quarter",
-        "desc": "A simple doctor-guided plan that balances your body's energy hormones so you wake up refreshed and stay sharp all day.",
+        "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with symptoms of low energy and suspected hormone imbalance.",
         "goalModifiers": {
           "yes": "Our doctor will review your labs right away to build your custom treatment dose.",
           "no": "We will order a quick baseline blood test to check your levels before starting."
@@ -104,7 +104,7 @@
         "name": "Peak Drive & Passion Plan",
         "peptides": "Prescription Hormone & Vitality Therapy",
         "icon": "fa-fire",
-        "desc": "Targeted doctor therapy to bring back intimate energy, mood, and daily stamina.",
+        "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with low drive or related concerns.",
         "goalModifiers": {
           "yes": "We will review your recent labs to start your plan fast.",
           "no": "Our doctor will order a simple blood check to pinpoint your exact needs."
@@ -116,9 +116,9 @@
         "name": "Strong Body & Fat Burn Reset",
         "peptides": "TRT & Bio-Identical Growth Support",
         "icon": "fa-dumbbell",
-        "desc": "Helps you burn stubborn belly fat, build lean muscle, and recover fast after workouts.",
+        "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with concerns about muscle, body composition or recovery.",
         "goalModifiers": {
-          "yes": "Your recent labs will help our doctor set your optimal starting dose safely.",
+          "yes": "Your recent labs will help our doctor decide whether treatment is appropriate and, if so, set a starting dose.",
           "no": "Our doctor will get your simple bloodwork done to check your testosterone and energy markers."
         },
         "social": "Over 100 local patients are currently on this strength protocol."
@@ -132,7 +132,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for Hormone Care?",
-    "intro": "Our hormone treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your bloodwork first so you get the exact right dose for your body.",
+    "intro": "Hormone therapy is prescribed only after a licensed clinician reviews your symptoms, history and bloodwork. Whether it is appropriate for you is a clinical decision.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -150,11 +150,11 @@
       },
       {
         "label": "Want Muscle & Energy",
-        "detail": "Men and women ready to burn fat, keep strong muscle, and feel young again."
+        "detail": "Men and women interested in support for muscle, body composition and energy, as clinically appropriate."
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for a safe, doctor-prescribed plan with regular blood checks and check-ins."
+        "detail": "Looking for doctor-prescribed care with regular blood checks and check-ins."
       }
     ]
   },
@@ -167,57 +167,58 @@
         "icon": "fa-syringe",
         "name": "Testosterone Therapy (TRT)",
         "tag": "Most Popular",
-        "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+        "description": "Testosterone treatment for men with symptoms and lab results consistent with low testosterone, calibrated and monitored by a licensed clinician."
       },
       {
         "icon": "fa-venus",
         "name": "Women's Bio-Identical HRT",
         "tag": "For Women",
-        "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+        "description": "Bio-identical estrogen and progesterone therapy for women with symptoms such as mood changes or night sweats, when clinically appropriate."
       },
       {
         "icon": "fa-vial",
         "name": "Peptide Support Boosters",
         "tag": "Cell Recovery",
-        "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+        "description": "Peptide options your provider may consider alongside your plan, when clinically appropriate."
       },
       {
         "icon": "fa-heart",
         "name": "Sexual Wellness Therapy",
         "tag": "Vitality Boost",
-        "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+        "description": "Prescription options for men and women with sexual health concerns, when clinically appropriate."
       },
       {
         "icon": "fa-shield-alt",
         "name": "Thyroid & Adrenal Balance",
         "tag": "Energy Core",
-        "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+        "description": "Evaluation of thyroid and adrenal concerns and, when clinically appropriate, treatment."
       },
       {
         "icon": "fa-flask",
         "name": "Doctor Blood Check",
-        "tag": "Safety First",
-        "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+        "tag": "Baseline Labs",
+        "description": "Simple lab tests so your doctor can check your hormone levels and, if treatment is appropriate, set a starting dose."
       }
-    ]
+    ],
+    "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
-    "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+    "headline": "How Hormone Therapy<br><span class=\"text-primary\">Differs From Supplements</span>",
+    "body": "Hormones are chemical messengers that help regulate many body functions, and levels can change with age. When lab results and symptoms point to a deficiency, a licensed clinician may consider hormone therapy. Some hormone preparations used here are compounded and are not FDA-approved. Results vary.",
     "bullets": [
       "Prescribed by real licensed medical doctors",
-      "100% natural bio-identical matching your body",
-      "Regular blood checks to ensure complete safety"
+      "Bio-identical options when clinically appropriate",
+      "Regular lab monitoring as determined by your provider"
     ],
     "stats": [
       {
-        "value": "9 out of 10",
-        "label": "Feel higher energy in 6 weeks"
+        "value": "Individual",
+        "label": "Timelines and results vary by person"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "value": "Simple",
@@ -225,81 +226,81 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
       {
         "icon": "fa-vial",
         "title": "Based On Your Bloodwork",
-        "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+        "detail": "Dosing is determined by your provider based on your symptoms, history and lab results."
       },
       {
         "icon": "fa-shield-alt",
-        "title": "Natural Bio-Identical Match",
-        "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+        "title": "Bio-Identical Options",
+        "detail": "Bio-identical hormones have the same molecular structure as hormones your body makes. Some are FDA-approved products and some are compounded, and compounded products are not FDA-approved."
       }
     ]
   },
   "myths": [
     {
       "myth": "Are these synthetic steroids?",
-      "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+      "reality": "No. Bio-identical hormones have the same molecular structure as the hormones your body makes. Your provider sets a dose based on your labs and monitors your levels over time."
     },
     {
       "myth": "Do I have to stay on this forever?",
-      "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+      "reality": "Duration depends on your diagnosis and clinical goals. Hormone therapy is often long-term, and your provider will review the plan with you, including what to expect if you stop."
     },
     {
-      "myth": "Is doctor-guided hormone care safe?",
-      "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+      "myth": "How is hormone therapy monitored?",
+      "reality": "Hormone therapy is prescribed by a licensed clinician after an evaluation and monitored with regular lab checks. All hormone therapies carry risks, which your provider will discuss with you. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "High Energy"
+        "label": "Energy"
       },
       {
         "icon": "fa-brain",
-        "label": "Clear Focus"
+        "label": "Focus"
       },
       {
         "icon": "fa-dumbbell",
-        "label": "Lean Muscle"
+        "label": "Body Composition"
       },
       {
         "icon": "fa-moon",
-        "label": "Deep Sleep"
+        "label": "Sleep"
       }
     ],
     "rows": [
       {
         "metric": "Daily Energy",
-        "without": "Tired all day & crashes",
-        "with": "High, steady energy all day"
+        "without": "Underlying causes not evaluated",
+        "with": "Symptoms, history and labs reviewed"
       },
       {
         "metric": "Muscle & Body Fat",
-        "without": "Gains fat, loses muscle",
-        "with": "Burns fat & keeps strong muscle"
+        "without": "No clinical guidance",
+        "with": "Plan set by a licensed clinician"
       },
       {
         "metric": "Mental Clarity",
-        "without": "Brain fog & slow focus",
-        "with": "Sharp, clear thinking"
+        "without": "Self-directed supplements",
+        "with": "Lab-based evaluation"
       },
       {
         "metric": "Sleep Quality",
-        "without": "Wakes up tired",
-        "with": "Deep, restorative sleep"
+        "without": "No medical review",
+        "with": "Individualized plan; results vary"
       },
       {
-        "metric": "Medical Safety",
+        "metric": "Medical Oversight",
         "without": "Unmonitored / OTC pills",
         "with": "Doctor-prescribed & blood checked"
       }
@@ -309,19 +310,19 @@
         "name": "Male Performance Plan",
         "tag": "Most Popular",
         "compounds": "TRT + Recovery Peptide Stack",
-        "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+        "description": "Combines testosterone therapy with peptide options when clinically appropriate. Results vary."
       },
       {
         "name": "Women's Balance Plan",
         "tag": "For Women",
         "compounds": "Estrogen + Progesterone + Low-Dose T",
-        "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+        "description": "Female hormone therapy for women with symptoms such as mood changes or low energy, when clinically appropriate. Results vary."
       },
       {
         "name": "Complete Longevity Reset Plan",
         "tag": "Full Audit",
         "compounds": "Full Hormone Panel + Thyroid Support",
-        "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+        "description": "Comprehensive evaluation guided by full doctor-reviewed bloodwork."
       }
     ]
   },
@@ -332,23 +333,27 @@
     },
     {
       "question": "What does the doctor-guided hormone program include?",
-      "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom pharmacy-grade bio-identical hormones, and ongoing medical check-ins to make sure you stay safe and feel your best."
+      "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom hormone preparations (some are compounded and are not FDA-approved), and ongoing medical check-ins."
     },
     {
       "question": "How fast will I feel results from hormone therapy?",
-      "answer": "Most patients report higher daily energy, better sleep, and improved mood within 2 to 4 weeks. Major benefits like fat loss, lean muscle gains, sharp focus, and restored drive build steadily over 6 to 12 weeks."
+      "answer": "Timelines vary by person, hormone and dose. Your provider will monitor your symptoms and labs and adjust your plan. Results vary and are not guaranteed."
     },
     {
-      "question": "Is hormone therapy safe for both men and women?",
-      "answer": "Yes! Our treatments use natural bio-identical hormones tailored specifically for men and women. Because our licensed doctors measure your exact blood levels, your protocol is always safe, balanced, and targeted to your body."
+      "question": "Is hormone therapy appropriate for both men and women?",
+      "answer": "Hormone therapy is prescribed for men and women when symptoms and lab results support it, and the treatment differs for each. Every hormone therapy has risks and is not right for everyone. Your provider will review your history and risks with you and monitor your labs during treatment."
     },
     {
-      "question": "Will I get bad side effects or dangerous steroid effects?",
-      "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and adverse effects vary."
+      "question": "What side effects are possible, and is this the same as using steroids?",
+      "answer": "Hormone therapy prescribed by a clinician is not the same as anabolic steroid use. Side effects are possible with any hormone therapy and depend on the hormone, the dose and your health. Your provider will explain the risks, calibrate your dose to your lab results and monitor you with regular check-ins and lab work."
     },
     {
       "question": "How do I get started with hormone optimization?",
       "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order a quick blood test, review your results, and launch your personalized vitality plan."
+    },
+    {
+      "question": "Are compounded hormones FDA-approved?",
+      "answer": "Some hormone therapies are FDA-approved products, and some are compounded. Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs. Your provider will explain which option is being prescribed and the risks of each."
     }
   ],
   "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>",

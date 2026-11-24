@@ -172,7 +172,7 @@
       {
         "icon": "fa-chart-line",
         "name": "Monitoreo clínico",
-        "tag": "Seguridad",
+        "tag": "Laboratorios iniciales",
         "description": "Evaluaciones periódicas de laboratorio para monitorear el progreso clínico y la seguridad."
       },
       {
@@ -181,7 +181,8 @@
         "tag": "Hábitos",
         "description": "Sugerencias generales para apoyar la nutrición y el mantenimiento de la masa muscular."
       }
-    ]
+    ],
+    "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
   },
   "science": {
     "badge": "Cómo funciona",
@@ -207,7 +208,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -262,7 +263,7 @@
         "with": "Orientación en el marco de la terapia"
       },
       {
-        "metric": "Seguridad médica",
+        "metric": "Supervisión médica",
         "without": "Falta de supervisión",
         "with": "Prescrito y monitoreado por un MD"
       },

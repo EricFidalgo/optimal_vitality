@@ -118,7 +118,7 @@
         "icon": "fa-dumbbell",
         "desc": "Evaluación clínica para apoyar la masa magra y la recuperación.",
         "goalModifiers": {
-          "yes": "Sus laboratorios recientes ayudarán a establecer un punto de partida seguro.",
+          "yes": "Sus laboratorios recientes ayudarán a su médico a decidir si el tratamiento es adecuado y a establecer un punto de partida.",
           "no": "Realizaremos análisis de sangre para verificar marcadores clave."
         },
         "social": "Muchos pacientes están evaluando su estado con este protocolo."
@@ -196,10 +196,11 @@
       {
         "icon": "fa-flask",
         "name": "Monitoreo de laboratorios",
-        "tag": "Seguridad",
-        "description": "Pruebas simples para verificar marcadores hormonales de manera segura."
+        "tag": "Laboratorios iniciales",
+        "description": "Pruebas simples para verificar marcadores hormonales y ayudar a decidir si el tratamiento es adecuado."
       }
-    ]
+    ],
+    "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
   },
   "science": {
     "badge": "Cómo funciona",
@@ -208,7 +209,7 @@
     "bullets": [
       "Prescritos por proveedores de atención médica con licencia",
       "Uso de opciones bioidénticas según indicación médica",
-      "Controles periódicos para monitorear seguridad y eficacia"
+      "Controles periódicos de laboratorio según lo determine su proveedor"
     ],
     "stats": [
       {
@@ -225,7 +226,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -251,8 +252,8 @@
       "reality": "El seguimiento dependerá de su evaluación clínica y sus objetivos a largo plazo. Su médico monitoreará su estado continuamente."
     },
     {
-      "myth": "¿Es segura la atención hormonal guiada?",
-      "reality": "Cada tratamiento es prescrito y monitoreado por un médico con controles de sangre regulares para apoyar su salud general."
+      "myth": "¿Cómo se monitorea la terapia hormonal?",
+      "reality": "Cada tratamiento es prescrito y monitoreado por un médico con controles de sangre regulares. Todas las terapias hormonales conllevan riesgos, que su proveedor analizará con usted. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad."
     }
   ],
   "comparison": {
@@ -299,7 +300,7 @@
         "with": "Monitoreo del bienestar general"
       },
       {
-        "metric": "Seguridad médica",
+        "metric": "Supervisión médica",
         "without": "Falta de supervisión clínica",
         "with": "Monitoreo prescrito por médico"
       }
@@ -349,6 +350,10 @@
     {
       "question": "¿Cómo puedo empezar?",
       "answer": "¡Llámenos o reserve en línea! Un médico evaluará su estado, ordenará una prueba de sangre y discutirá sus opciones."
+    },
+    {
+      "question": "¿Las hormonas compuestas están aprobadas por la FDA?",
+      "answer": "Algunas terapias hormonales son productos aprobados por la FDA y otras son compuestas. Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente. Su proveedor le explicará qué opción se receta y los riesgos de cada una."
     }
   ],
   "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",

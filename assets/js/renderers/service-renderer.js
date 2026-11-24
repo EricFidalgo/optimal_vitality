@@ -104,6 +104,7 @@
     if (s.protocols) {
       setSlot("protocolsHeadline", s.protocols.sectionHeadline);
       setSlot("protocolsSubheadline", s.protocols.sectionSubheadline);
+      setSlot("protocolsNotice", s.protocols.notice ? `<strong>${window.OVI_I18N?.currentLang === "es" ? "Aviso sobre medicamentos compuestos:" : "Compounded medication disclosure:"}</strong> ${s.protocols.notice}` : "");
       buildProtocols(s.protocols.items);
       if (s.labsGuide) buildLabsGuide(s.labsGuide);
     } else {

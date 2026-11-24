@@ -154,7 +154,7 @@
       },
       {
         "label": "Listo para atención clínica",
-        "detail": "Buscando infusiones seguras prescritas por médicos."
+        "detail": "Buscando infusiones prescritas por médicos."
       }
     ]
   },
@@ -199,7 +199,8 @@
         "tag": "Opción rápida",
         "description": "Inyecciones intramusculares (B12, D3) prescritas según evaluación."
       }
-    ]
+    ],
+    "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
   },
   "science": {
     "badge": "Cómo funciona",
@@ -225,7 +226,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -251,7 +252,7 @@
       "reality": "La absorción oral puede variar. La vía intravenosa ofrece disponibilidad directa para ciertos nutrientes cuando se considere clínicamente apropiado."
     },
     {
-      "myth": "¿Es segura la terapia IV?",
+      "myth": "¿Cómo se supervisa la terapia IV?",
       "reality": "Cada infusión es recetada por un proveedor de atención médica con licencia y administrada por enfermeras bajo supervisión."
     }
   ],

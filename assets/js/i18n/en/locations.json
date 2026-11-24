@@ -15,16 +15,16 @@
       "Hillsborough County"
     ],
     "heroHeadline": "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
-    "heroSubheadline": "Drop unwanted weight, feel 10 years younger, and get your daily energy back. Guided by licensed Florida doctors with simple blood tests and safe, proven treatments.",
+    "heroSubheadline": "Medical weight management, hormone therapy and wellness care in St. Petersburg, guided by licensed Florida doctors and starting with a medical evaluation and lab work. Results vary.",
     "heroCTA": "Book Consultation",
-    "advantageHeadline": "Real Doctors. Real Safety. Real Results.",
-    "advantageText": "Taking care of your body should be simple and safe. Our clinic in St. Petersburg is run by licensed medical doctors. We check your blood work first, make a custom plan just for you, and guide you every step of the way. All treatments follow strict Florida medical board guidelines and LegitScript compliance standards.",
+    "advantageHeadline": "Real Doctors. Clinical Oversight. Individual Care.",
+    "advantageText": "Taking care of your body should be simple and clear. Our clinic in St. Petersburg is run by licensed medical doctors. We check your blood work first, make a custom plan just for you, and guide you every step of the way. Treatments are provided in accordance with Florida medical board requirements. Individual results vary.",
     "advantageImage": "assets/images/photos/peptide-therapy.jpg",
     "advantageBullets": [
       "Licensed Florida Medical Doctors",
-      "LegitScript Compliant & Safe",
+      "Licensed Florida Medical Providers",
       "Blood Tests Before Treatment",
-      "Pharmacy-Grade Compounds"
+      "Prescribed After Medical Evaluation"
     ],
     "treatmentsHeadline": "Simple Doctor-Backed Programs",
     "treatmentsSubheadline": "Choose the program that fits your goals. Every plan includes direct doctor care and progress check-ups.",
@@ -32,21 +32,21 @@
       {
         "title": "Hormone Optimization (TRT)",
         "icon": "fa-syringe",
-        "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+        "desc": "Testosterone replacement therapy (TRT) for men with symptoms and lab results consistent with low testosterone, with diagnostic biomarker tracking under MD oversight.",
         "link": "services/hormone-optimization",
         "linkText": "Explore TRT Program"
       },
       {
         "title": "Medical Weight Loss",
         "icon": "fa-weight-scale",
-        "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+        "desc": "Medical weight management with semaglutide and tirzepatide, prescribed after a medical evaluation and monitored by a licensed provider. Some options are compounded and not FDA-approved. Results vary.",
         "link": "services/glp-1therapies",
         "linkText": "Explore Weight Loss"
       },
       {
         "title": "Peptide Therapy",
         "icon": "fa-vial",
-        "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (Peptide options, Peptide options, Peptide options).",
+        "desc": "Peptide therapy for patients interested in support for tissue recovery, muscle recovery and gut health, prescribed after a medical evaluation. Peptides are compounded and are not FDA-approved. Results vary.",
         "link": "services/peptides",
         "linkText": "Explore Peptides"
       },
@@ -60,14 +60,14 @@
       {
         "title": "Sexual Wellness",
         "icon": "fa-heart",
-        "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+        "desc": "Sexual wellness care for men and women, including hormone evaluation, when clinically appropriate.",
         "link": "services/sexual-wellness",
         "linkText": "Explore Sexual Wellness"
       },
       {
         "title": "IV Nutrient Hydration",
         "icon": "fa-tint",
-        "desc": "Deliver Glutathione, essential vitamins, and targeted hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+        "desc": "IV hydration and vitamin infusions, including glutathione, prescribed by a licensed provider. Some formulations are compounded and not FDA-approved.",
         "link": "services/iv-wellness",
         "linkText": "Explore IV Drips"
       },
@@ -103,16 +103,16 @@
       "Pinellas County"
     ],
     "heroHeadline": "OVI Wellness <br><span class='text-primary'>Tampa Clinic</span>",
-    "heroSubheadline": "Easy weight loss, custom TRT, and anti-aging treatments for Tampa patients. Visit our physical clinic in nearby St. Pete or talk to your doctor online.",
+    "heroSubheadline": "Medical weight management, TRT and wellness care for Tampa patients. Visit our physical clinic in nearby St. Pete or talk to your doctor online. Results vary.",
     "heroCTA": "Book Consultation",
     "advantageHeadline": "Top Medical Care for Tampa Patients",
-    "advantageText": "Living in Tampa? Our physical medical office is just a quick drive across the bridge in St. Pete. Get your blood drawn in person, meet your doctor, or get telehealth care right from home. Licensed doctors, full blood work review, and 100% legal, certified protocols.",
+    "advantageText": "Living in Tampa? Our physical medical office is just a quick drive across the bridge in St. Pete. Get your blood drawn in person, meet your doctor, or get telehealth care right from home. Licensed doctors and a full blood work review before treatment is considered.",
     "advantageImage": "assets/images/photos/peptide-therapy.jpg",
     "advantageBullets": [
       "Licensed Florida Medical Doctors",
-      "LegitScript Certified Standards",
+      "Licensed Florida Medical Providers",
       "In-Person & Telehealth Visits",
-      "Safe, FDA-Compliant Medicine"
+      "Prescribed After Medical Evaluation"
     ],
     "treatmentsHeadline": "Our Most Popular Tampa Programs",
     "treatmentsSubheadline": "Choose your protocol. Start with a quick doctor consult and personalized blood panel.",
@@ -120,21 +120,21 @@
       {
         "title": "Hormone Optimization (TRT)",
         "icon": "fa-syringe",
-        "desc": "Reclaim your physical energy and focus. Tailored testosterone replacement therapy (TRT) based on diagnostic biomarker tracking under MD oversight.",
+        "desc": "Testosterone replacement therapy (TRT) for men with symptoms and lab results consistent with low testosterone, with diagnostic biomarker tracking under MD oversight.",
         "link": "services/hormone-optimization",
         "linkText": "Explore TRT Program"
       },
       {
         "title": "Medical Weight Loss",
         "icon": "fa-weight-scale",
-        "desc": "Shed visceral fat while actively preserving lean muscle. Premium Semaglutide and Tirzepatide protocols calibrated to your metabolism.",
+        "desc": "Medical weight management with semaglutide and tirzepatide, prescribed after a medical evaluation and monitored by a licensed provider. Some options are compounded and not FDA-approved. Results vary.",
         "link": "services/glp-1therapies",
         "linkText": "Explore Weight Loss"
       },
       {
         "title": "Peptide Therapy",
         "icon": "fa-vial",
-        "desc": "Accelerate tissue healing, muscle recovery, and gut health with pharmacy-grade cellular signaling peptides (Peptide options, Peptide options, Peptide options).",
+        "desc": "Peptide therapy for patients interested in support for tissue recovery, muscle recovery and gut health, prescribed after a medical evaluation. Peptides are compounded and are not FDA-approved. Results vary.",
         "link": "services/peptides",
         "linkText": "Explore Peptides"
       },
@@ -148,14 +148,14 @@
       {
         "title": "Sexual Wellness",
         "icon": "fa-heart",
-        "desc": "Targeted therapy to restore physical responsiveness, intimate drive, and overall vitality using precise, individual hormone balancing.",
+        "desc": "Sexual wellness care for men and women, including hormone evaluation, when clinically appropriate.",
         "link": "services/sexual-wellness",
         "linkText": "Explore Sexual Wellness"
       },
       {
         "title": "IV Nutrient Hydration",
         "icon": "fa-tint",
-        "desc": "Deliver Glutathione, essential vitamins, and targeted hydration directly to the bloodstream for immediate absorption and cellular revitalization.",
+        "desc": "IV hydration and vitamin infusions, including glutathione, prescribed by a licensed provider. Some formulations are compounded and not FDA-approved.",
         "link": "services/iv-wellness",
         "linkText": "Explore IV Drips"
       },

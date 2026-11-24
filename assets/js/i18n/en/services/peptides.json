@@ -5,20 +5,20 @@
   "href": "peptides",
   "title": "Peptide-Related Consultation",
   "lead": "Clinical evaluation to support the body's natural processes related to joint well-being and cellular recovery.",
-  "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
+  "description": "Peptide therapy is a prescription option that a licensed clinician may consider for patients interested in support for joint comfort, recovery, sleep and body composition. Whether it is appropriate for you is decided after a medical evaluation. Results vary.",
   "icon": "fa-vial",
   "delay": "-2s",
   "features": [
-    "Fast joint, tendon & muscle recovery",
-    "Deeper, restful night sleep",
-    "Supercharge gut & immune health",
-    "100% doctor-checked for your safety"
+    "Support for joint, tendon & muscle recovery",
+    "Support for restful sleep",
+    "Support for gut & immune health",
+    "Supervised by licensed clinicians"
   ],
   "image": "assets/images/photos/peptide-therapy.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Peptide Therapy Clinic in St. Petersburg, FL | OVI Wellness",
   "pageDescription": "Doctor-prescribed peptide therapy in St. Petersburg, FL for recovery, sleep and body composition, with labs and medical monitoring. Book a consult.",
-  "heroHeadline": "Accelerate Healing &<br><span class=\"text-primary\">Cellular Recovery</span>",
+  "heroHeadline": "Peptide Therapy<br><span class=\"text-primary\">Under Physician Care</span>",
   "heroTitle": "Peptide Therapy in St. Petersburg, FL",
   "heroSubheadline": "Prescription Peptide protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -116,12 +116,12 @@
         "name": "The Total Joint & Tissue Reset",
         "peptides": "Options selected per clinical protocol",
         "icon": "fa-shield-alt",
-        "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
+        "desc": "A doctor-prescribed option your provider may consider for joint, tendon and muscle recovery, if it is clinically appropriate.",
         "goalModifiers": {
-          "train": "Designed to get you back to active workouts without pain holding you back.",
-          "muscle": "Accelerates cellular tissue repair so you rebuild muscle stronger than before.",
-          "feel": "Calms joint inflammation so you wake up refreshed and move comfortably.",
-          "fat": "Helps your body heal so you can stay active and burn extra calories."
+          "train": "May be considered by your provider as part of a plan to support a return to activity.",
+          "muscle": "May be considered as part of a plan to support recovery and muscle rebuilding.",
+          "feel": "May be considered as part of a plan to support joint comfort and rest.",
+          "fat": "May be considered as part of a plan to help you stay active."
         },
         "social": "Over 60 local patients completed this recovery plan in the last 90 days."
       },
@@ -130,12 +130,12 @@
         "name": "Peak Performance & Growth Stack",
         "peptides": "Clinical and metabolic options",
         "icon": "fa-dumbbell",
-        "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
+        "desc": "A prescription option your provider may consider for patients interested in support for lean muscle, recovery and strength, if clinically appropriate.",
         "goalModifiers": {
-          "train": "Helps you push past plateaus and recover in half the time.",
-          "muscle": "Supports natural muscle building and protein absorption.",
-          "feel": "Promotes deep, restorative sleep so you wake up with high energy.",
-          "fat": "Supports body-composition goals while protecting your lean muscle."
+          "train": "May be considered by your provider as part of a plan to support training and recovery.",
+          "muscle": "May be considered as part of a plan to support lean muscle goals.",
+          "feel": "May be considered as part of a plan to support sleep and energy.",
+          "fat": "May be considered alongside diet and exercise for body-composition goals."
         },
         "social": "88 patients are currently running this doctor-prescribed stack."
       },
@@ -144,12 +144,12 @@
         "name": "Total Body Energy & Focus Reset",
         "peptides": "Cellular Energy & Recovery Protocol",
         "icon": "fa-bolt",
-        "desc": "Recharges your cellular engines so you clear brain fog, fight fatigue, and feel energized all day.",
+        "desc": "A prescription option your provider may consider for patients dealing with fatigue or low energy, after other possible causes are evaluated.",
         "goalModifiers": {
-          "train": "Increases cellular endurance so workouts feel lighter.",
-          "muscle": "Improves cellular recovery after tough training sessions.",
-          "feel": "Built specifically to turn off constant tiredness and restore mental clarity.",
-          "fat": "Boosts daily metabolic engine to burn fat steadily."
+          "train": "May be considered as part of a plan to support endurance and training.",
+          "muscle": "May be considered as part of a plan to support recovery after training.",
+          "feel": "May be considered as part of a plan to support energy and mental clarity.",
+          "fat": "May be considered as part of a plan alongside diet and exercise."
         },
         "social": "44 local patients started this energy plan in the last 60 days."
       },
@@ -158,11 +158,11 @@
         "name": "Lean Muscle & Body Composition Support",
         "peptides": "Protocols selected after clinical evaluation",
         "icon": "fa-fire",
-        "desc": "Supports body-composition goals while protecting your lean, strong muscle.",
+        "desc": "A prescription option your provider may consider alongside nutrition and exercise for body-composition goals.",
         "goalModifiers": {
-          "train": "Improves endurance and stamina for longer workouts.",
-          "muscle": "Supports fat loss while preserving lean muscle mass.",
-          "feel": "Improves overall body confidence, sleep, and daytime focus.",
+          "train": "May be considered as part of a plan to support training.",
+          "muscle": "May be considered alongside diet and exercise for body-composition goals.",
+          "feel": "May be considered as part of a plan to support sleep and daily focus.",
           "fat": "Designed for body-composition goals alongside diet and exercise."
         },
         "social": "73 patients completed this fat burn protocol recently."
@@ -177,7 +177,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for Peptide Care?",
-    "intro": "Our peptide treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health and bloodwork first so you get the best plan for your body.",
+    "intro": "Peptide therapy is prescribed only after an evaluation by a licensed clinician, who may order bloodwork first. Whether it is appropriate for you is a clinical decision.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -199,7 +199,7 @@
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for safe, pharmacy-grade doctor treatments with regular check-ins."
+        "detail": "Looking for doctor-prescribed care with regular check-ins."
       }
     ]
   },
@@ -236,86 +236,87 @@
         "icon": "fa-battery-full",
         "name": "Antioxidant Support",
         "tag": "Cellular Defense",
-        "description": "Medically guided antioxidant support to help cells and liver function."
+        "description": "Medically guided antioxidant support, when clinically appropriate."
       },
       {
         "icon": "fa-flask",
         "name": "Doctor Blood Check",
-        "tag": "Safety First",
-        "description": "Simple lab work so your doctor can check your baseline health and build your exact starting dose safely."
+        "tag": "Baseline Labs",
+        "description": "Simple lab work so your doctor can check your baseline health and help decide whether and how to start treatment."
       }
-    ]
+    ],
+    "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
-    "body": "Think of your cells as engines. Peptides are natural signals your body already understands. Store vitamins pass right through your gut. Our doctor-prescribed bio-identical peptides deliver direct molecular signals to your cells, telling them to rebuild, repair, and energize naturally.",
+    "headline": "How Peptide Therapy<br><span class=\"text-primary\">Differs From Supplements</span>",
+    "body": "Peptides are short chains of amino acids that act as signals in the body. Peptide therapy is prescribed by a licensed clinician after an evaluation, which differs from over-the-counter supplements that are not individually prescribed. The peptides prescribed here are compounded and are not FDA-approved. Whether any option is right for you is a clinical decision, and results vary.",
     "bullets": [
       "Prescribed by real licensed medical doctors",
-      "100% pharmacy-grade bio-identical compounds",
-      "Safe, targeted action without synthetic fillers"
+      "Prepared by a licensed compounding pharmacy",
+      "Prescribed only after a medical evaluation"
     ],
     "stats": [
       {
-        "value": "Fast",
-        "label": "Notice joint relief in weeks"
+        "value": "Individual",
+        "label": "Timelines and results vary by person"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
-        "value": "100%",
-        "label": "Pharmacy-grade quality"
+        "value": "Licensed",
+        "label": "Prepared by a licensed pharmacy"
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
       {
         "icon": "fa-vial",
-        "title": "Compounded & Doctor Verified",
-        "detail": "Every dose is compounded in accredited pharmacies and prescribed by licensed healthcare providers."
+        "title": "Compounded & Prescribed",
+        "detail": "Compounded peptides are prepared by a licensed pharmacy for an individual patient and prescribed by a licensed healthcare provider. They are not FDA-approved."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Targeted Cellular Action",
-        "detail": "Peptides send precise repair signals directly to damaged cells without disturbing other body systems."
+        "title": "How Peptides Work",
+        "detail": "Peptides are signaling molecules. How a given peptide acts, and whether it is appropriate for you, depends on the specific compound and your health history."
       }
     ]
   },
   "myths": [
     {
       "myth": "Are peptides just anabolic steroids?",
-      "reality": "No. Peptides are natural amino acid signals—the exact same signals your body already produces. They do not shut down your hormones, cause liver stress, or act like steroids."
+      "reality": "No. Peptides are short chains of amino acids and are not anabolic steroids. Different peptides have different effects and risks, which your provider will review with you."
     },
     {
       "myth": "Do I have to do this forever?",
-      "reality": "No. Most peptide plans run for 8 to 16 weeks to reset your tissue and cellular health. Once healed, many patients maintain their results with simple lifestyle care."
+      "reality": "Not necessarily. Plan length depends on the peptide and your clinical goals, and your provider will review it with you. Results vary."
     },
     {
-      "myth": "Is doctor-guided peptide therapy safe and legal?",
-      "reality": "Yes. Treatment options are discussed during consultation. prescribed by licensed medical doctors following strict Florida medical standards."
+      "myth": "How is peptide therapy supervised?",
+      "reality": "Peptide therapy is prescribed by a licensed clinician after an evaluation and monitored over time. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality. All treatments carry risks, which your provider will discuss with you."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "Fast Recovery"
+        "label": "Recovery Support"
       },
       {
         "icon": "fa-fire",
-        "label": "Fat Burn"
+        "label": "Body Composition"
       },
       {
         "icon": "fa-brain",
-        "label": "Clear Focus"
+        "label": "Focus & Energy"
       },
       {
         "icon": "fa-shield-alt",
@@ -325,27 +326,27 @@
     "rows": [
       {
         "metric": "Recovery Speed",
-        "without": "5–7 days of pain",
-        "with": "2–3 days fast recovery"
+        "without": "Self-directed, no clinical guidance",
+        "with": "Guided by a licensed clinician"
       },
       {
         "metric": "Joint Comfort",
-        "without": "Stiff & sore",
-        "with": "Flexible & pain-free"
+        "without": "Over-the-counter products only",
+        "with": "Evaluated and monitored by a clinician"
       },
       {
         "metric": "Daily Energy",
-        "without": "Tired & brain fog",
-        "with": "High all-day energy"
+        "without": "Underlying causes not evaluated",
+        "with": "Medical history and labs reviewed"
       },
       {
         "metric": "Sleep Quality",
-        "without": "Restless & tossing",
-        "with": "Deep, restorative sleep"
+        "without": "No medical review",
+        "with": "Individualized plan; results vary"
       },
       {
-        "metric": "Medical Safety",
-        "without": "Unregulated web pills",
+        "metric": "Medical Oversight",
+        "without": "Unregulated web products",
         "with": "Doctor-prescribed & lab checked"
       }
     ],
@@ -377,7 +378,7 @@
     },
     {
       "question": "What does the doctor-guided peptide program include?",
-      "answer": "Your program includes direct medical consultations with a board-certified doctor, baseline blood testing, custom pharmacy-grade peptides, and ongoing check-ins to make sure you get optimal results safely."
+      "answer": "Your program includes direct medical consultations with a board-certified doctor, baseline blood testing, custom compounded peptides prepared by a licensed pharmacy, and ongoing check-ins. Compounded peptides are not FDA-approved."
     },
     {
       "question": "How are peptide treatments administered?",
@@ -389,11 +390,15 @@
     },
     {
       "question": "Can I combine peptides with TRT or hormone therapy?",
-      "answer": "Yes! In fact, peptides work wonderfully alongside doctor-guided TRT or hormone therapy to boost cellular repair, speed up fat loss, and keep your energy high."
+      "answer": "Some patients use peptides alongside TRT or hormone therapy. Whether combining them is appropriate is a clinical decision that your provider makes after reviewing your history and labs."
     },
     {
       "question": "How do I get started with peptide therapy?",
       "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your health, order any necessary bloodwork, and start your custom healing plan."
+    },
+    {
+      "question": "Are compounded peptides FDA-approved?",
+      "answer": "No. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs. Your provider will explain the options available to you and the risks of each."
     }
   ],
   "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>",

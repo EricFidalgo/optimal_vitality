@@ -812,8 +812,8 @@
           "label": "Tests optimal ranges, not basic averages"
         },
         {
-          "value": "Safe",
-          "label": "Doctor reviewed & lab verified"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "value": "1-on-1",
@@ -821,7 +821,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
@@ -853,7 +853,7 @@
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
@@ -870,7 +870,7 @@
         },
         {
           "icon": "fa-shield-alt",
-          "label": "100% Safe"
+          "label": "Provider Reviewed"
         }
       ],
       "rows": [
@@ -1069,20 +1069,20 @@
     "href": "detox",
     "title": "Evaluation of Persistent Gastrointestinal or Exposure-Related Symptoms",
     "lead": "Clear out mold toxins, gut bugs, and heavy fatigue so you feel light, sharp, and energized.",
-    "description": "Symptoms such as fatigue, bloating, and cognitive complaints have many possible causes. A clinician can evaluate whether targeted testing is appropriate. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
+    "description": "Symptoms such as fatigue, bloating, and cognitive complaints have many possible causes. A clinician can evaluate whether targeted testing is appropriate. Our doctors use lab testing and supportive care plans when clinically appropriate.",
     "icon": "fa-leaf",
     "delay": "-2s",
     "features": [
       "Simple lab test for hidden mold & gut bugs",
       "Doctor-prescribed cellular cleansing",
       "Fix bloating, brain fog & constant fatigue",
-      "100% doctor-checked for your safety"
+      "Supervised by licensed clinicians"
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Mold & Gut Testing and Detox Care in St. Petersburg | OVI Wellness",
     "pageDescription": "Doctor-guided gut and mold-related care in St. Petersburg, FL, starting with GI-MAP and mycotoxin testing and a personalized plan.",
-    "heroHeadline": "Reset Your Gut &<br><span class=\"text-primary\">Systemic Energy</span>",
+    "heroHeadline": "Gut Health &<br><span class=\"text-primary\">Detox Support</span>",
     "heroTitle": "Gut & Mold-Related Care in St. Petersburg, FL",
     "heroSubheadline": "Prescription Mold & Gut Detox protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -1156,7 +1156,7 @@
           "name": "Total Mold & Mycotoxin Clearance",
           "peptides": "Prescription Antifungal + Cellular Binders",
           "icon": "fa-disease",
-          "desc": "A simple doctor-guided plan that tests for mold toxins and uses safe prescription binders to clear them from your cells.",
+          "desc": "A doctor-guided plan that tests for mold exposure markers and, when clinically appropriate, uses prescribed supportive treatment.",
           "goalModifiers": {
             "no": "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
             "yes": "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
@@ -1196,7 +1196,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for Detox Care?",
-      "intro": "Our detox protocols are safe, medical-grade plans supervised by licensed doctors. We test your health markers first so you get the exact right treatment for your body.",
+      "intro": "Detox care is a supportive wellness approach planned by licensed doctors. We test your health markers first to decide what is appropriate for you. Results vary.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -1218,7 +1218,7 @@
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for safe, doctor-prescribed lab testing and targeted cleansing."
+          "detail": "Looking for doctor-prescribed lab testing and targeted supportive care."
         }
       ]
     },
@@ -1237,7 +1237,7 @@
           "icon": "fa-leaf",
           "name": "Prescription Antifungal Therapy",
           "tag": "Mold Clear",
-          "description": "Targeted prescription care to clear mold residues from your liver, tissues, and gut safely."
+          "description": "Targeted prescription care for patients with mold-related findings, when clinically appropriate."
         },
         {
           "icon": "fa-bug",
@@ -1260,15 +1260,15 @@
         {
           "icon": "fa-flask",
           "name": "Doctor Lab Check",
-          "tag": "Safety First",
-          "description": "Comprehensive blood and urine tests so your doctor can track your progress and keep you safe."
+          "tag": "Baseline Labs",
+          "description": "Comprehensive blood and urine tests so your doctor can review your health and track your progress."
         }
       ]
     },
     "science": {
       "badge": "How It Works",
       "headline": "Why It Works When<br><span class=\"text-primary\">Juice Fasting Fails</span>",
-      "body": "Juice fasts only flush water and miss deep mold toxins trapped in your fatty tissues and liver. Our doctor-guided protocols use real lab testing to pinpoint exact toxins. We then prescribe medical binders and antifungals that latch onto toxins and pull them out of your body safely.",
+      "body": "Juice fasts only flush water and do not test for mold or gut findings. Our doctor-guided protocols use lab testing to look for specific markers. When clinically appropriate, we then prescribe medical binders and antifungals under supervision. Results vary.",
       "bullets": [
         "Prescribed & monitored by licensed medical doctors",
         "Based on real urine and blood lab tests",
@@ -1280,8 +1280,8 @@
           "label": "Pulls deep mold & gut toxins"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "value": "0%",
@@ -1289,7 +1289,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
@@ -1308,20 +1308,20 @@
     "myths": [
       {
         "myth": "Do I have to go on an extreme juice fast?",
-        "reality": "No. Extreme juice fasts do not clear deep mold or gut bugs. Our doctor plans use safe prescription binders and clean eating so you eat normally while healing."
+        "reality": "No. Extreme juice fasts are not a medical treatment for mold or gut findings. Our doctor plans are based on lab testing and clinical judgment, and you eat normally."
       },
       {
         "myth": "Is a medical detox harsh on my body?",
-        "reality": "No. Our doctors customize your starting dose based on your lab work and check in regularly to make sure your cleanse is smooth, gentle, and effective."
+        "reality": "No. Our doctors customize your starting dose based on your lab work and check in regularly. Individual responses vary."
       },
       {
-        "myth": "Is doctor-guided detox therapy safe?",
-        "reality": "Yes. All treatments use FDA-approved medications and natural binders prescribed directly by licensed medical doctors under strict Florida health guidelines."
+        "myth": "How is detox care supervised?",
+        "reality": "Treatments are prescribed by licensed medical doctors after an evaluation. All treatments carry risks, which your provider will discuss with you. Some medications may be compounded, and compounded medications are not FDA-approved."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
@@ -1426,13 +1426,13 @@
     "tabLabel": "GLP-1 Weight Loss",
     "href": "glp-1therapies",
     "title": "Medical Weight Management with Clinician-Guided Treatment Options",
-    "lead": "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
+    "lead": "A licensed provider evaluates whether a GLP-1 medication is appropriate for you and guides your plan.",
     "description": "For eligible patients, prescription weight-management medications may reduce appetite and support weight loss when combined with nutrition, physical activity, and ongoing clinical monitoring.",
     "icon": "fa-weight-scale",
     "delay": "-1s",
     "features": [
-      "Stop constant snack & food cravings",
-      "Support fat loss while keeping muscle",
+      "Support for appetite control",
+      "Support for weight-management goals",
       "Licensed doctor supervision & care",
       "Simple weekly doctor-prescribed plan"
     ],
@@ -1440,7 +1440,7 @@
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Medical Weight Loss & GLP-1s in St. Petersburg, FL | OVI Wellness",
     "pageDescription": "Doctor-guided medical weight loss in St. Petersburg, FL with semaglutide or tirzepatide when appropriate. Labs, nutrition and monthly check-ins.",
-    "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
+    "heroHeadline": "Medical Weight<br><span class=\"text-primary\">Management</span>",
     "heroTitle": "Medical Weight Loss With GLP-1s in St. Petersburg, FL",
     "heroSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -1508,10 +1508,10 @@
           "name": "Doctor-Guided Fat Burn Plan",
           "peptides": "FDA-approved medications may be prescribed when indicated.",
           "icon": "fa-weight-scale",
-          "desc": "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
+          "desc": "A weekly prescription treatment that a licensed provider may consider to help reduce appetite as part of a medical weight-management plan, if you qualify.",
           "goalModifiers": {
-            "moderate": "Great for losing 10-20 lbs while keeping your daily energy high.",
-            "significant": "Designed for 20+ lbs of fat loss with step-by-step doctor check-ins."
+            "moderate": "May be considered for moderate weight-management goals, with clinician guidance. Results vary.",
+            "significant": "May be considered for larger weight-management goals, with regular clinician check-ins. Results vary."
           },
           "social": "Over 100 local patients are currently using this doctor-guided plan."
         },
@@ -1520,10 +1520,10 @@
           "name": "Total Body Reset Plan",
           "peptides": "Tirzepatide + Vitamin Support",
           "icon": "fa-heartbeat",
-          "desc": "Builds a healthy metabolism, balances blood sugar, and keeps your body feeling young and energized.",
+          "desc": "A medical evaluation of metabolic health and, if clinically appropriate, a treatment plan.",
           "goalModifiers": {
-            "moderate": "Helps fix daily energy slumps and mild weight gain.",
-            "significant": "Comprehensive reset to clean up health markers and drop excess weight."
+            "moderate": "Your provider will evaluate possible causes and discuss options. Results vary.",
+            "significant": "A comprehensive evaluation of health markers and weight-management options. Results vary."
           },
           "social": "84 patients started this doctor-led plan in the last 90 days."
         }
@@ -1536,7 +1536,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for GLP-1 Care?",
-      "intro": "Our treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health first to make sure you get the best plan for your body.",
+      "intro": "GLP-1 treatments are prescription medications. A licensed provider reviews your health history to decide whether treatment is appropriate for you.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -1558,7 +1558,7 @@
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for a safe, doctor-prescribed plan with regular check-ins."
+          "detail": "Looking for a doctor-prescribed plan with regular check-ins."
         }
       ]
     },
@@ -1571,13 +1571,13 @@
           "icon": "fa-weight-scale",
           "name": "Semaglutide Protocol",
           "tag": "Most Popular",
-          "description": "Prescription GLP-1 treatment that calms hunger signals in your brain. A simple weekly dose to help you feel full and lose weight steadily."
+          "description": "Prescription GLP-1 treatment that acts on appetite signaling. Given as a weekly injection, as determined by your provider."
         },
         {
           "icon": "fa-fire",
           "name": "Tirzepatide Protocol",
-          "tag": "Fastest Results",
-          "description": "Dual-action prescription treatment that targets two natural hunger pathways for even faster fat loss while keeping your energy up."
+          "tag": "Dual Action",
+          "description": "Prescription treatment that acts on both GLP-1 and GIP receptors. Given as a weekly injection, as determined by your provider."
         },
         {
           "icon": "fa-dna",
@@ -1588,79 +1588,80 @@
         {
           "icon": "fa-leaf",
           "name": "B12 & Wellness Injections",
-          "tag": "Energy Booster",
-          "description": "Quick vitamin shots to support your daily energy and liver health."
+          "tag": "Supportive Care",
+          "description": "Vitamin injections that your provider may consider as a supportive option."
         },
         {
           "icon": "fa-chart-line",
           "name": "Doctor Blood Check",
-          "tag": "Safety First",
-          "description": "Simple lab work so your doctor can customize your starting dose and ensure complete health and safety."
+          "tag": "Baseline Labs",
+          "description": "Lab work so your provider can review your health and decide on a starting dose."
         },
         {
           "icon": "fa-utensils",
           "name": "Simple Eating Guide",
           "tag": "Easy Meals",
-          "description": "Easy daily eating tips designed to protect your strong muscle while the weight comes off."
+          "description": "Eating guidance to support your nutrition during weight management."
         }
-      ]
+      ],
+      "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Diets Fail</span>",
-      "body": "Most diets fail because your brain tells you that you are hungry. GLP-1 prescription treatments send natural fullness signals to your brain. You eat less naturally without feeling starved or weak. You burn fat while keeping your muscle.",
+      "headline": "How GLP-1<br><span class=\"text-primary\">Treatments Work</span>",
+      "body": "GLP-1 medications mimic a natural hormone that signals fullness to the brain and slows stomach emptying, which can reduce appetite. They are used together with nutrition and physical activity. Some GLP-1 medications are FDA-approved brand-name products, and others are compounded and not FDA-approved. Results vary.",
       "bullets": [
         "Prescribed by real licensed medical doctors",
         "Simple weekly treatment done at home or in clinic",
-        "Protects muscle so you burn pure fat"
+        "Nutrition guidance as part of your plan"
       ],
       "stats": [
         {
-          "value": "Full",
-          "label": "No constant food cravings"
+          "value": "Appetite",
+          "label": "May reduce appetite; results vary"
         },
         {
           "value": "Easy",
           "label": "Simple weekly doctor plan"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
         {
           "icon": "fa-brain",
-          "title": "Turns Off Hunger Thoughts",
-          "detail": "Signals your brain that you are full after small meals so snacking stops naturally."
+          "title": "Appetite Signaling",
+          "detail": "These medications act on pathways that signal fullness, which may reduce appetite in some patients."
         },
         {
           "icon": "fa-dumbbell",
-          "title": "Keeps Your Strong Muscle",
-          "detail": "Our doctor plans protect your muscle so your body burns fat for fuel."
+          "title": "Nutrition Guidance",
+          "detail": "Your plan can include protein and nutrition guidance. Weight loss can include loss of lean mass, which is one reason clinician monitoring matters."
         }
       ]
     },
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
           "icon": "fa-fire",
-          "label": "Fat Burn"
+          "label": "Weight Management"
         },
         {
           "icon": "fa-dumbbell",
-          "label": "Muscle Kept"
+          "label": "Nutrition Guidance"
         },
         {
           "icon": "fa-brain",
-          "label": "No Hunger"
+          "label": "Appetite Support"
         },
         {
           "icon": "fa-chart-line",
@@ -1670,42 +1671,42 @@
       "rows": [
         {
           "metric": "Hunger Level",
-          "without": "Always hungry & tired",
-          "with": "Feels full & satisfied"
+          "without": "Self-directed dieting",
+          "with": "Clinician-guided plan"
         },
         {
-          "metric": "Fat Loss Speed",
-          "without": "Slow & frustrating",
-          "with": "Steady & doctor-backed"
+          "metric": "Weight Management",
+          "without": "No medical guidance",
+          "with": "Plan tailored to you; results vary"
         },
         {
-          "metric": "Muscle Protection",
-          "without": "Loses muscle & strength",
-          "with": "Protects muscle while burning fat"
+          "metric": "Nutrition Guidance",
+          "without": "Often none",
+          "with": "Protein and nutrition guidance"
         },
         {
-          "metric": "Medical Safety",
+          "metric": "Medical Oversight",
           "without": "Unsupervised / generic",
           "with": "Doctor-prescribed & lab-monitored"
         },
         {
-          "metric": "Long-Term Results",
-          "without": "Weight comes back",
-          "with": "Doctor guidance to keep it off"
+          "metric": "Ongoing Support",
+          "without": "Little follow-up",
+          "with": "Ongoing clinician follow-up"
         }
       ],
       "stacks": [
         {
-          "name": "Fast Fat Loss Plan",
+          "name": "Tirzepatide Plan",
           "tag": "Most Popular",
           "compounds": "Tirzepatide + Vitamin B12 Booster",
-          "description": "Combines dual-action prescription treatment with energy boosters. Designed for fast fat burn while keeping your strength up."
+          "description": "Prescription treatment combined with a vitamin B12 injection, as determined by your provider. Results vary."
         },
         {
           "name": "Essential Weight Loss Plan",
           "tag": "Great Starter",
           "compounds": "Semaglutide + Eating Guide",
-          "description": "Proven GLP-1 prescription paired with simple daily meal guidance. Perfect for your first doctor-guided weight loss journey."
+          "description": "GLP-1 prescription paired with simple daily meal guidance, as determined by your provider. Results vary."
         },
         {
           "name": "Advanced Management Protocol",
@@ -1722,11 +1723,11 @@
       },
       {
         "question": "How do GLP-1 weight loss treatments work?",
-        "answer": "GLP-1 treatments mimic your body's natural fullness hormone. This reduces hunger signals in your brain so you naturally eat smaller meals without feeling starved or craving snacks."
+        "answer": "GLP-1 medications mimic a natural hormone involved in appetite and digestion. This can reduce appetite and slow stomach emptying, so some patients feel full sooner and eat less. Results vary."
       },
       {
         "question": "Will I lose muscle while losing weight?",
-        "answer": "No. Our doctor-guided plans include simple eating tips and protein targets to make sure your body burns fat tissue while protecting your strong, healthy muscle."
+        "answer": "Weight loss can include loss of lean mass as well as fat. Your provider may recommend protein targets and strength activity to help support muscle, but outcomes vary."
       },
       {
         "question": "How do I get started?",
@@ -1758,20 +1759,20 @@
     "href": "hormone-optimization",
     "title": "Individualized Evaluation and Treatment for Clinically Significant Hormone Deficiency",
     "lead": "Tired of feeling worn out? A licensed clinician evaluates symptoms, medical history, examination findings, and laboratory results to determine whether hormone therapy is appropriate.",
-    "description": "When your hormones drop, you feel tired, gain weight, and lose focus. Our doctors run simple blood tests and create a custom plan to give you back your strength, focus, and drive.",
+    "description": "Symptoms such as fatigue, weight gain and low drive can have many causes, including low hormone levels. A licensed clinician evaluates your symptoms, history and lab results to decide whether hormone therapy is appropriate. Results vary.",
     "icon": "fa-syringe",
     "delay": "0s",
     "features": [
-      "Reclaim high daily energy & focus",
+      "Evaluation for fatigue & low energy",
       "Potential treatment goals may include improvement in symptoms.",
-      "Enjoy deep sleep & better mood",
-      "100% doctor-checked for your safety"
+      "Evaluation for sleep & mood concerns",
+      "Supervised by licensed clinicians"
     ],
     "image": "assets/images/photos/trt-therapy.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "TRT & Hormone Therapy in St. Petersburg, FL | OVI Wellness",
     "pageDescription": "Doctor-led TRT and bioidentical hormone therapy for men and women in St. Petersburg, FL. Lab-based dosing, ongoing monitoring. Book a consult.",
-    "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Energy & Strength</span>",
+    "heroHeadline": "Hormone Therapy<br><span class=\"text-primary\">Under Physician Care</span>",
     "heroTitle": "TRT & Hormone Therapy in St. Petersburg, FL",
     "heroSubheadline": "Prescription TRT & Bio-Identical Hormone therapy, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -1845,7 +1846,7 @@
           "name": "Total Vitality & Energy Reset",
           "peptides": "Doctor-Prescribed Bio-Identical Therapy",
           "icon": "fa-battery-quarter",
-          "desc": "A simple doctor-guided plan that balances your body's energy hormones so you wake up refreshed and stay sharp all day.",
+          "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with symptoms of low energy and suspected hormone imbalance.",
           "goalModifiers": {
             "yes": "Our doctor will review your labs right away to build your custom treatment dose.",
             "no": "We will order a quick baseline blood test to check your levels before starting."
@@ -1857,7 +1858,7 @@
           "name": "Peak Drive & Passion Plan",
           "peptides": "Prescription Hormone & Vitality Therapy",
           "icon": "fa-fire",
-          "desc": "Targeted doctor therapy to bring back intimate energy, mood, and daily stamina.",
+          "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with low drive or related concerns.",
           "goalModifiers": {
             "yes": "We will review your recent labs to start your plan fast.",
             "no": "Our doctor will order a simple blood check to pinpoint your exact needs."
@@ -1869,9 +1870,9 @@
           "name": "Strong Body & Fat Burn Reset",
           "peptides": "TRT & Bio-Identical Growth Support",
           "icon": "fa-dumbbell",
-          "desc": "Helps you burn stubborn belly fat, build lean muscle, and recover fast after workouts.",
+          "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with concerns about muscle, body composition or recovery.",
           "goalModifiers": {
-            "yes": "Your recent labs will help our doctor set your optimal starting dose safely.",
+            "yes": "Your recent labs will help our doctor decide whether treatment is appropriate and, if so, set a starting dose.",
             "no": "Our doctor will get your simple bloodwork done to check your testosterone and energy markers."
           },
           "social": "Over 100 local patients are currently on this strength protocol."
@@ -1885,7 +1886,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for Hormone Care?",
-      "intro": "Our hormone treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your bloodwork first so you get the exact right dose for your body.",
+      "intro": "Hormone therapy is prescribed only after a licensed clinician reviews your symptoms, history and bloodwork. Whether it is appropriate for you is a clinical decision.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -1903,11 +1904,11 @@
         },
         {
           "label": "Want Muscle & Energy",
-          "detail": "Men and women ready to burn fat, keep strong muscle, and feel young again."
+          "detail": "Men and women interested in support for muscle, body composition and energy, as clinically appropriate."
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for a safe, doctor-prescribed plan with regular blood checks and check-ins."
+          "detail": "Looking for doctor-prescribed care with regular blood checks and check-ins."
         }
       ]
     },
@@ -1920,57 +1921,58 @@
           "icon": "fa-syringe",
           "name": "Testosterone Therapy (TRT)",
           "tag": "Most Popular",
-          "description": "Doctor-calibrated testosterone treatment for men with low energy, brain fog, or muscle loss. Simple weekly routine under medical supervision."
+          "description": "Testosterone treatment for men with symptoms and lab results consistent with low testosterone, calibrated and monitored by a licensed clinician."
         },
         {
           "icon": "fa-venus",
           "name": "Women's Bio-Identical HRT",
           "tag": "For Women",
-          "description": "Natural bio-identical estrogen and progesterone balancing for women managing mood changes, night sweats, or low energy."
+          "description": "Bio-identical estrogen and progesterone therapy for women with symptoms such as mood changes or night sweats, when clinically appropriate."
         },
         {
           "icon": "fa-vial",
           "name": "Peptide Support Boosters",
           "tag": "Cell Recovery",
-          "description": "Special peptide boosters layered with your plan to speed up recovery, support joint health, and enhance cellular repair."
+          "description": "Peptide options your provider may consider alongside your plan, when clinically appropriate."
         },
         {
           "icon": "fa-heart",
           "name": "Sexual Wellness Therapy",
           "tag": "Vitality Boost",
-          "description": "Prescription treatments designed to restore healthy drive, blood flow, and intimate confidence for men and women."
+          "description": "Prescription options for men and women with sexual health concerns, when clinically appropriate."
         },
         {
           "icon": "fa-shield-alt",
           "name": "Thyroid & Adrenal Balance",
           "tag": "Energy Core",
-          "description": "Complete thyroid and adrenal support to fix midday crashes and keep your body's energy engine running strong."
+          "description": "Evaluation of thyroid and adrenal concerns and, when clinically appropriate, treatment."
         },
         {
           "icon": "fa-flask",
           "name": "Doctor Blood Check",
-          "tag": "Safety First",
-          "description": "Simple lab tests so your doctor can check your exact hormone levels and customize your starting dose safely."
+          "tag": "Baseline Labs",
+          "description": "Simple lab tests so your doctor can check your hormone levels and, if treatment is appropriate, set a starting dose."
         }
-      ]
+      ],
+      "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
-      "body": "Hormones are your body's energy control system. As you age, your natural hormone levels drop. Simple vitamins can't replace missing hormones. Our doctor-prescribed bio-identical treatments replace exactly what your body is missing so you feel strong, sharp, and full of life again.",
+      "headline": "How Hormone Therapy<br><span class=\"text-primary\">Differs From Supplements</span>",
+      "body": "Hormones are chemical messengers that help regulate many body functions, and levels can change with age. When lab results and symptoms point to a deficiency, a licensed clinician may consider hormone therapy. Some hormone preparations used here are compounded and are not FDA-approved. Results vary.",
       "bullets": [
         "Prescribed by real licensed medical doctors",
-        "100% natural bio-identical matching your body",
-        "Regular blood checks to ensure complete safety"
+        "Bio-identical options when clinically appropriate",
+        "Regular lab monitoring as determined by your provider"
       ],
       "stats": [
         {
-          "value": "9 out of 10",
-          "label": "Feel higher energy in 6 weeks"
+          "value": "Individual",
+          "label": "Timelines and results vary by person"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "value": "Simple",
@@ -1978,81 +1980,81 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
         {
           "icon": "fa-vial",
           "title": "Based On Your Bloodwork",
-          "detail": "Every dose is calculated from your specific lab test so you get safe, targeted results."
+          "detail": "Dosing is determined by your provider based on your symptoms, history and lab results."
         },
         {
           "icon": "fa-shield-alt",
-          "title": "Natural Bio-Identical Match",
-          "detail": "We use natural bio-identical hormones that match your body's exact chemical code."
+          "title": "Bio-Identical Options",
+          "detail": "Bio-identical hormones have the same molecular structure as hormones your body makes. Some are FDA-approved products and some are compounded, and compounded products are not FDA-approved."
         }
       ]
     },
     "myths": [
       {
         "myth": "Are these synthetic steroids?",
-        "reality": "No. We use bio-identical hormones—exact natural matches to what your body makes. Our licensed doctors bring your levels back to a healthy young range, not dangerous steroid levels."
+        "reality": "No. Bio-identical hormones have the same molecular structure as the hormones your body makes. Your provider sets a dose based on your labs and monitors your levels over time."
       },
       {
         "myth": "Do I have to stay on this forever?",
-        "reality": "No. You stay on your plan as long as you want to feel your best. If you ever stop, your body simply goes back to how it was before. Most patients stay on because they love how energized they feel."
+        "reality": "Duration depends on your diagnosis and clinical goals. Hormone therapy is often long-term, and your provider will review the plan with you, including what to expect if you stop."
       },
       {
-        "myth": "Is doctor-guided hormone care safe?",
-        "reality": "Yes. Every treatment is prescribed by a licensed doctor and monitored with regular blood checks to keep your heart, energy, and body completely safe."
+        "myth": "How is hormone therapy monitored?",
+        "reality": "Hormone therapy is prescribed by a licensed clinician after an evaluation and monitored with regular lab checks. All hormone therapies carry risks, which your provider will discuss with you. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
           "icon": "fa-bolt",
-          "label": "High Energy"
+          "label": "Energy"
         },
         {
           "icon": "fa-brain",
-          "label": "Clear Focus"
+          "label": "Focus"
         },
         {
           "icon": "fa-dumbbell",
-          "label": "Lean Muscle"
+          "label": "Body Composition"
         },
         {
           "icon": "fa-moon",
-          "label": "Deep Sleep"
+          "label": "Sleep"
         }
       ],
       "rows": [
         {
           "metric": "Daily Energy",
-          "without": "Tired all day & crashes",
-          "with": "High, steady energy all day"
+          "without": "Underlying causes not evaluated",
+          "with": "Symptoms, history and labs reviewed"
         },
         {
           "metric": "Muscle & Body Fat",
-          "without": "Gains fat, loses muscle",
-          "with": "Burns fat & keeps strong muscle"
+          "without": "No clinical guidance",
+          "with": "Plan set by a licensed clinician"
         },
         {
           "metric": "Mental Clarity",
-          "without": "Brain fog & slow focus",
-          "with": "Sharp, clear thinking"
+          "without": "Self-directed supplements",
+          "with": "Lab-based evaluation"
         },
         {
           "metric": "Sleep Quality",
-          "without": "Wakes up tired",
-          "with": "Deep, restorative sleep"
+          "without": "No medical review",
+          "with": "Individualized plan; results vary"
         },
         {
-          "metric": "Medical Safety",
+          "metric": "Medical Oversight",
           "without": "Unmonitored / OTC pills",
           "with": "Doctor-prescribed & blood checked"
         }
@@ -2062,19 +2064,19 @@
           "name": "Male Performance Plan",
           "tag": "Most Popular",
           "compounds": "TRT + Recovery Peptide Stack",
-          "description": "Combines prescription testosterone with energy peptides for fast strength, sharp focus, and high daily stamina."
+          "description": "Combines testosterone therapy with peptide options when clinically appropriate. Results vary."
         },
         {
           "name": "Women's Balance Plan",
           "tag": "For Women",
           "compounds": "Estrogen + Progesterone + Low-Dose T",
-          "description": "Balanced female hormone therapy to eliminate brain fog, fix mood swings, and bring back natural energy."
+          "description": "Female hormone therapy for women with symptoms such as mood changes or low energy, when clinically appropriate. Results vary."
         },
         {
           "name": "Complete Longevity Reset Plan",
           "tag": "Full Audit",
           "compounds": "Full Hormone Panel + Thyroid Support",
-          "description": "Comprehensive body reset guided by full doctor bloodwork for long-term health and vitality."
+          "description": "Comprehensive evaluation guided by full doctor-reviewed bloodwork."
         }
       ]
     },
@@ -2085,23 +2087,27 @@
       },
       {
         "question": "What does the doctor-guided hormone program include?",
-        "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom pharmacy-grade bio-identical hormones, and ongoing medical check-ins to make sure you stay safe and feel your best."
+        "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom hormone preparations (some are compounded and are not FDA-approved), and ongoing medical check-ins."
       },
       {
         "question": "How fast will I feel results from hormone therapy?",
-        "answer": "Most patients report higher daily energy, better sleep, and improved mood within 2 to 4 weeks. Major benefits like fat loss, lean muscle gains, sharp focus, and restored drive build steadily over 6 to 12 weeks."
+        "answer": "Timelines vary by person, hormone and dose. Your provider will monitor your symptoms and labs and adjust your plan. Results vary and are not guaranteed."
       },
       {
-        "question": "Is hormone therapy safe for both men and women?",
-        "answer": "Yes! Our treatments use natural bio-identical hormones tailored specifically for men and women. Because our licensed doctors measure your exact blood levels, your protocol is always safe, balanced, and targeted to your body."
+        "question": "Is hormone therapy appropriate for both men and women?",
+        "answer": "Hormone therapy is prescribed for men and women when symptoms and lab results support it, and the treatment differs for each. Every hormone therapy has risks and is not right for everyone. Your provider will review your history and risks with you and monitor your labs during treatment."
       },
       {
-        "question": "Will I get bad side effects or dangerous steroid effects?",
-        "answer": "No. Steroids use dangerous, unmonitored doses. We prescribe natural bio-identical hormones calibrated strictly to your body's healthy young range. Regular doctor check-ins and lab checks keep your treatment safe and adverse effects vary."
+        "question": "What side effects are possible, and is this the same as using steroids?",
+        "answer": "Hormone therapy prescribed by a clinician is not the same as anabolic steroid use. Side effects are possible with any hormone therapy and depend on the hormone, the dose and your health. Your provider will explain the risks, calibrate your dose to your lab results and monitor you with regular check-ins and lab work."
       },
       {
         "question": "How do I get started with hormone optimization?",
         "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will order a quick blood test, review your results, and launch your personalized vitality plan."
+      },
+      {
+        "question": "Are compounded hormones FDA-approved?",
+        "answer": "Some hormone therapies are FDA-approved products, and some are compounded. Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs. Your provider will explain which option is being prescribed and the risks of each."
       }
     ],
     "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
@@ -2266,7 +2272,7 @@
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for safe, medical-grade vitamin infusions in a comfortable clinic suite."
+          "detail": "Looking for doctor-prescribed vitamin infusions in a comfortable clinic suite."
         }
       ]
     },
@@ -2291,7 +2297,7 @@
           "icon": "fa-tint",
           "name": "Myers' Cocktail Drip",
           "tag": "Most Popular",
-          "description": "The clinical gold standard IV drip, packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
+          "description": "A commonly used IV drip with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
         },
         {
           "icon": "fa-dumbbell",
@@ -2311,7 +2317,8 @@
           "tag": "Quick Booster",
           "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
         }
-      ]
+      ],
+      "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
     },
     "science": {
       "badge": "How It Works",
@@ -2332,12 +2339,12 @@
           "label": "Average drip session time"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & RN administered"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
@@ -2363,13 +2370,13 @@
         "reality": "No. Oral vitamins must pass through digestion first, while IV drips deliver nutrients directly into your bloodstream for hydration and nutrient support."
       },
       {
-        "myth": "Is doctor-guided IV therapy safe?",
-        "reality": "Yes! Every drip is prescribed by a licensed doctor and administered by trained registered nurses following strict medical safety rules."
+        "myth": "How is IV therapy supervised?",
+        "reality": "Every drip is prescribed by a licensed doctor and administered by trained registered nurses. IV therapy carries risks, such as infection, vein irritation or allergic reaction, which your provider will discuss with you. Some formulations are compounded and are not FDA-approved."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
@@ -2440,7 +2447,7 @@
     "faqs": [
       {
         "question": "Do I need a doctor's consultation before getting an IV drip?",
-        "answer": "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor to make sure your drip is perfectly customized and safe."
+        "answer": "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor so your drip can be customized to you."
       },
       {
         "question": "What does the doctor-guided IV program include?",
@@ -2455,8 +2462,8 @@
         "answer": "Most wellness patients visit once or twice a month for high energy and immune health. Active athletes or those recovering from illness often get weekly drips."
       },
       {
-        "question": "Is IV therapy safe?",
-        "answer": "100% yes. All infusions are prescribed by licensed doctors, mixed in accredited pharmacies, and administered by trained registered nurses following strict medical safety rules."
+        "question": "How are IV infusions supervised?",
+        "answer": "All infusions are prescribed by licensed doctors, prepared by a pharmacy, and administered by trained registered nurses. IV therapy carries risks, and your provider will review them with you. Some formulations are compounded and are not FDA-approved."
       },
       {
         "question": "How do I get started with IV therapy?",
@@ -2479,20 +2486,20 @@
     "href": "peptides",
     "title": "Peptide-Related Consultation",
     "lead": "Clinical evaluation to support the body's natural processes related to joint well-being and cellular recovery.",
-    "description": "Peptides are natural signals that tell your body to repair damaged muscles, joints, and gut tissue. Wake up without joint stiffness, bounce back from workouts, and feel energized every day.",
+    "description": "Peptide therapy is a prescription option that a licensed clinician may consider for patients interested in support for joint comfort, recovery, sleep and body composition. Whether it is appropriate for you is decided after a medical evaluation. Results vary.",
     "icon": "fa-vial",
     "delay": "-2s",
     "features": [
-      "Fast joint, tendon & muscle recovery",
-      "Deeper, restful night sleep",
-      "Supercharge gut & immune health",
-      "100% doctor-checked for your safety"
+      "Support for joint, tendon & muscle recovery",
+      "Support for restful sleep",
+      "Support for gut & immune health",
+      "Supervised by licensed clinicians"
     ],
     "image": "assets/images/photos/peptide-therapy.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "Peptide Therapy Clinic in St. Petersburg, FL | OVI Wellness",
     "pageDescription": "Doctor-prescribed peptide therapy in St. Petersburg, FL for recovery, sleep and body composition, with labs and medical monitoring. Book a consult.",
-    "heroHeadline": "Accelerate Healing &<br><span class=\"text-primary\">Cellular Recovery</span>",
+    "heroHeadline": "Peptide Therapy<br><span class=\"text-primary\">Under Physician Care</span>",
     "heroTitle": "Peptide Therapy in St. Petersburg, FL",
     "heroSubheadline": "Prescription Peptide protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -2590,12 +2597,12 @@
           "name": "The Total Joint & Tissue Reset",
           "peptides": "Options selected per clinical protocol",
           "icon": "fa-shield-alt",
-          "desc": "A simple doctor-prescribed treatment that signals your cells to repair joints, tendons, and muscles fast.",
+          "desc": "A doctor-prescribed option your provider may consider for joint, tendon and muscle recovery, if it is clinically appropriate.",
           "goalModifiers": {
-            "train": "Designed to get you back to active workouts without pain holding you back.",
-            "muscle": "Accelerates cellular tissue repair so you rebuild muscle stronger than before.",
-            "feel": "Calms joint inflammation so you wake up refreshed and move comfortably.",
-            "fat": "Helps your body heal so you can stay active and burn extra calories."
+            "train": "May be considered by your provider as part of a plan to support a return to activity.",
+            "muscle": "May be considered as part of a plan to support recovery and muscle rebuilding.",
+            "feel": "May be considered as part of a plan to support joint comfort and rest.",
+            "fat": "May be considered as part of a plan to help you stay active."
           },
           "social": "Over 60 local patients completed this recovery plan in the last 90 days."
         },
@@ -2604,12 +2611,12 @@
           "name": "Peak Performance & Growth Stack",
           "peptides": "Clinical and metabolic options",
           "icon": "fa-dumbbell",
-          "desc": "Boosts your natural growth hormones so you gain lean muscle, bounce back fast, and feel strong.",
+          "desc": "A prescription option your provider may consider for patients interested in support for lean muscle, recovery and strength, if clinically appropriate.",
           "goalModifiers": {
-            "train": "Helps you push past plateaus and recover in half the time.",
-            "muscle": "Supports natural muscle building and protein absorption.",
-            "feel": "Promotes deep, restorative sleep so you wake up with high energy.",
-            "fat": "Supports body-composition goals while protecting your lean muscle."
+            "train": "May be considered by your provider as part of a plan to support training and recovery.",
+            "muscle": "May be considered as part of a plan to support lean muscle goals.",
+            "feel": "May be considered as part of a plan to support sleep and energy.",
+            "fat": "May be considered alongside diet and exercise for body-composition goals."
           },
           "social": "88 patients are currently running this doctor-prescribed stack."
         },
@@ -2618,12 +2625,12 @@
           "name": "Total Body Energy & Focus Reset",
           "peptides": "Cellular Energy & Recovery Protocol",
           "icon": "fa-bolt",
-          "desc": "Recharges your cellular engines so you clear brain fog, fight fatigue, and feel energized all day.",
+          "desc": "A prescription option your provider may consider for patients dealing with fatigue or low energy, after other possible causes are evaluated.",
           "goalModifiers": {
-            "train": "Increases cellular endurance so workouts feel lighter.",
-            "muscle": "Improves cellular recovery after tough training sessions.",
-            "feel": "Built specifically to turn off constant tiredness and restore mental clarity.",
-            "fat": "Boosts daily metabolic engine to burn fat steadily."
+            "train": "May be considered as part of a plan to support endurance and training.",
+            "muscle": "May be considered as part of a plan to support recovery after training.",
+            "feel": "May be considered as part of a plan to support energy and mental clarity.",
+            "fat": "May be considered as part of a plan alongside diet and exercise."
           },
           "social": "44 local patients started this energy plan in the last 60 days."
         },
@@ -2632,11 +2639,11 @@
           "name": "Lean Muscle & Body Composition Support",
           "peptides": "Protocols selected after clinical evaluation",
           "icon": "fa-fire",
-          "desc": "Supports body-composition goals while protecting your lean, strong muscle.",
+          "desc": "A prescription option your provider may consider alongside nutrition and exercise for body-composition goals.",
           "goalModifiers": {
-            "train": "Improves endurance and stamina for longer workouts.",
-            "muscle": "Supports fat loss while preserving lean muscle mass.",
-            "feel": "Improves overall body confidence, sleep, and daytime focus.",
+            "train": "May be considered as part of a plan to support training.",
+            "muscle": "May be considered alongside diet and exercise for body-composition goals.",
+            "feel": "May be considered as part of a plan to support sleep and daily focus.",
             "fat": "Designed for body-composition goals alongside diet and exercise."
           },
           "social": "73 patients completed this fat burn protocol recently."
@@ -2651,7 +2658,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for Peptide Care?",
-      "intro": "Our peptide treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health and bloodwork first so you get the best plan for your body.",
+      "intro": "Peptide therapy is prescribed only after an evaluation by a licensed clinician, who may order bloodwork first. Whether it is appropriate for you is a clinical decision.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -2673,7 +2680,7 @@
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for safe, pharmacy-grade doctor treatments with regular check-ins."
+          "detail": "Looking for doctor-prescribed care with regular check-ins."
         }
       ]
     },
@@ -2710,86 +2717,87 @@
           "icon": "fa-battery-full",
           "name": "Antioxidant Support",
           "tag": "Cellular Defense",
-          "description": "Medically guided antioxidant support to help cells and liver function."
+          "description": "Medically guided antioxidant support, when clinically appropriate."
         },
         {
           "icon": "fa-flask",
           "name": "Doctor Blood Check",
-          "tag": "Safety First",
-          "description": "Simple lab work so your doctor can check your baseline health and build your exact starting dose safely."
+          "tag": "Baseline Labs",
+          "description": "Simple lab work so your doctor can check your baseline health and help decide whether and how to start treatment."
         }
-      ]
+      ],
+      "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Supplements Fail</span>",
-      "body": "Think of your cells as engines. Peptides are natural signals your body already understands. Store vitamins pass right through your gut. Our doctor-prescribed bio-identical peptides deliver direct molecular signals to your cells, telling them to rebuild, repair, and energize naturally.",
+      "headline": "How Peptide Therapy<br><span class=\"text-primary\">Differs From Supplements</span>",
+      "body": "Peptides are short chains of amino acids that act as signals in the body. Peptide therapy is prescribed by a licensed clinician after an evaluation, which differs from over-the-counter supplements that are not individually prescribed. The peptides prescribed here are compounded and are not FDA-approved. Whether any option is right for you is a clinical decision, and results vary.",
       "bullets": [
         "Prescribed by real licensed medical doctors",
-        "100% pharmacy-grade bio-identical compounds",
-        "Safe, targeted action without synthetic fillers"
+        "Prepared by a licensed compounding pharmacy",
+        "Prescribed only after a medical evaluation"
       ],
       "stats": [
         {
-          "value": "Fast",
-          "label": "Notice joint relief in weeks"
+          "value": "Individual",
+          "label": "Timelines and results vary by person"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
-          "value": "100%",
-          "label": "Pharmacy-grade quality"
+          "value": "Licensed",
+          "label": "Prepared by a licensed pharmacy"
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
         {
           "icon": "fa-vial",
-          "title": "Compounded & Doctor Verified",
-          "detail": "Every dose is compounded in accredited pharmacies and prescribed by licensed healthcare providers."
+          "title": "Compounded & Prescribed",
+          "detail": "Compounded peptides are prepared by a licensed pharmacy for an individual patient and prescribed by a licensed healthcare provider. They are not FDA-approved."
         },
         {
           "icon": "fa-bullseye",
-          "title": "Targeted Cellular Action",
-          "detail": "Peptides send precise repair signals directly to damaged cells without disturbing other body systems."
+          "title": "How Peptides Work",
+          "detail": "Peptides are signaling molecules. How a given peptide acts, and whether it is appropriate for you, depends on the specific compound and your health history."
         }
       ]
     },
     "myths": [
       {
         "myth": "Are peptides just anabolic steroids?",
-        "reality": "No. Peptides are natural amino acid signals—the exact same signals your body already produces. They do not shut down your hormones, cause liver stress, or act like steroids."
+        "reality": "No. Peptides are short chains of amino acids and are not anabolic steroids. Different peptides have different effects and risks, which your provider will review with you."
       },
       {
         "myth": "Do I have to do this forever?",
-        "reality": "No. Most peptide plans run for 8 to 16 weeks to reset your tissue and cellular health. Once healed, many patients maintain their results with simple lifestyle care."
+        "reality": "Not necessarily. Plan length depends on the peptide and your clinical goals, and your provider will review it with you. Results vary."
       },
       {
-        "myth": "Is doctor-guided peptide therapy safe and legal?",
-        "reality": "Yes. Treatment options are discussed during consultation. prescribed by licensed medical doctors following strict Florida medical standards."
+        "myth": "How is peptide therapy supervised?",
+        "reality": "Peptide therapy is prescribed by a licensed clinician after an evaluation and monitored over time. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality. All treatments carry risks, which your provider will discuss with you."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
           "icon": "fa-bolt",
-          "label": "Fast Recovery"
+          "label": "Recovery Support"
         },
         {
           "icon": "fa-fire",
-          "label": "Fat Burn"
+          "label": "Body Composition"
         },
         {
           "icon": "fa-brain",
-          "label": "Clear Focus"
+          "label": "Focus & Energy"
         },
         {
           "icon": "fa-shield-alt",
@@ -2799,27 +2807,27 @@
       "rows": [
         {
           "metric": "Recovery Speed",
-          "without": "5–7 days of pain",
-          "with": "2–3 days fast recovery"
+          "without": "Self-directed, no clinical guidance",
+          "with": "Guided by a licensed clinician"
         },
         {
           "metric": "Joint Comfort",
-          "without": "Stiff & sore",
-          "with": "Flexible & pain-free"
+          "without": "Over-the-counter products only",
+          "with": "Evaluated and monitored by a clinician"
         },
         {
           "metric": "Daily Energy",
-          "without": "Tired & brain fog",
-          "with": "High all-day energy"
+          "without": "Underlying causes not evaluated",
+          "with": "Medical history and labs reviewed"
         },
         {
           "metric": "Sleep Quality",
-          "without": "Restless & tossing",
-          "with": "Deep, restorative sleep"
+          "without": "No medical review",
+          "with": "Individualized plan; results vary"
         },
         {
-          "metric": "Medical Safety",
-          "without": "Unregulated web pills",
+          "metric": "Medical Oversight",
+          "without": "Unregulated web products",
           "with": "Doctor-prescribed & lab checked"
         }
       ],
@@ -2851,7 +2859,7 @@
       },
       {
         "question": "What does the doctor-guided peptide program include?",
-        "answer": "Your program includes direct medical consultations with a board-certified doctor, baseline blood testing, custom pharmacy-grade peptides, and ongoing check-ins to make sure you get optimal results safely."
+        "answer": "Your program includes direct medical consultations with a board-certified doctor, baseline blood testing, custom compounded peptides prepared by a licensed pharmacy, and ongoing check-ins. Compounded peptides are not FDA-approved."
       },
       {
         "question": "How are peptide treatments administered?",
@@ -2863,11 +2871,15 @@
       },
       {
         "question": "Can I combine peptides with TRT or hormone therapy?",
-        "answer": "Yes! In fact, peptides work wonderfully alongside doctor-guided TRT or hormone therapy to boost cellular repair, speed up fat loss, and keep your energy high."
+        "answer": "Some patients use peptides alongside TRT or hormone therapy. Whether combining them is appropriate is a clinical decision that your provider makes after reviewing your history and labs."
       },
       {
         "question": "How do I get started with peptide therapy?",
         "answer": "Getting started is simple! Call our clinic today at (727) 476-8966 or click 'Book Your Doctor Consultation' online. Our doctor will review your health, order any necessary bloodwork, and start your custom healing plan."
+      },
+      {
+        "question": "Are compounded peptides FDA-approved?",
+        "answer": "No. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs. Your provider will explain the options available to you and the risks of each."
       }
     ],
     "providerLine": "Services provided by <a href=\"/team\">Sean Worix, PA-C</a> under the medical direction of <a href=\"/team\">Micah Andrew Craig, M.D.</a>",
@@ -2890,13 +2902,13 @@
       "Relieve stubborn joint aches & stiffness",
       "Natural hair & skin restoration",
       "Restore intimate health & confidence",
-      "100% doctor-checked for your safety"
+      "Supervised by licensed clinicians"
     ],
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
     "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
-    "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
+    "heroHeadline": "Regenerative Medicine<br><span class=\"text-primary\">Under Physician Care</span>",
     "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
     "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -3010,7 +3022,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for Regenerative Care?",
-      "intro": "Our regenerative treatments use your body's own biological strength, supervised by licensed medical doctors. We check your health first to make sure you get safe, targeted care.",
+      "intro": "Regenerative treatments such as PRP use your own blood and are provided by licensed medical doctors. We check your health first to decide whether treatment is appropriate for you.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -3032,7 +3044,7 @@
         },
         {
           "label": "Ready for Doctor Care",
-          "detail": "Looking for safe, doctor-administered treatments in a comfortable clinic."
+          "detail": "Looking for doctor-administered treatments in a comfortable clinic."
         }
       ]
     },
@@ -3094,8 +3106,8 @@
           "label": "Uses your body's own growth factors"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "value": "0%",
@@ -3103,7 +3115,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
@@ -3129,13 +3141,13 @@
         "reality": "No. PRP is made from your own blood and is not a stem-cell product. It uses concentrated platelets and plasma to support your body's natural repair processes."
       },
       {
-        "myth": "Is doctor-guided regenerative medicine safe?",
-        "reality": "Yes. All treatments use natural, bio-compatible compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+        "myth": "How is regenerative medicine supervised?",
+        "reality": "Treatments are administered by licensed medical doctors after an evaluation. All treatments carry risks, which your provider will discuss with you, and results vary."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
@@ -3144,7 +3156,7 @@
         },
         {
           "icon": "fa-shield-alt",
-          "label": "Natural Safety"
+          "label": "Doctor Administered"
         },
         {
           "icon": "fa-bolt",
@@ -3172,9 +3184,9 @@
           "with": "Back to normal same day"
         },
         {
-          "metric": "Safety Profile",
-          "without": "High risk & side effects",
-          "with": "100% natural bio-compatible"
+          "metric": "Risks & Side Effects",
+          "without": "Depends on the treatment",
+          "with": "Reviewed with your provider"
         },
         {
           "metric": "Long-Term Relief",
@@ -3248,13 +3260,13 @@
       "Bring back natural drive & stamina",
       "P-Shot for men & Bio-Identical HRT for women",
       "100% doctor-prescribed & discreet",
-      "100% doctor-checked for your safety"
+      "Supervised by licensed clinicians"
     ],
     "image": "assets/images/photos/team-group.jpg",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "P-Shot, PT-141 & Sexual Wellness in St. Petersburg | OVI Wellness",
     "pageDescription": "Private, doctor-led sexual wellness care in St. Petersburg, FL: P-Shot (PRP), PT-141 and hormone balancing after a medical evaluation.",
-    "heroHeadline": "Reclaim Your<br><span class=\"text-primary\">Intimate Drive</span>",
+    "heroHeadline": "Sexual Wellness<br><span class=\"text-primary\">Under Physician Care</span>",
     "heroTitle": "Sexual Wellness Treatments in St. Petersburg, FL",
     "heroSubheadline": "Prescription Sexual Wellness & Intimacy protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
@@ -3368,7 +3380,7 @@
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for Intimacy Care?",
-      "intro": "Our sexual wellness treatments are safe, effective prescription plans supervised by licensed medical doctors. We evaluate your health in a private, respectful clinic setting.",
+      "intro": "Sexual wellness treatments are prescription plans. A licensed provider evaluates your health in a private, respectful clinic setting and decides whether treatment is appropriate.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -3390,7 +3402,7 @@
         },
         {
           "label": "Ready for Private MD Care",
-          "detail": "Looking for safe, discreet doctor-administered treatments in a private office."
+          "detail": "Looking for discreet, doctor-administered treatments in a private office."
         }
       ]
     },
@@ -3432,10 +3444,11 @@
         {
           "icon": "fa-vial",
           "name": "Doctor Blood Check",
-          "tag": "Safety First",
-          "description": "Simple lab work to check your exact hormone markers and ensure safe, effective treatment."
+          "tag": "Baseline Labs",
+          "description": "Simple lab work to check your hormone markers and help your provider decide whether treatment is appropriate."
         }
-      ]
+      ],
+      "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
     },
     "science": {
       "badge": "How It Works",
@@ -3443,7 +3456,7 @@
       "body": "Pills only temporarily force blood flow and often cause headaches or high blood pressure. Our doctor-guided treatments repair underlying tissues and balance natural hormones. Using natural growth factors (PRP) and brain desire signals (PT-141), we rebuild long-term stamina, sensitivity, and natural drive.",
       "bullets": [
         "Prescribed & administered by licensed medical doctors",
-        "100% natural bio-identical compounds with zero synthetic fillers",
+        "Bio-identical options when clinically appropriate",
         "Private, respectful, and discreet medical care"
       ],
       "stats": [
@@ -3452,8 +3465,8 @@
           "label": "Private 1-on-1 doctor care"
         },
         {
-          "value": "Safe",
-          "label": "Doctor supervised & lab checked"
+          "value": "Monitored",
+          "label": "Licensed clinician oversight & lab monitoring"
         },
         {
           "value": "Natural",
@@ -3461,7 +3474,7 @@
         },
         {
           "icon": "fa-user-md",
-          "label": "Rx Doctor Certified"
+          "label": "Licensed Provider Oversight"
         }
       ],
       "cards": [
@@ -3473,7 +3486,7 @@
         {
           "icon": "fa-bullseye",
           "title": "Natural Brain Desire Signaling",
-          "detail": "Peptides like PT-141 work on central brain receptors to ignite natural passion without cardiovascular stress."
+          "detail": "Peptides like PT-141 act on receptors in the brain involved in sexual desire. Your provider will review benefits and risks with you before recommending any treatment."
         }
       ]
     },
@@ -3487,13 +3500,13 @@
         "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
       },
       {
-        "myth": "Is doctor-guided intimacy care safe?",
-        "reality": "Yes. Treatments are provided by licensed medical professionals under strict Florida health guidelines, and off-label use is provided only when clinically appropriate."
+        "myth": "How is sexual wellness care supervised?",
+        "reality": "Treatments are prescribed by licensed medical professionals after an evaluation, and off-label use is provided only when clinically appropriate. All treatments carry risks, which your provider will discuss with you. Compounded medications are not FDA-approved, and the FDA does not review them for safety, effectiveness, or quality."
       }
     ],
     "comparison": {
       "headline": "Doctor-Guided Care vs. Doing It Alone",
-      "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+      "subheadline": "See how doctor supervision differs from doing it alone.",
       "ctaText": "Call Our Clinic Today",
       "mobileStats": [
         {
@@ -3506,7 +3519,7 @@
         },
         {
           "icon": "fa-shield-alt",
-          "label": "Safe & Natural"
+          "label": "Medically Supervised"
         },
         {
           "icon": "fa-clock",
@@ -3522,7 +3535,7 @@
         {
           "metric": "Side Effect Risk",
           "without": "Headaches & blood pressure spikes",
-          "with": "Discuss alternatives and risks & bio-compatible"
+          "with": "Risks and alternatives discussed with your provider"
         },
         {
           "metric": "Sensory Feeling",
@@ -3564,7 +3577,7 @@
     "faqs": [
       {
         "question": "Do I need a doctor's consultation for sexual wellness treatments?",
-        "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor who reviews your health before prescribing a safe, custom plan."
+        "answer": "Yes. All P-Shot, PT-141, and hormone treatments require a medical consultation. You will speak privately with our licensed medical doctor, who reviews your health before prescribing a custom plan if treatment is appropriate."
       },
       {
         "question": "What does the doctor-guided intimacy program include?",

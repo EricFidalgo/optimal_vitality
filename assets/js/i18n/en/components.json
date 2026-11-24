@@ -5,15 +5,15 @@
     "switchLanguage": "Language / Idioma"
   },
   "cta": {
-    "badge": "Medical Oversight Guaranteed",
+    "badge": "Physician-Led Care",
     "title": "Ready to Restore Your Vitality & Reclaim Your Energy?",
     "description": "Take the first step toward peak physical performance and longevity. Book your doctor consultation today.",
     "button": "Book Your Consultation Now",
-    "guarantee": "100% Doctor Supervised & LegitScript Certified"
+    "guarantee": "Physician Supervised Care"
   },
   "disclosures": {
-    "title": "Clinical Oversight & Medical Safety",
-    "intro": "At OVI Wellness, we operate under the strictest standards of medical safety and absolute compliance with Florida state licensing regulations. All treatments are prescribed and monitored by fully licensed medical professionals following rigorous, evidence-based diagnostic evaluation.",
+    "title": "Clinical Oversight & Medical Disclosures",
+    "intro": "At OVI Wellness, treatments are prescribed and monitored by licensed medical professionals in accordance with Florida licensing regulations, following a clinical evaluation.",
     "physicianTitle": "Physician Collaboration",
     "physicianText": "Every protocol is overseen by our Chief Medical Officer. Our licensed mid-level practitioners (NPs and PAs) practice under active collaborative agreements, ensuring a multi-disciplinary review of your health markers.",
     "diagnosticTitle": "Diagnostic Mandate",
@@ -23,7 +23,7 @@
     "medicalTitle": "Medical Disclaimer & Regulatory Notice",
     "medicalText": "The information provided on this website is for educational and informational purposes only and does not constitute medical advice. Treatment protocols, including TRT, Semaglutide, Tirzepatide, and peptides, are prescribed following a thorough medical evaluation, blood diagnostic panel, and physician approval.",
     "fdaTitle": "FDA & Compounding Disclaimer",
-    "fdaText": "Compounded medications are customized pharmaceutical formulations prepared by licensed 503A or 503B compounding pharmacies pursuant to a patient-specific prescription. Compounded drugs are not FDA-approved, though their active pharmaceutical ingredients (APIs) are manufactured in FDA-inspected facilities.",
+    "fdaText": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs. Compounded medications are prepared by licensed 503A or 503B compounding pharmacies pursuant to a patient-specific prescription.",
     "telehealthTitle": "Telehealth & State Licensing",
     "telehealthText": "Medical services are provided by licensed Florida healthcare professionals. Telehealth consultations are subject to state regulations and clinical eligibility."
   },

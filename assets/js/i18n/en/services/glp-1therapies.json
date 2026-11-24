@@ -4,13 +4,13 @@
   "tabLabel": "GLP-1 Weight Loss",
   "href": "glp-1therapies",
   "title": "Medical Weight Management with Clinician-Guided Treatment Options",
-  "lead": "Real doctors guide your plan so you lose fat, feel full, and keep your energy high.",
+  "lead": "A licensed provider evaluates whether a GLP-1 medication is appropriate for you and guides your plan.",
   "description": "For eligible patients, prescription weight-management medications may reduce appetite and support weight loss when combined with nutrition, physical activity, and ongoing clinical monitoring.",
   "icon": "fa-weight-scale",
   "delay": "-1s",
   "features": [
-    "Stop constant snack & food cravings",
-    "Support fat loss while keeping muscle",
+    "Support for appetite control",
+    "Support for weight-management goals",
     "Licensed doctor supervision & care",
     "Simple weekly doctor-prescribed plan"
   ],
@@ -18,7 +18,7 @@
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Medical Weight Loss & GLP-1s in St. Petersburg, FL | OVI Wellness",
   "pageDescription": "Doctor-guided medical weight loss in St. Petersburg, FL with semaglutide or tirzepatide when appropriate. Labs, nutrition and monthly check-ins.",
-  "heroHeadline": "Metabolic<br><span class=\"text-primary\">Optimization</span> Redefined",
+  "heroHeadline": "Medical Weight<br><span class=\"text-primary\">Management</span>",
   "heroTitle": "Medical Weight Loss With GLP-1s in St. Petersburg, FL",
   "heroSubheadline": "Prescription GLP-1 options (including semaglutide and tirzepatide), physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -86,10 +86,10 @@
         "name": "Doctor-Guided Fat Burn Plan",
         "peptides": "FDA-approved medications may be prescribed when indicated.",
         "icon": "fa-weight-scale",
-        "desc": "A simple weekly treatment prescribed by a licensed doctor that turns off hunger and helps your body burn fat every day.",
+        "desc": "A weekly prescription treatment that a licensed provider may consider to help reduce appetite as part of a medical weight-management plan, if you qualify.",
         "goalModifiers": {
-          "moderate": "Great for losing 10-20 lbs while keeping your daily energy high.",
-          "significant": "Designed for 20+ lbs of fat loss with step-by-step doctor check-ins."
+          "moderate": "May be considered for moderate weight-management goals, with clinician guidance. Results vary.",
+          "significant": "May be considered for larger weight-management goals, with regular clinician check-ins. Results vary."
         },
         "social": "Over 100 local patients are currently using this doctor-guided plan."
       },
@@ -98,10 +98,10 @@
         "name": "Total Body Reset Plan",
         "peptides": "Tirzepatide + Vitamin Support",
         "icon": "fa-heartbeat",
-        "desc": "Builds a healthy metabolism, balances blood sugar, and keeps your body feeling young and energized.",
+        "desc": "A medical evaluation of metabolic health and, if clinically appropriate, a treatment plan.",
         "goalModifiers": {
-          "moderate": "Helps fix daily energy slumps and mild weight gain.",
-          "significant": "Comprehensive reset to clean up health markers and drop excess weight."
+          "moderate": "Your provider will evaluate possible causes and discuss options. Results vary.",
+          "significant": "A comprehensive evaluation of health markers and weight-management options. Results vary."
         },
         "social": "84 patients started this doctor-led plan in the last 90 days."
       }
@@ -114,7 +114,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for GLP-1 Care?",
-    "intro": "Our treatments are safe, effective prescription plans supervised by licensed medical doctors. We check your health first to make sure you get the best plan for your body.",
+    "intro": "GLP-1 treatments are prescription medications. A licensed provider reviews your health history to decide whether treatment is appropriate for you.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -136,7 +136,7 @@
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for a safe, doctor-prescribed plan with regular check-ins."
+        "detail": "Looking for a doctor-prescribed plan with regular check-ins."
       }
     ]
   },
@@ -149,13 +149,13 @@
         "icon": "fa-weight-scale",
         "name": "Semaglutide Protocol",
         "tag": "Most Popular",
-        "description": "Prescription GLP-1 treatment that calms hunger signals in your brain. A simple weekly dose to help you feel full and lose weight steadily."
+        "description": "Prescription GLP-1 treatment that acts on appetite signaling. Given as a weekly injection, as determined by your provider."
       },
       {
         "icon": "fa-fire",
         "name": "Tirzepatide Protocol",
-        "tag": "Fastest Results",
-        "description": "Dual-action prescription treatment that targets two natural hunger pathways for even faster fat loss while keeping your energy up."
+        "tag": "Dual Action",
+        "description": "Prescription treatment that acts on both GLP-1 and GIP receptors. Given as a weekly injection, as determined by your provider."
       },
       {
         "icon": "fa-dna",
@@ -166,79 +166,80 @@
       {
         "icon": "fa-leaf",
         "name": "B12 & Wellness Injections",
-        "tag": "Energy Booster",
-        "description": "Quick vitamin shots to support your daily energy and liver health."
+        "tag": "Supportive Care",
+        "description": "Vitamin injections that your provider may consider as a supportive option."
       },
       {
         "icon": "fa-chart-line",
         "name": "Doctor Blood Check",
-        "tag": "Safety First",
-        "description": "Simple lab work so your doctor can customize your starting dose and ensure complete health and safety."
+        "tag": "Baseline Labs",
+        "description": "Lab work so your provider can review your health and decide on a starting dose."
       },
       {
         "icon": "fa-utensils",
         "name": "Simple Eating Guide",
         "tag": "Easy Meals",
-        "description": "Easy daily eating tips designed to protect your strong muscle while the weight comes off."
+        "description": "Eating guidance to support your nutrition during weight management."
       }
-    ]
+    ],
+    "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Diets Fail</span>",
-    "body": "Most diets fail because your brain tells you that you are hungry. GLP-1 prescription treatments send natural fullness signals to your brain. You eat less naturally without feeling starved or weak. You burn fat while keeping your muscle.",
+    "headline": "How GLP-1<br><span class=\"text-primary\">Treatments Work</span>",
+    "body": "GLP-1 medications mimic a natural hormone that signals fullness to the brain and slows stomach emptying, which can reduce appetite. They are used together with nutrition and physical activity. Some GLP-1 medications are FDA-approved brand-name products, and others are compounded and not FDA-approved. Results vary.",
     "bullets": [
       "Prescribed by real licensed medical doctors",
       "Simple weekly treatment done at home or in clinic",
-      "Protects muscle so you burn pure fat"
+      "Nutrition guidance as part of your plan"
     ],
     "stats": [
       {
-        "value": "Full",
-        "label": "No constant food cravings"
+        "value": "Appetite",
+        "label": "May reduce appetite; results vary"
       },
       {
         "value": "Easy",
         "label": "Simple weekly doctor plan"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
       {
         "icon": "fa-brain",
-        "title": "Turns Off Hunger Thoughts",
-        "detail": "Signals your brain that you are full after small meals so snacking stops naturally."
+        "title": "Appetite Signaling",
+        "detail": "These medications act on pathways that signal fullness, which may reduce appetite in some patients."
       },
       {
         "icon": "fa-dumbbell",
-        "title": "Keeps Your Strong Muscle",
-        "detail": "Our doctor plans protect your muscle so your body burns fat for fuel."
+        "title": "Nutrition Guidance",
+        "detail": "Your plan can include protein and nutrition guidance. Weight loss can include loss of lean mass, which is one reason clinician monitoring matters."
       }
     ]
   },
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
         "icon": "fa-fire",
-        "label": "Fat Burn"
+        "label": "Weight Management"
       },
       {
         "icon": "fa-dumbbell",
-        "label": "Muscle Kept"
+        "label": "Nutrition Guidance"
       },
       {
         "icon": "fa-brain",
-        "label": "No Hunger"
+        "label": "Appetite Support"
       },
       {
         "icon": "fa-chart-line",
@@ -248,42 +249,42 @@
     "rows": [
       {
         "metric": "Hunger Level",
-        "without": "Always hungry & tired",
-        "with": "Feels full & satisfied"
+        "without": "Self-directed dieting",
+        "with": "Clinician-guided plan"
       },
       {
-        "metric": "Fat Loss Speed",
-        "without": "Slow & frustrating",
-        "with": "Steady & doctor-backed"
+        "metric": "Weight Management",
+        "without": "No medical guidance",
+        "with": "Plan tailored to you; results vary"
       },
       {
-        "metric": "Muscle Protection",
-        "without": "Loses muscle & strength",
-        "with": "Protects muscle while burning fat"
+        "metric": "Nutrition Guidance",
+        "without": "Often none",
+        "with": "Protein and nutrition guidance"
       },
       {
-        "metric": "Medical Safety",
+        "metric": "Medical Oversight",
         "without": "Unsupervised / generic",
         "with": "Doctor-prescribed & lab-monitored"
       },
       {
-        "metric": "Long-Term Results",
-        "without": "Weight comes back",
-        "with": "Doctor guidance to keep it off"
+        "metric": "Ongoing Support",
+        "without": "Little follow-up",
+        "with": "Ongoing clinician follow-up"
       }
     ],
     "stacks": [
       {
-        "name": "Fast Fat Loss Plan",
+        "name": "Tirzepatide Plan",
         "tag": "Most Popular",
         "compounds": "Tirzepatide + Vitamin B12 Booster",
-        "description": "Combines dual-action prescription treatment with energy boosters. Designed for fast fat burn while keeping your strength up."
+        "description": "Prescription treatment combined with a vitamin B12 injection, as determined by your provider. Results vary."
       },
       {
         "name": "Essential Weight Loss Plan",
         "tag": "Great Starter",
         "compounds": "Semaglutide + Eating Guide",
-        "description": "Proven GLP-1 prescription paired with simple daily meal guidance. Perfect for your first doctor-guided weight loss journey."
+        "description": "GLP-1 prescription paired with simple daily meal guidance, as determined by your provider. Results vary."
       },
       {
         "name": "Advanced Management Protocol",
@@ -300,11 +301,11 @@
     },
     {
       "question": "How do GLP-1 weight loss treatments work?",
-      "answer": "GLP-1 treatments mimic your body's natural fullness hormone. This reduces hunger signals in your brain so you naturally eat smaller meals without feeling starved or craving snacks."
+      "answer": "GLP-1 medications mimic a natural hormone involved in appetite and digestion. This can reduce appetite and slow stomach emptying, so some patients feel full sooner and eat less. Results vary."
     },
     {
       "question": "Will I lose muscle while losing weight?",
-      "answer": "No. Our doctor-guided plans include simple eating tips and protein targets to make sure your body burns fat tissue while protecting your strong, healthy muscle."
+      "answer": "Weight loss can include loss of lean mass as well as fat. Your provider may recommend protein targets and strength activity to help support muscle, but outcomes vary."
     },
     {
       "question": "How do I get started?",

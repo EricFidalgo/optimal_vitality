@@ -154,7 +154,7 @@
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for safe, medical-grade vitamin infusions in a comfortable clinic suite."
+        "detail": "Looking for doctor-prescribed vitamin infusions in a comfortable clinic suite."
       }
     ]
   },
@@ -179,7 +179,7 @@
         "icon": "fa-tint",
         "name": "Myers' Cocktail Drip",
         "tag": "Most Popular",
-        "description": "The clinical gold standard IV drip, packed with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
+        "description": "A commonly used IV drip with Magnesium, B-Vitamins, Vitamin C, and Calcium for hydration and nutrient support."
       },
       {
         "icon": "fa-dumbbell",
@@ -199,7 +199,8 @@
         "tag": "Quick Booster",
         "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
       }
-    ]
+    ],
+    "notice": "Compounded medications are not FDA-approved. The FDA does not review compounded medications for safety, effectiveness, or quality before they are marketed. These products are prepared by a licensed pharmacy for individual patients when a licensed clinician determines that an FDA-approved product does not meet that patient’s specific clinical needs."
   },
   "science": {
     "badge": "How It Works",
@@ -220,12 +221,12 @@
         "label": "Average drip session time"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & RN administered"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
@@ -251,13 +252,13 @@
       "reality": "No. Oral vitamins must pass through digestion first, while IV drips deliver nutrients directly into your bloodstream for hydration and nutrient support."
     },
     {
-      "myth": "Is doctor-guided IV therapy safe?",
-      "reality": "Yes! Every drip is prescribed by a licensed doctor and administered by trained registered nurses following strict medical safety rules."
+      "myth": "How is IV therapy supervised?",
+      "reality": "Every drip is prescribed by a licensed doctor and administered by trained registered nurses. IV therapy carries risks, such as infection, vein irritation or allergic reaction, which your provider will discuss with you. Some formulations are compounded and are not FDA-approved."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
@@ -328,7 +329,7 @@
   "faqs": [
     {
       "question": "Do I need a doctor's consultation before getting an IV drip?",
-      "answer": "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor to make sure your drip is perfectly customized and safe."
+      "answer": "Yes. All IV vitamin infusions are prescribed medical treatments. You will complete a quick health review with our licensed medical doctor so your drip can be customized to you."
     },
     {
       "question": "What does the doctor-guided IV program include?",
@@ -343,8 +344,8 @@
       "answer": "Most wellness patients visit once or twice a month for high energy and immune health. Active athletes or those recovering from illness often get weekly drips."
     },
     {
-      "question": "Is IV therapy safe?",
-      "answer": "100% yes. All infusions are prescribed by licensed doctors, mixed in accredited pharmacies, and administered by trained registered nurses following strict medical safety rules."
+      "question": "How are IV infusions supervised?",
+      "answer": "All infusions are prescribed by licensed doctors, prepared by a pharmacy, and administered by trained registered nurses. IV therapy carries risks, and your provider will review them with you. Some formulations are compounded and are not FDA-approved."
     },
     {
       "question": "How do I get started with IV therapy?",

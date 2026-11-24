@@ -811,8 +811,8 @@
         "label": "Tests optimal ranges, not basic averages"
       },
       {
-        "value": "Safe",
-        "label": "Doctor reviewed & lab verified"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "value": "1-on-1",
@@ -820,7 +820,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
@@ -852,7 +852,7 @@
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
@@ -869,7 +869,7 @@
       },
       {
         "icon": "fa-shield-alt",
-        "label": "100% Safe"
+        "label": "Provider Reviewed"
       }
     ],
     "rows": [

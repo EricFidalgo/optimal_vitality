@@ -15,16 +15,16 @@
       "Hillsborough County"
     ],
     "heroHeadline": "OVI Wellness <br><span class='text-primary'>St. Pete</span>",
-    "heroSubheadline": "Pierda el peso no deseado, siéntase revitalizado y recupere su energía diaria. Guiado por proveedores de atención médica con licencia en Florida con análisis de sangre sencillos y tratamientos clínicamente evaluados. Los resultados individuales varían.",
+    "heroSubheadline": "Control médico de peso, terapia hormonal y atención de bienestar en St. Petersburg, guiados por médicos con licencia de Florida y comenzando con una evaluación médica y análisis de laboratorio. Los resultados varían.",
     "heroCTA": "Programar Evaluación Clínica",
-    "advantageHeadline": "Proveedores Reales. Seguridad Clínica. Resultados Médicos.",
-    "advantageText": "Cuidar de su cuerpo debe ser un proceso médico seguro. Nuestra clínica en St. Petersburg está dirigida por proveedores de atención médica con licencia. Primero evaluamos su perfil sanguíneo, creamos un plan personalizado para usted y lo guiamos en cada paso. Todos los tratamientos siguen las estrictas pautas de la junta médica de Florida y los estándares de cumplimiento de LegitScript. Los resultados individuales varían.",
+    "advantageHeadline": "Proveedores Reales. Supervisión Clínica. Atención Individual.",
+    "advantageText": "Cuidar de su cuerpo debe ser un proceso médico claro y supervisado. Nuestra clínica en St. Petersburg está dirigida por proveedores de atención médica con licencia. Primero evaluamos su perfil sanguíneo, creamos un plan personalizado para usted y lo guiamos en cada paso. Los tratamientos se brindan de acuerdo con los requisitos de la junta médica de Florida. Los resultados individuales varían.",
     "advantageImage": "assets/images/photos/peptide-therapy.jpg",
     "advantageBullets": [
       "Proveedores de Atención Médica con Licencia en Florida",
-      "Seguro y en Cumplimiento con LegitScript",
+      "Proveedores Médicos con Licencia de Florida",
       "Análisis de Sangre Previos al Tratamiento",
-      "Compuestos de Calidad Farmacéutica"
+      "Recetados Tras una Evaluación Médica"
     ],
     "treatmentsHeadline": "Programas Respaldados por Proveedores Médicos",
     "treatmentsSubheadline": "Elija el programa que se adapte a sus objetivos de salud. Cada plan incluye atención médica directa y evaluaciones de progreso.",
@@ -32,21 +32,21 @@
       {
         "title": "Optimización Hormonal (TRT)",
         "icon": "fa-syringe",
-        "desc": "Recupere su energía física y enfoque. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores de diagnóstico bajo supervisión médica. Los resultados individuales varían.",
+        "desc": "Terapia de reemplazo de testosterona (TRT) para hombres con síntomas y resultados de laboratorio compatibles con testosterona baja, con seguimiento de biomarcadores diagnósticos bajo supervisión médica.",
         "link": "services/hormone-optimization",
         "linkText": "Explorar Programa TRT"
       },
       {
         "title": "Pérdida de Peso Médica",
         "icon": "fa-weight-scale",
-        "desc": "Reduzca la grasa visceral mientras preserva activamente el músculo magro. Protocolos premium de Semaglutida y Tirzepatida calibrados para su metabolismo. Los resultados individuales varían.",
+        "desc": "Control médico de peso con semaglutida y tirzepatida, recetado después de una evaluación médica y monitoreado por un proveedor con licencia. Algunas opciones son compuestas y no están aprobadas por la FDA. Los resultados varían.",
         "link": "services/glp-1therapies",
         "linkText": "Explorar Pérdida de Peso"
       },
       {
         "title": "Terapia de Péptidos",
         "icon": "fa-vial",
-        "desc": "Apoye la curación de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de calidad farmacéutica (Opciones de péptidos, opciones de péptidos). Los resultados individuales varían.",
+        "desc": "Terapia con péptidos para pacientes interesados en apoyo para la recuperación de tejidos, la recuperación muscular y la salud intestinal, recetada después de una evaluación médica. Los péptidos son compuestos y no están aprobados por la FDA. Los resultados varían.",
         "link": "services/peptides",
         "linkText": "Explorar Péptidos"
       },
@@ -60,14 +60,14 @@
       {
         "title": "Salud Sexual",
         "icon": "fa-heart",
-        "desc": "Terapia dirigida para apoyar la capacidad de respuesta física, el deseo íntimo y la vitalidad general utilizando un equilibrio hormonal preciso e individual. Los resultados individuales varían.",
+        "desc": "Atención de bienestar sexual para hombres y mujeres, incluida la evaluación hormonal, cuando es clínicamente apropiado.",
         "link": "services/sexual-wellness",
         "linkText": "Explorar Salud Sexual"
       },
       {
         "title": "Hidratación de Nutrientes IV",
         "icon": "fa-tint",
-        "desc": "Proporcione glutatión, vitaminas esenciales e hidratación dirigida directamente al torrente sanguíneo para apoyar la absorción y la revitalización celular.",
+        "desc": "Hidratación IV e infusiones de vitaminas, incluida la glutatión, recetadas por un proveedor con licencia. Algunas formulaciones son compuestas y no están aprobadas por la FDA.",
         "link": "services/iv-wellness",
         "linkText": "Explorar Sueros IV"
       },
@@ -103,16 +103,16 @@
       "Pinellas County"
     ],
     "heroHeadline": "OVI Wellness <br><span class='text-primary'>Clínica de Tampa</span>",
-    "heroSubheadline": "Programas de pérdida de peso, TRT personalizada y tratamientos de bienestar para pacientes de Tampa. Visite nuestra clínica física en la cercana St. Pete o hable con su proveedor de atención médica en línea. Los resultados individuales varían.",
+    "heroSubheadline": "Control médico de peso, TRT y atención de bienestar para pacientes de Tampa. Visite nuestra clínica física en la cercana St. Pete o hable con su médico en línea. Los resultados varían.",
     "heroCTA": "Programar Evaluación Clínica",
     "advantageHeadline": "Atención Médica de Primer Nivel para Pacientes de Tampa",
-    "advantageText": "¿Vive en Tampa? Nuestra oficina médica física está a un corto trayecto cruzando el puente en St. Pete. Realícese sus análisis de sangre en persona, conozca a su proveedor de atención médica o reciba atención de telesalud desde casa. Proveedores de atención médica con licencia, revisión completa de análisis de sangre y protocolos de cumplimiento legal.",
+    "advantageText": "¿Vive en Tampa? Nuestra oficina médica física está a un corto trayecto cruzando el puente en St. Pete. Realícese sus análisis de sangre en persona, conozca a su proveedor de atención médica o reciba atención de telesalud desde casa. Proveedores de atención médica con licencia y una revisión completa de análisis de sangre antes de considerar el tratamiento.",
     "advantageImage": "assets/images/photos/peptide-therapy.jpg",
     "advantageBullets": [
       "Proveedores de Atención Médica con Licencia en Florida",
-      "Estándares de Cumplimiento de LegitScript",
+      "Proveedores Médicos con Licencia de Florida",
       "Visitas en Persona y de Telesalud",
-      "Medicina Segura y Conforme a Normativas"
+      "Recetados Tras una Evaluación Médica"
     ],
     "treatmentsHeadline": "Nuestros Programas Más Populares en Tampa",
     "treatmentsSubheadline": "Elija su protocolo. Comience con una evaluación clínica y un panel de sangre personalizado.",
@@ -120,21 +120,21 @@
       {
         "title": "Optimización Hormonal (TRT)",
         "icon": "fa-syringe",
-        "desc": "Recupere su energía física y enfoque. Terapia de reemplazo de testosterona (TRT) personalizada basada en el seguimiento de biomarcadores de diagnóstico bajo supervisión médica. Los resultados individuales varían.",
+        "desc": "Terapia de reemplazo de testosterona (TRT) para hombres con síntomas y resultados de laboratorio compatibles con testosterona baja, con seguimiento de biomarcadores diagnósticos bajo supervisión médica.",
         "link": "services/hormone-optimization",
         "linkText": "Explorar Programa TRT"
       },
       {
         "title": "Pérdida de Peso Médica",
         "icon": "fa-weight-scale",
-        "desc": "Reduzca la grasa visceral mientras preserva activamente el músculo magro. Protocolos premium de Semaglutida y Tirzepatida calibrados para su metabolismo. Los resultados individuales varían.",
+        "desc": "Control médico de peso con semaglutida y tirzepatida, recetado después de una evaluación médica y monitoreado por un proveedor con licencia. Algunas opciones son compuestas y no están aprobadas por la FDA. Los resultados varían.",
         "link": "services/glp-1therapies",
         "linkText": "Explorar Pérdida de Peso"
       },
       {
         "title": "Terapia de Péptidos",
         "icon": "fa-vial",
-        "desc": "Apoye la curación de tejidos, la recuperación muscular y la salud intestinal con péptidos de señalización celular de calidad farmacéutica (Opciones de péptidos, opciones de péptidos). Los resultados individuales varían.",
+        "desc": "Terapia con péptidos para pacientes interesados en apoyo para la recuperación de tejidos, la recuperación muscular y la salud intestinal, recetada después de una evaluación médica. Los péptidos son compuestos y no están aprobados por la FDA. Los resultados varían.",
         "link": "services/peptides",
         "linkText": "Explorar Péptidos"
       },
@@ -148,14 +148,14 @@
       {
         "title": "Salud Sexual",
         "icon": "fa-heart",
-        "desc": "Terapia dirigida para apoyar la capacidad de respuesta física, el deseo íntimo y la vitalidad general utilizando un equilibrio hormonal preciso e individual. Los resultados individuales varían.",
+        "desc": "Atención de bienestar sexual para hombres y mujeres, incluida la evaluación hormonal, cuando es clínicamente apropiado.",
         "link": "services/sexual-wellness",
         "linkText": "Explorar Salud Sexual"
       },
       {
         "title": "Hidratación de Nutrientes IV",
         "icon": "fa-tint",
-        "desc": "Proporcione glutatión, vitaminas esenciales e hidratación dirigida directamente al torrente sanguíneo para apoyar la absorción y la revitalización celular.",
+        "desc": "Hidratación IV e infusiones de vitaminas, incluida la glutatión, recetadas por un proveedor con licencia. Algunas formulaciones son compuestas y no están aprobadas por la FDA.",
         "link": "services/iv-wellness",
         "linkText": "Explorar Sueros IV"
       },

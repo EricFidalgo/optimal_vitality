@@ -241,10 +241,11 @@
       {
         "icon": "fa-flask",
         "name": "Evaluación de laboratorios",
-        "tag": "Seguridad clínica",
+        "tag": "Laboratorios iniciales",
         "description": "Pruebas diagnósticas para fundamentar las decisiones médicas."
       }
-    ]
+    ],
+    "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
   },
   "science": {
     "badge": "Cómo funciona",
@@ -261,16 +262,16 @@
         "label": "Apoyo evaluado caso por caso"
       },
       {
-        "value": "Seguro",
+        "value": "Monitoreado",
         "label": "Supervisión médica continua"
       },
       {
-        "value": "Calidad",
-        "label": "Compuestos de farmacia"
+        "value": "Farmacia",
+        "label": "Preparado por una farmacia con licencia"
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -296,8 +297,8 @@
       "reality": "Los planes médicos se estructuran por periodos definidos. Tras alcanzar sus metas, su médico evaluará opciones de mantenimiento."
     },
     {
-      "myth": "¿Es legal y segura la terapia?",
-      "reality": "Las opciones de tratamiento se discuten durante la consulta y se prescriben según las regulaciones médicas."
+      "myth": "¿Cómo se supervisa la terapia con péptidos?",
+      "reality": "La terapia con péptidos la receta un profesional clínico con licencia después de una evaluación y se monitorea con el tiempo. Los medicamentos compuestos no están aprobados por la FDA, y la FDA no los revisa en cuanto a seguridad, eficacia o calidad. Todos los tratamientos conllevan riesgos, que su proveedor analizará con usted."
     }
   ],
   "comparison": {
@@ -344,7 +345,7 @@
         "with": "Apoyo clínico evaluado"
       },
       {
-        "metric": "Seguridad",
+        "metric": "Supervisión médica",
         "without": "Riesgos de productos no regulados",
         "with": "Supervisión clínica continua"
       }
@@ -389,11 +390,15 @@
     },
     {
       "question": "¿Se pueden combinar con otras terapias?",
-      "answer": "Su médico evaluará posibles interacciones y podrá recomendar combinaciones seguras como parte de un plan integral."
+      "answer": "Su médico evaluará posibles interacciones y podrá recomendar combinaciones apropiadas como parte de un plan integral."
     },
     {
       "question": "¿Cómo puedo empezar?",
       "answer": "Comuníquese con nosotros para programar su evaluación clínica y explorar opciones según sus necesidades."
+    },
+    {
+      "question": "¿Los péptidos compuestos están aprobados por la FDA?",
+      "answer": "No. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente. Su proveedor le explicará las opciones disponibles y los riesgos de cada una."
     }
   ],
   "providerLine": "Servicios prestados por <a href=\"/team\">Sean Worix, PA-C</a> bajo la dirección médica de <a href=\"/team\">Micah Andrew Craig, M.D.</a>",

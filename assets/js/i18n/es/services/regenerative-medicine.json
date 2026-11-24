@@ -225,7 +225,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -251,7 +251,7 @@
       "reality": "No. El PRP y terapias similares no son células madre; utilizan componentes sanguíneos (plaquetas)."
     },
     {
-      "myth": "¿Es segura esta práctica médica?",
+      "myth": "¿Cómo se supervisa esta práctica médica?",
       "reality": "Las terapias son realizadas directamente por un proveedor de atención médica con licencia."
     }
   ],
@@ -294,7 +294,7 @@
         "with": "Procedimientos en consultorio médico"
       },
       {
-        "metric": "Evaluación de seguridad",
+        "metric": "Evaluación de riesgos",
         "without": "Riesgos no discutidos",
         "with": "Discusión médica previa"
       },

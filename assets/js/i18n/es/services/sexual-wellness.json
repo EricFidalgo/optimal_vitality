@@ -199,7 +199,8 @@
         "tag": "Evaluación médica",
         "description": "Sesiones confidenciales con proveedores de atención médica con licencia."
       }
-    ]
+    ],
+    "notice": "Los medicamentos compuestos no están aprobados por la FDA. La FDA no revisa los medicamentos compuestos en cuanto a seguridad, eficacia o calidad antes de su comercialización. Estos productos son preparados por una farmacia con licencia para pacientes individuales cuando un profesional clínico con licencia determina que un producto aprobado por la FDA no satisface las necesidades clínicas específicas de ese paciente."
   },
   "science": {
     "badge": "Cómo funciona",
@@ -247,7 +248,7 @@
       "reality": "No. Realizamos una evaluación integral que puede incluir diferentes terapias regenerativas y hormonales."
     },
     {
-      "myth": "¿Son seguras las terapias PRP?",
+      "myth": "¿Cómo se realiza la terapia con PRP?",
       "reality": "El PRP utiliza su propio plasma y es realizado por profesionales médicos capacitados en un entorno clínico."
     },
     {
@@ -270,7 +271,7 @@
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Seguro"
+        "label": "Supervisado médicamente"
       },
       {
         "icon": "fa-heartbeat",
@@ -299,7 +300,7 @@
         "with": "Seguimiento médico continuo"
       },
       {
-        "metric": "Seguridad",
+        "metric": "Evaluación de riesgos",
         "without": "Riesgos no evaluados",
         "with": "Revisión clínica completa"
       }
@@ -336,7 +337,7 @@
     },
     {
       "question": "¿Necesito pruebas de laboratorio?",
-      "answer": "Sí, para garantizar la seguridad clínica, requerimos pruebas de laboratorio recientes antes de prescribir terapias hormonales o protocolos avanzados."
+      "answer": "Sí, para respaldar la evaluación clínica, requerimos pruebas de laboratorio recientes antes de prescribir terapias hormonales o protocolos avanzados."
     },
     {
       "question": "¿Qué es la terapia PRP para la salud sexual?",

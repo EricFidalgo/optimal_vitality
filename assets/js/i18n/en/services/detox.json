@@ -5,20 +5,20 @@
   "href": "detox",
   "title": "Evaluation of Persistent Gastrointestinal or Exposure-Related Symptoms",
   "lead": "Clear out mold toxins, gut bugs, and heavy fatigue so you feel light, sharp, and energized.",
-  "description": "Symptoms such as fatigue, bloating, and cognitive complaints have many possible causes. A clinician can evaluate whether targeted testing is appropriate. Our doctors use simple lab tests and safe, prescription cleanses to restore your gut and energy.",
+  "description": "Symptoms such as fatigue, bloating, and cognitive complaints have many possible causes. A clinician can evaluate whether targeted testing is appropriate. Our doctors use lab testing and supportive care plans when clinically appropriate.",
   "icon": "fa-leaf",
   "delay": "-2s",
   "features": [
     "Simple lab test for hidden mold & gut bugs",
     "Doctor-prescribed cellular cleansing",
     "Fix bloating, brain fog & constant fatigue",
-    "100% doctor-checked for your safety"
+    "Supervised by licensed clinicians"
   ],
   "image": "assets/images/photos/team-group.jpg",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "Mold & Gut Testing and Detox Care in St. Petersburg | OVI Wellness",
   "pageDescription": "Doctor-guided gut and mold-related care in St. Petersburg, FL, starting with GI-MAP and mycotoxin testing and a personalized plan.",
-  "heroHeadline": "Reset Your Gut &<br><span class=\"text-primary\">Systemic Energy</span>",
+  "heroHeadline": "Gut Health &<br><span class=\"text-primary\">Detox Support</span>",
   "heroTitle": "Gut & Mold-Related Care in St. Petersburg, FL",
   "heroSubheadline": "Prescription Mold & Gut Detox protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -92,7 +92,7 @@
         "name": "Total Mold & Mycotoxin Clearance",
         "peptides": "Prescription Antifungal + Cellular Binders",
         "icon": "fa-disease",
-        "desc": "A simple doctor-guided plan that tests for mold toxins and uses safe prescription binders to clear them from your cells.",
+        "desc": "A doctor-guided plan that tests for mold exposure markers and, when clinically appropriate, uses prescribed supportive treatment.",
         "goalModifiers": {
           "no": "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
           "yes": "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
@@ -132,7 +132,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for Detox Care?",
-    "intro": "Our detox protocols are safe, medical-grade plans supervised by licensed doctors. We test your health markers first so you get the exact right treatment for your body.",
+    "intro": "Detox care is a supportive wellness approach planned by licensed doctors. We test your health markers first to decide what is appropriate for you. Results vary.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -154,7 +154,7 @@
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for safe, doctor-prescribed lab testing and targeted cleansing."
+        "detail": "Looking for doctor-prescribed lab testing and targeted supportive care."
       }
     ]
   },
@@ -173,7 +173,7 @@
         "icon": "fa-leaf",
         "name": "Prescription Antifungal Therapy",
         "tag": "Mold Clear",
-        "description": "Targeted prescription care to clear mold residues from your liver, tissues, and gut safely."
+        "description": "Targeted prescription care for patients with mold-related findings, when clinically appropriate."
       },
       {
         "icon": "fa-bug",
@@ -196,15 +196,15 @@
       {
         "icon": "fa-flask",
         "name": "Doctor Lab Check",
-        "tag": "Safety First",
-        "description": "Comprehensive blood and urine tests so your doctor can track your progress and keep you safe."
+        "tag": "Baseline Labs",
+        "description": "Comprehensive blood and urine tests so your doctor can review your health and track your progress."
       }
     ]
   },
   "science": {
     "badge": "How It Works",
     "headline": "Why It Works When<br><span class=\"text-primary\">Juice Fasting Fails</span>",
-    "body": "Juice fasts only flush water and miss deep mold toxins trapped in your fatty tissues and liver. Our doctor-guided protocols use real lab testing to pinpoint exact toxins. We then prescribe medical binders and antifungals that latch onto toxins and pull them out of your body safely.",
+    "body": "Juice fasts only flush water and do not test for mold or gut findings. Our doctor-guided protocols use lab testing to look for specific markers. When clinically appropriate, we then prescribe medical binders and antifungals under supervision. Results vary.",
     "bullets": [
       "Prescribed & monitored by licensed medical doctors",
       "Based on real urine and blood lab tests",
@@ -216,8 +216,8 @@
         "label": "Pulls deep mold & gut toxins"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "value": "0%",
@@ -225,7 +225,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
@@ -244,20 +244,20 @@
   "myths": [
     {
       "myth": "Do I have to go on an extreme juice fast?",
-      "reality": "No. Extreme juice fasts do not clear deep mold or gut bugs. Our doctor plans use safe prescription binders and clean eating so you eat normally while healing."
+      "reality": "No. Extreme juice fasts are not a medical treatment for mold or gut findings. Our doctor plans are based on lab testing and clinical judgment, and you eat normally."
     },
     {
       "myth": "Is a medical detox harsh on my body?",
-      "reality": "No. Our doctors customize your starting dose based on your lab work and check in regularly to make sure your cleanse is smooth, gentle, and effective."
+      "reality": "No. Our doctors customize your starting dose based on your lab work and check in regularly. Individual responses vary."
     },
     {
-      "myth": "Is doctor-guided detox therapy safe?",
-      "reality": "Yes. All treatments use FDA-approved medications and natural binders prescribed directly by licensed medical doctors under strict Florida health guidelines."
+      "myth": "How is detox care supervised?",
+      "reality": "Treatments are prescribed by licensed medical doctors after an evaluation. All treatments carry risks, which your provider will discuss with you. Some medications may be compounded, and compounded medications are not FDA-approved."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {

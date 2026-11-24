@@ -12,13 +12,13 @@
     "Relieve stubborn joint aches & stiffness",
     "Natural hair & skin restoration",
     "Restore intimate health & confidence",
-    "100% doctor-checked for your safety"
+    "Supervised by licensed clinicians"
   ],
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
   "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
-  "heroHeadline": "Regenerate.<br><span class=\"text-primary\">Restore.</span> Rebuild.",
+  "heroHeadline": "Regenerative Medicine<br><span class=\"text-primary\">Under Physician Care</span>",
   "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
   "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
@@ -132,7 +132,7 @@
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for Regenerative Care?",
-    "intro": "Our regenerative treatments use your body's own biological strength, supervised by licensed medical doctors. We check your health first to make sure you get safe, targeted care.",
+    "intro": "Regenerative treatments such as PRP use your own blood and are provided by licensed medical doctors. We check your health first to decide whether treatment is appropriate for you.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -154,7 +154,7 @@
       },
       {
         "label": "Ready for Doctor Care",
-        "detail": "Looking for safe, doctor-administered treatments in a comfortable clinic."
+        "detail": "Looking for doctor-administered treatments in a comfortable clinic."
       }
     ]
   },
@@ -216,8 +216,8 @@
         "label": "Uses your body's own growth factors"
       },
       {
-        "value": "Safe",
-        "label": "Doctor supervised & lab checked"
+        "value": "Monitored",
+        "label": "Licensed clinician oversight & lab monitoring"
       },
       {
         "value": "0%",
@@ -225,7 +225,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Rx Doctor Certified"
+        "label": "Licensed Provider Oversight"
       }
     ],
     "cards": [
@@ -251,13 +251,13 @@
       "reality": "No. PRP is made from your own blood and is not a stem-cell product. It uses concentrated platelets and plasma to support your body's natural repair processes."
     },
     {
-      "myth": "Is doctor-guided regenerative medicine safe?",
-      "reality": "Yes. All treatments use natural, bio-compatible compounds administered directly by licensed medical doctors under strict Florida health guidelines."
+      "myth": "How is regenerative medicine supervised?",
+      "reality": "Treatments are administered by licensed medical doctors after an evaluation. All treatments carry risks, which your provider will discuss with you, and results vary."
     }
   ],
   "comparison": {
     "headline": "Doctor-Guided Care vs. Doing It Alone",
-    "subheadline": "See why doctor supervision gets you better, safer, and longer-lasting results.",
+    "subheadline": "See how doctor supervision differs from doing it alone.",
     "ctaText": "Call Our Clinic Today",
     "mobileStats": [
       {
@@ -266,7 +266,7 @@
       },
       {
         "icon": "fa-shield-alt",
-        "label": "Natural Safety"
+        "label": "Doctor Administered"
       },
       {
         "icon": "fa-bolt",
@@ -294,9 +294,9 @@
         "with": "Back to normal same day"
       },
       {
-        "metric": "Safety Profile",
-        "without": "High risk & side effects",
-        "with": "100% natural bio-compatible"
+        "metric": "Risks & Side Effects",
+        "without": "Depends on the treatment",
+        "with": "Reviewed with your provider"
       },
       {
         "metric": "Long-Term Relief",

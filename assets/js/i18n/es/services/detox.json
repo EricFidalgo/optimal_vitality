@@ -154,7 +154,7 @@
       },
       {
         "label": "Listo para atención clínica",
-        "detail": "Buscando pruebas de laboratorio seguras prescritas por médicos y atención médica dirigida."
+        "detail": "Buscando pruebas de laboratorio prescritas por médicos y atención médica dirigida."
       }
     ]
   },
@@ -225,7 +225,7 @@
       },
       {
         "icon": "fa-user-md",
-        "label": "Atención médica certificada"
+        "label": "Supervisión de un proveedor con licencia"
       }
     ],
     "cards": [
@@ -251,7 +251,7 @@
       "reality": "Su proveedor de atención médica con licencia adaptará el plan basándose en sus análisis y realizará seguimientos regulares."
     },
     {
-      "myth": "¿Es segura la terapia guiada por médicos?",
+      "myth": "¿Cómo se supervisa la terapia guiada por médicos?",
       "reality": "Todos los tratamientos son recetados y supervisados por un proveedor de atención médica con licencia según las pautas clínicas correspondientes."
     }
   ],
