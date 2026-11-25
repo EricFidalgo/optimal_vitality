@@ -5,26 +5,26 @@
   "href": "regenerative-medicine",
   "title": "PRP Consultation for Selected Musculoskeletal or Aesthetic Uses",
   "lead": "Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.",
-  "description": "We use your body's own natural power to heal damaged joints, revive skin, and restore thick, healthy hair—100% doctor-prescribed without invasive surgery.",
+  "description": "Regenerative medicine options such as PRP use your own blood. A licensed provider evaluates whether treatment is appropriate for you. Results vary.",
   "icon": "fa-heartbeat",
   "delay": "-3s",
   "features": [
     "Relieve stubborn joint aches & stiffness",
-    "Natural hair & skin restoration",
-    "Restore intimate health & confidence",
+    "PRP options for hair & skin",
+    "Sexual wellness options",
     "Supervised by licensed clinicians"
   ],
   "image": "",
   "ctaText": "Book Your Doctor Consultation",
   "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
-  "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
+  "pageDescription": "Doctor-led PRP for joints, skin and hair in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
   "heroHeadline": "Regenerative Medicine<br><span class=\"text-primary\">Under Physician Care</span>",
   "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
   "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
     "badge": "Quick 1-Minute Assessment",
-    "headline": "Find Your Best Healing Plan",
+    "headline": "Find the Right Care Plan",
     "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
     "step1": {
       "question": "What is your main concern right now?",
@@ -88,44 +88,44 @@
     },
     "protocols": {
       "joint": {
-        "tag": "Recommended Joint Repair Plan",
-        "name": "Total Joint & Cellular Repair Plan",
+        "tag": "Recommended Joint Support Plan",
+        "name": "Joint Support Plan",
         "peptides": "Prescription PRP + PRP Therapy",
         "icon": "fa-bone",
-        "desc": "Concentrates your body's natural healing factors to soothe joint inflammation and rebuild damaged tissue naturally.",
+        "desc": "PRP uses concentrated platelets from your own blood and may be considered for some joint concerns, if clinically appropriate.",
         "goalModifiers": {
           "no": "Our doctor will conduct a quick knee or shoulder evaluation to set your starting dose.",
           "yes": "Our doctor will adjust your cellular density for maximum long-term relief."
         },
-        "social": "Over 50 local patients are currently using this joint recovery plan."
+        "social": "Results vary by patient."
       },
       "hair": {
         "tag": "Hair & Scalp Plan",
-        "name": "Natural Scalp & Hair Restoration",
+        "name": "Scalp & Hair PRP Plan",
         "peptides": "Prescription PRP + Scalp PRP Therapy",
         "icon": "fa-cut",
-        "desc": "Wakes up dormant hair follicles using natural growth signals to bring back thicker, fuller hair.",
+        "desc": "PRP is used off-label for some types of hair thinning, and results vary.",
         "goalModifiers": {
           "no": "First-time plan designed to activate sleeping hair roots over simple sessions.",
-          "yes": "Booster plan tailored to maintain high follicle density and thickness."
+          "yes": "Maintenance sessions may be recommended by your provider. Results vary."
         },
         "social": "82 patients saw visible hair density improvements with this plan."
       },
       "intimacy": {
         "tag": "Intimacy & Confidence Plan",
         "name": "Cellular Intimacy Reset (P-Shot)",
-        "peptides": "Natural PRP + Growth Factor Booster",
+        "peptides": "PRP (Platelet-Rich Plasma)",
         "icon": "fa-heart",
-        "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence.",
+        "desc": "A PRP procedure that your provider may discuss for sexual wellness concerns. Results vary and are not guaranteed.",
         "goalModifiers": {
           "no": "Our doctor will guide you through a comfortable, simple starting treatment.",
-          "yes": "Enhanced booster protocol designed to sustain long-term vitality."
+          "yes": "Repeat sessions may be discussed by your provider. Results vary."
         },
         "social": "69 local patients completed this intimacy treatment recently."
       }
     },
     "timelineMap": {
-      "mild": "4–6 weeks (Fast Track Plan)",
+      "mild": "4–6 weeks (Shorter Plan)",
       "severe": "8–12 weeks (Standard Doctor Plan)"
     }
   },
@@ -142,7 +142,7 @@
       },
       {
         "label": "Hair Thinning",
-        "detail": "Men and women looking for natural, non-surgical hair restoration."
+        "detail": "Men and women interested in non-surgical options for hair thinning."
       },
       {
         "label": "Intimate Wellness",
@@ -150,7 +150,7 @@
       },
       {
         "label": "Want Surgery Avoided",
-        "detail": "Anyone seeking natural healing without risky surgery or synthetic pills."
+        "detail": "Anyone interested in non-surgical options and willing to discuss risks and alternatives."
       },
       {
         "label": "Ready for Doctor Care",
@@ -167,29 +167,29 @@
         "icon": "fa-dna",
         "name": "PRP Cellular Therapy",
         "tag": "Most Advanced",
-        "description": "Advanced cellular signals that tell damaged cells to repair, reduce joint swelling, and rebuild healthy tissue fast."
+        "description": "Regenerative option for joint concerns, when clinically appropriate. Results vary."
       },
       {
         "icon": "fa-tint",
         "name": "Platelet-Rich Plasma (PRP)",
         "tag": "Natural Healing",
-        "description": "Concentrates your own blood's natural growth factors to rebuild joints, revive hair, and smooth skin."
+        "description": "PRP concentrates platelets from your own blood and may be used for joint, hair and skin concerns, when clinically appropriate. Results vary."
       },
       {
         "icon": "fa-mars",
         "name": "P-Shot (Men's Intimacy)",
         "tag": "For Men",
-        "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
+        "description": "PRP treatment for men’s sexual wellness concerns. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
       },
       {
         "icon": "fa-wand-magic-sparkles",
-        "name": "Facial PRP Bio-Rejuvenation",
-        "tag": "Skin Rejuvenation",
-        "description": "Natural PRP facial therapy using your body's growth factors to restore skin elasticity, collagen, and youthful glow."
+        "name": "Facial PRP",
+        "tag": "Skin & Cosmetic",
+        "description": "PRP facial treatment using platelets from your own blood, for cosmetic goals. Results vary."
       },
       {
         "icon": "fa-leaf",
-        "name": "Hair Restoration Therapy",
+        "name": "Hair PRP",
         "tag": "Thicker Hair",
         "description": "PRP and PRP scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth."
       },
@@ -203,11 +203,11 @@
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Pain Pills Fail</span>",
-    "body": "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (PRP), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
+    "headline": "How PRP Differs<br><span class=\"text-primary\">From Pain Medication</span>",
+    "body": "PRP uses platelets from your own blood, which contain growth factors and signaling proteins. Providers use PRP to support the body’s natural repair processes, and research on its effects varies by condition. Results vary.",
     "bullets": [
       "Prescribed & performed by licensed medical doctors",
-      "100% natural compounds matching your body",
+      "Uses your own blood when PRP is appropriate",
       "Non-surgical, quick in-office treatments"
     ],
     "stats": [
@@ -220,8 +220,8 @@
         "label": "Licensed clinician oversight & lab monitoring"
       },
       {
-        "value": "0%",
-        "label": "Synthetic pain drugs needed"
+        "value": "Your own blood",
+        "label": "PRP is made from your blood sample"
       },
       {
         "icon": "fa-user-md",
@@ -231,20 +231,20 @@
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Natural PRP Healing",
-        "detail": "PRP uses a quick sample of your blood to concentrate your body's own healing power with zero rejection risk."
+        "title": "PRP From Your Own Blood",
+        "detail": "PRP uses a sample of your own blood. Procedures still carry risks, which your provider will discuss with you."
       },
       {
         "icon": "fa-bullseye",
         "title": "PRP Cell Messaging",
-        "detail": "PRP deliver natural molecular messages that tell damaged cells exactly how to rebuild."
+        "detail": "Platelets release growth factors and signaling proteins. How this translates to results varies by condition and patient."
       }
     ]
   },
   "myths": [
     {
       "myth": "Is PRP or regenerative therapy painful?",
-      "reality": "No. Our doctors apply gentle topical numbing before any treatment so you feel comfortable. Most patients return to normal daily activities the very same day."
+      "reality": "Discomfort varies. Our doctors may apply topical numbing before treatment, and your provider will explain what to expect."
     },
     {
       "myth": "Are PRP stem cells?",
@@ -262,7 +262,7 @@
     "mobileStats": [
       {
         "icon": "fa-dna",
-        "label": "Cellular Healing"
+        "label": "PRP Option"
       },
       {
         "icon": "fa-shield-alt",
@@ -281,17 +281,17 @@
       {
         "metric": "How It Works",
         "without": "Numbs pain temporarily",
-        "with": "Rebuilds damaged tissue at source"
+        "with": "Evaluated by a clinician"
       },
       {
         "metric": "Treatment Type",
         "without": "Synthetic pain drugs / surgery",
-        "with": "Natural PRP & PRP"
+        "with": "PRP from your own blood"
       },
       {
         "metric": "Recovery Time",
         "without": "Weeks of downtime / surgery",
-        "with": "Back to normal same day"
+        "with": "Often minimal downtime; varies"
       },
       {
         "metric": "Risks & Side Effects",
@@ -299,29 +299,29 @@
         "with": "Reviewed with your provider"
       },
       {
-        "metric": "Long-Term Relief",
-        "without": "Wears off quickly",
-        "with": "Lasting natural cellular repair"
+        "metric": "Follow-up",
+        "without": "Little follow-up",
+        "with": "Provider follow-up"
       }
     ],
     "stacks": [
       {
-        "name": "Complete Joint Repair Plan",
+        "name": "Joint Support Plan",
         "tag": "Most Popular",
         "compounds": "PRP + PRP Protocol",
-        "description": "Our top joint protocol combining natural PRP growth factors with PRP cell signals for fast pain relief."
+        "description": "PRP-based joint plan, when clinically appropriate. Results vary."
       },
       {
-        "name": "Intimacy Restoration Package",
+        "name": "Sexual Wellness PRP Package",
         "tag": "Sexual Wellness",
         "compounds": "P-Shot + Doctor Review",
         "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence."
       },
       {
-        "name": "Natural Hair Restoration Plan",
+        "name": "Hair PRP Plan",
         "tag": "Thicker Scalp",
         "compounds": "PRP + Scalp PRP Therapy",
-        "description": "Dual-action scalp treatment designed to awaken sleeping hair roots and boost natural hair density."
+        "description": "PRP scalp treatment for hair thinning, used off-label. Results vary."
       }
     ]
   },
@@ -336,11 +336,11 @@
     },
     {
       "question": "Are PRP injections painful?",
-      "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
+      "answer": "Discomfort varies. We use topical numbing before procedures, and your provider will explain what to expect. Many patients return to normal activities the same day, but recovery varies."
     },
     {
       "question": "How many sessions do I need to see results?",
-      "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
+      "answer": "Results and the number of sessions vary by person and by treatment area. Your provider will recommend a schedule after your evaluation. Results vary and are not guaranteed."
     },
     {
       "question": "How does PRP differ from stem cell treatments?",

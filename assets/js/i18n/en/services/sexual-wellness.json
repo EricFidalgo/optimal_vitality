@@ -5,13 +5,13 @@
   "href": "sexual-wellness",
   "title": "Confidential Sexual Health Evaluation and Treatment Options",
   "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
-  "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot) and custom hormone balancing to bring back your passion and performance.",
+  "description": "Age, stress and health conditions can affect sexual desire and function. A licensed provider evaluates your history and labs and discusses PRP (P-Shot), hormone therapy and other options when clinically appropriate. Results vary.",
   "icon": "fa-heart",
   "delay": "-4s",
   "features": [
-    "Bring back natural drive & stamina",
+    "Evaluation for low desire & stamina",
     "P-Shot for men & Bio-Identical HRT for women",
-    "100% doctor-prescribed & discreet",
+    "Doctor-prescribed & discreet",
     "Supervised by licensed clinicians"
   ],
   "image": "assets/images/photos/team-group.jpg",
@@ -89,10 +89,10 @@
     "protocols": {
       "men": {
         "tag": "Recommended Men's Plan",
-        "name": "The Male Peak Performance Plan (P-Shot + TRT)",
+        "name": "Male Sexual Wellness Plan (P-Shot + TRT)",
         "peptides": "Prescription P-Shot + Hormone Support",
         "icon": "fa-mars",
-        "desc": "Combines natural PRP growth factors with doctor hormone balancing to restore strong blood flow, stamina, and confidence.",
+        "desc": "Combines PRP with hormone therapy, if clinically appropriate, for men with sexual wellness concerns. Results vary.",
         "goalModifiers": {
           "no": "First-time plan starting with a comfortable doctor evaluation and blood panel.",
           "yes": "Advanced protocol designed to bypass weak OTC pills and deliver real clinical results."
@@ -104,19 +104,19 @@
         "name": "The Female Intimacy Reset (Bio-Identical HRT)",
         "peptides": "Prescription Bio-Identical HRT + PT-141",
         "icon": "fa-venus",
-        "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using targeted hormone balancing.",
+        "desc": "Hormone-based options your provider may discuss for women with sexual wellness concerns. Results vary.",
         "goalModifiers": {
           "no": "Gentle starting plan supervised by compassionate medical doctors.",
-          "yes": "Targeted booster protocol for deep cellular arousal and lasting satisfaction."
+          "yes": "Additional options may be discussed by your provider."
         },
-        "social": "74 female patients restored their intimate confidence with this protocol."
+        "social": "Results vary by patient."
       },
       "balance": {
         "tag": "Couples Reset Plan",
         "name": "Total Passion & Hormonal Synergy Stack",
         "peptides": "Prescription PT-141 / Kisspeptin + Hormone Panels",
         "icon": "fa-heart",
-        "desc": "Comprehensive intimacy stack designed to trigger natural brain desire signals and boost physical energy.",
+        "desc": "A comprehensive evaluation, which may include peptide and hormone options, when clinically appropriate.",
         "goalModifiers": {
           "no": "Full baseline health check to align both partner's energy and passion levels.",
           "yes": "High-potency therapy built to revive deep intimacy and stamina."
@@ -125,7 +125,7 @@
       }
     },
     "timelineMap": {
-      "months": "4–6 weeks (Fast Track Plan)",
+      "months": "4–6 weeks (Shorter Plan)",
       "years": "8–12 weeks (Full Reset Plan)"
     }
   },
@@ -167,25 +167,25 @@
         "icon": "fa-mars",
         "name": "P-Shot (Priapus Shot)",
         "tag": "For Men",
-        "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
+        "description": "PRP treatment for men with sexual wellness concerns. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
       },
       {
         "icon": "fa-venus",
         "name": "PT-141 Women's Wellness",
         "tag": "For Women",
-        "description": "Doctor-guided peptide therapy for women to restore natural desire, nerve sensitivity, and intimate satisfaction."
+        "description": "Doctor-guided peptide therapy (PT-141) for women with low sexual desire, when clinically appropriate."
       },
       {
         "icon": "fa-syringe",
         "name": "Doctor TRT for Men",
-        "tag": "Stamina Boost",
-        "description": "Physician-guided testosterone balancing to rebuild daily energy, muscle strength, and intimate stamina."
+        "tag": "Hormone Therapy",
+        "description": "Physician-guided testosterone therapy for men with low testosterone confirmed by symptoms and labs."
       },
       {
         "icon": "fa-heart",
         "name": "Bio-Identical HRT for Women",
         "tag": "Hormone Reset",
-        "description": "Natural bio-identical estrogen and progesterone balancing to fix mood slumps, night sweats, and low drive."
+        "description": "Bio-identical estrogen and progesterone therapy for women with symptoms such as mood changes or night sweats, when clinically appropriate."
       },
       {
         "icon": "fa-brain",
@@ -204,8 +204,8 @@
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Blue Pills Fail</span>",
-    "body": "Pills only temporarily force blood flow and often cause headaches or high blood pressure. Our doctor-guided treatments repair underlying tissues and balance natural hormones. Using natural growth factors (PRP) and brain desire signals (PT-141), we rebuild long-term stamina, sensitivity, and natural drive.",
+    "headline": "A Medical Approach<br><span class=\"text-primary\">to Sexual Wellness</span>",
+    "body": "Sexual wellness is influenced by hormonal, vascular and psychological factors. A licensed provider evaluates your history and labs and discusses options such as PRP, hormone therapy or peptides when clinically appropriate. All treatments carry risks, and results vary.",
     "bullets": [
       "Prescribed & administered by licensed medical doctors",
       "Bio-identical options when clinically appropriate",
@@ -221,8 +221,8 @@
         "label": "Licensed clinician oversight & lab monitoring"
       },
       {
-        "value": "Natural",
-        "label": "Uses your body's growth factors"
+        "value": "PRP",
+        "label": "Uses platelets from your own blood"
       },
       {
         "icon": "fa-user-md",
@@ -232,12 +232,12 @@
     "cards": [
       {
         "icon": "fa-microscope",
-        "title": "Natural PRP Tissue Repair",
-        "detail": "The P-Shot uses concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
+        "title": "PRP From Your Own Blood",
+        "detail": "The P-Shot uses platelet-rich plasma prepared from your own blood. It is used off-label for sexual wellness, evidence is limited, and results vary."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Natural Brain Desire Signaling",
+        "title": "Brain Desire Signaling",
         "detail": "Peptides like PT-141 act on receptors in the brain involved in sexual desire. Your provider will review benefits and risks with you before recommending any treatment."
       }
     ]
@@ -245,11 +245,11 @@
   "myths": [
     {
       "myth": "Are intimacy injections painful?",
-      "reality": "No. Our doctors apply strong, prescription topical numbing before any procedure. Most patients report feeling only mild pressure and resume normal daily activities immediately."
+      "reality": "Discomfort varies. Prescription topical numbing may be used before a procedure, and your provider will explain what to expect."
     },
     {
       "myth": "Do intimacy treatments only work for men?",
-      "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
+      "reality": "No. Women can also experience hormonal and tissue changes. Your provider may discuss bio-identical hormone therapy or peptide therapy when clinically appropriate. Results vary."
     },
     {
       "myth": "How is sexual wellness care supervised?",
@@ -282,7 +282,7 @@
       {
         "metric": "How It Works",
         "without": "Temporary pill mask",
-        "with": "Rebuilds tissue & balances hormones"
+        "with": "Evaluates hormonal and tissue factors"
       },
       {
         "metric": "Side Effect Risk",
@@ -292,7 +292,7 @@
       {
         "metric": "Sensory Feeling",
         "without": "Unchanged or numb",
-        "with": "Restored nerve sensitivity & passion"
+        "with": "Discussed with your provider; results vary"
       },
       {
         "metric": "Medical Oversight",
@@ -302,12 +302,12 @@
       {
         "metric": "Long-Term Outcome",
         "without": "Wears off in hours",
-        "with": "Long-lasting natural performance"
+        "with": "Ongoing follow-up; results vary"
       }
     ],
     "stacks": [
       {
-        "name": "Men's Peak Intimacy Stack",
+        "name": "Men’s Sexual Wellness Plan",
         "tag": "Most Popular",
         "compounds": "P-Shot + Doctor TRT Protocol",
         "description": "Our top male protocol combining the P-Shot for blood flow with TRT for stamina and energy."
@@ -316,10 +316,10 @@
         "name": "Women's Vitality & Sensation Stack",
         "tag": "For Women",
         "compounds": "Bio-Identical HRT + PT-141",
-        "description": "Complete female intimacy reset restoring nerve sensitivity, lubrication, and emotional balance."
+        "description": "Female sexual wellness plan, which may include hormone therapy or peptides, when clinically appropriate. Results vary."
       },
       {
-        "name": "Couples Passion & Desire Booster",
+        "name": "Couples Sexual Wellness Plan",
         "tag": "Desire Reset",
         "compounds": "PT-141 + Hormone Check",
         "description": "Central brain desire peptide therapy designed to ignite spontaneous passion and stamina."
@@ -337,15 +337,15 @@
     },
     {
       "question": "Are P-Shot treatments painful?",
-      "answer": "Not at all! We apply strong medical-grade numbing cream before every treatment. Most patients feel only slight pressure and go right back to work or normal activities the same day."
+      "answer": "Discomfort varies. We apply prescription numbing cream before treatment, and your provider will explain what to expect. Many patients return to normal activities the same day, but recovery varies."
     },
     {
-      "question": "How fast will I notice results from intimacy therapy?",
-      "answer": "Many patients notice improved sensitivity, blood flow, and desire within 2 to 4 weeks. Full tissue regeneration and peak results build over 8 to 12 weeks."
+      "question": "When might I notice any changes from sexual wellness treatment?",
+      "answer": "Timelines vary by person and by treatment, and some people notice no change. Your provider will review your progress and adjust the plan. Results vary and are not guaranteed."
     },
     {
       "question": "Are these treatments private and confidential?",
-      "answer": "100% yes. Your privacy is our top priority. All consultations and treatments take place in private rooms in our discreet St. Petersburg clinic."
+      "answer": "Yes. Your privacy is a priority. All consultations and treatments take place in private rooms in our discreet St. Petersburg clinic."
     },
     {
       "question": "How do I get started with sexual wellness care?",

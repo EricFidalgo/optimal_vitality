@@ -53,7 +53,7 @@
       {
         "title": "Medicina Regenerativa",
         "icon": "fa-heartbeat",
-        "desc": "Aproveche las terapias de PRP, plasma rico en plaquetas autólogo y factores de crecimiento clínico para la reparación celular, folicular y articular. Los resultados individuales varían.",
+        "desc": "PRP (plasma rico en plaquetas) preparado con su propia sangre, para inquietudes articulares, capilares y de la piel, después de una evaluación. Los resultados varían.",
         "link": "services/regenerative-medicine",
         "linkText": "Explorar Regeneración"
       },
@@ -74,7 +74,7 @@
       {
         "title": "Protocolos de Desintoxicación",
         "icon": "fa-leaf",
-        "desc": "Protocolos de limpieza integrales para apoyar la salud sistémica y la función intestinal óptima.",
+        "desc": "Pruebas de laboratorio para inquietudes de moho e intestinales y cuidado de apoyo, cuando es clínicamente apropiado.",
         "link": "services/detox",
         "linkText": "Explorar Desintoxicación"
       },
@@ -141,7 +141,7 @@
       {
         "title": "Medicina Regenerativa",
         "icon": "fa-heartbeat",
-        "desc": "Aproveche las terapias de PRP, plasma rico en plaquetas autólogo y factores de crecimiento clínico para la reparación celular, folicular y articular. Los resultados individuales varían.",
+        "desc": "PRP (plasma rico en plaquetas) preparado con su propia sangre, para inquietudes articulares, capilares y de la piel, después de una evaluación. Los resultados varían.",
         "link": "services/regenerative-medicine",
         "linkText": "Explorar Regeneración"
       },
@@ -162,7 +162,7 @@
       {
         "title": "Protocolos de Desintoxicación",
         "icon": "fa-leaf",
-        "desc": "Protocolos de limpieza integrales para apoyar la salud sistémica y la función intestinal óptima.",
+        "desc": "Pruebas de laboratorio para inquietudes de moho e intestinales y cuidado de apoyo, cuando es clínicamente apropiado.",
         "link": "services/detox",
         "linkText": "Explorar Desintoxicación"
       },

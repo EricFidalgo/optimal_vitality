@@ -53,7 +53,7 @@
       {
         "title": "Regenerative Medicine",
         "icon": "fa-heartbeat",
-        "desc": "Harness PRP therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+        "desc": "PRP (platelet-rich plasma) prepared from your own blood, for joint, hair and skin concerns, after an evaluation. Results vary.",
         "link": "services/regenerative-medicine",
         "linkText": "Explore Regeneration"
       },
@@ -74,7 +74,7 @@
       {
         "title": "Detoxification Protocols",
         "icon": "fa-leaf",
-        "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
+        "desc": "Lab testing for mold and gut concerns and supportive care, when clinically appropriate.",
         "link": "services/detox",
         "linkText": "Explore Detox"
       },
@@ -105,7 +105,7 @@
     "heroHeadline": "OVI Wellness <br><span class='text-primary'>Tampa Clinic</span>",
     "heroSubheadline": "Medical weight management, TRT and wellness care for Tampa patients. Visit our physical clinic in nearby St. Pete or talk to your doctor online. Results vary.",
     "heroCTA": "Book Consultation",
-    "advantageHeadline": "Top Medical Care for Tampa Patients",
+    "advantageHeadline": "Medical Care for Tampa Patients",
     "advantageText": "Living in Tampa? Our physical medical office is just a quick drive across the bridge in St. Pete. Get your blood drawn in person, meet your doctor, or get telehealth care right from home. Licensed doctors and a full blood work review before treatment is considered.",
     "advantageImage": "assets/images/photos/peptide-therapy.jpg",
     "advantageBullets": [
@@ -141,7 +141,7 @@
       {
         "title": "Regenerative Medicine",
         "icon": "fa-heartbeat",
-        "desc": "Harness PRP therapies, autologous Platelet-Rich Plasma (PRP), and clinical growth factors for advanced joint, follicle, and cellular repair.",
+        "desc": "PRP (platelet-rich plasma) prepared from your own blood, for joint, hair and skin concerns, after an evaluation. Results vary.",
         "link": "services/regenerative-medicine",
         "linkText": "Explore Regeneration"
       },
@@ -162,7 +162,7 @@
       {
         "title": "Detoxification Protocols",
         "icon": "fa-leaf",
-        "desc": "Comprehensive cleansing protocols for mycotoxins and parasites to restore systemic health and optimal gut function.",
+        "desc": "Lab testing for mold and gut concerns and supportive care, when clinically appropriate.",
         "link": "services/detox",
         "linkText": "Explore Detox"
       },

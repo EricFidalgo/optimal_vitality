@@ -91,7 +91,7 @@
           "moderate": "May be considered for moderate weight-management goals, with clinician guidance. Results vary.",
           "significant": "May be considered for larger weight-management goals, with regular clinician check-ins. Results vary."
         },
-        "social": "Over 100 local patients are currently using this doctor-guided plan."
+        "social": "Results vary by patient."
       },
       "metabolic": {
         "tag": "Health & Vitality Plan",
@@ -103,12 +103,12 @@
           "moderate": "Your provider will evaluate possible causes and discuss options. Results vary.",
           "significant": "A comprehensive evaluation of health markers and weight-management options. Results vary."
         },
-        "social": "84 patients started this doctor-led plan in the last 90 days."
+        "social": "Results vary by patient."
       }
     },
     "timelineMap": {
       "no": "12–16 weeks (Standard Doctor Plan)",
-      "yes": "8–12 weeks (Fast Track Plan)"
+      "yes": "8–12 weeks (Shorter Plan)"
     }
   },
   "eligibility": {
@@ -120,7 +120,7 @@
     "items": [
       {
         "label": "Stubborn Fat",
-        "detail": "Adults with 15+ lbs to lose who struggle to shed fat with diet alone."
+        "detail": "Adults interested in medical weight management who have not reached their goals with diet and exercise alone."
       },
       {
         "label": "Constant Cravings",
@@ -132,7 +132,7 @@
       },
       {
         "label": "Want Muscle Saved",
-        "detail": "You want to lose fat tissue while keeping your strong, healthy muscle."
+        "detail": "You want a plan that includes nutrition and strength guidance."
       },
       {
         "label": "Ready for Doctor Care",
@@ -277,7 +277,7 @@
       {
         "name": "Tirzepatide Plan",
         "tag": "Most Popular",
-        "compounds": "Tirzepatide + Vitamin B12 Booster",
+        "compounds": "Tirzepatide + Vitamin B12 Injection",
         "description": "Prescription treatment combined with a vitamin B12 injection, as determined by your provider. Results vary."
       },
       {

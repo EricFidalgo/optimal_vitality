@@ -5,7 +5,7 @@
   "href": "advanced-labs",
   "title": "OVI Labs & Specialty Labs",
   "lead": "Doctor-ordered clinical diagnostic panels, metagenomic gut mapping, epigenetic longevity testing, and full functional blood chemistry.",
-  "description": "Stop guessing why you feel fatigued, bloated, or sub-optimal. Our specialized diagnostic panels combine metagenomic stool sequencing, mycotoxin mold screening, epigenetic biological age clocks, and complete Quest Diagnostics blood chemistry - fully interpreted by licensed doctors.",
+  "description": "Fatigue, bloating and other symptoms have many possible causes. Our specialized diagnostic panels combine metagenomic stool sequencing, mycotoxin mold screening, epigenetic biological age clocks, and complete Quest Diagnostics blood chemistry - fully interpreted by licensed doctors.",
   "icon": "fa-flask",
   "delay": "-6s",
   "features": [
@@ -97,7 +97,7 @@
           "yes": "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
           "no": "Great baseline check to keep your hormones balanced as you age."
         },
-        "social": "Over 120 local patients unlocked high energy with this doctor lab panel."
+        "social": "Results vary by patient."
       },
       "vitamins": {
         "tag": "Nutrient & Immunity Panel",
@@ -125,7 +125,7 @@
       }
     },
     "timelineMap": {
-      "recent": "3–5 days (Fast Results Review)",
+      "recent": "3–5 days (Results Review)",
       "old": "5–7 days (Full Baseline Audit)"
     }
   },
@@ -799,16 +799,16 @@
   "science": {
     "badge": "How It Works",
     "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
-    "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+    "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced panels give your provider more information to review with you. Lab results alone do not establish a diagnosis.",
     "bullets": [
       "Ordered & reviewed by licensed medical doctors",
-      "Tests optimal vitality ranges—not just 'disease normal'",
+      "Looks at where results fall within reference ranges",
       "Includes clear 1-on-1 doctor consultation & action plan"
     ],
     "stats": [
       {
         "value": "Deep",
-        "label": "Tests optimal ranges, not basic averages"
+        "label": "Broader panels beyond routine tests"
       },
       {
         "value": "Monitored",
@@ -839,7 +839,7 @@
   "myths": [
     {
       "myth": "My doctor said my bloodwork is normal, so why do I feel bad?",
-      "reality": "Standard labs use wide population averages to spot disease. You can be in the 'normal' range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
+      "reality": "Standard labs compare results with wide population ranges. Symptoms can have causes that routine tests do not capture, so your provider may order additional tests when appropriate. Results are interpreted in context."
     },
     {
       "myth": "Do I need to fast before getting my blood drawn?",
@@ -881,7 +881,7 @@
       {
         "metric": "Reference Ranges",
         "without": "Wide 'sick population' normal",
-        "with": "Tight optimal health & energy range"
+        "with": "Interpreted in clinical context"
       },
       {
         "metric": "Genetic & Toxic Screening",
@@ -904,7 +904,7 @@
         "name": "Complete Vitality & Hormone Panel",
         "tag": "Most Popular",
         "compounds": "Full Hormones + Thyroid + Metabolic",
-        "description": "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy."
+        "description": "Our foundational lab review checking major hormone, thyroid, and blood sugar markers."
       },
       {
         "name": "MTHFR & Methylation DNA Audit",
@@ -916,7 +916,7 @@
         "name": "Total Body Longevity & Cardiac Audit",
         "tag": "Complete Check",
         "compounds": "ApoB + Heavy Metals + Micronutrients",
-        "description": "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins."
+        "description": "Comprehensive testing for cardiovascular markers, metal burden, and intracellular vitamins."
       }
     ]
   },
@@ -939,7 +939,7 @@
     },
     {
       "question": "Will the doctor explain my numbers and create a treatment plan?",
-      "answer": "100% yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
+      "answer": "Yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
     },
     {
       "question": "How do I get started with advanced lab testing?",

@@ -6,7 +6,7 @@
     "href": "advanced-labs",
     "title": "OVI Labs & Specialty Labs",
     "lead": "Doctor-ordered clinical diagnostic panels, metagenomic gut mapping, epigenetic longevity testing, and full functional blood chemistry.",
-    "description": "Stop guessing why you feel fatigued, bloated, or sub-optimal. Our specialized diagnostic panels combine metagenomic stool sequencing, mycotoxin mold screening, epigenetic biological age clocks, and complete Quest Diagnostics blood chemistry - fully interpreted by licensed doctors.",
+    "description": "Fatigue, bloating and other symptoms have many possible causes. Our specialized diagnostic panels combine metagenomic stool sequencing, mycotoxin mold screening, epigenetic biological age clocks, and complete Quest Diagnostics blood chemistry - fully interpreted by licensed doctors.",
     "icon": "fa-flask",
     "delay": "-6s",
     "features": [
@@ -98,7 +98,7 @@
             "yes": "Targeted to find hidden hormone slumps that basic primary care tests completely miss.",
             "no": "Great baseline check to keep your hormones balanced as you age."
           },
-          "social": "Over 120 local patients unlocked high energy with this doctor lab panel."
+          "social": "Results vary by patient."
         },
         "vitamins": {
           "tag": "Nutrient & Immunity Panel",
@@ -126,7 +126,7 @@
         }
       },
       "timelineMap": {
-        "recent": "3–5 days (Fast Results Review)",
+        "recent": "3–5 days (Results Review)",
         "old": "5–7 days (Full Baseline Audit)"
       }
     },
@@ -800,16 +800,16 @@
     "science": {
       "badge": "How It Works",
       "headline": "Why It Works When<br><span class=\"text-primary\">Standard Labs Fail</span>",
-      "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced doctor panels test tight optimal ranges and cellular levels, revealing the hidden imbalances that primary care tests miss.",
+      "body": "Standard reference intervals help clinicians interpret results in context. Additional tests may be useful when supported by symptoms, history, examination, or risk factors. Our advanced panels give your provider more information to review with you. Lab results alone do not establish a diagnosis.",
       "bullets": [
         "Ordered & reviewed by licensed medical doctors",
-        "Tests optimal vitality ranges—not just 'disease normal'",
+        "Looks at where results fall within reference ranges",
         "Includes clear 1-on-1 doctor consultation & action plan"
       ],
       "stats": [
         {
           "value": "Deep",
-          "label": "Tests optimal ranges, not basic averages"
+          "label": "Broader panels beyond routine tests"
         },
         {
           "value": "Monitored",
@@ -840,7 +840,7 @@
     "myths": [
       {
         "myth": "My doctor said my bloodwork is normal, so why do I feel bad?",
-        "reality": "Standard labs use wide population averages to spot disease. You can be in the 'normal' range and still have low energy or sub-optimal hormones. We test for optimal health ranges."
+        "reality": "Standard labs compare results with wide population ranges. Symptoms can have causes that routine tests do not capture, so your provider may order additional tests when appropriate. Results are interpreted in context."
       },
       {
         "myth": "Do I need to fast before getting my blood drawn?",
@@ -882,7 +882,7 @@
         {
           "metric": "Reference Ranges",
           "without": "Wide 'sick population' normal",
-          "with": "Tight optimal health & energy range"
+          "with": "Interpreted in clinical context"
         },
         {
           "metric": "Genetic & Toxic Screening",
@@ -905,7 +905,7 @@
           "name": "Complete Vitality & Hormone Panel",
           "tag": "Most Popular",
           "compounds": "Full Hormones + Thyroid + Metabolic",
-          "description": "Our foundational lab audit checking all major hormone, thyroid, and blood sugar markers for peak energy."
+          "description": "Our foundational lab review checking major hormone, thyroid, and blood sugar markers."
         },
         {
           "name": "MTHFR & Methylation DNA Audit",
@@ -917,7 +917,7 @@
           "name": "Total Body Longevity & Cardiac Audit",
           "tag": "Complete Check",
           "compounds": "ApoB + Heavy Metals + Micronutrients",
-          "description": "Comprehensive deep-dive testing for heart safety, toxic metal burdens, and intracellular vitamins."
+          "description": "Comprehensive testing for cardiovascular markers, metal burden, and intracellular vitamins."
         }
       ]
     },
@@ -940,7 +940,7 @@
       },
       {
         "question": "Will the doctor explain my numbers and create a treatment plan?",
-        "answer": "100% yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
+        "answer": "Yes! You won't be left guessing. Our doctor will walk you through every single marker in plain English and design a custom treatment plan (TRT, weight loss, peptides, or vitamins) tailored to your body."
       },
       {
         "question": "How do I get started with advanced lab testing?",
@@ -1159,19 +1159,19 @@
           "desc": "A doctor-guided plan that tests for mold exposure markers and, when clinically appropriate, uses prescribed supportive treatment.",
           "goalModifiers": {
             "no": "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
-            "yes": "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
+            "yes": "Targeted doctor protocol for patients with mold-related findings, when clinically appropriate."
           },
-          "social": "Over 60 local patients cleared brain fog with this doctor-guided plan."
+          "social": "Results vary by patient."
         },
         "gut": {
           "tag": "Gut Reset Plan",
-          "name": "Targeted Gut Cleansing & Restoration",
-          "peptides": "Prescription Antiparasitic + Gut Repair Protocol",
+          "name": "Targeted Gut Evaluation & Support",
+          "peptides": "Prescription Antiparasitic + Gut Support Protocol",
           "icon": "fa-bug",
-          "desc": "Eliminates unwanted gut bugs and bad bacteria to stop bloating, restore digestion, and boost daily energy.",
+          "desc": "Testing and, when clinically appropriate, prescription treatment for patients with digestive symptoms.",
           "goalModifiers": {
-            "no": "Includes simple lab testing to identify bad gut bacteria and start a gentle cleanse.",
-            "yes": "Advanced clinical protocol to clear stubborn gut issues and repair intestinal health."
+            "no": "Includes lab testing to look for possible gut causes of your symptoms.",
+            "yes": "A more detailed clinical evaluation for persistent gut symptoms."
           },
           "social": "78 patients achieved flat, comfortable digestion with this protocol."
         },
@@ -1180,16 +1180,16 @@
           "name": "Systemic Body & Energy Reset",
           "peptides": "Full Lab Panel + Liver & Gut Detox",
           "icon": "fa-arrows-rotate",
-          "desc": "Full body reset that cleanses your liver, clears blood toxins, and restores youthful energy.",
+          "desc": "A comprehensive lab evaluation and, when clinically appropriate, a supportive care plan.",
           "goalModifiers": {
             "no": "Complete baseline lab check to pinpoint what is holding your daily energy back.",
-            "yes": "High-potency cellular cleanse built for long-term health and vitality."
+            "yes": "Your provider will tailor supportive care to your lab results."
           },
-          "social": "Over 85 patients renewed their energy with this doctor reset."
+          "social": "Results vary by patient."
         }
       },
       "timelineMap": {
-        "months": "6–8 weeks (Fast Track Cleanse)",
+        "months": "6–8 weeks (Shorter Plan)",
         "years": "8–12 weeks (Full Reset Plan)"
       }
     },
@@ -1231,7 +1231,7 @@
           "icon": "fa-vial",
           "name": "Mycotoxin Mold Analysis",
           "tag": "Mold Test",
-          "description": "Simple urine lab testing to find hidden mold toxins in your cells and guide your custom doctor cleanse."
+          "description": "Urine lab testing for mold exposure markers, to help your provider decide on next steps."
         },
         {
           "icon": "fa-leaf",
@@ -1243,19 +1243,19 @@
           "icon": "fa-bug",
           "name": "Gut Bug & Parasite Eradication",
           "tag": "Gut Health",
-          "description": "Advanced testing paired with doctor-prescribed cleansers to eliminate bad bacteria and restore gut comfort."
+          "description": "Advanced testing, with prescription treatment when clinically appropriate."
         },
         {
           "icon": "fa-shield-alt",
           "name": "Cellular Tox-Binder Protocol",
-          "tag": "Toxin Flush",
-          "description": "Specialized prescription binders that trap toxins in your gut so your body flushes them out naturally."
+          "tag": "Binders",
+          "description": "Prescription binders, when clinically appropriate, as determined by your provider."
         },
         {
           "icon": "fa-heartbeat",
-          "name": "Liver & Lymphatic Flush",
+          "name": "Liver & Lymphatic Support",
           "tag": "Organ Support",
-          "description": "Targeted nutrients and glutathione support to help your liver and lymphatic system flush waste fast."
+          "description": "Nutrient and glutathione support, when clinically appropriate. Glutathione is generally compounded and not FDA-approved."
         },
         {
           "icon": "fa-flask",
@@ -1272,12 +1272,12 @@
       "bullets": [
         "Prescribed & monitored by licensed medical doctors",
         "Based on real urine and blood lab tests",
-        "Pulls deep cellular toxins out without starving your body"
+        "Does not require extreme fasting"
       ],
       "stats": [
         {
           "value": "Targeted",
-          "label": "Pulls deep mold & gut toxins"
+          "label": "Protocols adapted to your tests"
         },
         {
           "value": "Monitored",
@@ -1296,12 +1296,12 @@
         {
           "icon": "fa-microscope",
           "title": "Real Lab Testing",
-          "detail": "We use advanced urine mycotoxin panels to prove what toxins are in your system before starting."
+          "detail": "We use urine mycotoxin panels to look for markers of exposure before starting. Test results alone do not establish a diagnosis."
         },
         {
           "icon": "fa-bullseye",
-          "title": "Prescription Toxin Binders",
-          "detail": "Medical binders latch onto trapped mold and heavy metals so your body can eliminate them cleanly."
+          "title": "Prescription Binders",
+          "detail": "Prescription binders are used by some providers when testing supports it. Results vary."
         }
       ]
     },
@@ -1330,11 +1330,11 @@
         },
         {
           "icon": "fa-leaf",
-          "label": "Clean Gut"
+          "label": "Gut Health"
         },
         {
           "icon": "fa-brain",
-          "label": "Clear Focus"
+          "label": "Focus"
         },
         {
           "icon": "fa-shield-alt",
@@ -1348,14 +1348,14 @@
           "with": "Real lab tests (mycotoxins/gut)"
         },
         {
-          "metric": "Cleansing Depth",
-          "without": "Surface water loss only",
-          "with": "Deep tissue & liver toxin flush"
+          "metric": "Approach",
+          "without": "No testing",
+          "with": "Care guided by test results"
         },
         {
-          "metric": "Brain Fog Relief",
-          "without": "Temporary or none",
-          "with": "Lasting mental clarity"
+          "metric": "Symptom Review",
+          "without": "Not evaluated",
+          "with": "Clinician reviews your symptoms and labs"
         },
         {
           "metric": "Medical Oversight",
@@ -1363,29 +1363,29 @@
           "with": "Licensed MD review & labs"
         },
         {
-          "metric": "Long-Term Outcome",
-          "without": "Bloating comes right back",
-          "with": "Rebalanced gut & clean cells"
+          "metric": "Follow-up",
+          "without": "No follow-up",
+          "with": "Provider follow-up"
         }
       ],
       "stacks": [
         {
-          "name": "Complete Mold & Mycotoxin Cleanse",
+          "name": "Mold & Mycotoxin Evaluation Plan",
           "tag": "Most Popular",
-          "compounds": "Antifungal + Toxin Binder Stack",
+          "compounds": "Antifungal + Binder (when appropriate)",
           "description": "Our top mold protocol combining prescription antifungals with cellular binders to clear mold fatigue."
         },
         {
           "name": "Total Gut & Parasite Reset",
           "tag": "Gut Health",
           "compounds": "Antiparasitic + Microbiome Protocol",
-          "description": "Eliminates unwanted gut bugs and bad bacteria to restore smooth, comfortable digestion."
+          "description": "Testing and prescription treatment, when clinically appropriate, for digestive symptoms."
         },
         {
-          "name": "Full Systemic Energy Flush",
+          "name": "Full Systemic Evaluation",
           "tag": "Total Reset",
           "compounds": "Lab Panel + Liver & Lymph Support",
-          "description": "Comprehensive body audit and flush designed to eliminate brain fog, fatigue, and systemic swelling."
+          "description": "Comprehensive body audit guided by lab testing, with supportive care when clinically appropriate. Results vary."
         }
       ]
     },
@@ -1404,11 +1404,11 @@
       },
       {
         "question": "Will I experience uncomfortable detox side effects?",
-        "answer": "Our doctors start your plan gently to avoid 'detox crashes'. We adjust your binder dose to make sure toxins are removed smoothly without disrupting your daily routine."
+        "answer": "Our doctors start your plan gradually and adjust your dose based on how you respond. Side effects are possible, and your provider will review them with you."
       },
       {
         "question": "How long does a medical detox protocol take?",
-        "answer": "Most patients complete their main cleansing phase in 6 to 12 weeks, with major improvements in brain fog, energy, and digestion appearing within the first 3 to 4 weeks."
+        "answer": "Plan length varies with your lab results and clinical goals, and your provider will review the timeline with you. Results vary."
       },
       {
         "question": "How do I get started with a clinical detox?",
@@ -1513,7 +1513,7 @@
             "moderate": "May be considered for moderate weight-management goals, with clinician guidance. Results vary.",
             "significant": "May be considered for larger weight-management goals, with regular clinician check-ins. Results vary."
           },
-          "social": "Over 100 local patients are currently using this doctor-guided plan."
+          "social": "Results vary by patient."
         },
         "metabolic": {
           "tag": "Health & Vitality Plan",
@@ -1525,12 +1525,12 @@
             "moderate": "Your provider will evaluate possible causes and discuss options. Results vary.",
             "significant": "A comprehensive evaluation of health markers and weight-management options. Results vary."
           },
-          "social": "84 patients started this doctor-led plan in the last 90 days."
+          "social": "Results vary by patient."
         }
       },
       "timelineMap": {
         "no": "12–16 weeks (Standard Doctor Plan)",
-        "yes": "8–12 weeks (Fast Track Plan)"
+        "yes": "8–12 weeks (Shorter Plan)"
       }
     },
     "eligibility": {
@@ -1542,7 +1542,7 @@
       "items": [
         {
           "label": "Stubborn Fat",
-          "detail": "Adults with 15+ lbs to lose who struggle to shed fat with diet alone."
+          "detail": "Adults interested in medical weight management who have not reached their goals with diet and exercise alone."
         },
         {
           "label": "Constant Cravings",
@@ -1554,7 +1554,7 @@
         },
         {
           "label": "Want Muscle Saved",
-          "detail": "You want to lose fat tissue while keeping your strong, healthy muscle."
+          "detail": "You want a plan that includes nutrition and strength guidance."
         },
         {
           "label": "Ready for Doctor Care",
@@ -1699,7 +1699,7 @@
         {
           "name": "Tirzepatide Plan",
           "tag": "Most Popular",
-          "compounds": "Tirzepatide + Vitamin B12 Booster",
+          "compounds": "Tirzepatide + Vitamin B12 Injection",
           "description": "Prescription treatment combined with a vitamin B12 injection, as determined by your provider. Results vary."
         },
         {
@@ -1851,11 +1851,11 @@
             "yes": "Our doctor will review your labs right away to build your custom treatment dose.",
             "no": "We will order a quick baseline blood test to check your levels before starting."
           },
-          "social": "Over 90 local patients are currently using this doctor-guided plan."
+          "social": "Results vary by patient."
         },
         "libido": {
           "tag": "Intimacy & Confidence Plan",
-          "name": "Peak Drive & Passion Plan",
+          "name": "Sexual Health Support Plan",
           "peptides": "Prescription Hormone & Vitality Therapy",
           "icon": "fa-fire",
           "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with low drive or related concerns.",
@@ -1863,7 +1863,7 @@
             "yes": "We will review your recent labs to start your plan fast.",
             "no": "Our doctor will order a simple blood check to pinpoint your exact needs."
           },
-          "social": "73 patients started this doctor-led plan in the last 90 days."
+          "social": "Results vary by patient."
         },
         "muscle": {
           "tag": "Strength & Lean Muscle Plan",
@@ -1875,12 +1875,12 @@
             "yes": "Your recent labs will help our doctor decide whether treatment is appropriate and, if so, set a starting dose.",
             "no": "Our doctor will get your simple bloodwork done to check your testosterone and energy markers."
           },
-          "social": "Over 100 local patients are currently on this strength protocol."
+          "social": "Results vary by patient."
         }
       },
       "timelineMap": {
         "months": "8–12 weeks (Standard Doctor Plan)",
-        "years": "12–16 weeks (Full Reset Plan)"
+        "years": "12–16 weeks (Extended Plan)"
       }
     },
     "eligibility": {
@@ -1931,14 +1931,14 @@
         },
         {
           "icon": "fa-vial",
-          "name": "Peptide Support Boosters",
+          "name": "Peptide Support Options",
           "tag": "Cell Recovery",
           "description": "Peptide options your provider may consider alongside your plan, when clinically appropriate."
         },
         {
           "icon": "fa-heart",
           "name": "Sexual Wellness Therapy",
-          "tag": "Vitality Boost",
+          "tag": "Wellness Support",
           "description": "Prescription options for men and women with sexual health concerns, when clinically appropriate."
         },
         {
@@ -2090,7 +2090,7 @@
         "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom hormone preparations (some are compounded and are not FDA-approved), and ongoing medical check-ins."
       },
       {
-        "question": "How fast will I feel results from hormone therapy?",
+        "question": "When might I notice changes from hormone therapy?",
         "answer": "Timelines vary by person, hormone and dose. Your provider will monitor your symptoms and labs and adjust your plan. Results vary and are not guaranteed."
       },
       {
@@ -2127,9 +2127,9 @@
     "icon": "fa-tint",
     "delay": "-5s",
     "features": [
-      "Immediate boost in energy & mental clarity",
+      "Hydration & nutrient support",
       "Nutrient support",
-      "100% direct vitamin absorption",
+      "Delivered directly into the bloodstream",
       "Relax in our luxury medical suite"
     ],
     "image": "",
@@ -2210,22 +2210,22 @@
           "name": "The Total Energy & Brain Reset",
           "peptides": "Prescription Myers' Cocktail + B-Complex + Glutathione",
           "icon": "fa-bolt",
-          "desc": "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
+          "desc": "A doctor-prescribed IV option with vitamins and minerals delivered through a vein, which your provider may consider for hydration and nutrient support.",
           "goalModifiers": {
             "yes": "Includes high-dose B-Complex and Glutathione push for maximum energy and mental focus.",
             "no": "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
           },
-          "social": "Over 89 local patients received this energy drip in the last 30 days."
+          "social": "Results vary by patient."
         },
         "recovery": {
           "tag": "Athletic & Detox Drip",
-          "name": "The Fast Recovery & Glutathione Stack",
+          "name": "The Recovery & Hydration Support Plan",
           "peptides": "Prescription Glutathione + Amino Acids + Electrolytes",
           "icon": "fa-first-aid",
-          "desc": "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
+          "desc": "IV hydration with amino acids and electrolytes that your provider may consider for hydration and recovery support.",
           "goalModifiers": {
-            "yes": "Adds Glutathione push to speed up muscle repair and cellular energy after hard training.",
-            "no": "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
+            "yes": "Your provider may discuss adding glutathione. Evidence for glutathione IVs in healthy adults is limited.",
+            "no": "Amino acids and electrolytes for hydration and recovery support."
           },
           "social": "114 local athletes and active patients run this recovery drip."
         },
@@ -2234,23 +2234,23 @@
           "name": "The Super Immune Defense Drip",
           "peptides": "High-Dose Vitamin C + Zinc + Myers' Cocktail",
           "icon": "fa-shield-alt",
-          "desc": "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
+          "desc": "Vitamin C and minerals your provider may consider for nutrient support. IV vitamins do not prevent or treat illness.",
           "goalModifiers": {
-            "yes": "Combines high-dose immune defense with Vitamin C to eliminate deep travel exhaustion.",
-            "no": "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
+            "yes": "Combines Vitamin C with immune-support nutrients, when your provider finds it appropriate.",
+            "no": "Vitamin C and zinc, if your provider finds it appropriate."
           },
           "social": "95 patients choose this immune shield when feeling run down."
         }
       },
       "timelineMap": {
-        "first": "45 minutes (Immediate 100% absorption)",
+        "first": "45 minutes (Typical session length)",
         "regular": "2–4 weeks (Cumulative vitality plan)"
       }
     },
     "eligibility": {
       "badge": "Who Is This For?",
       "headline": "Are You a Candidate for IV Care?",
-      "intro": "IV therapy delivers pure vitamins and minerals directly into your blood, bypassing slow digestion completely. Supervised by licensed doctors, it is the fastest way to feel energized and rehydrated.",
+      "intro": "IV therapy delivers vitamins, minerals and fluids directly into the bloodstream under the supervision of licensed doctors. Whether it is appropriate for you is decided after a health review. Results vary.",
       "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
       "ctaText": "Call Us Now to Check Candidacy",
       "items": [
@@ -2260,7 +2260,7 @@
         },
         {
           "label": "Active Athletes",
-          "detail": "People needing fast muscle recovery, hydration, and soreness relief after workouts."
+          "detail": "People interested in hydration support after workouts."
         },
         {
           "label": "Frequent Travelers",
@@ -2268,7 +2268,7 @@
         },
         {
           "label": "Immune Defense Needed",
-          "detail": "Anyone feeling run down or wanting strong, immediate illness protection."
+          "detail": "People interested in nutrient support during travel or cold season."
         },
         {
           "label": "Ready for Doctor Care",
@@ -2285,13 +2285,13 @@
           "icon": "fa-shield-virus",
           "name": "High-Dose Vitamin C Infusion",
           "tag": "Immune Defense",
-          "description": "Doctor-prescribed high-dose Vitamin C to boost immunity, fight oxidative stress, and clear fatigue."
+          "description": "Doctor-prescribed high-dose Vitamin C infusion, when clinically appropriate."
         },
         {
           "icon": "fa-star",
-          "name": "Glutathione Detox Push",
+          "name": "Glutathione Push",
           "tag": "Master Antioxidant",
-          "description": "Direct intravenous push of the body's strongest antioxidant to cleanse the liver and brighten skin."
+          "description": "Intravenous glutathione, an antioxidant the body makes, when clinically appropriate. Glutathione given by IV is generally compounded and not FDA-approved."
         },
         {
           "icon": "fa-tint",
@@ -2303,18 +2303,18 @@
           "icon": "fa-dumbbell",
           "name": "Athletic Recovery Drip",
           "tag": "Muscle Rebound",
-          "description": "Targeted amino acids and electrolytes to flush out muscle soreness and rehydrate you after exercise."
+          "description": "Amino acids and electrolytes for hydration and recovery support after exercise."
         },
         {
           "icon": "fa-shield-alt",
           "name": "Immune Fortification Drip",
           "tag": "Illness Shield",
-          "description": "High-dose Vitamin C, Zinc, and B12 to supercharge your immune system before travel or during cold season."
+          "description": "High-dose Vitamin C, Zinc, and B12 infusion, when clinically appropriate."
         },
         {
           "icon": "fa-syringe",
           "name": "Doctor Vitamin Shots",
-          "tag": "Quick Booster",
+          "tag": "Short Session",
           "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
         }
       ],
@@ -2322,17 +2322,17 @@
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
+      "headline": "How IV Therapy<br><span class=\"text-primary\">Differs From Vitamin Pills</span>",
       "body": "When you swallow vitamin pills, your stomach breaks them down first. IV therapy delivers nutrients directly into your bloodstream, supporting hydration and nutrient levels.",
       "bullets": [
-        "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
+        "Delivered directly into the bloodstream. This does not guarantee absorption or clinical benefit.",
         "Compounded fresh & prescribed by licensed medical doctors",
         "Administered by registered nurses in a relaxing clinic suite"
       ],
       "stats": [
         {
-          "value": "100%",
-          "label": "Direct vitamin absorption"
+          "value": "Direct",
+          "label": "Delivered into the bloodstream"
         },
         {
           "value": "45m",
@@ -2356,7 +2356,7 @@
         {
           "icon": "fa-bullseye",
           "title": "Direct Vascular Delivery",
-          "detail": "Intravenous drips deliver nutrients straight into your bloodstream for direct cellular delivery."
+          "detail": "Intravenous drips deliver nutrients directly into your bloodstream."
         }
       ]
     },
@@ -2381,7 +2381,7 @@
       "mobileStats": [
         {
           "icon": "fa-bolt",
-          "label": "Fast Delivery"
+          "label": "Direct Delivery"
         },
         {
           "icon": "fa-tint",
@@ -2389,7 +2389,7 @@
         },
         {
           "icon": "fa-star",
-          "label": "100% Absorption"
+          "label": "Hydration Support"
         },
         {
           "icon": "fa-shield-alt",
@@ -2398,19 +2398,19 @@
       ],
       "rows": [
         {
-          "metric": "Vitamin Absorption",
-          "without": "Only 10%–30% in stomach",
-          "with": "100% direct vascular absorption"
+          "metric": "Delivery Route",
+          "without": "Varies with digestion",
+          "with": "Delivered directly into the bloodstream"
         },
         {
-          "metric": "How Fast It Works",
-          "without": "Takes hours or days",
-          "with": "Immediate while sitting in drip suite"
+          "metric": "Delivery",
+          "without": "Digestion required",
+          "with": "Infused during your visit"
         },
         {
-          "metric": "Master Antioxidant Delivery",
-          "without": "Wasted in stomach acid",
-          "with": "100% active cellular delivery"
+          "metric": "Antioxidant Delivery",
+          "without": "Digested first",
+          "with": "Delivered intravenously"
         },
         {
           "metric": "Rehydration Speed",
@@ -2425,22 +2425,22 @@
       ],
       "stacks": [
         {
-          "name": "Peak Vitality Drip Stack",
+          "name": "Vitamin & Glutathione Drip",
           "tag": "Most Popular",
           "compounds": "Myers' Cocktail + Glutathione Push",
-          "description": "Our top IV drip pairing Myers' vitamins for energy with Glutathione for deep liver detox and glowing skin."
+          "description": "An IV drip pairing a Myers’-style vitamin blend with glutathione, when clinically appropriate. Results vary."
         },
         {
-          "name": "Total Anti-Aging Longevity Drip",
+          "name": "Antioxidant & Vitamin Drip",
           "tag": "Cell Reset",
           "compounds": "High-Dose Vitamin C + B-Complex + Glutathione",
-          "description": "Doctor vitamin drip paired with high-dose antioxidants to repair cells and reverse brain fog."
+          "description": "A vitamin drip paired with antioxidants, when clinically appropriate. Results vary."
         },
         {
           "name": "Athletic Rebound Stack",
-          "tag": "Fast Recovery",
+          "tag": "Recovery Support",
           "compounds": "Athletic Recovery IV + B12 Injection",
-          "description": "Designed to flush out muscle soreness fast with pure amino acids, electrolytes, and B12."
+          "description": "Amino acids, electrolytes, and B12 for hydration and recovery support."
         }
       ]
     },
@@ -2505,7 +2505,7 @@
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
       "badge": "Quick 1-Minute Assessment",
-      "headline": "Find Your Best Healing Plan",
+      "headline": "Find the Right Care Plan",
       "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
       "step1": {
         "question": "What is your biggest daily struggle?",
@@ -2593,8 +2593,8 @@
       },
       "protocols": {
         "pain": {
-          "tag": "Recommended Joint Repair Plan",
-          "name": "The Total Joint & Tissue Reset",
+          "tag": "Recommended Joint Support Plan",
+          "name": "Joint & Tissue Support Plan",
           "peptides": "Options selected per clinical protocol",
           "icon": "fa-shield-alt",
           "desc": "A doctor-prescribed option your provider may consider for joint, tendon and muscle recovery, if it is clinically appropriate.",
@@ -2604,11 +2604,11 @@
             "feel": "May be considered as part of a plan to support joint comfort and rest.",
             "fat": "May be considered as part of a plan to help you stay active."
           },
-          "social": "Over 60 local patients completed this recovery plan in the last 90 days."
+          "social": "Results vary by patient."
         },
         "performance": {
           "tag": "Strength & Growth Plan",
-          "name": "Peak Performance & Growth Stack",
+          "name": "Performance & Recovery Support Plan",
           "peptides": "Clinical and metabolic options",
           "icon": "fa-dumbbell",
           "desc": "A prescription option your provider may consider for patients interested in support for lean muscle, recovery and strength, if clinically appropriate.",
@@ -2618,11 +2618,11 @@
             "feel": "May be considered as part of a plan to support sleep and energy.",
             "fat": "May be considered alongside diet and exercise for body-composition goals."
           },
-          "social": "88 patients are currently running this doctor-prescribed stack."
+          "social": "Results vary by patient."
         },
         "energy": {
           "tag": "Cellular Energy Plan",
-          "name": "Total Body Energy & Focus Reset",
+          "name": "Energy & Focus Support Plan",
           "peptides": "Cellular Energy & Recovery Protocol",
           "icon": "fa-bolt",
           "desc": "A prescription option your provider may consider for patients dealing with fatigue or low energy, after other possible causes are evaluated.",
@@ -2632,7 +2632,7 @@
             "feel": "May be considered as part of a plan to support energy and mental clarity.",
             "fat": "May be considered as part of a plan alongside diet and exercise."
           },
-          "social": "44 local patients started this energy plan in the last 60 days."
+          "social": "Results vary by patient."
         },
         "body": {
           "tag": "Body Composition Plan",
@@ -2646,13 +2646,13 @@
             "feel": "May be considered as part of a plan to support sleep and daily focus.",
             "fat": "Designed for body-composition goals alongside diet and exercise."
           },
-          "social": "73 patients completed this fat burn protocol recently."
+          "social": "Results vary by patient."
         }
       },
       "timelineMap": {
-        "short": "6–8 weeks (Fast Recovery Plan)",
+        "short": "6–8 weeks (Shorter Plan)",
         "medium": "8–12 weeks (Standard Doctor Plan)",
-        "long": "12–16 weeks (Full Reset Plan)"
+        "long": "12–16 weeks (Extended Plan)"
       }
     },
     "eligibility": {
@@ -2833,19 +2833,19 @@
       ],
       "stacks": [
         {
-          "name": "Joint & Tissue Repair Stack",
+          "name": "Joint & Tissue Support Plan",
           "tag": "Most Popular",
           "compounds": "Options selected per clinical protocol",
           "description": "Combines options for joint comfort and tissue recovery."
         },
         {
-          "name": "Growth & Lean Muscle Stack",
-          "tag": "Strength Boost",
+          "name": "Lean Muscle Support Plan",
+          "tag": "Strength Support",
           "compounds": "Metabolic options per clinical evaluation",
           "description": "For active adults with body-composition goals who want lean-muscle support and better sleep, when clinically appropriate."
         },
         {
-          "name": "Total Bioenergetic Reset",
+          "name": "Energy & Recovery Support Plan",
           "tag": "Full Vitality",
           "compounds": "Clinical and cellular support options",
           "description": "Supports energy, focus and endurance under medical supervision."
@@ -2866,7 +2866,7 @@
         "answer": "Most peptide protocols use tiny, virtually painless subcutaneous injections using micro-needles (done at home or in clinic). Some peptides are also available as oral capsules or nasal sprays based on doctor recommendations."
       },
       {
-        "question": "How fast will I see results from peptide therapy?",
+        "question": "When might I notice any changes from peptide therapy?",
         "answer": "Timelines vary by person and by protocol. Your provider will monitor your progress over the first several weeks. Results vary."
       },
       {
@@ -2895,26 +2895,26 @@
     "href": "regenerative-medicine",
     "title": "PRP Consultation for Selected Musculoskeletal or Aesthetic Uses",
     "lead": "Stop letting joint stiffness, thinning hair, or low intimacy hold you back from living fully.",
-    "description": "We use your body's own natural power to heal damaged joints, revive skin, and restore thick, healthy hair—100% doctor-prescribed without invasive surgery.",
+    "description": "Regenerative medicine options such as PRP use your own blood. A licensed provider evaluates whether treatment is appropriate for you. Results vary.",
     "icon": "fa-heartbeat",
     "delay": "-3s",
     "features": [
       "Relieve stubborn joint aches & stiffness",
-      "Natural hair & skin restoration",
-      "Restore intimate health & confidence",
+      "PRP options for hair & skin",
+      "Sexual wellness options",
       "Supervised by licensed clinicians"
     ],
     "image": "",
     "ctaText": "Book Your Doctor Consultation",
     "pageTitle": "PRP & Regenerative Medicine in St. Petersburg, FL | OVI Wellness",
-    "pageDescription": "Doctor-led PRP for joints, skin and hair restoration in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
+    "pageDescription": "Doctor-led PRP for joints, skin and hair in St. Petersburg, FL, plus the P-Shot. Learn how PRP works and book a consultation.",
     "heroHeadline": "Regenerative Medicine<br><span class=\"text-primary\">Under Physician Care</span>",
     "heroTitle": "PRP & Regenerative Medicine in St. Petersburg, FL",
     "heroSubheadline": "Prescription PRP Regenerative Protocols, physician-led and overseen by a board-certified doctor in St. Petersburg, FL.",
     "heroCTA": "Book Your Doctor Call Today",
     "quiz": {
       "badge": "Quick 1-Minute Assessment",
-      "headline": "Find Your Best Healing Plan",
+      "headline": "Find the Right Care Plan",
       "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
       "step1": {
         "question": "What is your main concern right now?",
@@ -2978,44 +2978,44 @@
       },
       "protocols": {
         "joint": {
-          "tag": "Recommended Joint Repair Plan",
-          "name": "Total Joint & Cellular Repair Plan",
+          "tag": "Recommended Joint Support Plan",
+          "name": "Joint Support Plan",
           "peptides": "Prescription PRP + PRP Therapy",
           "icon": "fa-bone",
-          "desc": "Concentrates your body's natural healing factors to soothe joint inflammation and rebuild damaged tissue naturally.",
+          "desc": "PRP uses concentrated platelets from your own blood and may be considered for some joint concerns, if clinically appropriate.",
           "goalModifiers": {
             "no": "Our doctor will conduct a quick knee or shoulder evaluation to set your starting dose.",
             "yes": "Our doctor will adjust your cellular density for maximum long-term relief."
           },
-          "social": "Over 50 local patients are currently using this joint recovery plan."
+          "social": "Results vary by patient."
         },
         "hair": {
           "tag": "Hair & Scalp Plan",
-          "name": "Natural Scalp & Hair Restoration",
+          "name": "Scalp & Hair PRP Plan",
           "peptides": "Prescription PRP + Scalp PRP Therapy",
           "icon": "fa-cut",
-          "desc": "Wakes up dormant hair follicles using natural growth signals to bring back thicker, fuller hair.",
+          "desc": "PRP is used off-label for some types of hair thinning, and results vary.",
           "goalModifiers": {
             "no": "First-time plan designed to activate sleeping hair roots over simple sessions.",
-            "yes": "Booster plan tailored to maintain high follicle density and thickness."
+            "yes": "Maintenance sessions may be recommended by your provider. Results vary."
           },
           "social": "82 patients saw visible hair density improvements with this plan."
         },
         "intimacy": {
           "tag": "Intimacy & Confidence Plan",
           "name": "Cellular Intimacy Reset (P-Shot)",
-          "peptides": "Natural PRP + Growth Factor Booster",
+          "peptides": "PRP (Platelet-Rich Plasma)",
           "icon": "fa-heart",
-          "desc": "Natural doctor procedure that restores blood flow, nerve sensitivity, and intimate confidence.",
+          "desc": "A PRP procedure that your provider may discuss for sexual wellness concerns. Results vary and are not guaranteed.",
           "goalModifiers": {
             "no": "Our doctor will guide you through a comfortable, simple starting treatment.",
-            "yes": "Enhanced booster protocol designed to sustain long-term vitality."
+            "yes": "Repeat sessions may be discussed by your provider. Results vary."
           },
           "social": "69 local patients completed this intimacy treatment recently."
         }
       },
       "timelineMap": {
-        "mild": "4–6 weeks (Fast Track Plan)",
+        "mild": "4–6 weeks (Shorter Plan)",
         "severe": "8–12 weeks (Standard Doctor Plan)"
       }
     },
@@ -3032,7 +3032,7 @@
         },
         {
           "label": "Hair Thinning",
-          "detail": "Men and women looking for natural, non-surgical hair restoration."
+          "detail": "Men and women interested in non-surgical options for hair thinning."
         },
         {
           "label": "Intimate Wellness",
@@ -3040,7 +3040,7 @@
         },
         {
           "label": "Want Surgery Avoided",
-          "detail": "Anyone seeking natural healing without risky surgery or synthetic pills."
+          "detail": "Anyone interested in non-surgical options and willing to discuss risks and alternatives."
         },
         {
           "label": "Ready for Doctor Care",
@@ -3057,29 +3057,29 @@
           "icon": "fa-dna",
           "name": "PRP Cellular Therapy",
           "tag": "Most Advanced",
-          "description": "Advanced cellular signals that tell damaged cells to repair, reduce joint swelling, and rebuild healthy tissue fast."
+          "description": "Regenerative option for joint concerns, when clinically appropriate. Results vary."
         },
         {
           "icon": "fa-tint",
           "name": "Platelet-Rich Plasma (PRP)",
           "tag": "Natural Healing",
-          "description": "Concentrates your own blood's natural growth factors to rebuild joints, revive hair, and smooth skin."
+          "description": "PRP concentrates platelets from your own blood and may be used for joint, hair and skin concerns, when clinically appropriate. Results vary."
         },
         {
           "icon": "fa-mars",
           "name": "P-Shot (Men's Intimacy)",
           "tag": "For Men",
-          "description": "Natural PRP treatment for men to restore strong blood flow, sensitivity, and intimate performance. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
+          "description": "PRP treatment for men’s sexual wellness concerns. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
         },
         {
           "icon": "fa-wand-magic-sparkles",
-          "name": "Facial PRP Bio-Rejuvenation",
-          "tag": "Skin Rejuvenation",
-          "description": "Natural PRP facial therapy using your body's growth factors to restore skin elasticity, collagen, and youthful glow."
+          "name": "Facial PRP",
+          "tag": "Skin & Cosmetic",
+          "description": "PRP facial treatment using platelets from your own blood, for cosmetic goals. Results vary."
         },
         {
           "icon": "fa-leaf",
-          "name": "Hair Restoration Therapy",
+          "name": "Hair PRP",
           "tag": "Thicker Hair",
           "description": "PRP and PRP scalp treatments that awaken sleeping hair roots for thicker, fuller hair growth."
         },
@@ -3093,11 +3093,11 @@
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Pain Pills Fail</span>",
-      "body": "Pain pills only numb pain temporarily. Regenerative medicine helps your body repair the damage. By using your own natural growth factors (PRP) and cellular signals (PRP), our doctors instruct your cells to rebuild joint tissue and awaken dormant hair roots at the source.",
+      "headline": "How PRP Differs<br><span class=\"text-primary\">From Pain Medication</span>",
+      "body": "PRP uses platelets from your own blood, which contain growth factors and signaling proteins. Providers use PRP to support the body’s natural repair processes, and research on its effects varies by condition. Results vary.",
       "bullets": [
         "Prescribed & performed by licensed medical doctors",
-        "100% natural compounds matching your body",
+        "Uses your own blood when PRP is appropriate",
         "Non-surgical, quick in-office treatments"
       ],
       "stats": [
@@ -3110,8 +3110,8 @@
           "label": "Licensed clinician oversight & lab monitoring"
         },
         {
-          "value": "0%",
-          "label": "Synthetic pain drugs needed"
+          "value": "Your own blood",
+          "label": "PRP is made from your blood sample"
         },
         {
           "icon": "fa-user-md",
@@ -3121,20 +3121,20 @@
       "cards": [
         {
           "icon": "fa-microscope",
-          "title": "Natural PRP Healing",
-          "detail": "PRP uses a quick sample of your blood to concentrate your body's own healing power with zero rejection risk."
+          "title": "PRP From Your Own Blood",
+          "detail": "PRP uses a sample of your own blood. Procedures still carry risks, which your provider will discuss with you."
         },
         {
           "icon": "fa-bullseye",
           "title": "PRP Cell Messaging",
-          "detail": "PRP deliver natural molecular messages that tell damaged cells exactly how to rebuild."
+          "detail": "Platelets release growth factors and signaling proteins. How this translates to results varies by condition and patient."
         }
       ]
     },
     "myths": [
       {
         "myth": "Is PRP or regenerative therapy painful?",
-        "reality": "No. Our doctors apply gentle topical numbing before any treatment so you feel comfortable. Most patients return to normal daily activities the very same day."
+        "reality": "Discomfort varies. Our doctors may apply topical numbing before treatment, and your provider will explain what to expect."
       },
       {
         "myth": "Are PRP stem cells?",
@@ -3152,7 +3152,7 @@
       "mobileStats": [
         {
           "icon": "fa-dna",
-          "label": "Cellular Healing"
+          "label": "PRP Option"
         },
         {
           "icon": "fa-shield-alt",
@@ -3171,17 +3171,17 @@
         {
           "metric": "How It Works",
           "without": "Numbs pain temporarily",
-          "with": "Rebuilds damaged tissue at source"
+          "with": "Evaluated by a clinician"
         },
         {
           "metric": "Treatment Type",
           "without": "Synthetic pain drugs / surgery",
-          "with": "Natural PRP & PRP"
+          "with": "PRP from your own blood"
         },
         {
           "metric": "Recovery Time",
           "without": "Weeks of downtime / surgery",
-          "with": "Back to normal same day"
+          "with": "Often minimal downtime; varies"
         },
         {
           "metric": "Risks & Side Effects",
@@ -3189,29 +3189,29 @@
           "with": "Reviewed with your provider"
         },
         {
-          "metric": "Long-Term Relief",
-          "without": "Wears off quickly",
-          "with": "Lasting natural cellular repair"
+          "metric": "Follow-up",
+          "without": "Little follow-up",
+          "with": "Provider follow-up"
         }
       ],
       "stacks": [
         {
-          "name": "Complete Joint Repair Plan",
+          "name": "Joint Support Plan",
           "tag": "Most Popular",
           "compounds": "PRP + PRP Protocol",
-          "description": "Our top joint protocol combining natural PRP growth factors with PRP cell signals for fast pain relief."
+          "description": "PRP-based joint plan, when clinically appropriate. Results vary."
         },
         {
-          "name": "Intimacy Restoration Package",
+          "name": "Sexual Wellness PRP Package",
           "tag": "Sexual Wellness",
           "compounds": "P-Shot + Doctor Review",
           "description": "Targeted PRP intimacy treatment to bring back sensation, drive, and confidence."
         },
         {
-          "name": "Natural Hair Restoration Plan",
+          "name": "Hair PRP Plan",
           "tag": "Thicker Scalp",
           "compounds": "PRP + Scalp PRP Therapy",
-          "description": "Dual-action scalp treatment designed to awaken sleeping hair roots and boost natural hair density."
+          "description": "PRP scalp treatment for hair thinning, used off-label. Results vary."
         }
       ]
     },
@@ -3226,11 +3226,11 @@
       },
       {
         "question": "Are PRP injections painful?",
-        "answer": "Not at all! We use strong topical numbing creams before every procedure. Most patients report minimal pressure and return to work or normal activities the same day."
+        "answer": "Discomfort varies. We use topical numbing before procedures, and your provider will explain what to expect. Many patients return to normal activities the same day, but recovery varies."
       },
       {
         "question": "How many sessions do I need to see results?",
-        "answer": "Joint and hair restoration protocols typically show great results over 2 to 3 sessions. Intimacy treatments (P-Shot) often deliver noticeable improvements after just one treatment!"
+        "answer": "Results and the number of sessions vary by person and by treatment area. Your provider will recommend a schedule after your evaluation. Results vary and are not guaranteed."
       },
       {
         "question": "How does PRP differ from stem cell treatments?",
@@ -3253,13 +3253,13 @@
     "href": "sexual-wellness",
     "title": "Confidential Sexual Health Evaluation and Treatment Options",
     "lead": "Feel confident, strong, and deeply connected again with doctor-guided intimacy care.",
-    "description": "Age and stress can lower drive and physical performance. Our licensed doctors use natural PRP (P-Shot) and custom hormone balancing to bring back your passion and performance.",
+    "description": "Age, stress and health conditions can affect sexual desire and function. A licensed provider evaluates your history and labs and discusses PRP (P-Shot), hormone therapy and other options when clinically appropriate. Results vary.",
     "icon": "fa-heart",
     "delay": "-4s",
     "features": [
-      "Bring back natural drive & stamina",
+      "Evaluation for low desire & stamina",
       "P-Shot for men & Bio-Identical HRT for women",
-      "100% doctor-prescribed & discreet",
+      "Doctor-prescribed & discreet",
       "Supervised by licensed clinicians"
     ],
     "image": "assets/images/photos/team-group.jpg",
@@ -3337,10 +3337,10 @@
       "protocols": {
         "men": {
           "tag": "Recommended Men's Plan",
-          "name": "The Male Peak Performance Plan (P-Shot + TRT)",
+          "name": "Male Sexual Wellness Plan (P-Shot + TRT)",
           "peptides": "Prescription P-Shot + Hormone Support",
           "icon": "fa-mars",
-          "desc": "Combines natural PRP growth factors with doctor hormone balancing to restore strong blood flow, stamina, and confidence.",
+          "desc": "Combines PRP with hormone therapy, if clinically appropriate, for men with sexual wellness concerns. Results vary.",
           "goalModifiers": {
             "no": "First-time plan starting with a comfortable doctor evaluation and blood panel.",
             "yes": "Advanced protocol designed to bypass weak OTC pills and deliver real clinical results."
@@ -3352,19 +3352,19 @@
           "name": "The Female Intimacy Reset (Bio-Identical HRT)",
           "peptides": "Prescription Bio-Identical HRT + PT-141",
           "icon": "fa-venus",
-          "desc": "Restores natural lubrication, nerve sensitivity, and intimate desire using targeted hormone balancing.",
+          "desc": "Hormone-based options your provider may discuss for women with sexual wellness concerns. Results vary.",
           "goalModifiers": {
             "no": "Gentle starting plan supervised by compassionate medical doctors.",
-            "yes": "Targeted booster protocol for deep cellular arousal and lasting satisfaction."
+            "yes": "Additional options may be discussed by your provider."
           },
-          "social": "74 female patients restored their intimate confidence with this protocol."
+          "social": "Results vary by patient."
         },
         "balance": {
           "tag": "Couples Reset Plan",
           "name": "Total Passion & Hormonal Synergy Stack",
           "peptides": "Prescription PT-141 / Kisspeptin + Hormone Panels",
           "icon": "fa-heart",
-          "desc": "Comprehensive intimacy stack designed to trigger natural brain desire signals and boost physical energy.",
+          "desc": "A comprehensive evaluation, which may include peptide and hormone options, when clinically appropriate.",
           "goalModifiers": {
             "no": "Full baseline health check to align both partner's energy and passion levels.",
             "yes": "High-potency therapy built to revive deep intimacy and stamina."
@@ -3373,7 +3373,7 @@
         }
       },
       "timelineMap": {
-        "months": "4–6 weeks (Fast Track Plan)",
+        "months": "4–6 weeks (Shorter Plan)",
         "years": "8–12 weeks (Full Reset Plan)"
       }
     },
@@ -3415,25 +3415,25 @@
           "icon": "fa-mars",
           "name": "P-Shot (Priapus Shot)",
           "tag": "For Men",
-          "description": "Natural PRP treatment for men to improve blood flow, firmness, tissue health, and intimate confidence. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
+          "description": "PRP treatment for men with sexual wellness concerns. Results vary. Individual outcomes depend on clinical factors and are not guaranteed."
         },
         {
           "icon": "fa-venus",
           "name": "PT-141 Women's Wellness",
           "tag": "For Women",
-          "description": "Doctor-guided peptide therapy for women to restore natural desire, nerve sensitivity, and intimate satisfaction."
+          "description": "Doctor-guided peptide therapy (PT-141) for women with low sexual desire, when clinically appropriate."
         },
         {
           "icon": "fa-syringe",
           "name": "Doctor TRT for Men",
-          "tag": "Stamina Boost",
-          "description": "Physician-guided testosterone balancing to rebuild daily energy, muscle strength, and intimate stamina."
+          "tag": "Hormone Therapy",
+          "description": "Physician-guided testosterone therapy for men with low testosterone confirmed by symptoms and labs."
         },
         {
           "icon": "fa-heart",
           "name": "Bio-Identical HRT for Women",
           "tag": "Hormone Reset",
-          "description": "Natural bio-identical estrogen and progesterone balancing to fix mood slumps, night sweats, and low drive."
+          "description": "Bio-identical estrogen and progesterone therapy for women with symptoms such as mood changes or night sweats, when clinically appropriate."
         },
         {
           "icon": "fa-brain",
@@ -3452,8 +3452,8 @@
     },
     "science": {
       "badge": "How It Works",
-      "headline": "Why It Works When<br><span class=\"text-primary\">Blue Pills Fail</span>",
-      "body": "Pills only temporarily force blood flow and often cause headaches or high blood pressure. Our doctor-guided treatments repair underlying tissues and balance natural hormones. Using natural growth factors (PRP) and brain desire signals (PT-141), we rebuild long-term stamina, sensitivity, and natural drive.",
+      "headline": "A Medical Approach<br><span class=\"text-primary\">to Sexual Wellness</span>",
+      "body": "Sexual wellness is influenced by hormonal, vascular and psychological factors. A licensed provider evaluates your history and labs and discusses options such as PRP, hormone therapy or peptides when clinically appropriate. All treatments carry risks, and results vary.",
       "bullets": [
         "Prescribed & administered by licensed medical doctors",
         "Bio-identical options when clinically appropriate",
@@ -3469,8 +3469,8 @@
           "label": "Licensed clinician oversight & lab monitoring"
         },
         {
-          "value": "Natural",
-          "label": "Uses your body's growth factors"
+          "value": "PRP",
+          "label": "Uses platelets from your own blood"
         },
         {
           "icon": "fa-user-md",
@@ -3480,12 +3480,12 @@
       "cards": [
         {
           "icon": "fa-microscope",
-          "title": "Natural PRP Tissue Repair",
-          "detail": "The P-Shot uses concentrated growth factors from your own blood to restore blood vessels and nerve sensitivity."
+          "title": "PRP From Your Own Blood",
+          "detail": "The P-Shot uses platelet-rich plasma prepared from your own blood. It is used off-label for sexual wellness, evidence is limited, and results vary."
         },
         {
           "icon": "fa-bullseye",
-          "title": "Natural Brain Desire Signaling",
+          "title": "Brain Desire Signaling",
           "detail": "Peptides like PT-141 act on receptors in the brain involved in sexual desire. Your provider will review benefits and risks with you before recommending any treatment."
         }
       ]
@@ -3493,11 +3493,11 @@
     "myths": [
       {
         "myth": "Are intimacy injections painful?",
-        "reality": "No. Our doctors apply strong, prescription topical numbing before any procedure. Most patients report feeling only mild pressure and resume normal daily activities immediately."
+        "reality": "Discomfort varies. Prescription topical numbing may be used before a procedure, and your provider will explain what to expect."
       },
       {
         "myth": "Do intimacy treatments only work for men?",
-        "reality": "Not at all! Women suffer from hormonal and tissue changes too. Bio-identical HRT and targeted peptide therapy restore lubrication, sensation, and arousal for women naturally."
+        "reality": "No. Women can also experience hormonal and tissue changes. Your provider may discuss bio-identical hormone therapy or peptide therapy when clinically appropriate. Results vary."
       },
       {
         "myth": "How is sexual wellness care supervised?",
@@ -3530,7 +3530,7 @@
         {
           "metric": "How It Works",
           "without": "Temporary pill mask",
-          "with": "Rebuilds tissue & balances hormones"
+          "with": "Evaluates hormonal and tissue factors"
         },
         {
           "metric": "Side Effect Risk",
@@ -3540,7 +3540,7 @@
         {
           "metric": "Sensory Feeling",
           "without": "Unchanged or numb",
-          "with": "Restored nerve sensitivity & passion"
+          "with": "Discussed with your provider; results vary"
         },
         {
           "metric": "Medical Oversight",
@@ -3550,12 +3550,12 @@
         {
           "metric": "Long-Term Outcome",
           "without": "Wears off in hours",
-          "with": "Long-lasting natural performance"
+          "with": "Ongoing follow-up; results vary"
         }
       ],
       "stacks": [
         {
-          "name": "Men's Peak Intimacy Stack",
+          "name": "Men’s Sexual Wellness Plan",
           "tag": "Most Popular",
           "compounds": "P-Shot + Doctor TRT Protocol",
           "description": "Our top male protocol combining the P-Shot for blood flow with TRT for stamina and energy."
@@ -3564,10 +3564,10 @@
           "name": "Women's Vitality & Sensation Stack",
           "tag": "For Women",
           "compounds": "Bio-Identical HRT + PT-141",
-          "description": "Complete female intimacy reset restoring nerve sensitivity, lubrication, and emotional balance."
+          "description": "Female sexual wellness plan, which may include hormone therapy or peptides, when clinically appropriate. Results vary."
         },
         {
-          "name": "Couples Passion & Desire Booster",
+          "name": "Couples Sexual Wellness Plan",
           "tag": "Desire Reset",
           "compounds": "PT-141 + Hormone Check",
           "description": "Central brain desire peptide therapy designed to ignite spontaneous passion and stamina."
@@ -3585,15 +3585,15 @@
       },
       {
         "question": "Are P-Shot treatments painful?",
-        "answer": "Not at all! We apply strong medical-grade numbing cream before every treatment. Most patients feel only slight pressure and go right back to work or normal activities the same day."
+        "answer": "Discomfort varies. We apply prescription numbing cream before treatment, and your provider will explain what to expect. Many patients return to normal activities the same day, but recovery varies."
       },
       {
-        "question": "How fast will I notice results from intimacy therapy?",
-        "answer": "Many patients notice improved sensitivity, blood flow, and desire within 2 to 4 weeks. Full tissue regeneration and peak results build over 8 to 12 weeks."
+        "question": "When might I notice any changes from sexual wellness treatment?",
+        "answer": "Timelines vary by person and by treatment, and some people notice no change. Your provider will review your progress and adjust the plan. Results vary and are not guaranteed."
       },
       {
         "question": "Are these treatments private and confidential?",
-        "answer": "100% yes. Your privacy is our top priority. All consultations and treatments take place in private rooms in our discreet St. Petersburg clinic."
+        "answer": "Yes. Your privacy is a priority. All consultations and treatments take place in private rooms in our discreet St. Petersburg clinic."
       },
       {
         "question": "How do I get started with sexual wellness care?",

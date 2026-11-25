@@ -95,19 +95,19 @@
         "desc": "A doctor-guided plan that tests for mold exposure markers and, when clinically appropriate, uses prescribed supportive treatment.",
         "goalModifiers": {
           "no": "First-time plan starting with a simple urine lab test to check for hidden mold toxins.",
-          "yes": "Targeted doctor protocol designed to eliminate stubborn deep-tissue mold residues."
+          "yes": "Targeted doctor protocol for patients with mold-related findings, when clinically appropriate."
         },
-        "social": "Over 60 local patients cleared brain fog with this doctor-guided plan."
+        "social": "Results vary by patient."
       },
       "gut": {
         "tag": "Gut Reset Plan",
-        "name": "Targeted Gut Cleansing & Restoration",
-        "peptides": "Prescription Antiparasitic + Gut Repair Protocol",
+        "name": "Targeted Gut Evaluation & Support",
+        "peptides": "Prescription Antiparasitic + Gut Support Protocol",
         "icon": "fa-bug",
-        "desc": "Eliminates unwanted gut bugs and bad bacteria to stop bloating, restore digestion, and boost daily energy.",
+        "desc": "Testing and, when clinically appropriate, prescription treatment for patients with digestive symptoms.",
         "goalModifiers": {
-          "no": "Includes simple lab testing to identify bad gut bacteria and start a gentle cleanse.",
-          "yes": "Advanced clinical protocol to clear stubborn gut issues and repair intestinal health."
+          "no": "Includes lab testing to look for possible gut causes of your symptoms.",
+          "yes": "A more detailed clinical evaluation for persistent gut symptoms."
         },
         "social": "78 patients achieved flat, comfortable digestion with this protocol."
       },
@@ -116,16 +116,16 @@
         "name": "Systemic Body & Energy Reset",
         "peptides": "Full Lab Panel + Liver & Gut Detox",
         "icon": "fa-arrows-rotate",
-        "desc": "Full body reset that cleanses your liver, clears blood toxins, and restores youthful energy.",
+        "desc": "A comprehensive lab evaluation and, when clinically appropriate, a supportive care plan.",
         "goalModifiers": {
           "no": "Complete baseline lab check to pinpoint what is holding your daily energy back.",
-          "yes": "High-potency cellular cleanse built for long-term health and vitality."
+          "yes": "Your provider will tailor supportive care to your lab results."
         },
-        "social": "Over 85 patients renewed their energy with this doctor reset."
+        "social": "Results vary by patient."
       }
     },
     "timelineMap": {
-      "months": "6–8 weeks (Fast Track Cleanse)",
+      "months": "6–8 weeks (Shorter Plan)",
       "years": "8–12 weeks (Full Reset Plan)"
     }
   },
@@ -167,7 +167,7 @@
         "icon": "fa-vial",
         "name": "Mycotoxin Mold Analysis",
         "tag": "Mold Test",
-        "description": "Simple urine lab testing to find hidden mold toxins in your cells and guide your custom doctor cleanse."
+        "description": "Urine lab testing for mold exposure markers, to help your provider decide on next steps."
       },
       {
         "icon": "fa-leaf",
@@ -179,19 +179,19 @@
         "icon": "fa-bug",
         "name": "Gut Bug & Parasite Eradication",
         "tag": "Gut Health",
-        "description": "Advanced testing paired with doctor-prescribed cleansers to eliminate bad bacteria and restore gut comfort."
+        "description": "Advanced testing, with prescription treatment when clinically appropriate."
       },
       {
         "icon": "fa-shield-alt",
         "name": "Cellular Tox-Binder Protocol",
-        "tag": "Toxin Flush",
-        "description": "Specialized prescription binders that trap toxins in your gut so your body flushes them out naturally."
+        "tag": "Binders",
+        "description": "Prescription binders, when clinically appropriate, as determined by your provider."
       },
       {
         "icon": "fa-heartbeat",
-        "name": "Liver & Lymphatic Flush",
+        "name": "Liver & Lymphatic Support",
         "tag": "Organ Support",
-        "description": "Targeted nutrients and glutathione support to help your liver and lymphatic system flush waste fast."
+        "description": "Nutrient and glutathione support, when clinically appropriate. Glutathione is generally compounded and not FDA-approved."
       },
       {
         "icon": "fa-flask",
@@ -208,12 +208,12 @@
     "bullets": [
       "Prescribed & monitored by licensed medical doctors",
       "Based on real urine and blood lab tests",
-      "Pulls deep cellular toxins out without starving your body"
+      "Does not require extreme fasting"
     ],
     "stats": [
       {
         "value": "Targeted",
-        "label": "Pulls deep mold & gut toxins"
+        "label": "Protocols adapted to your tests"
       },
       {
         "value": "Monitored",
@@ -232,12 +232,12 @@
       {
         "icon": "fa-microscope",
         "title": "Real Lab Testing",
-        "detail": "We use advanced urine mycotoxin panels to prove what toxins are in your system before starting."
+        "detail": "We use urine mycotoxin panels to look for markers of exposure before starting. Test results alone do not establish a diagnosis."
       },
       {
         "icon": "fa-bullseye",
-        "title": "Prescription Toxin Binders",
-        "detail": "Medical binders latch onto trapped mold and heavy metals so your body can eliminate them cleanly."
+        "title": "Prescription Binders",
+        "detail": "Prescription binders are used by some providers when testing supports it. Results vary."
       }
     ]
   },
@@ -266,11 +266,11 @@
       },
       {
         "icon": "fa-leaf",
-        "label": "Clean Gut"
+        "label": "Gut Health"
       },
       {
         "icon": "fa-brain",
-        "label": "Clear Focus"
+        "label": "Focus"
       },
       {
         "icon": "fa-shield-alt",
@@ -284,14 +284,14 @@
         "with": "Real lab tests (mycotoxins/gut)"
       },
       {
-        "metric": "Cleansing Depth",
-        "without": "Surface water loss only",
-        "with": "Deep tissue & liver toxin flush"
+        "metric": "Approach",
+        "without": "No testing",
+        "with": "Care guided by test results"
       },
       {
-        "metric": "Brain Fog Relief",
-        "without": "Temporary or none",
-        "with": "Lasting mental clarity"
+        "metric": "Symptom Review",
+        "without": "Not evaluated",
+        "with": "Clinician reviews your symptoms and labs"
       },
       {
         "metric": "Medical Oversight",
@@ -299,29 +299,29 @@
         "with": "Licensed MD review & labs"
       },
       {
-        "metric": "Long-Term Outcome",
-        "without": "Bloating comes right back",
-        "with": "Rebalanced gut & clean cells"
+        "metric": "Follow-up",
+        "without": "No follow-up",
+        "with": "Provider follow-up"
       }
     ],
     "stacks": [
       {
-        "name": "Complete Mold & Mycotoxin Cleanse",
+        "name": "Mold & Mycotoxin Evaluation Plan",
         "tag": "Most Popular",
-        "compounds": "Antifungal + Toxin Binder Stack",
+        "compounds": "Antifungal + Binder (when appropriate)",
         "description": "Our top mold protocol combining prescription antifungals with cellular binders to clear mold fatigue."
       },
       {
         "name": "Total Gut & Parasite Reset",
         "tag": "Gut Health",
         "compounds": "Antiparasitic + Microbiome Protocol",
-        "description": "Eliminates unwanted gut bugs and bad bacteria to restore smooth, comfortable digestion."
+        "description": "Testing and prescription treatment, when clinically appropriate, for digestive symptoms."
       },
       {
-        "name": "Full Systemic Energy Flush",
+        "name": "Full Systemic Evaluation",
         "tag": "Total Reset",
         "compounds": "Lab Panel + Liver & Lymph Support",
-        "description": "Comprehensive body audit and flush designed to eliminate brain fog, fatigue, and systemic swelling."
+        "description": "Comprehensive body audit guided by lab testing, with supportive care when clinically appropriate. Results vary."
       }
     ]
   },
@@ -340,11 +340,11 @@
     },
     {
       "question": "Will I experience uncomfortable detox side effects?",
-      "answer": "Our doctors start your plan gently to avoid 'detox crashes'. We adjust your binder dose to make sure toxins are removed smoothly without disrupting your daily routine."
+      "answer": "Our doctors start your plan gradually and adjust your dose based on how you respond. Side effects are possible, and your provider will review them with you."
     },
     {
       "question": "How long does a medical detox protocol take?",
-      "answer": "Most patients complete their main cleansing phase in 6 to 12 weeks, with major improvements in brain fog, energy, and digestion appearing within the first 3 to 4 weeks."
+      "answer": "Plan length varies with your lab results and clinical goals, and your provider will review the timeline with you. Results vary."
     },
     {
       "question": "How do I get started with a clinical detox?",

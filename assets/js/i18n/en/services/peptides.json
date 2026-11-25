@@ -24,7 +24,7 @@
   "heroCTA": "Book Your Doctor Call Today",
   "quiz": {
     "badge": "Quick 1-Minute Assessment",
-    "headline": "Find Your Best Healing Plan",
+    "headline": "Find the Right Care Plan",
     "subheadline": "Answer 3 quick questions so our doctors can help you pick the right plan.",
     "step1": {
       "question": "What is your biggest daily struggle?",
@@ -112,8 +112,8 @@
     },
     "protocols": {
       "pain": {
-        "tag": "Recommended Joint Repair Plan",
-        "name": "The Total Joint & Tissue Reset",
+        "tag": "Recommended Joint Support Plan",
+        "name": "Joint & Tissue Support Plan",
         "peptides": "Options selected per clinical protocol",
         "icon": "fa-shield-alt",
         "desc": "A doctor-prescribed option your provider may consider for joint, tendon and muscle recovery, if it is clinically appropriate.",
@@ -123,11 +123,11 @@
           "feel": "May be considered as part of a plan to support joint comfort and rest.",
           "fat": "May be considered as part of a plan to help you stay active."
         },
-        "social": "Over 60 local patients completed this recovery plan in the last 90 days."
+        "social": "Results vary by patient."
       },
       "performance": {
         "tag": "Strength & Growth Plan",
-        "name": "Peak Performance & Growth Stack",
+        "name": "Performance & Recovery Support Plan",
         "peptides": "Clinical and metabolic options",
         "icon": "fa-dumbbell",
         "desc": "A prescription option your provider may consider for patients interested in support for lean muscle, recovery and strength, if clinically appropriate.",
@@ -137,11 +137,11 @@
           "feel": "May be considered as part of a plan to support sleep and energy.",
           "fat": "May be considered alongside diet and exercise for body-composition goals."
         },
-        "social": "88 patients are currently running this doctor-prescribed stack."
+        "social": "Results vary by patient."
       },
       "energy": {
         "tag": "Cellular Energy Plan",
-        "name": "Total Body Energy & Focus Reset",
+        "name": "Energy & Focus Support Plan",
         "peptides": "Cellular Energy & Recovery Protocol",
         "icon": "fa-bolt",
         "desc": "A prescription option your provider may consider for patients dealing with fatigue or low energy, after other possible causes are evaluated.",
@@ -151,7 +151,7 @@
           "feel": "May be considered as part of a plan to support energy and mental clarity.",
           "fat": "May be considered as part of a plan alongside diet and exercise."
         },
-        "social": "44 local patients started this energy plan in the last 60 days."
+        "social": "Results vary by patient."
       },
       "body": {
         "tag": "Body Composition Plan",
@@ -165,13 +165,13 @@
           "feel": "May be considered as part of a plan to support sleep and daily focus.",
           "fat": "Designed for body-composition goals alongside diet and exercise."
         },
-        "social": "73 patients completed this fat burn protocol recently."
+        "social": "Results vary by patient."
       }
     },
     "timelineMap": {
-      "short": "6–8 weeks (Fast Recovery Plan)",
+      "short": "6–8 weeks (Shorter Plan)",
       "medium": "8–12 weeks (Standard Doctor Plan)",
-      "long": "12–16 weeks (Full Reset Plan)"
+      "long": "12–16 weeks (Extended Plan)"
     }
   },
   "eligibility": {
@@ -352,19 +352,19 @@
     ],
     "stacks": [
       {
-        "name": "Joint & Tissue Repair Stack",
+        "name": "Joint & Tissue Support Plan",
         "tag": "Most Popular",
         "compounds": "Options selected per clinical protocol",
         "description": "Combines options for joint comfort and tissue recovery."
       },
       {
-        "name": "Growth & Lean Muscle Stack",
-        "tag": "Strength Boost",
+        "name": "Lean Muscle Support Plan",
+        "tag": "Strength Support",
         "compounds": "Metabolic options per clinical evaluation",
         "description": "For active adults with body-composition goals who want lean-muscle support and better sleep, when clinically appropriate."
       },
       {
-        "name": "Total Bioenergetic Reset",
+        "name": "Energy & Recovery Support Plan",
         "tag": "Full Vitality",
         "compounds": "Clinical and cellular support options",
         "description": "Supports energy, focus and endurance under medical supervision."
@@ -385,7 +385,7 @@
       "answer": "Most peptide protocols use tiny, virtually painless subcutaneous injections using micro-needles (done at home or in clinic). Some peptides are also available as oral capsules or nasal sprays based on doctor recommendations."
     },
     {
-      "question": "How fast will I see results from peptide therapy?",
+      "question": "When might I notice any changes from peptide therapy?",
       "answer": "Timelines vary by person and by protocol. Your provider will monitor your progress over the first several weeks. Results vary."
     },
     {

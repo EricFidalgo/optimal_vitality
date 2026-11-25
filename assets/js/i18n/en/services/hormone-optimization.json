@@ -97,11 +97,11 @@
           "yes": "Our doctor will review your labs right away to build your custom treatment dose.",
           "no": "We will order a quick baseline blood test to check your levels before starting."
         },
-        "social": "Over 90 local patients are currently using this doctor-guided plan."
+        "social": "Results vary by patient."
       },
       "libido": {
         "tag": "Intimacy & Confidence Plan",
-        "name": "Peak Drive & Passion Plan",
+        "name": "Sexual Health Support Plan",
         "peptides": "Prescription Hormone & Vitality Therapy",
         "icon": "fa-fire",
         "desc": "A doctor-guided evaluation and, if clinically appropriate, a treatment plan for patients with low drive or related concerns.",
@@ -109,7 +109,7 @@
           "yes": "We will review your recent labs to start your plan fast.",
           "no": "Our doctor will order a simple blood check to pinpoint your exact needs."
         },
-        "social": "73 patients started this doctor-led plan in the last 90 days."
+        "social": "Results vary by patient."
       },
       "muscle": {
         "tag": "Strength & Lean Muscle Plan",
@@ -121,12 +121,12 @@
           "yes": "Your recent labs will help our doctor decide whether treatment is appropriate and, if so, set a starting dose.",
           "no": "Our doctor will get your simple bloodwork done to check your testosterone and energy markers."
         },
-        "social": "Over 100 local patients are currently on this strength protocol."
+        "social": "Results vary by patient."
       }
     },
     "timelineMap": {
       "months": "8–12 weeks (Standard Doctor Plan)",
-      "years": "12–16 weeks (Full Reset Plan)"
+      "years": "12–16 weeks (Extended Plan)"
     }
   },
   "eligibility": {
@@ -177,14 +177,14 @@
       },
       {
         "icon": "fa-vial",
-        "name": "Peptide Support Boosters",
+        "name": "Peptide Support Options",
         "tag": "Cell Recovery",
         "description": "Peptide options your provider may consider alongside your plan, when clinically appropriate."
       },
       {
         "icon": "fa-heart",
         "name": "Sexual Wellness Therapy",
-        "tag": "Vitality Boost",
+        "tag": "Wellness Support",
         "description": "Prescription options for men and women with sexual health concerns, when clinically appropriate."
       },
       {
@@ -336,7 +336,7 @@
       "answer": "Your program includes direct consultations with our board-certified medical doctor, full baseline and follow-up blood tests, custom hormone preparations (some are compounded and are not FDA-approved), and ongoing medical check-ins."
     },
     {
-      "question": "How fast will I feel results from hormone therapy?",
+      "question": "When might I notice changes from hormone therapy?",
       "answer": "Timelines vary by person, hormone and dose. Your provider will monitor your symptoms and labs and adjust your plan. Results vary and are not guaranteed."
     },
     {

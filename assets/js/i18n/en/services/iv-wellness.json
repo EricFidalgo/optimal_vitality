@@ -9,9 +9,9 @@
   "icon": "fa-tint",
   "delay": "-5s",
   "features": [
-    "Immediate boost in energy & mental clarity",
+    "Hydration & nutrient support",
     "Nutrient support",
-    "100% direct vitamin absorption",
+    "Delivered directly into the bloodstream",
     "Relax in our luxury medical suite"
   ],
   "image": "",
@@ -92,22 +92,22 @@
         "name": "The Total Energy & Brain Reset",
         "peptides": "Prescription Myers' Cocktail + B-Complex + Glutathione",
         "icon": "fa-bolt",
-        "desc": "Recharges your cells with pure vitamins and minerals delivered directly to your bloodstream for immediate, jitter-free energy.",
+        "desc": "A doctor-prescribed IV option with vitamins and minerals delivered through a vein, which your provider may consider for hydration and nutrient support.",
         "goalModifiers": {
           "yes": "Includes high-dose B-Complex and Glutathione push for maximum energy and mental focus.",
           "no": "Loaded with B-Complex, Vitamin C, and electrolytes for clean, lasting daily energy."
         },
-        "social": "Over 89 local patients received this energy drip in the last 30 days."
+        "social": "Results vary by patient."
       },
       "recovery": {
         "tag": "Athletic & Detox Drip",
-        "name": "The Fast Recovery & Glutathione Stack",
+        "name": "The Recovery & Hydration Support Plan",
         "peptides": "Prescription Glutathione + Amino Acids + Electrolytes",
         "icon": "fa-first-aid",
-        "desc": "Flushes out soreness, rehydrates your body completely, and detoxifies your liver so you bounce back fast.",
+        "desc": "IV hydration with amino acids and electrolytes that your provider may consider for hydration and recovery support.",
         "goalModifiers": {
-          "yes": "Adds Glutathione push to speed up muscle repair and cellular energy after hard training.",
-          "no": "Packed with high-dose Glutathione and amino acids to stop muscle soreness fast."
+          "yes": "Your provider may discuss adding glutathione. Evidence for glutathione IVs in healthy adults is limited.",
+          "no": "Amino acids and electrolytes for hydration and recovery support."
         },
         "social": "114 local athletes and active patients run this recovery drip."
       },
@@ -116,23 +116,23 @@
         "name": "The Super Immune Defense Drip",
         "peptides": "High-Dose Vitamin C + Zinc + Myers' Cocktail",
         "icon": "fa-shield-alt",
-        "desc": "Concentrates white-cell boosting minerals and Vitamin C to protect your body and stop illness in its tracks.",
+        "desc": "Vitamin C and minerals your provider may consider for nutrient support. IV vitamins do not prevent or treat illness.",
         "goalModifiers": {
-          "yes": "Combines high-dose immune defense with Vitamin C to eliminate deep travel exhaustion.",
-          "no": "Delivers maximum Vitamin C and Zinc to fortify your immune system immediately."
+          "yes": "Combines Vitamin C with immune-support nutrients, when your provider finds it appropriate.",
+          "no": "Vitamin C and zinc, if your provider finds it appropriate."
         },
         "social": "95 patients choose this immune shield when feeling run down."
       }
     },
     "timelineMap": {
-      "first": "45 minutes (Immediate 100% absorption)",
+      "first": "45 minutes (Typical session length)",
       "regular": "2–4 weeks (Cumulative vitality plan)"
     }
   },
   "eligibility": {
     "badge": "Who Is This For?",
     "headline": "Are You a Candidate for IV Care?",
-    "intro": "IV therapy delivers pure vitamins and minerals directly into your blood, bypassing slow digestion completely. Supervised by licensed doctors, it is the fastest way to feel energized and rehydrated.",
+    "intro": "IV therapy delivers vitamins, minerals and fluids directly into the bloodstream under the supervision of licensed doctors. Whether it is appropriate for you is decided after a health review. Results vary.",
     "note": "Questions about candidacy? Our medical team will guide you during your consultation.",
     "ctaText": "Call Us Now to Check Candidacy",
     "items": [
@@ -142,7 +142,7 @@
       },
       {
         "label": "Active Athletes",
-        "detail": "People needing fast muscle recovery, hydration, and soreness relief after workouts."
+        "detail": "People interested in hydration support after workouts."
       },
       {
         "label": "Frequent Travelers",
@@ -150,7 +150,7 @@
       },
       {
         "label": "Immune Defense Needed",
-        "detail": "Anyone feeling run down or wanting strong, immediate illness protection."
+        "detail": "People interested in nutrient support during travel or cold season."
       },
       {
         "label": "Ready for Doctor Care",
@@ -167,13 +167,13 @@
         "icon": "fa-shield-virus",
         "name": "High-Dose Vitamin C Infusion",
         "tag": "Immune Defense",
-        "description": "Doctor-prescribed high-dose Vitamin C to boost immunity, fight oxidative stress, and clear fatigue."
+        "description": "Doctor-prescribed high-dose Vitamin C infusion, when clinically appropriate."
       },
       {
         "icon": "fa-star",
-        "name": "Glutathione Detox Push",
+        "name": "Glutathione Push",
         "tag": "Master Antioxidant",
-        "description": "Direct intravenous push of the body's strongest antioxidant to cleanse the liver and brighten skin."
+        "description": "Intravenous glutathione, an antioxidant the body makes, when clinically appropriate. Glutathione given by IV is generally compounded and not FDA-approved."
       },
       {
         "icon": "fa-tint",
@@ -185,18 +185,18 @@
         "icon": "fa-dumbbell",
         "name": "Athletic Recovery Drip",
         "tag": "Muscle Rebound",
-        "description": "Targeted amino acids and electrolytes to flush out muscle soreness and rehydrate you after exercise."
+        "description": "Amino acids and electrolytes for hydration and recovery support after exercise."
       },
       {
         "icon": "fa-shield-alt",
         "name": "Immune Fortification Drip",
         "tag": "Illness Shield",
-        "description": "High-dose Vitamin C, Zinc, and B12 to supercharge your immune system before travel or during cold season."
+        "description": "High-dose Vitamin C, Zinc, and B12 infusion, when clinically appropriate."
       },
       {
         "icon": "fa-syringe",
         "name": "Doctor Vitamin Shots",
-        "tag": "Quick Booster",
+        "tag": "Short Session",
         "description": "Quick B12 or D3 intramuscular shots when you want nutrient support without sitting for a full drip."
       }
     ],
@@ -204,17 +204,17 @@
   },
   "science": {
     "badge": "How It Works",
-    "headline": "Why It Works When<br><span class=\"text-primary\">Vitamin Pills Fail</span>",
+    "headline": "How IV Therapy<br><span class=\"text-primary\">Differs From Vitamin Pills</span>",
     "body": "When you swallow vitamin pills, your stomach breaks them down first. IV therapy delivers nutrients directly into your bloodstream, supporting hydration and nutrient levels.",
     "bullets": [
-      "Direct intravenous administration; this does not establish 100% cellular uptake or guaranteed clinical benefit. vs ~20% for stomach pills",
+      "Delivered directly into the bloodstream. This does not guarantee absorption or clinical benefit.",
       "Compounded fresh & prescribed by licensed medical doctors",
       "Administered by registered nurses in a relaxing clinic suite"
     ],
     "stats": [
       {
-        "value": "100%",
-        "label": "Direct vitamin absorption"
+        "value": "Direct",
+        "label": "Delivered into the bloodstream"
       },
       {
         "value": "45m",
@@ -238,7 +238,7 @@
       {
         "icon": "fa-bullseye",
         "title": "Direct Vascular Delivery",
-        "detail": "Intravenous drips deliver nutrients straight into your bloodstream for direct cellular delivery."
+        "detail": "Intravenous drips deliver nutrients directly into your bloodstream."
       }
     ]
   },
@@ -263,7 +263,7 @@
     "mobileStats": [
       {
         "icon": "fa-bolt",
-        "label": "Fast Delivery"
+        "label": "Direct Delivery"
       },
       {
         "icon": "fa-tint",
@@ -271,7 +271,7 @@
       },
       {
         "icon": "fa-star",
-        "label": "100% Absorption"
+        "label": "Hydration Support"
       },
       {
         "icon": "fa-shield-alt",
@@ -280,19 +280,19 @@
     ],
     "rows": [
       {
-        "metric": "Vitamin Absorption",
-        "without": "Only 10%–30% in stomach",
-        "with": "100% direct vascular absorption"
+        "metric": "Delivery Route",
+        "without": "Varies with digestion",
+        "with": "Delivered directly into the bloodstream"
       },
       {
-        "metric": "How Fast It Works",
-        "without": "Takes hours or days",
-        "with": "Immediate while sitting in drip suite"
+        "metric": "Delivery",
+        "without": "Digestion required",
+        "with": "Infused during your visit"
       },
       {
-        "metric": "Master Antioxidant Delivery",
-        "without": "Wasted in stomach acid",
-        "with": "100% active cellular delivery"
+        "metric": "Antioxidant Delivery",
+        "without": "Digested first",
+        "with": "Delivered intravenously"
       },
       {
         "metric": "Rehydration Speed",
@@ -307,22 +307,22 @@
     ],
     "stacks": [
       {
-        "name": "Peak Vitality Drip Stack",
+        "name": "Vitamin & Glutathione Drip",
         "tag": "Most Popular",
         "compounds": "Myers' Cocktail + Glutathione Push",
-        "description": "Our top IV drip pairing Myers' vitamins for energy with Glutathione for deep liver detox and glowing skin."
+        "description": "An IV drip pairing a Myers’-style vitamin blend with glutathione, when clinically appropriate. Results vary."
       },
       {
-        "name": "Total Anti-Aging Longevity Drip",
+        "name": "Antioxidant & Vitamin Drip",
         "tag": "Cell Reset",
         "compounds": "High-Dose Vitamin C + B-Complex + Glutathione",
-        "description": "Doctor vitamin drip paired with high-dose antioxidants to repair cells and reverse brain fog."
+        "description": "A vitamin drip paired with antioxidants, when clinically appropriate. Results vary."
       },
       {
         "name": "Athletic Rebound Stack",
-        "tag": "Fast Recovery",
+        "tag": "Recovery Support",
         "compounds": "Athletic Recovery IV + B12 Injection",
-        "description": "Designed to flush out muscle soreness fast with pure amino acids, electrolytes, and B12."
+        "description": "Amino acids, electrolytes, and B12 for hydration and recovery support."
       }
     ]
   },
